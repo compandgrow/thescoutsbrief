@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 7,
+  "credits": 10,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -26,6 +26,16 @@
     "at": "2026-10-27T07:25:42Z",
     "what": "scrape https://www.skysports.com/football/news/13601439/man-utd-0-3-bournemouth-michael-carrick-drops-bruno-fernandes-but-sees-cherries-humble-united-at-old-trafford",
     "credits": 1
+   },
+   {
+    "at": "2026-10-27T07:27:01Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/ck62yqmle02mt",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-27T07:27:02Z",
+    "what": "search Manchester United Bournemouth 25 October 2026 match stats",
+    "credits": 2
    }
   ]
  }
