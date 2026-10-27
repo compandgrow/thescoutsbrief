@@ -40,7 +40,7 @@ def spend(n, what):
     u = usage()
     m = u.setdefault(month(), {"credits": 0, "calls": []})
     m["credits"] += n
-    m["calls"].append({"at": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z", "what": what, "credits": n})
+    m["calls"].append({"at": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "what": what, "credits": n})
     os.makedirs(DIR, exist_ok=True)
     json.dump(u, open(USAGE, "w"), indent=1)
 
@@ -75,7 +75,7 @@ def cache(kind, key, data):
     os.makedirs(DIR, exist_ok=True)
     name = f"{kind}_{hashlib.sha1(key.encode()).hexdigest()[:12]}.json"
     path = os.path.join(DIR, name)
-    json.dump({"kind": kind, "key": key, "fetched_at": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z", "data": data},
+    json.dump({"kind": kind, "key": key, "fetched_at": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "data": data},
               open(path, "w"), indent=1, ensure_ascii=False)
     return path
 

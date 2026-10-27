@@ -1,0 +1,32 @@
+{
+ "2026-10": {
+  "credits": 7,
+  "calls": [
+   {
+    "at": "2026-10-27T07:25:09Z",
+    "what": "search Manchester United team news injuries",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-27T07:25:18Z",
+    "what": "scrape https://www.espn.com/soccer/story/_/id/50276044/bruno-fernandes-left-man-united-bournemouth",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-27T07:25:19Z",
+    "what": "scrape https://www.bbc.co.uk/sport/football/premier-league/table",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-27T07:25:30Z",
+    "what": "search Manchester United Bournemouth match report",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-27T07:25:42Z",
+    "what": "scrape https://www.skysports.com/football/news/13601439/man-utd-0-3-bournemouth-michael-carrick-drops-bruno-fernandes-but-sees-cherries-humble-united-at-old-trafford",
+    "credits": 1
+   }
+  ]
+ }
+}
