@@ -14,7 +14,7 @@ Labelled "Scout's pick" because no player ratings are available without PitchAPI
 
 Watched (fps 0.5 sheet + 8 probe stills): no clipped text, cards match the spoken topic, first frame shows the hook card (cover), emotions match beats (shocked → disappointed → neutral → excited → angry → furious → disappointed → smug).
 Tone: favourite lost → no banter ✓; anger aimed at performance numbers, no personal insults ✓.
-Specs: 1080x1920, H.264 + AAC, 53.5 s, -14.5 LUFS ✓
+Specs: 1080x1920, H.264 + AAC, 57.0 s, -14.4 LUFS ✓ (re-voiced with expressive delivery 2026-10-27)
 Caption: all claims match the reel ✓
 
 Weakest point: best/worst are judgement calls from shot data and events, not ratings.

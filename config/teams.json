@@ -133,31 +133,11 @@
   ]
  },
  "voice": {
-  "name": "am_onyx",
+  "engine": "kokoro",
+  "base": "am_onyx",
   "pitch": 0,
   "bass": 2,
-  "options": {
-   "A": [
-    "am_onyx",
-    -3
-   ],
-   "B": [
-    "am_fenrir",
-    -3
-   ],
-   "C": [
-    "bm_george",
-    -3
-   ],
-   "D": [
-    "am_onyx",
-    -5
-   ],
-   "E": [
-    "am_adam",
-    -3
-   ]
-  }
+  "note": "Per-emotion delivery (voice blend, pitch, pace, loudness, strain) lives in engine/voice.py STYLE. Override per beat with voice_style."
  },
  "research": {
   "provider": "firecrawl",
