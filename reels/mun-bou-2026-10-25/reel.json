@@ -1,0 +1,195 @@
+{
+ "id": "mun-bou-2026-10-25",
+ "match": {
+  "pill": "MUN 0–3 BOU · PL"
+ },
+ "beats": [
+  {
+   "say": "Sixty-three percent of the ball. Six hundred and forty-nine passes. And Manchester United created zero big chances.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "MAN UTD 0–3 BOURNEMOUTH",
+    "text": "63% OF THE BALL.\n*ZERO* BIG\nCHANCES.",
+    "size": 128,
+    "source": "BBC Sport / ESPN"
+   }
+  },
+  {
+   "say": "Bournemouth created six, and won three-nil at Old Trafford. Expected goals: two point one eight to one point one eight.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "compare",
+    "kicker": "FULL TIME",
+    "teams": [
+     "MAN UTD",
+     "BOURNEMOUTH"
+    ],
+    "rows": [
+     {
+      "label": "POSSESSION %",
+      "a": 63.2,
+      "b": 36.8,
+      "fa": "63%",
+      "fb": "37%"
+     },
+     {
+      "label": "BIG CHANCES",
+      "a": 0,
+      "b": 6
+     },
+     {
+      "label": "xG",
+      "a": 1.18,
+      "b": 2.18
+     }
+    ],
+    "source": "BBC Sport (Opta), ESPN"
+   }
+  },
+  {
+   "say": "Before kick-off, Carrick benched Bruno Fernandes, after Bruno criticised him in public.",
+   "emotion": "neutral",
+   "card": {
+    "type": "hook",
+    "kicker": "TEAM SELECTION",
+    "text": "BRUNO\n*BENCHED*",
+    "size": 150,
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "At half-time, Cunha came on for Tielemans. United went from three shots to fourteen. But seven of those fourteen were blocked.",
+   "emotion": "neutral",
+   "card": {
+    "type": "compare",
+    "kicker": "THE HALF-TIME CHANGE",
+    "teams": [
+     "1ST HALF",
+     "2ND HALF"
+    ],
+    "rows": [
+     {
+      "label": "UNITED SHOTS",
+      "a": 3,
+      "b": 14
+     },
+     {
+      "label": "UNITED xG",
+      "a": 0.23,
+      "b": 0.95
+     },
+     {
+      "label": "SHOTS BLOCKED",
+      "a": 0,
+      "b": 7
+     }
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Scout's pick for best on the pitch: Rayan. A goal, five shots, and the most expected goals on the pitch.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Rayan",
+    "team": "Bournemouth",
+    "stats": [
+     [
+      "goal",
+      "1"
+     ],
+     [
+      "shots",
+      "5"
+     ],
+     [
+      "xG",
+      "0.91"
+     ],
+     [
+      "minutes",
+      "90"
+     ]
+    ],
+    "source": "ESPN shot map, BBC Sport"
+   }
+  },
+  {
+   "say": "And the worst? Yoro. He slipped under pressure, and Tavernier scored from the biggest chance of the game.",
+   "emotion": "disappointed",
+   "emote": [
+    [
+     2.2,
+     "angry"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "name": "Yoro",
+    "team": "Manchester United",
+    "stats": [
+     [
+      "errors leading to a goal",
+      "1"
+     ],
+     [
+      "xG of that chance",
+      "0.72"
+     ],
+     [
+      "minute",
+      "43'"
+     ]
+    ],
+    "source": "ESPN commentary & shot map"
+   }
+  },
+  {
+   "say": "Six hundred and forty-nine passes, and not one big chance! Eight games without a win! This is not good enough!",
+   "emotion": "furious",
+   "slam": [
+    0.4,
+    3.0
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "UNITED",
+    "value": "8",
+    "unit": "GAMES",
+    "label": "*without a win*",
+    "sub": "0 big chances from 649 passes",
+    "source": "Sky Sports, ESPN"
+   }
+  },
+  {
+   "say": "Okay. Deep breath. United drop to sixteenth. Bournemouth climb to thirteenth.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "stat",
+    "kicker": "PREMIER LEAGUE",
+    "value": "16",
+    "unit": "TH",
+    "label": "where *United* sit now",
+    "sub": "after Sunday's games",
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "So, is it time for Carrick to go? Tell me in the comments.",
+   "emotion": "smug",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "IS CARRICK\n*DONE*?",
+    "source": ""
+   }
+  }
+ ]
+}

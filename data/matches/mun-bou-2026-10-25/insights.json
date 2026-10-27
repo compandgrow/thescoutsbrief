@@ -1,0 +1,171 @@
+{
+ "match": {
+  "home": "Manchester United",
+  "away": "Bournemouth",
+  "home_short": "MUN",
+  "away_short": "BOU",
+  "score": "0-3",
+  "competition": "Premier League",
+  "date": "2026-10-25"
+ },
+ "data_mode": "firecrawl (PitchAPI not connected yet) - no player ratings; best/worst are Scout's pick",
+ "headline": "United had 63% of the ball and 649 passes but created zero big chances; Bournemouth created six and won 3-0.",
+ "team_story": [
+  {
+   "label": "Possession %",
+   "home": 63.2,
+   "away": 36.8,
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt Basic Stats"
+  },
+  {
+   "label": "xG",
+   "home": 1.18,
+   "away": 2.18,
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt Basic Stats"
+  },
+  {
+   "label": "Shots",
+   "home": 17,
+   "away": 10,
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt Basic Stats"
+  },
+  {
+   "label": "Big chances created",
+   "home": 0,
+   "away": 6,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879252 Attack"
+  },
+  {
+   "label": "Total passes",
+   "home": 649,
+   "away": 374,
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt Distribution"
+  },
+  {
+   "label": "Attempts from outside the box",
+   "home": 9,
+   "away": 1,
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt Attack"
+  }
+ ],
+ "tactical_change": {
+  "team": "Manchester United",
+  "minute": 46,
+  "before": "4-2-3-1",
+  "after": "4-2-3-1 (shape unchanged in source)",
+  "trigger": "Matheus Cunha on for Tielemans (booked 40')",
+  "effect": "United went from 3 shots / 0.23 xG in the first half to 14 shots / 0.95 xG in the second, but 7 of the 14 were blocked and they did not score.",
+  "evidence": [
+   {
+    "label": "Shots",
+    "before": 3,
+    "after": 14,
+    "source": "derived.json from https://www.espn.co.uk/football/match/_/gameId/401879252 shot map"
+   },
+   {
+    "label": "xG",
+    "before": 0.23,
+    "after": 0.95,
+    "source": "derived.json"
+   },
+   {
+    "label": "Blocked shots",
+    "before": 0,
+    "after": 7,
+    "source": "derived.json"
+   }
+  ],
+  "confidence": "medium (formation after the sub not stated by source)"
+ },
+ "selection": {
+  "fact": "Bruno Fernandes left on the bench after public criticism of Michael Carrick; Harry Maguire captained.",
+  "source": "https://www.espn.com/soccer/story/_/id/50276044/bruno-fernandes-left-man-united-bournemouth"
+ },
+ "best_player": {
+  "name": "Rayan",
+  "team": "Bournemouth",
+  "rating": null,
+  "stats": [
+   [
+    "goal",
+    "1"
+   ],
+   [
+    "shots",
+    "5"
+   ],
+   [
+    "xG",
+    "0.91"
+   ],
+   [
+    "minutes",
+    "90"
+   ]
+  ],
+  "why": "Scored the opener and had the most shots and highest xG on the pitch",
+  "source": "derived.json (ESPN shot map); minutes from BBC lineup (not substituted)"
+ },
+ "worst_player": {
+  "name": "Yoro",
+  "team": "Manchester United",
+  "rating": null,
+  "stats": [
+   [
+    "errors leading to a goal",
+    "1"
+   ],
+   [
+    "xG of that chance",
+    "0.72"
+   ],
+   [
+    "biggest chance",
+    "of the game"
+   ],
+   [
+    "minute",
+    "43'"
+   ]
+  ],
+  "why": "Slipped under pressure from Truffert, who crossed for Tavernier's goal - the biggest chance of the match (0.72 xG)",
+  "anger_worthy": true,
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401879252 commentary ('Yoro was at fault, as he slipped under pressure from Truffert'); xG from shot map"
+ },
+ "surprise_stat": {
+  "value": "0",
+  "label": "big chances created by United",
+  "context": "from 649 passes and 63% possession",
+  "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879252"
+ },
+ "result_context": {
+  "winner": "BOU",
+  "loser": "MUN",
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": true
+ },
+ "context": [
+  {
+   "fact": "Eighth game without a win for United",
+   "source": "https://www.skysports.com/football/news/13601439/man-utd-0-3-bournemouth-michael-carrick-drops-bruno-fernandes-but-sees-cherries-humble-united-at-old-trafford"
+  },
+  {
+   "fact": "United drop to 16th, Bournemouth move to 13th (after Sunday's games)",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401879252 full-time commentary"
+  },
+  {
+   "fact": "United's first shot on target came after 40 minutes",
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt"
+  },
+  {
+   "fact": "Fourth consecutive home league game v Bournemouth conceding 3+ and failing to win",
+   "source": "https://www.bbc.com/sport/football/live/ck62yqmle02mt"
+  }
+ ],
+ "caveats": [
+  "No player ratings available without PitchAPI: best/worst are Scout's pick from shot data and match events.",
+  "Shots on target differ by provider (BBC 5 v ESPN shot map 3); reel uses BBC for team totals.",
+  "League positions are as reported after Sunday's games and may change."
+ ]
+}
