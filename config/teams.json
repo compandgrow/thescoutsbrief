@@ -158,5 +158,36 @@
     -3
    ]
   }
+ },
+ "research": {
+  "provider": "firecrawl",
+  "monthly_credit_budget": 800,
+  "note": "Free tier = 1,000 credits/month; budget leaves headroom. Stats sites that forbid scraping (WhoScored, SofaScore, FotMob, FBref, Understat) are deliberately not listed.",
+  "trusted_domains": [
+   "bbc.co.uk",
+   "bbc.com",
+   "skysports.com",
+   "theguardian.com",
+   "espn.com",
+   "espn.co.uk",
+   "reuters.com",
+   "apnews.com",
+   "premierleague.com",
+   "laliga.com",
+   "bundesliga.com",
+   "ligue1.com",
+   "uefa.com",
+   "liverpoolfc.com",
+   "manutd.com",
+   "mancity.com",
+   "chelseafc.com",
+   "arsenal.com",
+   "tottenhamhotspur.com",
+   "realmadrid.com",
+   "fcbarcelona.com",
+   "fcbayern.com",
+   "atleticodemadrid.com",
+   "psg.fr"
+  ]
  }
 }

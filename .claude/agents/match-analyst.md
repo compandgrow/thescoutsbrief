@@ -22,8 +22,15 @@ Produce `data/matches/<id>/insights.json`:
  "caveats": []
 }
 ```
+Web research (Firecrawl, only for what PitchAPI doesn't have)
+- `python3 engine/research.py search "<query>" --limit 5 --days 3` searches trusted sites only (BBC Sport, Sky Sports, official league and club sites; list in `config/teams.json` → `research.trusted_domains`).
+- `python3 engine/research.py scrape <url>` reads one trusted page as text.
+- Use it for: injuries/suspensions behind a lineup change, the manager's explanation of a tactical switch, league position and form runs for banter ("third loss in four"), milestones ("first goal since March").
+- Budget: at most 6 calls per match. Check `python3 engine/research.py usage`; if the monthly budget is reached, skip research and say so in `caveats`.
+- Every researched fact goes in `insights.json` with `source` = the page URL and the exact quote or number from the cached file in `data/research/`.
+
 Rules
-- Every number must come from the data files, with its file and JSON path in `source`. No outside facts unless verified by web search and cited with a URL.
+- Every number must come from the data files, with its file and JSON path in `source`, or from a cached research page with its URL. Nothing from memory.
 - Best and worst player: use the source's player rating if present. Only players with 45+ minutes are eligible for worst. If there is no rating, build a transparent score from available stats (attacking contribution, duels, possession lost, errors) and say so in `caveats`.
 - Tactical change: prefer a real formation or shape change (lineups, substitutions in events, players_halves/advanced data). If the formation never changed, report the biggest half-to-half shift (pressing, possession, xG, territory) and call it "the second-half shift". Set `confidence` honestly; never fabricate a formation.
 - `anger_worthy` is true only when the numbers are clearly poor (e.g. rating under 6.0, many possession losses, error leading to a goal). The presenter only gets angry when the data justifies it.

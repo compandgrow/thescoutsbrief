@@ -9,3 +9,5 @@ scout-presenter-demo.mp4
 scout-banter-demo.mp4
 scout-gorilla-*.mp4
 voice-samples/
+data/research/*.json
+!data/research/usage.json

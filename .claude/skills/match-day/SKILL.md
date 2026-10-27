@@ -9,6 +9,7 @@ Arguments: none (auto: every finished watched match today), or a PitchAPI match 
 ## 0. Preflight (stop with a clear message if any fails)
 - `bash setup.sh` (idempotent: installs deps, downloads the voice model if missing).
 - `PITCHAPI_API_KEY` set; `api.pitchapi.dev` reachable (`curl -s -o /dev/null -w '%{http_code}' https://api.pitchapi.dev`).
+- Optional: `FIRECRAWL_API_KEY` set for web research (`python3 engine/research.py usage`). Without it the analyst skips research and notes it.
 
 ## 1. Team flow — run the subagents in order, one match at a time
 | Step | Agent | Output | Gate |
@@ -29,7 +30,7 @@ Pass each agent the match id and the paths it needs; agents don't share memory, 
 - `"auto"`: publisher schedules it `post_delay_minutes` ahead and the user is notified with the file so they can cancel.
 
 ## 3. Finish
-- Commit and push `reels/<id>/reel.json`, `caption.txt`, `review.md`, `data/state.json` and `data/matches/<id>/insights.json` (not the MP4/frames/audio; they're gitignored).
+- Commit and push `data/research/usage.json`, `reels/<id>/reel.json`, `caption.txt`, `review.md`, `data/state.json` and `data/matches/<id>/insights.json` (not the MP4/frames/audio; they're gitignored).
 - Report: match, hook line, best/worst player, tactical change, review result, post status/link, anything that failed.
 
 ## Favourites and banter

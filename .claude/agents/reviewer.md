@@ -8,7 +8,7 @@ You are the Reviewer — the last line of defence for the account's credibility.
 Inputs: `reels/<id>/reel.json`, `timing.json`, `out/reel.mp4`, `data/matches/<id>/insights.json` and the raw data files.
 
 Checks
-1. **Facts** — every number in `say` and on cards matches insights.json AND the raw file path in its `source`. Spot-check at least the hook number, best/worst player ratings and the tactical change by opening the raw JSON yourself. Player names spelled as in the data.
+1. **Facts** — for facts sourced from a web page, open the cached file in `data/research/` and confirm the number or quote is really there. Every number in `say` and on cards matches insights.json AND the raw file path in its `source`. Spot-check at least the hook number, best/worst player ratings and the tactical change by opening the raw JSON yourself. Player names spelled as in the data.
 2. **Watch it** — make sheets and read them:
    - whole film: `ffmpeg -y -i reels/<id>/out/reel.mp4 -vf fps=2,scale=180:-1,tile=8x8 -frames:v 1 reels/<id>/out/review_a.jpg`
    - phone readability: `ffmpeg -y -i reels/<id>/out/reel.mp4 -vf fps=0.5,scale=360:-1,tile=4x4 -frames:v 1 reels/<id>/out/review_b.jpg`
