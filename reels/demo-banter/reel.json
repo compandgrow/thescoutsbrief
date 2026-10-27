@@ -1,0 +1,69 @@
+{
+ "id": "demo-banter",
+ "match": {
+  "pill": "DEMO \u00b7 NOT REAL DATA"
+ },
+ "beats": [
+  {
+   "say": "Ha! Rival F C lost again. Let's look at the numbers, shall we?",
+   "emotion": "laughing",
+   "hit": true,
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "RIVAL FC\n*LOST* AGAIN",
+    "stamp": "FULL TIME L",
+    "sub": "demo result, not a real match",
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "Zero shots on target in the entire second half. Zero!",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "2ND HALF",
+    "value": "0",
+    "unit": "SHOTS ON TARGET",
+    "label": "in *45 minutes*",
+    "sub": "demo number",
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "Sixty-two percent possession, and they did absolutely nothing with it.",
+   "emotion": "laughing",
+   "card": {
+    "type": "compare",
+    "kicker": "DEMO MATCH",
+    "teams": [
+     "RIVAL FC",
+     "SMALL TOWN"
+    ],
+    "rows": [
+     {
+      "label": "POSSESSION %",
+      "a": 62,
+      "b": 38
+     },
+     {
+      "label": "xG",
+      "a": 0.4,
+      "b": 1.3
+     }
+    ],
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "Rival fans, I'm sorry. Actually, no I'm not.",
+   "emotion": "smug",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "RIVAL FANS,\nTELL ME *WHY*",
+    "source": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": "demo-presenter",
+ "match": {
+  "pill": "DEMO \u00b7 NOT REAL DATA"
+ },
+ "beats": [
+  {
+   "say": "Welcome to The Scout Brief. I watch the data, so you don't have to.",
+   "emotion": "smug",
+   "card": {
+    "type": "hook",
+    "kicker": "MATCH-DAY BRIEF",
+    "text": "THE DATA\nDOESN'T *LIE*",
+    "source": "demo"
+   }
+  },
+  {
+   "say": "Every match day, I break down the tactics that decided the game.",
+   "emotion": "neutral",
+   "card": {
+    "type": "formation",
+    "kicker": "EXAMPLE SHAPE",
+    "title": "Back four to *back three*",
+    "before": "4-3-3",
+    "after": "3-4-3",
+    "source": "demo layout, not a real match"
+   }
+  },
+  {
+   "say": "I'll show you who ran the show.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "name": "Demo Player",
+    "team": "Example FC \u00b7 demo data",
+    "rating": "9.1",
+    "stats": [
+     [
+      "key passes",
+      "6"
+     ],
+     [
+      "duels won",
+      "11/14"
+     ],
+     [
+      "xA",
+      "0.84"
+     ],
+     [
+      "touches",
+      "97"
+     ]
+    ],
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "And who had a shocker.",
+   "emotion": "shocked",
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "name": "Another Demo",
+    "team": "Sample United \u00b7 demo data",
+    "rating": "4.8",
+    "stats": [
+     [
+      "lost possession",
+      "23"
+     ],
+     [
+      "duels won",
+      "2/11"
+     ],
+     [
+      "passes",
+      "61%"
+     ],
+     [
+      "fouls",
+      "4"
+     ]
+    ],
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "Twenty-three times he gave the ball away. Twenty-three!",
+   "emotion": "angry",
+   "card": {
+    "type": "stat",
+    "kicker": "BALL LOST",
+    "value": "23",
+    "unit": "TIMES",
+    "label": "in *ninety minutes*",
+    "sub": "demo number for the presenter test",
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "Who is picking this guy? Get him off the pitch!",
+   "emotion": "furious",
+   "slam": [
+    0.35,
+    1.6
+   ]
+  },
+  {
+   "say": "Okay. Deep breath. Back to the numbers.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "compare",
+    "kicker": "DEMO MATCH",
+    "teams": [
+     "EXAMPLE FC",
+     "SAMPLE UTD"
+    ],
+    "rows": [
+     {
+      "label": "POSSESSION %",
+      "a": 58,
+      "b": 42
+     },
+     {
+      "label": "SHOTS",
+      "a": 17,
+      "b": 6
+     },
+     {
+      "label": "xG",
+      "a": 2.1,
+      "b": 0.6
+     }
+    ],
+    "source": "demo data"
+   }
+  },
+  {
+   "say": "Follow for a brief after every big match.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "FOLLOW FOR\nEVERY *MATCH*",
+    "source": ""
+   }
+  }
+ ]
+}

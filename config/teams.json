@@ -1,0 +1,162 @@
+{
+ "account": {
+  "platform": "instagram",
+  "handle": "thescoutbrief",
+  "zernio_account_id": "6ad5bc58ea5889c95a4c443b"
+ },
+ "approval": "ask",
+ "post_delay_minutes": 60,
+ "teams": [
+  {
+   "key": "LIV",
+   "name": "Liverpool",
+   "aliases": [
+    "Liverpool",
+    "Liverpool FC"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "MUN",
+   "name": "Manchester United",
+   "aliases": [
+    "Manchester United",
+    "Man United",
+    "Man Utd",
+    "Manchester Utd"
+   ],
+   "role": "favourite"
+  },
+  {
+   "key": "MCI",
+   "name": "Manchester City",
+   "aliases": [
+    "Manchester City",
+    "Man City"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "CHE",
+   "name": "Chelsea",
+   "aliases": [
+    "Chelsea",
+    "Chelsea FC"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "ARS",
+   "name": "Arsenal",
+   "aliases": [
+    "Arsenal",
+    "Arsenal FC"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "TOT",
+   "name": "Tottenham Hotspur",
+   "aliases": [
+    "Tottenham",
+    "Tottenham Hotspur",
+    "Spurs"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "RMA",
+   "name": "Real Madrid",
+   "aliases": [
+    "Real Madrid"
+   ],
+   "role": "favourite"
+  },
+  {
+   "key": "BAR",
+   "name": "Barcelona",
+   "aliases": [
+    "Barcelona",
+    "FC Barcelona"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "BAY",
+   "name": "Bayern Munich",
+   "aliases": [
+    "Bayern Munich",
+    "Bayern München",
+    "FC Bayern München",
+    "Bayern"
+   ],
+   "role": "favourite"
+  },
+  {
+   "key": "ATM",
+   "name": "Atlético Madrid",
+   "aliases": [
+    "Atletico Madrid",
+    "Atlético Madrid",
+    "Atlético de Madrid",
+    "Atletico de Madrid"
+   ],
+   "role": "rival"
+  },
+  {
+   "key": "PSG",
+   "name": "Paris Saint-Germain",
+   "aliases": [
+    "Paris Saint-Germain",
+    "PSG",
+    "Paris SG",
+    "Paris Saint Germain"
+   ],
+   "role": "favourite"
+  }
+ ],
+ "favourites": [
+  "MUN",
+  "RMA",
+  "PSG",
+  "BAY"
+ ],
+ "banter": {
+  "when": "a rival (any watched club that is not a favourite) loses, to anyone",
+  "extra_when_beaten_by_favourite": true,
+  "favourite_priority": "if several matches finish at once, make favourite matches first",
+  "red_lines": [
+   "no tragedy references (Munich, Hillsborough, Heysel, etc.)",
+   "no abuse of players' families, race, nationality, religion, appearance, mental health or private life",
+   "no injuries mocked",
+   "banter is about results, tables and numbers"
+  ]
+ },
+ "voice": {
+  "name": "am_onyx",
+  "pitch": 0,
+  "bass": 2,
+  "options": {
+   "A": [
+    "am_onyx",
+    -3
+   ],
+   "B": [
+    "am_fenrir",
+    -3
+   ],
+   "C": [
+    "bm_george",
+    -3
+   ],
+   "D": [
+    "am_onyx",
+    -5
+   ],
+   "E": [
+    "am_adam",
+    -3
+   ]
+  }
+ }
+}

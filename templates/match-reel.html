@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Scout Brief</title>
+<style>
+@font-face { font-family: Anton; src: url(/node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2); }
+@font-face { font-family: Plex; src: url(/node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-500-normal.woff2); }
+@font-face { font-family: InterTight; font-weight: 800; src: url(/node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2); }
+:root { --ink:#0d0a14; --panel:#161021; --violet:#8b5cf6; --lilac:#c4b5fd; --paper:#f4f1ff; --muted:#8e84a8; --good:#34d399; --bad:#f43f5e; }
+html, body { margin:0; background:#000; }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:var(--ink); font-family:Plex; color:var(--paper); }
+.abs { position:absolute; }
+#grid { inset:0; background-image: linear-gradient(rgba(139,92,246,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,.07) 1px, transparent 1px); background-size: 60px 60px; }
+#slab { left:-200px; top:640px; width:1600px; height:340px; background:linear-gradient(90deg, rgba(139,92,246,.0), rgba(139,92,246,.22), rgba(139,92,246,.0)); transform:rotate(-14deg); }
+#vignette { inset:0; background: radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(0,0,0,.6) 100%); }
+#wordmark { left:60px; top:150px; font-family:InterTight; font-weight:800; font-size:34px; letter-spacing:2px; }
+#wordmark b { color:var(--violet); }
+#pill { right:60px; top:142px; border:2px solid var(--violet); border-radius:40px; padding:10px 22px; font-size:28px; letter-spacing:1px; background:rgba(139,92,246,.12); }
+#handle { left:60px; top:1580px; z-index:6; font-size:26px; color:var(--muted); }
+#source { right:60px; top:1580px; z-index:6; font-size:22px; color:var(--muted); max-width:620px; text-align:right; }
+#cards { left:60px; top:250px; width:960px; height:640px; }
+.card { position:absolute; inset:0; opacity:0; }
+.kicker { display:inline-block; background:var(--violet); color:var(--ink); font-size:30px; padding:8px 18px; letter-spacing:2px; }
+.big { font-family:Anton; font-size:150px; line-height:.95; text-transform:uppercase; margin-top:24px; }
+.big .hl { color:var(--violet); }
+.mask { display:block; overflow:hidden; }
+.mask > span { display:inline-block; }
+.panel { background:var(--panel); border:2px solid rgba(139,92,246,.35); border-radius:18px; padding:32px 36px; }
+.ctitle { font-family:Anton; font-size:64px; text-transform:uppercase; line-height:1; margin:18px 0 26px; }
+.row { margin:0 0 24px; }
+.row .lab { font-size:26px; color:var(--lilac); letter-spacing:1px; text-align:center; margin-bottom:8px; }
+.bars { display:flex; align-items:center; gap:14px; }
+.bars .v { font-family:Anton; font-size:52px; width:150px; }
+.bars .v.r { text-align:right; }
+.track { flex:1; height:30px; display:flex; gap:6px; }
+.track .a, .track .b { height:100%; border-radius:6px; }
+.track .a { background:var(--violet); margin-left:auto; }
+.track .b { background:var(--lilac); }
+.half { flex:1; display:flex; }
+.teamhead { display:flex; justify-content:space-between; font-family:Anton; font-size:44px; margin-bottom:18px; }
+.player .name { font-family:Anton; font-size:118px; line-height:.95; text-transform:uppercase; }
+.player .team { font-size:30px; color:var(--muted); margin-top:6px; }
+.rating { position:absolute; right:0; top:0; width:200px; height:200px; border-radius:24px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.rating .n { font-family:Anton; font-size:96px; line-height:1; }
+.rating .l { font-size:22px; letter-spacing:2px; }
+.stats { margin-top:30px; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.stat { background:var(--panel); border-radius:14px; padding:18px 22px; border-left:6px solid var(--violet); }
+.stat .sv { font-family:Anton; font-size:58px; line-height:1; }
+.stat .sl { font-size:22px; color:var(--lilac); margin-top:6px; }
+.counter { font-family:Anton; font-size:260px; line-height:1; color:var(--violet); }
+.unit { font-family:Anton; font-size:80px; color:var(--paper); margin-left:12px; }
+.sub { font-size:34px; color:var(--lilac); line-height:1.35; margin-top:10px; }
+#captions { left:40px; top:1408px; width:1000px; height:104px; display:flex; align-items:center; justify-content:center; text-align:center; font-family:Anton; font-size:58px; text-transform:uppercase; line-height:1.05; z-index:5; }
+#captions .w { opacity:.55; margin:0 8px; display:inline-block; }
+#captions .w.on { opacity:1; color:var(--paper); }
+#captions .w.now { color:var(--violet); opacity:1; }
+#presenter { left:190px; top:790px; width:700px; height:760px; z-index:3; }
+.stamp { position:absolute; right:10px; top:400px; border:10px solid #f2c230; color:#f2c230; font-family:Anton; font-size:120px; padding:6px 30px; line-height:1; text-transform:uppercase; border-radius:16px; background:rgba(13,10,20,.55); }
+#flash { inset:0; background:#ff2a2a; opacity:0; mix-blend-mode:screen; z-index:9; }
+#poster { inset:0; z-index:10; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid" class="abs"></div>
+  <div id="slab" class="abs"></div>
+  <div id="cards" class="abs"></div>
+  <div id="presenter" class="abs"></div>
+  <div id="captions" class="abs"></div>
+  <div id="vignette" class="abs"></div>
+  <div id="wordmark" class="abs">THE SCOUT <b>BRIEF</b>™</div>
+  <div id="pill" class="abs"></div>
+  <div id="handle" class="abs">@thescoutbrief</div>
+  <div id="source" class="abs"></div>
+  <div id="flash" class="abs"></div>
+</div>
+<script type="module">
+import { createPresenter, emotionAt, slamAt, fistAt } from "/presenter/presenter.js";
+
+const q = new URLSearchParams(location.search);
+const dir = q.get("reel");
+const [reel, timing, mouth] = await Promise.all(
+  ["reel.json", "timing.json", "mouth.json"].map((f) => fetch(`/${dir}/${f}`).then((r) => r.json())));
+const FPS = 30;
+const beats = reel.beats.map((b, i) => ({ ...b, ...timing.beats[i] }));
+const DUR = timing.duration;
+
+// ---------- helpers ----------
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const p = (t, a, b) => clamp((t - a) / (b - a));
+const expo = (x) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x));
+const cubic = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const back = (x) => { const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+const hl = (s) => esc(s).replace(/\*(.+?)\*/g, '<span class="hl">$1</span>');   // *word* = violet
+
+// ---------- chrome ----------
+const m = reel.match || {};
+document.getElementById("pill").textContent = m.pill || [m.home, m.score, m.away].filter(Boolean).join(" ");
+const sourceEl = document.getElementById("source");
+
+// ---------- cards ----------
+// card windows: a beat's card stays until a later beat brings a new one
+const cardsEl = document.getElementById("cards");
+const shots = [];
+beats.forEach((b, i) => {
+  if (!b.card) return;
+  const prevEnd = shots.length ? null : 0;
+  shots.push({ beat: i, start: Math.max(0, b.start - 0.25), card: b.card });
+});
+shots.forEach((s, i) => (s.end = i + 1 < shots.length ? shots[i + 1].start : DUR + 1));
+
+function build(c) {
+  const d = document.createElement("div");
+  d.className = "card";
+  const kick = c.kicker ? `<div class="kicker">${esc(c.kicker)}</div>` : "";
+  if (c.type === "hook" || c.type === "outro") {
+    const lines = c.text.split("\n").map((l) => `<span class="mask"><span>${hl(l)}</span></span>`).join("");
+    d.innerHTML = `${kick}<div class="big" style="font-size:${c.size || 150}px">${lines}</div>`;
+  } else if (c.type === "banter") {
+    const lines = c.text.split("\n").map((l) => `<span class="mask"><span>${hl(l)}</span></span>`).join("");
+    d.innerHTML = `<div class="kicker" style="background:#f2c230">${esc(c.kicker || "BANTER ALERT")}</div><div class="big" style="font-size:${c.size || 130}px">${lines}</div>${c.stamp ? `<div class="stamp">${esc(c.stamp)}</div>` : ""}<div class="sub">${hl(c.sub || "")}</div>`;
+  } else if (c.type === "compare") {
+    const rows = c.rows.map((r) => `<div class="row"><div class="lab">${esc(r.label)}</div><div class="bars"><div class="v">${esc(r.fa ?? r.a)}</div><div class="track"><div class="half"><div class="a"></div></div><div class="half"><div class="b"></div></div></div><div class="v r">${esc(r.fb ?? r.b)}</div></div></div>`).join("");
+    d.innerHTML = `${kick}<div class="panel" style="margin-top:20px"><div class="teamhead"><span style="color:var(--violet)">${esc(c.teams[0])}</span><span style="color:var(--lilac)">${esc(c.teams[1])}</span></div>${rows}</div>`;
+  } else if (c.type === "player") {
+    const good = c.verdict !== "worst";
+    const col = good ? "var(--good)" : "var(--bad)";
+    const stats = (c.stats || []).map(([l, v]) => `<div class="stat" style="border-color:${col}"><div class="sv">${esc(v)}</div><div class="sl">${esc(l)}</div></div>`).join("");
+    d.innerHTML = `<div class="kicker" style="background:${col}">${esc(c.kicker || (good ? "BEST ON THE PITCH" : "WORST ON THE PITCH"))}</div>
+      <div class="player" style="position:relative;margin-top:26px">
+        <div class="name">${(c.name || "").split(" ").map((w) => `<span class="mask"><span>${esc(w)}</span></span>`).join("")}</div>
+        <div class="team">${esc(c.team || "")}</div>
+        ${c.rating != null ? `<div class="rating" style="background:${col};color:var(--ink)"><div class="n">${esc(c.rating)}</div><div class="l">${esc(c.ratingLabel || "RATING")}</div></div>` : ""}
+      </div><div class="stats">${stats}</div>`;
+  } else if (c.type === "stat") {
+    d.innerHTML = `${kick}<div style="margin-top:30px"><span class="counter">0</span><span class="unit">${esc(c.unit || "")}</span></div><div class="ctitle" style="font-size:60px">${hl(c.label || "")}</div><div class="sub">${hl(c.sub || "")}</div>`;
+  } else if (c.type === "formation") {
+    d.innerHTML = `${kick}<div class="ctitle">${hl(c.title || "")}</div><svg class="pitch" viewBox="0 0 960 470" width="960" height="470"></svg>`;
+  }
+  cardsEl.appendChild(d);
+  return d;
+}
+shots.forEach((s) => (s.el = build(s.card)));
+
+// formation: list of [x,y] in a 0..1 box for "4-3-3" etc. (own goal at left)
+function formation(str) {
+  const rows = str.split("-").map(Number);
+  const pts = [[0.06, 0.5]];
+  rows.forEach((n, r) => {
+    const x = 0.2 + (r * 0.72) / Math.max(1, rows.length - 1) * 0.95;
+    for (let k = 0; k < n; k++) pts.push([x, n === 1 ? 0.5 : 0.12 + (k * 0.76) / (n - 1)]);
+  });
+  return pts;
+}
+function drawPitch(s, t) {
+  const svg = s.el.querySelector("svg.pitch");
+  if (!svg.dataset.init) {
+    svg.innerHTML = `<rect x="2" y="2" width="956" height="466" rx="14" fill="#122019" stroke="#2f5a43" stroke-width="3"/>
+      <line x1="480" y1="2" x2="480" y2="468" stroke="#2f5a43" stroke-width="3"/><circle cx="480" cy="235" r="60" fill="none" stroke="#2f5a43" stroke-width="3"/>
+      <rect x="2" y="120" width="110" height="230" fill="none" stroke="#2f5a43" stroke-width="3"/><rect x="848" y="120" width="110" height="230" fill="none" stroke="#2f5a43" stroke-width="3"/>
+      <text class="ftxt" x="940" y="50" text-anchor="end" font-family="Anton" font-size="46" fill="#f4f1ff"></text>`;
+    for (let i = 0; i < 11; i++) svg.insertAdjacentHTML("beforeend", `<circle class="dot" r="20" fill="#8b5cf6" stroke="#f4f1ff" stroke-width="4"/>`);
+    svg.dataset.init = 1;
+  }
+  const A = formation(s.card.before), B = formation(s.card.after || s.card.before);
+  const k = cubic(p(t, s.start + 1.4, s.start + 2.4));
+  svg.querySelector(".ftxt").textContent = k < 0.5 ? s.card.before : s.card.after;
+  svg.querySelectorAll(".dot").forEach((c, i) => {
+    const a = A[i] || A[0], b = B[i] || B[0];
+    c.setAttribute("cx", 20 + (a[0] + (b[0] - a[0]) * k) * 900);
+    c.setAttribute("cy", 20 + (a[1] + (b[1] - a[1]) * k) * 430);
+    c.setAttribute("opacity", p(t, s.start + 0.2 + i * 0.04, s.start + 0.5 + i * 0.04));
+  });
+}
+
+function drawCard(s, t) {
+  const inK = expo(p(t, s.start, s.start + 0.45));
+  const outK = cubic(p(t, s.end - 0.3, s.end));
+  const on = t >= s.start && t < s.end;
+  s.el.style.opacity = on ? 1 - outK : 0;
+  s.el.style.transform = `translateY(${(1 - inK) * 160 - outK * 140}px)`;
+  if (!on) return;
+  const c = s.card;
+  s.el.querySelectorAll(".mask > span").forEach((sp, i) => {
+    const k = expo(p(t, s.start + 0.1 + i * 0.09, s.start + 0.55 + i * 0.09));
+    sp.style.transform = `translateY(${(1 - k) * 110}%)`;
+    sp.style.opacity = k > 0.01 ? 1 : 0;
+  });
+  if (c.type === "compare") {
+    s.el.querySelectorAll(".row").forEach((row, i) => {
+      const r = c.rows[i], tot = (Number(r.a) + Number(r.b)) || 1;
+      const k = expo(p(t, s.start + 0.4 + i * 0.25, s.start + 1.2 + i * 0.25));
+      row.querySelector(".a").style.width = `${(Number(r.a) / tot) * 100 * k}%`;
+      row.querySelector(".b").style.width = `${(Number(r.b) / tot) * 100 * k}%`;
+      row.style.opacity = p(t, s.start + 0.3 + i * 0.25, s.start + 0.5 + i * 0.25);
+    });
+  }
+  if (c.type === "stat") {
+    const k = expo(p(t, s.start + 0.2, s.start + 1.4));
+    const v = Number(c.value) * k, dec = c.decimals ?? (String(c.value).split(".")[1] || "").length;
+    s.el.querySelector(".counter").textContent = v.toFixed(dec);
+  }
+  if (c.type === "player") {
+    const r = s.el.querySelector(".rating");
+    if (r) { const k = back(p(t, s.start + 0.6, s.start + 1.0)); r.style.transform = `scale(${k}) rotate(${(1 - k) * -20 + 4}deg)`; }
+    s.el.querySelectorAll(".stat").forEach((st, i) => {
+      const k = expo(p(t, s.start + 0.9 + i * 0.15, s.start + 1.3 + i * 0.15));
+      st.style.opacity = k; st.style.transform = `translateX(${(1 - k) * 60}px)`;
+    });
+  }
+  if (c.type === "formation") drawPitch(s, t);
+  if (c.type === "banter") {
+    const st = s.el.querySelector(".stamp");
+    if (st) { const k = p(t, s.start + 0.9, s.start + 1.1); st.style.opacity = k > 0 ? 1 : 0; st.style.transform = `rotate(-12deg) scale(${1 + (1 - k) * 1.6})`; }
+  }
+  sourceEl.textContent = c.source ? `Source: ${c.source}` : "";
+}
+
+// ---------- captions (word timing spread across the line by length) ----------
+const capEl = document.getElementById("captions");
+const capChunks = beats.map((b) => {
+  const words = (b.caption || b.say).split(/\s+/).filter(Boolean);
+  const total = words.reduce((a, w) => a + w.length + 2, 0);
+  let acc = 0;
+  const timed = words.map((w) => { const s0 = b.start + (acc / total) * (b.end - b.start); acc += w.length + 2; return { w, s0 }; });
+  const chunks = [];
+  for (let i = 0; i < timed.length; i += 4) chunks.push(timed.slice(i, i + 4));
+  return chunks;
+});
+let capKey = "";
+function drawCaptions(t) {
+  let html = "", key = "";
+  beats.forEach((b, i) => {
+    if (t < b.start - 0.05 || t > b.end + 0.25) return;
+    const ch = capChunks[i];
+    let idx = 0;
+    ch.forEach((c, j) => { if (t >= c[0].s0 - 0.05) idx = j; });
+    const c = ch[idx];
+    key = i + ":" + idx + ":" + c.filter((w) => t >= w.s0).length;
+    html = c.map((w, k) => {
+      const next = c[k + 1] ? c[k + 1].s0 : b.end;
+      const cls = t >= w.s0 ? (t < next ? "w now" : "w on") : "w";
+      return `<span class="${cls}">${esc(w.w)}</span>`;
+    }).join("");
+  });
+  if (key !== capKey) { capEl.innerHTML = html; capKey = key; }
+}
+
+// ---------- presenter ----------
+const pres = createPresenter(document.getElementById("presenter"));
+const cues = [];
+const slams = [];
+beats.forEach((b) => {
+  cues.push([Math.max(0, b.start - 0.15), b.emotion || "neutral"]);
+  (b.emote || []).forEach(([dt, name]) => cues.push([b.start + dt, name]));
+  (b.slam || []).forEach((dt) => slams.push(b.start + dt));
+  if ((b.emotion === "furious") && !b.slam) slams.push(b.start + 0.35);
+});
+cues.sort((a, b) => a[0] - b[0]);
+const flash = document.getElementById("flash");
+
+window.seek = (t) => {
+  for (const s of shots) drawCard(s, t);
+  drawCaptions(t);
+  const f = Math.min(mouth.length - 1, Math.max(0, Math.round(t * FPS)));
+  const emo = emotionAt(cues, t);
+  const slam = slamAt(slams, t);
+  pres.draw({ t, emo, mouth: mouth[f] || 0, slam, fistY: fistAt(slams, t) });
+  // camera: punch on slams, gentle push while angry
+  const stage = document.getElementById("stage");
+  const sh = slam * 14;
+  document.getElementById("cards").style.translate = `${Math.sin(t * 80) * sh}px ${Math.abs(sh) * 0.5}px`;
+  flash.style.opacity = Math.max(0, slam) * 0.22 + Math.max(0, emo.red - 0.5) * 0.12;
+};
+window.DUR = DUR;
+await document.fonts.ready;
+window.seek(0);
+window.ready = true;
+</script>
+</body>
+</html>

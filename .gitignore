@@ -1,0 +1,11 @@
+node_modules/
+models/
+reels/*/out/
+reels/*/audio/
+data/matches/*/*.json
+!data/matches/*/insights.json
+__pycache__/
+scout-presenter-demo.mp4
+scout-banter-demo.mp4
+scout-gorilla-*.mp4
+voice-samples/
