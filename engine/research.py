@@ -2,7 +2,7 @@
 
 Needs: FIRECRAWL_API_KEY, and api.firecrawl.dev allowed in the cloud environment.
 
-  python3 engine/research.py search "Arsenal injury news" [--limit 5] [--days 3]
+  python3 engine/research.py search "Arsenal injury news" [--limit 5] [--days 3] [--site bbc.co.uk]
   python3 engine/research.py scrape https://www.bbc.co.uk/sport/football/...
   python3 engine/research.py usage
 
@@ -99,9 +99,11 @@ def cmd_scrape(url):
     print((d.get("markdown") or "")[:6000])
 
 
-def cmd_search(query, limit, days):
+def cmd_search(query, limit, days, site=None):
     check_budget(limit * COST["search_result"])
-    body = {"query": query, "limit": limit, "includeDomains": TRUSTED}
+    if site and not trusted("https://" + site):
+        sys.exit(f"Refused: {site} is not in research.trusted_domains")
+    body = {"query": query, "limit": limit, "includeDomains": [site] if site else TRUSTED}
     if days:
         body["tbs"] = f"qdr:{'d' if days == 1 else 'w' if days <= 7 else 'm'}"
     resp = call("search", body)
@@ -123,8 +125,8 @@ def cmd_usage():
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
-    s = sub.add_parser("search"); s.add_argument("query"); s.add_argument("--limit", type=int, default=5); s.add_argument("--days", type=int, default=0)
+    s = sub.add_parser("search"); s.add_argument("query"); s.add_argument("--limit", type=int, default=5); s.add_argument("--days", type=int, default=0); s.add_argument("--site", help="search one trusted site only, e.g. kicker.de")
     c = sub.add_parser("scrape"); c.add_argument("url")
     sub.add_parser("usage")
     a = ap.parse_args()
-    {"search": lambda: cmd_search(a.query, a.limit, a.days), "scrape": lambda: cmd_scrape(a.url), "usage": cmd_usage}[a.cmd]()
+    {"search": lambda: cmd_search(a.query, a.limit, a.days, a.site), "scrape": lambda: cmd_scrape(a.url), "usage": cmd_usage}[a.cmd]()

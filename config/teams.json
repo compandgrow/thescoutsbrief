@@ -162,7 +162,7 @@
  "research": {
   "provider": "firecrawl",
   "monthly_credit_budget": 800,
-  "note": "Free tier = 1,000 credits/month; budget leaves headroom. Stats sites that forbid scraping (WhoScored, SofaScore, FotMob, FBref, Understat) are deliberately not listed.",
+  "note": "Free tier = 1,000 credits/month; budget leaves headroom. Not listed on purpose (terms forbid scraping or rumour-heavy): WhoScored, SofaScore, FotMob, FBref, Understat, Transfermarkt, gossip tabloids.",
   "trusted_domains": [
    "bbc.co.uk",
    "bbc.com",
@@ -187,7 +187,39 @@
    "fcbarcelona.com",
    "fcbayern.com",
    "atleticodemadrid.com",
-   "psg.fr"
-  ]
+   "psg.fr",
+   "thefa.com",
+   "efl.com",
+   "rfef.es",
+   "dfb.de",
+   "fff.fr",
+   "fifa.com",
+   "independent.co.uk",
+   "theanalyst.com",
+   "nytimes.com",
+   "kicker.de",
+   "lequipe.fr",
+   "rmcsport.bfmtv.com",
+   "marca.com",
+   "as.com",
+   "mundodeportivo.com",
+   "relevo.com"
+  ],
+  "domain_rules": {
+   "quotes_and_confirmed_news_only": [
+    "marca.com",
+    "as.com",
+    "mundodeportivo.com",
+    "relevo.com"
+   ],
+   "player_grades_ok_with_credit": {
+    "kicker.de": "German grades 1 (best) to 6 (worst)",
+    "lequipe.fr": "French notes out of 10"
+   },
+   "paywalled_may_be_partial": [
+    "nytimes.com"
+   ],
+   "never_use_for": "transfer rumours from any site"
+  }
  }
 }

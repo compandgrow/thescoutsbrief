@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 21,
+  "credits": 27,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -75,6 +75,31 @@
    {
     "at": "2026-10-27T07:29:40Z",
     "what": "scrape https://www.bbc.com/sport/football/live/cj3vqz410y42t",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-27T07:35:04Z",
+    "what": "search kicker Freiburg Bayern Spielbericht Noten",
+    "credits": 0
+   },
+   {
+    "at": "2026-10-27T07:35:11Z",
+    "what": "search SC Freiburg FC Bayern kicker",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-27T07:35:24Z",
+    "what": "search Freiburg Bayern Noten",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-27T07:35:39Z",
+    "what": "scrape https://www.kicker.de/freiburg-gegen-bayern-2026-bundesliga-5226867/spielinfo",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-27T07:35:48Z",
+    "what": "scrape https://www.kicker.de/freiburg-gegen-bayern-2026-bundesliga-5226867/schema",
     "credits": 1
    }
   ]
