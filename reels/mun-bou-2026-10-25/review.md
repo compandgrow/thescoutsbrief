@@ -14,7 +14,7 @@ Labelled "Scout's pick" because no player ratings are available without PitchAPI
 
 Watched (fps 0.5 sheet + 8 probe stills): no clipped text, cards match the spoken topic, first frame shows the hook card (cover), emotions match beats (shocked → disappointed → neutral → excited → angry → furious → disappointed → smug).
 Tone: favourite lost → no banter ✓; anger aimed at performance numbers, no personal insults ✓.
-Specs: 1080x1920, H.264 + AAC, 59.6 s, -14.3 LUFS ✓ (re-voiced 2026-10-28: young streamer voice "Echo", expressive delivery)
+Specs: 1080x1920, H.264 + AAC, 59.1 s, -14.4 LUFS ✓ (re-voiced 2026-10-28: pure Echo voice, no pitch processing)
 Caption: all claims match the reel ✓
 
 Weakest point: best/worst are judgement calls from shot data and events, not ratings.
