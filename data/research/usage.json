@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 60,
+  "credits": 63,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -264,6 +264,21 @@
    },
    {
     "at": "2026-10-28T17:48:59Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401917035/1-fc-magdeburg-bayern-munich",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T23:48:44Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T23:48:45Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401921834/brighton-hove-albion-manchester-city",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T23:48:45Z",
     "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401917035/1-fc-magdeburg-bayern-munich",
     "credits": 1
    }
