@@ -1,0 +1,14 @@
+{
+ "id": "voice-test",
+ "match": { "pill": "VOICE TEST" },
+ "beats": [
+  { "say": "Six hundred and forty-nine passes, and not one big chance.", "emotion": "neutral",
+    "card": { "type": "hook", "kicker": "1 · CALM", "text": "CALM", "source": "" } },
+  { "say": "Six hundred and forty-nine passes, and not one big chance!", "emotion": "furious",
+    "card": { "type": "hook", "kicker": "2 · FURIOUS", "text": "*FURIOUS*", "source": "" } },
+  { "say": "Six hundred and forty-nine passes, and not one big chance.", "emotion": "disappointed",
+    "card": { "type": "hook", "kicker": "3 · DISAPPOINTED", "text": "GUTTED", "source": "" } },
+  { "say": "Ha! Six hundred and forty-nine passes, and not one big chance!", "emotion": "laughing",
+    "card": { "type": "hook", "kicker": "4 · LAUGHING", "text": "BANTER", "source": "" } }
+ ]
+}
