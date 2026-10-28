@@ -125,15 +125,23 @@ def indextts_beats(beats, icfg, out_dir):
         return None
     tmp = os.path.join(out_dir, "audio/indextts")
     os.makedirs(tmp, exist_ok=True)
+    import hashlib
+    ref_id = hashlib.sha1(open(speaker, "rb").read()).hexdigest()[:8]
     jobs = []
     for i, b in enumerate(beats):
         emo = b.get("emotion", "neutral")
-        jobs.append({"text": b["say"], "out": os.path.join(tmp, f"beat_{i:02d}.wav"),
-                     "emo_vector": b.get("emo_vector", EMO_VECTOR.get(emo, EMO_VECTOR["neutral"])),
-                     "emo_alpha": b.get("emo_alpha", icfg.get("emo_alpha", 0.9))})
-    spec = os.path.join(tmp, "jobs.json")
-    json.dump({"model_dir": model_dir, "speaker": speaker, "jobs": jobs}, open(spec, "w"), indent=1)
-    subprocess.run([py, os.path.join(ROOT, "engine/indextts_worker.py"), spec], check=True)
+        job = {"text": b["say"], "emo_vector": b.get("emo_vector", EMO_VECTOR.get(emo, EMO_VECTOR["neutral"])),
+               "emo_alpha": b.get("emo_alpha", icfg.get("emo_alpha", 0.9))}
+        # cache: a line is only re-generated when its text, emotion or the reference voice changes
+        key = hashlib.sha1(json.dumps([job, ref_id], sort_keys=True).encode()).hexdigest()[:12]
+        job["out"] = os.path.join(tmp, f"line_{key}.wav")
+        jobs.append(job)
+    todo = [j for j in jobs if not os.path.exists(j["out"])]
+    print(f"IndexTTS: {len(jobs) - len(todo)} lines reused, {len(todo)} to generate")
+    if todo:
+        spec = os.path.join(tmp, "jobs.json")
+        json.dump({"model_dir": model_dir, "speaker": speaker, "jobs": todo}, open(spec, "w"), indent=1)
+        subprocess.run([py, os.path.join(ROOT, "engine/indextts_worker.py"), spec], check=True)
     out = []
     for j in jobs:
         a, sr = sf.read(j["out"])
