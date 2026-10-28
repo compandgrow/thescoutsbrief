@@ -26,7 +26,7 @@ def sh(*cmd, cwd=None):
 def media_worktree():
     wt = os.path.join(tempfile.gettempdir(), "scout-media-wt")
     if not os.path.isdir(wt):
-        sh("git", "fetch", "-q", "origin", "media", cwd=ROOT)
+        sh("git", "fetch", "-q", "origin", "+refs/heads/media:refs/remotes/origin/media", cwd=ROOT)
         sh("git", "worktree", "add", "-q", "-B", "media", wt, "origin/media", cwd=ROOT)
     else:
         sh("git", "pull", "-q", "origin", "media", cwd=wt)
