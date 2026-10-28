@@ -26,6 +26,7 @@ Favourites and banter (see `config/teams.json`)
 Rules
 - `say` is what the voice reads: spell numbers as words ("two point one expected goals", "sixty-one minutes"). Card values stay numeric.
 - Every number in `say` and on cards must match `insights.json` exactly. Put the `source` (short, e.g. "PitchAPI match data") on every card.
+- `match.league` sets the colour theme: `PL` (purple), `LALIGA` (blue), `BUNDESLIGA` (orange); any other competition (Ligue 1, Champions League, cups) uses the default purple. Themes live in `config/teams.json` → `league_themes`.
 - `match.pill` = "LIV 2–1 MCI · PL" style. voice comes from `config/teams.json` → `voice` (leave `voice` out of reel.json). Use `*word*` in card text to highlight in violet.
 - Optional per beat: `hit: true` (impact sound), `slam: [seconds]` (desk slam), `emote: [[seconds, "emotion"]]` for a change mid-line, `pause_after` seconds.
 - Emotions available: neutral, smug, happy, excited, shocked, disappointed, angry, furious.

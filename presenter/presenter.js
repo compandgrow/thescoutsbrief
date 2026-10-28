@@ -38,24 +38,27 @@ function el(tag, attrs = {}, parent) {
   return e;
 }
 
+const DEFAULT_THEME = { accent: "#8b5cf6", suit: ["#241a38", "#140f20"], desk: ["#2a1f45", "#130e1f"], lapel: "#1b1430" };
+
 export function createPresenter(container, opts = {}) {
+  const T = { ...DEFAULT_THEME, ...(opts.theme || {}) };
   const W = 700, H = 760;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: "100%", height: "100%", style: "overflow:visible" });
   container.appendChild(svg);
   const defs = el("defs", {}, svg);
   const suitGrad = el("linearGradient", { id: "suit", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
-  el("stop", { offset: 0, "stop-color": "#241a38" }, suitGrad);
-  el("stop", { offset: 1, "stop-color": "#140f20" }, suitGrad);
+  el("stop", { offset: 0, "stop-color": T.suit[0] }, suitGrad);
+  el("stop", { offset: 1, "stop-color": T.suit[1] }, suitGrad);
   const deskGrad = el("linearGradient", { id: "desk", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
-  el("stop", { offset: 0, "stop-color": "#2a1f45" }, deskGrad);
-  el("stop", { offset: 1, "stop-color": "#130e1f" }, deskGrad);
+  el("stop", { offset: 0, "stop-color": T.desk[0] }, deskGrad);
+  el("stop", { offset: 1, "stop-color": T.desk[1] }, deskGrad);
   const glow = el("radialGradient", { id: "rage", cx: 0.5, cy: 0.5, r: 0.5 }, defs);
   el("stop", { offset: 0, "stop-color": "#ff3b2f", "stop-opacity": 0.55 }, glow);
   el("stop", { offset: 1, "stop-color": "#ff3b2f", "stop-opacity": 0 }, glow);
 
   const back = el("radialGradient", { id: "backlight", cx: 0.5, cy: 0.5, r: 0.5 }, defs);
-  el("stop", { offset: 0, "stop-color": "#8b5cf6", "stop-opacity": 0.38 }, back);
-  el("stop", { offset: 1, "stop-color": "#8b5cf6", "stop-opacity": 0 }, back);
+  el("stop", { offset: 0, "stop-color": T.accent, "stop-opacity": 0.38 }, back);
+  el("stop", { offset: 1, "stop-color": T.accent, "stop-opacity": 0 }, back);
   el("ellipse", { cx: 350, cy: 300, rx: 300, ry: 280, fill: "url(#backlight)" }, svg);
   const rageGlow = el("ellipse", { cx: 350, cy: 300, rx: 330, ry: 300, fill: "url(#rage)", opacity: 0 }, svg);
 
@@ -64,11 +67,11 @@ export function createPresenter(container, opts = {}) {
   const FUR = "#24202a", FUR_HI = "#3a3442", MUZZLE = "#8c8191";
   // torso: big gorilla shoulders in a suit
   const torso = el("g", {}, fig);
-  el("path", { d: "M30 760 C30 560 150 470 350 470 C550 470 670 560 670 760 Z", fill: "url(#suit)", stroke: "#8b5cf6", "stroke-opacity": 0.4, "stroke-width": 4 }, torso);
+  el("path", { d: "M30 760 C30 560 150 470 350 470 C550 470 670 560 670 760 Z", fill: "url(#suit)", stroke: T.accent, "stroke-opacity": 0.4, "stroke-width": 4 }, torso);
   el("path", { d: "M290 478 L350 610 L410 478 Z", fill: "#f4f1ff" }, torso);              // shirt
-  el("path", { d: "M336 500 L364 500 L376 650 L350 682 L324 650 Z", fill: "#8b5cf6" }, torso); // tie
-  el("path", { d: "M290 478 L350 610 L245 560 Z M410 478 L350 610 L455 560 Z", fill: "#1b1430" }, torso); // lapels
-  el("circle", { cx: 500, cy: 610, r: 15, fill: "#8b5cf6" }, torso);                       // badge
+  el("path", { d: "M336 500 L364 500 L376 650 L350 682 L324 650 Z", fill: T.accent }, torso); // tie
+  el("path", { d: "M290 478 L350 610 L245 560 Z M410 478 L350 610 L455 560 Z", fill: T.lapel }, torso); // lapels
+  el("circle", { cx: 500, cy: 610, r: 15, fill: T.accent }, torso);                       // badge
   el("circle", { cx: 500, cy: 610, r: 6, fill: "#0d0a14" }, torso);
   // fur poking out of the collar
   el("path", { d: "M262 482 C280 470 300 492 318 474 C334 492 352 466 370 482 C386 466 404 490 420 474 C430 486 440 480 446 484 L430 500 L272 500 Z", fill: FUR }, torso);
@@ -76,7 +79,7 @@ export function createPresenter(container, opts = {}) {
   // head group (tilt applied here)
   const head = el("g", {}, fig);
   // fur skull with sagittal crest
-  el("path", { d: "M350 52 C392 52 420 80 440 104 C510 128 540 200 540 290 C540 410 470 492 350 492 C230 492 160 410 160 290 C160 200 190 128 260 104 C280 80 308 52 350 52 Z", fill: FUR, stroke: "#8b5cf6", "stroke-opacity": 0.55, "stroke-width": 5 }, head);
+  el("path", { d: "M350 52 C392 52 420 80 440 104 C510 128 540 200 540 290 C540 410 470 492 350 492 C230 492 160 410 160 290 C160 200 190 128 260 104 C280 80 308 52 350 52 Z", fill: FUR, stroke: T.accent, "stroke-opacity": 0.55, "stroke-width": 5 }, head);
   // fur tufts
   for (const [x1, y1, x2, y2] of [[300, 70, 320, 112], [350, 58, 352, 104], [400, 70, 382, 112], [200, 180, 228, 206], [500, 180, 472, 206], [180, 330, 206, 340], [520, 330, 494, 340]])
     el("path", { d: `M${x1} ${y1} Q${(x1 + x2) / 2 + 6} ${(y1 + y2) / 2} ${x2} ${y2}`, fill: "none", stroke: FUR_HI, "stroke-width": 6, "stroke-linecap": "round" }, head);
@@ -90,7 +93,7 @@ export function createPresenter(container, opts = {}) {
   el("rect", { x: 150, y: 262, width: 38, height: 72, rx: 15, fill: "#0d0a14" }, head);
   el("rect", { x: 512, y: 262, width: 38, height: 72, rx: 15, fill: "#0d0a14" }, head);
   el("path", { d: "M170 330 C176 420 222 450 262 452", fill: "none", stroke: "#0d0a14", "stroke-width": 7, "stroke-linecap": "round" }, head);
-  el("circle", { cx: 266, cy: 452, r: 11, fill: "#8b5cf6" }, head);
+  el("circle", { cx: 266, cy: 452, r: 11, fill: T.accent }, head);
 
   const blushL = el("ellipse", { cx: 262, cy: 366, rx: 26, ry: 13, fill: "#d27a8c" }, head);
   const blushR = el("ellipse", { cx: 438, cy: 366, rx: 26, ry: 13, fill: "#d27a8c" }, head);
@@ -146,12 +149,12 @@ export function createPresenter(container, opts = {}) {
   const deskG = el("g", {}, svg);
   const fistL = el("g", {}, deskG), fistR = el("g", {}, deskG);
   for (const f of [fistL, fistR]) {
-    el("rect", { x: -62, y: -44, width: 124, height: 80, rx: 34, fill: "#1b1430" }, f);      // sleeve
+    el("rect", { x: -62, y: -44, width: 124, height: 80, rx: 34, fill: T.lapel }, f);      // sleeve
     el("path", { d: "M-58 -46 C-50 -64 50 -64 58 -46 L54 -38 L-54 -38 Z", fill: FUR }, f);  // fur at the cuff
     el("rect", { x: -56, y: -100, width: 112, height: 78, rx: 30, class: "skin" }, f);
     for (const dx of [-28, 0, 28]) el("path", { d: `M${dx} -98 L${dx} -70`, stroke: "#2e2833", "stroke-width": 5, "stroke-linecap": "round" }, f);
   }
-  const deskTop = el("rect", { x: -220, y: 600, width: W + 440, height: 26, rx: 6, fill: "#8b5cf6" }, deskG);
+  const deskTop = el("rect", { x: -220, y: 600, width: W + 440, height: 26, rx: 6, fill: T.accent }, deskG);
   const deskFront = el("rect", { x: -220, y: 624, width: W + 440, height: 140, fill: "url(#desk)" }, deskG);
 
   const skins = () => [face, earL, earR, eyeL.lid, eyeR.lid, ...svg.querySelectorAll(".skin")];

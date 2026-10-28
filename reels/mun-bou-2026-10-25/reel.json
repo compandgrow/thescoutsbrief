@@ -1,7 +1,8 @@
 {
  "id": "mun-bou-2026-10-25",
  "match": {
-  "pill": "MUN 0–3 BOU · PL"
+  "pill": "MUN 0–3 BOU · PL",
+  "league": "PL"
  },
  "beats": [
   {

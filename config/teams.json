@@ -208,5 +208,83 @@
    ],
    "never_use_for": "transfer rumours from any site"
   }
+ },
+ "league_themes": {
+  "note": "reel.json -> match.league picks the theme. Anything else (Ligue 1, Champions League, cups) uses 'default'.",
+  "aliases": {
+   "PL": [
+    "PL",
+    "EPL",
+    "Premier League",
+    "Premier-League"
+   ],
+   "LALIGA": [
+    "LALIGA",
+    "La Liga",
+    "LaLiga",
+    "Liga BBVA",
+    "Primera Division"
+   ],
+   "BUNDESLIGA": [
+    "BUNDESLIGA",
+    "Bundesliga",
+    "BL1"
+   ]
+  },
+  "PL": {
+   "name": "Premier League",
+   "ink": "#0d0a14",
+   "panel": "#161021",
+   "accent": "#8b5cf6",
+   "soft": "#c4b5fd",
+   "muted": "#8e84a8",
+   "rgb": "139,92,246",
+   "suit": [
+    "#241a38",
+    "#140f20"
+   ],
+   "desk": [
+    "#2a1f45",
+    "#130e1f"
+   ],
+   "lapel": "#1b1430"
+  },
+  "LALIGA": {
+   "name": "LaLiga",
+   "ink": "#061430",
+   "panel": "#0b2047",
+   "accent": "#3b82f6",
+   "soft": "#93c5fd",
+   "muted": "#8aa3c9",
+   "rgb": "59,130,246",
+   "suit": [
+    "#14284f",
+    "#0a1631"
+   ],
+   "desk": [
+    "#15305f",
+    "#081631"
+   ],
+   "lapel": "#0f1f40"
+  },
+  "BUNDESLIGA": {
+   "name": "Bundesliga",
+   "ink": "#2a1104",
+   "panel": "#3a1906",
+   "accent": "#f97316",
+   "soft": "#fdba74",
+   "muted": "#d1a07c",
+   "rgb": "249,115,22",
+   "suit": [
+    "#3d1d08",
+    "#1f0e03"
+   ],
+   "desk": [
+    "#56270a",
+    "#260f02"
+   ],
+   "lapel": "#2f1505"
+  },
+  "default": "PL"
  }
 }

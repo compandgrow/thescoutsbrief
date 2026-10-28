@@ -7,16 +7,16 @@
 @font-face { font-family: Anton; src: url(/node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2); }
 @font-face { font-family: Plex; src: url(/node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-500-normal.woff2); }
 @font-face { font-family: InterTight; font-weight: 800; src: url(/node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2); }
-:root { --ink:#0d0a14; --panel:#161021; --violet:#8b5cf6; --lilac:#c4b5fd; --paper:#f4f1ff; --muted:#8e84a8; --good:#34d399; --bad:#f43f5e; }
+:root { --rgb:139,92,246; --ink:#0d0a14; --panel:#161021; --violet:#8b5cf6; --lilac:#c4b5fd; --paper:#f4f1ff; --muted:#8e84a8; --good:#34d399; --bad:#f43f5e; }
 html, body { margin:0; background:#000; }
-#stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:var(--ink); font-family:Plex; color:var(--paper); }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:radial-gradient(ellipse at 50% 38%, rgba(var(--rgb),.16), transparent 62%), var(--ink); font-family:Plex; color:var(--paper); }
 .abs { position:absolute; }
-#grid { inset:0; background-image: linear-gradient(rgba(139,92,246,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,.07) 1px, transparent 1px); background-size: 60px 60px; }
-#slab { left:-200px; top:640px; width:1600px; height:340px; background:linear-gradient(90deg, rgba(139,92,246,.0), rgba(139,92,246,.22), rgba(139,92,246,.0)); transform:rotate(-14deg); }
+#grid { inset:0; background-image: linear-gradient(rgba(var(--rgb),.07) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--rgb),.07) 1px, transparent 1px); background-size: 60px 60px; }
+#slab { left:-200px; top:640px; width:1600px; height:340px; background:linear-gradient(90deg, rgba(var(--rgb),.0), rgba(var(--rgb),.22), rgba(var(--rgb),.0)); transform:rotate(-14deg); }
 #vignette { inset:0; background: radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(0,0,0,.6) 100%); }
 #wordmark { left:60px; top:150px; font-family:InterTight; font-weight:800; font-size:34px; letter-spacing:2px; }
 #wordmark b { color:var(--violet); }
-#pill { right:60px; top:142px; border:2px solid var(--violet); border-radius:40px; padding:10px 22px; font-size:28px; letter-spacing:1px; background:rgba(139,92,246,.12); }
+#pill { right:60px; top:142px; border:2px solid var(--violet); border-radius:40px; padding:10px 22px; font-size:28px; letter-spacing:1px; background:rgba(var(--rgb),.12); }
 #handle { left:60px; top:1580px; z-index:6; font-size:26px; color:var(--muted); }
 #source { right:60px; top:1580px; z-index:6; font-size:22px; color:var(--muted); max-width:620px; text-align:right; }
 #cards { left:60px; top:250px; width:960px; height:640px; }
@@ -26,7 +26,7 @@ html, body { margin:0; background:#000; }
 .big .hl { color:var(--violet); }
 .mask { display:block; overflow:hidden; }
 .mask > span { display:inline-block; }
-.panel { background:var(--panel); border:2px solid rgba(139,92,246,.35); border-radius:18px; padding:24px 36px; }
+.panel { background:var(--panel); border:2px solid rgba(var(--rgb),.35); border-radius:18px; padding:24px 36px; }
 .ctitle { font-family:Anton; font-size:64px; text-transform:uppercase; line-height:1; margin:18px 0 26px; }
 .row { margin:0 0 14px; }
 .row .lab { font-size:26px; color:var(--lilac); letter-spacing:1px; text-align:center; margin-bottom:8px; }
@@ -97,6 +97,19 @@ const hl = (s) => esc(s).replace(/\*(.+?)\*/g, '<span class="hl">$1</span>');   
 
 // ---------- chrome ----------
 const m = reel.match || {};
+
+// ---------- league theme (config/teams.json -> league_themes) ----------
+const themes = (await fetch("/config/teams.json").then((r) => r.json())).league_themes || {};
+function themeKey(league) {
+  const want = String(league || "").toLowerCase();
+  for (const [key, names] of Object.entries(themes.aliases || {}))
+    if (names.some((n) => n.toLowerCase() === want)) return key;
+  return themes[league] ? league : themes.default;
+}
+const TH = themes[themeKey(m.league || m.competition)] || {};
+const rootStyle = document.documentElement.style;
+for (const [v, k] of [["--ink", "ink"], ["--panel", "panel"], ["--violet", "accent"], ["--lilac", "soft"], ["--muted", "muted"], ["--rgb", "rgb"]])
+  if (TH[k]) rootStyle.setProperty(v, TH[k]);
 document.getElementById("pill").textContent = m.pill || [m.home, m.score, m.away].filter(Boolean).join(" ");
 const sourceEl = document.getElementById("source");
 
@@ -161,7 +174,7 @@ function drawPitch(s, t) {
       <line x1="480" y1="2" x2="480" y2="468" stroke="#2f5a43" stroke-width="3"/><circle cx="480" cy="235" r="60" fill="none" stroke="#2f5a43" stroke-width="3"/>
       <rect x="2" y="120" width="110" height="230" fill="none" stroke="#2f5a43" stroke-width="3"/><rect x="848" y="120" width="110" height="230" fill="none" stroke="#2f5a43" stroke-width="3"/>
       <text class="ftxt" x="940" y="50" text-anchor="end" font-family="Anton" font-size="46" fill="#f4f1ff"></text>`;
-    for (let i = 0; i < 11; i++) svg.insertAdjacentHTML("beforeend", `<circle class="dot" r="20" fill="#8b5cf6" stroke="#f4f1ff" stroke-width="4"/>`);
+    for (let i = 0; i < 11; i++) svg.insertAdjacentHTML("beforeend", `<circle class="dot" r="20" fill="${getComputedStyle(document.documentElement).getPropertyValue('--violet').trim()}" stroke="#f4f1ff" stroke-width="4"/>`);
     svg.dataset.init = 1;
   }
   const A = formation(s.card.before), B = formation(s.card.after || s.card.before);
@@ -249,7 +262,7 @@ function drawCaptions(t) {
 }
 
 // ---------- presenter ----------
-const pres = createPresenter(document.getElementById("presenter"));
+const pres = createPresenter(document.getElementById("presenter"), { theme: { accent: TH.accent, suit: TH.suit, desk: TH.desk, lapel: TH.lapel } });
 const cues = [];
 const slams = [];
 beats.forEach((b) => {
