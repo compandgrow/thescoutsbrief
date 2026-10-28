@@ -4,7 +4,7 @@
   "handle": "thescoutbrief",
   "zernio_account_id": "6ad5bc58ea5889c95a4c443b"
  },
- "approval": "ask",
+ "approval": "auto",
  "post_delay_minutes": 60,
  "teams": [
   {

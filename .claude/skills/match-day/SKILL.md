@@ -21,12 +21,14 @@ Arguments: none (auto: every finished match that qualifies today), a match id (o
 | 5 | `producer` | `reels/<id>/out/reel.mp4` | renders, 25–65 s |
 | 6 | `reviewer` | `reels/<id>/review.md` | PASS. FIX → back to 4/5, max 2 rounds, then escalate |
 | 7 | approval | — | see below |
-| 8 | `publisher` | Zernio draft | only if upload works |
+| 8 | `publisher` | Zernio post (scheduled +60 min) | reviewer PASS only |
 
 Files are the hand-off between agents. Add each finished match to `data/state.json` → `done` (with `espn_id`), or `skipped` with the reason, so it is never made twice.
 
-## 2. Approval (config/teams.json → `approval`, default "ask")
-Nothing is published without the user. After PASS: send the MP4 + caption + review notes to the user (SendUserFile). If the Zernio upload works, the publisher also saves a **draft**; if the storage host is blocked, say so and leave the MP4 for manual posting.
+## 2. Approval (config/teams.json → `approval`, currently "auto")
+- `"auto"`: after PASS, the publisher uploads to Zernio and **schedules** the post `post_delay_minutes` (60) ahead. The user is notified with the MP4 and can cancel in Zernio within that hour. Only reels with a reviewer PASS are ever scheduled.
+- `"ask"`: the publisher saves a Zernio **draft** instead; the user publishes.
+- If the Zernio tools aren't available in the session, nothing is posted: send the MP4 + caption to the user and say so.
 
 ## 3. Finish
 - Commit and push to branch `scout-brief-v1`: `data/state.json`, `data/fixtures.json`, `data/queue.json`, `data/research/usage.json`, `data/matches/<id>/{insights.json,analysis.py,shots_espn.json,_web_sources.json,_overview.md}`, `reels/<id>/{reel.json,caption.txt,review.md,timing.json,mouth.json}`. Videos and audio stay out of git.
