@@ -21,15 +21,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #   speed  pace;  pitch  semitones (formants preserved, so it sounds like inflection, not an effect)
 #   gain   loudness;  pause  silence between sentences;  grit  0..1 vocal strain for anger
 STYLE = {
-    "neutral":      {"mix": {"am_onyx": 1.0},                    "speed": 1.06, "pitch":  0.0, "gain": 1.00, "pause": 0.16, "grit": 0},
-    "smug":         {"mix": {"am_onyx": 0.8, "am_puck": 0.2},     "speed": 0.96, "pitch": -0.7, "gain": 1.00, "pause": 0.30, "grit": 0},
-    "happy":        {"mix": {"am_onyx": 0.7, "am_puck": 0.3},     "speed": 1.08, "pitch":  1.0, "gain": 1.10, "pause": 0.20, "grit": 0},
-    "excited":      {"mix": {"am_onyx": 0.6, "am_fenrir": 0.4},   "speed": 1.13, "pitch":  1.8, "gain": 1.20, "pause": 0.16, "grit": 0},
-    "shocked":      {"mix": {"am_onyx": 0.7, "am_fenrir": 0.3},   "speed": 1.04, "pitch":  1.6, "gain": 1.15, "pause": 0.26, "grit": 0},
-    "disappointed": {"mix": {"am_onyx": 1.0},                    "speed": 0.94, "pitch": -1.6, "gain": 0.85, "pause": 0.30, "grit": 0},
-    "laughing":     {"mix": {"am_onyx": 0.6, "am_puck": 0.4},     "speed": 1.10, "pitch":  1.5, "gain": 1.15, "pause": 0.18, "grit": 0},
-    "angry":        {"mix": {"am_onyx": 0.6, "am_fenrir": 0.4},   "speed": 1.10, "pitch":  1.0, "gain": 1.40, "pause": 0.18, "grit": 0.5},
-    "furious":      {"mix": {"am_onyx": 0.5, "am_fenrir": 0.5},   "speed": 1.16, "pitch":  2.2, "gain": 1.60, "pause": 0.14, "grit": 1.0},
+    "neutral":      {"mix": {"am_echo": 1.0},                    "speed": 1.06, "pitch":  0.0, "gain": 1.00, "pause": 0.16, "grit": 0},
+    "smug":         {"mix": {"am_echo": 0.8, "am_puck": 0.2},     "speed": 0.96, "pitch": -0.7, "gain": 1.00, "pause": 0.30, "grit": 0},
+    "happy":        {"mix": {"am_echo": 0.7, "am_puck": 0.3},     "speed": 1.08, "pitch":  1.0, "gain": 1.10, "pause": 0.20, "grit": 0},
+    "excited":      {"mix": {"am_echo": 0.6, "am_fenrir": 0.4},   "speed": 1.13, "pitch":  1.8, "gain": 1.20, "pause": 0.16, "grit": 0},
+    "shocked":      {"mix": {"am_echo": 0.7, "am_fenrir": 0.3},   "speed": 1.04, "pitch":  1.6, "gain": 1.15, "pause": 0.26, "grit": 0},
+    "disappointed": {"mix": {"am_echo": 1.0},                    "speed": 0.94, "pitch": -1.6, "gain": 0.85, "pause": 0.30, "grit": 0},
+    "laughing":     {"mix": {"am_echo": 0.6, "am_puck": 0.4},     "speed": 1.10, "pitch":  1.5, "gain": 1.15, "pause": 0.18, "grit": 0},
+    "angry":        {"mix": {"am_echo": 0.6, "am_fenrir": 0.4},   "speed": 1.10, "pitch":  1.0, "gain": 1.40, "pause": 0.18, "grit": 0.5},
+    "furious":      {"mix": {"am_echo": 0.5, "am_fenrir": 0.5},   "speed": 1.16, "pitch":  2.2, "gain": 1.60, "pause": 0.14, "grit": 1.0},
 }
 LEAD_IN = 0.45   # silence before first line
 GAP = 0.32       # silence between lines

@@ -134,7 +134,7 @@
  },
  "voice": {
   "engine": "indextts",
-  "base": "am_onyx",
+  "base": "am_echo",
   "pitch": 0,
   "bass": 2,
   "indextts": {
@@ -143,7 +143,8 @@
    "emo_alpha": 0.9,
    "note": "IndexTTS 2.5 (bilibili Model Use License: free under 100M MAU / RMB 1bn revenue). Needs huggingface.co + *.hf.co for the model download, and a 5-15 s reference clip of a voice you have rights to."
   },
-  "note": "Falls back to the offline Kokoro voice (engine/voice.py STYLE) if IndexTTS isn't installed."
+  "note": "Falls back to the offline Kokoro voice (engine/voice.py STYLE) if IndexTTS isn't installed.",
+  "persona": "young male streamer, 23-30, hyped and casual"
  },
  "research": {
   "provider": "firecrawl",

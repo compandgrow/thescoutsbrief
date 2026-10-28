@@ -12,3 +12,4 @@ voice-samples/
 data/research/*.json
 !data/research/usage.json
 voice-before-after.mp4
+voice-samples/
