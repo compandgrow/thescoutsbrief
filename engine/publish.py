@@ -1,13 +1,16 @@
 """Get a finished reel to Zernio.
 
-  python3 engine/publish.py host <reel_id>
+  python3 engine/publish.py encode <reel_id>
+      Instagram-ready copy (H.264 Main 4.1, 30 fps, faststart) -> reels/<id>/out/reel_instagram.mp4; prints path + size.
+
+  python3 engine/publish.py upload <presignedUploadUrl> <file>
+      Direct upload to Zernio storage (default route; *.r2.cloudflarestorage.com is allowed).
+
+  python3 engine/publish.py host <reel_id>   (fallback only)
       Re-encodes reels/<id>/out/reel.mp4 for Instagram (H.264 Main 4.1, 30 fps, faststart),
       commits it to the `media` branch of the (public) GitHub repo and prints a commit-pinned
       raw.githubusercontent.com URL. Pass that URL to Zernio posts_create as media_urls.
       (Used because Zernio's own upload storage, *.r2.cloudflarestorage.com, is blocked here.)
-
-  python3 engine/publish.py upload <presignedUploadUrl> <file>
-      Direct upload to Zernio storage, once *.r2.cloudflarestorage.com is allowed.
 
   python3 engine/publish.py cleanup <reel_id>
       Removes a hosted video from the media branch after it has been published.
@@ -33,12 +36,19 @@ def media_worktree():
     return wt
 
 
-def host(reel_id):
+def encode(reel_id):
+    """Instagram-ready copy: reels/<id>/out/reel_instagram.mp4. Prints path and byte size."""
     src = os.path.join(ROOT, "reels", reel_id, "out", "reel.mp4")
     ig = os.path.join(ROOT, "reels", reel_id, "out", "reel_instagram.mp4")
     sh("ffmpeg", "-y", "-loglevel", "error", "-i", src, "-c:v", "libx264", "-profile:v", "main", "-level:v", "4.1",
        "-pix_fmt", "yuv420p", "-r", "30", "-crf", "19", "-preset", "medium", "-c:a", "aac", "-b:a", "160k",
        "-ar", "44100", "-movflags", "+faststart", ig)
+    print(ig, os.path.getsize(ig))
+    return ig
+
+
+def host(reel_id):
+    ig = encode(reel_id)
     wt = media_worktree()
     os.makedirs(os.path.join(wt, "reels"), exist_ok=True)
     dst = os.path.join(wt, "reels", f"{reel_id}.mp4")
@@ -70,5 +80,5 @@ def upload(url, path):
 
 if __name__ == "__main__":
     cmd = sys.argv[1]
-    {"host": lambda: host(sys.argv[2]), "cleanup": lambda: cleanup(sys.argv[2]),
+    {"encode": lambda: encode(sys.argv[2]), "host": lambda: host(sys.argv[2]), "cleanup": lambda: cleanup(sys.argv[2]),
      "upload": lambda: upload(sys.argv[2], sys.argv[3])}[cmd]()
