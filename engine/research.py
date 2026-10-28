@@ -62,13 +62,27 @@ def call(path, body):
         sys.exit("FIRECRAWL_API_KEY is not set (add it to the environment's variables)")
     req = urllib.request.Request(f"{API}/{path}", data=json.dumps(body).encode(), method="POST",
                                  headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        sys.exit(f"Firecrawl error {e.code}: {e.read()[:300].decode(errors='replace')}")
-    except urllib.error.URLError as e:
-        sys.exit(f"Cannot reach api.firecrawl.dev ({e.reason}); is it in the allowed domains?")
+    import time
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            body = e.read()[:400].decode(errors="replace")
+            if e.code == 429 and attempt < 3:      # free plan: ~10 requests/minute
+                wait = 35
+                try:
+                    wait = int(json.loads(body).get("retry_after_seconds", 35)) + 2
+                except Exception:
+                    pass
+                print(f"rate limited, waiting {wait}s", file=sys.stderr)
+                time.sleep(wait)
+                req = urllib.request.Request(req.full_url, data=req.data, method="POST", headers=dict(req.header_items()))
+                continue
+            sys.exit(f"Firecrawl error {e.code}: {body[:300]}")
+        except urllib.error.URLError as e:
+            sys.exit(f"Cannot reach api.firecrawl.dev ({e.reason}); is it in the allowed domains?")
+    sys.exit("Firecrawl: still rate limited after retries")
 
 
 def cache(kind, key, data):

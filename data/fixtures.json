@@ -1,0 +1,5050 @@
+{
+ "generated": "2026-10-28T05:49:15Z",
+ "fixtures": [
+  {
+   "espn_id": "401921842",
+   "slug": "chelsea-liverpool",
+   "date": "2026-10-28",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Chelsea"
+   ],
+   "competition": "English Carabao Cup",
+   "score": null,
+   "watched": [
+    "LIV",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401921834",
+   "slug": "brighton-hove-albion-manchester-city",
+   "date": "2026-10-28",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Carabao Cup",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401917035",
+   "slug": "1-fc-magdeburg-bayern-munich",
+   "date": "2026-10-28",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "1\\. FC Magdeburg"
+   ],
+   "competition": "German Cup",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876421",
+   "slug": "paris-saint-germain-le-havre-ac",
+   "date": "2026-10-30",
+   "team": "PSG",
+   "teams_text": [
+    "Le Havre AC",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879248",
+   "slug": "manchester-united-chelsea",
+   "date": "2026-10-31",
+   "team": "MUN",
+   "teams_text": [
+    "Chelsea",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879245",
+   "slug": "brighton-hove-albion-manchester-city",
+   "date": "2026-10-31",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878761",
+   "slug": "crystal-palace-tottenham-hotspur",
+   "date": "2026-10-31",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401882822",
+   "slug": "alaves-barcelona",
+   "date": "2026-10-31",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Alav\u00e9s"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401884754",
+   "slug": "borussia-dortmund-bayern-munich",
+   "date": "2026-10-31",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Borussia Dortmund"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401882820",
+   "slug": "atletico-madrid-levante",
+   "date": "2026-10-31",
+   "team": "ATM",
+   "teams_text": [
+    "Levante",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879246",
+   "slug": "arsenal-liverpool",
+   "date": "2026-11-01",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401882819",
+   "slug": "real-madrid-racing-santander",
+   "date": "2026-11-01",
+   "team": "RMA",
+   "teams_text": [
+    "Racing Santander",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401915308",
+   "slug": "as-roma-manchester-united",
+   "date": "2026-11-03",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "AS Roma"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401915387",
+   "slug": "aston-villa-barcelona",
+   "date": "2026-11-03",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Aston Villa"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401915386",
+   "slug": "bayern-munich-atletico-madrid",
+   "date": "2026-11-03",
+   "team": "BAY",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Bayern Munich"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAY",
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915309",
+   "slug": "paris-saint-germain-villarreal",
+   "date": "2026-11-03",
+   "team": "PSG",
+   "teams_text": [
+    "Villarreal",
+    "Paris Saint-Germain"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401915382",
+   "slug": "liverpool-fenerbahce",
+   "date": "2026-11-04",
+   "team": "LIV",
+   "teams_text": [
+    "Fenerbahce",
+    "Liverpool"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401915306",
+   "slug": "manchester-city-rb-leipzig",
+   "date": "2026-11-04",
+   "team": "MCI",
+   "teams_text": [
+    "RB Leipzig",
+    "Manchester City"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401915381",
+   "slug": "arsenal-slavia-prague",
+   "date": "2026-11-04",
+   "team": "ARS",
+   "teams_text": [
+    "Slavia Prague",
+    "Arsenal"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401915383",
+   "slug": "real-madrid-aek-athens",
+   "date": "2026-11-04",
+   "team": "RMA",
+   "teams_text": [
+    "AEK Athens",
+    "Real Madrid"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401878757",
+   "slug": "manchester-city-nottingham-forest",
+   "date": "2026-11-07",
+   "team": "MCI",
+   "teams_text": [
+    "Nottingham Forest",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878760",
+   "slug": "hull-city-arsenal",
+   "date": "2026-11-07",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Hull City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878758",
+   "slug": "tottenham-hotspur-leeds-united",
+   "date": "2026-11-07",
+   "team": "TOT",
+   "teams_text": [
+    "Leeds United",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401882808",
+   "slug": "real-madrid-valencia",
+   "date": "2026-11-07",
+   "team": "RMA",
+   "teams_text": [
+    "Valencia",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401884740",
+   "slug": "bayern-munich-mainz",
+   "date": "2026-11-07",
+   "team": "BAY",
+   "teams_text": [
+    "Mainz",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876407",
+   "slug": "troyes-paris-saint-germain",
+   "date": "2026-11-07",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Troyes"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879243",
+   "slug": "liverpool-crystal-palace",
+   "date": "2026-11-08",
+   "team": "LIV",
+   "teams_text": [
+    "Crystal Palace",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879240",
+   "slug": "aston-villa-manchester-united",
+   "date": "2026-11-08",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Aston Villa"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879239",
+   "slug": "chelsea-sunderland",
+   "date": "2026-11-08",
+   "team": "CHE",
+   "teams_text": [
+    "Sunderland",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401882816",
+   "slug": "barcelona-atletico-madrid",
+   "date": "2026-11-08",
+   "team": "BAR",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR",
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401884736",
+   "slug": "fc-cologne-bayern-munich",
+   "date": "2026-11-20",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "FC Cologne"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401879233",
+   "slug": "fulham-manchester-city",
+   "date": "2026-11-21",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Fulham"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879236",
+   "slug": "leeds-united-chelsea",
+   "date": "2026-11-21",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Leeds United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879232",
+   "slug": "arsenal-newcastle-united",
+   "date": "2026-11-21",
+   "team": "ARS",
+   "teams_text": [
+    "Newcastle United",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878754",
+   "slug": "ipswich-town-tottenham-hotspur",
+   "date": "2026-11-21",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Ipswich Town"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401882798",
+   "slug": "celta-vigo-real-madrid",
+   "date": "2026-11-21",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Celta Vigo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401876398",
+   "slug": "paris-saint-germain-nice",
+   "date": "2026-11-21",
+   "team": "PSG",
+   "teams_text": [
+    "Nice",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878755",
+   "slug": "manchester-united-liverpool",
+   "date": "2026-11-22",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401882804",
+   "slug": "villarreal-barcelona",
+   "date": "2026-11-22",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Villarreal"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882803",
+   "slug": "atletico-madrid-getafe",
+   "date": "2026-11-22",
+   "team": "ATM",
+   "teams_text": [
+    "Getafe",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915379",
+   "slug": "napoli-manchester-city",
+   "date": "2026-11-24",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Napoli"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401915295",
+   "slug": "borussia-dortmund-arsenal",
+   "date": "2026-11-24",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Borussia Dortmund"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401915298",
+   "slug": "psv-eindhoven-real-madrid",
+   "date": "2026-11-24",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "PSV Eindhoven"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401915292",
+   "slug": "liverpool-club-brugge",
+   "date": "2026-11-25",
+   "team": "LIV",
+   "teams_text": [
+    "Club Brugge",
+    "Liverpool"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401915373",
+   "slug": "manchester-united-sporting-cp",
+   "date": "2026-11-25",
+   "team": "MUN",
+   "teams_text": [
+    "Sporting CP",
+    "Manchester United"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401915378",
+   "slug": "barcelona-sabah-fk",
+   "date": "2026-11-25",
+   "team": "BAR",
+   "teams_text": [
+    "Sabah FK",
+    "Barcelona"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401915377",
+   "slug": "bayern-munich-lille",
+   "date": "2026-11-25",
+   "team": "BAY",
+   "teams_text": [
+    "Lille",
+    "Bayern Munich"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401915291",
+   "slug": "viking-fk-atletico-madrid",
+   "date": "2026-11-25",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Viking FK"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915374",
+   "slug": "as-roma-paris-saint-germain",
+   "date": "2026-11-25",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "AS Roma"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879225",
+   "slug": "chelsea-nottingham-forest",
+   "date": "2026-11-27",
+   "team": "CHE",
+   "teams_text": [
+    "Nottingham Forest",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879226",
+   "slug": "brentford-manchester-united",
+   "date": "2026-11-28",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Brentford"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401884722",
+   "slug": "bayern-munich-hamburg-sv",
+   "date": "2026-11-28",
+   "team": "BAY",
+   "teams_text": [
+    "Hamburg SV",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876387",
+   "slug": "lorient-paris-saint-germain",
+   "date": "2026-11-28",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Lorient"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879229",
+   "slug": "liverpool-everton",
+   "date": "2026-11-29",
+   "team": "LIV",
+   "teams_text": [
+    "Everton",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401878753",
+   "slug": "manchester-city-arsenal",
+   "date": "2026-11-29",
+   "team": "MCI",
+   "teams_text": [
+    "Arsenal",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879224",
+   "slug": "tottenham-hotspur-sunderland",
+   "date": "2026-11-29",
+   "team": "TOT",
+   "teams_text": [
+    "Sunderland",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401882789",
+   "slug": "alaves-real-madrid",
+   "date": "2026-11-29",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Alav\u00e9s"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882794",
+   "slug": "barcelona-deportivo",
+   "date": "2026-11-29",
+   "team": "BAR",
+   "teams_text": [
+    "Deportivo",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882793",
+   "slug": "atletico-madrid-elche",
+   "date": "2026-11-29",
+   "team": "ATM",
+   "teams_text": [
+    "Elche",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879219",
+   "slug": "sunderland-liverpool",
+   "date": "2026-12-02",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Sunderland"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879217",
+   "slug": "manchester-united-newcastle-united",
+   "date": "2026-12-02",
+   "team": "MUN",
+   "teams_text": [
+    "Newcastle United",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879218",
+   "slug": "leeds-united-manchester-city",
+   "date": "2026-12-02",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Leeds United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879222",
+   "slug": "crystal-palace-chelsea",
+   "date": "2026-12-02",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878750",
+   "slug": "arsenal-brentford",
+   "date": "2026-12-02",
+   "team": "ARS",
+   "teams_text": [
+    "Brentford",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878749",
+   "slug": "fulham-tottenham-hotspur",
+   "date": "2026-12-03",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Fulham"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401876378",
+   "slug": "paris-saint-germain-toulouse",
+   "date": "2026-12-04",
+   "team": "PSG",
+   "teams_text": [
+    "Toulouse",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879213",
+   "slug": "liverpool-chelsea",
+   "date": "2026-12-05",
+   "team": "LIV",
+   "teams_text": [
+    "Chelsea",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879210",
+   "slug": "coventry-city-manchester-united",
+   "date": "2026-12-05",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Coventry City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879214",
+   "slug": "manchester-city-brentford",
+   "date": "2026-12-05",
+   "team": "MCI",
+   "teams_text": [
+    "Brentford",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401884718",
+   "slug": "sc-paderborn-07-bayern-munich",
+   "date": "2026-12-05",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "SC Paderborn 07"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401879209",
+   "slug": "arsenal-tottenham-hotspur",
+   "date": "2026-12-06",
+   "team": "ARS",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401882785",
+   "slug": "real-madrid-athletic-club",
+   "date": "2026-12-06",
+   "team": "RMA",
+   "teams_text": [
+    "Athletic Club",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882783",
+   "slug": "celta-vigo-barcelona",
+   "date": "2026-12-06",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Celta Vigo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882784",
+   "slug": "real-betis-atletico-madrid",
+   "date": "2026-12-06",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Real Betis"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915371",
+   "slug": "rb-leipzig-manchester-united",
+   "date": "2026-12-08",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "RB Leipzig"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401915285",
+   "slug": "manchester-city-barcelona",
+   "date": "2026-12-08",
+   "team": "MCI",
+   "teams_text": [
+    "Barcelona",
+    "Manchester City"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401915284",
+   "slug": "slavia-prague-bayern-munich",
+   "date": "2026-12-08",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Slavia Prague"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401915286",
+   "slug": "paris-saint-germain-aston-villa",
+   "date": "2026-12-08",
+   "team": "PSG",
+   "teams_text": [
+    "Aston Villa",
+    "Paris Saint-Germain"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401915369",
+   "slug": "fc-porto-liverpool",
+   "date": "2026-12-09",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "FC Porto"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401915367",
+   "slug": "real-madrid-arsenal",
+   "date": "2026-12-09",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Real Madrid"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ARS",
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401915366",
+   "slug": "atletico-madrid-psv-eindhoven",
+   "date": "2026-12-09",
+   "team": "ATM",
+   "teams_text": [
+    "PSV Eindhoven",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401878743",
+   "slug": "leeds-united-liverpool",
+   "date": "2026-12-12",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Leeds United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401878742",
+   "slug": "chelsea-manchester-city",
+   "date": "2026-12-12",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401884707",
+   "slug": "bayern-munich-tsg-hoffenheim",
+   "date": "2026-12-12",
+   "team": "BAY",
+   "teams_text": [
+    "TSG Hoffenheim",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876370",
+   "slug": "paris-fc-paris-saint-germain",
+   "date": "2026-12-12",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Paris FC"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879207",
+   "slug": "manchester-united-crystal-palace",
+   "date": "2026-12-13",
+   "team": "MUN",
+   "teams_text": [
+    "Crystal Palace",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401878746",
+   "slug": "afc-bournemouth-arsenal",
+   "date": "2026-12-13",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "AFC Bournemouth"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401882769",
+   "slug": "osasuna-real-madrid",
+   "date": "2026-12-13",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Osasuna"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882770",
+   "slug": "barcelona-malaga",
+   "date": "2026-12-13",
+   "team": "BAR",
+   "teams_text": [
+    "M\u00e1laga",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882776",
+   "slug": "valencia-atletico-madrid",
+   "date": "2026-12-13",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Valencia"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879205",
+   "slug": "tottenham-hotspur-hull-city",
+   "date": "2026-12-14",
+   "team": "TOT",
+   "teams_text": [
+    "Hull City",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879200",
+   "slug": "tottenham-hotspur-liverpool",
+   "date": "2026-12-19",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879199",
+   "slug": "hull-city-manchester-city",
+   "date": "2026-12-19",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Hull City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401884700",
+   "slug": "werder-bremen-bayern-munich",
+   "date": "2026-12-19",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Werder Bremen"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401879204",
+   "slug": "manchester-united-arsenal",
+   "date": "2026-12-20",
+   "team": "MUN",
+   "teams_text": [
+    "Arsenal",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401882763",
+   "slug": "real-madrid-deportivo",
+   "date": "2026-12-20",
+   "team": "RMA",
+   "teams_text": [
+    "Deportivo",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882762",
+   "slug": "real-sociedad-barcelona",
+   "date": "2026-12-20",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Real Sociedad"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882764",
+   "slug": "atletico-madrid-celta-vigo",
+   "date": "2026-12-20",
+   "team": "ATM",
+   "teams_text": [
+    "Celta Vigo",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879202",
+   "slug": "aston-villa-chelsea",
+   "date": "2026-12-21",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Aston Villa"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878733",
+   "slug": "liverpool-hull-city",
+   "date": "2026-12-26",
+   "team": "LIV",
+   "teams_text": [
+    "Hull City",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401878732",
+   "slug": "manchester-city-newcastle-united",
+   "date": "2026-12-26",
+   "team": "MCI",
+   "teams_text": [
+    "Newcastle United",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878731",
+   "slug": "afc-bournemouth-tottenham-hotspur",
+   "date": "2026-12-26",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "AFC Bournemouth"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879195",
+   "slug": "nottingham-forest-manchester-united",
+   "date": "2026-12-27",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Nottingham Forest"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401878736",
+   "slug": "chelsea-coventry-city",
+   "date": "2026-12-27",
+   "team": "CHE",
+   "teams_text": [
+    "Coventry City",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878735",
+   "slug": "arsenal-crystal-palace",
+   "date": "2026-12-27",
+   "team": "ARS",
+   "teams_text": [
+    "Crystal Palace",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879192",
+   "slug": "manchester-city-everton",
+   "date": "2026-12-29",
+   "team": "MCI",
+   "teams_text": [
+    "Everton",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879186",
+   "slug": "brighton-hove-albion-tottenham-hotspur",
+   "date": "2026-12-29",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879194",
+   "slug": "liverpool-aston-villa",
+   "date": "2026-12-30",
+   "team": "LIV",
+   "teams_text": [
+    "Aston Villa",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879188",
+   "slug": "sunderland-manchester-united",
+   "date": "2026-12-30",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Sunderland"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879189",
+   "slug": "chelsea-ipswich-town",
+   "date": "2026-12-30",
+   "team": "CHE",
+   "teams_text": [
+    "Ipswich Town",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879191",
+   "slug": "arsenal-fulham",
+   "date": "2026-12-30",
+   "team": "ARS",
+   "teams_text": [
+    "Fulham",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879181",
+   "slug": "coventry-city-liverpool",
+   "date": "2027-01-02",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Coventry City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401878728",
+   "slug": "manchester-united-brighton-hove-albion",
+   "date": "2027-01-02",
+   "team": "MUN",
+   "teams_text": [
+    "Brighton & Hove Albion",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879185",
+   "slug": "ipswich-town-arsenal",
+   "date": "2027-01-02",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Ipswich Town"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879180",
+   "slug": "tottenham-hotspur-manchester-city",
+   "date": "2027-01-03",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879183",
+   "slug": "newcastle-united-chelsea",
+   "date": "2027-01-03",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Newcastle United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401882749",
+   "slug": "getafe-real-madrid",
+   "date": "2027-01-03",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Getafe"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882754",
+   "slug": "barcelona-espanyol",
+   "date": "2027-01-03",
+   "team": "BAR",
+   "teams_text": [
+    "Espanyol",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882750",
+   "slug": "atletico-madrid-rayo-vallecano",
+   "date": "2027-01-03",
+   "team": "ATM",
+   "teams_text": [
+    "Rayo Vallecano",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401876359",
+   "slug": "paris-saint-germain-lens",
+   "date": "2027-01-03",
+   "team": "PSG",
+   "teams_text": [
+    "Lens",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878727",
+   "slug": "liverpool-sunderland",
+   "date": "2027-01-05",
+   "team": "LIV",
+   "teams_text": [
+    "Sunderland",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879177",
+   "slug": "brentford-arsenal",
+   "date": "2027-01-05",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Brentford"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879171",
+   "slug": "manchester-city-leeds-united",
+   "date": "2027-01-06",
+   "team": "MCI",
+   "teams_text": [
+    "Leeds United",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879175",
+   "slug": "chelsea-crystal-palace",
+   "date": "2027-01-06",
+   "team": "CHE",
+   "teams_text": [
+    "Crystal Palace",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879173",
+   "slug": "tottenham-hotspur-fulham",
+   "date": "2027-01-06",
+   "team": "TOT",
+   "teams_text": [
+    "Fulham",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879170",
+   "slug": "newcastle-united-manchester-united",
+   "date": "2027-01-07",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Newcastle United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401884687",
+   "slug": "bayern-munich-borussia-monchengladbach",
+   "date": "2027-01-09",
+   "team": "BAY",
+   "teams_text": [
+    "Borussia M\u00f6nchengladbach",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401882739",
+   "slug": "levante-real-madrid",
+   "date": "2027-01-10",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Levante"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882740",
+   "slug": "barcelona-osasuna",
+   "date": "2027-01-10",
+   "team": "BAR",
+   "teams_text": [
+    "Osasuna",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882744",
+   "slug": "racing-santander-atletico-madrid",
+   "date": "2027-01-10",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Racing Santander"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401884682",
+   "slug": "bayer-leverkusen-bayern-munich",
+   "date": "2027-01-13",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Bayer Leverkusen"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401879166",
+   "slug": "crystal-palace-liverpool",
+   "date": "2027-01-16",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401878725",
+   "slug": "manchester-united-aston-villa",
+   "date": "2027-01-16",
+   "team": "MUN",
+   "teams_text": [
+    "Aston Villa",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401878722",
+   "slug": "nottingham-forest-manchester-city",
+   "date": "2027-01-16",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Nottingham Forest"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879167",
+   "slug": "sunderland-chelsea",
+   "date": "2027-01-16",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Sunderland"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878723",
+   "slug": "arsenal-hull-city",
+   "date": "2027-01-16",
+   "team": "ARS",
+   "teams_text": [
+    "Hull City",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879165",
+   "slug": "leeds-united-tottenham-hotspur",
+   "date": "2027-01-16",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Leeds United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884669",
+   "slug": "bayern-munich-eintracht-frankfurt",
+   "date": "2027-01-16",
+   "team": "BAY",
+   "teams_text": [
+    "Eintracht Frankfurt",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876358",
+   "slug": "paris-saint-germain-angers",
+   "date": "2027-01-16",
+   "team": "PSG",
+   "teams_text": [
+    "Angers",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882730",
+   "slug": "real-madrid-malaga",
+   "date": "2027-01-17",
+   "team": "RMA",
+   "teams_text": [
+    "M\u00e1laga",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882733",
+   "slug": "elche-barcelona",
+   "date": "2027-01-17",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Elche"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882736",
+   "slug": "real-sociedad-atletico-madrid",
+   "date": "2027-01-17",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Real Sociedad"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915360",
+   "slug": "liverpool-internazionale",
+   "date": "2027-01-19",
+   "team": "LIV",
+   "teams_text": [
+    "Internazionale",
+    "Liverpool"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401915280",
+   "slug": "lask-linz-real-madrid",
+   "date": "2027-01-19",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "LASK Linz"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401915364",
+   "slug": "atletico-madrid-bodoglimt",
+   "date": "2027-01-19",
+   "team": "ATM",
+   "teams_text": [
+    "Bodo/Glimt",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915357",
+   "slug": "bayern-munich-manchester-united",
+   "date": "2027-01-20",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Bayern Munich"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401915274",
+   "slug": "manchester-city-lens",
+   "date": "2027-01-20",
+   "team": "MCI",
+   "teams_text": [
+    "Lens",
+    "Manchester City"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401915275",
+   "slug": "arsenal-real-betis",
+   "date": "2027-01-20",
+   "team": "ARS",
+   "teams_text": [
+    "Real Betis",
+    "Arsenal"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401915356",
+   "slug": "barcelona-sporting-cp",
+   "date": "2027-01-20",
+   "team": "BAR",
+   "teams_text": [
+    "Sporting CP",
+    "Barcelona"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401915273",
+   "slug": "paris-saint-germain-como",
+   "date": "2027-01-20",
+   "team": "PSG",
+   "teams_text": [
+    "Como",
+    "Paris Saint-Germain"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878718",
+   "slug": "liverpool-manchester-united",
+   "date": "2027-01-23",
+   "team": "LIV",
+   "teams_text": [
+    "Manchester United",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879164",
+   "slug": "manchester-city-brighton-hove-albion",
+   "date": "2027-01-23",
+   "team": "MCI",
+   "teams_text": [
+    "Brighton & Hove Albion",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879160",
+   "slug": "chelsea-leeds-united",
+   "date": "2027-01-23",
+   "team": "CHE",
+   "teams_text": [
+    "Leeds United",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878720",
+   "slug": "newcastle-united-arsenal",
+   "date": "2027-01-23",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Newcastle United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879163",
+   "slug": "tottenham-hotspur-crystal-palace",
+   "date": "2027-01-23",
+   "team": "TOT",
+   "teams_text": [
+    "Crystal Palace",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884664",
+   "slug": "bayern-munich-vfb-stuttgart",
+   "date": "2027-01-23",
+   "team": "BAY",
+   "teams_text": [
+    "VfB Stuttgart",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876344",
+   "slug": "aj-auxerre-paris-saint-germain",
+   "date": "2027-01-23",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "AJ Auxerre"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882719",
+   "slug": "real-betis-real-madrid",
+   "date": "2027-01-24",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Real Betis"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882726",
+   "slug": "barcelona-alaves",
+   "date": "2027-01-24",
+   "team": "BAR",
+   "teams_text": [
+    "Alav\u00e9s",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882724",
+   "slug": "atletico-madrid-deportivo",
+   "date": "2027-01-24",
+   "team": "ATM",
+   "teams_text": [
+    "Deportivo",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915353",
+   "slug": "lens-liverpool",
+   "date": "2027-01-27",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Lens"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401915349",
+   "slug": "manchester-united-villarreal",
+   "date": "2027-01-27",
+   "team": "MUN",
+   "teams_text": [
+    "Villarreal",
+    "Manchester United"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401915352",
+   "slug": "sporting-cp-manchester-city",
+   "date": "2027-01-27",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Sporting CP"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401915346",
+   "slug": "sabah-fk-arsenal",
+   "date": "2027-01-27",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Sabah FK"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401915270",
+   "slug": "real-madrid-shakhtar-donetsk",
+   "date": "2027-01-27",
+   "team": "RMA",
+   "teams_text": [
+    "Shakhtar Donetsk",
+    "Real Madrid"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401915264",
+   "slug": "como-barcelona",
+   "date": "2027-01-27",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Como"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401915348",
+   "slug": "real-betis-bayern-munich",
+   "date": "2027-01-27",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Real Betis"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401915347",
+   "slug": "fenerbahce-atletico-madrid",
+   "date": "2027-01-27",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Fenerbahce"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401915267",
+   "slug": "galatasaray-paris-saint-germain",
+   "date": "2027-01-27",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Galatasaray"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879155",
+   "slug": "everton-liverpool",
+   "date": "2027-01-30",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Everton"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401878715",
+   "slug": "manchester-united-brentford",
+   "date": "2027-01-30",
+   "team": "MUN",
+   "teams_text": [
+    "Brentford",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879154",
+   "slug": "arsenal-manchester-city",
+   "date": "2027-01-30",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878714",
+   "slug": "nottingham-forest-chelsea",
+   "date": "2027-01-30",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Nottingham Forest"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879153",
+   "slug": "sunderland-tottenham-hotspur",
+   "date": "2027-01-30",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Sunderland"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884655",
+   "slug": "schalke-04-bayern-munich",
+   "date": "2027-01-30",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Schalke 04"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876335",
+   "slug": "paris-saint-germain-as-monaco",
+   "date": "2027-01-30",
+   "team": "PSG",
+   "teams_text": [
+    "AS Monaco",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882709",
+   "slug": "real-madrid-rayo-vallecano",
+   "date": "2027-01-31",
+   "team": "RMA",
+   "teams_text": [
+    "Rayo Vallecano",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882713",
+   "slug": "valencia-barcelona",
+   "date": "2027-01-31",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Valencia"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882716",
+   "slug": "espanyol-atletico-madrid",
+   "date": "2027-01-31",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Espanyol"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401892163",
+   "slug": "atletico-madrid-barcelona",
+   "date": "2027-02-02",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish Supercopa",
+   "score": null,
+   "watched": [
+    "BAR",
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401892164",
+   "slug": "real-madrid-real-sociedad",
+   "date": "2027-02-03",
+   "team": "RMA",
+   "teams_text": [
+    "Real Sociedad",
+    "Real Madrid"
+   ],
+   "competition": "Spanish Supercopa",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401878712",
+   "slug": "liverpool-arsenal",
+   "date": "2027-02-06",
+   "team": "LIV",
+   "teams_text": [
+    "Arsenal",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879148",
+   "slug": "chelsea-manchester-united",
+   "date": "2027-02-06",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879150",
+   "slug": "manchester-city-fulham",
+   "date": "2027-02-06",
+   "team": "MCI",
+   "teams_text": [
+    "Fulham",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879149",
+   "slug": "tottenham-hotspur-ipswich-town",
+   "date": "2027-02-06",
+   "team": "TOT",
+   "teams_text": [
+    "Ipswich Town",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884646",
+   "slug": "sv-elversberg-bayern-munich",
+   "date": "2027-02-06",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "SV Elversberg"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401882698",
+   "slug": "real-madrid-real-sociedad",
+   "date": "2027-02-07",
+   "team": "RMA",
+   "teams_text": [
+    "Real Sociedad",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882700",
+   "slug": "atletico-madrid-barcelona",
+   "date": "2027-02-07",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR",
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401876323",
+   "slug": "marseille-paris-saint-germain",
+   "date": "2027-02-07",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Marseille"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879145",
+   "slug": "liverpool-coventry-city",
+   "date": "2027-02-10",
+   "team": "LIV",
+   "teams_text": [
+    "Coventry City",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879142",
+   "slug": "brighton-hove-albion-manchester-united",
+   "date": "2027-02-10",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879140",
+   "slug": "manchester-city-tottenham-hotspur",
+   "date": "2027-02-10",
+   "team": "MCI",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879141",
+   "slug": "chelsea-newcastle-united",
+   "date": "2027-02-10",
+   "team": "CHE",
+   "teams_text": [
+    "Newcastle United",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878706",
+   "slug": "arsenal-ipswich-town",
+   "date": "2027-02-10",
+   "team": "ARS",
+   "teams_text": [
+    "Ipswich Town",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401884631",
+   "slug": "bayern-munich-1-fc-union-berlin",
+   "date": "2027-02-13",
+   "team": "BAY",
+   "teams_text": [
+    "1\\. FC Union Berlin",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876320",
+   "slug": "paris-saint-germain-le-mans",
+   "date": "2027-02-13",
+   "team": "PSG",
+   "teams_text": [
+    "Le Mans",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882691",
+   "slug": "athletic-club-real-madrid",
+   "date": "2027-02-14",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Athletic Club"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882687",
+   "slug": "barcelona-villarreal",
+   "date": "2027-02-14",
+   "team": "BAR",
+   "teams_text": [
+    "Villarreal",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882693",
+   "slug": "atletico-madrid-osasuna",
+   "date": "2027-02-14",
+   "team": "ATM",
+   "teams_text": [
+    "Osasuna",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401878703",
+   "slug": "hull-city-liverpool",
+   "date": "2027-02-20",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Hull City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879134",
+   "slug": "manchester-united-nottingham-forest",
+   "date": "2027-02-20",
+   "team": "MUN",
+   "teams_text": [
+    "Nottingham Forest",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879135",
+   "slug": "newcastle-united-manchester-city",
+   "date": "2027-02-20",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Newcastle United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878704",
+   "slug": "ipswich-town-chelsea",
+   "date": "2027-02-20",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Ipswich Town"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878705",
+   "slug": "fulham-arsenal",
+   "date": "2027-02-20",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Fulham"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879137",
+   "slug": "tottenham-hotspur-brighton-hove-albion",
+   "date": "2027-02-20",
+   "team": "TOT",
+   "teams_text": [
+    "Brighton & Hove Albion",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884628",
+   "slug": "fc-augsburg-bayern-munich",
+   "date": "2027-02-20",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "FC Augsburg"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876307",
+   "slug": "brest-paris-saint-germain",
+   "date": "2027-02-20",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Brest"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882678",
+   "slug": "real-madrid-sevilla",
+   "date": "2027-02-21",
+   "team": "RMA",
+   "teams_text": [
+    "Sevilla",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882681",
+   "slug": "levante-barcelona",
+   "date": "2027-02-21",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Levante"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882684",
+   "slug": "elche-atletico-madrid",
+   "date": "2027-02-21",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Elche"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879129",
+   "slug": "liverpool-tottenham-hotspur",
+   "date": "2027-02-27",
+   "team": "LIV",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401878697",
+   "slug": "arsenal-manchester-united",
+   "date": "2027-02-27",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878698",
+   "slug": "manchester-city-hull-city",
+   "date": "2027-02-27",
+   "team": "MCI",
+   "teams_text": [
+    "Hull City",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879133",
+   "slug": "chelsea-aston-villa",
+   "date": "2027-02-27",
+   "team": "CHE",
+   "teams_text": [
+    "Aston Villa",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401884618",
+   "slug": "bayern-munich-rb-leipzig",
+   "date": "2027-02-27",
+   "team": "BAY",
+   "teams_text": [
+    "RB Leipzig",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401882668",
+   "slug": "valencia-real-madrid",
+   "date": "2027-02-28",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Valencia"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882676",
+   "slug": "barcelona-athletic-club",
+   "date": "2027-02-28",
+   "team": "BAR",
+   "teams_text": [
+    "Athletic Club",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882671",
+   "slug": "atletico-madrid-malaga",
+   "date": "2027-02-28",
+   "team": "ATM",
+   "teams_text": [
+    "M\u00e1laga",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401876296",
+   "slug": "lens-paris-saint-germain",
+   "date": "2027-02-28",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Lens"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879125",
+   "slug": "aston-villa-liverpool",
+   "date": "2027-03-03",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Aston Villa"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879122",
+   "slug": "manchester-united-sunderland",
+   "date": "2027-03-03",
+   "team": "MUN",
+   "teams_text": [
+    "Sunderland",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879124",
+   "slug": "everton-manchester-city",
+   "date": "2027-03-03",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Everton"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879126",
+   "slug": "coventry-city-chelsea",
+   "date": "2027-03-03",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Coventry City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878696",
+   "slug": "crystal-palace-arsenal",
+   "date": "2027-03-03",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879128",
+   "slug": "tottenham-hotspur-afc-bournemouth",
+   "date": "2027-03-03",
+   "team": "TOT",
+   "teams_text": [
+    "AFC Bournemouth",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884610",
+   "slug": "sc-freiburg-bayern-munich",
+   "date": "2027-03-03",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "SC Freiburg"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401884601",
+   "slug": "bayern-munich-borussia-dortmund",
+   "date": "2027-03-06",
+   "team": "BAY",
+   "teams_text": [
+    "Borussia Dortmund",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876289",
+   "slug": "stade-rennais-paris-saint-germain",
+   "date": "2027-03-06",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Stade Rennais"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882657",
+   "slug": "real-madrid-villarreal",
+   "date": "2027-03-07",
+   "team": "RMA",
+   "teams_text": [
+    "Villarreal",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882661",
+   "slug": "real-betis-barcelona",
+   "date": "2027-03-07",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Real Betis"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882665",
+   "slug": "celta-vigo-atletico-madrid",
+   "date": "2027-03-07",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Celta Vigo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401878690",
+   "slug": "ipswich-town-liverpool",
+   "date": "2027-03-13",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Ipswich Town"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879118",
+   "slug": "everton-manchester-united",
+   "date": "2027-03-13",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Everton"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401878692",
+   "slug": "manchester-city-coventry-city",
+   "date": "2027-03-13",
+   "team": "MCI",
+   "teams_text": [
+    "Coventry City",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878693",
+   "slug": "arsenal-chelsea",
+   "date": "2027-03-13",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879116",
+   "slug": "nottingham-forest-tottenham-hotspur",
+   "date": "2027-03-13",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Nottingham Forest"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884592",
+   "slug": "mainz-bayern-munich",
+   "date": "2027-03-13",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Mainz"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876286",
+   "slug": "paris-saint-germain-aj-auxerre",
+   "date": "2027-03-13",
+   "team": "PSG",
+   "teams_text": [
+    "AJ Auxerre",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882647",
+   "slug": "espanyol-real-madrid",
+   "date": "2027-03-14",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Espanyol"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882652",
+   "slug": "deportivo-barcelona",
+   "date": "2027-03-14",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Deportivo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882648",
+   "slug": "atletico-madrid-racing-santander",
+   "date": "2027-03-14",
+   "team": "ATM",
+   "teams_text": [
+    "Racing Santander",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879111",
+   "slug": "liverpool-fulham",
+   "date": "2027-03-20",
+   "team": "LIV",
+   "teams_text": [
+    "Fulham",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879108",
+   "slug": "manchester-united-manchester-city",
+   "date": "2027-03-20",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester City",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879110",
+   "slug": "chelsea-hull-city",
+   "date": "2027-03-20",
+   "team": "CHE",
+   "teams_text": [
+    "Hull City",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879115",
+   "slug": "sunderland-arsenal",
+   "date": "2027-03-20",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Sunderland"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879112",
+   "slug": "tottenham-hotspur-everton",
+   "date": "2027-03-20",
+   "team": "TOT",
+   "teams_text": [
+    "Everton",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884576",
+   "slug": "bayern-munich-fc-cologne",
+   "date": "2027-03-20",
+   "team": "BAY",
+   "teams_text": [
+    "FC Cologne",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876273",
+   "slug": "strasbourg-paris-saint-germain",
+   "date": "2027-03-20",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Strasbourg"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882645",
+   "slug": "real-madrid-celta-vigo",
+   "date": "2027-03-21",
+   "team": "RMA",
+   "teams_text": [
+    "Celta Vigo",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882641",
+   "slug": "barcelona-rayo-vallecano",
+   "date": "2027-03-21",
+   "team": "BAR",
+   "teams_text": [
+    "Rayo Vallecano",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882646",
+   "slug": "getafe-atletico-madrid",
+   "date": "2027-03-21",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Getafe"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401884574",
+   "slug": "hamburg-sv-bayern-munich",
+   "date": "2027-04-03",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Hamburg SV"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876261",
+   "slug": "paris-saint-germain-paris-fc",
+   "date": "2027-04-03",
+   "team": "PSG",
+   "teams_text": [
+    "Paris FC",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882628",
+   "slug": "atletico-madrid-real-madrid",
+   "date": "2027-04-04",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA",
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401882632",
+   "slug": "sevilla-barcelona",
+   "date": "2027-04-04",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Sevilla"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401879101",
+   "slug": "newcastle-united-liverpool",
+   "date": "2027-04-10",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Newcastle United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879100",
+   "slug": "hull-city-manchester-united",
+   "date": "2027-04-10",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Hull City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879106",
+   "slug": "manchester-city-afc-bournemouth",
+   "date": "2027-04-10",
+   "team": "MCI",
+   "teams_text": [
+    "AFC Bournemouth",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879104",
+   "slug": "fulham-chelsea",
+   "date": "2027-04-10",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Fulham"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879103",
+   "slug": "arsenal-coventry-city",
+   "date": "2027-04-10",
+   "team": "ARS",
+   "teams_text": [
+    "Coventry City",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879099",
+   "slug": "brentford-tottenham-hotspur",
+   "date": "2027-04-10",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Brentford"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884557",
+   "slug": "bayern-munich-sc-paderborn-07",
+   "date": "2027-04-10",
+   "team": "BAY",
+   "teams_text": [
+    "SC Paderborn 07",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876252",
+   "slug": "le-havre-ac-paris-saint-germain",
+   "date": "2027-04-10",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Le Havre AC"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882622",
+   "slug": "real-madrid-osasuna",
+   "date": "2027-04-11",
+   "team": "RMA",
+   "teams_text": [
+    "Osasuna",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882621",
+   "slug": "barcelona-racing-santander",
+   "date": "2027-04-11",
+   "team": "BAR",
+   "teams_text": [
+    "Racing Santander",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882625",
+   "slug": "levante-atletico-madrid",
+   "date": "2027-04-11",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Levante"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401878681",
+   "slug": "liverpool-nottingham-forest",
+   "date": "2027-04-17",
+   "team": "LIV",
+   "teams_text": [
+    "Nottingham Forest",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879096",
+   "slug": "manchester-united-ipswich-town",
+   "date": "2027-04-17",
+   "team": "MUN",
+   "teams_text": [
+    "Ipswich Town",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879095",
+   "slug": "crystal-palace-manchester-city",
+   "date": "2027-04-17",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878685",
+   "slug": "chelsea-brighton-hove-albion",
+   "date": "2027-04-17",
+   "team": "CHE",
+   "teams_text": [
+    "Brighton & Hove Albion",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878686",
+   "slug": "aston-villa-arsenal",
+   "date": "2027-04-17",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Aston Villa"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878682",
+   "slug": "tottenham-hotspur-newcastle-united",
+   "date": "2027-04-17",
+   "team": "TOT",
+   "teams_text": [
+    "Newcastle United",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884556",
+   "slug": "tsg-hoffenheim-bayern-munich",
+   "date": "2027-04-17",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "TSG Hoffenheim"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876244",
+   "slug": "lille-paris-saint-germain",
+   "date": "2027-04-17",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Lille"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882610",
+   "slug": "real-madrid-getafe",
+   "date": "2027-04-18",
+   "team": "RMA",
+   "teams_text": [
+    "Getafe",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882611",
+   "slug": "espanyol-barcelona",
+   "date": "2027-04-18",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Espanyol"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882615",
+   "slug": "sevilla-atletico-madrid",
+   "date": "2027-04-18",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Sevilla"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401882600",
+   "slug": "elche-real-madrid",
+   "date": "2027-04-21",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Elche"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882605",
+   "slug": "barcelona-celta-vigo",
+   "date": "2027-04-21",
+   "team": "BAR",
+   "teams_text": [
+    "Celta Vigo",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882597",
+   "slug": "atletico-madrid-villarreal",
+   "date": "2027-04-21",
+   "team": "ATM",
+   "teams_text": [
+    "Villarreal",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879092",
+   "slug": "liverpool-leeds-united",
+   "date": "2027-04-24",
+   "team": "LIV",
+   "teams_text": [
+    "Leeds United",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879091",
+   "slug": "crystal-palace-manchester-united",
+   "date": "2027-04-24",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879094",
+   "slug": "manchester-city-chelsea",
+   "date": "2027-04-24",
+   "team": "MCI",
+   "teams_text": [
+    "Chelsea",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878680",
+   "slug": "arsenal-afc-bournemouth",
+   "date": "2027-04-24",
+   "team": "ARS",
+   "teams_text": [
+    "AFC Bournemouth",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401878677",
+   "slug": "hull-city-tottenham-hotspur",
+   "date": "2027-04-24",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Hull City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884540",
+   "slug": "bayern-munich-werder-bremen",
+   "date": "2027-04-24",
+   "team": "BAY",
+   "teams_text": [
+    "Werder Bremen",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876239",
+   "slug": "paris-saint-germain-lorient",
+   "date": "2027-04-24",
+   "team": "PSG",
+   "teams_text": [
+    "Lorient",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878674",
+   "slug": "chelsea-liverpool",
+   "date": "2027-05-01",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878675",
+   "slug": "manchester-united-coventry-city",
+   "date": "2027-05-01",
+   "team": "MUN",
+   "teams_text": [
+    "Coventry City",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879083",
+   "slug": "brentford-manchester-city",
+   "date": "2027-05-01",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Brentford"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878676",
+   "slug": "tottenham-hotspur-arsenal",
+   "date": "2027-05-01",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401876228",
+   "slug": "angers-paris-saint-germain",
+   "date": "2027-05-01",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Angers"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401882590",
+   "slug": "real-madrid-levante",
+   "date": "2027-05-02",
+   "team": "RMA",
+   "teams_text": [
+    "Levante",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882591",
+   "slug": "osasuna-barcelona",
+   "date": "2027-05-02",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Osasuna"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882596",
+   "slug": "alaves-atletico-madrid",
+   "date": "2027-05-02",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Alav\u00e9s"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401878668",
+   "slug": "liverpool-manchester-city",
+   "date": "2027-05-08",
+   "team": "LIV",
+   "teams_text": [
+    "Manchester City",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401878672",
+   "slug": "manchester-united-afc-bournemouth",
+   "date": "2027-05-08",
+   "team": "MUN",
+   "teams_text": [
+    "AFC Bournemouth",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401878666",
+   "slug": "chelsea-tottenham-hotspur",
+   "date": "2027-05-08",
+   "team": "CHE",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879081",
+   "slug": "arsenal-leeds-united",
+   "date": "2027-05-08",
+   "team": "ARS",
+   "teams_text": [
+    "Leeds United",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401884538",
+   "slug": "borussia-monchengladbach-bayern-munich",
+   "date": "2027-05-08",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Borussia M\u00f6nchengladbach"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401882579",
+   "slug": "barcelona-real-madrid",
+   "date": "2027-05-09",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA",
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882578",
+   "slug": "atletico-madrid-valencia",
+   "date": "2027-05-09",
+   "team": "ATM",
+   "teams_text": [
+    "Valencia",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401876215",
+   "slug": "paris-saint-germain-lyon",
+   "date": "2027-05-09",
+   "team": "PSG",
+   "teams_text": [
+    "Lyon",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878663",
+   "slug": "brentford-liverpool",
+   "date": "2027-05-15",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Brentford"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879074",
+   "slug": "leeds-united-manchester-united",
+   "date": "2027-05-15",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Leeds United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879075",
+   "slug": "manchester-city-ipswich-town",
+   "date": "2027-05-15",
+   "team": "MCI",
+   "teams_text": [
+    "Ipswich Town",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879078",
+   "slug": "everton-chelsea",
+   "date": "2027-05-15",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Everton"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879079",
+   "slug": "nottingham-forest-arsenal",
+   "date": "2027-05-15",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Nottingham Forest"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879077",
+   "slug": "tottenham-hotspur-coventry-city",
+   "date": "2027-05-15",
+   "team": "TOT",
+   "teams_text": [
+    "Coventry City",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401884526",
+   "slug": "bayern-munich-bayer-leverkusen",
+   "date": "2027-05-15",
+   "team": "BAY",
+   "teams_text": [
+    "Bayer Leverkusen",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401882569",
+   "slug": "racing-santander-real-madrid",
+   "date": "2027-05-16",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Racing Santander"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882568",
+   "slug": "barcelona-real-sociedad",
+   "date": "2027-05-16",
+   "team": "BAR",
+   "teams_text": [
+    "Real Sociedad",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882576",
+   "slug": "rayo-vallecano-atletico-madrid",
+   "date": "2027-05-16",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Rayo Vallecano"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401876208",
+   "slug": "nice-paris-saint-germain",
+   "date": "2027-05-16",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Nice"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401884500",
+   "slug": "eintracht-frankfurt-bayern-munich",
+   "date": "2027-05-22",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Eintracht Frankfurt"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
+   "espn_id": "401876197",
+   "slug": "paris-saint-germain-troyes",
+   "date": "2027-05-22",
+   "team": "PSG",
+   "teams_text": [
+    "Troyes",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878662",
+   "slug": "liverpool-brighton-hove-albion",
+   "date": "2027-05-23",
+   "team": "LIV",
+   "teams_text": [
+    "Brighton & Hove Albion",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879065",
+   "slug": "manchester-united-tottenham-hotspur",
+   "date": "2027-05-23",
+   "team": "MUN",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN",
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401879067",
+   "slug": "aston-villa-manchester-city",
+   "date": "2027-05-23",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Aston Villa"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879072",
+   "slug": "chelsea-afc-bournemouth",
+   "date": "2027-05-23",
+   "team": "CHE",
+   "teams_text": [
+    "AFC Bournemouth",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401879070",
+   "slug": "arsenal-everton",
+   "date": "2027-05-23",
+   "team": "ARS",
+   "teams_text": [
+    "Everton",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401882566",
+   "slug": "real-madrid-alaves",
+   "date": "2027-05-23",
+   "team": "RMA",
+   "teams_text": [
+    "Alav\u00e9s",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882562",
+   "slug": "malaga-barcelona",
+   "date": "2027-05-23",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "M\u00e1laga"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882565",
+   "slug": "athletic-club-atletico-madrid",
+   "date": "2027-05-23",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Athletic Club"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  },
+  {
+   "espn_id": "401876190",
+   "slug": "toulouse-paris-saint-germain",
+   "date": "2027-05-29",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Toulouse"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879059",
+   "slug": "afc-bournemouth-liverpool",
+   "date": "2027-05-30",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "AFC Bournemouth"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV"
+   ]
+  },
+  {
+   "espn_id": "401879058",
+   "slug": "fulham-manchester-united",
+   "date": "2027-05-30",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "Fulham"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401878658",
+   "slug": "manchester-city-sunderland",
+   "date": "2027-05-30",
+   "team": "MCI",
+   "teams_text": [
+    "Sunderland",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ]
+  },
+  {
+   "espn_id": "401879063",
+   "slug": "brentford-chelsea",
+   "date": "2027-05-30",
+   "team": "CHE",
+   "teams_text": [
+    "Chelsea",
+    "Brentford"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ]
+  },
+  {
+   "espn_id": "401878660",
+   "slug": "brighton-hove-albion-arsenal",
+   "date": "2027-05-30",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879064",
+   "slug": "tottenham-hotspur-aston-villa",
+   "date": "2027-05-30",
+   "team": "TOT",
+   "teams_text": [
+    "Aston Villa",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
+   ]
+  },
+  {
+   "espn_id": "401882548",
+   "slug": "deportivo-real-madrid",
+   "date": "2027-05-30",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Deportivo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ]
+  },
+  {
+   "espn_id": "401882552",
+   "slug": "barcelona-getafe",
+   "date": "2027-05-30",
+   "team": "BAR",
+   "teams_text": [
+    "Getafe",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
+   "espn_id": "401882555",
+   "slug": "atletico-madrid-real-betis",
+   "date": "2027-05-30",
+   "team": "ATM",
+   "teams_text": [
+    "Real Betis",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ]
+  }
+ ]
+}

@@ -7,7 +7,12 @@ You are the Fixture Scout for The Scout Brief (@thescoutbrief).
 
 Watched clubs are in `config/teams.json` (Liverpool, Man United, Man City, Chelsea, Arsenal, Spurs, Real Madrid, Barcelona, Bayern Munich, Atlético Madrid, PSG).
 
-Steps
+Data source: if `PITCHAPI_API_KEY` is set and `api.pitchapi.dev` answers, use the PitchAPI steps below. Otherwise use the **web path** (Firecrawl → ESPN):
+- `python3 engine/web_data.py fixtures` (refreshes at most weekly; ~11 credits)
+- `python3 engine/web_data.py due` → `data/queue.json` with `ready` (finished, worth a reel), `later_today` (not finished yet) and `not_making` (with the reason). It already applies the reel rules (favourite played / two watched clubs met / a rival lost) and the per-run cap, and sets the banter flags.
+Then report and stop; skip the PitchAPI steps.
+
+PitchAPI steps
 1. `python3 engine/pitch.py schedule --days 7` to refresh `data/fixtures.json`.
 2. `python3 engine/pitch.py today` to list today's watched matches and their status.
 3. Read `data/state.json` (create it as `{"done": [], "skipped": []}` if missing). A match ID in `done` already has a reel.

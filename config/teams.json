@@ -14,7 +14,8 @@
     "Liverpool",
     "Liverpool FC"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 364
   },
   {
    "key": "MUN",
@@ -25,7 +26,8 @@
     "Man Utd",
     "Manchester Utd"
    ],
-   "role": "favourite"
+   "role": "favourite",
+   "espn_id": 360
   },
   {
    "key": "MCI",
@@ -34,7 +36,8 @@
     "Manchester City",
     "Man City"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 382
   },
   {
    "key": "CHE",
@@ -43,7 +46,8 @@
     "Chelsea",
     "Chelsea FC"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 363
   },
   {
    "key": "ARS",
@@ -52,7 +56,8 @@
     "Arsenal",
     "Arsenal FC"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 359
   },
   {
    "key": "TOT",
@@ -62,7 +67,8 @@
     "Tottenham Hotspur",
     "Spurs"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 367
   },
   {
    "key": "RMA",
@@ -70,7 +76,8 @@
    "aliases": [
     "Real Madrid"
    ],
-   "role": "favourite"
+   "role": "favourite",
+   "espn_id": 86
   },
   {
    "key": "BAR",
@@ -79,7 +86,8 @@
     "Barcelona",
     "FC Barcelona"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 83
   },
   {
    "key": "BAY",
@@ -90,7 +98,8 @@
     "FC Bayern München",
     "Bayern"
    ],
-   "role": "favourite"
+   "role": "favourite",
+   "espn_id": 132
   },
   {
    "key": "ATM",
@@ -101,7 +110,8 @@
     "Atlético de Madrid",
     "Atletico de Madrid"
    ],
-   "role": "rival"
+   "role": "rival",
+   "espn_id": 1068
   },
   {
    "key": "PSG",
@@ -112,7 +122,8 @@
     "Paris SG",
     "Paris Saint Germain"
    ],
-   "role": "favourite"
+   "role": "favourite",
+   "espn_id": 160
   }
  ],
  "favourites": [
@@ -286,5 +297,10 @@
    "lapel": "#2f1505"
   },
   "default": "PL"
+ },
+ "automation": {
+  "max_reels_per_run": 3,
+  "reel_rules": "Make a reel when: a favourite played (win, draw or loss); two watched clubs met; or a rival lost (banter). Skip rival wins/draws against unwatched clubs.",
+  "schedule": "see README (scheduled task)"
  }
 }

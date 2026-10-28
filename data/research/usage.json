@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 27,
+  "credits": 51,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -100,6 +100,126 @@
    {
     "at": "2026-10-27T07:35:48Z",
     "what": "scrape https://www.kicker.de/freiburg-gegen-bayern-2026-bundesliga-5226867/schema",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:45:42Z",
+    "what": "scrape https://www.bbc.co.uk/sport/football/teams/manchester-united/scores-fixtures",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:45:52Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:45:55Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:09Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:09Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:10Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:15Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:19Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:21Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:26Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:29Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:31Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:47:35Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:09Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:10Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:11Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:11Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:11Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:12Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:12Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:13Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:13Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:48:13Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-28T05:49:15Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
     "credits": 1
    }
   ]
