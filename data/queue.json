@@ -1,0 +1,56 @@
+{
+ "generated": "2026-10-28T05:50:47Z",
+ "ready": [],
+ "later_today": [
+  {
+   "espn_id": "401921842",
+   "slug": "chelsea-liverpool",
+   "date": "2026-10-28",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Chelsea"
+   ],
+   "competition": "English Carabao Cup",
+   "score": null,
+   "watched": [
+    "CHE",
+    "LIV"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401921834",
+   "slug": "brighton-hove-albion-manchester-city",
+   "date": "2026-10-28",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Carabao Cup",
+   "score": null,
+   "watched": [
+    "MCI"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401917035",
+   "slug": "1-fc-magdeburg-bayern-munich",
+   "date": "2026-10-28",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "1\\. FC Magdeburg"
+   ],
+   "competition": "German Cup",
+   "score": null,
+   "watched": [
+    "BAY"
+   ],
+   "favourite_involved": true
+  }
+ ],
+ "not_making": []
+}

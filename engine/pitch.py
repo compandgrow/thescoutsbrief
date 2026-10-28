@@ -102,7 +102,7 @@ def cmd_schedule(days):
     for i in range(days + 1):
         d = today + dt.timedelta(days=i)
         fixtures += day_matches(c, d, "all")
-    save(os.path.join(DATA, "fixtures.json"), {"generated": dt.datetime.utcnow().isoformat() + "Z", "fixtures": fixtures})
+    save(os.path.join(DATA, "fixtures.json"), {"generated": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat() + "Z", "fixtures": fixtures})
     fixtures.sort(key=lambda m: (not m["favourite_involved"], str(m.get("time_utc"))))
     for m in fixtures:
         print("*" if m["favourite_involved"] else " ", m.get("time_utc"), m["home_team"]["name"], "vs", m["away_team"]["name"], m.get("status"), m.get("id"))

@@ -39,7 +39,7 @@ def cached(url):
 def page(url, max_age_min=None):
     c = cached(url)
     if c and max_age_min is not None:
-        age = dt.datetime.utcnow() - dt.datetime.fromisoformat(c["fetched_at"].rstrip("Z"))
+        age = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None) - dt.datetime.fromisoformat(c["fetched_at"].rstrip("Z"))
         if age.total_seconds() < max_age_min * 60:
             return c
     return research("scrape", url)
@@ -80,7 +80,7 @@ def parse_table(md, team_key, kind):
 def cmd_fixtures(force):
     path = os.path.join(DATA, "fixtures.json")
     if os.path.exists(path) and not force:
-        age = dt.datetime.utcnow() - dt.datetime.fromisoformat(json.load(open(path))["generated"].rstrip("Z"))
+        age = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None) - dt.datetime.fromisoformat(json.load(open(path))["generated"].rstrip("Z"))
         if age.days < 6:
             print(f"fixtures.json is {age.days} days old, not refreshing (use --force)")
             return
@@ -96,7 +96,7 @@ def cmd_fixtures(force):
         for g in parse_table(p["data"]["markdown"], key, "fixtures"):
             games.setdefault(g["espn_id"], {**g, "watched": []})["watched"].append(key)
     fx = sorted(games.values(), key=lambda g: g["date"])
-    json.dump({"generated": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z", "fixtures": fx}, open(path, "w"), indent=1)
+    json.dump({"generated": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "fixtures": fx}, open(path, "w"), indent=1)
     for g in fx[:40]:
         print(g["date"], g["espn_id"], " v ".join(g["teams_text"]), "|", g["competition"], "| watched:", ",".join(sorted(set(g["watched"]))))
 
@@ -146,7 +146,7 @@ def cmd_due():
     cap = CFG.get("automation", {}).get("max_reels_per_run", 3)
     skipped += [{**g, "why": "over the per-run cap, next run"} for g in ready[cap:]]
     ready = ready[:cap]
-    json.dump({"generated": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z", "ready": ready, "later_today": later, "not_making": skipped},
+    json.dump({"generated": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z", "ready": ready, "later_today": later, "not_making": skipped},
               open(os.path.join(DATA, "queue.json"), "w"), indent=1)
     print(f"ready: {len(ready)}  not finished yet: {len(later)}")
     for g in ready:
