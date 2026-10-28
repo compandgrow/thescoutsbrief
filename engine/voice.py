@@ -40,42 +40,26 @@ def main(path):
     reel = json.load(open(path))
     out_dir = os.path.dirname(os.path.abspath(path))
     os.makedirs(os.path.join(out_dir, "audio"), exist_ok=True)
-    k = Kokoro(os.path.join(ROOT, "models/kokoro-v1.0.onnx"),
-               os.path.join(ROOT, "models/voices-v1.0.bin"))
     cfg = json.load(open(os.path.join(ROOT, "config/teams.json"))).get("voice", {})
     fx = {**cfg, **reel.get("voice_fx", {})}
+    beat_audio = None
+    if cfg.get("engine") == "indextts":
+        beat_audio = indextts_beats(reel["beats"], cfg.get("indextts", {}), out_dir)
+        if beat_audio is not None:
+            fx = {**fx, "pitch": 0}          # real performance: no pitch processing on top
+    if beat_audio is None:
+        beat_audio = kokoro_beats(reel["beats"])
 
     pieces, timing, t = [], [], LEAD_IN
     pieces.append(np.zeros(int(LEAD_IN * SR), np.float32))
-    styles = {}
-    def style_of(mix):
-        key = tuple(sorted(mix.items()))
-        if key not in styles:
-            styles[key] = sum(k.get_voice_style(v) * w for v, w in mix.items()).astype(np.float32)
-        return styles[key]
-
-    for i, beat in enumerate(reel["beats"]):
-        emo = beat.get("emotion", "neutral")
-        st = {**STYLE.get(emo, STYLE["neutral"]), **beat.get("voice_style", {})}
-        sentences = [x.strip() for x in re.findall(r"[^.!?]+[.!?]*", beat["say"]) if x.strip()]
-        parts = []
-        for j, sen in enumerate(sentences):
-            a, sr = k.create(sen, voice=style_of(st["mix"]), speed=beat.get("speed", st["speed"]), lang="en-us")
-            assert sr == SR
-            # intonation: exclamations lift, sentences alternate slightly so lines don't drone
-            semi = st["pitch"] + (0.8 if sen.endswith("!") else 0) + (0.35 if j % 2 == 0 else -0.35) * (len(sentences) > 1)
-            a = perform(trim(a), semi, st["grit"]) * st["gain"]
-            parts.append(a)
-            if j < len(sentences) - 1:
-                parts.append(np.zeros(int(st["pause"] * SR), np.float32))
-        audio = np.concatenate(parts)
+    for i, (beat, audio) in enumerate(zip(reel["beats"], beat_audio)):
         dur = len(audio) / SR
         timing.append({"beat": i, "start": round(t, 3), "end": round(t + dur, 3)})
         pieces.append(audio.astype(np.float32))
         gap = beat.get("pause_after", GAP)
         pieces.append(np.zeros(int(gap * SR), np.float32))
         t += dur + gap
-        print(f"beat {i:2d} {emo:12s} {dur:5.2f}s  {beat['say'][:60]}")
+        print(f"beat {i:2d} {beat.get('emotion', 'neutral'):12s} {dur:5.2f}s  {beat['say'][:60]}")
     pieces.append(np.zeros(int(TAIL * SR), np.float32))
     full = np.concatenate(pieces)
     peak = np.abs(full).max()
@@ -90,6 +74,77 @@ def main(path):
               open(os.path.join(out_dir, "timing.json"), "w"), indent=1)
     json.dump(mouth_track(full), open(os.path.join(out_dir, "mouth.json"), "w"))
     print(f"total {total:.2f}s")
+
+
+# IndexTTS emotion vectors: [happy, angry, sad, afraid, disgusted, melancholic, surprised, calm]
+EMO_VECTOR = {
+    "neutral":      [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.60],
+    "smug":         [0.35, 0.00, 0.00, 0.00, 0.10, 0.00, 0.00, 0.30],
+    "happy":        [0.70, 0.00, 0.00, 0.00, 0.00, 0.00, 0.10, 0.10],
+    "excited":      [0.75, 0.00, 0.00, 0.00, 0.00, 0.00, 0.35, 0.00],
+    "shocked":      [0.00, 0.00, 0.00, 0.15, 0.00, 0.00, 0.85, 0.00],
+    "disappointed": [0.00, 0.00, 0.45, 0.00, 0.00, 0.40, 0.00, 0.10],
+    "laughing":     [0.90, 0.00, 0.00, 0.00, 0.00, 0.00, 0.20, 0.00],
+    "angry":        [0.00, 0.70, 0.00, 0.00, 0.20, 0.00, 0.00, 0.00],
+    "furious":      [0.00, 0.95, 0.00, 0.00, 0.25, 0.00, 0.00, 0.00],
+}
+
+
+def kokoro_beats(beats):
+    """Offline fallback voice: per-emotion blend, pace, pitch and strain."""
+    k = Kokoro(os.path.join(ROOT, "models/kokoro-v1.0.onnx"), os.path.join(ROOT, "models/voices-v1.0.bin"))
+    styles, out = {}, []
+
+    def style_of(mix):
+        key = tuple(sorted(mix.items()))
+        if key not in styles:
+            styles[key] = sum(k.get_voice_style(v) * w for v, w in mix.items()).astype(np.float32)
+        return styles[key]
+
+    for beat in beats:
+        st = {**STYLE.get(beat.get("emotion", "neutral"), STYLE["neutral"]), **beat.get("voice_style", {})}
+        sentences = [x.strip() for x in re.findall(r"[^.!?]+[.!?]*", beat["say"]) if x.strip()]
+        parts = []
+        for j, sen in enumerate(sentences):
+            a, sr = k.create(sen, voice=style_of(st["mix"]), speed=beat.get("speed", st["speed"]), lang="en-us")
+            assert sr == SR
+            # intonation: exclamations lift, sentences alternate slightly so lines don't drone
+            semi = st["pitch"] + (0.8 if sen.endswith("!") else 0) + (0.35 if j % 2 == 0 else -0.35) * (len(sentences) > 1)
+            parts.append(perform(trim(a), semi, st["grit"]) * st["gain"])
+            if j < len(sentences) - 1:
+                parts.append(np.zeros(int(st["pause"] * SR), np.float32))
+        out.append(np.concatenate(parts))
+    return out
+
+
+def indextts_beats(beats, icfg, out_dir):
+    """Real emotional performance with IndexTTS 2.5 (separate venv). Returns None if it isn't installed."""
+    home = icfg.get("home", "/home/user/indextts")
+    py, model_dir = os.path.join(home, ".venv/bin/python"), os.path.join(home, "checkpoints")
+    speaker = os.path.join(ROOT, icfg.get("speaker", "assets/voice/scout_reference.wav"))
+    missing = [p for p in (py, os.path.join(model_dir, "config.yaml"), speaker) if not os.path.exists(p)]
+    if missing:
+        print("IndexTTS not ready, using the offline voice instead. Missing:", ", ".join(missing))
+        return None
+    tmp = os.path.join(out_dir, "audio/indextts")
+    os.makedirs(tmp, exist_ok=True)
+    jobs = []
+    for i, b in enumerate(beats):
+        emo = b.get("emotion", "neutral")
+        jobs.append({"text": b["say"], "out": os.path.join(tmp, f"beat_{i:02d}.wav"),
+                     "emo_vector": b.get("emo_vector", EMO_VECTOR.get(emo, EMO_VECTOR["neutral"])),
+                     "emo_alpha": b.get("emo_alpha", icfg.get("emo_alpha", 0.9))})
+    spec = os.path.join(tmp, "jobs.json")
+    json.dump({"model_dir": model_dir, "speaker": speaker, "jobs": jobs}, open(spec, "w"), indent=1)
+    subprocess.run([py, os.path.join(ROOT, "engine/indextts_worker.py"), spec], check=True)
+    out = []
+    for j in jobs:
+        a, sr = sf.read(j["out"])
+        a = a if a.ndim == 1 else a.mean(1)
+        if sr != SR:   # resample to the pipeline rate
+            a = np.interp(np.arange(int(len(a) * SR / sr)) * sr / SR, np.arange(len(a)), a)
+        out.append(trim(a.astype(np.float32)))
+    return out
 
 
 def apply_fx(src, dst, fx, n):

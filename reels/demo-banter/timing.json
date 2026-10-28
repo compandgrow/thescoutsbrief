@@ -1,25 +1,25 @@
 {
- "duration": 16.131,
+ "duration": 17.412,
  "beats": [
   {
    "beat": 0,
    "start": 0.45,
-   "end": 3.695
+   "end": 4.37
   },
   {
    "beat": 1,
-   "start": 4.095,
-   "end": 7.622
+   "start": 4.69,
+   "end": 8.659
   },
   {
    "beat": 2,
-   "start": 8.022,
-   "end": 11.502
+   "start": 8.979,
+   "end": 12.462
   },
   {
    "beat": 3,
-   "start": 11.902,
-   "end": 14.831
+   "start": 12.782,
+   "end": 16.192
   }
  ]
 }

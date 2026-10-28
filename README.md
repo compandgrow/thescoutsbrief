@@ -20,7 +20,7 @@ Automated match-day Instagram Reels for **@thescoutbrief**. Scout, a cartoon gor
 
 ## Setup (cloud environment)
 
-1. **Allowed domains:** `api.pitchapi.dev` (match data), `*.r2.cloudflarestorage.com` (Zernio video upload). `api.firecrawl.dev` (web research). Optional: `huggingface.co`, `*.hf.co` (realistic voice engine).
+1. **Allowed domains:** `api.pitchapi.dev` (match data), `*.r2.cloudflarestorage.com` (Zernio video upload). `api.firecrawl.dev` (web research). `huggingface.co`, `*.hf.co` (IndexTTS 2.5 emotional voice; also add a reference clip at `assets/voice/scout_reference.wav`).
 2. **Environment variables:** `PITCHAPI_API_KEY` (from pitchapi.dev), `FIRECRAWL_API_KEY` (from firecrawl.dev, free tier 1,000 credits/month).
 3. In a session: `bash setup.sh` installs dependencies and the offline voice model.
 

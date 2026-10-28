@@ -133,11 +133,17 @@
   ]
  },
  "voice": {
-  "engine": "kokoro",
+  "engine": "indextts",
   "base": "am_onyx",
   "pitch": 0,
   "bass": 2,
-  "note": "Per-emotion delivery (voice blend, pitch, pace, loudness, strain) lives in engine/voice.py STYLE. Override per beat with voice_style."
+  "indextts": {
+   "home": "/home/user/indextts",
+   "speaker": "assets/voice/scout_reference.wav",
+   "emo_alpha": 0.9,
+   "note": "IndexTTS 2.5 (bilibili Model Use License: free under 100M MAU / RMB 1bn revenue). Needs huggingface.co + *.hf.co for the model download, and a 5-15 s reference clip of a voice you have rights to."
+  },
+  "note": "Falls back to the offline Kokoro voice (engine/voice.py STYLE) if IndexTTS isn't installed."
  },
  "research": {
   "provider": "firecrawl",
