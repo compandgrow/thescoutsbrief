@@ -7,7 +7,8 @@ description: Run The Scout Brief match-day pipeline — find finished matches of
 Arguments: none (auto: every finished match that qualifies today), a match id (one match), or `schedule` (only list fixtures).
 
 ## 0. Preflight
-- `bash setup.sh` (idempotent; a fresh container needs ~30 min the first time: PyTorch + IndexTTS models).
+- Check for work FIRST (fast, no install needed): `python3 engine/web_data.py fixtures` then `python3 engine/web_data.py due`. If `data/queue.json` → `ready` is empty, report the `later_today` kickoffs, commit the records and stop. No setup needed.
+- Only when something is ready: `bash setup.sh` (idempotent; a fresh container needs ~30 min: PyTorch + IndexTTS models).
 - Data source: PitchAPI if `PITCHAPI_API_KEY` is set and `api.pitchapi.dev` answers; otherwise the **web path** (Firecrawl, needs `FIRECRAWL_API_KEY`). Check budget: `python3 engine/research.py usage`.
 - Voice: IndexTTS if installed + `assets/voice/scout_reference.wav`; else the offline Echo voice (say so in the report).
 
