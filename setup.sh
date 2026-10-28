@@ -28,4 +28,18 @@ if [ -x "$IDX/.venv/bin/python" ] && [ ! -f "$IDX/checkpoints/config.yaml" ]; th
     echo "NOTE: huggingface.co is blocked; IndexTTS models not downloaded (offline voice will be used)"
   fi
 fi
+# Helper models straight from Hugging Face (IndexTTS's own downloader picks a China mirror when it can't reach Google).
+if [ -f "$IDX/checkpoints/config.yaml" ] && [ ! -f "$IDX/checkpoints/hf_cache/bigvgan/bigvgan_generator.pt" ]; then
+  (cd "$IDX" && .venv/bin/python - <<'PY'
+import os, shutil
+from huggingface_hub import snapshot_download, hf_hub_download
+c = "checkpoints/hf_cache"; os.makedirs(c, exist_ok=True)
+snapshot_download("facebook/w2v-bert-2.0", local_dir=f"{c}/w2v-bert-2.0")
+shutil.copy2(hf_hub_download("amphion/MaskGCT", "semantic_codec/model.safetensors", local_dir=f"{c}/_maskgct"), f"{c}/semantic_codec_model.safetensors")
+hf_hub_download("funasr/campplus", "campplus_cn_common.bin", local_dir=c)
+for f in ("config.json", "bigvgan_generator.pt"):
+    hf_hub_download("nvidia/bigvgan_v2_22khz_80band_256x", f, local_dir=f"{c}/bigvgan")
+PY
+  ) || echo "WARN: IndexTTS helper model download failed"
+fi
 [ -f assets/voice/scout_reference.wav ] || echo "NOTE: add assets/voice/scout_reference.wav to use IndexTTS"
