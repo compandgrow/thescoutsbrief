@@ -1,7 +1,7 @@
 {
  "id": "chelsea-liverpool-2026-10-28",
  "match": {
-  "pill": "LIV 1–1 CHE · PENS 6–5 · CARABAO CUP",
+  "pill": "LIV 1–1 CHE · PENS 6–5",
   "league": "Carabao Cup"
  },
  "beats": [
@@ -54,9 +54,9 @@
    "card": {
     "type": "banter",
     "kicker": "BANTER ALERT",
-    "text": "CHELSEA:\n*ONE* GOAL,\nFROM THE SPOT",
+    "text": "*ONE* GOAL.\nA PENALTY.",
     "stamp": "NO OPEN PLAY",
-    "sub": "11 shots · 4 on target · 0 open-play goals",
+    "sub": "11 shots · 4 on target",
     "source": "ESPN"
    }
   },
@@ -169,9 +169,9 @@
    "card": {
     "type": "stat",
     "kicker": "CARABAO CUP",
-    "value": "QF",
-    "unit": "NEXT",
-    "label": "*Liverpool* v Bournemouth",
+    "value": "8",
+    "unit": "LAST",
+    "label": "*Liverpool* into the last eight",
     "sub": "Chelsea are out",
     "source": "BBC Sport"
    }
