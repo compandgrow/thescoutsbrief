@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 66,
+  "credits": 77,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -295,6 +295,51 @@
    {
     "at": "2026-10-29T01:31:19Z",
     "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401917035/1-fc-magdeburg-bayern-munich",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:19Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:20Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401921834/brighton-hove-albion-manchester-city",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:20Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401917035/1-fc-magdeburg-bayern-munich",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:32Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401917035",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:34Z",
+    "what": "search Bayern Munich v 1\\. FC Magdeburg BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-29T05:59:34Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cqe9l1yej078t",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:35Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401921842",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-29T05:59:37Z",
+    "what": "search Liverpool v Chelsea BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-29T05:59:38Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c69wz7x4jq71t",
     "credits": 1
    }
   ]
