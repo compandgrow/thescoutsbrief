@@ -48,7 +48,7 @@
    }
   },
   {
-   "say": "Ha! Chelsea had eleven shots, four on target, and their only goal was a penalty. Liverpool's was too, but Liverpool won.",
+   "say": "Ha! Eleven shots, four on target, and Chelsea's only goal was a penalty. So was Liverpool's.",
    "emotion": "laughing",
    "hit": true,
    "card": {
@@ -74,7 +74,7 @@
    }
   },
   {
-   "say": "Here is the shift: after Iraola's double change at fifty-nine minutes, Liverpool's expected goals, without penalties, went from zero point two five to one point oh eight.",
+   "say": "After Iraola's double change at fifty-nine minutes, Liverpool's expected goals, without penalties, went from zero point two five to one point oh eight.",
    "emotion": "neutral",
    "card": {
     "type": "compare",
@@ -134,7 +134,7 @@
    }
   },
   {
-   "say": "Worst, and it's close: Fofana. His handball gave the penalty, then he skied the last kick. Gravenberch also gave one away, but his kick was saved.",
+   "say": "Worst, and it's close: Fofana. His handball gave the penalty, then he skied the last kick. Gravenberch also gave one away, but his was saved.",
    "emotion": "disappointed",
    "card": {
     "type": "player",
