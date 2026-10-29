@@ -103,12 +103,12 @@
    }
   },
   {
-   "say": "Worst, and it's harsh: Magdeburg keeper Reimann. Eight shots on target, six goals, two saves.",
+   "say": "Toughest night: Magdeburg keeper Reimann. Eight shots on target, six goals, two saves.",
    "emotion": "disappointed",
    "card": {
     "type": "player",
     "verdict": "worst",
-    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "kicker": "SCOUT'S PICK · TOUGHEST NIGHT",
     "name": "Reimann",
     "team": "Magdeburg",
     "stats": [
@@ -151,8 +151,8 @@
    "card": {
     "type": "stat",
     "kicker": "BAYERN SUB",
-    "value": "93",
-    "unit": "TH MIN",
+    "value": "90+3",
+    "unit": "MIN",
     "label": "*Daiber* scores",
     "sub": "sub on at 82 minutes (goal at 90+3)",
     "source": "ESPN, BBC Sport"

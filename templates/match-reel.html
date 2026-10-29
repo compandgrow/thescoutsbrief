@@ -189,15 +189,16 @@ function drawPitch(s, t) {
 }
 
 function drawCard(s, t) {
-  const inK = expo(p(t, s.start, s.start + 0.45));
+  const cover = s === shots[0] && t < s.start;  // first frame doubles as the Instagram cover
+  const inK = cover ? 1 : expo(p(t, s.start, s.start + 0.45));
   const outK = cubic(p(t, s.end - 0.3, s.end));
-  const on = t >= s.start && t < s.end;
+  const on = cover || (t >= s.start && t < s.end);
   s.el.style.opacity = on ? 1 - outK : 0;
   s.el.style.transform = `translateY(${(1 - inK) * 160 - outK * 140}px)`;
   if (!on) return;
   const c = s.card;
   s.el.querySelectorAll(".mask > span").forEach((sp, i) => {
-    const k = expo(p(t, s.start + 0.1 + i * 0.09, s.start + 0.55 + i * 0.09));
+    const k = cover ? 1 : expo(p(t, s.start + 0.1 + i * 0.09, s.start + 0.55 + i * 0.09));
     sp.style.transform = `translateY(${(1 - k) * 110}%)`;
     sp.style.opacity = k > 0.01 ? 1 : 0;
   });
