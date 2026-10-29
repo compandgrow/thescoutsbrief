@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T05:49:15Z",
+ "generated": "2026-10-29T17:49:32Z",
  "fixtures": [
   {
    "espn_id": "401921842",
@@ -15,21 +15,6 @@
    "watched": [
     "LIV",
     "CHE"
-   ]
-  },
-  {
-   "espn_id": "401921834",
-   "slug": "brighton-hove-albion-manchester-city",
-   "date": "2026-10-28",
-   "team": "MCI",
-   "teams_text": [
-    "Manchester City",
-    "Brighton & Hove Albion"
-   ],
-   "competition": "English Carabao Cup",
-   "score": null,
-   "watched": [
-    "MCI"
    ]
   },
   {
@@ -1376,6 +1361,21 @@
    "score": null,
    "watched": [
     "TOT"
+   ]
+  },
+  {
+   "espn_id": "401932185",
+   "slug": "bradford-city-manchester-city",
+   "date": "2026-12-15",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Bradford City"
+   ],
+   "competition": "English Carabao Cup",
+   "score": null,
+   "watched": [
+    "MCI"
    ]
   },
   {
