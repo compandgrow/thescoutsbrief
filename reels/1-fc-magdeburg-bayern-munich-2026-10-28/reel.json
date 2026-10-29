@@ -1,0 +1,28 @@
+{
+ "id": "1-fc-magdeburg-bayern-munich-2026-10-28",
+ "match": {"pill": "BAY 6–1 FCM · DFB-POKAL", "league": "CUP"},
+ "beats": [
+  {"say": "Six goals. And Harry Kane never left the bench.", "emotion": "excited", "hit": true,
+   "card": {"type": "hook", "kicker": "BAYERN 6–1 MAGDEBURG", "text": "SIX GOALS.\n*KANE* NEVER\nPLAYED.", "size": 128, "source": "ESPN / BBC Sport"}},
+  {"say": "Bayern beat Magdeburg six-one in the German Cup. Nineteen shots to nine. Sixty-four touches in the box to eleven.", "emotion": "smug",
+   "card": {"type": "compare", "kicker": "FULL TIME", "teams": ["BAYERN", "MAGDEBURG"],
+    "rows": [{"label": "SHOTS", "a": 19, "b": 9}, {"label": "ON TARGET", "a": 8, "b": 2}, {"label": "BOX TOUCHES", "a": 64, "b": 11}],
+    "source": "BBC Sport (Opta)"}},
+  {"say": "It was two-one at half-time. Davies came on, and Bayern won the second half four-nil.", "emotion": "neutral",
+   "card": {"type": "compare", "kicker": "THE SECOND-HALF SHIFT", "teams": ["1ST HALF", "2ND HALF"],
+    "rows": [{"label": "BAYERN GOALS", "a": 2, "b": 4}, {"label": "MAGDEBURG GOALS", "a": 1, "b": 0}],
+    "source": "ESPN, BBC Sport"}},
+  {"say": "Scout's pick for best: Michael Olise. Two goals, one a penalty, in just sixty-eight minutes.", "emotion": "excited",
+   "card": {"type": "player", "verdict": "best", "kicker": "SCOUT'S PICK · BEST ON THE PITCH", "name": "Olise", "team": "Bayern Munich",
+    "stats": [["goals", "2"], ["penalty", "1"], ["first goal", "10'"], ["minutes", "68"]], "source": "ESPN, BBC Sport"}},
+  {"say": "Worst, and it's harsh: Magdeburg keeper Reimann. Eight shots on target, six goals, two saves.", "emotion": "disappointed",
+   "card": {"type": "player", "verdict": "worst", "kicker": "SCOUT'S PICK · WORST ON THE PITCH", "name": "Reimann", "team": "Magdeburg",
+    "stats": [["shots on target faced", "8"], ["goals conceded", "6"], ["saves", "2"], ["minutes", "90"]], "source": "ESPN Team Stats, BBC Sport"}},
+  {"say": "He had little help. Bayern completed three hundred and seventeen final-third passes. Magdeburg, twenty-three.", "emotion": "neutral",
+   "card": {"type": "stat", "kicker": "FINAL-THIRD PASSES", "value": "317", "unit": "V 23", "label": "*Bayern* v Magdeburg", "sub": "successful passes in the final third", "source": "BBC Sport (Opta)"}},
+  {"say": "Even substitute Daiber scored, in added time.", "emotion": "happy",
+   "card": {"type": "stat", "kicker": "BAYERN SUB", "value": "90+3", "unit": "'", "label": "*Daiber* scores", "sub": "on at 82 minutes", "source": "ESPN, BBC Sport"}},
+  {"say": "So, did Bayern even need Kane? Tell me below.", "emotion": "smug",
+   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "DID BAYERN\nNEED *KANE*?", "source": ""}}
+ ]
+}

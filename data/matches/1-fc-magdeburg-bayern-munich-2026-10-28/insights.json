@@ -1,0 +1,49 @@
+{
+ "match": {"home": "Bayern Munich", "away": "1. FC Magdeburg", "home_short": "BAY", "away_short": "FCM", "score": "6-1", "competition": "German Cup (DFB-Pokal), Round 2", "date": "2026-10-28"},
+ "data_mode": "web (ESPN + BBC cached pages) - no PitchAPI, no player ratings, no shot map; best/worst are Scout's pick",
+ "headline": "Bayern won 6-1 with 19 shots to 9 and 64 touches in the box to 11, and Harry Kane never left the bench.",
+ "team_story": [
+  {"label": "Shots", "home": 19, "away": 9, "source": "https://www.bbc.com/sport/football/live/cqe9l1yej078t Match Stats > Basic Stats"},
+  {"label": "Shots on target", "home": 8, "away": 2, "source": "https://www.bbc.com/sport/football/live/cqe9l1yej078t Match Stats > Basic Stats; ESPN Team Stats 'Shots on Goal' 8 v 2"},
+  {"label": "Touches in opposition box", "home": 64, "away": 11, "source": "https://www.bbc.com/sport/football/live/cqe9l1yej078t Match Stats > Basic Stats"},
+  {"label": "Successful final-third passes", "home": 317, "away": 23, "source": "https://www.bbc.com/sport/football/live/cqe9l1yej078t Match Stats > Distribution"},
+  {"label": "Possession %", "home": 63.3, "away": 36.7, "source": "https://www.bbc.com/sport/football/live/cqe9l1yej078t Match Stats > Basic Stats"}
+ ],
+ "tactical_change": {
+  "team": "Bayern Munich", "minute": 46, "before": "4-2-3-1", "after": "4-2-3-1 (shape not stated after the sub)",
+  "trigger": "Alphonso Davies on for Serge Gnabry at half-time (score 2-1)",
+  "effect": "Second-half shift: Bayern went from 2-1 at half-time to winning the second half 4-0 (goals at 50' pen, 70' Davies, 73' Brown, 90+3' Daiber).",
+  "evidence": [
+   {"label": "Bayern goals by half", "before": 2, "after": 4, "source": "ESPN match page header scorers (Olise 10', 50' Pen; Saibari 21'; Davies 70'; Brown 73'; Daiber 90'+3')"},
+   {"label": "Magdeburg goals by half", "before": 1, "after": 0, "source": "ESPN match page header (Zukowski 15')"}
+  ],
+  "confidence": "medium (goal timing is exact; cause is not proven, sub minute from BBC lineups: 'A. Davies 46'')"
+ },
+ "best_player": {
+  "name": "Michael Olise", "team": "Bayern Munich", "rating": null,
+  "stats": [["goals", "2"], ["penalty scored", "1"], ["first goal", "10'"], ["minutes", "68"]],
+  "why": "Only player with two goals (10' and 50' pen); subbed off at 68' for Boey. Scout's score: 3 points per goal, Olise 6, next best 3.",
+  "source": "ESPN match page header scorers; BBC lineups 'M. Olise S. Boey 68''"
+ },
+ "worst_player": {
+  "name": "Reimann", "team": "Magdeburg", "rating": null,
+  "stats": [["shots on target faced", "8"], ["goals conceded", "6"], ["saves", "2"], ["minutes", "90"]],
+  "why": "Scout's pick on numbers only: two saves from eight shots on target over a full 90. No error is cited in the cached pages and his defence gave him little help (64 Bayern touches in the box).",
+  "anger_worthy": false,
+  "source": "ESPN Team Stats (Shots on Goal 8 v 2, Saves FCM 2); BBC lineups (D. Reimann, GK, 90 min); score 6-1"
+ },
+ "surprise_stat": {"value": "317 v 23", "label": "successful final-third passes", "context": "Bayern 317, Magdeburg 23", "source": "https://www.bbc.com/sport/football/live/cqe9l1yej078t Match Stats > Distribution"},
+ "extra": [
+  {"fact": "Harry Kane was a named substitute but did not come on; PA report: 'left the England captain on the bench'", "source": "https://www.espn.co.uk/football/match/_/gameId/401917035/1-fc-magdeburg-bayern-munich (PA blurb); BBC substitutes list, no Kane sub event"},
+  {"fact": "Magdeburg equalised at 15' (Zukowski) before Saibari made it 2-1 at 21'", "source": "ESPN match page header"},
+  {"fact": "David Santos Daiber came on at 82' and scored at 90'+3', assisted by Stanisic after a fast break", "source": "BBC lineups; BBC Live Text item 03; ESPN header"}
+ ],
+ "result_context": {"winner": "BAY", "loser": "FCM", "banter": false, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [],
+ "caveats": [
+  "No player ratings: best/worst are Scout's pick. Best = most goals (3 points each); worst = 45+ minutes and weakest goalkeeping numbers; not a claim of fault.",
+  "No shot map (ESPN shots empty): no xG. Half-by-half split uses goal minutes only.",
+  "BBC page has a junk 'edigitalsurvey blocked' header; real content is intact. Live Text cached only for the last events.",
+  "Davies sub is a half-time change; formation after it is not stated by the source."
+ ]
+}
