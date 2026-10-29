@@ -16,7 +16,21 @@
    "status": "scheduled",
    "scheduled_for": "2026-10-29T08:08:00Z",
    "at": "2026-10-29"
+  },
+  {
+   "espn_id": "401921842",
+   "reel": "chelsea-liverpool-2026-10-28",
+   "zernio_post": "6ae2f57d3c7ebf16bcfb7117",
+   "status": "scheduled",
+   "scheduled_for": "2026-10-29T08:27:00Z",
+   "at": "2026-10-29"
   }
  ],
- "skipped": []
+ "skipped": [
+  {
+   "espn_id": "401921834",
+   "reason": "Man City v Brighton (pens): rival didn't lose to an unwatched club",
+   "at": "2026-10-29"
+  }
+ ]
 }
