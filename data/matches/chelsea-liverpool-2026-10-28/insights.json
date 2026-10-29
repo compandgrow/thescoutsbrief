@@ -1,0 +1,194 @@
+{
+ "match": {
+  "home": "Liverpool",
+  "away": "Chelsea",
+  "home_short": "LIV",
+  "away_short": "CHE",
+  "score": "1-1 (Liverpool win 6-5 on penalties)",
+  "competition": "English Carabao Cup, Fourth Round",
+  "date": "2026-10-28"
+ },
+ "data_mode": "firecrawl cached pages (ESPN match + team stats, BBC match page); no PitchAPI; no official player ratings - best/worst are Scout's pick",
+ "headline": "Eighteen penalties, zero open-play goals: both goals were penalties, then Liverpool won the shootout 6-5, with Chelsea scoring 5 of 8.",
+ "team_story": [
+  {
+   "label": "xG",
+   "home": 2.1,
+   "away": 1.82,
+   "why_it_matters": "Liverpool edged the chances, but 0.79 of each side's xG was a penalty",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool Team Stats (Expected Goals)"
+  },
+  {
+   "label": "Shots",
+   "home": 10,
+   "away": 11,
+   "why_it_matters": "Chelsea had more shots but only one goal, from the spot",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401921842 Shots"
+  },
+  {
+   "label": "Shots on target",
+   "home": 4,
+   "away": 4,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401921842 Shots (Shots on Goal)"
+  },
+  {
+   "label": "Possession %",
+   "home": 52,
+   "away": 48,
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool Team Stats (Possession)"
+  },
+  {
+   "label": "Big chances created",
+   "home": 2,
+   "away": 1,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401921842 Attack"
+  },
+  {
+   "label": "Shootout penalties scored (of 8)",
+   "home": 6,
+   "away": 5,
+   "why_it_matters": "The tie",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool shootout list (Scored/Missed/Saved per kick); BBC report https://www.bbc.com/sport/football/live/c69wz7x4jq71t"
+  }
+ ],
+ "tactical_change": {
+  "team": "Liverpool",
+  "minute": 59,
+  "before": "4-2-3-1",
+  "after": "4-2-3-1 (shape unchanged in source)",
+  "trigger": "Iraola brought on Wirtz and Barcola for Koumas and McConnell, both booked in the first half",
+  "effect": "Liverpool's non-penalty xG went from 0.25 (5 shots, before 59') to 1.08 (4 shots, after 59'): xG per shot 0.05 to 0.27.",
+  "evidence": [
+   {
+    "label": "Liverpool non-penalty xG",
+    "before": 0.25,
+    "after": 1.08,
+    "source": "derived.json (analysis.py) from shots_espn.json = https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool shot map"
+   },
+   {
+    "label": "Liverpool non-penalty shots",
+    "before": 5,
+    "after": 4,
+    "source": "derived.json from ESPN shot map"
+   },
+   {
+    "label": "Liverpool xG per shot (non-penalty)",
+    "before": 0.05,
+    "after": 0.27,
+    "source": "derived.json"
+   }
+  ],
+  "confidence": "medium (timing of subs from BBC lineup; other subs also happened, small sample)",
+  "sub_source": "https://www.bbc.com/sport/football/live/c69wz7x4jq71t Team Lineups (Wirtz 59', Barcola 59' for Koumas, McConnell) and match report ('Just before the hour mark ... brought on Florian Wirtz and Bradley Barcola')"
+ },
+ "second_half_shift": {
+  "team": "Chelsea",
+  "effect": "Chelsea shots 2 (first half, incl. penalty) to 9 (second half); xG 0.83 to 0.99",
+  "source": "derived.json from ESPN shot map"
+ },
+ "best_player": {
+  "name": "Mamardashvili",
+  "team": "Liverpool",
+  "rating": null,
+  "stats": [
+   [
+    "saves in 90 min",
+    "3"
+   ],
+   [
+    "shots on target faced",
+    "4"
+   ],
+   [
+    "shootout save",
+    "1"
+   ],
+   [
+    "minutes",
+    "90"
+   ]
+  ],
+  "scout_score": "Scout's pick score (explicit): saves in play + shootout saves, tie-break post-shot xG of shots saved (xGOT). Mamardashvili 3+1, xGOT saved 0.88; Penders 3+1, xGOT saved 0.84. No outfield player had a decisive stat line beyond a scored penalty.",
+  "why": "Three saves from four shots on target (one of the four a penalty), the highest post-shot xG stopped of either keeper (0.88 v 0.84), and he saved Emegha's shootout kick.",
+  "source": "Saves: https://www.espn.com/soccer/team-stats/_/gameId/401921842 / ESPN match page Team Stats (Saves 3); xGOT saved: derived.json from ESPN shot map; shootout save: ESPN shootout list + BBC report https://www.bbc.com/sport/football/live/c69wz7x4jq71t; 90 min: BBC Team Lineups (no goalkeeper change)"
+ },
+ "worst_player": {
+  "name": "Fofana",
+  "team": "Chelsea",
+  "rating": null,
+  "stats": [
+   [
+    "penalty conceded (handball)",
+    "1"
+   ],
+   [
+    "xG of that penalty",
+    "0.79"
+   ],
+   [
+    "final shootout kick",
+    "skied"
+   ],
+   [
+    "minutes",
+    "90"
+   ]
+  ],
+  "why": "Handled the ball in the box at 43', Gakpo scored the penalty (0.79 xG), then his kick in the shootout went over and ended the tie. Gravenberch has a near-identical profile (conceded the 40' penalty, kick saved), so it is close; Fofana's miss decided it.",
+  "anger_worthy": false,
+  "source": "https://www.bbc.com/sport/football/live/c69wz7x4jq71t match report ('Fofana handled the ball in the box just three minutes later'; 'Wesley Fofana skied his spot-kick over'); ESPN shot map (43' penalty xG 0.79, 104' shootout kick Off Target); 90 min: BBC Team Lineups (not substituted)"
+ },
+ "surprise_stat": {
+  "value": "18",
+  "label": "penalties taken (2 in normal time + 16 in the shootout), zero open-play goals",
+  "context": "Both goals were penalties",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool (goals: Rogers 40' Pen, Gakpo 43' Pen; shootout list 8 kicks each); derived.json penalties_total"
+ },
+ "result_context": {
+  "winner": "LIV",
+  "loser": "CHE",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false,
+  "decided_on_penalties": true,
+  "note": "Both watched rivals; neither a favourite. Banter kept light and number-based (shots/xG/shootout), not about individuals."
+ },
+ "banter_material": [
+  {
+   "fact": "Chelsea had 11 shots, 4 on target and their only goal was a penalty (0 open-play goals)",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401921842 Shots; https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool goals list"
+  },
+  {
+   "fact": "Chelsea scored 5 of 8 shootout penalties; Liverpool scored 6 of 8 (Chelsea missed Barco, Emegha, Fofana)",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool shootout list; https://www.bbc.com/sport/football/live/c69wz7x4jq71t report"
+  },
+  {
+   "fact": "Chelsea created 1 big chance and missed it",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401921842 Attack (Big Chances Created 1, Missed 1)"
+  },
+  {
+   "fact": "Chelsea non-penalty xG 1.03 from 10 shots",
+   "source": "derived.json from ESPN shot map"
+  }
+ ],
+ "context": [
+  {
+   "fact": "Liverpool play Bournemouth in the quarter-finals",
+   "source": "https://www.bbc.com/sport/football/live/c69wz7x4jq71t report"
+  },
+  {
+   "fact": "Chelsea lost 2-0 to Tottenham on Saturday (league)",
+   "source": "https://www.bbc.com/sport/football/live/c69wz7x4jq71t report ('2-0 home league loss by Spurs')"
+  }
+ ],
+ "caveats": [
+  "No player ratings: best/worst are Scout's pick from saves, shootout events and match events (BBC fan 'average rating' exists on the BBC page but is a user vote, not used).",
+  "Keeper tie: Penders also made 3 saves + 1 shootout save (xGOT saved 0.84); Mamardashvili wins the tie-break by 0.04, so best is a judgement call.",
+  "Worst is close with Gravenberch (conceded the 40' penalty, shootout kick saved); decided by whose kick ended the tie.",
+  "Shot map xG sums to Liverpool 2.12 / Chelsea 1.82; the ESPN team-stats panel says 2.10 / 1.82. Reel uses the panel value for team xG, shot map for before/after splits.",
+  "ESPN lists Barco and Tsimikas shootout kicks as Missed; BBC says Barco hit the woodwork and Tsimikas blazed over. Reel says only 'missed'.",
+  "BBC says 'fifth straight success on penalties against Chelsea' while a photo caption says 'all five previous'; the streak is not used.",
+  "No extra time was played (straight to penalties); 'shootout' shots are minutes 91-104 on the ESPN shot map.",
+  "Shootout was banter-eligible only because of the queue flag (loser_key CHE); tone is light and about numbers."
+ ]
+}

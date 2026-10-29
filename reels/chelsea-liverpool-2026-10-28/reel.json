@@ -1,0 +1,190 @@
+{
+ "id": "chelsea-liverpool-2026-10-28",
+ "match": {
+  "pill": "LIV 1–1 CHE · PENS 6–5 · CARABAO CUP",
+  "league": "Carabao Cup"
+ },
+ "beats": [
+  {
+   "say": "Eighteen penalties. Zero open-play goals. Liverpool beat Chelsea six-five from the spot.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "LIVERPOOL 1–1 CHELSEA · PENS 6–5",
+    "text": "18 PENALTIES.\n*ZERO* OPEN-PLAY\nGOALS.",
+    "size": 120,
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "One-one after ninety. Expected goals: Liverpool two point one, Chelsea one point eight two.",
+   "emotion": "neutral",
+   "card": {
+    "type": "compare",
+    "kicker": "CARABAO CUP · ROUND FOUR",
+    "teams": [
+     "LIVERPOOL",
+     "CHELSEA"
+    ],
+    "rows": [
+     {
+      "label": "xG",
+      "a": 2.1,
+      "b": 1.82
+     },
+     {
+      "label": "SHOTS",
+      "a": 10,
+      "b": 11
+     },
+     {
+      "label": "POSSESSION %",
+      "a": 52,
+      "b": 48
+     }
+    ],
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "Ha! Chelsea had eleven shots, four on target, and their only goal was a penalty.",
+   "emotion": "laughing",
+   "hit": true,
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "CHELSEA:\n*ONE* GOAL,\nFROM THE SPOT",
+    "stamp": "NO OPEN PLAY",
+    "sub": "11 shots · 4 on target · 0 open-play goals",
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "In the shootout, Chelsea hit five of eight. Liverpool, six. That's the tie.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "SHOOTOUT",
+    "value": "5",
+    "unit": "OF 8",
+    "label": "*Chelsea* penalties scored",
+    "sub": "Liverpool scored 6 of 8",
+    "source": "ESPN, BBC Sport"
+   }
+  },
+  {
+   "say": "The turning point: Iraola's double change at fifty-nine minutes. Liverpool's expected goals, without penalties, went from zero point two five to one point oh eight.",
+   "emotion": "neutral",
+   "card": {
+    "type": "compare",
+    "kicker": "LIVERPOOL · THE 59' DOUBLE CHANGE",
+    "teams": [
+     "BEFORE 59'",
+     "AFTER 59'"
+    ],
+    "rows": [
+     {
+      "label": "xG (NO PENS)",
+      "a": 0.25,
+      "b": 1.08
+     },
+     {
+      "label": "SHOTS (NO PENS)",
+      "a": 5,
+      "b": 4
+     },
+     {
+      "label": "xG PER SHOT",
+      "a": 0.05,
+      "b": 0.27
+     }
+    ],
+    "source": "ESPN shot map, BBC Sport"
+   }
+  },
+  {
+   "say": "Scout's pick for best: Mamardashvili. Three saves from four shots on target, plus a shootout save.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Mamardashvili",
+    "team": "Liverpool",
+    "stats": [
+     [
+      "saves",
+      "3"
+     ],
+     [
+      "shots on target faced",
+      "4"
+     ],
+     [
+      "shootout saves",
+      "1"
+     ],
+     [
+      "minutes",
+      "90"
+     ]
+    ],
+    "source": "ESPN, BBC Sport"
+   }
+  },
+  {
+   "say": "Worst, and it's close: Fofana. His handball gave the penalty, then he skied the last kick. Gravenberch also gave one away, but his kick was saved.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "name": "Fofana",
+    "team": "Chelsea",
+    "stats": [
+     [
+      "penalty conceded",
+      "1"
+     ],
+     [
+      "xG of that penalty",
+      "0.79"
+     ],
+     [
+      "final shootout kick",
+      "over"
+     ],
+     [
+      "minutes",
+      "90"
+     ]
+    ],
+    "source": "BBC Sport, ESPN shot map"
+   }
+  },
+  {
+   "say": "Okay, deep breath. Liverpool meet Bournemouth next.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "CARABAO CUP",
+    "value": "QF",
+    "unit": "NEXT",
+    "label": "*Liverpool* v Bournemouth",
+    "sub": "Chelsea are out",
+    "source": "BBC Sport"
+   }
+  },
+  {
+   "say": "Are shootouts skill or luck? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "SHOOTOUTS:\n*SKILL* OR LUCK?",
+    "source": ""
+   }
+  }
+ ]
+}
