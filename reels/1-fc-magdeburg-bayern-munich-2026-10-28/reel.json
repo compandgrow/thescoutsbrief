@@ -151,10 +151,10 @@
    "card": {
     "type": "stat",
     "kicker": "BAYERN SUB",
-    "value": "90+3",
-    "unit": "MIN",
-    "label": "*Daiber* scores",
-    "sub": "sub on at 82 minutes (goal at 90+3)",
+    "value": "82",
+    "unit": "TH MIN",
+    "label": "*Daiber* comes on",
+    "sub": "scores in added time, 90+3",
     "source": "ESPN, BBC Sport"
    }
   },

@@ -48,7 +48,7 @@
    }
   },
   {
-   "say": "Ha! Chelsea had eleven shots, four on target, and their only goal was a penalty.",
+   "say": "Ha! Chelsea had eleven shots, four on target, and their only goal was a penalty. Liverpool's was too, but Liverpool won.",
    "emotion": "laughing",
    "hit": true,
    "card": {
@@ -56,7 +56,7 @@
     "kicker": "BANTER ALERT",
     "text": "*ONE* GOAL.\nA PENALTY.",
     "stamp": "NO OPEN PLAY",
-    "sub": "11 shots · 4 on target",
+    "sub": "11 shots · 4 on target · both goals pens",
     "source": "ESPN"
    }
   },
@@ -74,7 +74,7 @@
    }
   },
   {
-   "say": "The turning point: Iraola's double change at fifty-nine minutes. Liverpool's expected goals, without penalties, went from zero point two five to one point oh eight.",
+   "say": "Here is the shift: after Iraola's double change at fifty-nine minutes, Liverpool's expected goals, without penalties, went from zero point two five to one point oh eight.",
    "emotion": "neutral",
    "card": {
     "type": "compare",
@@ -164,15 +164,15 @@
    }
   },
   {
-   "say": "Okay, deep breath. Liverpool meet Bournemouth next.",
+   "say": "Okay, deep breath. Liverpool drew Bournemouth in the quarter-final.",
    "emotion": "smug",
    "card": {
     "type": "stat",
     "kicker": "CARABAO CUP",
     "value": "8",
     "unit": "LAST",
-    "label": "*Liverpool* into the last eight",
-    "sub": "Chelsea are out",
+    "label": "*Liverpool* v Bournemouth",
+    "sub": "quarter-final draw · Chelsea are out",
     "source": "BBC Sport"
    }
   },
