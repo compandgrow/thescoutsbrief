@@ -1,40 +1,6 @@
 {
- "generated": "2026-10-28T23:48:45Z",
- "ready": [],
- "later_today": [
-  {
-   "espn_id": "401921842",
-   "slug": "chelsea-liverpool",
-   "date": "2026-10-28",
-   "team": "LIV",
-   "teams_text": [
-    "Liverpool",
-    "Chelsea"
-   ],
-   "competition": "English Carabao Cup",
-   "score": null,
-   "watched": [
-    "CHE",
-    "LIV"
-   ],
-   "favourite_involved": false
-  },
-  {
-   "espn_id": "401921834",
-   "slug": "brighton-hove-albion-manchester-city",
-   "date": "2026-10-28",
-   "team": "MCI",
-   "teams_text": [
-    "Manchester City",
-    "Brighton & Hove Albion"
-   ],
-   "competition": "English Carabao Cup",
-   "score": null,
-   "watched": [
-    "MCI"
-   ],
-   "favourite_involved": false
-  },
+ "generated": "2026-10-29T01:31:19Z",
+ "ready": [
   {
    "espn_id": "401917035",
    "slug": "1-fc-magdeburg-bayern-munich",
@@ -45,12 +11,70 @@
     "1\\. FC Magdeburg"
    ],
    "competition": "German Cup",
-   "score": null,
+   "score": "6-1",
    "watched": [
     "BAY"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": "BAY",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
+  },
+  {
+   "espn_id": "401921842",
+   "slug": "chelsea-liverpool",
+   "date": "2026-10-28",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Chelsea"
+   ],
+   "competition": "English Carabao Cup",
+   "score": "1-1 (Liverpool win 6-5 on penalties)",
+   "watched": [
+    "CHE",
+    "LIV"
+   ],
+   "favourite_involved": false,
+   "winner_key": "LIV",
+   "loser_key": "CHE",
+   "on_penalties": true,
+   "banter": true,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "two watched clubs met"
   }
  ],
- "not_making": []
+ "later_today": [],
+ "not_making": [
+  {
+   "espn_id": "401921834",
+   "slug": "brighton-hove-albion-manchester-city",
+   "date": "2026-10-28",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Brighton & Hove Albion"
+   ],
+   "competition": "English Carabao Cup",
+   "score": "2-2 (Manchester City win 4-3 on penalties)",
+   "watched": [
+    "MCI"
+   ],
+   "favourite_involved": false,
+   "winner_key": "MCI",
+   "loser_key": null,
+   "on_penalties": true,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  }
+ ]
 }

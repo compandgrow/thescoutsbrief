@@ -106,19 +106,24 @@ def match_status(eid, slug):
     md = clean(p["data"]["markdown"])
     head = md[:4000]
     lines = [l.strip() for l in clean(md)[:20000].split("\n") if l.strip()]
-    # the match header is the block with each team's season record ("1-4-3, 7 PTS"); the ticker above it is other games
-    rec = [i for i, l in enumerate(lines) if re.fullmatch(r"\d+-\d+-\d+, \d+ PTS", l)]
+    # The match header sits just above the "# Home v Away" heading: home score, status (FT / AET / FT-Pens),
+    # away score. (League pages also show season records like "1-4-3, 7 PTS"; cup pages don't.)
+    # A score ticker of other games can appear above it, so search only the lines right before the heading.
+    STATUS = re.compile(r"^(FT|AET|FT-Pens|Pens|Full[- ]?time)\b")
+    h = next((i for i, l in enumerate(lines) if l.startswith("# ") and " v " in l), None)
     ft_i, score = None, None
-    if rec:
-        blk = lines[rec[0]:rec[0] + 14]
-        digits = [(i, l) for i, l in enumerate(blk) if re.fullmatch(r"\d{1,2}", l)]
-        status_i = next((i for i, l in enumerate(blk) if l in ("FT", "AET", "FT-Pens", "Pens") or l.startswith("FT")), None)
-        if status_i is not None:
-            ft_i = rec[0] + status_i
-            home = [l for i, l in digits if i < status_i]
-            away = [l for i, l in digits if i > status_i]
+    if h is not None:
+        lo = max(0, h - 16)
+        st = [i for i in range(lo, h) if STATUS.match(lines[i])]
+        if st:
+            ft_i = st[-1]
+            home = [l for l in lines[lo:ft_i] if re.fullmatch(r"\d{1,2}", l)]
+            away = [l for l in lines[ft_i + 1:h] if re.fullmatch(r"\d{1,2}", l)]
             if home and away:
                 score = (int(home[-1]), int(away[0]))
+    pens = next((l for l in lines[:(h or 0) + 10] if re.search(r"win [\d-]+ on penalties|advances? [\d-]+ on penalties", l)), None)
+    if pens:
+        score = (score or (0, 0)) + (pens,)
     return ft_i is not None, score, md
 
 
@@ -134,7 +139,7 @@ def cmd_due():
             continue
         ft, score, _ = match_status(g["espn_id"], g["slug"])
         keys = sorted(set(g["watched"]))
-        item = {**g, "watched": keys, "score": f"{score[0]}-{score[1]}" if score else None,
+        item = {**g, "watched": keys, "score": (f"{score[0]}-{score[1]}" + (f" ({score[2]})" if len(score) > 2 else "")) if score else None,
                 "favourite_involved": any(ROLE.get(k) == "favourite" for k in keys)}
         if not ft:
             later.append(item)
@@ -169,6 +174,15 @@ def side_key(team_text):
 
 
 def result_flags(g, score):
+    if score and len(score) == 3 and len(g["teams_text"]) == 2:      # decided on penalties
+        home, away = (side_key(t) for t in g["teams_text"])
+        first = score[2].split(" win ")[0].split(" advance")[0].strip()
+        win_home = side_key(first) == home if side_key(first) else first.lower() in g["teams_text"][0].lower()
+        win, lose = (home, away) if win_home else (away, home)
+        return {"winner_key": win, "loser_key": lose, "on_penalties": True,
+                "banter": ROLE.get(lose) == "rival",
+                "banter_by_favourite": ROLE.get(lose) == "rival" and ROLE.get(win) == "favourite",
+                "favourite_lost": ROLE.get(lose) == "favourite"}
     if not score or len(g["teams_text"]) != 2 or score[0] == score[1]:
         return {"winner_key": None, "loser_key": None, "banter": False, "banter_by_favourite": False, "favourite_lost": False}
     home, away = (side_key(t) for t in g["teams_text"])
