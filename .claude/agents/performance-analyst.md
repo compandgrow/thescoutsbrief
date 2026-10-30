@@ -63,5 +63,15 @@ Updated <date> · <n> reels reviewed · confidence: <low (<5 reels) | medium (5�
 - Don't contradict the house rules (facts first, sources, banter red lines, favourites). Learnings shape *how* we tell the story, never *what* is true.
 - With fewer than 5 reels, say plainly that the patterns are early, and prefer experiments over firm rules.
 
+## Changing the reel format (config/format.json)
+You may change the reel format itself, not only write learnings. Rules:
+- Change only keys under `tunable` (length, word limit, hook rule, beat slots and order, which sections appear, card types, caption style, pacing, post delay). You may add a new slot or card idea only if the producer can already render it (card types in `templates/match-reel.html`); otherwise list it under "Experiments" in learnings.md for the user.
+- Never touch `locked` (facts and sources, banter red lines, favourites, presenter, voice, league colours, video specs, account, review gate).
+- **One change per version.** Bump `version`, set `updated`, write `why` with the evidence (reels and numbers), and add a `history` entry with `judge_after_reels` (normally 3).
+- Don't change the format while the current version has fewer reels than its `judge_after_reels`, unless a reel failed badly (skip rate above 75% or watch ratio below 0.1).
+- After `judge_after_reels` reels, compare them with the previous version's reels (skip rate, watch ratio, shares+saves per 1k reach). If they did worse, revert to the previous values and say so in `history`; if better, keep it and pick the next change.
+- Validate before saving: `python3 -c "import json; json.load(open('config/format.json'))"`.
+- Record every format change in your report (old → new, why).
+
 ## Report back
 Per reel: views, hook skip rate, avg watch time vs length, main reason, the rewritten hook. Then the top rule from `learnings.md`. Commit nothing yourself; the run commits `data/performance/`.

@@ -1,0 +1,112 @@
+{
+ "version": 2,
+ "updated": "2026-10-30",
+ "why": "v1 (35-65 s, build-up hook) got 73.9% skips and 3.6 s average watch on mun-bou-2026-10-25. v2 puts the payoff in the first 3 s and cuts the length.",
+ "owner_note": "The performance-analyst may change anything in 'tunable' (one change per version, see .claude/agents/performance-analyst.md). Nothing in 'locked' may change without the user.",
+ "tunable": {
+  "duration_s": {
+   "target": [
+    30,
+    45
+   ],
+   "max": 50
+  },
+  "spoken_words_max": 110,
+  "hook": {
+   "payoff_within_s": 3,
+   "max_words": 10,
+   "rule": "Say the surprising number or verdict first, then explain. No build-up before the payoff.",
+   "first_frame": "The hook card shows the payoff in big text from frame 0 (it is the cover)."
+  },
+  "beats": {
+   "min": 5,
+   "max": 8
+  },
+  "structure": [
+   {
+    "slot": "hook",
+    "card": "hook",
+    "emotion": [
+     "shocked",
+     "smug",
+     "excited"
+    ],
+    "note": "payoff number in the first line"
+   },
+   {
+    "slot": "proof",
+    "card": "compare",
+    "note": "2-3 numbers that back the hook, straight after it"
+   },
+   {
+    "slot": "story",
+    "card": "any",
+    "note": "the single best of: tactical change, trend storyline, banter. Pick one; don't do all three"
+   },
+   {
+    "slot": "player",
+    "card": "player",
+    "note": "best OR worst player, whichever is the stronger story (worst + anger if anger_worthy)"
+   },
+   {
+    "slot": "emotion_peak",
+    "card": "stat or none",
+    "optional": true,
+    "note": "angry/furious rant or laughing banter, 1-2 short lines"
+   },
+   {
+    "slot": "outro",
+    "card": "outro",
+    "note": "one debate question, max 10 words"
+   }
+  ],
+  "debate_question_in_caption_first_line": true,
+  "caption": {
+   "first_line": "the hook in 8 words or fewer",
+   "hashtags": [
+    6,
+    10
+   ]
+  },
+  "card_types_allowed": [
+   "hook",
+   "compare",
+   "player",
+   "stat",
+   "formation",
+   "banter",
+   "outro"
+  ],
+  "pacing": {
+   "max_seconds_per_beat": 8,
+   "pause_after_default": 0.25
+  },
+  "posting": {
+   "aim": "post within 24 h of full time",
+   "note": "post delay itself lives in config/teams.json (post_delay_minutes)"
+  }
+ },
+ "locked": {
+  "facts": "Every number on screen or spoken comes from the match data, trends.json or data/form with a source.",
+  "banter": "Red lines in config/teams.json; favourites Man United, Real Madrid, PSG, Bayern; no banter when a favourite loses.",
+  "presenter": "Scout the gorilla, emotions from presenter/presenter.js.",
+  "voice": "IndexTTS 2.5 with the Echo reference voice, no pitch effects.",
+  "league_colours": "EPL purple, La Liga blue, Bundesliga orange (config/teams.json league_themes).",
+  "video": "1080x1920, H.264 + AAC, about -14 LUFS.",
+  "account": "Instagram @thescoutbrief only, reviewer PASS before posting, approval mode from config/teams.json."
+ },
+ "history": [
+  {
+   "version": 1,
+   "until": "2026-10-30",
+   "summary": "35-65 s, 7-10 beats, build-up hook, every section in every reel"
+  },
+  {
+   "version": 2,
+   "from": "2026-10-30",
+   "summary": "payoff in 3 s, 30-45 s, 5-8 beats, one story per reel",
+   "evidence": "mun-bou-2026-10-25 review",
+   "judge_after_reels": 3
+  }
+ ]
+}

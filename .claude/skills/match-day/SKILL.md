@@ -20,8 +20,8 @@ Arguments: none (auto: every finished match that qualifies today), a match id (o
 | 2 | `data-collector` | `data/matches/<id>/` + `_overview.md` | score, team stats and either shots or lineups present |
 | 3 | `match-analyst` | `insights.json` (+ `analysis.py`) | every number has a `source` |
 | 3b | `trend-scout` | `data/matches/<id>/trends.json` (+ `data/form/<team>.json`) | every talking point has 2 trusted outlets, 1 official source, or computed form; ≤ 14 credits. Empty is fine |
-| 4 | `scriptwriter` | `reels/<id>/reel.json` (with `match.league`), `caption.txt` | 7–10 beats, hook first, ≤ ~140 spoken words |
-| 5 | `producer` | `reels/<id>/out/reel.mp4` | renders, 25–65 s |
+| 4 | `scriptwriter` | `reels/<id>/reel.json` (with `match.league`), `caption.txt` | follows `config/format.json` (beats, words, hook payoff in 3 s) |
+| 5 | `producer` | `reels/<id>/out/reel.mp4` | renders, within `format.json` duration max |
 | 6 | `reviewer` | `reels/<id>/review.md` | PASS. FIX → back to 4/5, max 2 rounds, then escalate |
 | 7 | approval | — | see below |
 | 8 | `publisher` | Zernio post (scheduled +60 min) | reviewer PASS only |
