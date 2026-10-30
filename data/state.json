@@ -13,17 +13,19 @@
    "espn_id": "401917035",
    "reel": "1-fc-magdeburg-bayern-munich-2026-10-28",
    "zernio_post": "6ae2f0e14b9d6c7d90f1514f",
-   "status": "scheduled",
-   "scheduled_for": "2026-10-29T08:08:00Z",
-   "at": "2026-10-29"
+   "status": "published",
+   "at": "2026-10-29",
+   "published_at": "2026-10-29T08:09:17Z",
+   "instagram_url": "https://www.instagram.com/reel/DfEixhFFHy2/"
   },
   {
    "espn_id": "401921842",
    "reel": "chelsea-liverpool-2026-10-28",
    "zernio_post": "6ae2f57d3c7ebf16bcfb7117",
-   "status": "scheduled",
-   "scheduled_for": "2026-10-29T08:27:00Z",
-   "at": "2026-10-29"
+   "status": "published",
+   "at": "2026-10-29",
+   "published_at": "2026-10-29T08:29:34Z",
+   "instagram_url": "https://www.instagram.com/reel/DfElEAsieU8/"
   }
  ],
  "skipped": [
