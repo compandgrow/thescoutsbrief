@@ -1,6 +1,23 @@
 {
- "generated": "2026-10-29T23:48:17Z",
+ "generated": "2026-10-30T17:47:52Z",
  "ready": [],
- "later_today": [],
+ "later_today": [
+  {
+   "espn_id": "401876421",
+   "slug": "paris-saint-germain-le-havre-ac",
+   "date": "2026-10-30",
+   "team": "PSG",
+   "teams_text": [
+    "Le Havre AC",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ],
+   "favourite_involved": true
+  }
+ ],
  "not_making": []
 }
