@@ -7,6 +7,7 @@ description: Run The Scout Brief match-day pipeline — find finished matches of
 Arguments: none (auto: every finished match that qualifies today), a match id (one match), or `schedule` (only list fixtures).
 
 ## 0. Preflight
+- **Performance review first (no setup, no Firecrawl):** run the `performance-analyst` agent. It reviews every reel posted 24 h+ ago and updates `data/performance/learnings.md`. Do this even when no match is ready.
 - Check for work FIRST (fast, no install needed): `python3 engine/web_data.py fixtures` then `python3 engine/web_data.py due`. If `data/queue.json` → `ready` is empty, report the `later_today` kickoffs, commit the records and stop. No setup needed.
 - Only when something is ready: `bash setup.sh` (idempotent; a fresh container needs ~30 min: PyTorch + IndexTTS models).
 - Data source: PitchAPI if `PITCHAPI_API_KEY` is set and `api.pitchapi.dev` answers; otherwise the **web path** (Firecrawl, needs `FIRECRAWL_API_KEY`). Check budget: `python3 engine/research.py usage`.
@@ -33,8 +34,8 @@ Files are the hand-off between agents. Add each finished match to `data/state.js
 - If the Zernio tools aren't available in the session, nothing is posted: send the MP4 + caption to the user and say so.
 
 ## 3. Finish
-- Commit and push to branch `scout-brief-v1`: `data/state.json`, `data/fixtures.json`, `data/queue.json`, `data/research/usage.json`, `data/form/*.json`, `data/matches/<id>/{insights.json,trends.json,analysis.py,shots_espn.json,_web_sources.json,_overview.md}`, `reels/<id>/{reel.json,caption.txt,review.md,timing.json,mouth.json}`. Videos and audio stay out of git.
-- Report: matches made (hook line, trend angle used, best/worst, review verdict), matches skipped and why, next kickoffs, credits used, anything that failed.
+- Commit and push to branch `scout-brief-v1`: `data/state.json`, `data/fixtures.json`, `data/queue.json`, `data/research/usage.json`, `data/form/*.json`, `data/performance/` (reviews, raw stats, learnings.md), `data/matches/<id>/{insights.json,trends.json,analysis.py,shots_espn.json,_web_sources.json,_overview.md}`, `reels/<id>/{reel.json,caption.txt,review.md,timing.json,mouth.json}`. Videos and audio stay out of git.
+- Report: 24 h reviews (views, hook skip rate, main reason, top learning), matches made (hook line, trend angle used, best/worst, review verdict), matches skipped and why, next kickoffs, credits used, anything that failed.
 
 ## Favourites and banter
 Favourites: Man United, Real Madrid, PSG, Bayern. Rival defeats get a laughing banter beat (louder if a favourite beat them). No banter when a favourite loses.
