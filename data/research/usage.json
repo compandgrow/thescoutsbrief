@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 88,
+  "credits": 95,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -395,6 +395,31 @@
    {
     "at": "2026-10-29T17:49:32Z",
     "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T03:12:08Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/364",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T03:14:09Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/363",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T03:14:17Z",
+    "what": "search Liverpool Chelsea",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-30T03:14:34Z",
+    "what": "search Chelsea Alonso",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-30T03:14:50Z",
+    "what": "scrape https://www.liverpoolfc.com/news/match-report-liverpool-beat-chelsea-on-penalties-on-dramatic-night-at-anfield",
     "credits": 1
    }
   ]

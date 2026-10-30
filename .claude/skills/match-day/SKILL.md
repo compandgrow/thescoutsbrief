@@ -18,6 +18,7 @@ Arguments: none (auto: every finished match that qualifies today), a match id (o
 | 1 | `fixture-scout` | `data/queue.json` | `ready` empty → report `later_today` kickoffs and stop |
 | 2 | `data-collector` | `data/matches/<id>/` + `_overview.md` | score, team stats and either shots or lineups present |
 | 3 | `match-analyst` | `insights.json` (+ `analysis.py`) | every number has a `source` |
+| 3b | `trend-scout` | `data/matches/<id>/trends.json` (+ `data/form/<team>.json`) | every talking point has 2 trusted outlets, 1 official source, or computed form; ≤ 14 credits. Empty is fine |
 | 4 | `scriptwriter` | `reels/<id>/reel.json` (with `match.league`), `caption.txt` | 7–10 beats, hook first, ≤ ~140 spoken words |
 | 5 | `producer` | `reels/<id>/out/reel.mp4` | renders, 25–65 s |
 | 6 | `reviewer` | `reels/<id>/review.md` | PASS. FIX → back to 4/5, max 2 rounds, then escalate |
@@ -32,8 +33,8 @@ Files are the hand-off between agents. Add each finished match to `data/state.js
 - If the Zernio tools aren't available in the session, nothing is posted: send the MP4 + caption to the user and say so.
 
 ## 3. Finish
-- Commit and push to branch `scout-brief-v1`: `data/state.json`, `data/fixtures.json`, `data/queue.json`, `data/research/usage.json`, `data/matches/<id>/{insights.json,analysis.py,shots_espn.json,_web_sources.json,_overview.md}`, `reels/<id>/{reel.json,caption.txt,review.md,timing.json,mouth.json}`. Videos and audio stay out of git.
-- Report: matches made (hook line, best/worst, review verdict), matches skipped and why, next kickoffs, credits used, anything that failed.
+- Commit and push to branch `scout-brief-v1`: `data/state.json`, `data/fixtures.json`, `data/queue.json`, `data/research/usage.json`, `data/form/*.json`, `data/matches/<id>/{insights.json,trends.json,analysis.py,shots_espn.json,_web_sources.json,_overview.md}`, `reels/<id>/{reel.json,caption.txt,review.md,timing.json,mouth.json}`. Videos and audio stay out of git.
+- Report: matches made (hook line, trend angle used, best/worst, review verdict), matches skipped and why, next kickoffs, credits used, anything that failed.
 
 ## Favourites and banter
 Favourites: Man United, Real Madrid, PSG, Bayern. Rival defeats get a laughing banter beat (louder if a favourite beat them). No banter when a favourite loses.

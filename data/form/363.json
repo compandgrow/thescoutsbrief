@@ -1,0 +1,72 @@
+{
+ "team_id": "363",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/363",
+ "fetched_at": "2026-10-30T03:14:09Z",
+ "last": [
+  {
+   "date": "2026-10-28",
+   "opponent": "Liverpool",
+   "venue": "A",
+   "score": "1-1",
+   "result": "L",
+   "pens": true,
+   "competition": "English Carabao Cup",
+   "game_id": "401921842"
+  },
+  {
+   "date": "2026-10-24",
+   "opponent": "Tottenham Hotspur",
+   "venue": "H",
+   "score": "0-2",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878767"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Everton",
+   "venue": "A",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878771"
+  },
+  {
+   "date": "2026-10-10",
+   "opponent": "AFC Bournemouth",
+   "venue": "H",
+   "score": "5-1",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878775"
+  },
+  {
+   "date": "2026-09-18",
+   "opponent": "Brentford",
+   "venue": "A",
+   "score": "0-3",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879275"
+  },
+  {
+   "date": "2026-09-12",
+   "opponent": "Hull City",
+   "venue": "H",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879283"
+  }
+ ],
+ "run_newest_first": "LLWWLD",
+ "wins": 2,
+ "draws": 1,
+ "losses": 3,
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true)."
+}

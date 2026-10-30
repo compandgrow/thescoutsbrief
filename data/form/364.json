@@ -1,0 +1,72 @@
+{
+ "team_id": "364",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/364",
+ "fetched_at": "2026-10-30T03:12:08Z",
+ "last": [
+  {
+   "date": "2026-10-28",
+   "opponent": "Chelsea",
+   "venue": "H",
+   "score": "1-1",
+   "result": "W",
+   "pens": true,
+   "competition": "English Carabao Cup",
+   "game_id": "401921842"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Brighton & Hove Albion",
+   "venue": "H",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878765"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "Villarreal",
+   "venue": "H",
+   "score": "4-3",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915397"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Brentford",
+   "venue": "A",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879262"
+  },
+  {
+   "date": "2026-10-14",
+   "opponent": "LASK Linz",
+   "venue": "A",
+   "score": "6-3",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915415"
+  },
+  {
+   "date": "2026-10-11",
+   "opponent": "Manchester City",
+   "venue": "H",
+   "score": "0-3",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879264"
+  }
+ ],
+ "run_newest_first": "WWWWWL",
+ "wins": 5,
+ "draws": 0,
+ "losses": 1,
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true)."
+}

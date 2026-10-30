@@ -3,6 +3,7 @@
   python3 engine/web_data.py fixtures            -> data/fixtures.json   (refreshes at most once every 6 days; --force)
   python3 engine/web_data.py due                 -> data/queue.json      (watched matches from today/yesterday that have finished)
   python3 engine/web_data.py fetch <espn_game_id> [--bbc <url>] -> data/matches/<slug>/ (match page, team stats, shot map)
+  python3 engine/web_data.py form <espn_team_id> [--n 6]          -> data/form/<id>.json  (last results, W/D/L run; 1 credit, cached 6 h)
 
 Sources: ESPN team fixtures/results and match pages, BBC Sport match page (formations, lineups, subs, Opta stats).
 Every page is cached by engine/research.py with its URL and fetch time, so the analyst can cite it.
@@ -252,11 +253,58 @@ def cmd_fetch(eid, bbc):
         print("WARN: no BBC match page found (formations/lineups/subs missing); the analyst should search for it.")
 
 
+
+RES_ROW = re.compile(r"^\| (\w{3}, \d{1,2} \w{3}) \|(.+)$", re.M)
+
+
+def cmd_form(team_id, n):
+    """Recent results for any club ESPN knows (watched or not), with W/D/L from that club's side."""
+    url = f"https://www.espn.co.uk/football/team/results/_/id/{team_id}"
+    p = page(url, max_age_min=360)
+    md = clean(p["data"]["markdown"])
+    today, rows = dt.date.today(), []
+    for date_s, rest in RES_ROW.findall(md):
+        names = [(nm, i) for nm, i in re.findall(r"\[([^\]]+)\]\(https?://[^ )]*/club/_/id/(\d+)", rest)]
+        sc = re.search(r"\[(\d+) - (\d+)\]\(https?://[^ )]*/gameId/(\d+)", rest)
+        if not sc or len(names) < 2:
+            continue
+        (hn, hid), (an, aid) = names[0], names[-1]
+        try:
+            d = dt.datetime.strptime(f"{date_s} {today.year}", "%a, %d %b %Y").date()
+        except ValueError:
+            continue
+        if d > today:
+            d = d.replace(year=today.year - 1)
+        hg, ag = int(sc.group(1)), int(sc.group(2))
+        home = hid == str(team_id)
+        gf, ga = (hg, ag) if home else (ag, hg)
+        pens = re.search(r"([A-Z][^|\[\]]*?) (?:win|advance) (\d+)-(\d+) on penalties", rest)
+        res = "W" if gf > ga else "L" if gf < ga else "D"
+        if pens:
+            mine = (hn if home else an).split()[0].lower() in pens.group(1).lower()
+            res = "W" if mine else "L"
+        cells = [c.strip() for c in rest.split("|")]
+        comp = next((c for c in reversed(cells) if c and not c.startswith("[")), "")
+        rows.append({"date": d.isoformat(), "opponent": an if home else hn, "venue": "H" if home else "A",
+                     "score": f"{gf}-{ga}", "result": res, "pens": bool(pens), "competition": comp,
+                     "game_id": sc.group(3)})
+    rows = sorted(rows, key=lambda r: r["date"], reverse=True)[:n]
+    run = "".join(r["result"] for r in rows)
+    out = {"team_id": str(team_id), "source": url, "fetched_at": p.get("fetched_at"), "last": rows,
+           "run_newest_first": run, "wins": run.count("W"), "draws": run.count("D"), "losses": run.count("L"),
+           "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true)."}
+    os.makedirs(os.path.join(DATA, "form"), exist_ok=True)
+    json.dump(out, open(os.path.join(DATA, "form", f"{team_id}.json"), "w"), indent=1)
+    print(f"form {team_id}: {run} (newest first) from {url}")
+    for r in rows:
+        print(f"  {r['date']} {r['venue']} {r['result']} {r['score']}{' (pens)' if r['pens'] else ''} v {r['opponent']} | {r['competition']}")
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     f = sub.add_parser("fixtures"); f.add_argument("--force", action="store_true")
     sub.add_parser("due")
     m = sub.add_parser("fetch"); m.add_argument("espn_id"); m.add_argument("--bbc")
+    fo = sub.add_parser("form"); fo.add_argument("team_id"); fo.add_argument("--n", type=int, default=6)
     a = ap.parse_args()
-    {"fixtures": lambda: cmd_fixtures(a.force), "due": cmd_due, "fetch": lambda: cmd_fetch(a.espn_id, a.bbc)}[a.cmd]()
+    {"fixtures": lambda: cmd_fixtures(a.force), "due": cmd_due, "fetch": lambda: cmd_fetch(a.espn_id, a.bbc), "form": lambda: cmd_form(a.team_id, a.n)}[a.cmd]()
