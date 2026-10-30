@@ -68,5 +68,6 @@
  "wins": 5,
  "draws": 0,
  "losses": 1,
- "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true)."
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

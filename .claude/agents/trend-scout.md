@@ -9,9 +9,9 @@ Input: `data/matches/<id>/insights.json` (teams, score, competition, result_cont
 
 Output: `data/matches/<id>/trends.json`.
 
-## Steps (budget: at most 4 Firecrawl calls and 14 credits per match)
-1. **Form runs (free if cached, else 1 credit each).** `python3 engine/web_data.py form <espn_team_id>` for both clubs. This writes `data/form/<id>.json`: last 6 results, newest first, with W/D/L. The result of this match is included if ESPN has it. Form claims ("three wins in a row", "one win in five") must come from these files, counted exactly. Say "in all competitions" unless you filter by competition.
-2. **News search (1 credit per result).** One search per match, last 2 days, trusted sites only:
+## Steps (budget: at most 14 credits per match; form calls plus at most 3 search/scrape calls)
+1. **Form runs (free if cached, else 1 credit each).** `python3 engine/web_data.py form <espn_team_id>` for both clubs. This writes `data/form/<id>.json`: last 6 results, newest first, with W/D/L. The result of this match is included if ESPN has it. Form claims ("three wins in a row", "one win in five") must come from these files, counted exactly. Say "in all competitions" unless you filter by competition. Check the `gaps` list in the form file: never claim a run that spans a gap (a missing stretch of results on ESPN) unless a trusted outlet states the same run.
+2. **News search (about 2 credits per search, up to 10 results).** One search per match, last 2 days, trusted sites only:
    `python3 engine/research.py search "<home> <away>" --limit 5 --days 2`
    If the match involves a favourite or a rival lost, you may run one more on the club with the bigger story, e.g. `"<club> manager"` or `"<club> <player>"` (`--limit 4 --days 3`).
 3. **Read one page only if needed (1 credit).** If a search snippet hints at a strong storyline but the snippet doesn't state the fact clearly, `python3 engine/research.py scrape <url>` on the best trusted result (prefer BBC, Sky Sports, The Guardian, ESPN, official club/league sites).
@@ -26,7 +26,9 @@ Output: `data/matches/<id>/trends.json`.
 ## Evidence rules
 - Each talking point needs **2 independent trusted outlets**, OR **1 official source** (club, league, or competition site), OR it is computed from `data/form/` (cite that file and the ESPN URL in it).
 - Partisan outlets (Marca, AS, Mundo Deportivo, Relevo: see `research.domain_rules`) count only for direct quotes and confirmed team news, never as the second outlet for an opinion.
-- Copy every number exactly as the source gives it. If two sources disagree, use neither number.
+- Copy every number exactly as the source gives it. If two sources disagree, or one source contradicts itself (e.g. text vs photo caption), use neither number.
+- Shoot-outs: officially a draw. A run that includes a shoot-out win or loss must say so ("five wins in a row, the last on penalties"). Use `numbers` to give both counts when it matters.
+- If a trusted match report gives a different minute or number from `insights.json`, put it in `notes` so the scriptwriter avoids that exact figure.
 - `strength`: `strong` (official, 3+ outlets, or computed form), `medium` (2 outlets), `weak` (anything else: do not pass weak points to the script; list them in `rejected` with the reason).
 - Banter red lines from `config/teams.json` apply here too: no tragedy references, nothing personal (race, nationality, religion, appearance, family, mental health, private life), no mocking injuries. A manager "under pressure" is fine; "should be sacked" is not.
 

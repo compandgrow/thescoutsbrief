@@ -68,5 +68,8 @@
  "wins": 2,
  "draws": 1,
  "losses": 3,
- "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true)."
+ "gaps": [
+  "2026-09-18 to 2026-10-10"
+ ],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

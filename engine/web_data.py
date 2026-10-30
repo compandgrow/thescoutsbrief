@@ -290,12 +290,14 @@ def cmd_form(team_id, n):
                      "game_id": sc.group(3)})
     rows = sorted(rows, key=lambda r: r["date"], reverse=True)[:n]
     run = "".join(r["result"] for r in rows)
+    gaps = [f"{b['date']} to {a['date']}" for a, b in zip(rows, rows[1:])
+            if (dt.date.fromisoformat(a["date"]) - dt.date.fromisoformat(b["date"])).days > 12]
     out = {"team_id": str(team_id), "source": url, "fetched_at": p.get("fetched_at"), "last": rows,
-           "run_newest_first": run, "wins": run.count("W"), "draws": run.count("D"), "losses": run.count("L"),
-           "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true)."}
+           "run_newest_first": run, "wins": run.count("W"), "draws": run.count("D"), "losses": run.count("L"), "gaps": gaps,
+           "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."}
     os.makedirs(os.path.join(DATA, "form"), exist_ok=True)
     json.dump(out, open(os.path.join(DATA, "form", f"{team_id}.json"), "w"), indent=1)
-    print(f"form {team_id}: {run} (newest first) from {url}")
+    print(f"form {team_id}: {run} (newest first) from {url}" + (f"  GAPS: {', '.join(gaps)}" if gaps else ""))
     for r in rows:
         print(f"  {r['date']} {r['venue']} {r['result']} {r['score']}{' (pens)' if r['pens'] else ''} v {r['opponent']} | {r['competition']}")
 

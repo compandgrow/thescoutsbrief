@@ -10,5 +10,6 @@ scout-presenter-demo.mp4
 voice-before-after.mp4
 data/matches/*/*.json
 !data/matches/*/insights.json
+!data/matches/*/trends.json
 data/research/*.json
 !data/research/usage.json
