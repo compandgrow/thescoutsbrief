@@ -1,0 +1,37 @@
+{
+ "match": {"home": "Le Havre AC", "away": "Paris Saint-Germain", "home_short": "HAC", "away_short": "PSG", "score": "1-5", "competition": "French Ligue 1", "date": "2026-10-30"},
+ "data_mode": "web path (no PitchAPI key) - no player ratings; best is Scout's pick",
+ "headline": "Paris fell 1-0 behind at 18 minutes, then scored five unanswered; right-back Achraf Hakimi scored three and set up two.",
+ "team_story": [
+  {"label": "Shots on target", "home": 5, "away": 10, "why_it_matters": "Shot volume was level (14 v 15) but PSG put twice as many on target", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876421 Shots (HAC 5, PSG 10)"},
+  {"label": "Through balls", "home": 1, "away": 8, "why_it_matters": "PSG kept splitting the Le Havre back three", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876421 Attack (HAC 1, PSG 8)"},
+  {"label": "Touches in opposition box", "home": 24, "away": 34, "why_it_matters": "", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876421 Attack (HAC 24, PSG 34)"},
+  {"label": "Passes", "home": 303, "away": 777, "why_it_matters": "PSG 777 passes at 92% accuracy, Le Havre 303 at 80%", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876421 Passes (HAC 303, 243 accurate = 80%; PSG 777, 711 accurate = 92%)"}
+ ],
+ "goal_timeline": [
+  {"minute": 18, "team": "HAC", "scorer": "Josh Maja", "score": "1-0", "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 (1-0, 18')"},
+  {"minute": 26, "team": "PSG", "scorer": "Mika Godts", "assist": "Achraf Hakimi", "score": "1-1", "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 (1-1, 26')"},
+  {"minute": 28, "team": "PSG", "scorer": "Achraf Hakimi", "score": "1-2", "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 (1-2, 28')"},
+  {"minute": 55, "team": "PSG", "scorer": "Achraf Hakimi", "note": "free kick", "score": "1-3", "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 (1-3, 55')"},
+  {"minute": 62, "team": "PSG", "scorer": "Senny Mayulu", "assist": "Achraf Hakimi (through ball)", "score": "1-4", "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 (1-4, 62')"},
+  {"minute": 69, "team": "PSG", "scorer": "Achraf Hakimi", "note": "first career hat-trick", "score": "1-5", "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 (1-5, 69')"}
+ ],
+ "tactical_change": {
+  "team": "Paris Saint-Germain", "minute": 18, "before": "4-3-3", "after": "4-3-3 (unchanged)",
+  "trigger": "Falling 1-0 to a Le Havre counter-attack (3-4-2-1, pressing high)",
+  "effect": "No shape change in the sources. PSG scored 5 times between the 26th and 69th minute; their first two changes came at 63' and 71' once they led 4-1.",
+  "evidence": [{"label": "PSG goals after falling behind", "before": 0, "after": 5, "source": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027 goal timeline"}],
+  "confidence": "low"
+ },
+ "best_player": {"name": "Achraf Hakimi", "team": "Paris Saint-Germain", "rating": null, "stats": [["goals", "3"], ["assists", "2"], ["PSG goals involved in", "5 of 5"], ["free-kick goal", "55'"]], "why": "First career hat-trick from right-back plus two assists: a hand in all five PSG goals.", "source": "https://www.espn.com/soccer/story/_/id/50330654/psg-achraf-hakimi-hat-trick-luis-enrique-wins-record-le-havre ('playing a role in all five goals', 'first career hat trick and provided two assists'); https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027"},
+ "worst_player": null,
+ "surprise_stat": {"value": "5 of 5", "label": "PSG goals Hakimi scored or set up", "context": "He is a right-back", "source": "https://www.espn.com/soccer/story/_/id/50330654/psg-achraf-hakimi-hat-trick-luis-enrique-wins-record-le-havre"},
+ "result_context": {"winner": "PSG", "loser": "HAC", "banter": false, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path; best is Scout's pick. No worst player named (no ratings or error data).",
+  "ESPN shot-map rows (players, minutes and Goal labels) do not match the official goal timeline, so the shot map is not used for any claim.",
+  "ESPN story text puts Hakimi's treble goal in the 69th minute right after describing Mayulu's goal; PSG.fr and the ESPN scoreboard give Mayulu 62' and Hakimi 69'. The reel uses the scoreboard minutes.",
+  "No possession or xG on the cached pages, so neither is used."
+ ]
+}

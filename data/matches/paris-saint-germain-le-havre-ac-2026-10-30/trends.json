@@ -1,0 +1,35 @@
+{
+ "match": "HAC 1-5 PSG",
+ "generated_at": "2026-10-31T00:05:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "PSG", "type": "milestone",
+   "claim": "Achraf Hakimi scored his first career hat-trick and set up two more: a hand in all five PSG goals",
+   "numbers": {"goals": 3, "assists": 2, "psg_goals_involved": 5},
+   "strength": "strong",
+   "sources": [{"what": "ESPN report", "url": "https://www.espn.com/soccer/story/_/id/50330654/psg-achraf-hakimi-hat-trick-luis-enrique-wins-record-le-havre"}, {"what": "PSG.fr official match report", "url": "https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027"}],
+   "hook_angle": "A right-back: three goals, two assists, a hand in all five.",
+   "use_for": "hook", "fresh_until": "2026-11-02"},
+  {"id": "t2", "team": "PSG", "type": "form",
+   "claim": "PSG have won their last six games in all competitions",
+   "numbers": {"wins_in_a_row_in_last_six": 6},
+   "strength": "strong",
+   "sources": [{"what": "ESPN results via data/form/160.json", "url": "https://www.espn.co.uk/football/team/results/_/id/160"}],
+   "hook_angle": "Six straight wins for PSG.",
+   "use_for": "context", "fresh_until": "2026-11-06"},
+  {"id": "t3", "team": "HAC", "type": "form",
+   "claim": "Le Havre are bottom of Ligue 1 with 2 points: no wins in nine games (0 wins, 2 draws, 7 losses)",
+   "numbers": {"played": 9, "wins": 0, "draws": 2, "losses": 7, "points": 2, "position": 18},
+   "strength": "strong",
+   "sources": [{"what": "ESPN match page header (0-2-7, 2 PTS)", "url": "https://www.espn.co.uk/football/match/_/gameId/401876421/paris-saint-germain-le-havre-ac"}, {"what": "BBC Sport Ligue 1 table, 30 Oct (18th, 2 pts)", "url": "https://www.bbc.com/sport/football/live/cqly0merd5j1t"}],
+   "hook_angle": "Bottom club Le Havre: no wins in nine.",
+   "use_for": "context", "fresh_until": "2026-11-06"}
+ ],
+ "rejected": [
+  {"claim": "Fourth player with five goal contributions in a game in four seasons in the top five leagues", "reason": "ESPN Research only, one outlet"},
+  {"claim": "Luis Enrique is PSG's winningest coach with 127 wins", "reason": "Not used in the script; ESPN states it, PSG.fr headline hints at a record, but no figure confirmed on a second page"},
+  {"claim": "Hakimi had not scored this season before kickoff / hat-trick in 486th game", "reason": "ESPN only"}
+ ],
+ "best_angle": "t1",
+ "credits_used": 4,
+ "notes": "Credits: form 160 and 3236 (2), news search (about 1), ESPN story scrape (1). The PSG.fr page was also scraped. ESPN says nine wins in a row in all competitions and sixth successive league win; the form file covers only six matches, so the reel says 'last six'. Avoid the 69th-minute 'through ball to Mayulu' phrasing in the ESPN article: it conflicts with the scoreboard (Mayulu 62')."
+}

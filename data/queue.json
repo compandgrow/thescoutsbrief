@@ -1,7 +1,6 @@
 {
- "generated": "2026-10-30T17:47:52Z",
- "ready": [],
- "later_today": [
+ "generated": "2026-10-30T23:49:46Z",
+ "ready": [
   {
    "espn_id": "401876421",
    "slug": "paris-saint-germain-le-havre-ac",
@@ -12,12 +11,20 @@
     "Paris Saint-Germain"
    ],
    "competition": "French Ligue 1",
-   "score": null,
+   "score": "1-5",
    "watched": [
     "PSG"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": "PSG",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   }
  ],
+ "later_today": [],
  "not_making": []
 }

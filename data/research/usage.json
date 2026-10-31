@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 96,
+  "credits": 106,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -425,6 +425,46 @@
    {
     "at": "2026-10-30T17:47:52Z",
     "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401876421/paris-saint-germain-le-havre-ac",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T23:49:50Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401876421",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T23:49:51Z",
+    "what": "search Le Havre AC v Paris Saint-Germain BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-30T23:49:52Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cqly0merd5j1t",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T23:50:43Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/160",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T23:50:47Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/3236",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T23:50:48Z",
+    "what": "search Le Havre Paris Saint-Germain Hakimi",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-30T23:50:54Z",
+    "what": "scrape https://www.espn.com/soccer/story/_/id/50330654/psg-achraf-hakimi-hat-trick-luis-enrique-wins-record-le-havre",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-30T23:50:56Z",
+    "what": "scrape https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027",
     "credits": 1
    }
   ]

@@ -1,0 +1,73 @@
+{
+ "team_id": "160",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/160",
+ "fetched_at": "2026-10-30T23:50:43Z",
+ "last": [
+  {
+   "date": "2026-10-30",
+   "opponent": "Le Havre AC",
+   "venue": "A",
+   "score": "5-1",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876421"
+  },
+  {
+   "date": "2026-10-26",
+   "opponent": "Lyon",
+   "venue": "H",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876422"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "Barcelona",
+   "venue": "H",
+   "score": "4-2",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915399"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Strasbourg",
+   "venue": "A",
+   "score": "3-1",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876432"
+  },
+  {
+   "date": "2026-10-14",
+   "opponent": "Manchester City",
+   "venue": "A",
+   "score": "4-2",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915407"
+  },
+  {
+   "date": "2026-10-10",
+   "opponent": "Le Mans",
+   "venue": "H",
+   "score": "3-1",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876442"
+  }
+ ],
+ "run_newest_first": "WWWWWW",
+ "wins": 6,
+ "draws": 0,
+ "losses": 0,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

@@ -1,0 +1,75 @@
+{
+ "team_id": "3236",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/3236",
+ "fetched_at": "2026-10-30T23:50:47Z",
+ "last": [
+  {
+   "date": "2026-10-30",
+   "opponent": "Paris Saint-Germain",
+   "venue": "H",
+   "score": "1-5",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876421"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Marseille",
+   "venue": "A",
+   "score": "3-4",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876426"
+  },
+  {
+   "date": "2026-10-18",
+   "opponent": "AJ Auxerre",
+   "venue": "H",
+   "score": "1-3",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876438"
+  },
+  {
+   "date": "2026-10-10",
+   "opponent": "Lille",
+   "venue": "A",
+   "score": "0-1",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876446"
+  },
+  {
+   "date": "2026-10-02",
+   "opponent": "Boulogne",
+   "venue": "H",
+   "score": "6-1",
+   "result": "W",
+   "pens": false,
+   "competition": "Club Friendly",
+   "game_id": "401927862"
+  },
+  {
+   "date": "2026-09-19",
+   "opponent": "Toulouse",
+   "venue": "A",
+   "score": "2-3",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876450"
+  }
+ ],
+ "run_newest_first": "LLLLWL",
+ "wins": 1,
+ "draws": 0,
+ "losses": 5,
+ "gaps": [
+  "2026-09-19 to 2026-10-02"
+ ],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

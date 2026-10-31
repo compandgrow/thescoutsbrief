@@ -1,0 +1,61 @@
+{
+ "id": "paris-saint-germain-le-havre-ac-2026-10-30",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "hook-number-first-no-result",
+ "match": {"pill": "HAC 1–5 PSG · LIGUE 1", "league": "LIGUE1"},
+ "beats": [
+  {
+   "say": "A right-back. Three goals, two assists.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {"type": "hook", "kicker": "HAKIMI · PSG", "text": "RIGHT-BACK.\n*3 GOALS.*\n2 ASSISTS.", "size": 128, "source": "ESPN, PSG.fr"}
+  },
+  {
+   "say": "Paris trailed at eighteen minutes. Then ten shots on target to five. Eight through balls to one.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "PARIS V LE HAVRE",
+    "teams": ["PSG", "LE HAVRE"],
+    "rows": [
+     {"label": "SHOTS ON TARGET", "a": 10, "b": 5},
+     {"label": "THROUGH BALLS", "a": 8, "b": 1},
+     {"label": "BOX TOUCHES", "a": 34, "b": 24}
+    ],
+    "source": "ESPN Team Stats"
+   }
+  },
+  {
+   "say": "Scout's pick for best: Achraf Hakimi. First career hat-trick, and a hand in all five Paris goals.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Hakimi",
+    "team": "Paris Saint-Germain",
+    "stats": [["goals", "3"], ["assists", "2"], ["PSG goals involved in", "5 of 5"], ["free-kick goal", "55'"]],
+    "source": "ESPN, PSG.fr"
+  }
+  },
+  {
+   "say": "Paris have now won six in a row in all competitions. Le Havre are bottom with two points. No wins in nine.",
+   "emotion": "happy",
+   "card": {
+    "type": "stat",
+    "kicker": "PSG · ALL COMPETITIONS",
+    "value": "6",
+    "unit": "WINS IN A ROW",
+    "label": "*Paris* v bottom club Le Havre",
+    "sub": "Le Havre: 2 points, 0 wins in 9",
+    "source": "ESPN results, BBC Sport"
+   }
+  },
+  {
+   "say": "So, is Hakimi the best right-back in the world? Tell me below.",
+   "emotion": "smug",
+   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "BEST *RIGHT-BACK*\nIN THE WORLD?", "source": ""}
+  }
+ ]
+}
