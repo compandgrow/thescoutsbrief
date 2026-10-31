@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 106,
+  "credits": 112,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -465,6 +465,36 @@
    {
     "at": "2026-10-30T23:50:56Z",
     "what": "scrape https://www.psg.fr/en/content/achraf-hakimi-leads-paris-to-another-win-in-le-havre-match-report-le-havre-ac-paris-saint-germain-ligue-1-2026-2027",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:48:09Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401879248/manchester-united-chelsea",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:48:10Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401879245/brighton-hove-albion-manchester-city",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:48:10Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401878761/crystal-palace-tottenham-hotspur",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:48:11Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882822/alaves-barcelona",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:48:11Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401884754/borussia-dortmund-bayern-munich",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:48:12Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882820/atletico-madrid-levante",
     "credits": 1
    }
   ]
