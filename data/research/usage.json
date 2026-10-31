@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 125,
+  "credits": 129,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -546,6 +546,21 @@
     "at": "2026-10-31T18:38:51Z",
     "what": "scrape https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t",
     "credits": 1
+   },
+   {
+    "at": "2026-10-31T18:40:44Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/382",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T18:40:53Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/331",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T18:41:08Z",
+    "what": "search Manchester City Brighton",
+    "credits": 2
    }
   ]
  }

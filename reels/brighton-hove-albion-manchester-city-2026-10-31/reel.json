@@ -1,0 +1,132 @@
+{
+ "id": "brighton-hove-albion-manchester-city-2026-10-31",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "hook from surprise_stat, number first, banter beat inside first 10 s",
+ "match": {
+  "pill": "MCI 0–1 BHA · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "Twenty-one shots. Zero goals.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "MAN CITY · AT HOME TO BRIGHTON",
+    "text": "21 SHOTS.\n*ZERO* GOALS.",
+    "size": 170,
+    "source": "BBC Sport match stats"
+   }
+  },
+  {
+   "say": "Sixty-seven touches in the box to nine. One point nine two expected goals to one.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE NUMBERS CITY LOST WITH",
+    "teams": [
+     "MAN CITY",
+     "BRIGHTON"
+    ],
+    "rows": [
+     {
+      "label": "SHOTS",
+      "a": 21,
+      "b": 7,
+      "fa": "21",
+      "fb": "7"
+     },
+     {
+      "label": "TOUCHES IN BOX",
+      "a": 67,
+      "b": 9,
+      "fa": "67",
+      "fb": "9"
+     },
+     {
+      "label": "xG",
+      "a": 1.92,
+      "b": 1.0,
+      "fa": "1.92",
+      "fb": "1.00"
+     }
+    ],
+    "source": "BBC Sport, ESPN"
+   }
+  },
+  {
+   "say": "Ha! City won the shoot-out on Wednesday. Then lost at home to Brighton on Saturday.",
+   "emotion": "laughing",
+   "hit": true,
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "WON ON PENS\nWEDNESDAY.\n*LOST* SATURDAY.",
+    "size": 112,
+    "sub": "Cup 2-2 (City on pens) · League 0-1",
+    "source": "ESPN results"
+   }
+  },
+  {
+   "say": "Two league defeats in a row. Villa, then Brighton. Bit of a theme.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "MAN CITY",
+    "value": "2",
+    "unit": "LEAGUE LOSSES",
+    "label": "in a *row*",
+    "sub": "Aston Villa 1-2 · Brighton 0-1",
+    "source": "ESPN results"
+   }
+  },
+  {
+   "say": "Worst on the pitch, my pick: Nunes. One miscued clearance, minute eleven, game over.",
+   "emotion": "disappointed",
+   "emote": [
+    [
+     4.2,
+     "angry"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "name": "Matheus Nunes",
+    "team": "Manchester City",
+    "stats": [
+     [
+      "error leading to goal",
+      "1"
+     ],
+     [
+      "goal conceded",
+      "11'"
+     ],
+     [
+      "minutes played",
+      "90"
+     ],
+     [
+      "shot xG",
+      "0.16"
+     ]
+    ],
+    "source": "BBC Sport report, ESPN shot map"
+   }
+  },
+  {
+   "say": "Unlucky City, or one costly error? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "UNLUCKY CITY,\nOR ONE *ERROR*?",
+    "source": ""
+   }
+  }
+ ]
+}

@@ -44,6 +44,15 @@
    "mode": "auto",
    "at": "2026-10-31",
    "scheduled_for": "2026-10-31T19:39:00Z"
+  },
+  {
+   "espn_id": "401879245",
+   "reel": "brighton-hove-albion-manchester-city-2026-10-31",
+   "zernio_post": "6ae63a67422e5f3179ef10b8",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-10-31",
+   "scheduled_for": "2026-10-31T19:58:00Z"
   }
  ],
  "skipped": [

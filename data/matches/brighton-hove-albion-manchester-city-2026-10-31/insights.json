@@ -1,0 +1,173 @@
+{
+ "match": {
+  "home": "Manchester City",
+  "away": "Brighton & Hove Albion",
+  "home_short": "MCI",
+  "away_short": "BHA",
+  "score": "0-1",
+  "competition": "Premier League",
+  "date": "2026-10-31"
+ },
+ "data_mode": "firecrawl web path (no PitchAPI) - no official player ratings; best/worst are Scout's pick",
+ "headline": "Man City had 21 shots, 1.92 xG and 67 touches in the Brighton box, and lost 1-0 at home to one error-gifted goal.",
+ "team_story": [
+  {
+   "label": "Shots",
+   "home": 21,
+   "away": 7,
+   "why_it_matters": "City shot three times as often and scored none",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats > Basic Stats > Shots"
+  },
+  {
+   "label": "xG",
+   "home": 1.92,
+   "away": 1.0,
+   "why_it_matters": "City out-created Brighton and still lost",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879245 Team Stats > Expected Goals (BBC Match Stats: 1.9173 v 0.9971)"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 67,
+   "away": 9,
+   "why_it_matters": "City lived in Brighton's box",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats > Basic Stats > Total touches inside the opposition box"
+  },
+  {
+   "label": "Possession %",
+   "home": 62,
+   "away": 38,
+   "why_it_matters": "City had the ball (BBC: 62.4 v 37.6)",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879245 Team Stats > Possession"
+  },
+  {
+   "label": "Brighton clearances",
+   "home": 14,
+   "away": 32,
+   "why_it_matters": "Brighton defended deep, 32 clearances to City's 14",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats > In-depth > Defence > Total clearances"
+  }
+ ],
+ "tactical_change": {
+  "team": "Manchester City",
+  "minute": 46,
+  "before": "first half: 7 shots, 0.62 xG, 1 on target",
+  "after": "second half: 14 shots, 1.31 xG, 5 on target",
+  "trigger": "No formation change in the source (4-3-3 throughout; Cherki on for Bouaddi 55'). This is the second-half shift.",
+  "effect": "City doubled their shot rate and got more on target, but Brighton's keeper made the saves and City still did not score.",
+  "evidence": [
+   {
+    "label": "City shots",
+    "before": 7,
+    "after": 14,
+    "source": "derived.json (analysis.py) from shots_espn.json, ESPN shot map https://www.espn.co.uk/football/match/_/gameId/401879245/brighton-hove-albion-manchester-city"
+   },
+   {
+    "label": "City xG",
+    "before": 0.62,
+    "after": 1.31,
+    "source": "derived.json from shots_espn.json"
+   },
+   {
+    "label": "City shots on target",
+    "before": 1,
+    "after": 5,
+    "source": "derived.json from shots_espn.json (Saved+Goal)"
+   }
+  ],
+  "confidence": "medium (shape unchanged in source; this is a shot-map half split, 46'+ counted as second half)"
+ },
+ "best_player": {
+  "name": "Bart Verbruggen",
+  "team": "Brighton & Hove Albion",
+  "rating": null,
+  "stats": [
+   [
+    "Saves",
+    "7"
+   ],
+   [
+    "Goals conceded",
+    "0"
+   ],
+   [
+    "Shots faced by Brighton",
+    "21"
+   ],
+   [
+    "City xG",
+    "1.92"
+   ]
+  ],
+  "why": "Scout's pick (no official rating). Seven saves while City piled up 1.92 xG; BBC named him top-rated Brighton player in its fan ratings (8.56, fan-submitted, not an official rating).",
+  "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879245 Team Stats > Saves 7; https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats > Shots 21; ESPN match page commentary ('seven saves')"
+ },
+ "worst_player": {
+  "name": "Matheus Nunes",
+  "team": "Manchester City",
+  "rating": null,
+  "stats": [
+   [
+    "Error leading to goal",
+    "1"
+   ],
+   [
+    "Minutes",
+    "90"
+   ],
+   [
+    "Shots",
+    "1"
+   ],
+   [
+    "xG",
+    "0.16"
+   ]
+  ],
+  "why": "Scout's pick (no official rating). His miscued clearance in the 11th minute fell to Yasin Ayari for the only goal of the game; BBC calls it 'another individual error' (City's second recent one). He played the full match (not in the BBC substitution list).",
+  "anger_worthy": true,
+  "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t report ('major helping hand from right-back Matheus Nunes, whose miscued clearance fell nicely for Yasin Ayari'); ESPN shot map (Nunes 1 shot, 0.16 xG, 62')"
+ },
+ "surprise_stat": {
+  "value": "67 v 9",
+  "label": "touches inside the opposition box",
+  "context": "City 67, Brighton 9, and the score was still 0-1",
+  "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats > Total touches inside the opposition box"
+ },
+ "result_context": {
+  "winner": "Brighton & Hove Albion",
+  "loser": "Manchester City",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [
+  {
+   "fact": "21 shots, 0 goals: City failed to score for the first time in 25 Premier League matches",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t report ('failing to find the net for the first time in 25 Premier League matches despite having 21 shots at goal')"
+  },
+  {
+   "fact": "67 touches in Brighton's box against Brighton's 9, and the score is 0-1",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats"
+  },
+  {
+   "fact": "Two shots hit the woodwork (BBC) and City still had 1.92 xG and no goal",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t Match Stats > Hit woodwork 2 v 0"
+  },
+  {
+   "fact": "City are now winless in their last five league games against Brighton",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t report ('now winless against the opposition in their past five league games')"
+  },
+  {
+   "fact": "Brighton had never won at City in 16 previous league visits before this one",
+   "source": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t report ('Brighton had never won at City in 16 previous league visits')"
+  }
+ ],
+ "caveats": [
+  "No official player ratings on the web path: best and worst player are Scout's pick. BBC's average ratings are fan submissions and are not used as ratings.",
+  "ESPN lists Verbruggen on 7 saves while City had 6 shots on target (ESPN Shots on Goal 6): saves figure is quoted as ESPN gives it.",
+  "ESPN commentary calls Haaland's blocked shot his 'only chance' but the ESPN shot map lists 4 Haaland shots: shot map used for counts.",
+  "Possession: ESPN 62%/38%, BBC 62.4%/37.6%.",
+  "Shot-map xG sums to 1.93 for City (rounding); official 1.92 from ESPN team stats / BBC used.",
+  "Streaks (25 league games without a blank, 16 previous visits, winless in five) come from the BBC report text only; trend-scout must verify before they are used on screen."
+ ]
+}

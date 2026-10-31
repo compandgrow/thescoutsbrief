@@ -1,0 +1,73 @@
+{
+ "team_id": "331",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/331",
+ "fetched_at": "2026-10-31T18:40:53Z",
+ "last": [
+  {
+   "date": "2026-10-31",
+   "opponent": "Manchester City",
+   "venue": "A",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879245"
+  },
+  {
+   "date": "2026-10-28",
+   "opponent": "Manchester City",
+   "venue": "A",
+   "score": "2-2",
+   "result": "L",
+   "pens": true,
+   "competition": "English Carabao Cup",
+   "game_id": "401921834"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Liverpool",
+   "venue": "A",
+   "score": "0-2",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878765"
+  },
+  {
+   "date": "2026-10-22",
+   "opponent": "Jablonec",
+   "venue": "A",
+   "score": "0-0",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Conference League",
+   "game_id": "401915842"
+  },
+  {
+   "date": "2026-10-18",
+   "opponent": "Crystal Palace",
+   "venue": "H",
+   "score": "5-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879261"
+  },
+  {
+   "date": "2026-10-15",
+   "opponent": "Kauno Zalgiris",
+   "venue": "H",
+   "score": "4-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Conference League",
+   "game_id": "401915853"
+  }
+ ],
+ "run_newest_first": "WLLDWW",
+ "wins": 3,
+ "draws": 1,
+ "losses": 2,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

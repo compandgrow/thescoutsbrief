@@ -1,0 +1,87 @@
+{
+ "match": "MCI 0-1 BHA",
+ "generated_at": "2026-10-31T18:45:00Z",
+ "talking_points": [
+  {
+   "id": "t1",
+   "team": "BHA",
+   "type": "storyline",
+   "claim": "Brighton lost to Manchester City on penalties in the Carabao Cup on Wednesday, then beat them 1-0 in the Premier League on Saturday",
+   "numbers": {
+    "carabao_cup_score": "2-2",
+    "carabao_cup_decider": "City won on penalties",
+    "league_score": "0-1"
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "ESPN results via data/form/331.json and data/form/382.json (2026-10-28 Carabao Cup 2-2, City won the shoot-out; 2026-10-31 PL City 0-1 Brighton)",
+     "url": "https://www.espn.co.uk/football/team/results/_/id/331"
+    },
+    {
+     "what": "ESPN live blog: 'for the second time in four days after Enzo Maresca's side won a penalty shootout ... in the Carabao Cup' (cached in data/research/search_381e9d221d15.json)",
+     "url": "https://www.espn.com/soccer/story/_/id/50335782/premier-league-latest-updates-scores-results-commentary"
+    },
+    {
+     "what": "BBC report: 'Brighton gained quick revenge after being knocked out of the Carabao Cup in midweek'",
+     "url": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t"
+    }
+   ],
+   "hook_angle": "Lost on penalties Wednesday, won 1-0 at City on Saturday.",
+   "use_for": "context",
+   "fresh_until": "2026-11-02"
+  },
+  {
+   "id": "t2",
+   "team": "MCI",
+   "type": "form",
+   "claim": "Manchester City have lost back-to-back Premier League games (Aston Villa 1-2 away, Brighton 0-1 at home)",
+   "numbers": {
+    "consecutive_league_defeats": 2
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "ESPN results via data/form/382.json: 2026-10-24 PL L 1-2 Aston Villa, 2026-10-31 PL L 0-1 Brighton (a Carabao Cup shoot-out win sits between them, so say 'in the league')",
+     "url": "https://www.espn.co.uk/football/team/results/_/id/382"
+    },
+    {
+     "what": "BBC report: 'condemning Enzo Maresca's side to back-to-back Premier League defeats'; ESPN/PA headline: '2nd straight defeat'",
+     "url": "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t"
+    }
+   ],
+   "hook_angle": "Twenty-one shots, no goal: City's second league defeat in a row.",
+   "use_for": "banter",
+   "fresh_until": "2026-11-02"
+  }
+ ],
+ "rejected": [
+  {
+   "claim": "City failed to score for the first time in 25 Premier League matches",
+   "reason": "only the BBC report states it; the extra search found no second outlet; not computable from data/form (six games only)"
+  },
+  {
+   "claim": "Brighton had never won at City in 16 previous league visits",
+   "reason": "only the BBC report states it; no second outlet"
+  },
+  {
+   "claim": "City winless in their past five league games against Brighton",
+   "reason": "only the BBC report states it; no second outlet"
+  },
+  {
+   "claim": "Brighton's 24 goals are the most in the Premier League this season",
+   "reason": "only the BBC report states it; no second outlet"
+  },
+  {
+   "claim": "Brighton are two points behind City in third / City league leaders",
+   "reason": "league-table claims differ between pages (ESPN header 21 v 19 pts vs BBC 'third'); not verified"
+  },
+  {
+   "claim": "City's midfield trio was disjointed",
+   "reason": "BBC opinion only, single outlet; also tactical criticism not data"
+  }
+ ],
+ "best_angle": "t1",
+ "credits_used": 4,
+ "notes": "Credits by usage counter: form 382 (1) + form 331 (1) + one news search (2) = 4 for trend-scout; data-collector fetch used 5 (counter 120 -> 129 in total). Both form files have no gaps. Shoot-outs count as W/L in the form files but are officially draws: the Carabao Cup tie was 2-2 and City won on penalties. Extra search found no second outlet for the BBC-only streaks. The 21 shots, 67 v 9 box touches and xG are match data in insights.json, not trends. Scriptwriter: hook_angle on t1 is a loose suggestion, write your own."
+}

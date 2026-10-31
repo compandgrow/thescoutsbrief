@@ -1,0 +1,73 @@
+{
+ "team_id": "382",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/382",
+ "fetched_at": "2026-10-31T18:40:44Z",
+ "last": [
+  {
+   "date": "2026-10-31",
+   "opponent": "Brighton & Hove Albion",
+   "venue": "H",
+   "score": "0-1",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879245"
+  },
+  {
+   "date": "2026-10-28",
+   "opponent": "Brighton & Hove Albion",
+   "venue": "H",
+   "score": "2-2",
+   "result": "W",
+   "pens": true,
+   "competition": "English Carabao Cup",
+   "game_id": "401921834"
+  },
+  {
+   "date": "2026-10-24",
+   "opponent": "Aston Villa",
+   "venue": "A",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879256"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "AEK Athens",
+   "venue": "H",
+   "score": "5-1",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915401"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Ipswich Town",
+   "venue": "H",
+   "score": "3-2",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879259"
+  },
+  {
+   "date": "2026-10-14",
+   "opponent": "Paris Saint-Germain",
+   "venue": "H",
+   "score": "2-4",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915407"
+  }
+ ],
+ "run_newest_first": "LWLWWL",
+ "wins": 3,
+ "draws": 0,
+ "losses": 3,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}
