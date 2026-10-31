@@ -35,6 +35,15 @@
    "mode": "auto",
    "at": "2026-10-31",
    "scheduled_for": "2026-10-31T01:08:00Z"
+  },
+  {
+   "espn_id": "401879248",
+   "reel": "manchester-united-chelsea-2026-10-31",
+   "zernio_post": "6ae635d864d4327addf560c4",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-10-31",
+   "scheduled_for": "2026-10-31T19:39:00Z"
   }
  ],
  "skipped": [
