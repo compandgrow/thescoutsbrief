@@ -1,0 +1,151 @@
+{
+ "id": "manchester-united-chelsea-2026-10-31",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "hook from surprise_stat, number first, result absent from hook",
+ "match": {
+  "pill": "CHE 2–0 MUN · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "One point one zero. Nought point two eight.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "FIRST-HALF xG · UNITED v CHELSEA",
+    "text": "1.10 v 0.28",
+    "size": 190,
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Second half, flipped. Chelsea, two point three nine. United, nought point oh eight.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "compare",
+    "kicker": "THE SECOND-HALF FLIP",
+    "teams": [
+     "MAN UTD",
+     "CHELSEA"
+    ],
+    "rows": [
+     {
+      "label": "xG 1ST HALF",
+      "a": 1.1,
+      "b": 0.28,
+      "fa": "1.10",
+      "fb": "0.28"
+     },
+     {
+      "label": "xG 2ND HALF",
+      "a": 0.08,
+      "b": 2.39,
+      "fa": "0.08",
+      "fb": "2.39"
+     },
+     {
+      "label": "SHOTS 2ND HALF",
+      "a": 3,
+      "b": 11,
+      "fa": "3",
+      "fb": "11"
+     }
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Rogers scored on fifty. Martinez sent off on sixty-three.",
+   "emotion": "neutral",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "MARTINEZ",
+    "value": "63",
+    "unit": "MIN",
+    "label": "second yellow, *sent off*",
+    "sub": "Rogers scored on 50' · Palmer pen on 64'",
+    "source": "BBC Sport, ESPN"
+   }
+  },
+  {
+   "say": "Worst on the pitch: Martinez. Red card, penalty, and the lowest BBC fan rating.",
+   "emotion": "disappointed",
+   "emote": [
+    [
+     2.6,
+     "angry"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "name": "Lisandro Martinez",
+    "team": "Manchester United",
+    "rating": "2.23",
+    "stats": [
+     [
+      "BBC fan rating",
+      "2.23"
+     ],
+     [
+      "red card",
+      "63'"
+     ],
+     [
+      "penalty conceded",
+      "64'"
+     ],
+     [
+      "pen xG",
+      "0.79"
+     ]
+    ],
+    "source": "BBC Sport fan ratings, ESPN"
+   }
+  },
+  {
+   "say": "A nought point seven nine xG penalty, at one-nil! Not good enough!",
+   "emotion": "furious",
+   "slam": [
+    0.4,
+    2.6
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "THE PENALTY",
+    "value": "0.79",
+    "unit": "xG",
+    "label": "at *one-nil*, in the 64th minute",
+    "sub": "ESPN shot data",
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "Deep breath. Three defeats in a row, in all competitions.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "stat",
+    "kicker": "UNITED",
+    "value": "3",
+    "unit": "DEFEATS",
+    "label": "in a *row*, all competitions",
+    "sub": "no wins in their last six",
+    "source": "ESPN results"
+   }
+  },
+  {
+   "say": "Red card, or the second half? Tell me in the comments.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "RED CARD OR\nSECOND *HALF*?",
+    "source": ""
+   }
+  }
+ ]
+}

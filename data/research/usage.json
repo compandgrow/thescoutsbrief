@@ -1,6 +1,6 @@
 {
  "2026-10": {
-  "credits": 112,
+  "credits": 125,
   "calls": [
    {
     "at": "2026-10-27T07:25:09Z",
@@ -495,6 +495,56 @@
    {
     "at": "2026-10-31T17:48:12Z",
     "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882820/atletico-madrid-levante",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:56:21Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401879248",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:56:23Z",
+    "what": "search Chelsea v Manchester United BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-31T17:56:24Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c6z7xglw0ewzt",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:58:14Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:58:14Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/363",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T17:58:33Z",
+    "what": "search Manchester United Chelsea",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-31T18:38:49Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401879245/brighton-hove-albion-manchester-city",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T18:38:49Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401879245",
+    "credits": 1
+   },
+   {
+    "at": "2026-10-31T18:38:51Z",
+    "what": "search Manchester City v Brighton & Hove Albion BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-10-31T18:38:51Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t",
     "credits": 1
    }
   ]

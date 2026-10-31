@@ -1,0 +1,34 @@
+{
+ "match": {"home": "Chelsea", "away": "Manchester United", "home_short": "CHE", "away_short": "MUN", "score": "2-0", "competition": "English Premier League", "date": "2026-10-31"},
+ "headline": "United won the first half on xG (1.10 to 0.28), then lost the second 2.39 to 0.08 after Chelsea's 50th-minute opener and Lisandro Martinez's 63rd-minute red card.",
+ "team_story": [
+  {"label": "First-half xG", "home": 0.28, "away": 1.10, "why_it_matters": "United created far more than Chelsea before the break and still went in goalless (shot-map sums, ESPN).", "source": "data/matches/manchester-united-chelsea-2026-10-31/derived.json (analysis.py) from shots_espn.json; ESPN match page https://www.espn.co.uk/football/match/_/gameId/401879248/manchester-united-chelsea, Shots section"},
+  {"label": "Second-half xG", "home": 2.39, "away": 0.08, "why_it_matters": "The match flipped completely after the break: United had 3 shots, Chelsea 11. Chelsea's number includes the penalty (0.79 xG, ESPN shot 19).", "source": "derived.json from shots_espn.json plus ESPN shot 19 (C. Palmer 64' Penalty 0.79 xG), https://www.espn.co.uk/football/match/_/gameId/401879248/manchester-united-chelsea"},
+  {"label": "Shots on target", "home": 9, "away": 5, "why_it_matters": "Chelsea hit the target almost twice as often over 90 minutes.", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879248, Shots section (Shots on Goal 9-5)"},
+  {"label": "Touches in opposition box", "home": 40, "away": 21, "why_it_matters": "Territory ended up one-sided.", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879248, Attack section; BBC Match Stats https://www.bbc.com/sport/football/live/c6z7xglw0ewzt (40 v 21)"}
+ ],
+ "tactical_change": {
+  "team": "Manchester United", "minute": 63, "before": "4-2-3-1, 11 v 11", "after": "10 men after Lisandro Martinez's second yellow (formation listed as 4-2-3-1 for both teams, no shape change)",
+  "trigger": "Chelsea scored in the 50th minute, then Martinez was sent off in the 63rd for a second yellow and Palmer scored the resulting penalty in the 64th",
+  "effect": "The second-half shift: United's xG fell from 1.10 in the first half to 0.08 in the second, Chelsea's rose from 0.28 to 2.39.",
+  "evidence": [
+   {"label": "United xG, 1st half vs 2nd half", "before": 1.10, "after": 0.08, "source": "derived.json (analysis.py) from shots_espn.json"},
+   {"label": "Chelsea xG, 1st half vs 2nd half", "before": 0.28, "after": 2.39, "source": "derived.json (analysis.py) from shots_espn.json plus ESPN shot 19 penalty 0.79"},
+   {"label": "United shots, 1st half vs 2nd half", "before": 9, "after": 3, "source": "derived.json (analysis.py)"}
+  ],
+  "confidence": "medium"
+ },
+ "best_player": {"name": "Morgan Rogers", "team": "Chelsea", "rating": 7.90, "stats": [["BBC fan rating", "7.90"], ["Goal", "50'"], ["Shot xG", "0.65"], ["BBC player of the match", "yes"]], "why": "Scored the opener in the 50th minute from his one shot (0.65 xG) and topped the BBC fan ratings.", "source": "https://www.bbc.com/sport/football/live/c6z7xglw0ewzt, Player of the match + Chelsea ratings (7.90); ESPN shot 17 (xG 0.65) https://www.espn.co.uk/football/match/_/gameId/401879248/manchester-united-chelsea"},
+ "worst_player": {"name": "Lisandro Martinez", "team": "Manchester United", "rating": 2.23, "stats": [["BBC fan rating", "2.23"], ["Red card", "63'"], ["Second yellow", "yes"], ["Penalty conceded", "64' (xG 0.79)"]], "why": "Sent off in the 63rd minute for a second yellow; the VAR penalty was scored by Palmer in the 64th. Lowest BBC fan rating of any player in either team.", "anger_worthy": true, "source": "https://www.bbc.com/sport/football/live/c6z7xglw0ewzt, Manchester United ratings (2.23), lineups (L. Martinez 63' Two Yellow Cards) and report; ESPN header (Cole Palmer 64' Pen) and shot 19 (0.79 xG)"},
+ "surprise_stat": {"value": "1.10 vs 0.28", "label": "United's first-half xG against Chelsea's", "context": "United created nearly four times Chelsea's first-half xG and trailed 0-0 only at the break; they lost 2-0.", "source": "derived.json (analysis.py) from shots_espn.json"},
+ "result_context": {"winner": "Chelsea", "loser": "Manchester United", "banter": false, "banter_by_favourite": false, "favourite_lost": true},
+ "banter_material": [],
+ "caveats": [
+  "No official player ratings exist; the only per-player ratings are BBC Sport fan (user) averages. Labelled 'BBC fan rating' everywhere.",
+  "Half and phase xG are sums of ESPN shot-map values; ESPN shot 19 (Palmer penalty, 0.79 xG) is missing from the parsed shots_espn.json and added by hand in analysis.py (Chelsea total 2.67 = BBC xG 2.6687). United's shot-map sum is 1.18, BBC xG says 1.1654: the reel uses only half-by-half figures, not whole-match xG.",
+  "shots_espn.json 'outcome' labels are unreliable (offset in the page parse), so no shot outcome figures are used.",
+  "Both teams are listed as 4-2-3-1, so there was no formation change; the story is the second-half shift around the red card.",
+  "BBC league table snapshot shows United 18th while the BBC report says 16th: no league position is used.",
+  "Disallowed goals: Cunha (first half) and Estevao (71') were ruled out for offside per BBC report and Guardian live blog; not used with numbers."
+ ]
+}

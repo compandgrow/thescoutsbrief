@@ -1,0 +1,73 @@
+{
+ "team_id": "360",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/360",
+ "fetched_at": "2026-10-31T17:58:14Z",
+ "last": [
+  {
+   "date": "2026-10-31",
+   "opponent": "Chelsea",
+   "venue": "A",
+   "score": "0-2",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879248"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "AFC Bournemouth",
+   "venue": "H",
+   "score": "0-3",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879252"
+  },
+  {
+   "date": "2026-10-21",
+   "opponent": "Como",
+   "venue": "A",
+   "score": "1-4",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915395"
+  },
+  {
+   "date": "2026-10-18",
+   "opponent": "Leeds United",
+   "venue": "A",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879260"
+  },
+  {
+   "date": "2026-10-13",
+   "opponent": "Atl\u00e9tico de Madrid",
+   "venue": "A",
+   "score": "0-2",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915412"
+  },
+  {
+   "date": "2026-10-10",
+   "opponent": "Tottenham Hotspur",
+   "venue": "H",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878773"
+  }
+ ],
+ "run_newest_first": "LLLDLD",
+ "wins": 0,
+ "draws": 2,
+ "losses": 4,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

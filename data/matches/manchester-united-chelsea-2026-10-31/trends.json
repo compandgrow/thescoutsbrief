@@ -1,0 +1,37 @@
+{
+ "match": "CHE 2-0 MUN",
+ "generated_at": "2026-10-31T18:10:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "MUN", "type": "form",
+   "claim": "Manchester United have lost three in a row in all competitions",
+   "numbers": {"losses_in_a_row": 3, "last_six": "LLLDLD", "wins_in_last_six": 0, "draws_in_last_six": 2, "losses_in_last_six": 4},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/360.json (L 0-2 Chelsea, L 0-3 Bournemouth, L 1-4 Como, D 1-1 Leeds, L 0-2 Atletico, D 1-1 Spurs; no gaps)", "url": "https://www.espn.co.uk/football/team/results/_/id/360"},
+    {"what": "BBC match report: 'a third straight loss'", "url": "https://www.bbc.com/sport/football/live/c6z7xglw0ewzt"}
+   ],
+   "hook_angle": "Won the first half on xG, lost the game: United's third defeat in a row.",
+   "use_for": "context",
+   "fresh_until": "2026-11-02"},
+  {"id": "t2", "team": "MUN", "type": "form",
+   "claim": "Manchester United have won one of their nine Premier League games this season",
+   "numbers": {"played": 9, "won": 1, "drawn": 4, "lost": 4, "points": 7},
+   "strength": "medium",
+   "sources": [
+    {"what": "ESPN match header: Man Utd 1-4-4, 7 PTS", "url": "https://www.espn.com/soccer/team-stats/_/gameId/401879248"},
+    {"what": "BBC Premier League table snapshot: Man Utd P9 W1 D4 L4 Pts 7", "url": "https://www.bbc.com/sport/football/live/c6z7xglw0ewzt"}
+   ],
+   "hook_angle": "One league win in nine, and the xG says they deserved more today.",
+   "use_for": "outro",
+   "fresh_until": "2026-11-02"}
+ ],
+ "rejected": [
+  {"claim": "United are winless in nine games in all competitions, longest run since Oct-Nov 1988", "reason": "only BBC states it (not in the Guardian/ESPN/Chelsea FC snippets), and ESPN form shows only six games; no second outlet"},
+  {"claim": "Michael Carrick is under pressure / precarious position", "reason": "BBC opinion only (and pundit quote), one outlet; also close to the 'should be sacked' red line"},
+  {"claim": "Chelsea form run (lost two before today / up to fourth)", "reason": "data/form/363.json does not yet include this match and has a gap (2026-09-18 to 2026-10-10); BBC's 'up to fourth' is a single outlet"},
+  {"claim": "United 16th / 18th in the table", "reason": "BBC report says 16th, BBC table snapshot says 18th: sources disagree, use neither"}
+ ],
+ "best_angle": "t1",
+ "credits_used": 8,
+ "notes": "Credits this match: web_data fetch 4 + form 360 2 + form 363 0 or cached + one news search 2 (usage counter 112 -> 120). BBC report says Martinez's bookings were within three minutes and Rogers has 10 league goal involvements; single-outlet, not used. data/form/363.json lacks today's game."
+}
