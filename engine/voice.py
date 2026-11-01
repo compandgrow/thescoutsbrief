@@ -130,8 +130,12 @@ def indextts_beats(beats, icfg, out_dir):
     jobs = []
     for i, b in enumerate(beats):
         emo = b.get("emotion", "neutral")
-        job = {"text": b["say"], "emo_vector": b.get("emo_vector", EMO_VECTOR.get(emo, EMO_VECTOR["neutral"])),
-               "emo_alpha": b.get("emo_alpha", icfg.get("emo_alpha", 0.9))}
+        vec = b.get("emo_vector")
+        if vec is None:
+            # mix the beat's emotion with a steady baseline so pitch doesn't jump between lines
+            raw, base, mix = EMO_VECTOR.get(emo, EMO_VECTOR["neutral"]), icfg.get("base_vector"), icfg.get("emotion_mix", 1.0)
+            vec = [round(mix * a + (1 - mix) * c, 3) for a, c in zip(raw, base)] if base else raw
+        job = {"text": b["say"], "emo_vector": vec, "emo_alpha": b.get("emo_alpha", icfg.get("emo_alpha", 0.55))}
         # cache: a line is only re-generated when its text, emotion or the reference voice changes
         key = hashlib.sha1(json.dumps([job, ref_id], sort_keys=True).encode()).hexdigest()[:12]
         job["out"] = os.path.join(tmp, f"line_{key}.wav")

@@ -151,8 +151,20 @@
   "indextts": {
    "home": "/home/user/indextts",
    "speaker": "assets/voice/scout_reference.wav",
-   "emo_alpha": 0.9,
-   "note": "IndexTTS 2.5 (bilibili Model Use License: free under 100M MAU / RMB 1bn revenue). Needs huggingface.co + *.hf.co for the model download, and a 5-15 s reference clip of a voice you have rights to."
+   "emo_alpha": 0.55,
+   "note": "IndexTTS 2.5 (bilibili Model Use License: free under 100M MAU / RMB 1bn revenue). Needs huggingface.co + *.hf.co for the model download, and a 5-15 s reference clip of a voice you have rights to.",
+   "emotion_mix": 0.5,
+   "base_vector": [
+    0.15,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.35
+   ],
+   "emotion_note": "Version B (user pick, 2026-11-01): each beat's emotion vector is mixed 50/50 with base_vector (relaxed, slightly upbeat) and applied at emo_alpha 0.55. At 0.9 with raw vectors the pitch jumped over an octave between lines (248 Hz shocked vs 118 Hz neutral); B keeps lines within ~117-136 Hz."
   },
   "note": "Falls back to the offline Kokoro voice (engine/voice.py STYLE) if IndexTTS isn't installed.",
   "persona": "young male streamer, 23-30, hyped and casual"

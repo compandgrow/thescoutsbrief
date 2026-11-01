@@ -90,7 +90,7 @@
   "facts": "Every number on screen or spoken comes from the match data, trends.json or data/form with a source.",
   "banter": "Red lines in config/teams.json; favourites Man United, Real Madrid, PSG, Bayern; no banter when a favourite loses.",
   "presenter": "Scout the gorilla, emotions from presenter/presenter.js.",
-  "voice": "IndexTTS 2.5 with the Echo reference voice, no pitch effects.",
+  "voice": "IndexTTS 2.5 with the Echo reference voice, no pitch effects, emotion settings in config/teams.json voice.indextts (version B, user-approved).",
   "league_colours": "EPL purple, La Liga blue, Bundesliga orange (config/teams.json league_themes).",
   "video": "1080x1920, H.264 + AAC, about -14 LUFS.",
   "account": "Instagram @thescoutbrief only, reviewer PASS before posting, approval mode from config/teams.json."
