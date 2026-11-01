@@ -1,5 +1,5 @@
 # What works on @thescoutbrief
-Updated 2026-10-30 · 3 reels reviewed · confidence: low (<5 reels)
+Updated 2026-11-01 · 4 reels reviewed · confidence: low (<5 reels)
 
 Early days: three reels, all with 156-198 views, no shares, no saves and no comments. Patterns below are first signals, not proof. Format changes were not made (format v1 has fewer reels than its judge_after_reels).
 
@@ -8,6 +8,8 @@ Early days: three reels, all with 156-198 views, no shares, no saves and no comm
 - Shorter reels held better: 47 s reel watch ratio 0.123 against 0.071 (61 s) and 0.057 (63 s). Keep reels to about 30-40 s and drop beats after the first 25 s, since nobody reaches them (avg watch 3.6-5.8 s). Evidence: all three reels. Confidence: low
 - Lead the hook with a number or contrast, not an absence ("Kane never played") or a puzzle ("18 penalties"). The Bayern hook still lost 63% in 3 s with zero shares/saves. Evidence: magdeburg-bayern, chelsea-liverpool. Confidence: low
 - Don't re-read on the next beat what the hook card already shows (the score, the same stat). Viewers left during that beat on magdeburg-bayern (beat 1, 4.3-11.5 s). Evidence: 1 reel. Confidence: low
+
+- Best result so far: paris-saint-germain-le-havre (7-word number-led hook, 3.2 s, 29 s reel): skip 57.7%, watch ratio 0.17. Short number-first hook plus ~30 s length is the working format; still 0 shares/saves. Evidence: 1 reel. Confidence: low
 
 ## Experiments to run next
 - Hook from `surprise_stat` or the `best_angle` in trends.json, 10 words or fewer, result last-or-absent. Success: skip rate below 60% and watch ratio above 0.15 on the next 2-3 reels. Baseline 62.8-75.5%, 0.057-0.123.

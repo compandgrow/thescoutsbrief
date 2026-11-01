@@ -1,0 +1,121 @@
+{
+ "match": {
+  "home": "Racing Santander",
+  "away": "Real Madrid",
+  "home_short": "RAC",
+  "away_short": "RMA",
+  "score": "0-3",
+  "competition": "Spanish LALIGA",
+  "date": "2026-11-01"
+ },
+ "data_mode": "web path (ESPN + BBC cached pages); no player ratings, best/worst are Scout's pick",
+ "headline": "Real Madrid scored all three goals in the first 36 minutes (2.82 xG), then created 0.62 xG in the rest of the game; Racing had one shot on target.",
+ "team_story": [
+  {
+   "label": "Shots on target",
+   "home": 1,
+   "away": 7,
+   "source": "https://www.bbc.com/sport/football/live/c6zxj7vpggn2t Basic Stats; https://www.espn.com/soccer/team-stats/_/gameId/401882819 Shots"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 22,
+   "away": 47,
+   "source": "https://www.bbc.com/sport/football/live/c6zxj7vpggn2t Basic Stats"
+  },
+  {
+   "label": "Big chances created",
+   "home": 0,
+   "away": 3,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882819 Attack"
+  },
+  {
+   "label": "xG (sum of ESPN shot xG)",
+   "home": 1.16,
+   "away": 3.44,
+   "source": "data/matches/real-madrid-racing-santander-2026-11-01/derived.json from shots_espn.json"
+  }
+ ],
+ "tactical_change": {
+  "team": "Real Madrid",
+  "minute": 37,
+  "before": "2.82 xG, 10 shots, 3 goals (0-36')",
+  "after": "0.62 xG, 12 shots, 0 goals (37' to full time)",
+  "trigger": "the second-half shift after leading 3-0 (no formation change: both sides 4-2-3-1 per BBC)",
+  "effect": "After the third goal Madrid stopped creating: 12 shots, 2 on target, 0.62 xG. Racing's 8 shots in that spell were all off target or blocked (0.92 xG, 0 on target).",
+  "evidence": [
+   {
+    "label": "Madrid xG",
+    "before": 2.82,
+    "after": 0.62,
+    "source": "data/matches/real-madrid-racing-santander-2026-11-01/derived.json"
+   },
+   {
+    "label": "Madrid shots on target",
+    "before": 5,
+    "after": 2,
+    "source": "data/matches/real-madrid-racing-santander-2026-11-01/derived.json"
+   },
+   {
+    "label": "Racing shots on target",
+    "before": 1,
+    "after": 0,
+    "source": "data/matches/real-madrid-racing-santander-2026-11-01/derived.json"
+   }
+  ],
+  "confidence": "high (shot data); no formation change"
+ },
+ "best_player": {
+  "name": "Bellingham",
+  "team": "Real Madrid",
+  "rating": null,
+  "stats": [
+   [
+    "goals",
+    "1"
+   ],
+   [
+    "shots",
+    "4"
+   ],
+   [
+    "xG",
+    "1.29"
+   ],
+   [
+    "on target",
+    "3 of 4"
+   ]
+  ],
+  "why": "Scout's pick: the highest xG on the pitch and the 21' goal (0.78 xG).",
+  "source": "data/matches/real-madrid-racing-santander-2026-11-01/derived.json players_by_xg; https://www.espn.com/soccer/team-stats/_/gameId/401882819 goals"
+ },
+ "worst_player": {
+  "name": null,
+  "team": null,
+  "rating": null,
+  "stats": [],
+  "why": "not used",
+  "anger_worthy": false,
+  "source": ""
+ },
+ "surprise_stat": {
+  "value": "36",
+  "label": "minutes: all three Madrid goals",
+  "context": "11' Mbappe pen, 21' Bellingham, 36' Diomande; none in the remaining 54-plus minutes",
+  "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882819 header goals"
+ },
+ "result_context": {
+  "winner": "RMA",
+  "loser": "RAC",
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path: best player is Scout's pick (xG + goals).",
+  "xG is the sum of ESPN shot-map xG per shot; 3 shots out of view are included in the shot list.",
+  "No formation change (4-2-3-1 both sides, BBC Line-ups)."
+ ]
+}

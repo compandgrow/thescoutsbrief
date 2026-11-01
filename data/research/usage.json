@@ -598,5 +598,50 @@
     "credits": 1
    }
   ]
+ },
+ "2026-11": {
+  "credits": 9,
+  "calls": [
+   {
+    "at": "2026-11-01T17:48:22Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401878761/crystal-palace-tottenham-hotspur",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T17:48:23Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882822/alaves-barcelona",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T17:48:23Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882820/atletico-madrid-levante",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T17:48:27Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401879246/arsenal-liverpool",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T17:48:27Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882819/real-madrid-racing-santander",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T17:48:42Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401882819",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T17:48:43Z",
+    "what": "search Racing Santander v Real Madrid BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-01T17:48:44Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c6zxj7vpggn2t",
+    "credits": 1
+   }
+  ]
  }
 }

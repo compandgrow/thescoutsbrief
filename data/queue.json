@@ -1,22 +1,22 @@
 {
- "generated": "2026-10-31T23:48:32Z",
+ "generated": "2026-11-01T17:48:27Z",
  "ready": [
   {
-   "espn_id": "401884754",
-   "slug": "borussia-dortmund-bayern-munich",
-   "date": "2026-10-31",
-   "team": "BAY",
+   "espn_id": "401882819",
+   "slug": "real-madrid-racing-santander",
+   "date": "2026-11-01",
+   "team": "RMA",
    "teams_text": [
-    "Bayern Munich",
-    "Borussia Dortmund"
+    "Racing Santander",
+    "Real Madrid"
    ],
-   "competition": "German Bundesliga",
-   "score": "2-2",
+   "competition": "Spanish LALIGA",
+   "score": "0-3",
    "watched": [
-    "BAY"
+    "RMA"
    ],
    "favourite_involved": true,
-   "winner_key": null,
+   "winner_key": "RMA",
    "loser_key": null,
    "banter": false,
    "banter_by_favourite": false,
@@ -25,7 +25,25 @@
    "why": "a favourite played"
   }
  ],
- "later_today": [],
+ "later_today": [
+  {
+   "espn_id": "401879246",
+   "slug": "arsenal-liverpool",
+   "date": "2026-11-01",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS",
+    "LIV"
+   ],
+   "favourite_involved": false
+  }
+ ],
  "not_making": [
   {
    "espn_id": "401878761",

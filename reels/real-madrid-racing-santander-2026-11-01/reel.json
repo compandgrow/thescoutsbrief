@@ -1,0 +1,107 @@
+{
+ "id": "real-madrid-racing-santander-2026-11-01",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "hook-number-first-no-result",
+ "match": {
+  "pill": "RAC 0–3 RMA · LALIGA",
+  "league": "LALIGA"
+ },
+ "beats": [
+  {
+   "say": "Three goals, thirty-six minutes. Then nothing.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "REAL MADRID · LALIGA",
+    "text": "*3 GOALS.*\n36 MINUTES.\nTHEN NOTHING.",
+    "size": 120,
+    "source": "ESPN, BBC Sport"
+   }
+  },
+  {
+   "say": "Seven shots on target to one. Forty-seven touches in the box to twenty-two. Racing had one shot on target all game.",
+   "emotion": "excited",
+   "card": {
+    "type": "compare",
+    "kicker": "RACING V REAL MADRID",
+    "teams": [
+     "RACING",
+     "MADRID"
+    ],
+    "rows": [
+     {
+      "label": "SHOTS ON TARGET",
+      "a": 1,
+      "b": 7
+     },
+     {
+      "label": "BOX TOUCHES",
+      "a": 22,
+      "b": 47
+     },
+     {
+      "label": "BIG CHANCES",
+      "a": 0,
+      "b": 3
+     }
+    ],
+    "source": "ESPN Team Stats, BBC Sport"
+   }
+  },
+  {
+   "say": "The first thirty-six minutes: two point eight two expected goals. The rest of the game: zero point six two. Madrid stopped.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "stat",
+    "kicker": "MADRID xG AFTER THE 3RD GOAL",
+    "value": "0.62",
+    "unit": "xG IN THE REST OF THE GAME",
+    "label": "First 36 minutes: *2.82* xG",
+    "sub": "12 shots, 2 on target, 0 goals",
+    "source": "ESPN shot map, Scout calc"
+   }
+  },
+  {
+   "say": "Scout's pick for best: Jude Bellingham. One goal, four shots, one point two nine expected goals. The highest on the pitch.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Bellingham",
+    "team": "Real Madrid",
+    "stats": [
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "shots",
+      "4"
+     ],
+     [
+      "on target",
+      "3 of 4"
+     ],
+     [
+      "xG",
+      "1.29"
+     ]
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Six wins from their last six, in all competitions. Who stops Madrid? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "6 WINS IN 6.\nWHO STOPS *MADRID*?",
+    "source": "ESPN results"
+   }
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "match": "RAC 0-3 RMA",
+ "generated_at": "2026-11-01T18:30:00Z",
+ "talking_points": [
+  {
+   "id": "t1",
+   "team": "RMA",
+   "type": "form",
+   "claim": "Real Madrid have won their last six games in all competitions",
+   "numbers": {
+    "wins_in_a_row": 6,
+    "last_six": "WWWWWW"
+   },
+   "strength": "medium",
+   "sources": [
+    {
+     "what": "ESPN team-stats page recent results: W 2-1 Barcelona, W 4-1 RB Leipzig, W 4-1 Sevilla, W 4-3 Roma, W 1-0 Villarreal, plus today's 3-0",
+     "url": "https://www.espn.com/soccer/team-stats/_/gameId/401882819"
+    }
+   ],
+   "hook_angle": "Three goals in 36 minutes and a sixth straight win.",
+   "use_for": "context",
+   "fresh_until": "2026-11-03"
+  }
+ ],
+ "rejected": [],
+ "fan_buzz": {}
+}
