@@ -62,6 +62,14 @@
    "mode": "auto",
    "at": "2026-11-01",
    "scheduled_for": "2026-11-01T01:31:00Z"
+  },
+  {
+   "espn_id": "401882819",
+   "reel": "real-madrid-racing-santander-2026-11-01",
+   "zernio_post": "6ae78dd70994952a0fa4f95e",
+   "status": "scheduled",
+   "at": "2026-11-01",
+   "scheduled_for": "2026-11-01T20:07:00Z"
   }
  ],
  "skipped": [

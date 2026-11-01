@@ -21,7 +21,7 @@
    }
   },
   {
-   "say": "Seven shots on target to one. Forty-seven touches in the box to twenty-two. Racing had one shot on target all game.",
+   "say": "Seven shots on target to one. Forty-seven box touches to twenty-two.",
    "emotion": "excited",
    "card": {
     "type": "compare",
@@ -51,20 +51,20 @@
    }
   },
   {
-   "say": "The first thirty-six minutes: two point eight two expected goals. The rest of the game: zero point six two. Madrid stopped.",
+   "say": "First thirty-six minutes: two point eight two expected goals. After that: zero point six two. Madrid stopped.",
    "emotion": "disappointed",
    "card": {
     "type": "stat",
     "kicker": "MADRID xG AFTER THE 3RD GOAL",
     "value": "0.62",
-    "unit": "xG IN THE REST OF THE GAME",
-    "label": "First 36 minutes: *2.82* xG",
-    "sub": "12 shots, 2 on target, 0 goals",
+    "unit": "xG AFTER THAT",
+    "label": "First 36 min: *2.82* xG",
+    "sub": "then 12 shots, 2 on target",
     "source": "ESPN shot map, Scout calc"
    }
   },
   {
-   "say": "Scout's pick for best: Jude Bellingham. One goal, four shots, one point two nine expected goals. The highest on the pitch.",
+   "say": "Scout's pick for best: Jude Bellingham. One goal, one point two nine expected goals. The highest on the pitch.",
    "emotion": "excited",
    "card": {
     "type": "player",

@@ -1,0 +1,3 @@
+PASS
+- Facts checked against cached ESPN team-stats page (header goals 11'/21'/36', Shots on Goal 1 v 7, Attack: big chances 0 v 3) and BBC (box touches 22 v 47); xG split (2.82 / 0.62, 12 shots, 2 on target) and Bellingham (1 goal, 4 shots, 3 of 4 on target, 1.29 xG) recomputed from shots_espn.json via analysis.py. Six wins from ESPN recent results (trends.json t1).
+- Hook: 7 words, payoff in 3.6 s, first frame shows it. 5 beats, 34.7 s, 1080x1920 H.264+AAC, -14.8 LUFS. Layout fixed on beat 3 (clipped sub line) and re-probed. No banter (favourite won, no rival lost); no tone issues. Best player labelled Scout's pick.
