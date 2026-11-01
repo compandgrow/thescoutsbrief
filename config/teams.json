@@ -15,7 +15,8 @@
     "Liverpool FC"
    ],
    "role": "rival",
-   "espn_id": 364
+   "espn_id": 364,
+   "subreddit": "LiverpoolFC"
   },
   {
    "key": "MUN",
@@ -27,7 +28,8 @@
     "Manchester Utd"
    ],
    "role": "favourite",
-   "espn_id": 360
+   "espn_id": 360,
+   "subreddit": "reddevils"
   },
   {
    "key": "MCI",
@@ -37,7 +39,8 @@
     "Man City"
    ],
    "role": "rival",
-   "espn_id": 382
+   "espn_id": 382,
+   "subreddit": "MCFC"
   },
   {
    "key": "CHE",
@@ -47,7 +50,8 @@
     "Chelsea FC"
    ],
    "role": "rival",
-   "espn_id": 363
+   "espn_id": 363,
+   "subreddit": "chelseafc"
   },
   {
    "key": "ARS",
@@ -57,7 +61,8 @@
     "Arsenal FC"
    ],
    "role": "rival",
-   "espn_id": 359
+   "espn_id": 359,
+   "subreddit": "Gunners"
   },
   {
    "key": "TOT",
@@ -68,7 +73,8 @@
     "Spurs"
    ],
    "role": "rival",
-   "espn_id": 367
+   "espn_id": 367,
+   "subreddit": "coys"
   },
   {
    "key": "RMA",
@@ -77,7 +83,8 @@
     "Real Madrid"
    ],
    "role": "favourite",
-   "espn_id": 86
+   "espn_id": 86,
+   "subreddit": "realmadrid"
   },
   {
    "key": "BAR",
@@ -87,7 +94,8 @@
     "FC Barcelona"
    ],
    "role": "rival",
-   "espn_id": 83
+   "espn_id": 83,
+   "subreddit": "Barca"
   },
   {
    "key": "BAY",
@@ -99,7 +107,8 @@
     "Bayern"
    ],
    "role": "favourite",
-   "espn_id": 132
+   "espn_id": 132,
+   "subreddit": "fcbayern"
   },
   {
    "key": "ATM",
@@ -111,7 +120,8 @@
     "Atletico de Madrid"
    ],
    "role": "rival",
-   "espn_id": 1068
+   "espn_id": 1068,
+   "subreddit": "atletico"
   },
   {
    "key": "PSG",
@@ -123,7 +133,8 @@
     "Paris Saint Germain"
    ],
    "role": "favourite",
-   "espn_id": 160
+   "espn_id": 160,
+   "subreddit": "psg"
   }
  ],
  "favourites": [
@@ -314,5 +325,11 @@
   "max_reels_per_run": 3,
   "reel_rules": "Make a reel when: a favourite played (win, draw or loss); two watched clubs met; or a rival lost (banter). Skip rival wins/draws against unwatched clubs.",
   "schedule": "see README (scheduled task)"
+ },
+ "reddit": {
+  "user_agent": "linux:thescoutbrief-trends:v1.0 (read-only fan-trend research)",
+  "use": "signal only: what fans are talking about. Never a source of facts; confirm any claim on a trusted site before it goes on screen.",
+  "privacy": "no usernames stored or shown; don't quote a single fan's comment on screen",
+  "needs": "REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET env vars; www.reddit.com and oauth.reddit.com allowed"
  }
 }

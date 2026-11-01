@@ -24,6 +24,7 @@ Trends (from `trends.json`)
 - Use at most 2 talking points per reel. Only `strong` or `medium` ones; never anything from `rejected`.
 - Say trend numbers exactly as written in `trends.json`, with the scope it gives ("in all competitions", "in the league"). Put the trend source on the card (e.g. "ESPN results").
 - If `talking_points` is empty, write the reel from the match data alone.
+- `fan_buzz` tells you what fans are already arguing about. Use its top theme for the outro debate question when it fits (that's where comments come from), and let it pick between story options. Only state things from it that are marked `confirmed_by`. You may say "Reddit is split on…" but never quote a single fan or show usernames.
 
 Favourites and banter (see `config/teams.json`)
 - The channel's favourites are **Man United, Real Madrid, PSG and Bayern**. The presenter is openly a fan of these four, but the analysis stays honest.

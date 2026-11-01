@@ -20,8 +20,8 @@ Automated match-day Instagram Reels for **@thescoutbrief**. Scout, a cartoon gor
 
 ## Setup (cloud environment)
 
-1. **Allowed domains:** `*.r2.cloudflarestorage.com` (Zernio video upload, working), later `api.pitchapi.dev` (match data). `api.firecrawl.dev` (web research). `huggingface.co`, `*.hf.co` (IndexTTS 2.5 emotional voice; also add a reference clip at `assets/voice/scout_reference.wav`).
-2. **Environment variables:** `PITCHAPI_API_KEY` (from pitchapi.dev), `FIRECRAWL_API_KEY` (from firecrawl.dev, free tier 1,000 credits/month).
+1. **Allowed domains:** `*.r2.cloudflarestorage.com` (Zernio video upload, working), later `api.pitchapi.dev` (match data). `api.firecrawl.dev` (web research). `huggingface.co`, `*.hf.co` (IndexTTS 2.5 emotional voice; also add a reference clip at `assets/voice/scout_reference.wav`). `www.reddit.com`, `oauth.reddit.com` (fan trends, official API).
+2. **Environment variables:** `PITCHAPI_API_KEY` (from pitchapi.dev), `FIRECRAWL_API_KEY` (from firecrawl.dev, free tier 1,000 credits/month), `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` (a free app at reddit.com/prefs/apps).
 3. In a session: `bash setup.sh` installs dependencies and the offline voice model.
 
 ## Try it

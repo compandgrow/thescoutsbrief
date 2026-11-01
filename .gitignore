@@ -13,3 +13,4 @@ data/matches/*/*.json
 !data/matches/*/trends.json
 data/research/*.json
 !data/research/usage.json
+data/reddit/
