@@ -1,0 +1,142 @@
+{
+ "match": {
+  "home": "Bayern Munich",
+  "away": "Borussia Dortmund",
+  "home_short": "BAY",
+  "away_short": "BVB",
+  "score": "2-2",
+  "competition": "German Bundesliga",
+  "date": "2026-10-31"
+ },
+ "headline": "Bayern created 4.46 xG to Dortmund's 0.63 across 23 shots to 12, and drew 2-2 after Kane's 0.79 xG penalty hit the crossbar.",
+ "team_story": [
+  {
+   "label": "xG",
+   "home": 4.46,
+   "away": 0.63,
+   "why_it_matters": "Bayern created seven times the chance quality but dropped two points",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884754/borussia-dortmund-bayern-munich shot map (sum of xG per shot; ESPN tags Bayern 'MUN'); data/matches/borussia-dortmund-bayern-munich-2026-10-31/derived.json:BAY_all/DOR_all"
+  },
+  {
+   "label": "Shots",
+   "home": 23,
+   "away": 12,
+   "why_it_matters": "volume",
+   "source": "https://www.bbc.com/sport/football/live/cke8rnzy49m7t Match Stats > Shots"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 45,
+   "away": 25,
+   "why_it_matters": "territory",
+   "source": "https://www.bbc.com/sport/football/live/cke8rnzy49m7t Match Stats > Total touches inside the opposition box"
+  },
+  {
+   "label": "Shots on target",
+   "home": 5,
+   "away": 6,
+   "why_it_matters": "Bayern had the volume, Dortmund the accuracy",
+   "source": "https://www.bbc.com/sport/football/live/cke8rnzy49m7t Match Stats > Shots on target"
+  }
+ ],
+ "tactical_change": {
+  "team": "Dortmund",
+  "minute": 46,
+  "before": "first half",
+  "after": "second half",
+  "trigger": "score state: Bayern led 1-0 at the break",
+  "effect": "Dortmund went from 1 shot on target in the first half to 5 in the second, with xGOT 0.18 to 1.13, and scored twice from 0.13 xG",
+  "evidence": [
+   {
+    "label": "Dortmund shots on target",
+    "before": 1,
+    "after": 5,
+    "source": "derived.json:DOR_1st/DOR_2nd (ESPN shot map)"
+   },
+   {
+    "label": "Dortmund xGOT",
+    "before": 0.18,
+    "after": 1.13,
+    "source": "derived.json:DOR_1st/DOR_2nd (ESPN shot map)"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "best_player": {
+  "name": "Konrad Laimer",
+  "team": "Bayern Munich",
+  "rating": null,
+  "stats": [
+   [
+    "goals",
+    "1"
+   ],
+   [
+    "shots",
+    "5"
+   ],
+   [
+    "xG",
+    "1.33"
+   ]
+  ],
+  "why": "Scout's pick: opened the scoring at 38' and led the match in xG (1.33 from five shots)",
+  "source": "derived.json:players_by_xg; https://www.espn.co.uk/football/match/_/gameId/401884754/borussia-dortmund-bayern-munich"
+ },
+ "worst_player": {
+  "name": "Harry Kane",
+  "team": "Bayern Munich",
+  "rating": null,
+  "stats": [
+   [
+    "shots",
+    "6"
+   ],
+   [
+    "xG",
+    "0.99"
+   ],
+   [
+    "goals",
+    "0"
+   ],
+   [
+    "penalty xG missed",
+    "0.79"
+   ]
+  ],
+  "why": "Scout's pick: six shots worth 0.99 xG, no goal; his 56' penalty (0.79 xG) hit the crossbar",
+  "anger_worthy": true,
+  "source": "derived.json:kane_shots; BBC report: 'sent the penalty onto the crossbar' (https://www.bbc.com/sport/football/live/cke8rnzy49m7t)"
+ },
+ "surprise_stat": {
+  "value": "0.13",
+  "label": "combined xG of Dortmund's two goals",
+  "context": "Guirassy 60' (0.10 xG) and Silva 89' (0.03 xG)",
+  "source": "derived.json:goals (ESPN shot map)"
+ },
+ "result_context": {
+  "winner": null,
+  "loser": null,
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [],
+ "extra_facts": [
+  {
+   "fact": "Bayern 1st, Dortmund 2nd, both on 18 points; the draw keeps Bayern top on goal difference",
+   "source": "https://www.bbc.com/sport/football/live/cke8rnzy49m7t (report and Head to Head > League position)"
+  },
+  {
+   "fact": "Kane became the first English player in 25 years to win the Ballon d'Or, in midweek",
+   "source": "https://www.bbc.com/sport/football/live/cke8rnzy49m7t (report)"
+  }
+ ],
+ "caveats": [
+  "No player ratings on this path: best/worst are Scout's picks from ESPN shot data.",
+  "ESPN labels Bayern 'MUN' (München) and Dortmund 'DOR' in shot data.",
+  "xG figures are ESPN's. BBC Match Stats lists Kane's penalty among 3 Bayern woodwork hits; ESPN shot map records it as 'Off Target'.",
+  "No trend-scout web search this run: nothing strong enough to need credits."
+ ]
+}

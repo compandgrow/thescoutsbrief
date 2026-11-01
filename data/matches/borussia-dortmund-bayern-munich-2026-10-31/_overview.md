@@ -1,0 +1,2 @@
+# Bayern 2-2 Dortmund, 31 Oct 2026, German Bundesliga
+Web path. Cached files in data/research/: ESPN match page (scrape_6107a8c5a202.json: score, scorers, shot map, xG), ESPN team stats (scrape_0cdc39ac59e1.json), BBC live page (scrape_d707c32327d7.json: report, formations 4-2-3-1 v 3-4-2-1, subs/cards, Match Stats, league positions). Parsed shots: shots_espn.json (team codes: MUN = Bayern, DOR = Dortmund). analysis.py -> derived.json. No player ratings: label best/worst "Scout's pick".

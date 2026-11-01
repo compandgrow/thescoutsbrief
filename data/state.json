@@ -53,6 +53,15 @@
    "mode": "auto",
    "at": "2026-10-31",
    "scheduled_for": "2026-10-31T19:58:00Z"
+  },
+  {
+   "espn_id": "401884754",
+   "reel": "borussia-dortmund-bayern-munich-2026-10-31",
+   "zernio_post": "6ae68859d113cf6e2b5fce30",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-01",
+   "scheduled_for": "2026-11-01T01:31:00Z"
   }
  ],
  "skipped": [

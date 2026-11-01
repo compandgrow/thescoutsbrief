@@ -1,71 +1,6 @@
 {
- "generated": "2026-10-31T17:48:12Z",
+ "generated": "2026-10-31T23:48:32Z",
  "ready": [
-  {
-   "espn_id": "401879248",
-   "slug": "manchester-united-chelsea",
-   "date": "2026-10-31",
-   "team": "MUN",
-   "teams_text": [
-    "Chelsea",
-    "Manchester United"
-   ],
-   "competition": "English Premier League",
-   "score": "2-0",
-   "watched": [
-    "CHE",
-    "MUN"
-   ],
-   "favourite_involved": true,
-   "winner_key": "CHE",
-   "loser_key": "MUN",
-   "banter": false,
-   "banter_by_favourite": false,
-   "favourite_lost": true,
-   "make_reel": true,
-   "why": "a favourite played"
-  },
-  {
-   "espn_id": "401879245",
-   "slug": "brighton-hove-albion-manchester-city",
-   "date": "2026-10-31",
-   "team": "MCI",
-   "teams_text": [
-    "Manchester City",
-    "Brighton & Hove Albion"
-   ],
-   "competition": "English Premier League",
-   "score": "0-1",
-   "watched": [
-    "MCI"
-   ],
-   "favourite_involved": false,
-   "winner_key": null,
-   "loser_key": "MCI",
-   "banter": true,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a rival lost (banter)"
-  }
- ],
- "later_today": [
-  {
-   "espn_id": "401878761",
-   "slug": "crystal-palace-tottenham-hotspur",
-   "date": "2026-10-31",
-   "team": "TOT",
-   "teams_text": [
-    "Tottenham Hotspur",
-    "Crystal Palace"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "TOT"
-   ],
-   "favourite_involved": false
-  },
   {
    "espn_id": "401884754",
    "slug": "borussia-dortmund-bayern-munich",
@@ -76,14 +11,45 @@
     "Borussia Dortmund"
    ],
    "competition": "German Bundesliga",
-   "score": null,
+   "score": "2-2",
    "watched": [
     "BAY"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": null,
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   }
  ],
+ "later_today": [],
  "not_making": [
+  {
+   "espn_id": "401878761",
+   "slug": "crystal-palace-tottenham-hotspur",
+   "date": "2026-10-31",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Crystal Palace"
+   ],
+   "competition": "English Premier League",
+   "score": "2-0",
+   "watched": [
+    "TOT"
+   ],
+   "favourite_involved": false,
+   "winner_key": "TOT",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  },
   {
    "espn_id": "401882822",
    "slug": "alaves-barcelona",
@@ -94,12 +60,12 @@
     "Alav\u00e9s"
    ],
    "competition": "Spanish LALIGA",
-   "score": null,
+   "score": "6-1",
    "watched": [
     "BAR"
    ],
    "favourite_involved": false,
-   "winner_key": null,
+   "winner_key": "BAR",
    "loser_key": null,
    "banter": false,
    "banter_by_favourite": false,

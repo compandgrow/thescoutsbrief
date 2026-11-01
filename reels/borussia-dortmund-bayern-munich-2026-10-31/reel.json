@@ -1,0 +1,67 @@
+{
+ "id": "borussia-dortmund-bayern-munich-2026-10-31",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "hook-number-contrast-no-result",
+ "match": {"pill": "BAY 2–2 BVB · BUNDESLIGA", "league": "BUNDESLIGA"},
+ "beats": [
+  {
+   "say": "Four point four six xG, against zero point six three.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {"type": "hook", "kicker": "BAYERN V DORTMUND · xG", "text": "*4.46* xG\nv\n0.63 xG", "size": 140, "source": "ESPN shot map"}
+  },
+  {
+   "say": "Bayern had twenty-three shots to twelve, and forty-five box touches to twenty-five. Final score: two-two.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "BAYERN V DORTMUND",
+    "teams": ["BAYERN", "DORTMUND"],
+    "rows": [
+     {"label": "SHOTS", "a": 23, "b": 12},
+     {"label": "BOX TOUCHES", "a": 45, "b": 25},
+     {"label": "SHOTS ON TARGET", "a": 5, "b": 6}
+    ],
+    "source": "BBC Sport Match Stats"
+   }
+  },
+  {
+   "say": "Dortmund's two goals were worth zero point one three xG. Combined.",
+   "emotion": "shocked",
+   "card": {
+    "type": "stat",
+    "kicker": "DORTMUND · TWO GOALS",
+    "value": "0.13",
+    "unit": "xG COMBINED",
+    "label": "*Guirassy* 0.10 · *Silva* 0.03",
+    "sub": "Dortmund: 5 shots on target in the second half",
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Scout's pick for worst: Harry Kane. Six shots, zero point nine nine xG, no goals.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "name": "Kane",
+    "team": "Bayern Munich",
+    "stats": [["shots", "6"], ["xG", "0.99"], ["goals", "0"], ["penalty xG, missed", "0.79"]],
+    "source": "ESPN shot map, BBC Sport"
+   }
+  },
+  {
+   "say": "A zero point seven nine xG penalty. Off the bar. That is two points gone!",
+   "emotion": "furious",
+   "slam": [1.2],
+   "card": {"type": "stat", "kicker": "56' · BAYERN PENALTY", "value": "0.79", "unit": "xG · OFF THE BAR", "label": "Bayern drew *2–2*", "sub": "Still top on goal difference", "source": "ESPN shot map, BBC Sport"}
+  },
+  {
+   "say": "So, should Kane keep taking Bayern's penalties? Tell me below.",
+   "emotion": "smug",
+   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "KANE ON\n*PENALTIES*?", "source": ""}
+  }
+ ]
+}
