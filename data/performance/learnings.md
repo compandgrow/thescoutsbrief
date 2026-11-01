@@ -1,5 +1,5 @@
 # What works on @thescoutbrief
-Updated 2026-11-01 · 4 reels reviewed · confidence: low (<5 reels)
+Updated 2026-11-01 · 6 reels reviewed · confidence: medium (5-14)
 
 Early days: three reels, all with 156-198 views, no shares, no saves and no comments. Patterns below are first signals, not proof. Format changes were not made (format v1 has fewer reels than its judge_after_reels).
 
@@ -11,6 +11,8 @@ Early days: three reels, all with 156-198 views, no shares, no saves and no comm
 
 - Best result so far: paris-saint-germain-le-havre (7-word number-led hook, 3.2 s, 29 s reel): skip 57.7%, watch ratio 0.17. Short number-first hook plus ~30 s length is the working format; still 0 shares/saves. Evidence: 1 reel. Confidence: low
 
+- Best so far: brighton-man city (5-word contrast hook 'Twenty-one shots. Zero goals.', 32 s, banter): skip 51.4%, watch ratio 0.199. Worst v2 hook: man-utd-chelsea bare decimals 'One point one zero. Nought point two eight.' skip 66.9%. Name the subject and use whole-number contrasts. Evidence: 2 reels. Confidence: low
+
 ## Experiments to run next
 - Hook from `surprise_stat` or the `best_angle` in trends.json, 10 words or fewer, result last-or-absent. Success: skip rate below 60% and watch ratio above 0.15 on the next 2-3 reels. Baseline 62.8-75.5%, 0.057-0.123.
 - 30-35 s cut (hook, one compare card, best/worst, outro question). Success: watch ratio above 0.25. Baseline 0.071 median.
@@ -18,4 +20,4 @@ Early days: three reels, all with 156-198 views, no shares, no saves and no comm
 - Banter beat early (inside the first 10 s) to test whether it holds viewers; at present nobody reaches it. Measure with comments and shares per 1k reach (baseline 0).
 
 ## Channel baseline
-Medians from `performance.py table` (3 reels): views 178 · reach 161 · avg watch 4.3 s · watch ratio 0.071 · skip rate 73.9% · completion n/a (0) · engagements 6.2/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returned null; timeline shows 0)
+Medians from `performance.py table` (6 reels): views 166 · reach 154 · avg watch 4.9 s · watch ratio 0.123 · skip rate 64.9% · completion n/a (0) · engagements 6.2/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returned null; timeline shows 0)

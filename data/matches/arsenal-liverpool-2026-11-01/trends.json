@@ -1,0 +1,20 @@
+{
+ "match": "LIV 0-1 ARS",
+ "generated_at": "2026-11-01T23:59:00Z",
+ "talking_points": [
+  {
+   "id": "t1", "team": "LIV", "type": "form",
+   "claim": "Liverpool had won five in a row in all competitions (the last on penalties against Chelsea) before losing 0-1 at home to Arsenal",
+   "numbers": {"wins_in_a_row_before": 5, "last_win": "Carabao Cup 1-1, won on penalties", "defeat": "0-1 v Arsenal"},
+   "strength": "strong",
+   "sources": [{"what": "ESPN results via data/form/364.json: 10/14 W 6-3, 10/17 W 2-1, 10/20 W 4-3, 10/25 W 2-0, 10/28 W 1-1 (pens), 11/01 L 0-1; no gaps", "url": "https://www.espn.co.uk/football/team/results/_/id/364"}],
+   "hook_angle": "Five wins in a row. Then Arsenal.", "use_for": "banter", "fresh_until": "2026-11-03"
+  }
+ ],
+ "rejected": [
+  {"claim": "Arsenal's first win at Anfield since 2012 / in 16 years", "reason": "BBC and ESPN disagree on the span"},
+  {"claim": "Timber tug on Isak not given", "reason": "opinion about a VAR decision, one outlet"}
+ ],
+ "fan_buzz": null,
+ "notes": "Reddit keys not set, skipped. Firecrawl: 2 form + 1 search + 1 scrape + 1 fixtures-fetch used."
+}

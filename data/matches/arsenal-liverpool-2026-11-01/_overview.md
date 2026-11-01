@@ -1,0 +1,4 @@
+# Liverpool 0-1 Arsenal, Premier League, 2026-11-01 (Anfield)
+Cached sources (data/research/): ESPN match page https://www.espn.co.uk/football/match/_/gameId/401879246/arsenal-liverpool (scrape_cdb5f4febc47: score, scorer Havertz 16'); ESPN team stats https://www.espn.com/soccer/team-stats/_/gameId/401879246 (scrape_8e26734050d3: 27-shot map with xG, Shots/Attack/Passes, recent results, table points 24 v 15); ESPN report https://www.espn.com/soccer/report/_/gameId/401879246 (scrape_df76ac9ee35e: Alisson error led to goal, Raya made no save). BBC page https://www.bbc.com/sport/football/live/cqev37r8jvvxt was BLOCKED when scraped (scrape_bdf108bafa8c has no data), so no BBC numbers.
+Local: shots_espn.json, derived.json (analysis.py). Form: data/form/364.json, data/form/359.json.
+No player ratings: best/worst are Scout's pick.

@@ -1,0 +1,32 @@
+{
+ "match": {"home": "Liverpool", "away": "Arsenal", "home_short": "LIV", "away_short": "ARS", "score": "0-1", "competition": "Premier League", "date": "2026-11-01"},
+ "data_mode": "firecrawl web path (no PitchAPI) - no official player ratings; best/worst are Scout's pick",
+ "headline": "Liverpool had 17 shots and none on target; Arsenal won 1-0 at Anfield from one Alisson error.",
+ "team_story": [
+  {"label": "Shots", "home": 17, "away": 10, "why_it_matters": "Liverpool shot far more and scored nothing", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879246 Team Stats > Shots"},
+  {"label": "Shots on goal", "home": 0, "away": 3, "why_it_matters": "Not one Liverpool shot was on target", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879246 Team Stats > Shots on Goal"},
+  {"label": "Shots blocked", "home": 9, "away": 3, "why_it_matters": "Nine of Liverpool's 17 shots were blocked", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879246 Team Stats > Shots Blocked"},
+  {"label": "Touches in opposition box", "home": 48, "away": 23, "why_it_matters": "Liverpool lived in Arsenal's box", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879246 Team Stats > Attack > Touches In Opposition Box"}
+ ],
+ "tactical_change": {
+  "team": "Liverpool", "minute": 37,
+  "before": "first 36 min: 6 shots, 0.32 xG", "after": "37 min onwards: 11 shots, 0.83 xG, 0 on target",
+  "trigger": "No formation data (BBC lineups page blocked). This is the second-phase shift after going 1-0 down on 16'.",
+  "effect": "Liverpool piled on shots after the goal and still put none on target.",
+  "evidence": [
+   {"label": "Liverpool shots 37' onward", "before": 6, "after": 11, "source": "derived.json (analysis.py) from shots_espn.json (ESPN shot map)"},
+   {"label": "Liverpool shots on target", "before": 0, "after": 0, "source": "derived.json from shots_espn.json (Saved+Goal)"}
+  ],
+  "confidence": "low (no formation source; shot-map split only)"
+ },
+ "best_player": {"name": "Kai Havertz", "team": "Arsenal", "stats": [["goal", "16'"], ["shot xG", "0.63"], ["shot xGOT", "0.98"]], "why": "Scored the only goal from the single chance he had", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879246 shot 2 of 27; report"},
+ "worst_player": {"name": "Alisson Becker", "team": "Liverpool", "stats": [["error leading to goal", "1"], ["goal conceded", "16'"], ["xG of the chance", "0.63"], ["shots on target faced", "3"]], "why": "ESPN report: his first-half error led to Havertz's goal", "anger_worthy": false, "source": "https://www.espn.com/soccer/report/_/gameId/401879246 ('whose first-half error led to Kai Havertz's goal'); team stats Shots on Goal ARS 3"},
+ "surprise_stat": {"value": "17 shots, 0 on target", "label": "Liverpool at home to Arsenal", "context": "Raya did not have to make a save (ESPN report)", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879246 Shots / Shots on Goal; report"},
+ "result_context": {"winner": "Arsenal", "loser": "Liverpool", "banter": true, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [
+  {"fact": "17 shots, 0 on target", "source": "ESPN team stats > Shots / Shots on Goal"},
+  {"fact": "Arsenal keeper David Raya did not have to make a save", "source": "ESPN report https://www.espn.com/soccer/report/_/gameId/401879246"},
+  {"fact": "Five wins in a row in all competitions (the last on penalties) ended at home to Arsenal", "source": "data/form/364.json"}
+ ],
+ "caveats": ["BBC page blocked: no BBC stats or lineups, no formations.", "BBC highlights says Arsenal's first Anfield win 'since 2012', ESPN says 'in 16 years': conflicting, not used.", "ESPN 'Expected Goals' not on the cached stats page; xG only from the shot-map sum.", "Best/worst are Scout's pick (no ratings)."]
+}

@@ -1,0 +1,73 @@
+{
+ "team_id": "359",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/359",
+ "fetched_at": "2026-11-01T23:50:35Z",
+ "last": [
+  {
+   "date": "2026-11-01",
+   "opponent": "Liverpool",
+   "venue": "A",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879246"
+  },
+  {
+   "date": "2026-10-27",
+   "opponent": "Fleetwood Town",
+   "venue": "A",
+   "score": "1-1",
+   "result": "L",
+   "pens": true,
+   "competition": "English Carabao Cup",
+   "game_id": "401921835"
+  },
+  {
+   "date": "2026-10-24",
+   "opponent": "Everton",
+   "venue": "H",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878768"
+  },
+  {
+   "date": "2026-10-21",
+   "opponent": "Bayern Munich",
+   "venue": "A",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915312"
+  },
+  {
+   "date": "2026-10-18",
+   "opponent": "Nottingham Forest",
+   "venue": "A",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878769"
+  },
+  {
+   "date": "2026-10-13",
+   "opponent": "Lille",
+   "venue": "H",
+   "score": "3-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915417"
+  }
+ ],
+ "run_newest_first": "WLWDWW",
+ "wins": 4,
+ "draws": 1,
+ "losses": 1,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

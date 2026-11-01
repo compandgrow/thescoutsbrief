@@ -1,31 +1,6 @@
 {
- "generated": "2026-11-01T17:48:27Z",
+ "generated": "2026-11-01T23:49:15Z",
  "ready": [
-  {
-   "espn_id": "401882819",
-   "slug": "real-madrid-racing-santander",
-   "date": "2026-11-01",
-   "team": "RMA",
-   "teams_text": [
-    "Racing Santander",
-    "Real Madrid"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": "0-3",
-   "watched": [
-    "RMA"
-   ],
-   "favourite_involved": true,
-   "winner_key": "RMA",
-   "loser_key": null,
-   "banter": false,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
-  }
- ],
- "later_today": [
   {
    "espn_id": "401879246",
    "slug": "arsenal-liverpool",
@@ -36,14 +11,22 @@
     "Arsenal"
    ],
    "competition": "English Premier League",
-   "score": null,
+   "score": "0-1",
    "watched": [
     "ARS",
     "LIV"
    ],
-   "favourite_involved": false
+   "favourite_involved": false,
+   "winner_key": "ARS",
+   "loser_key": "LIV",
+   "banter": true,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "two watched clubs met"
   }
  ],
+ "later_today": [],
  "not_making": [
   {
    "espn_id": "401878761",

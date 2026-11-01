@@ -1,0 +1,22 @@
+{
+ "id": "arsenal-liverpool-2026-11-01",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "5-word number-contrast hook (best skip rate so far), banter beat on the streak, ~32 s",
+ "match": {"pill": "LIV 0–1 ARS · PL", "league": "PL"},
+ "beats": [
+  {"say": "Seventeen shots. Zero on target.", "emotion": "shocked", "hit": true,
+   "card": {"type": "hook", "kicker": "LIVERPOOL · AT ANFIELD", "text": "17 SHOTS.\n*ZERO* ON TARGET.", "size": 150, "source": "ESPN team stats"}},
+  {"say": "Nine of them blocked. Forty-eight touches in the box to twenty-three. And Raya never made a save.", "emotion": "smug",
+   "card": {"type": "compare", "kicker": "THE NUMBERS LIVERPOOL LOST WITH", "teams": ["LIVERPOOL", "ARSENAL"],
+    "rows": [{"label": "SHOTS", "a": 17, "b": 10, "fa": "17", "fb": "10"}, {"label": "ON TARGET", "a": 0, "b": 3, "fa": "0", "fb": "3"}, {"label": "TOUCHES IN BOX", "a": 48, "b": 23, "fa": "48", "fb": "23"}],
+    "source": "ESPN team stats"}},
+  {"say": "Ha! Five wins in a row, the last one on penalties. Then Arsenal came to Anfield.", "emotion": "laughing", "hit": true,
+   "card": {"type": "banter", "kicker": "BANTER ALERT", "text": "5 WINS IN A ROW.\nTHEN *ARSENAL*.", "size": 108, "stamp": "STREAK OVER", "sub": "W W W W W (last on pens) · L 0-1", "source": "ESPN results"}},
+  {"say": "Worst on the pitch, my pick: Alisson. One loose pass, minute sixteen. That was the match.", "emotion": "disappointed", "emote": [[4.2, "angry"]],
+   "card": {"type": "player", "verdict": "worst", "kicker": "SCOUT'S PICK · WORST ON THE PITCH", "name": "Alisson Becker", "team": "Liverpool",
+    "stats": [["error leading to goal", "1"], ["goal conceded", "16'"], ["xG of the chance", "0.63"], ["shots on target faced", "3"]], "source": "ESPN report, shot map"}},
+  {"say": "Unlucky, or just wasteful? Tell me below.", "emotion": "happy",
+   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "LIVERPOOL:\nUNLUCKY OR\n*WASTEFUL*?", "source": ""}}
+ ]
+}

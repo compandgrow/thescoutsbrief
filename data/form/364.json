@@ -1,8 +1,18 @@
 {
  "team_id": "364",
  "source": "https://www.espn.co.uk/football/team/results/_/id/364",
- "fetched_at": "2026-10-30T03:12:08Z",
+ "fetched_at": "2026-11-01T23:50:31Z",
  "last": [
+  {
+   "date": "2026-11-01",
+   "opponent": "Arsenal",
+   "venue": "H",
+   "score": "0-1",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879246"
+  },
   {
    "date": "2026-10-28",
    "opponent": "Chelsea",
@@ -52,19 +62,9 @@
    "pens": false,
    "competition": "UEFA Champions League",
    "game_id": "401915415"
-  },
-  {
-   "date": "2026-10-11",
-   "opponent": "Manchester City",
-   "venue": "H",
-   "score": "0-3",
-   "result": "L",
-   "pens": false,
-   "competition": "English Premier League",
-   "game_id": "401879264"
   }
  ],
- "run_newest_first": "WWWWWL",
+ "run_newest_first": "LWWWWW",
  "wins": 5,
  "draws": 0,
  "losses": 1,

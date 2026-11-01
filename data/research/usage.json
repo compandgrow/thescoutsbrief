@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 9,
+  "credits": 22,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -640,6 +640,61 @@
    {
     "at": "2026-11-01T17:48:44Z",
     "what": "scrape https://www.bbc.com/sport/football/live/c6zxj7vpggn2t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:49:14Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401878761/crystal-palace-tottenham-hotspur",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:49:14Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882822/alaves-barcelona",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:49:15Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401882820/atletico-madrid-levante",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:49:15Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401879246/arsenal-liverpool",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:49:55Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401879246",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:49:57Z",
+    "what": "search Liverpool v Arsenal BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-01T23:49:58Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cqev37r8jvvxt",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:50:31Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/364",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:50:35Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/359",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-01T23:50:37Z",
+    "what": "search Liverpool Arsenal",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-01T23:50:42Z",
+    "what": "scrape https://www.espn.com/soccer/report/_/gameId/401879246",
     "credits": 1
    }
   ]
