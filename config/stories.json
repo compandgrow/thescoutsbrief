@@ -80,5 +80,7 @@
   "name": "The Inspector",
   "what": "3D fox detective, trench coat + fedora, noir office (presenter/detective3d.js)",
   "reel_field": "\"presenter\": \"detective3d\""
- }
+ },
+ "music_style": "noir",
+ "music_note": "engine/music.py styles: noir (default for Scout Files), thriller, match. reel.json \"music\" overrides."
 }
