@@ -1,0 +1,4 @@
+PASS
+- Facts checked against cached ESPN team-stats page (scrape_8e26734050d3: "0 Shots on Goal 3", "17 Shots 10", "9 Shots Blocked 3", "48 Touches In Opposition Box 23") and ESPN report (scrape_df76ac9ee35e: Alisson's first-half error led to Havertz's goal; Raya did not have to make a save; "at Anfield"). Havertz goal 16' / xG 0.63 from shots_espn.json. Five-win run (last on pens) recounted from data/form/364.json.
+- Hook: 5 words, payoff by ~1.5 s, first frame (cover) shows it. 5 beats, 28.7 s (slightly under the 30 s target, within max), 1080x1920 H.264+AAC, -15.0 LUFS. Layout probed on every beat, no clipping.
+- Banter beat present (laughing), built on the streak number; no red lines; rival lost to a rival, no favourite involved. Best/worst labelled Scout's pick. BBC page was blocked so no BBC numbers used. Conflicting "since 2012 / 16 years" claim left out.

@@ -70,6 +70,14 @@
    "status": "scheduled",
    "at": "2026-11-01",
    "scheduled_for": "2026-11-01T20:07:00Z"
+  },
+  {
+   "espn_id": "401879246",
+   "reel": "arsenal-liverpool-2026-11-01",
+   "zernio_post": "6ae7d86b0f20c0e28d6dc011",
+   "status": "scheduled",
+   "at": "2026-11-02",
+   "scheduled_for": "2026-11-02T01:25:00Z"
   }
  ],
  "skipped": [
@@ -77,6 +85,21 @@
    "espn_id": "401921834",
    "reason": "Man City v Brighton (pens): rival didn't lose to an unwatched club",
    "at": "2026-10-29"
+  },
+  {
+   "espn_id": "401878761",
+   "reason": "Tottenham 2-0 Crystal Palace: rival didn't lose to an unwatched club",
+   "at": "2026-11-02"
+  },
+  {
+   "espn_id": "401882822",
+   "reason": "Barcelona 6-1 Alav\u00e9s: rival didn't lose to an unwatched club",
+   "at": "2026-11-02"
+  },
+  {
+   "espn_id": "401882820",
+   "reason": "Levante 0-2 Atl\u00e9tico: rival didn't lose to an unwatched club",
+   "at": "2026-11-02"
   }
  ]
 }
