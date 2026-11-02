@@ -263,6 +263,11 @@
     "BUNDESLIGA",
     "Bundesliga",
     "BL1"
+   ],
+   "STORY": [
+    "STORY",
+    "Scout Files",
+    "SCOUT FILES"
    ]
   },
   "PL": {
@@ -319,7 +324,25 @@
    ],
    "lapel": "#2f1505"
   },
-  "default": "PL"
+  "default": "PL",
+  "STORY": {
+   "name": "Scout Files",
+   "ink": "#0e0909",
+   "panel": "#1a1010",
+   "accent": "#e5484d",
+   "soft": "#f5b5b5",
+   "muted": "#a08585",
+   "rgb": "229,72,77",
+   "suit": [
+    "#2a1515",
+    "#160b0b"
+   ],
+   "desk": [
+    "#331a1a",
+    "#170c0c"
+   ],
+   "lapel": "#1f1010"
+  }
  },
  "automation": {
   "max_reels_per_run": 3,

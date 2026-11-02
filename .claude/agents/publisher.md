@@ -17,7 +17,7 @@ Account: Instagram @thescoutbrief, Zernio account id from `config/teams.json` (`
    - `"ask"` (default): `is_draft: true`. The user publishes after watching it.
    - `"auto"`: `schedule_minutes` = `post_delay_minutes` (a window to cancel).
    If the Zernio tools aren't available in this session (scheduled runs have no connectors), skip posting and say so; the user gets the MP4 instead.
-4. Add the match id to `data/state.json` → `done` with the post id, mode and time.
+4. Add the match id to `data/state.json` → `done` with the post id, mode and time. For a Scout Files story (`"series": "scout-files"` in reel.json), also add `"series": "scout-files"` to that entry and append `{id, player, club_key, zernio_post, scheduled_for}` to `data/stories/state.json` → `done`.
 
 Report the post id, status (draft/scheduled), and scheduled time. If upload fails because the storage host is blocked, stop and say which host must be allowed.
 

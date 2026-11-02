@@ -24,6 +24,10 @@ html, body { margin:0; background:#000; }
 .kicker { display:inline-block; background:var(--violet); color:var(--ink); font-size:30px; padding:8px 18px; letter-spacing:2px; }
 .big { font-family:Anton; font-size:150px; line-height:.95; text-transform:uppercase; margin-top:24px; }
 .big .hl { color:var(--violet); }
+.year { font-family:Anton; font-size:44px; color:var(--lilac); letter-spacing:3px; margin-top:20px; }
+.quote { font-family:Anton; font-size:84px; line-height:1.02; margin-top:26px; }
+.quote .qm { color:var(--violet); font-size:170px; line-height:1; display:block; height:96px; overflow:hidden; margin-top:4px; }
+.who { font-size:34px; color:var(--lilac); margin-top:22px; letter-spacing:1px; }
 .mask { display:block; overflow:hidden; }
 .mask > span { display:inline-block; }
 .panel { background:var(--panel); border:2px solid rgba(var(--rgb),.35); border-radius:18px; padding:24px 36px; }
@@ -149,6 +153,14 @@ function build(c) {
       </div><div class="stats">${stats}</div>`;
   } else if (c.type === "stat") {
     d.innerHTML = `${kick}<div style="margin-top:30px"><span class="counter">0</span><span class="unit">${esc(c.unit || "")}</span></div><div class="ctitle" style="font-size:60px">${hl(c.label || "")}</div><div class="sub">${hl(c.sub || "")}</div>`;
+  } else if (c.type === "chapter") {
+    // story reels: kicker "CHAPTER 2", optional year/place line, big text, optional sub
+    const lines = c.text.split("\n").map((l) => `<span class="mask"><span>${hl(l)}</span></span>`).join("");
+    d.innerHTML = `${kick}${c.year ? `<div class="year">${esc(c.year)}</div>` : ""}<div class="big" style="font-size:${c.size || 120}px">${lines}</div><div class="sub">${hl(c.sub || "")}</div>`;
+  } else if (c.type === "quote") {
+    // a sourced, verbatim quote: text + who said it and where
+    const lines = c.text.split("\n").map((l) => `<span class="mask"><span>${hl(l)}</span></span>`).join("");
+    d.innerHTML = `${kick}<div class="quote" style="font-size:${c.size || 84}px"><span class="qm">“</span>${lines}</div><div class="who">— ${esc(c.who || "")}</div>`;
   } else if (c.type === "formation") {
     d.innerHTML = `${kick}<div class="ctitle">${hl(c.title || "")}</div><svg class="pitch" viewBox="0 0 960 470" width="960" height="470"></svg>`;
   }
@@ -263,7 +275,16 @@ function drawCaptions(t) {
 }
 
 // ---------- presenter ----------
-const pres = createPresenter(document.getElementById("presenter"), { theme: { accent: TH.accent, suit: TH.suit, desk: TH.desk, lapel: TH.lapel } });
+let pres;
+if (reel.presenter === "detective3d") {
+  // Scout Files host: 3D fox detective drawn on a full-stage WebGL canvas behind the cards
+  const { createDetective } = await import("/presenter/detective3d.js");
+  for (const id of ["presenter", "grid", "slab"]) document.getElementById(id).style.display = "none";
+  Object.assign(document.getElementById("captions").style, { background: "rgba(8,5,5,.72)", borderRadius: "18px", padding: "0 20px", boxSizing: "border-box" });
+  pres = createDetective(document.getElementById("stage"), { theme: TH, before: document.getElementById("cards") });
+} else {
+  pres = createPresenter(document.getElementById("presenter"), { theme: { accent: TH.accent, suit: TH.suit, desk: TH.desk, lapel: TH.lapel } });
+}
 const cues = [];
 const slams = [];
 beats.forEach((b) => {

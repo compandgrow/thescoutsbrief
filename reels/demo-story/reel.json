@@ -1,0 +1,57 @@
+{
+ "id": "demo-story",
+ "match": {
+  "pill": "SCOUT FILES \u00b7 DEMO",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Demo story. This is a format test, not a real player.",
+   "emotion": "shocked",
+   "card": {
+    "type": "hook",
+    "kicker": "SCOUT FILES \u00b7 DEMO",
+    "text": "HE WAS *RELEASED*\nAT FIFTEEN.",
+    "size": 130,
+    "source": "demo"
+   }
+  },
+  {
+   "say": "Chapter one. The academy said no.",
+   "emotion": "angry",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 1",
+    "year": "DEMO \u00b7 2015",
+    "text": "THE ACADEMY\nSAID *NO*.",
+    "sub": "demo text, not a real event",
+    "source": "demo"
+   },
+   "slam": [
+    1.2
+   ]
+  },
+  {
+   "say": "Then the quote that started it all.",
+   "emotion": "smug",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD",
+    "text": "DEMO QUOTE GOES\n*RIGHT HERE*.",
+    "who": "Demo Manager, demo source",
+    "source": "demo"
+   }
+  },
+  {
+   "say": "Follow for part two.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "PART 2 SOON",
+    "text": "FOLLOW FOR\n*PART 2*",
+    "source": "demo"
+   }
+  }
+ ],
+ "presenter": "detective3d"
+}

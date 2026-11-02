@@ -90,6 +90,7 @@ def features(reel_id):
         "trend_used": reel.get("trend_used"),
         "format_version": reel.get("format_version", 1),
         "experiment": reel.get("experiment"),
+        "series": reel.get("series", "match"),
         "angle_source": reel.get("angle_source"),
         "fan_question": reel.get("fan_question"),
         "trends_available": len((trends or {}).get("talking_points", [])) if trends else None,
@@ -181,7 +182,7 @@ def cmd_table():
                                  "metrics": {k: r["metrics"].get(k) for k in keys},
                                  "hook": r["features"]["hook_say"], "hook_emotion": r["features"]["hook_emotion"],
                                  "duration_s": r["features"]["duration_s"], "has_banter": r["features"]["has_banter"],
-                                 "trend_used": r["features"]["trend_used"], "format_version": r["features"].get("format_version"), "angle_source": r["features"].get("angle_source"), "result": r["features"]["result"]}
+                                 "trend_used": r["features"]["trend_used"], "series": r["features"].get("series", "match"), "format_version": r["features"].get("format_version"), "angle_source": r["features"].get("angle_source"), "result": r["features"]["result"]}
                                 for r in rows]}, indent=1, ensure_ascii=False))
 
 

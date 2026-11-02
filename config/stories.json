@@ -1,0 +1,84 @@
+{
+ "series": "Scout Files",
+ "tagline": "The stories behind the players",
+ "cadence_days": 2,
+ "cadence_note": "One story every 2 days. The performance analyst may move this between 2 and 3 days based on results.",
+ "post_hour_uk": "around 13:00-14:00 (lunch scroll), scheduled post_delay_minutes after review",
+ "theme": "STORY",
+ "duration_s": {
+  "target": [
+   40,
+   55
+  ],
+  "max": 60
+ },
+ "credits_max_per_story": 12,
+ "spicy_means": [
+  "on-pitch drama: red cards, meltdowns, bust-ups with team-mates or opponents, famous confrontations",
+  "public fallouts with managers or clubs that the people involved confirmed or that 2+ trusted outlets reported",
+  "transfer sagas: completed or officially collapsed moves, hold-outs, release clauses, the quotes around them",
+  "rejection to stardom: released by an academy, written off, came back",
+  "rivalries and trash talk on the record",
+  "wild but official facts: contract clauses, records, fines and bans handed down by a club or federation",
+  "controversial decisions and their fallout (VAR, bans, appeals) as officially reported"
+ ],
+ "never": [
+  "private life: relationships, partners, family, children, homes, money outside football",
+  "health or mental health beyond what the player has said publicly",
+  "criminal allegations, court cases, arrests, betting allegations",
+  "rumours, 'sources say', unconfirmed reports, transfer gossip",
+  "anything sexual, tragedy or death, race, religion, nationality, appearance",
+  "mocking injuries; calling anyone a fraud, cheat or liar; 'exposed' framing",
+  "living players' stories that are only spicy because they are cruel"
+ ],
+ "evidence": "Every fact needs 2 trusted outlets (config/teams.json research.trusted_domains) or 1 official source; quotes verbatim from a trusted outlet with who/when/where. If a key beat can't be confirmed, drop it or pick another story.",
+ "structure": [
+  {
+   "slot": "cold_open",
+   "card": "hook",
+   "note": "the most dramatic moment first (in medias res), payoff within 3 s, max 10 words"
+  },
+  {
+   "slot": "setup",
+   "card": "chapter",
+   "note": "CHAPTER 1: who, where, when; year on the card"
+  },
+  {
+   "slot": "conflict",
+   "card": "chapter or stat",
+   "note": "CHAPTER 2: what went wrong / the clash"
+  },
+  {
+   "slot": "twist",
+   "card": "quote or chapter",
+   "note": "the turn: an on-record quote or the unexpected outcome"
+  },
+  {
+   "slot": "now",
+   "card": "stat or player",
+   "note": "where it ended up, with a real number"
+  },
+  {
+   "slot": "outro",
+   "card": "outro",
+   "note": "open loop or debate question + 'follow for the next Scout File'"
+  }
+ ],
+ "hook_styles": [
+  "In medias res: 'He was released at 15. Ten years later, they paid 80 million to get him back.'",
+  "Contradiction: 'His manager called him unprofessional. He won the league the next season.'",
+  "Number shock: 'Fourteen red cards. One player.'",
+  "Open loop: 'One phone call ended his time at the club.'"
+ ],
+ "topic_sources": [
+  "data/trends/<latest>.json (players fans are talking about now)",
+  "trusted news last 7 days",
+  "evergreen stories of watched-club players"
+ ],
+ "topic_rules": "Prefer a player who is trending this week (the story answers 'why is everyone talking about him?'). Rotate clubs; no club twice in a row; mix favourites and rivals. Never repeat a story in data/stories/state.json.",
+ "host": {
+  "name": "The Inspector",
+  "what": "3D fox detective, trench coat + fedora, noir office (presenter/detective3d.js)",
+  "reel_field": "\"presenter\": \"detective3d\""
+ }
+}
