@@ -84,6 +84,14 @@
   "posting": {
    "aim": "post within 24 h of full time",
    "note": "post delay itself lives in config/teams.json (post_delay_minutes)"
+  },
+  "angle": {
+   "prefer": [
+    "fan_buzz",
+    "talking_point",
+    "data"
+   ],
+   "rule": "Answer the question fans are already arguing about with our numbers (trends.json reel_angle)."
   }
  },
  "locked": {

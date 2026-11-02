@@ -24,6 +24,12 @@ Trends (from `trends.json`)
 - Use at most 2 talking points per reel. Only `strong` or `medium` ones; never anything from `rejected`.
 - Say trend numbers exactly as written in `trends.json`, with the scope it gives ("in all competitions", "in the league"). Put the trend source on the card (e.g. "ESPN results").
 - If `talking_points` is empty, write the reel from the match data alone.
+- **Build the reel around `trends.json` → `reel_angle`** (when present):
+  - **hook**: answer or provoke the fan question with the payoff number in the first 3 s ("Everyone's blaming Fofana. Chelsea had four shots on target in two hours."). The `hook_angle` is a starting point; keep the format.json hook rules.
+  - **proof + story**: the `data_answer` evidence, in order.
+  - **outro**: hand the argument back to fans (the `fan_question`, or the next theme in `fan_buzz.themes`).
+  - Saying what fans think ("Half of Reddit blames Fofana") is allowed only when `fan_buzz` shows it; never quote a single fan or show usernames.
+  - Put `"angle_source": "<reel_angle.source>"` and `"fan_question": "..."` at the top level of reel.json.
 - `fan_buzz` tells you what fans are already arguing about. Use its top theme for the outro debate question when it fits (that's where comments come from), and let it pick between story options. Only state things from it that are marked `confirmed_by`. You may say "Reddit is split on…" but never quote a single fan or show usernames.
 
 Favourites and banter (see `config/teams.json`)

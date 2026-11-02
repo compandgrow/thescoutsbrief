@@ -59,10 +59,26 @@ Output: `data/matches/<id>/trends.json`.
  },
  "rejected": [{"claim": "", "reason": "only one outlet / transfer rumour / red line / Reddit-only, not confirmed"}],
  "best_angle": "t1",
+ "reel_angle": {
+  "source": "fan_buzz|talking_point|data",
+  "fan_question": "Was Fofana to blame for Chelsea going out?",
+  "data_answer": "He gave away the penalty and missed the last kick, but Chelsea also had 4 shots on target in 120 minutes.",
+  "evidence": ["insights.json worst_player", "insights.json team_story shots on target", "BBC report"],
+  "fan_heat": "post-match thread 2,100 comments; theme in most top comments",
+  "hook_angle": "Everyone's blaming Fofana. The numbers blame someone else too.",
+  "why": "biggest fan argument that the match data can settle"
+ },
  "credits_used": 6,
  "notes": ""
 }
 ```
+## Choosing the reel angle (most important output)
+The reel should answer **the question fans are already arguing about**, using our data. Pick `reel_angle` in this order:
+1. **fan_buzz**: the hottest Reddit theme (biggest thread, most top comments on it) that the match data can **settle or test**: "is X to blame?", "was the sub the turning point?", "is the manager the problem?". Write it as `fan_question`, then `data_answer` using only numbers from `insights.json`, `trends.json` or `data/form/`. The answer may agree with the fans or prove them wrong; proving them wrong with numbers is the strongest reel.
+2. **talking_point**: if no fan theme can be tested with our data, use `best_angle`.
+3. **data**: if neither exists, `source: "data"` and the analyst's headline.
+Skip fan themes that cross the banter red lines, are about off-pitch life, or need facts we don't have. Record the next-best themes in `fan_buzz.themes` so the scriptwriter can use one for the outro.
+
 - At most 3 talking points, best first. `best_angle` is the one most likely to stop the scroll **and** connect to this match's data in `insights.json`.
 - `hook_angle` is a suggestion of 15 words or fewer. It must combine the trend with a number from `insights.json` or `data/form/`, and claim nothing beyond the sources.
 - If nothing passes the evidence rules, write an empty `talking_points` list and say why. The reel works without trends, so never stretch one.

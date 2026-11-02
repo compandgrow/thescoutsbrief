@@ -29,7 +29,7 @@ You are the Performance Analyst for The Scout Brief (Instagram @thescoutbrief, Z
 For each reel, decide the **one main reason** it under- or over-performed, using the scores above and the reel's features:
 - Hook: was the first line a concrete, surprising number? How many words and seconds before the first payoff? Did the first frame show the claim in big text?
 - Length: was it longer than people stayed? Which beat were they on when they left?
-- Story choice: favourite vs rival, banter or not, anger or not, trend storyline or not (`trend_used`, `trends.json`).
+- Story choice: favourite vs rival, banter or not, anger or not, trend storyline or not (`trend_used`, `trends.json`), and **angle source** (`angle_source`: fan_buzz vs talking_point vs data). Track whether fan-driven reels get more comments and shares; that tells us whether the fan-centric format is working.
 - Payoff timing: at which second does the hook's key number or verdict land (use `timing.json` and the word position)? If it lands after the average watch time, that's the reason.
 - Freshness: `hours_after_match`. Reels posted more than 24 h after full time compete with every other account's take.
 - Timing: post hour and weekday (UTC) against the other reels; once there are 10+ reels, also `analytics_get_best_time_to_post` for the account.
