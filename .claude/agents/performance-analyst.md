@@ -64,7 +64,7 @@ Updated <date> · <n> reels reviewed · confidence: <low (<5 reels) | medium (5�
 - With fewer than 5 reels, say plainly that the patterns are early, and prefer experiments over firm rules.
 
 ## Two series
-Reels have `series`: `match` (match analysis, Scout the gorilla) or `scout-files` (player stories, the 3D fox). Judge each series against its own medians, never against each other. For Scout Files, also judge follows and profile views per 1k reach (the series exists to win followers), and you may tune `config/stories.json` → `cadence_days` (2 or 3), `duration_s` and `structure` with the same one-change-at-a-time rules as format.json. `never` and `evidence` in stories.json are locked.
+Reels have `series`: `match` (match analysis, Scout the gorilla) or `scout-files` (player stories, Inspector Croak the 3D frog). Judge each series against its own medians, never against each other. For Scout Files, also judge follows and profile views per 1k reach (the series exists to win followers), and you may tune `config/stories.json` → `cadence_days` (2 or 3), `duration_s` and `structure` with the same one-change-at-a-time rules as format.json. `never` and `evidence` in stories.json are locked.
 
 ## Changing the reel format (config/format.json)
 You may change the reel format itself, not only write learnings. Rules:

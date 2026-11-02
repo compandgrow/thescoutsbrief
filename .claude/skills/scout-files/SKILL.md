@@ -1,6 +1,6 @@
 ---
 name: scout-files
-description: Run the Scout Files series for @thescoutbrief — every 2-3 days, pick a dramatic but true player story (trending on Reddit or in the news), research it on trusted sites, script it, produce a reel hosted by The Inspector (3D fox detective), review it and schedule it. Use when asked for a Scout File / player story, or when the Scout Files scheduled run fires.
+description: Run the Scout Files series for @thescoutbrief — every 2-3 days, pick a dramatic but true player story (trending on Reddit or in the news), research it on trusted sites, script it, produce a reel hosted by Inspector Croak (3D frog detective), review it and schedule it. Use when asked for a Scout File / player story, or when the Scout Files scheduled run fires.
 ---
 # Scout Files run
 
@@ -15,9 +15,9 @@ Arguments: none (auto: make one story if it's due), `force` (make one now), or a
 | Step | Agent | Output | Gate |
 |---|---|---|---|
 | 1 | `story-scout` | `data/stories/<id>/story.json` | every beat sourced (2 trusted outlets or 1 official); nothing from `never`. `status: no_story` → record in `skipped`, report, stop |
-| 2 | `story-writer` | `reels/story-<id>/reel.json` (`presenter: detective3d`, `series: scout-files`), `caption.txt` | structure + duration from `config/stories.json`, hook payoff within 3 s |
+| 2 | `story-writer` | `reels/story-<id>/reel.json` (`presenter: frog3d`, `series: scout-files`), `caption.txt` | structure + duration from `config/stories.json`, hook payoff within 3 s |
 | 3 | setup | | `bash setup.sh` (voice models etc.) only now |
-| 4 | `producer` | `reels/story-<id>/out/reel.mp4` | renders, ≤ `duration_s.max`; the 3D fox host (WebGL) appears in the frames |
+| 4 | `producer` | `reels/story-<id>/out/reel.mp4` | renders, ≤ `duration_s.max`; the 3D frog host (WebGL) appears in the frames |
 | 5 | `reviewer` | `reels/story-<id>/review.md` | PASS (incl. the Scout Files checks). FIX → back to 2/4, max 2 rounds, then escalate |
 | 6 | `publisher` | Zernio post scheduled `post_delay_minutes` ahead (approval mode from config/teams.json) | reviewer PASS only; records in `data/state.json` and `data/stories/state.json` |
 

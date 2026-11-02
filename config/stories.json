@@ -77,9 +77,9 @@
  ],
  "topic_rules": "Prefer a player who is trending this week (the story answers 'why is everyone talking about him?'). Rotate clubs; no club twice in a row; mix favourites and rivals. Never repeat a story in data/stories/state.json.",
  "host": {
-  "name": "The Inspector",
-  "what": "3D fox detective, trench coat + fedora, noir office (presenter/detective3d.js)",
-  "reel_field": "\"presenter\": \"detective3d\""
+  "name": "Inspector Croak",
+  "what": "3D frog detective: glossy green skin, golden eyes with eyelids, hinged jaw, throat sac that puffs when angry/laughing, brown fedora, trench coat, noir office (presenter/frog3d.js)",
+  "reel_field": "\"presenter\": \"frog3d\""
  },
  "music_style": "noir",
  "music_note": "Noir jazz chosen by the user (2026-11-02). engine/music.py styles: noir, thriller, match. reel.json \"music\" overrides."
