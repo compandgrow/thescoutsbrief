@@ -82,5 +82,5 @@
   "reel_field": "\"presenter\": \"detective3d\""
  },
  "music_style": "noir",
- "music_note": "engine/music.py styles: noir (default for Scout Files), thriller, match. reel.json \"music\" overrides."
+ "music_note": "Noir jazz chosen by the user (2026-11-02). engine/music.py styles: noir, thriller, match. reel.json \"music\" overrides."
 }
