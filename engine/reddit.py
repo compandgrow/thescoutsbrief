@@ -30,7 +30,7 @@ UA = RCFG.get("user_agent", "linux:thescoutbrief-trends:v1.0 (read-only fan-tren
 
 MODE = os.environ.get("REDDIT_MODE") or ("api" if os.environ.get("REDDIT_CLIENT_ID") and os.environ.get("REDDIT_CLIENT_SECRET") else "rss")
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
-RSS_GAP_S = 7          # keyless feeds allow ~10 requests/minute
+RSS_GAP_S = 8          # keyless feeds allow ~10 requests/minute
 _last = [0.0]
 
 
@@ -147,6 +147,9 @@ def get_rss(path, params=None, max_age_min=20):
     return data
 
 
+PINNED = re.compile(r"(daily|weekly|monthly)\b.*\b(discussion|thread)|open thread|\bAMA\b|transfer thread|free talk|megathread|moan thread|discussion thread", re.I)
+
+
 def rss_row(e, rank, total):
     try:
         t = dt.datetime.fromisoformat(e["time"].replace("Z", "+00:00")).astimezone(dt.timezone.utc).replace(tzinfo=None)
@@ -172,6 +175,7 @@ def post_row(p):
 def listing(sub, kind="hot", limit=25, t=None):
     if MODE == "rss":
         es = get_rss(f"/r/{sub}/{kind}/", {"limit": limit, **({"t": t} if t else {})})
+        es = [e for e in es if not PINNED.search(e["title"])]       # feeds include pinned threads; drop them
         return [rss_row(e, i, len(es)) for i, e in enumerate(es)]
     params = {"limit": limit}
     if t:
