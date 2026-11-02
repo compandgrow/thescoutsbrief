@@ -8,7 +8,7 @@ Arguments: none (auto: every finished match that qualifies today), a match id (o
 
 ## 0. Preflight
 - **Performance review first (no setup, no Firecrawl):** run the `performance-analyst` agent. It reviews every reel posted 24 h+ ago and updates `data/performance/learnings.md`. Do this even when no match is ready.
-- **Trending digest (free, needs the Reddit keys):** `python3 engine/reddit.py digest` saves what r/soccer and each club's subreddit are talking about to `data/trends/<date>.json`. List the top 5 topics that involve a watched club in the report under "Content ideas", even on days with no match.
+- **Trending digest (free; works with the Reddit keys or, with fewer details, without them):** `python3 engine/reddit.py digest` saves what r/soccer and each club's subreddit are talking about to `data/trends/<date>.json`. List the top 5 topics that involve a watched club in the report under "Content ideas", even on days with no match.
 - Check for work FIRST (fast, no install needed): `python3 engine/web_data.py fixtures` then `python3 engine/web_data.py due`. If `data/queue.json` → `ready` is empty, report the `later_today` kickoffs, commit the records and stop. No setup needed.
 - Only when something is ready: `bash setup.sh` (idempotent; a fresh container needs ~30 min: PyTorch + IndexTTS models).
 - Data source: PitchAPI if `PITCHAPI_API_KEY` is set and `api.pitchapi.dev` answers; otherwise the **web path** (Firecrawl, needs `FIRECRAWL_API_KEY`). Check budget: `python3 engine/research.py usage`.
