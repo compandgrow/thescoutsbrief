@@ -1,174 +1,6 @@
 {
- "generated": "2026-10-29T17:49:32Z",
+ "generated": "2026-11-02T18:03:51Z",
  "fixtures": [
-  {
-   "espn_id": "401921842",
-   "slug": "chelsea-liverpool",
-   "date": "2026-10-28",
-   "team": "LIV",
-   "teams_text": [
-    "Liverpool",
-    "Chelsea"
-   ],
-   "competition": "English Carabao Cup",
-   "score": null,
-   "watched": [
-    "LIV",
-    "CHE"
-   ]
-  },
-  {
-   "espn_id": "401917035",
-   "slug": "1-fc-magdeburg-bayern-munich",
-   "date": "2026-10-28",
-   "team": "BAY",
-   "teams_text": [
-    "Bayern Munich",
-    "1\\. FC Magdeburg"
-   ],
-   "competition": "German Cup",
-   "score": null,
-   "watched": [
-    "BAY"
-   ]
-  },
-  {
-   "espn_id": "401876421",
-   "slug": "paris-saint-germain-le-havre-ac",
-   "date": "2026-10-30",
-   "team": "PSG",
-   "teams_text": [
-    "Le Havre AC",
-    "Paris Saint-Germain"
-   ],
-   "competition": "French Ligue 1",
-   "score": null,
-   "watched": [
-    "PSG"
-   ]
-  },
-  {
-   "espn_id": "401879248",
-   "slug": "manchester-united-chelsea",
-   "date": "2026-10-31",
-   "team": "MUN",
-   "teams_text": [
-    "Chelsea",
-    "Manchester United"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "MUN",
-    "CHE"
-   ]
-  },
-  {
-   "espn_id": "401879245",
-   "slug": "brighton-hove-albion-manchester-city",
-   "date": "2026-10-31",
-   "team": "MCI",
-   "teams_text": [
-    "Manchester City",
-    "Brighton & Hove Albion"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "MCI"
-   ]
-  },
-  {
-   "espn_id": "401878761",
-   "slug": "crystal-palace-tottenham-hotspur",
-   "date": "2026-10-31",
-   "team": "TOT",
-   "teams_text": [
-    "Tottenham Hotspur",
-    "Crystal Palace"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "TOT"
-   ]
-  },
-  {
-   "espn_id": "401882822",
-   "slug": "alaves-barcelona",
-   "date": "2026-10-31",
-   "team": "BAR",
-   "teams_text": [
-    "Barcelona",
-    "Alav\u00e9s"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "BAR"
-   ]
-  },
-  {
-   "espn_id": "401884754",
-   "slug": "borussia-dortmund-bayern-munich",
-   "date": "2026-10-31",
-   "team": "BAY",
-   "teams_text": [
-    "Bayern Munich",
-    "Borussia Dortmund"
-   ],
-   "competition": "German Bundesliga",
-   "score": null,
-   "watched": [
-    "BAY"
-   ]
-  },
-  {
-   "espn_id": "401882820",
-   "slug": "atletico-madrid-levante",
-   "date": "2026-10-31",
-   "team": "ATM",
-   "teams_text": [
-    "Levante",
-    "Atl\u00e9tico de Madrid"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "ATM"
-   ]
-  },
-  {
-   "espn_id": "401879246",
-   "slug": "arsenal-liverpool",
-   "date": "2026-11-01",
-   "team": "LIV",
-   "teams_text": [
-    "Liverpool",
-    "Arsenal"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "LIV",
-    "ARS"
-   ]
-  },
-  {
-   "espn_id": "401882819",
-   "slug": "real-madrid-racing-santander",
-   "date": "2026-11-01",
-   "team": "RMA",
-   "teams_text": [
-    "Racing Santander",
-    "Real Madrid"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "RMA"
-   ]
-  },
   {
    "espn_id": "401915308",
    "slug": "as-roma-manchester-united",
@@ -879,6 +711,21 @@
    ]
   },
   {
+   "espn_id": "401932935",
+   "slug": "hertha-berlin-bayern-munich",
+   "date": "2026-12-01",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Hertha Berlin"
+   ],
+   "competition": "German Cup",
+   "score": null,
+   "watched": [
+    "BAY"
+   ]
+  },
+  {
    "espn_id": "401879219",
    "slug": "sunderland-liverpool",
    "date": "2026-12-02",
@@ -1361,6 +1208,21 @@
    "score": null,
    "watched": [
     "TOT"
+   ]
+  },
+  {
+   "espn_id": "401932187",
+   "slug": "afc-bournemouth-liverpool",
+   "date": "2026-12-15",
+   "team": "LIV",
+   "teams_text": [
+    "Liverpool",
+    "AFC Bournemouth"
+   ],
+   "competition": "English Carabao Cup",
+   "score": null,
+   "watched": [
+    "LIV"
    ]
   },
   {

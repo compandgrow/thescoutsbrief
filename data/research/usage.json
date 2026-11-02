@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 22,
+  "credits": 33,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -695,6 +695,61 @@
    {
     "at": "2026-11-01T23:50:42Z",
     "what": "scrape https://www.espn.com/soccer/report/_/gameId/401879246",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:02:48Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:02:51Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:02:54Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:02:57Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:02:59Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:03:02Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:03:05Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:03:08Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:03:12Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:03:15Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-02T18:03:51Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
     "credits": 1
    }
   ]
