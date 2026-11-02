@@ -30,6 +30,12 @@ UA = RCFG.get("user_agent", "linux:thescoutbrief-trends:v1.0 (read-only fan-tren
 
 MODE = os.environ.get("REDDIT_MODE") or ("api" if os.environ.get("REDDIT_CLIENT_ID") and os.environ.get("REDDIT_CLIENT_SECRET") else "rss")
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
+RSS_GAP_S = 7          # keyless feeds allow ~10 requests/minute
+_last = [0.0]
+
+
+class RedditError(Exception):
+    pass
 
 
 def now():
@@ -110,18 +116,23 @@ def get_rss(path, params=None, max_age_min=20):
             return c["data"]
     except (FileNotFoundError, KeyError, json.JSONDecodeError):
         pass
-    for attempt in range(3):
+    for attempt in range(4):
+        wait = RSS_GAP_S - (time.time() - _last[0])
+        if wait > 0:
+            time.sleep(wait)
+        _last[0] = time.time()
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=30) as r:
                 root = ET.fromstring(r.read())
             break
         except urllib.error.HTTPError as e:
-            if e.code == 429 and attempt < 2:
-                time.sleep(20)
+            if e.code == 429 and attempt < 3:
+                ra = e.headers.get("Retry-After")
+                time.sleep(int(ra) + 2 if ra and ra.isdigit() else 30 * (attempt + 1))
                 continue
-            sys.exit(f"Reddit RSS error {e.code} on {path}" + (" (Reddit is blocking unauthenticated requests: use the API keys)" if e.code == 403 else ""))
+            raise RedditError(f"Reddit RSS error {e.code} on {path}" + (" (Reddit is blocking unauthenticated requests: use the API keys)" if e.code == 403 else ""))
         except urllib.error.URLError as e:
-            sys.exit(f"Cannot reach www.reddit.com ({e.reason}); is it in the allowed domains?")
+            raise RedditError(f"Cannot reach www.reddit.com ({e.reason}); is it in the allowed domains?")
     data = []
     for e in root.findall("a:entry", ATOM):
         link = (e.find("a:link", ATOM).get("href") if e.find("a:link", ATOM) is not None else "")
@@ -232,9 +243,13 @@ def cmd_club(key, limit):
 def cmd_digest():
     out = {"date": dt.date.today().isoformat(), "mode": MODE, "fetched_at": now().isoformat(timespec="seconds") + "Z",
            "soccer": sorted(listing("soccer", "hot", 40), key=lambda r: -r["heat"])[:20], "clubs": {}}
+    out["errors"] = {}
     for t in CFG["teams"]:
         if t.get("subreddit"):
-            out["clubs"][t["key"]] = sorted(listing(t["subreddit"], "hot", 15), key=lambda r: -r["heat"])[:6]
+            try:
+                out["clubs"][t["key"]] = sorted(listing(t["subreddit"], "hot", 15), key=lambda r: -r["heat"])[:6]
+            except RedditError as e:
+                out["errors"][t["key"]] = str(e)
     os.makedirs(os.path.join(ROOT, "data/trends"), exist_ok=True)
     path = os.path.join(ROOT, "data/trends", f"{out['date']}.json")
     json.dump(out, open(path, "w"), indent=1, ensure_ascii=False)
@@ -244,7 +259,7 @@ def cmd_digest():
         print(f"  heat {r['heat']:7.1f}  {counts}  [{r['flair'] or '-'}] {r['title'][:90]}")
 
 
-if __name__ == "__main__":
+def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("trending"); s.add_argument("--sub", default="soccer"); s.add_argument("--limit", type=int, default=25)
@@ -254,3 +269,10 @@ if __name__ == "__main__":
     a = ap.parse_args()
     {"trending": lambda: cmd_trending(a.sub, a.limit), "match": lambda: cmd_match(a.home, a.away, a.days),
      "club": lambda: cmd_club(a.key, a.limit), "digest": cmd_digest}[a.cmd]()
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except RedditError as e:
+        sys.exit(str(e))
