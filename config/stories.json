@@ -79,7 +79,8 @@
  "host": {
   "name": "Inspector Croak",
   "what": "3D frog detective: glossy green skin, golden eyes with eyelids, hinged jaw, throat sac that puffs when angry/laughing, brown fedora, trench coat, noir office (presenter/frog3d.js)",
-  "reel_field": "\"presenter\": \"frog3d\""
+  "reel_field": "\"presenter\": \"frog3d\"",
+  "approved": "user-approved 2026-11-02; only the user changes the host"
  },
  "music_style": "noir",
  "music_note": "Noir jazz chosen by the user (2026-11-02). engine/music.py styles: noir, thriller, match. reel.json \"music\" overrides."
