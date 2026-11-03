@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 33,
+  "credits": 37,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -750,6 +750,26 @@
    {
     "at": "2026-11-02T18:03:51Z",
     "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T17:48:54Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401915308/as-roma-manchester-united",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T17:48:54Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401915387/aston-villa-barcelona",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T17:48:57Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401915386/bayern-munich-atletico-madrid",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T17:49:00Z",
+    "what": "scrape https://www.espn.co.uk/football/match/_/gameId/401915309/paris-saint-germain-villarreal",
     "credits": 1
    }
   ]

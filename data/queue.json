@@ -1,6 +1,72 @@
 {
- "generated": "2026-11-02T23:48:27Z",
+ "generated": "2026-11-03T17:49:00Z",
  "ready": [],
- "later_today": [],
+ "later_today": [
+  {
+   "espn_id": "401915308",
+   "slug": "as-roma-manchester-united",
+   "date": "2026-11-03",
+   "team": "MUN",
+   "teams_text": [
+    "Manchester United",
+    "AS Roma"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MUN"
+   ],
+   "favourite_involved": true
+  },
+  {
+   "espn_id": "401915387",
+   "slug": "aston-villa-barcelona",
+   "date": "2026-11-03",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Aston Villa"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "BAR"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401915386",
+   "slug": "bayern-munich-atletico-madrid",
+   "date": "2026-11-03",
+   "team": "BAY",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Bayern Munich"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ATM",
+    "BAY"
+   ],
+   "favourite_involved": true
+  },
+  {
+   "espn_id": "401915309",
+   "slug": "paris-saint-germain-villarreal",
+   "date": "2026-11-03",
+   "team": "PSG",
+   "teams_text": [
+    "Villarreal",
+    "Paris Saint-Germain"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "PSG"
+   ],
+   "favourite_involved": true
+  }
+ ],
  "not_making": []
 }
