@@ -1,0 +1,132 @@
+{
+ "match": "MUN 3-2 ROM (UEFA Champions League, league phase)",
+ "generated_at": "2026-11-03T23:58:00Z",
+ "talking_points": [
+  {
+   "id": "t1",
+   "team": "MUN",
+   "type": "form",
+   "claim": "Manchester United had gone nine games without a win, since 10 September, before beating Roma",
+   "numbers": {
+    "games_without_win": 9,
+    "draws": 3,
+    "losses": 6,
+    "last_win": "4-0 v Sabah FK, 2026-09-10",
+    "scope": "all competitions"
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "Computed from ESPN results via data/form/360.json (9 games between the 10 Sep win and this match)",
+     "url": "https://www.espn.co.uk/football/team/results/_/id/360"
+    },
+    {
+     "what": "BBC match report: 'end their nine-game wait for a victory'; live page: 'for the first time since 10 September' with three points",
+     "url": "https://www.bbc.com/sport/football/live/cmj47pveql18t"
+    },
+    {
+     "what": "ESPN live preview snippet: 'look to avoid going 10 games in a row without a win' (data/research/search_9fe13ff5b998.json)",
+     "url": "https://www.espn.com/soccer/story/_/id/50370296/man-united-vs-roma-live-champions-league-latest-updates-score-results-commentary"
+    }
+   ],
+   "hook_angle": "Nine games without a win. Then Roma had zero second-half shots.",
+   "use_for": "hook",
+   "fresh_until": "2026-11-07",
+   "note": "data/form/360.json flags a gap 2026-09-20 to 2026-10-10 (no games listed). The count of nine is confirmed by BBC and ESPN, so it is safe."
+  },
+  {
+   "id": "t2",
+   "team": "MUN",
+   "type": "pressure",
+   "claim": "Michael Carrick began the night under pressure over his future as United head coach",
+   "numbers": {},
+   "strength": "medium",
+   "sources": [
+    {
+     "what": "Guardian (1 Nov): Carrick 'poised to remain in charge' for Roma after the 2-0 defeat at Chelsea; 'United 17th in Premier League' (search snippet, data/research/search_9fe13ff5b998.json)",
+     "url": "https://www.theguardian.com/football/2026/nov/01/michael-carrick-stay-manager-manchester-united-roma-game"
+    },
+    {
+     "what": "Reuters (2 Nov): 'Carrick brushes off questions over his future ahead of Roma clash' (headline in same search file)",
+     "url": "https://www.reuters.com/sports/soccer/uniteds-carrick-brushes-off-questions-over-his-future-ahead-roma-clash-2026-11-02/"
+    },
+    {
+     "what": "BBC report: 'United seemed finished and head coach Michael Carrick destined for the sack' at 2-0 down",
+     "url": "https://www.bbc.com/sport/football/live/cmj47pveql18t"
+    }
+   ],
+   "hook_angle": "Carrick's job looked gone at 2-0. Ten shots later, United led.",
+   "use_for": "context",
+   "fresh_until": "2026-11-07",
+   "note": "Keep it to 'under pressure' / 'questions over his future'. Never 'should be sacked'. Do not state the Chelsea league position as a number: only a search snippet."
+  }
+ ],
+ "fan_buzz": {
+  "mode": "Reddit RSS (no keys): thread titles and rank only, no upvote or comment counts. Signal only.",
+  "thread": {
+   "title": "Post Match Thread: Manchester United 3-2 AS Roma | UEFA Champions League",
+   "upvotes": null,
+   "comments": null,
+   "url": "https://www.reddit.com/r/soccer/comments/1xn6gpv/post_match_thread_manchester_united_32_as_roma/",
+   "note": "rank 2 in r/soccer hot, 1.9 h old when fetched; no counts available"
+  },
+  "themes": [
+   {
+    "theme": "Shea Lacey's 15-minute cameo and the assist for the winner",
+    "share": "several top r/reddevils posts",
+    "confirmed_by": "BBC: Lacey on at 75 for Diallo (lineup); Carrick: 'Shea Lacey's assist for the winner'",
+    "use_for": "outro question or player card alternative"
+   },
+   {
+    "theme": "Is this a turning point for Carrick or one good half?",
+    "share": "top r/reddevils post-match thread plus Bruno Fernandes quotes on the manager",
+    "confirmed_by": "BBC live page asks 'could this mark a turning point?'; Carrick: 'It's one game so it depends on what happens next'; match data 5 vs 10 shots by half",
+    "use_for": "outro question"
+   }
+  ],
+  "club_subs": [
+   {
+    "club": "MUN",
+    "hot_topic": "Post-match thread, Cunha and Lacey, Fernandes on Carrick",
+    "heat": 15,
+    "note": "rank-based heat from RSS mode"
+   }
+  ]
+ },
+ "rejected": [
+  {
+   "claim": "Roma threw away a 2-0 lead, as they did from 3-1 up against Real Madrid on matchday two",
+   "reason": "Real Madrid claim in ESPN live commentary only (one outlet); no second source. Roma are not a watched rival, so no banter."
+  },
+  {
+   "claim": "Fans protested against the club's owners, throwing tennis balls on the pitch",
+   "reason": "Confirmed by BBC but off-pitch ownership politics: not used in a data reel."
+  },
+  {
+   "claim": "Lacey's 15-minute stat line (13 touches, 7 passes, 3 take-ons)",
+   "reason": "Only in a Reddit post title; not confirmed by a trusted outlet."
+  },
+  {
+   "claim": "Fernandes 'taking responsibility' after the Como row",
+   "reason": "Quotes involve a dressing-room dispute reported by one outlet (BBC); keep the reel on the numbers."
+  }
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "Is this a real turning point for Carrick's United, or just one good half?",
+  "data_answer": "The good half was real: United went from 5 shots before the break to 10 after it, scored all 3 goals after half-time, and Roma managed 0 shots after the break after 7 before. But 0.79 of United's second-half xG was the retaken penalty, and they had gone nine games without a win.",
+  "evidence": [
+   "insights.json team_story shots by half",
+   "insights.json tactical_change",
+   "trends.json t1",
+   "insights.json caveats (penalty share)"
+  ],
+  "fan_heat": "r/soccer post-match thread rank 2 hot at 1.9 h, r/reddevils post-match thread rank 1 (RSS mode, no counts)",
+  "hook_angle": "Nine games without a win. Then Roma had zero second-half shots.",
+  "why": "Biggest conversation around United (turning point vs one half) that the shot split can test; the nine-game run gives the stakes."
+ },
+ "credits_used": 4,
+ "credits_breakdown": "form 360 (1) + form 104 (1) + search 'Manchester United Roma Carrick' (2); Reddit RSS free. Shared monthly usage file also shows other matches' calls.",
+ "notes": "Use 'in all competitions' for the nine-game run. Roma form (data/form/104.json, newest first): L W W D W W, so they came in with four wins in their last five; do not call Roma weak. BBC gives Baleba's substitution minute as 50 in the rating text and 51 in the lineup: avoid the exact minute. ESPN shot-map xG sums to 2.73 and 1.55 vs team-stat 2.72 and 1.53: use the team-stat totals."
+}
