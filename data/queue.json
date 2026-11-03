@@ -1,7 +1,6 @@
 {
- "generated": "2026-11-03T17:49:00Z",
- "ready": [],
- "later_today": [
+ "generated": "2026-11-03T23:48:12Z",
+ "ready": [
   {
    "espn_id": "401915308",
    "slug": "as-roma-manchester-united",
@@ -12,27 +11,18 @@
     "AS Roma"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "3-2",
    "watched": [
     "MUN"
    ],
-   "favourite_involved": true
-  },
-  {
-   "espn_id": "401915387",
-   "slug": "aston-villa-barcelona",
-   "date": "2026-11-03",
-   "team": "BAR",
-   "teams_text": [
-    "Barcelona",
-    "Aston Villa"
-   ],
-   "competition": "UEFA Champions League",
-   "score": null,
-   "watched": [
-    "BAR"
-   ],
-   "favourite_involved": false
+   "favourite_involved": true,
+   "winner_key": "MUN",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   },
   {
    "espn_id": "401915386",
@@ -44,12 +34,19 @@
     "Bayern Munich"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "0-2",
    "watched": [
     "ATM",
     "BAY"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": "BAY",
+   "loser_key": "ATM",
+   "banter": true,
+   "banter_by_favourite": true,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   },
   {
    "espn_id": "401915309",
@@ -61,12 +58,44 @@
     "Paris Saint-Germain"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "0-6",
    "watched": [
     "PSG"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": "PSG",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   }
  ],
- "not_making": []
+ "later_today": [],
+ "not_making": [
+  {
+   "espn_id": "401915387",
+   "slug": "aston-villa-barcelona",
+   "date": "2026-11-03",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Aston Villa"
+   ],
+   "competition": "UEFA Champions League",
+   "score": "3-0",
+   "watched": [
+    "BAR"
+   ],
+   "favourite_involved": false,
+   "winner_key": "BAR",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  }
+ ]
 }
