@@ -1,0 +1,73 @@
+{
+ "team_id": "132",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/132",
+ "fetched_at": "2026-11-03T23:52:00Z",
+ "last": [
+  {
+   "date": "2026-11-03",
+   "opponent": "Atl\u00e9tico de Madrid",
+   "venue": "A",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915386"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Borussia Dortmund",
+   "venue": "H",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "German Bundesliga",
+   "game_id": "401884754"
+  },
+  {
+   "date": "2026-10-28",
+   "opponent": "1\\. FC Magdeburg",
+   "venue": "H",
+   "score": "6-1",
+   "result": "W",
+   "pens": false,
+   "competition": "German Cup",
+   "game_id": "401917035"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "SC Freiburg",
+   "venue": "A",
+   "score": "3-1",
+   "result": "W",
+   "pens": false,
+   "competition": "German Bundesliga",
+   "game_id": "401884759"
+  },
+  {
+   "date": "2026-10-21",
+   "opponent": "Arsenal",
+   "venue": "H",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915312"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "RB Leipzig",
+   "venue": "H",
+   "score": "6-1",
+   "result": "W",
+   "pens": false,
+   "competition": "German Bundesliga",
+   "game_id": "401884772"
+  }
+ ],
+ "run_newest_first": "WDWWDW",
+ "wins": 4,
+ "draws": 2,
+ "losses": 0,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

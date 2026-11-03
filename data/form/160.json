@@ -1,8 +1,18 @@
 {
  "team_id": "160",
  "source": "https://www.espn.co.uk/football/team/results/_/id/160",
- "fetched_at": "2026-10-30T23:50:43Z",
+ "fetched_at": "2026-11-03T23:51:50Z",
  "last": [
+  {
+   "date": "2026-11-03",
+   "opponent": "Villarreal",
+   "venue": "A",
+   "score": "6-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915309"
+  },
   {
    "date": "2026-10-30",
    "opponent": "Le Havre AC",
@@ -52,16 +62,6 @@
    "pens": false,
    "competition": "UEFA Champions League",
    "game_id": "401915407"
-  },
-  {
-   "date": "2026-10-10",
-   "opponent": "Le Mans",
-   "venue": "H",
-   "score": "3-1",
-   "result": "W",
-   "pens": false,
-   "competition": "French Ligue 1",
-   "game_id": "401876442"
   }
  ],
  "run_newest_first": "WWWWWW",

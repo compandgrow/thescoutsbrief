@@ -1,8 +1,18 @@
 {
  "team_id": "360",
  "source": "https://www.espn.co.uk/football/team/results/_/id/360",
- "fetched_at": "2026-10-31T17:58:14Z",
+ "fetched_at": "2026-11-03T23:51:38Z",
  "last": [
+  {
+   "date": "2026-11-03",
+   "opponent": "AS Roma",
+   "venue": "H",
+   "score": "3-2",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915308"
+  },
   {
    "date": "2026-10-31",
    "opponent": "Chelsea",
@@ -62,12 +72,64 @@
    "pens": false,
    "competition": "English Premier League",
    "game_id": "401878773"
+  },
+  {
+   "date": "2026-09-20",
+   "opponent": "Fulham",
+   "venue": "A",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878777"
+  },
+  {
+   "date": "2026-09-16",
+   "opponent": "Brighton & Hove Albion",
+   "venue": "H",
+   "score": "2-3",
+   "result": "L",
+   "pens": false,
+   "competition": "English Carabao Cup",
+   "game_id": "401914261"
+  },
+  {
+   "date": "2026-09-13",
+   "opponent": "Manchester City",
+   "venue": "H",
+   "score": "0-1",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879278"
+  },
+  {
+   "date": "2026-09-10",
+   "opponent": "Sabah FK",
+   "venue": "H",
+   "score": "4-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915442"
+  },
+  {
+   "date": "2026-09-06",
+   "opponent": "Everton",
+   "venue": "A",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879291"
   }
  ],
- "run_newest_first": "LLLDLD",
- "wins": 0,
- "draws": 2,
- "losses": 4,
- "gaps": [],
+ "run_newest_first": "WLLLDLDDLLWD",
+ "wins": 2,
+ "draws": 4,
+ "losses": 6,
+ "gaps": [
+  "2026-09-20 to 2026-10-10"
+ ],
  "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

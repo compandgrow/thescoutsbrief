@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 56,
+  "credits": 68,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -846,6 +846,51 @@
     "at": "2026-11-03T23:50:33Z",
     "what": "scrape https://www.bbc.com/sport/football/live/cmj47pveql18t",
     "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:51:38Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:51:50Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/160",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:51:52Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/104",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:51:54Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/102",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:52:00Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/132",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:52:01Z",
+    "what": "search Manchester United Roma Carrick",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-03T23:52:03Z",
+    "what": "scrape https://www.espn.co.uk/football/team/results/_/id/1068",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-03T23:52:10Z",
+    "what": "search Atletico Madrid Bayern Munich Champions League",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-03T23:53:44Z",
+    "what": "search Villarreal Paris Saint-Germain",
+    "credits": 2
    }
   ]
  }
