@@ -1,0 +1,46 @@
+{
+ "match": {"home": "Atlético Madrid", "away": "Bayern Munich", "home_short": "ATM", "away_short": "BAY", "score": "0-2", "competition": "UEFA Champions League (league phase, matchday 4)", "date": "2026-11-03"},
+ "data_mode": "firecrawl web path (no PitchAPI) - only BBC Sport USER ratings exist; best/worst are labelled BBC fan rating / Scout's pick",
+ "headline": "Bayern had 19 shots to Atlético's 9 and 1.77 xG to 0.83, scored twice after the break and ended Atlético's six-game unbeaten run (all competitions).",
+ "team_story": [
+  {"label": "Shots", "home": 9, "away": 19, "why_it_matters": "Bayern out-shot Atlético more than two to one", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401915386 Shots; BBC https://www.bbc.com/sport/football/live/cmy0r2lw77r1t Basic Stats > Shots"},
+  {"label": "xG", "home": 0.83, "away": 1.77, "why_it_matters": "Bayern created more than double Atlético's chance quality", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t Basic Stats > xG (0.8321 v 1.7747); ESPN match page Team Stats 0.83 v 1.77"},
+  {"label": "Successful final-third passes", "home": 74, "away": 207, "why_it_matters": "Bayern lived in the final third", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t In-depth match stats > Distribution"},
+  {"label": "Touches in opposition box", "home": 28, "away": 38, "why_it_matters": "Bayern had more of the penalty-area action", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401915386 Attack; BBC Basic Stats"},
+  {"label": "Fouls committed", "home": 13, "away": 3, "why_it_matters": "Atlético fouled more than four times as often", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t Basic Stats; ESPN match page Team Stats 13 v 3"}
+ ],
+ "tactical_change": {
+  "team": "Bayern Munich", "minute": 46,
+  "before": "4-2-3-1 (BBC lineups; no shape change in source)", "after": "4-2-3-1 (unchanged)",
+  "trigger": "No formation change. The second-half shift: Bayern's first-half shots all missed the target; the second half brought five on target and both goals. (Karl scored on 54'; Atlético then changed three players on 59' in a 4-4-2 that stayed 4-4-2.)",
+  "effect": "Bayern first half: 7 shots, 0 on target, 0.93 xG, 0 goals. Second half: 12 shots, 5 on target, 0.85 xG, 2 goals.",
+  "evidence": [
+   {"label": "Bayern shots", "before": 7, "after": 12, "source": "derived.json (analysis.py) from shots_espn.json, ESPN shot map, split at 45'"},
+   {"label": "Bayern shots on target", "before": 0, "after": 5, "source": "derived.json from shots_espn.json (Saved + Goal; xGOT > 0)"},
+   {"label": "Bayern goals", "before": 0, "after": 2, "source": "https://www.espn.co.uk/football/match/_/gameId/401915386 Lennart Karl 54', Konrad Laimer 74'"},
+   {"label": "Atlético shots on target", "before": 0, "after": 3, "source": "derived.json from shots_espn.json"}
+  ],
+  "confidence": "medium (shot-map split only; shape unchanged per BBC lineups)"
+ },
+ "best_player": {"name": "Harry Kane", "team": "Bayern Munich", "rating": 8.80, "rating_note": "BBC Sport user average (Player of the match)", "stats": [["BBC fan rating", "8.80"], ["shots", "5"], ["on target", "0"], ["xG", "0.58"]], "why": "BBC player of the match; his lofted ball set up Laimer's 74' goal (BBC report: Laimer 'picked out in space by Harry Kane'; ESPN: Kane lofted a ball into Laimer). Five shots, none on target.", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t Player of the match; ESPN match page report; derived.json Kane (shots_espn.json shots 8, 10, 13, 19, 26)"},
+ "worst_player": {"name": "Giuliano Simeone", "team": "Atlético Madrid", "rating": 3.48, "rating_note": "BBC Sport user average, lowest of any Atlético or Bayern player", "stats": [["BBC fan rating", "3.48"], ["yellow card", "79'"], ["shots", "1"], ["xG", "0.12"]], "why": "Lowest BBC user rating on the pitch (no substitution listed, so a full match). Lee Kang-In 4.66, Le Normand 4.55 (subbed 59' after the error behind Karl's goal).", "anger_worthy": false, "anger_note": "Rival's player and the number is a fan rating, so banter not anger.", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t Player ratings (Atlético) and Starting lineup; shots_espn.json shot 24"},
+ "surprise_stat": {"value": "41 minutes", "label": "Atlético without a shot, 25' to 66'", "context": "Four early shots, then nothing until the 66th minute (shot map). All three Atlético shots on target came after 65'.", "source": "derived.json ATM_longest_gap_between_shots [41, 25, 66] from shots_espn.json (ESPN shot map)"},
+ "result_context": {"winner": "Bayern Munich", "loser": "Atlético Madrid", "banter": true, "banter_by_favourite": true, "favourite_lost": false},
+ "banter_material": [
+  {"fact": "Atlético are 22nd of 36 in the Champions League table with 4 points from 4 games (1 win, 1 draw, 2 defeats)", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t UEFA Champions League Table (updated 3 Nov 22:13)"},
+  {"fact": "Atlético were unbeaten in their previous six games in all competitions (W W D W W W) before losing 0-2", "source": "data/form/1068.json (ESPN https://www.espn.co.uk/football/team/results/_/id/1068), last six before this match; no gaps"},
+  {"fact": "Atlético went 41 minutes without a shot (25' to 66')", "source": "derived.json from shots_espn.json"},
+  {"fact": "Successful final-third passes: Atlético 74, Bayern 207", "source": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t Distribution"},
+  {"fact": "Atlético committed 13 fouls to Bayern's 3", "source": "BBC Basic Stats; ESPN match page"},
+  {"fact": "Karl's opener: he 'stole possession from under the nose of a hesitant Le Normand'; Le Normand was substituted on 59'", "source": "ESPN match page report (scrape_f9c52b63f756); BBC lineups (substituted for Koke at 59 minutes)"}
+ ],
+ "caveats": [
+  "No official player ratings; ratings are BBC Sport user averages, label them 'BBC fan rating'.",
+  "ESPN shot map labels Bayern as 'MUN'; treated as Bayern.",
+  "Bayern xG: BBC/ESPN report 1.77; the 19 listed shots sum to 1.78 (per-shot rounding). Use 1.77.",
+  "BBC report line 'Neuer faced just one shot on target' conflicts with BBC/ESPN stats (Atlético 3 on target, Neuer 3 saves): not used.",
+  "fcbayern.com ticker claims Atlético's last attempt before 49' was Barrios in the 15th minute; ESPN shot map has shots at 14', 20', 25'. Ticker gap not used; the 41-minute gap is from the ESPN shot map and is labelled as such.",
+  "Total passes differ (BBC 637, ESPN 638): not used.",
+  "Bayern and Atlético minutes: BBC lists René Maric as Bayern manager in the lineup block; not used on screen."
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "match": "ATM 0-2 BAY (UCL league phase, matchday 4)",
+ "generated_at": "2026-11-03T23:59:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "ATM", "type": "form",
+   "claim": "Atlético had gone six games unbeaten in all competitions (five wins, one draw) before losing 0-2 at home to Bayern",
+   "numbers": {"unbeaten_before": 6, "wins": 5, "draws": 1, "scope": "all competitions", "defeat": "0-2 v Bayern"},
+   "strength": "strong",
+   "sources": [{"what": "ESPN results via data/form/1068.json (newest first, before this match: 10/31 W 2-0 Levante, 10/24 W 1-0 Deportivo, 10/20 D 1-1 Stuttgart, 10/17 W 1-0 Espanyol, 10/13 W 2-0 Man Utd, 10/10 W 2-1 Alavés; gaps: none). BBC form guide on https://www.bbc.com/sport/football/live/cmy0r2lw77r1t lists the same six results.", "url": "https://www.espn.co.uk/football/team/results/_/id/1068"}],
+   "hook_angle": "Six games unbeaten. Then Bayern: nineteen shots to nine.",
+   "use_for": "banter", "fresh_until": "2026-11-06"},
+  {"id": "t2", "team": "BAY", "type": "form",
+   "claim": "Bayern are unbeaten in their last six games in all competitions (four wins, two draws)",
+   "numbers": {"unbeaten": 6, "wins": 4, "draws": 2, "scope": "all competitions, includes a German Cup win"},
+   "strength": "strong",
+   "sources": [{"what": "ESPN results via data/form/132.json (newest first: W 2-0 Atlético, D 2-2 Dortmund, W 6-1 Magdeburg (cup), W 3-1 Freiburg, D 2-2 Arsenal, W 6-1 Leipzig); gaps: none. BBC: Bayern 8th, 8 points, unbeaten (2W 2D) in the Champions League.", "url": "https://www.espn.co.uk/football/team/results/_/id/132"}],
+   "hook_angle": "Bayern: six unbeaten, nineteen shots at Atlético.",
+   "use_for": "context", "fresh_until": "2026-11-06"},
+  {"id": "t3", "team": "BAY", "type": "milestone",
+   "claim": "Neuer made his 164th Champions League appearance, moving clear of Messi and Müller (both 163) into third on the all-time list behind Casillas (177) and Ronaldo (183)",
+   "numbers": {"neuer_cl_apps": 164, "messi": 163, "mueller": 163, "casillas": 177, "ronaldo": 183},
+   "strength": "strong",
+   "sources": [{"what": "Official club source: FC Bayern live ticker (pre-match note), cached in data/research/search_cc41d083e423.json", "url": "https://fcbayern.com/en/matches/profis/champions-league/2026-2027/atl-tico-madrid-fc-bayern-muenchen-03-11-2026/liveticker"}],
+   "hook_angle": "Neuer passes Messi and Müller, and faced three shots on target.",
+   "use_for": "context", "fresh_until": "2026-11-05"}
+ ],
+ "fan_buzz": {
+  "thread": {"title": "Post-Match Thread: Atletico Madrid 0-2 Bayern München | UEFA Champions League (r/fcbayern, hot rank 1, 2.0 h old)", "upvotes": null, "comments": null, "url": "https://www.reddit.com/r/fcbayern/comments/1xn6eys/postmatch_thread_atletico_madrid_02_bayern/"},
+  "themes": [
+   {"theme": "Konrad Laimer as man of the match (a Bayern fan post on the club sub, hot rank 2, 1.6 h old; RSS mode, no vote counts)", "share": "unknown (single hot post, no counts)", "confirmed_by": "ESPN and BBC: Laimer scored the 74' second; BBC Player of the match is Kane (8.80), Laimer 7.22", "use_for": "outro question (Kane or Laimer)"}
+  ],
+  "club_subs": [{"club": "BAY", "hot_topic": "post-match thread plus a Laimer man-of-the-match post", "heat": 12}, {"club": "ATM", "hot_topic": "no match post in the hot list (latest: general discussion thread, 41.9 h old)", "heat": 15}]
+ },
+ "rejected": [
+  {"claim": "Kane's run of goals in 10 straight Champions League appearances ended", "reason": "number 10 appears only in the BBC report; fcbayern.com preview headline only says 'Can Kane equal Ronaldo's record against Atlético?'. One outlet, not used"},
+  {"claim": "Disallowed goal at 81' (VAR check)", "reason": "only the club live ticker, team not stated ('six of one and half a dozen of the other')"},
+  {"claim": "Neuer faced just one shot on target (BBC report)", "reason": "contradicts BBC and ESPN stats: Atlético 3 on target, 3 saves"},
+  {"claim": "Atlético had no attempt between the 15th minute and 49' (fcbayern ticker)", "reason": "ESPN shot map has Atlético shots at 14', 20' and 25'"},
+  {"claim": "Laimer is the real man of the match", "reason": "Reddit-only opinion; BBC fan vote gives Kane 8.80 to Laimer 7.22"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "Kane or Laimer: who was Bayern's man of the match?",
+  "data_answer": "BBC readers rate Kane 8.80 (Player of the match) over Laimer 7.22, though Kane had five shots and none on target; he set up Laimer's goal, and Laimer scored from three shots (0.18 xG).",
+  "evidence": ["insights.json best_player", "BBC Player of the match / user ratings", "derived.json Kane and Laimer shots"],
+  "fan_heat": "r/fcbayern RSS: Laimer man-of-the-match post ranked 2nd hot; no counts in RSS mode (low confidence, used only for the outro)",
+  "hook_angle": "Nineteen shots to nine. Atlético's six-game streak is over.",
+  "why": "Banter-by-favourite hook from the biggest number gap (19 v 9 shots), t1 gives the streak, Kane/Laimer gives the debate for comments"
+ },
+ "credits_used": 4,
+ "notes": "Credits: 2 form (ESPN results 132 and 1068, 1 each) + 1 search (2) = 4. No page scrape needed (BBC and ESPN pages were already cached). Reddit in RSS mode (no counts); r/soccer match-thread lookup timed out, club subs read only. form/1068.json does not yet include tonight's result, so t1 counts the six before. BBC report says Karl scored 'nine minutes after the restart'; ESPN and the shot map say 54': avoid 'nine minutes', use 54'. All talking points are in all competitions."
+}

@@ -1,0 +1,172 @@
+{
+ "match": {
+  "home": "Manchester United",
+  "away": "AS Roma",
+  "home_short": "MUN",
+  "away_short": "ROM",
+  "score": "3-2",
+  "competition": "UEFA Champions League (league phase)",
+  "date": "2026-11-03",
+  "league": "UCL"
+ },
+ "data_mode": "firecrawl web path (PitchAPI not connected): ESPN match + team stats, BBC match page. No Opta-style player ratings; ratings are BBC reporter marks (out of 10) and BBC user averages, labelled as such. Best/worst are Scout's pick.",
+ "headline": "Roma led 2-0 after 17 minutes and never had a shot in the second half; United went from 5 shots before the break to 10 after it, and ended a nine-game winless run.",
+ "team_story": [
+  {
+   "label": "Shots by half (United)",
+   "home": "5 then 10",
+   "away": null,
+   "why_it_matters": "United doubled their shot count after the break: 5 in the first half, 10 in the second, including all three goals.",
+   "source": "derived.json (analysis.py) from shots_espn.json = https://www.espn.co.uk/football/match/_/gameId/401915308/as-roma-manchester-united shot map; totals 15 match ESPN team stats https://www.espn.com/soccer/team-stats/_/gameId/401915308 'Shots'"
+  },
+  {
+   "label": "Shots by half (Roma)",
+   "home": null,
+   "away": "7 then 0",
+   "why_it_matters": "All 7 Roma shots came before half-time (both goals in the first 17 minutes); none after.",
+   "source": "derived.json (analysis.py) from shots_espn.json; Roma total 7 matches https://www.espn.com/soccer/team-stats/_/gameId/401915308 'Shots'"
+  },
+  {
+   "label": "xG",
+   "home": 2.72,
+   "away": 1.53,
+   "why_it_matters": "The side that trailed 2-0 created almost twice Roma's expected goals over the 90.",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401915308/as-roma-manchester-united Team Stats 'Expected Goals' (cache data/research/scrape_881f32ddbd18.json); BBC Basic Stats xG 2.72 v 1.53 (cache data/research/scrape_6349c0a71541.json)"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 30,
+   "away": 8,
+   "why_it_matters": "United lived in Roma's box; Roma barely reached theirs.",
+   "source": "https://www.bbc.com/sport/football/live/cmj47pveql18t Basic Stats 'Total touches inside the opposition box' (cache data/research/scrape_6349c0a71541.json)"
+  }
+ ],
+ "tactical_change": {
+  "team": "Manchester United",
+  "minute": 51,
+  "before": "4-2-3-1",
+  "after": "4-2-3-1 (shape unchanged in source); Cunha moved inside, Mbeumo wide left",
+  "trigger": "Half-time talk plus Baleba's hamstring injury: Tielemans on for Baleba (BBC lineup: 51 minutes; BBC rating text says 50)",
+  "effect": "United went from 5 shots to 10 and from 0 goals to 3; Roma went from 7 shots to 0.",
+  "evidence": [
+   {
+    "label": "United shots",
+    "before": 5,
+    "after": 10,
+    "source": "derived.json from shots_espn.json (ESPN shot map)"
+   },
+   {
+    "label": "United goals",
+    "before": 0,
+    "after": 3,
+    "source": "derived.json from shots_espn.json (goals 58', 83', 86')"
+   },
+   {
+    "label": "Roma shots",
+    "before": 7,
+    "after": 0,
+    "source": "derived.json from shots_espn.json"
+   }
+  ],
+  "quote": "Carrick: 'We moved Matheus inside second half and put Bryan [Mbeumo] wide left to give us better balance.' (BBC https://www.bbc.com/sport/football/live/cmj47pveql18t, manager quotes)",
+  "confidence": "medium (formation after the changes is not stated by the sources; Roma's own half-time sub, Pisilli for Mora at 46, is in the BBC lineup)"
+ },
+ "best_player": {
+  "name": "Matheus Cunha",
+  "team": "Manchester United",
+  "rating": 8,
+  "rating_note": "BBC reporter mark 8/10; BBC user average 7.72 (player of the match)",
+  "stats": [
+   [
+    "goals",
+    "2"
+   ],
+   [
+    "shots",
+    "4"
+   ],
+   [
+    "xG",
+    "0.88"
+   ],
+   [
+    "BBC mark",
+    "8/10"
+   ]
+  ],
+  "why": "Two goals in three minutes (83' and 86') turned 2-2 into 3-2 after he forced the penalty that started the comeback; sent off for a second yellow at 90+1.",
+  "source": "xG and shots from derived.json (ESPN shot map https://www.espn.co.uk/football/match/_/gameId/401915308/as-roma-manchester-united); goals ESPN header; rating and 'forced a penalty' from https://www.bbc.com/sport/football/live/cmj47pveql18t 'Magnificent Man Utd - how they rated' and Player of the match"
+ },
+ "worst_player": {
+  "name": "Diogo Dalot",
+  "team": "Manchester United",
+  "rating": 4.55,
+  "rating_note": "BBC user average 4.55, lowest of any player listed for either team; BBC reporter mark 5/10",
+  "stats": [
+   [
+    "BBC user rating",
+    "4.55"
+   ],
+   [
+    "BBC mark",
+    "5/10"
+   ],
+   [
+    "shots",
+    "2"
+   ],
+   [
+    "xG",
+    "0.26"
+   ]
+  ],
+  "why": "BBC: caught way out of position when United lost the ball in midfield for Soule's goal, and again for the second. Played all 90.",
+  "anger_worthy": true,
+  "source": "https://www.bbc.com/sport/football/live/cmj47pveql18t how they rated (Dalot, 5) and Player of the match ratings; shots and xG from derived.json (ESPN shot map)"
+ },
+ "surprise_stat": {
+  "value": "7 to 0",
+  "label": "Roma shots before half-time vs after",
+  "context": "Roma were 2-0 up after 17 minutes and did not register a shot in the second half; United had 10.",
+  "source": "derived.json (analysis.py) from shots_espn.json; Roma total 7 = ESPN team stats https://www.espn.com/soccer/team-stats/_/gameId/401915308"
+ },
+ "result_context": {
+  "winner": "MUN",
+  "loser": "ROMA",
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false,
+  "note": "Favourite (Man United) won; Roma is not a watched rival, so no banter. Queue entry: data/queue.json espn_id 401915308."
+ },
+ "banter_material": [],
+ "context": [
+  {
+   "fact": "United's first win in nine games; the last was 4-0 v Sabah FK on 2026-09-10. Run: 3 draws, 6 defeats, all competitions.",
+   "source": "computed in analysis.py from data/form/360.json (ESPN results https://www.espn.co.uk/football/team/results/_/id/360); BBC: 'end their nine-game wait for a victory' (https://www.bbc.com/sport/football/live/cmj47pveql18t)"
+  },
+  {
+   "fact": "Roma were 2-0 up after 17 minutes (Soule 11', Malen penalty 17'); BBC: 'twice in six first-half minutes'.",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401915308/as-roma-manchester-united header goals; https://www.bbc.com/sport/football/live/cmj47pveql18t"
+  },
+  {
+   "fact": "Fernandes' penalty was retaken after a Roma player entered the area; he scored at 58' (0.79 xG).",
+   "source": "https://www.bbc.com/sport/football/live/cmj47pveql18t match report; shots_espn.json #13"
+  },
+  {
+   "fact": "Mbeumo hit both posts (59').",
+   "source": "https://www.bbc.com/sport/football/live/cmj47pveql18t match report; ESPN team stats 'Hit Woodwork' 1 each"
+  },
+  {
+   "fact": "After the win United are 17th in the league phase on 6 points, Roma 19th on 4.",
+   "source": "https://www.bbc.com/sport/football/live/cmj47pveql18t UEFA Champions League Table (last updated 3 Nov 22:13)"
+  }
+ ],
+ "caveats": [
+  "No player ratings from a data provider: ratings are BBC reporter marks and BBC user averages (labelled). Best/worst are Scout's pick.",
+  "Shot-map xG sums to 2.73 (United) and 1.55 (Roma); ESPN/BBC list 2.72 and 1.53. Reel uses 2.72 and 1.53 for totals and shot counts (not half xG) for the half split.",
+  "Half split uses the ESPN shot map: first half = 45' and 45'+n shots; 2.48 of United's shot-map xG after the break includes the 0.79 retaken penalty (9 shots / 1.69 xG without it).",
+  "Baleba's substitution minute differs inside BBC (50 in rating text, 51 in lineup): avoid an exact minute, say 'just after half-time'.",
+  "Formation after the changes is not stated by any source; do not claim a new shape.",
+  "ESPN commentary calls the Cunha dismissal 'second yellow'; BBC agrees ('Two Yellow Cards at 90 minutes plus 1')."
+ ]
+}
