@@ -96,6 +96,15 @@
    "mode": "auto",
    "at": "2026-11-04",
    "scheduled_for": "2026-11-04T01:25:00Z"
+  },
+  {
+   "espn_id": "401915308",
+   "reel": "as-roma-manchester-united-2026-11-03",
+   "zernio_post": "6aea7bb83cb3951ce07f84e3",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-04",
+   "scheduled_for": "2026-11-04T01:26:00Z"
   }
  ],
  "skipped": [
