@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 33,
+  "credits": 34,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -751,6 +751,46 @@
     "at": "2026-11-02T18:03:51Z",
     "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
     "credits": 1
+   },
+   {
+    "at": "2026-11-04T08:20:10Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/364",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-04T08:20:23Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879246/arsenal-liverpool",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-04T08:20:24Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401921842/chelsea-liverpool",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-04T08:20:35Z",
+    "what": "local scrape https://www.bbc.com/sport/football/live/c6zxj7vpggn2t",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-04T08:20:44Z",
+    "what": "local scrape https://www.bbc.com/sport/football/live/c6zxj7vpggn2t",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-04T08:21:10Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c6zxj7vpggn2t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-04T08:21:17Z",
+    "what": "local scrape https://www.skysports.com/football",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-04T08:21:17Z",
+    "what": "local scrape https://www.theguardian.com/football",
+    "credits": 0
    }
   ]
  }
