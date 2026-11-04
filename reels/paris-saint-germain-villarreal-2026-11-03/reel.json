@@ -5,20 +5,106 @@
  "experiment": "number-contrast hook with payoff in first line (4 goals in 17 min vs 2 Villarreal shots), 2-row compare, one story, ~28 s",
  "angle_source": "data",
  "fan_question": "Is anyone stopping PSG this season?",
- "match": {"pill": "VIL 0–6 PSG · UCL", "league": "UCL"},
+ "match": {
+  "pill": "VIL 0–6 PSG · UCL",
+  "league": "UCL"
+ },
  "beats": [
-  {"say": "PSG scored four in seventeen minutes. Villarreal had two shots.", "emotion": "shocked", "hit": true,
-   "card": {"type": "hook", "kicker": "VILLARREAL 0-6 PSG", "text": "4 GOALS.\n17 MINUTES.\n*2* SHOTS.", "size": 150, "source": "ESPN shot map"}},
-  {"say": "Twelve shots on target to two. Forty-three touches in the box to ten.", "emotion": "smug",
-   "card": {"type": "compare", "kicker": "THE GAP", "teams": ["VILLARREAL", "PSG"],
-    "rows": [{"label": "SHOTS ON TARGET", "a": 2, "b": 12, "fa": "2", "fb": "12"}, {"label": "TOUCHES IN BOX", "a": 10, "b": 43, "fa": "10", "fb": "43"}],
-    "source": "ESPN team stats"}},
-  {"say": "Six wins from six in all competitions. Four from four in Europe.", "emotion": "excited",
-   "card": {"type": "stat", "kicker": "PSG · ALL COMPETITIONS", "value": "6/6", "label": "WINS IN THE LAST SIX", "sub": "4 from 4 in the Champions League", "source": "ESPN results"}},
-  {"say": "Worst on the pitch, my pick: Gulácsi. One loose pass out from the back gave Doué the second goal. Twelve on target, six goals.", "emotion": "disappointed", "emote": [[4.5, "angry"]],
-   "card": {"type": "player", "verdict": "worst", "kicker": "SCOUT'S PICK · WORST ON THE PITCH", "name": "Peter Gulácsi", "team": "Villarreal",
-    "stats": [["error leading to goal", "1"], ["goals conceded", "6"], ["saves", "6"], ["shots on target faced", "12"]], "source": "ESPN + BBC reports, ESPN team stats"}},
-  {"say": "Is anyone stopping PSG this season? Tell me below.", "emotion": "happy",
-   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "CAN ANYONE\nSTOP *PSG*?", "source": ""}}
+  {
+   "say": "PSG scored four in seventeen minutes. Villarreal had two shots.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "VILLARREAL 0-6 PSG",
+    "text": "4 GOALS.\n17 MINUTES.\n*2* SHOTS.",
+    "size": 150,
+    "source": "ESPN shot map"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Twelve shots on target to two. Forty-three touches in the box to ten.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE GAP",
+    "teams": [
+     "VILLARREAL",
+     "PSG"
+    ],
+    "rows": [
+     {
+      "label": "SHOTS ON TARGET",
+      "a": 2,
+      "b": 12,
+      "fa": "2",
+      "fb": "12"
+     },
+     {
+      "label": "TOUCHES IN BOX",
+      "a": 10,
+      "b": 43,
+      "fa": "10",
+      "fb": "43"
+     }
+    ],
+    "source": "ESPN team stats"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Six wins from six in all competitions. Four from four in Europe.",
+   "emotion": "excited",
+   "card": {
+    "type": "stat",
+    "kicker": "PSG · ALL COMPETITIONS",
+    "value": "6",
+    "label": "WINS IN THE LAST *SIX*",
+    "sub": "4 from 4 in the Champions League",
+    "source": "ESPN results",
+    "unit": "/6"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Worst on the pitch, my pick: Gulácsi. One loose pass out from the back gave Doué the second goal. Twelve on target, six goals.",
+   "emotion": "disappointed",
+   "emote": [
+    [
+     4.5,
+     "angry"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK · WORST ON THE PITCH",
+    "name": "Peter Gulácsi",
+    "team": "Villarreal",
+    "stats": [
+     [
+      "error leading to goal",
+      "1"
+     ],
+     [
+      "goals conceded",
+      "6"
+     ]
+    ],
+    "source": "ESPN + BBC reports, ESPN team stats"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Is anyone stopping PSG this season? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "CAN ANYONE\nSTOP *PSG*?",
+    "source": ""
+   }
+  }
  ]
 }

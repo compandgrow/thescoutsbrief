@@ -17,7 +17,7 @@
     "source": "BBC Sport Match Stats"}},
   {"say": "Best on the pitch by BBC readers: Harry Kane, eight point eight. Five shots, none on target. But he set up Laimer's goal.", "emotion": "happy",
    "card": {"type": "player", "verdict": "best", "kicker": "BBC PLAYER OF THE MATCH", "name": "Harry Kane", "team": "Bayern Munich", "rating": "8.80",
-    "stats": [["shots", "5"], ["on target", "0"], ["xG", "0.58"], ["set up Laimer", "74'"]], "source": "BBC user rating · ESPN shot map"}},
+    "stats": [["shots", "5"], ["on target", "0"]], "source": "BBC user rating · ESPN shot map"}},
   {"say": "Atlético? Forty-one minutes without a single shot.", "emotion": "smug",
    "card": {"type": "stat", "kicker": "ATLÉTICO", "value": "41", "unit": "MINUTES", "label": "without a *shot*", "sub": "25' to 66' · ESPN shot map", "source": "ESPN shot map"}},
   {"say": "Barcelona next for Atlético on Saturday. Good luck. Kane or Laimer, man of the match?", "emotion": "happy",

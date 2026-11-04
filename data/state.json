@@ -78,6 +78,24 @@
    "status": "scheduled",
    "at": "2026-11-02",
    "scheduled_for": "2026-11-02T01:25:00Z"
+  },
+  {
+   "espn_id": "401915309",
+   "reel": "paris-saint-germain-villarreal-2026-11-03",
+   "zernio_post": "6aea7b6b3cb3951ce07f8316",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-04",
+   "scheduled_for": "2026-11-04T01:25:00Z"
+  },
+  {
+   "espn_id": "401915386",
+   "reel": "bayern-munich-atletico-madrid-2026-11-03",
+   "zernio_post": "6aea7b923cb3951ce07f8442",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-04",
+   "scheduled_for": "2026-11-04T01:25:00Z"
   }
  ],
  "skipped": [

@@ -20,6 +20,10 @@
     "text": "ROMA SHOTS:\n*7* BEFORE HALF-TIME.\n*0* AFTER.",
     "size": 120,
     "source": "ESPN shot map, team stats"
+   },
+   "voice_style": {
+    "speed": 1.18,
+    "pause": 0.15
    }
   },
   {
@@ -81,16 +85,8 @@
       "2"
      ],
      [
-      "shots",
-      "4"
-     ],
-     [
       "xG",
       "0.88"
-     ],
-     [
-      "red card",
-      "90+1'"
      ]
     ],
     "source": "ESPN shot map, BBC Sport (reporter mark 8/10)"
