@@ -1,0 +1,124 @@
+{
+ "match": {
+  "home": "AEK Athens",
+  "away": "Real Madrid",
+  "home_short": "AEK",
+  "away_short": "RMA",
+  "score": "2-3",
+  "competition": "UEFA Champions League",
+  "date": "2026-11-04"
+ },
+ "data_mode": "web (BBC + ESPN, cached in data/research) - no player ratings; best/worst are Scout's pick",
+ "headline": "Real Madrid had 24 shots to 9 and trailed 2-1 with 15 minutes left; the winner was a 0.03 xG shot in stoppage time.",
+ "team_story": [
+  {
+   "label": "Shots",
+   "home": 9,
+   "away": 24,
+   "source": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Match Stats / Shots"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 14,
+   "away": 44,
+   "source": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Match Stats"
+  },
+  {
+   "label": "xG",
+   "home": 0.87,
+   "away": 3.35,
+   "source": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Match Stats"
+  },
+  {
+   "label": "Possession %",
+   "home": 30.4,
+   "away": 69.6,
+   "source": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Match Stats"
+  }
+ ],
+ "tactical_change": {
+  "team": "Real Madrid",
+  "minute": 67,
+  "before": "4-2-3-1",
+  "after": "4-2-3-1 (shape unchanged)",
+  "trigger": "Valverde and Endrick on at 67'",
+  "effect": "Madrid scored twice after the 67' changes (78', 90'+2) from 12 shots after minute 67 is not claimed; only the goal timings are stated.",
+  "evidence": [
+   {
+    "label": "Valverde sub minute",
+    "before": 0,
+    "after": 67,
+    "source": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Line-ups"
+   }
+  ],
+  "confidence": "low"
+ },
+ "best_player": {
+  "name": "Federico Valverde",
+  "team": "Real Madrid",
+  "rating": null,
+  "stats": [
+   [
+    "came on",
+    "67'"
+   ],
+   [
+    "shots",
+    "1"
+   ],
+   [
+    "goal",
+    "90'+2"
+   ],
+   [
+    "xG of that shot",
+    "0.03"
+   ]
+  ],
+  "why": "Substitute, scored the winner from a 0.03 xG shot.",
+  "source": "data/matches/real-madrid-aek-athens-2026-11-04/shots_espn.json #33; https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Line-ups"
+ },
+ "worst_player": {
+  "name": "Bernardo Silva",
+  "team": "Real Madrid",
+  "rating": null,
+  "stats": [
+   [
+    "xG missed at 45'",
+    "0.55"
+   ],
+   [
+    "subbed",
+    "67'"
+   ]
+  ],
+  "why": "One big miss, 0.55 xG off target.",
+  "anger_worthy": false,
+  "source": "data/matches/real-madrid-aek-athens-2026-11-04/shots_espn.json #13"
+ },
+ "surprise_stat": {
+  "value": "0.03",
+  "label": "xG of Valverde's winner",
+  "context": "Madrid created 3.35 xG in total",
+  "source": "shots_espn.json #33; https://www.bbc.com/sport/football/live/cm70pvdg5wvrt Match Stats"
+ },
+ "result_context": {
+  "winner": "Real Madrid",
+  "loser": "AEK Athens",
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [],
+ "facts": {
+  "trailing_window": "AEK led 2-1 from 75' until Mbappe equalised at 78' (BBC report: trailing with 15 minutes to go)",
+  "wins": "BBC report: maintain 100% record, four wins from four",
+  "mbappe_shots": 7,
+  "mbappe_xg_total": 1.35,
+  "mbappe_source": "derived.json (shots_espn.json)"
+ },
+ "caveats": [
+  "Tactical change not used: no verified shape change.",
+  "ESPN scorer header lists a Koita 90'+5' event; BBC says he was sent off after the final whistle - not used."
+ ]
+}

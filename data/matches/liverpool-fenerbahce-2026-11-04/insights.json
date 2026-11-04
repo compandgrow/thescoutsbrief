@@ -1,0 +1,105 @@
+{
+ "match": {
+  "home": "Fenerbahce",
+  "away": "Liverpool",
+  "home_short": "FEN",
+  "away_short": "LIV",
+  "score": "3-2",
+  "competition": "UEFA Champions League",
+  "date": "2026-11-04"
+ },
+ "data_mode": "web (BBC + ESPN, cached in data/research) - no player ratings; best/worst are Scout's pick",
+ "headline": "Liverpool had 22 shots, 12 corners and 68% of the ball, led 2-1 on 69', and lost 3-2 to Fenerbahce.",
+ "team_story": [
+  {
+   "label": "Shots",
+   "home": 17,
+   "away": 22,
+   "source": "https://www.bbc.com/sport/football/live/cmpdgp57zz94t Match Stats"
+  },
+  {
+   "label": "Corners",
+   "home": 4,
+   "away": 12,
+   "source": "https://www.bbc.com/sport/football/live/cmpdgp57zz94t Match Stats"
+  },
+  {
+   "label": "Possession %",
+   "home": 32.4,
+   "away": 67.6,
+   "source": "https://www.bbc.com/sport/football/live/cmpdgp57zz94t Match Stats"
+  },
+  {
+   "label": "xG",
+   "home": 1.7,
+   "away": 1.57,
+   "source": "https://www.bbc.com/sport/football/live/cmpdgp57zz94t Match Stats"
+  }
+ ],
+ "tactical_change": null,
+ "best_player": {
+  "name": "Mason Greenwood",
+  "team": "Fenerbahce",
+  "rating": null,
+  "stats": [
+   [
+    "goal",
+    "29'"
+   ],
+   [
+    "shots",
+    "4"
+   ],
+   [
+    "xG of goal",
+    "0.03"
+   ]
+  ],
+  "why": "Free-kick goal and four shots.",
+  "source": "shots_espn.json #10,14,17,29; https://www.bbc.com/sport/football/live/cmpdgp57zz94t (headline)"
+ },
+ "worst_player": null,
+ "surprise_stat": {
+  "value": "2 goals in 6 minutes",
+  "label": "Fenerbahce 73' and 79' after Liverpool led 2-1 on 69'",
+  "context": "corner then throw-in set piece",
+  "source": "shots_espn.json #28,31,32"
+ },
+ "result_context": {
+  "winner": "Fenerbahce",
+  "loser": "Liverpool",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [
+  {
+   "fact": "Liverpool: 12 corners to 4 and 42 crosses to 10, and lost",
+   "source": "https://www.bbc.com/sport/football/live/cmpdgp57zz94t Match Stats / Distribution"
+  },
+  {
+   "fact": "Liverpool 22 shots, 6 on target; Fenerbahce won with 3 goals from 0.54 xG of goal shots (derived)",
+   "source": "derived.json"
+  },
+  {
+   "fact": "Fenerbahce were 19th in the league phase before kick-off with 5 points",
+   "source": "https://www.bbc.com/sport/football/live/cmpdgp57zz94t Head to Head, Season so far"
+  }
+ ],
+ "facts": {
+  "liv_pass_acc": 89.8,
+  "fen_pass_acc": 71.5,
+  "passes": [
+   260,
+   529
+  ],
+  "set_play_xg": [
+   0.71,
+   0.45
+  ]
+ },
+ "caveats": [
+  "BBC match page (cmpdgp57zz94t); Fenerbahce position/points are as listed in the Head to Head block (pre-match).",
+  "Scout's pick for best player; no ratings on this path."
+ ]
+}

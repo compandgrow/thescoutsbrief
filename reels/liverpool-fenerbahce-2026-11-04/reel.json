@@ -1,0 +1,107 @@
+{
+ "id": "liverpool-fenerbahce-2026-11-04",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "banter as beat 1 right after hook, 2-row compare, ~28 s",
+ "angle_source": "data",
+ "fan_question": "Is Liverpool's problem the set pieces or the finishing?",
+ "match": {
+  "pill": "FEN 3–2 LIV · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Liverpool: twenty-two shots, twelve corners. And they lost.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "FENERBAHÇE 3-2 LIVERPOOL",
+    "text": "*22* SHOTS.\n*12* CORNERS.\nLOST.",
+    "size": 150,
+    "source": "BBC Sport match stats"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Ha! Sixty-eight percent of the ball, led two-one, and still lost to a side nineteenth before kick-off.",
+   "emotion": "laughing",
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "68% OF THE BALL.\n*ZERO* POINTS.",
+    "stamp": "FULL TIME L",
+    "sub": "Fenerbahçe: 19th before kick-off",
+    "source": "BBC Sport match stats"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Two goals in six minutes. A corner, then a throw-in. Forty-two crosses to ten, and it didn't matter.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE COLLAPSE",
+    "teams": [
+     "FENERBAHÇE",
+     "LIVERPOOL"
+    ],
+    "rows": [
+     {
+      "label": "CROSSES",
+      "a": 10,
+      "b": 42,
+      "fa": "10",
+      "fb": "42"
+     },
+     {
+      "label": "CORNERS",
+      "a": 4,
+      "b": 12,
+      "fa": "4",
+      "fb": "12"
+     }
+    ],
+    "source": "BBC Sport match stats"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Best on the pitch, my pick: Greenwood. A free kick, four shots, and the goal that turned it.",
+   "emotion": "neutral",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Mason Greenwood",
+    "team": "Fenerbahçe",
+    "stats": [
+     [
+      "shots",
+      "4"
+     ],
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "free kick",
+      "29'"
+     ]
+    ],
+    "source": "ESPN shot map"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Set pieces or finishing? Which one sank Liverpool? Tell me below.",
+   "emotion": "smug",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "SET PIECES OR\n*FINISHING*?",
+    "source": ""
+   }
+  }
+ ]
+}

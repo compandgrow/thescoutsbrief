@@ -1,0 +1,112 @@
+{
+ "id": "real-madrid-aek-athens-2026-11-04",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "number-contrast hook + twist inside hook, 2-row compare, 5 beats ~28 s",
+ "angle_source": "data",
+ "fan_question": "Is Real Madrid's perfect Champions League run for real?",
+ "match": {
+  "pill": "AEK 2–3 RMA · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Real Madrid had twenty-four shots to nine. And still trailed with fifteen to go.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "AEK ATHENS 2-3 REAL MADRID",
+    "text": "*24* SHOTS.\n9 SHOTS.\nSTILL TRAILING.",
+    "size": 150,
+    "source": "BBC Sport match stats"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Forty-four touches in their box to fourteen. Seven corners to none.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE GAP",
+    "teams": [
+     "AEK",
+     "REAL MADRID"
+    ],
+    "rows": [
+     {
+      "label": "TOUCHES IN BOX",
+      "a": 14,
+      "b": 44,
+      "fa": "14",
+      "fb": "44"
+     },
+     {
+      "label": "CORNERS",
+      "a": 0,
+      "b": 7,
+      "fa": "0",
+      "fb": "7"
+     }
+    ],
+    "source": "BBC Sport match stats"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Then Valverde, off the bench on sixty-seven, wins it in stoppage time. Nought point oh three expected goals.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "VALVERDE · 90+2'",
+    "value": "0.03",
+    "label": "xG OF THE *WINNER*",
+    "sub": "Madrid made 3.35 xG in total",
+    "source": "ESPN shot map, BBC Sport match stats"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Best on the pitch, my pick: Mbappé. Seven shots, one point three five expected goals, and the equaliser.",
+   "emotion": "happy",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Kylian Mbappé",
+    "team": "Real Madrid",
+    "stats": [
+     [
+      "shots",
+      "7"
+     ],
+     [
+      "xG",
+      "1.35"
+     ],
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "equaliser",
+      "78'"
+     ]
+    ],
+    "source": "ESPN shot map"
+   },
+   "pause_after": 0.5
+  },
+  {
+   "say": "Four wins from four. Is Madrid's run for real? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "IS MADRID'S RUN\n*FOR REAL*?",
+    "source": ""
+   }
+  }
+ ]
+}
