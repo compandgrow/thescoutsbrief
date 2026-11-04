@@ -1,78 +1,72 @@
 {
- "generated": "2026-11-03T23:48:12Z",
- "ready": [
+ "generated": "2026-11-04T17:48:36Z",
+ "ready": [],
+ "later_today": [
   {
-   "espn_id": "401915308",
-   "slug": "as-roma-manchester-united",
-   "date": "2026-11-03",
-   "team": "MUN",
+   "espn_id": "401915382",
+   "slug": "liverpool-fenerbahce",
+   "date": "2026-11-04",
+   "team": "LIV",
    "teams_text": [
-    "Manchester United",
-    "AS Roma"
+    "Fenerbahce",
+    "Liverpool"
    ],
    "competition": "UEFA Champions League",
-   "score": "3-2",
+   "score": null,
    "watched": [
-    "MUN"
+    "LIV"
    ],
-   "favourite_involved": true,
-   "winner_key": "MUN",
-   "loser_key": null,
-   "banter": false,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
+   "favourite_involved": false
   },
   {
-   "espn_id": "401915386",
-   "slug": "bayern-munich-atletico-madrid",
-   "date": "2026-11-03",
-   "team": "BAY",
+   "espn_id": "401915306",
+   "slug": "manchester-city-rb-leipzig",
+   "date": "2026-11-04",
+   "team": "MCI",
    "teams_text": [
-    "Atl\u00e9tico de Madrid",
-    "Bayern Munich"
+    "RB Leipzig",
+    "Manchester City"
    ],
    "competition": "UEFA Champions League",
-   "score": "0-2",
+   "score": null,
    "watched": [
-    "ATM",
-    "BAY"
+    "MCI"
    ],
-   "favourite_involved": true,
-   "winner_key": "BAY",
-   "loser_key": "ATM",
-   "banter": true,
-   "banter_by_favourite": true,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
+   "favourite_involved": false
   },
   {
-   "espn_id": "401915309",
-   "slug": "paris-saint-germain-villarreal",
-   "date": "2026-11-03",
-   "team": "PSG",
+   "espn_id": "401915381",
+   "slug": "arsenal-slavia-prague",
+   "date": "2026-11-04",
+   "team": "ARS",
    "teams_text": [
-    "Villarreal",
-    "Paris Saint-Germain"
+    "Slavia Prague",
+    "Arsenal"
    ],
    "competition": "UEFA Champions League",
-   "score": "0-6",
+   "score": null,
    "watched": [
-    "PSG"
+    "ARS"
    ],
-   "favourite_involved": true,
-   "winner_key": "PSG",
-   "loser_key": null,
-   "banter": false,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401915383",
+   "slug": "real-madrid-aek-athens",
+   "date": "2026-11-04",
+   "team": "RMA",
+   "teams_text": [
+    "AEK Athens",
+    "Real Madrid"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "RMA"
+   ],
+   "favourite_involved": true
   }
  ],
- "later_today": [],
  "not_making": [
   {
    "espn_id": "401915387",
