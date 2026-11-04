@@ -8,6 +8,7 @@ Arguments: none (auto: make one story if it's due), `force` (make one now), or a
 
 ## 0. Is a story due?
 - Read `config/stories.json` → `cadence_days` and `data/stories/state.json` → `done`. If the newest `scheduled_for` is less than `cadence_days` days ago (and no `force`/player argument), report "next Scout File due on <date>" and stop. No setup needed.
+- Free scraping (about 20 s): `python3 -c "import scrapling.fetchers, markdownify" 2>/dev/null || python3 -m pip install -q "scrapling[fetchers]" markdownify`.
 - `python3 engine/reddit.py digest` (free) so the story scout sees what fans are talking about today.
 - `python3 engine/research.py usage`: if fewer than `credits_max_per_story` credits are left this month, stop and report it.
 

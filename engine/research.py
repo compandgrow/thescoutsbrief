@@ -1,6 +1,10 @@
-"""Web research for the agents via Firecrawl (hosted scraping, one allowed domain).
+"""Web research for the agents: free local fetching (Scrapling) first, Firecrawl as the fallback.
 
-Needs: FIRECRAWL_API_KEY, and api.firecrawl.dev allowed in the cloud environment.
+scrape: fetches trusted pages directly with Scrapling's plain HTTP fetcher (free, no credits) when the site is
+in the environment's allowed domains; falls back to Firecrawl if the local fetch fails or returns too little.
+search: always Firecrawl (it needs a search engine).
+Needs: scrapling[fetchers] (setup.sh) and the trusted sites allowed; FIRECRAWL_API_KEY + api.firecrawl.dev for
+the fallback and for search.
 
   python3 engine/research.py search "Arsenal injury news" [--limit 5] [--days 3] [--site bbc.co.uk]
   python3 engine/research.py scrape https://www.bbc.co.uk/sport/football/...
@@ -22,6 +26,11 @@ API = "https://api.firecrawl.dev/v2"
 TRUSTED = CFG.get("trusted_domains", [])
 BUDGET = CFG.get("monthly_credit_budget", 800)
 COST = {"scrape": 1, "search_result": 1}   # estimate when the API doesn't report credits
+LOCAL_FIRST = CFG.get("local_fetch", {}).get("enabled", True)
+LOCAL_SKIP = set(CFG.get("local_fetch", {}).get("firecrawl_only_domains", []))
+LOCAL_MUST = CFG.get("local_fetch", {}).get("must_contain", {})   # url part -> text a complete page must contain
+LOCAL_MIN_CHARS = 1500
+_last_local = {}
 
 
 def month():
@@ -101,14 +110,60 @@ def credits_from(resp, fallback):
     return fallback
 
 
+def local_fetch(url):
+    """Plain HTTP fetch with Scrapling (no browser, no anti-bot tricks) -> markdown, or None to fall back."""
+    host = urllib.parse.urlparse(url).hostname or ""
+    if not LOCAL_FIRST or any(host == d or host.endswith("." + d) for d in LOCAL_SKIP):
+        return None
+    try:
+        import logging, re, time
+        from scrapling.fetchers import Fetcher
+        from scrapling.core.shell import Convertor
+        logging.getLogger("scrapling").setLevel(logging.WARNING)     # keep stdout clean (agents parse "saved <path>")
+        from markdownify import markdownify
+        wait = 1.5 - (time.time() - _last_local.get(host, 0))     # be polite: max ~1 request/1.5 s per site
+        if wait > 0:
+            time.sleep(wait)
+        _last_local[host] = time.time()
+        page = Fetcher.get(url, timeout=30)
+        if page.status != 200:
+            print(f"local fetch {page.status} for {url}, using Firecrawl", file=sys.stderr)
+            return None
+        body = page.css("body").first or page
+        clean = Convertor._sanitize_for_ai(Convertor._strip_noise_tags(body))   # drop scripts + hidden prompt-injection text
+        md = markdownify(clean.html_content, heading_style="ATX")
+        base = f"{urllib.parse.urlparse(url).scheme}://{host}"
+        md = re.sub(r"\]\((/[^)\s]*)", lambda m: "](" + base + m.group(1), md)   # absolute links, like Firecrawl
+        md = re.sub(r"\n{3,}", "\n\n", md)
+        title = page.css("title::text").get() if hasattr(page.css("title::text"), "get") else None
+        missing = [w for part, words in LOCAL_MUST.items() if part in url for w in words if w not in md]
+        if missing:
+            print(f"local fetch lacks {missing} (loaded by JavaScript) for {url}, using Firecrawl", file=sys.stderr)
+            return None
+        if len(md) < LOCAL_MIN_CHARS:
+            print(f"local fetch too short ({len(md)} chars) for {url}, using Firecrawl", file=sys.stderr)
+            return None
+        return {"markdown": md, "title": str(title) if title else None}
+    except Exception as e:   # not installed, blocked by network policy, timeout, parse error
+        print(f"local fetch failed for {url} ({type(e).__name__}: {str(e)[:120]}), using Firecrawl", file=sys.stderr)
+        return None
+
+
 def cmd_scrape(url):
     if not trusted(url):
         sys.exit(f"Refused: {urllib.parse.urlparse(url).hostname} is not in research.trusted_domains")
+    loc = local_fetch(url)
+    if loc:
+        spend(0, f"local scrape {url}")
+        path = cache("scrape", url, {"url": url, "title": loc["title"], "markdown": loc["markdown"], "via": "scrapling"})
+        print(f"saved {path}\n")
+        print(loc["markdown"][:6000])
+        return
     check_budget(COST["scrape"])
     resp = call("scrape", {"url": url, "formats": ["markdown"], "onlyMainContent": True})
     spend(credits_from(resp, COST["scrape"]), f"scrape {url}")
     d = resp.get("data", resp)
-    path = cache("scrape", url, {"url": url, "title": (d.get("metadata") or {}).get("title"), "markdown": d.get("markdown", "")})
+    path = cache("scrape", url, {"url": url, "title": (d.get("metadata") or {}).get("title"), "markdown": d.get("markdown", ""), "via": "firecrawl"})
     print(f"saved {path}\n")
     print((d.get("markdown") or "")[:6000])
 
@@ -133,7 +188,8 @@ def cmd_search(query, limit, days, site=None):
 
 def cmd_usage():
     m = usage().get(month(), {"credits": 0, "calls": []})
-    print(f"{month()}: {m['credits']}/{BUDGET} credits, {len(m['calls'])} calls")
+    free = sum(1 for c in m["calls"] if c["what"].startswith("local scrape"))
+    print(f"{month()}: {m['credits']}/{BUDGET} Firecrawl credits, {len(m['calls']) - free} Firecrawl calls, {free} free local fetches")
 
 
 if __name__ == "__main__":

@@ -241,6 +241,16 @@
     "nytimes.com"
    ],
    "never_use_for": "transfer rumours from any site"
+  },
+  "local_fetch": {
+   "enabled": true,
+   "note": "engine/research.py fetches trusted pages free with Scrapling's plain HTTP fetcher (no browser, no anti-bot bypass) and falls back to Firecrawl when a page fails, is too short, or lacks content that only appears after JavaScript runs (must_contain).",
+   "firecrawl_only_domains": [],
+   "must_contain": {
+    "/sport/football/live/": [
+     "Possession"
+    ]
+   }
   }
  },
  "league_themes": {

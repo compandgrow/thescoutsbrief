@@ -27,7 +27,7 @@ Web research (Firecrawl, only for what PitchAPI doesn't have)
 - `python3 engine/research.py scrape <url>` reads one trusted page as text.
 - Use it for: injuries/suspensions behind a lineup change, the manager's explanation of a tactical switch, league position and form runs for banter ("third loss in four"), milestones ("first goal since March").
 - Source rules (`research.domain_rules` in config): Marca, AS, Mundo Deportivo and Relevo lean towards their clubs, so use them only for direct quotes and confirmed team news. kicker (grades 1 best to 6 worst) and L'Équipe (notes out of 10) player grades may be quoted with credit, e.g. "kicker grade: 5". Never use transfer rumours from any site.
-- Budget: at most 6 calls per match. Check `python3 engine/research.py usage`; if the monthly budget is reached, skip research and say so in `caveats`.
+- `scrape` is free for trusted sites (local Scrapling fetch); only `search` and JavaScript-only pages use Firecrawl credits. Budget: at most 6 Firecrawl calls per match. Check `python3 engine/research.py usage`; if the monthly budget is reached, skip research and say so in `caveats`.
 - Every researched fact goes in `insights.json` with `source` = the page URL and the exact quote or number from the cached file in `data/research/`.
 
 Rules
