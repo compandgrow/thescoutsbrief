@@ -1,0 +1,119 @@
+{
+ "id": "as-roma-manchester-united-2026-11-03",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "matched-number hook (7 shots before half-time, 0 after), 2-row compare as beat 1, nine-game winless run as the story, ~30 s",
+ "angle_source": "talking_point",
+ "fan_question": "Is this a real turning point for Carrick's United, or just one good half?",
+ "match": {
+  "pill": "MUN 3–2 ROM · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Seven Roma shots before half-time. Zero after.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "ROMA · AT OLD TRAFFORD",
+    "text": "ROMA SHOTS:\n*7* BEFORE HALF-TIME.\n*0* AFTER.",
+    "size": 120,
+    "source": "ESPN shot map, team stats"
+   },
+   "voice_style": {
+    "speed": 1.18,
+    "pause": 0.15
+   }
+  },
+  {
+   "say": "United flipped it. Five shots before the break, ten after. All three goals came in the second half.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "SHOTS BY HALF",
+    "teams": [
+     "UNITED",
+     "ROMA"
+    ],
+    "rows": [
+     {
+      "label": "BEFORE HALF-TIME",
+      "a": 5,
+      "b": 7,
+      "fa": "5",
+      "fb": "7"
+     },
+     {
+      "label": "AFTER HALF-TIME",
+      "a": 10,
+      "b": 0,
+      "fa": "10",
+      "fb": "0"
+     }
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "From a team with nine games without a win. Two-nil down at home, coach under pressure.",
+   "emotion": "excited",
+   "card": {
+    "type": "stat",
+    "kicker": "BEFORE TONIGHT · ALL COMPETITIONS",
+    "value": "9",
+    "unit": "GAMES",
+    "label": "without a *win*",
+    "sub": "3 draws, 6 defeats · last win 10 Sept",
+    "source": "ESPN results, BBC Sport"
+   }
+  },
+  {
+   "say": "My pick, Matheus Cunha. Two goals in three minutes, eighty-three and eighty-six. Then a second yellow.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Matheus Cunha",
+    "team": "Man United",
+    "rating": "8",
+    "stats": [
+     [
+      "goals",
+      "2"
+     ],
+     [
+      "xG",
+      "0.88"
+     ]
+    ],
+    "source": "ESPN shot map, BBC Sport (reporter mark 8/10)"
+   }
+  },
+  {
+   "say": "But be fair. One of those three goals was a retaken penalty.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "BRUNO FERNANDES · 58'",
+    "value": "1",
+    "unit": "OF 3 GOALS",
+    "label": "a *retaken* penalty",
+    "sub": "retaken after a Roma player entered the area",
+    "source": "BBC Sport, ESPN shot map"
+   }
+  },
+  {
+   "say": "Turning point, or one good half? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "TURNING POINT\nOR ONE GOOD *HALF*?",
+    "source": ""
+   }
+  }
+ ]
+}

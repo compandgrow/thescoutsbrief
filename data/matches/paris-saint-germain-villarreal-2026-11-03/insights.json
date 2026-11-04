@@ -1,0 +1,39 @@
+{
+ "match": {"home": "Villarreal", "away": "Paris Saint-Germain", "home_short": "VIL", "away_short": "PSG", "score": "0-6", "competition": "UEFA Champions League, league phase", "date": "2026-11-03"},
+ "headline": "PSG scored four times in the first 17 minutes while Villarreal managed two blocked shots, and finished with 12 shots on target to 2.",
+ "team_story": [
+  {"label": "Shots on target", "home": 2, "away": 12, "why_it_matters": "PSG hit the target six times as often; Villarreal's keeper faced 12 and made 6 saves.", "source": "data/research/scrape_3d82b9746589.json (https://www.espn.com/soccer/team-stats/_/gameId/401915309), 'Shots' section: 2 Shots on Goal 12"},
+  {"label": "Touches in opposition box", "home": 10, "away": 43, "why_it_matters": "Villarreal barely reached PSG's area; PSG lived in theirs.", "source": "data/research/scrape_3d82b9746589.json, 'Attack' section: 10 Touches In Opposition Box 43"},
+  {"label": "xG", "home": 0.67, "away": 2.69, "why_it_matters": "PSG scored 6 from 2.69 xG; Villarreal never created a big chance (0 v 2).", "source": "data/research/scrape_90963676b5f1.json, 'Team Stats': 0.67 Expected Goals 2.69"},
+  {"label": "Possession %", "home": 29, "away": 71, "why_it_matters": "PSG completed 677 passes (91%) to Villarreal's 237 (78%).", "source": "data/research/scrape_90963676b5f1.json, 'Team Stats': 29% Possession 71%; 237 (78%) Accurate Passes 677 (91%)"},
+  {"label": "First 17 minutes: shots", "home": 2, "away": 8, "why_it_matters": "PSG scored 4 from those 8 shots (5 on target); both Villarreal shots were blocked (0.07 xG).", "source": "data/matches/paris-saint-germain-villarreal-2026-11-03/analysis.py -> derived.json VIL_first_17min / PSG_first_17min, from shots_espn.json"}
+ ],
+ "tactical_change": {
+  "team": "Villarreal",
+  "minute": 63,
+  "before": "4-2-3-1",
+  "after": "4-2-3-1 (three changes at 63', Oluwaseyi, Moleiro, Mikautadze on)",
+  "trigger": "Down 0-4 at half-time, with Cardona on at 46'; no shape change reported. Biggest shift is half to half: Villarreal had 4 shots (0.16 xG) in the first half and 10 shots (0.51 xG) in the second, while PSG fell from 15 shots (1.72 xG) to 7 (0.98 xG) after the break.",
+  "effect": "The second-half shift: PSG eased off (15 shots to 7), Villarreal's shot count more than doubled (4 to 10) but their on-target count stayed at 1 per half and PSG still scored twice (50', 78').",
+  "evidence": [
+   {"label": "Villarreal shots", "before": 4, "after": 10, "source": "analysis.py -> derived.json VIL_1st_half / VIL_2nd_half (shots_espn.json)"},
+   {"label": "PSG shots", "before": 15, "after": 7, "source": "analysis.py -> derived.json PSG_1st_half / PSG_2nd_half (shots_espn.json)"},
+   {"label": "Villarreal on target", "before": 1, "after": 1, "source": "analysis.py -> derived.json VIL_1st_half / VIL_2nd_half"}
+  ],
+  "confidence": "low",
+  "note": "Formations in https://www.bbc.com/sport/football/live/cm0ld2p49xx0t (data/research/scrape_9d6dd3db09ba.json, 'Team Lineups'): Villarreal 4-2-3-1, PSG 4-3-3. Substitution minutes from the same section. Half-time score is 4-0 per ESPN search snippet 'First Half ends, Villarreal 0, Paris Saint Germain 4' (data/research/search_cd61f7b69648.json). Not a real tactical change: use as context only."
+ },
+ "best_player": {"name": "Fabián Ruiz", "team": "PSG", "rating": null, "stats": [["goals", "2 (17', 50')"], ["shots", "4"], ["xG", "0.85"], ["shots on target", "3"]], "why": "Scout's pick (no ratings on this path): two goals from four shots, the highest xG on the pitch (0.85). BBC: 'Ruiz made it five after the break when he produced a deft touch to leave his marker on the ground'.", "source": "analysis.py -> derived.json players_by_xg (shots_espn.json): F. Ruiz 4 shots, 0.85 xG, 2 goals; scorers/minutes from data/research/scrape_90963676b5f1.json; BBC quote from data/research/scrape_9d6dd3db09ba.json"},
+ "worst_player": {"name": "Peter Gulácsi", "team": "Villarreal", "rating": null, "stats": [["goals conceded", "6"], ["saves", "6"], ["shots on target faced", "12"], ["error leading to goal", "1 (12')"]], "why": "Scout's pick (no ratings on this path): played the full match, his pass out from the back led to Doué's goal on 12'. BBC calls it 'a calamitous pass out from the back'; ESPN calls it 'a costly error from Gulacsi'. Villarreal also lost the ball in their own half for the third goal (BBC).", "anger_worthy": true, "source": "BBC https://www.bbc.com/sport/football/live/cm0ld2p49xx0t (data/research/scrape_9d6dd3db09ba.json, report); ESPN https://www.espn.co.uk/football/match/_/gameId/401915309/paris-saint-germain-villarreal (data/research/scrape_90963676b5f1.json, match report); saves 6 and shots on goal 12 from 'Team Stats' in the same ESPN file; Doué 12' from shots_espn.json"},
+ "surprise_stat": {"value": "0.95", "label": "xG of PSG's four goals in the first 17 minutes", "context": "Four goals from shots worth 0.95 xG in total (0.45, 0.13, 0.20, 0.17): PSG's finishing, not chance quality, built the lead. PSG's whole 6-goal night was 2.69 xG.", "source": "analysis.py -> derived.json PSG_goal_shots_xg_first_17 (shots_espn.json goals 9', 12', 13', 17')"},
+ "result_context": {"winner": "PSG", "loser": "Villarreal", "banter": false, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path: best/worst are Scout's picks, built from goals/xG (best) and the error leading to a goal (worst), both stated by BBC and ESPN.",
+  "ESPN commentary says 0.66 xG for Villarreal, ESPN team stats table says 0.67, the shot map sums to 0.67; use 0.67. PSG 2.69 in the table; the shot map sums to 2.70 from rounded shots; use 2.69.",
+  "ESPN commentary says Boly scored 'less than two minutes' after coming on; the lineup lists the sub at 74' and ESPN header lists the goal at 78'. Reddit title says 4 minutes. Avoid stating the gap.",
+  "ESPN commentary says Mayulu scored 'less than a minute later' than Doué (12' and 13' in ESPN header); avoid saying exact gap.",
+  "The 'first 17 minutes' split uses minutes 0 to 17 from shots_espn.json (the 17' Ruiz goal is included).",
+  "Villarreal is not a watched club, so no banter beat."
+ ]
+}

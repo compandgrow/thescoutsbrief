@@ -1,0 +1,26 @@
+{
+ "id": "bayern-munich-atletico-madrid-2026-11-03",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "banter as beat 1 right after the hook, 2-row compare card, short number-contrast hook, ~35 s",
+ "angle_source": "talking_point",
+ "fan_question": "Kane or Laimer: who was Bayern's man of the match?",
+ "match": {"pill": "ATM 0–2 BAY · UCL", "league": "UCL"},
+ "beats": [
+  {"say": "Nineteen shots to nine. Atlético's unbeaten run: over.", "emotion": "smug", "hit": true,
+   "card": {"type": "hook", "kicker": "ATLÉTICO 0–2 BAYERN", "text": "*19* SHOTS\nTO *9*", "size": 150, "source": "ESPN team stats"}},
+  {"say": "Ha! Six games unbeaten, then twenty-second in the Champions League table. Four points from four games.", "emotion": "laughing", "hit": true,
+   "card": {"type": "banter", "kicker": "BANTER ALERT", "text": "22ND OF 36.\n*FOUR* POINTS.", "size": 108, "stamp": "STREAK OVER", "sub": "Unbeaten in six (all comps), then 0-2 v Bayern", "source": "BBC CL table · ESPN results"}},
+  {"say": "Expected goals, nought point eight three to one point seven seven. Successful final-third passes, seventy-four to two hundred and seven.", "emotion": "smug",
+   "card": {"type": "compare", "kicker": "THE NUMBERS ATLÉTICO LOST WITH", "teams": ["ATLÉTICO", "BAYERN"],
+    "rows": [{"label": "xG", "a": 0.83, "b": 1.77, "fa": "0.83", "fb": "1.77"}, {"label": "FINAL-THIRD PASSES", "a": 74, "b": 207, "fa": "74", "fb": "207"}],
+    "source": "BBC Sport Match Stats"}},
+  {"say": "Best on the pitch by BBC readers: Harry Kane, eight point eight. Five shots, none on target. But he set up Laimer's goal.", "emotion": "happy",
+   "card": {"type": "player", "verdict": "best", "kicker": "BBC PLAYER OF THE MATCH", "name": "Harry Kane", "team": "Bayern Munich", "rating": "8.80",
+    "stats": [["shots", "5"], ["on target", "0"]], "source": "BBC user rating · ESPN shot map"}},
+  {"say": "Atlético? Forty-one minutes without a single shot.", "emotion": "smug",
+   "card": {"type": "stat", "kicker": "ATLÉTICO", "value": "41", "unit": "MINUTES", "label": "without a *shot*", "sub": "25' to 66' · ESPN shot map", "source": "ESPN shot map"}},
+  {"say": "Barcelona next for Atlético on Saturday. Good luck. Kane or Laimer, man of the match?", "emotion": "happy",
+   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "KANE OR\n*LAIMER*?", "source": "ESPN match report"}}
+ ]
+}

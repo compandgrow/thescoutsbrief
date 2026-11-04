@@ -1,0 +1,73 @@
+{
+ "team_id": "104",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/104",
+ "fetched_at": "2026-11-03T23:51:52Z",
+ "last": [
+  {
+   "date": "2026-11-03",
+   "opponent": "Manchester United",
+   "venue": "A",
+   "score": "2-3",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915308"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Udinese",
+   "venue": "A",
+   "score": "5-2",
+   "result": "W",
+   "pens": false,
+   "competition": "Italian Serie A",
+   "game_id": "401874990"
+  },
+  {
+   "date": "2026-10-27",
+   "opponent": "Cagliari",
+   "venue": "H",
+   "score": "4-2",
+   "result": "W",
+   "pens": false,
+   "competition": "Italian Serie A",
+   "game_id": "401874780"
+  },
+  {
+   "date": "2026-10-24",
+   "opponent": "Napoli",
+   "venue": "A",
+   "score": "3-3",
+   "result": "D",
+   "pens": false,
+   "competition": "Italian Serie A",
+   "game_id": "401874948"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "Slovan Bratislava",
+   "venue": "H",
+   "score": "4-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915402"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Genoa",
+   "venue": "H",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Italian Serie A",
+   "game_id": "401874935"
+  }
+ ],
+ "run_newest_first": "LWWDWW",
+ "wins": 4,
+ "draws": 1,
+ "losses": 1,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

@@ -1,0 +1,56 @@
+{
+ "match": "VIL 0-6 PSG",
+ "generated_at": "2026-11-03T23:59:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "PSG", "type": "form",
+   "claim": "PSG have won all six of their last six games in all competitions",
+   "numbers": {"wins_in_a_row": 6, "goals_for": 24, "goals_against": 6},
+   "strength": "strong",
+   "sources": [{"what": "ESPN results via data/form/160.json (last 6, no gaps, this match included)", "url": "https://www.espn.co.uk/football/team/results/_/id/160"}],
+   "hook_angle": "Six wins from six, and tonight four goals came in seventeen minutes.",
+   "use_for": "context",
+   "fresh_until": "2026-11-06"},
+  {"id": "t2", "team": "PSG", "type": "form",
+   "claim": "PSG have won all four of their Champions League league-phase games and top the table on 12 points",
+   "numbers": {"played": 4, "won": 4, "points": 12},
+   "strength": "medium",
+   "sources": [{"what": "BBC report and league table (data/research/scrape_9d6dd3db09ba.json)", "url": "https://www.bbc.com/sport/football/live/cm0ld2p49xx0t"}, {"what": "ESPN report: 'four wins from four in the league phase' (data/research/scrape_90963676b5f1.json)", "url": "https://www.espn.co.uk/football/match/_/gameId/401915309/paris-saint-germain-villarreal"}],
+   "hook_angle": "Four from four in Europe, and the fourth was 6-0.",
+   "use_for": "outro",
+   "fresh_until": "2026-11-24"},
+  {"id": "t3", "team": "VIL", "type": "form",
+   "claim": "Villarreal have lost their last two games in all competitions and sit 29th in the league phase on 3 points",
+   "numbers": {"losses_in_a_row": 2, "table_position": 29, "points": 3},
+   "strength": "medium",
+   "sources": [{"what": "ESPN results via data/form/102.json (L, L, W, W, L, D, no gaps)", "url": "https://www.espn.co.uk/football/team/results/_/id/102"}, {"what": "BBC league-phase table (data/research/scrape_9d6dd3db09ba.json)", "url": "https://www.bbc.com/sport/football/live/cm0ld2p49xx0t"}],
+   "hook_angle": "Villarreal: two defeats running, now 29th.",
+   "use_for": "context",
+   "fresh_until": "2026-11-06"}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [
+   {"theme": "David Boly's first PSG goal on his Champions League debut", "share": "r/psg #3 (RSS hot order, no counts)", "confirmed_by": "BBC and ESPN match reports (Boly, 17, scored 78')", "use_for": "caption / outro only; the reel has no Boly slot"},
+   {"theme": "Joao Neves bicycle-kick attempt", "share": "r/soccer #6 and r/psg #2 titles (RSS, no counts)", "confirmed_by": "not confirmed by a trusted outlet or match data", "use_for": "none"}
+  ],
+  "club_subs": [{"club": "PSG", "hot_topic": "Post-match thread (rank 1), Neves moment, Boly debut goal, Doué: 'Paris have always won when Doué scores' (30-0-0 from a StatsFoot post, unconfirmed)", "heat": 14}]
+ },
+ "rejected": [
+  {"claim": "PSG scored 20 goals in their first four Champions League games", "reason": "only BBC (caption and table); ESPN does not state it"},
+  {"claim": "Joint-biggest Champions League margin of victory for PSG (6-0; 7-1 vs Celtic in 2017)", "reason": "only ESPN commentary states it; BBC does not"},
+  {"claim": "Paris have always won when Doué scores, 30-0-0", "reason": "Reddit-only stat from a social post, unconfirmed"},
+  {"claim": "Boly debut goal gap ('less than two minutes' ESPN, '4 minutes' Reddit, 74' to 78' in data)", "reason": "sources disagree: use none of the numbers"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "data",
+  "fan_question": "Is anyone stopping PSG this season?",
+  "data_answer": "Four goals in the first 17 minutes against two blocked Villarreal shots; 12 shots on target to 2; six wins from six in all competitions.",
+  "evidence": ["insights.json team_story", "insights.json worst_player", "trends.json t1", "data/form/160.json"],
+  "fan_heat": "Reddit in RSS mode: no upvote or comment counts, so no heat measure; r/psg post-match thread is rank 1",
+  "hook_angle": "PSG scored four in seventeen minutes. Villarreal had two shots.",
+  "why": "no fan theme the data can test with counts; the data hook is the strongest number contrast"
+ },
+ "credits_used": 12,
+ "notes": "Credits: form 160 and 102 (4 credits), one news search 'Villarreal Paris Saint-Germain' (8 credits, per data/research/usage.json month counter 56 -> 68). No scrape. Reddit ran in RSS mode (no counts); the 'reddit.py match' call hung and was stopped, club data from data/trends/2026-11-03.json. Minute conflicts for Boly/Mayulu goals: see insights.json caveats; avoid exact gaps. The ESPN 'less than a minute later' for Mayulu vs 12'/13' header: avoid. ESPN commentary xG 0.66 vs table 0.67: use 0.67. t1 goals 24 for, 6 against summed from the six scores in data/form/160.json; PSG.FR preview (official) only supports an unbeaten-in-Spain-trips stat and was not used."
+}

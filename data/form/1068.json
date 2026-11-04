@@ -1,0 +1,73 @@
+{
+ "team_id": "1068",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/1068",
+ "fetched_at": "2026-11-03T23:52:03Z",
+ "last": [
+  {
+   "date": "2026-10-31",
+   "opponent": "Levante",
+   "venue": "A",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882820"
+  },
+  {
+   "date": "2026-10-24",
+   "opponent": "Deportivo",
+   "venue": "H",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882834"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "VfB Stuttgart",
+   "venue": "A",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915392"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Espanyol",
+   "venue": "A",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882843"
+  },
+  {
+   "date": "2026-10-13",
+   "opponent": "Manchester United",
+   "venue": "H",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915412"
+  },
+  {
+   "date": "2026-10-10",
+   "opponent": "Alav\u00e9s",
+   "venue": "A",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882856"
+  }
+ ],
+ "run_newest_first": "WWDWWW",
+ "wins": 5,
+ "draws": 1,
+ "losses": 0,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}
