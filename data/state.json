@@ -105,6 +105,24 @@
    "mode": "auto",
    "at": "2026-11-04",
    "scheduled_for": "2026-11-04T01:26:00Z"
+  },
+  {
+   "espn_id": "401915383",
+   "reel": "real-madrid-aek-athens-2026-11-04",
+   "zernio_post": "6aebceb529e6f779d6395af7",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-05",
+   "scheduled_for": "2026-11-05T01:32:00Z"
+  },
+  {
+   "espn_id": "401915382",
+   "reel": "liverpool-fenerbahce-2026-11-04",
+   "zernio_post": "6aebcec429e6f779d6395b6f",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-05",
+   "scheduled_for": "2026-11-05T01:33:00Z"
   }
  ],
  "skipped": [
@@ -120,12 +138,12 @@
   },
   {
    "espn_id": "401882822",
-   "reason": "Barcelona 6-1 Alav\u00e9s: rival didn't lose to an unwatched club",
+   "reason": "Barcelona 6-1 Alavés: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
    "espn_id": "401882820",
-   "reason": "Levante 0-2 Atl\u00e9tico: rival didn't lose to an unwatched club",
+   "reason": "Levante 0-2 Atlético: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   }
  ]
