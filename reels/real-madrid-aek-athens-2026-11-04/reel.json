@@ -4,14 +4,14 @@
  "trend_used": null,
  "experiment": "number-contrast hook + twist inside hook, 2-row compare, 5 beats ~28 s",
  "angle_source": "data",
- "fan_question": "Is Real Madrid's perfect Champions League run for real?",
+ "fan_question": "Can Madrid keep winning like this?",
  "match": {
   "pill": "AEK 2–3 RMA · UCL",
   "league": "UCL"
  },
  "beats": [
   {
-   "say": "Real Madrid had twenty-four shots to nine. And still trailed with fifteen to go.",
+   "say": "Twenty-four shots to nine. Still trailing.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -68,7 +68,7 @@
    "pause_after": 0.5
   },
   {
-   "say": "Best on the pitch, my pick: Mbappé. Seven shots, one point three five expected goals, and the equaliser.",
+   "say": "Best on the pitch, my pick: Mbappé. Seven shots, about one point four expected goals, and the equaliser.",
    "emotion": "happy",
    "card": {
     "type": "player",
@@ -83,15 +83,7 @@
      ],
      [
       "xG",
-      "1.35"
-     ],
-     [
-      "goals",
-      "1"
-     ],
-     [
-      "equaliser",
-      "78'"
+      "1.4"
      ]
     ],
     "source": "ESPN shot map"
@@ -99,12 +91,12 @@
    "pause_after": 0.5
   },
   {
-   "say": "Four wins from four. Is Madrid's run for real? Tell me below.",
+   "say": "Can Madrid keep winning like this? Tell me below.",
    "emotion": "happy",
    "card": {
     "type": "outro",
     "kicker": "@THESCOUTBRIEF",
-    "text": "IS MADRID'S RUN\n*FOR REAL*?",
+    "text": "CAN MADRID KEEP\n*DOING THIS*?",
     "source": ""
    }
   }

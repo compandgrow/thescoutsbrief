@@ -112,10 +112,10 @@
  "banter_material": [],
  "facts": {
   "trailing_window": "AEK led 2-1 from 75' until Mbappe equalised at 78' (BBC report: trailing with 15 minutes to go)",
-  "wins": "BBC report: maintain 100% record, four wins from four",
   "mbappe_shots": 7,
   "mbappe_xg_total": 1.35,
-  "mbappe_source": "derived.json (shots_espn.json)"
+  "mbappe_source": "derived.json (shots_espn.json)",
+  "mbappe_note": "Sum of per-shot xG in shots_espn.json = 1.35 (ESPN player line 1.36); reel says about 1.4"
  },
  "caveats": [
   "Tactical change not used: no verified shape change.",

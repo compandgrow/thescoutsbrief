@@ -1,0 +1,7 @@
+FIX (round 1)
+
+1. Beat 0 (hook): `say` is 15 words ("Real Madrid had twenty-four shots to nine. And still trailed with fifteen to go."), over format.json hook.max_words = 10. Cut to <=10 words, e.g. "Twenty-four shots to nine. Still trailing with fifteen to go." (11, so trim further: "Twenty-four shots to nine. Still trailing." = 7). Keep the number in the first 3 s.
+2. Beat 4 (outro): "Four wins from four" is a trend/streak claim. There is no trends.json for this match and no talking_points entry. BBC does say "100% record", but the rule requires a strong/medium talking point. Either run the trends step and cite it, or delete the line (caption's "perfect Champions League run" and fan_question also rely on it; remove or back them with trends.json). Outro question must stay <=10 words.
+3. Beat 3 (player card + caption): Mbappé xG 1.35 is the sum of shot-level values in derived.json. ESPN's player line says 1.36 xG. insights.json best_player is Valverde with no Mbappé entry. Add Mbappé to insights.json with the derivation noted, or show "1.4"/say "about one point three five". Also change the card source to include the derivation.
+
+Checked OK: 24/9 shots, 44/14 touches in box, 7/0 corners, 3.35 xG, Valverde 0.03 xG, 90+2', sub at 67', Mbappé 7 shots and 78' equaliser, "trailing with 15 to go" (BBC). Specs: 1080x1920, h264+aac, 33.9 s, 5 beats, -14.8 LUFS. Tone fine, no banter (not required, banter false). First frame shows the hook card. No clipped text seen. Caption has no unsupported claims apart from "perfect Champions League run" (item 2).

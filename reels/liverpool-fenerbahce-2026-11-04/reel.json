@@ -62,12 +62,12 @@
       "fb": "12"
      }
     ],
-    "source": "BBC Sport match stats"
+    "source": "BBC Sport match stats, ESPN shot map"
    },
    "pause_after": 0.4
   },
   {
-   "say": "Best on the pitch, my pick: Greenwood. A free kick, four shots, and the goal that turned it.",
+   "say": "Best on the pitch, my pick: Greenwood. Four shots and a free-kick goal.",
    "emotion": "neutral",
    "card": {
     "type": "player",
@@ -83,10 +83,6 @@
      [
       "goals",
       "1"
-     ],
-     [
-      "free kick",
-      "29'"
      ]
     ],
     "source": "ESPN shot map"
