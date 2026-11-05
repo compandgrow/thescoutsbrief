@@ -1,0 +1,16 @@
+# bayern-munich-atletico-madrid-2026-11-03 — 24 h review (45.9 h data age after posting; day-1 row from timeline)
+Scores: hook 49.6% skipped · held 7.03s of 40.4s (0.176) · 0.0/1k reach shares+saves · 0 comments · 168 views
+vs channel median (12 reels, match series): hook better (49.6% vs 58.4%), held same (0.176 vs 0.173), value same (0.0 vs 0.0). Fixed bars: hook is the best on the channel and under 50%, held is under the 0.25 bar because the reel is the longest of the v2 reels (40.4 s), value zero. 1 like, 0 comments, 0 shares, 0 saves, 0 profile views, 0 replays. Day-1 row (4 Nov): 167 views, 140 reach, 1 like, follows 0 (single-post call returned follows null). Data barely moved from day 1 to day 2.
+Main reason: a hook that names the winner's number and an unbeaten run ending ("Nineteen shots to nine. Atlético's unbeaten run: over.", 9 words, 4.8 s) and smug delivery gave the lowest skip rate yet, but the reel runs 40 s with a banter beat, a compare card, a player card, a stat card and an outro, and the average viewer (7.03 s) left in the banter beat, so nothing after the first 7 s earned a share, save or comment.
+Viewers left during: beat 1 "Ha! Six games unbeaten, then twenty-second in the Champions League table. Four points from four games." (5.53–12.18 s). The average viewer left about a quarter of the way into the banter, on "twenty-second in the table". This is the first reel where the banter beat sat at beat 1 and was reached.
+What worked:
+- Hook: 49.6% skip against a 58.4% median, and the best of 12 reels (previous best 51.4% on brighton-man city). Number contrast plus the story (streak ending) in 9 words with "19 SHOTS TO 9" on frame one.
+- The banter beat starting at 5.5 s was reached by the average viewer (the arsenal-liverpool banter at 10.5 s was not). Whether it works for engagement is still open: 0 comments, 0 shares.
+- Smug favourite-wins-over-rival story (rival_lost_to_favourite) pulled a hook skip rate well under the rest.
+What should have worked:
+- Hold: at 40.4 s the reel is the longest v2 cut, and watch ratio equals the median only because the viewers stayed 7 s. A 28-30 s cut (hook, banter, Kane card, outro) would have lifted the same 7.0 s to a ratio of about 0.24. Drop the compare beat (5 s of xG and final-third passes at 12.5-21.0 s); no one reaches it and the hook card already shows 19 to 9.
+- The banter line was long (20 words). Shorter, with the number first: "Ha! Six unbeaten. Now twenty-second of thirty-six." (8 words), card "22ND OF 36.\n*FOUR* POINTS." (all in insights/trends t1, BBC table).
+- The comment prompt asked "Kane or Laimer" (good, a real two-name split), but the question arrived at 33 s, after nearly everyone left. Move Kane's contradiction up: "Kane: five shots, none on target, BBC's player of the match." (insights.json) as beat 2 at ~11 s, with the Kane-or-Laimer question in the caption and the end card.
+Test next time: keep the banter as beat 1, keep it under 10 words, and cut the reel to about 30 s by dropping the second stat card; then compare watch ratio and comments against this reel.
+
+Notes: banter reel, angle_source talking_point (t1 unbeaten run). Posted 25 h after full time at 01:28 UTC Wednesday. Same-run siblings posted at the same minute: psg-villarreal 56.6%, roma-man utd 57.7%, so this reel's lower skip rate comes from the hook, not the slot.

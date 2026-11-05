@@ -1,0 +1,16 @@
+# paris-saint-germain-villarreal-2026-11-03 — 24 h review (45.9 h data age after posting; day-1 row from timeline)
+Scores: hook 56.6% skipped · held 6.55s of 30.2s (0.218) · 5.7/1k reach shares+saves · 0 comments · 190 views
+vs channel median (12 reels, match series): hook better (56.6% vs 58.4%), held better (0.218 vs 0.173), value better (5.7 vs 0.0). Fixed bars: hook under the 60% fail line but more than half still skipped, held just under the 0.25 bar, value one save (the second reel on the channel with any shares/saves). 1 like, 0 comments, 0 shares, 1 save, 0 profile views, 0 replays. Day-1 row (4 Nov): 189 views, 174 reach, 1 like, 1 save, follows 0 (single-post call returned follows null). Data barely moved from day 1 to day 2, so the 46 h snapshot equals day 1.
+Main reason: the hook put a concrete number contrast with the payoff inside 5 s ("PSG scored four in seventeen minutes. Villarreal had two shots.", 10 words) and a short 30 s cut with no banter, which held people to about 6.5 s; but it is a one-sided 6-0 story with no tension, nothing to argue about, and the only question ("Is anyone stopping PSG?") has no obvious side to take, so 0 comments.
+Viewers left during: beat 1 "Twelve shots on target to two. Forty-three touches in the box to ten." (5.72–10.59 s). The average viewer (6.55 s) left about a fifth of the way into it, on the first stat line. No retention curve from Instagram.
+What worked:
+- Hook: 10 words, 4.8 s, "4 GOALS. 17 MINUTES. 2 SHOTS." on frame one: 56.6% skip against a 58.4% median. It is not the 5-word hook shape that did best (51-55%), but it is above average.
+- Hold: 0.218 against a 0.173 median; avg watch 6.55 s.
+- The only save on the channel apart from dortmund-bayern's share: a "league-phase run" reel (6 from 6, 4 from 4) gave something worth keeping.
+What should have worked:
+- The compare beat repeats the hook (the shots figure is already on the hook card) and is where people left. The unused material in insights.json is the half-to-half twist: Villarreal 4 shots in the first half and 10 in the second, PSG 15 then 7, and a Villarreal 1-on-target per half, so "PSG eased off and still scored twice". Hook, spoken: "PSG scored four in seventeen minutes. Villarreal had two shots, both blocked." (12 words) with card "4 GOALS.\n17 MINUTES.\n*2* BLOCKED SHOTS." Follow with the half-to-half swing, not a second stat table.
+- Question with a side: "Fabián Ruiz or Doué: who was PSG's man of the match?" (Ruiz: 2 goals from 4 shots, 0.85 xG, insights.json) beats "Is anyone stopping PSG?", which asks for a prediction nobody argues about.
+- A 24 s cut: hook, half-to-half beat, Gulácsi worst pick, outro question.
+Test next time: when the match is one-sided, end the reel on a two-name "who was better" question taken from insights.json best_player, not a season-outlook question, and don't re-read a stat the hook card already shows.
+
+Notes: angle_source `data`, trend t1 (six wins in a row) used in beat 2, no banter, no favourite lost. Posted 25 h after full time at 01:26 UTC on a Wednesday, the same overnight slot as the other 01 UTC reels (skip 54.7-59.1%, bayern-atletico 49.6% this run); post time still not shown to matter.
