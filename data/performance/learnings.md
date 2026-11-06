@@ -1,5 +1,5 @@
 # What works on @thescoutbrief
-Updated 2026-11-05 · 12 reels reviewed · confidence: medium (5-14)
+Updated 2026-11-06 · 14 reels reviewed · confidence: medium (5-14)
 
 Early days: twelve reels, all with 156-198 views, one share, two saves and no comments in total. Patterns below are first signals, not proof. Format changes were not made (format v2 has nine reels reviewed, no clear failure; no skip rate above 75% or watch ratio below 0.1 in v2).
 
@@ -12,6 +12,8 @@ Early days: twelve reels, all with 156-198 views, one share, two saves and no co
 - Ask a two-name question with a side in the outro and the caption, and say it before the average viewer leaves if the reel is long. Evidence: only dortmund-bayern (6.1 shares+saves/1k reach, share rate) and psg-villarreal (5.7/1k, one save) got any shares/saves; both were reels with a fan_question; bayern-atletico asked "Kane or Laimer?" at 33 s and got 0. Zero comments on any reel so far, so the outro question has not worked yet. Confidence: low
 - Don't re-read on the next beat what the hook card already shows (the score, the same stat). Evidence: magdeburg-bayern beat 1, psg-villarreal beat 1, roma-man utd beat 1. Confidence: medium
 - Put the twist inside the hook as two matched numbers; "the real story at 12-18 s" never lands. Evidence: dortmund-bayern twist ("Bayern still drew") at ~12 s, real-madrid-racing twist (10 shots/3 goals before the 37th minute, 12/0 after) at 18 s, both after the average viewer left. Confidence: low
+
+- Update 2026-11-06 (2 more reels): real-madrid-aek-athens hook ends on "Still trailing." (73.1% skipped, no club named); liverpool-fenerbahce hook ends on "And they lost." (69.0% skipped) but banter at beat 1 gave watch ratio 0.226 (above median). Both support: name the subject early and don't end the hook on the result. Confidence: medium
 
 ## Experiments to run next
 - 28-30 s cut with banter or the twist as beat 1 (under 10 words, starts by ~4 s), the compare card cut to 2 rows or dropped, and the outro question moved to the second half of the reel. Success: watch ratio above 0.25, first comment or share. Baseline watch ratio 0.173, shares+saves 0.0.
