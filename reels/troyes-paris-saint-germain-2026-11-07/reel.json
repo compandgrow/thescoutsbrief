@@ -1,0 +1,109 @@
+{
+ "id": "troyes-paris-saint-germain-2026-11-07",
+ "format_version": 2,
+ "trend_used": "PSG 11 straight wins (all competitions)",
+ "experiment": "twist-first: keeper stat as beat 1, 3-row compare after it, question in outro",
+ "angle_source": null,
+ "fan_question": "Eleven straight wins: PSG dominance or luck?",
+ "match": {
+  "pill": "PSG 1–0 TRO · LIGUE 1",
+  "league": "Ligue 1"
+ },
+ "beats": [
+  {
+   "say": "PSG missed seven big chances. Eleven wins in a row.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "PSG 1–0 TROYES",
+    "text": "7 BIG CHANCES\n*MISSED*.\n11 WINS IN A ROW.",
+    "size": 120,
+    "source": "ESPN team stats, ESPN match report"
+   }
+  },
+  {
+   "say": "Troyes keeper Konaté made six saves, facing one point six expected goals. He conceded one.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "TROYES KEEPER KONATÉ",
+    "value": "6",
+    "unit": "SAVES",
+    "label": "vs *1.60* xG faced",
+    "sub": "PSG also hit the woodwork twice",
+    "source": "ESPN match leaders, ESPN team stats"
+   }
+  },
+  {
+   "say": "Seven shots on target to three. Twenty-eight touches in the box to eleven.",
+   "emotion": "neutral",
+   "card": {
+    "type": "compare",
+    "kicker": "FULL TIME",
+    "teams": [
+     "PSG",
+     "TROYES"
+    ],
+    "rows": [
+     {
+      "label": "SHOTS ON TARGET",
+      "a": 7,
+      "b": 3
+     },
+     {
+      "label": "TOUCHES IN BOX",
+      "a": 28,
+      "b": 11
+     },
+     {
+      "label": "xG",
+      "a": 1.6,
+      "b": 0.69
+     }
+    ],
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "Scout's pick: Zabarnyi. A centre-back, a corner, a header. The only goal, thirty-ninth minute.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Illia Zabarnyi",
+    "team": "Paris Saint-Germain",
+    "stats": [
+     [
+      "goal",
+      "1"
+     ],
+     [
+      "shots",
+      "2"
+     ],
+     [
+      "xG",
+      "0.13"
+     ],
+     [
+      "minute",
+      "39'"
+     ]
+    ],
+    "source": "ESPN match page & shot map"
+   }
+  },
+  {
+   "say": "Eleven straight wins. Dominance, or luck? Tell me.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "11 STRAIGHT.\n*DOMINANCE* OR LUCK?",
+    "source": ""
+   }
+  }
+ ]
+}

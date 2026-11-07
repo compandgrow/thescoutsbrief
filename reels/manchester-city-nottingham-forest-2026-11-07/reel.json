@@ -1,0 +1,127 @@
+{
+ "id": "manchester-city-nottingham-forest-2026-11-07",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "hook = streak trend number (7 wins, 3 losses) naming City; banter as beat 1 right after hook; compare card cut to 3 rows; outro question in second half",
+ "match": {
+  "pill": "NFO 3–1 MCI · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "Man City: seven wins, then three straight losses.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "MAN CITY · AT NOTTINGHAM FOREST",
+    "text": "7 WINS.\n*3* LOSSES.",
+    "size": 170,
+    "source": "ESPN match page"
+   }
+  },
+  {
+   "say": "Ha! Seventy-eight percent of the ball, and Forest still won three-one.",
+   "emotion": "laughing",
+   "hit": true,
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "78% OF THE BALL.\n*LOST* 3-1.",
+    "size": 112,
+    "stamp": "FULL TIME L",
+    "sub": "Forest's first home win of the season",
+    "source": "ESPN team stats, BBC Sport"
+   }
+  },
+  {
+   "say": "Thirty-three touches in the box to fourteen. One point five nine expected goals to one.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE NUMBERS CITY LOST WITH",
+    "teams": [
+     "MAN CITY",
+     "FOREST"
+    ],
+    "rows": [
+     {
+      "label": "POSSESSION %",
+      "a": 78,
+      "b": 22,
+      "fa": "78",
+      "fb": "22"
+     },
+     {
+      "label": "TOUCHES IN BOX",
+      "a": 33,
+      "b": 14,
+      "fa": "33",
+      "fb": "14"
+     },
+     {
+      "label": "xG",
+      "a": 1.59,
+      "b": 1.0,
+      "fa": "1.59",
+      "fb": "1.00"
+     }
+    ],
+    "source": "ESPN team stats, BBC Sport"
+   }
+  },
+  {
+   "say": "Forest scored three. In their six home games before this, they scored two. Combined.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "NOTTINGHAM FOREST",
+    "value": "3",
+    "unit": "GOALS vs MAN CITY",
+    "label": "more than their last *six* home league games: 2",
+    "sub": "BBC Sport live page",
+    "source": "BBC Sport"
+   }
+  },
+  {
+   "say": "Best on the pitch, my pick: Liam Delap. Two goals from three shots.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Liam Delap",
+    "team": "Nottingham Forest",
+    "stats": [
+     [
+      "goals",
+      "2"
+     ],
+     [
+      "shots",
+      "3"
+     ],
+     [
+      "xG",
+      "0.19"
+     ],
+     [
+      "xGOT of goals",
+      "0.74"
+     ]
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Six points behind Arsenal. Title race over, or just a wobble?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "CITY'S TITLE BID:\n*DEAD* OR A WOBBLE?",
+    "source": ""
+   }
+  }
+ ]
+}

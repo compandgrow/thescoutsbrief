@@ -1,0 +1,136 @@
+{
+ "match": {
+  "home": "Nottingham Forest",
+  "away": "Manchester City",
+  "home_short": "NFO",
+  "away_short": "MCI",
+  "score": "3-1",
+  "competition": "Premier League",
+  "date": "2026-11-07"
+ },
+ "data_mode": "web path (no PitchAPI); no official ratings, best player is Scout's pick",
+ "headline": "Man City had 78% of the ball and 33 touches in the Forest box, and lost 3-1: their third league defeat in a row after seven straight wins.",
+ "team_story": [
+  {
+   "label": "Possession %",
+   "home": 22,
+   "away": 78,
+   "why_it_matters": "City had the ball and lost",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878757 Team Stats > Possession (BBC Match Stats 22/78)"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 14,
+   "away": 33,
+   "why_it_matters": "City lived in Forest's box",
+   "source": "https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt Match Stats > Total touches inside the opposition box"
+  },
+  {
+   "label": "xG",
+   "home": 1.0,
+   "away": 1.59,
+   "why_it_matters": "City out-created Forest and still lost",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878757 Team Stats > Expected Goals; data/matches/manchester-city-nottingham-forest-2026-11-07/shots_espn.json sums"
+  },
+  {
+   "label": "Shots on target",
+   "home": 5,
+   "away": 4,
+   "why_it_matters": "Forest scored 3 from 5 on target",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878757 Team Stats > Shots on Goal"
+  },
+  {
+   "label": "Big chances created",
+   "home": 0,
+   "away": 3,
+   "why_it_matters": "Forest scored three with no big chance created",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878757 Team Stats > Big Chances Created"
+  }
+ ],
+ "tactical_change": {
+  "team": "Manchester City",
+  "minute": 45,
+  "before": "first half: 6 shots, 1.06 xG, 0 goals",
+  "after": "second half: 6 shots, 0.53 xG, 1 goal",
+  "trigger": "Two City half-time changes at 45' (ESPN substitutions list). Formations 3-4-2-1 (NFO) v 4-2-3-1 (MNC) per ESPN lineups; no confirmed shape change.",
+  "effect": "Not used in the reel: second-half shift only, City still lost.",
+  "evidence": [
+   {
+    "label": "City xG",
+    "before": 1.06,
+    "after": 0.53,
+    "source": "shots_espn.json via analysis.py"
+   },
+   {
+    "label": "Forest xG",
+    "before": 0.78,
+    "after": 0.22,
+    "source": "shots_espn.json via analysis.py"
+   }
+  ],
+  "confidence": "low"
+ },
+ "best_player": {
+  "name": "Liam Delap",
+  "team": "Nottingham Forest",
+  "rating": null,
+  "stats": [
+   [
+    "goals",
+    "2"
+   ],
+   [
+    "shots",
+    "3"
+   ],
+   [
+    "xG",
+    "0.19"
+   ],
+   [
+    "xGOT of his goals",
+    "0.74"
+   ]
+  ],
+  "why": "Brace (18', 73') from three shots; BBC: his first goals at the City Ground",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401878757/manchester-city-nottingham-forest Shot Map (shots_espn.json via analysis.py); https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt Forest analysis"
+ },
+ "worst_player": null,
+ "surprise_stat": {
+  "value": "7 wins, 3 straight defeats",
+  "label": "Man City in the league",
+  "context": "City won their opening seven league games and have now lost three in a row (ESPN record 7-0-3, 21 pts)",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401878757/manchester-city-nottingham-forest Commentary: 'lost three on the spin in the league after winning their opening seven league games'"
+ },
+ "result_context": {
+  "winner": "Nottingham Forest",
+  "loser": "Manchester City",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [
+  {
+   "fact": "Man City: 78% possession, 33 touches in the box to 14, and lost 3-1",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878757 Team Stats; https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt Match Stats"
+  },
+  {
+   "fact": "Forest scored 3 goals, more than in their previous six home league games combined (2)",
+   "source": "https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt live post 19"
+  },
+  {
+   "fact": "City are six points behind Arsenal (21 v 27 pts, ESPN table)",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401878757/manchester-city-nottingham-forest English Premier League Table; BBC report"
+  },
+  {
+   "fact": "City have conceded eight first-half goals in 10 games and made four errors leading to goals (team numbers only)",
+   "source": "https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt City analysis"
+  }
+ ],
+ "caveats": [
+  "No official player ratings; Delap is Scout's pick. BBC fan ratings not used.",
+  "ESPN commentary xG 0.98/1.57 are goalkeeper xGC values; team xG is 1.00/1.59.",
+  "No worst-player pick: the numbers blame City errors, which is player-specific; kept to team numbers (red lines).",
+  "No trends.json (trend-scout skipped); no Firecrawl credits used."
+ ]
+}

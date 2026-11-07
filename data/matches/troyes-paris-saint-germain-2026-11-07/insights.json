@@ -1,0 +1,189 @@
+{
+ "match": {
+  "home": "Paris Saint-Germain",
+  "away": "Troyes",
+  "home_short": "PSG",
+  "away_short": "TRY",
+  "score": "1-0",
+  "competition": "French Ligue 1",
+  "date": "2026-11-07"
+ },
+ "data_mode": "web (ESPN + BBC cached in data/research/); no player ratings, best/worst are Scout's pick",
+ "headline": "PSG created 7 big chances and missed all 7, hit the woodwork twice and needed a centre-back's header to win 1-0 and make it 11 straight wins.",
+ "team_story": [
+  {
+   "label": "xG",
+   "home": 1.6,
+   "away": 0.69,
+   "why_it_matters": "PSG dominated chance quality yet scored once",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401876407/troyes-paris-saint-germain Team Stats (data/research/scrape_6989decc2e26.json)"
+  },
+  {
+   "label": "Shots",
+   "home": 15,
+   "away": 8,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Shots (data/research/scrape_512f9bdfae4a.json)"
+  },
+  {
+   "label": "Shots on target",
+   "home": 7,
+   "away": 3,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Shots"
+  },
+  {
+   "label": "Big chances missed",
+   "home": 7,
+   "away": 2,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Attack"
+  },
+  {
+   "label": "Hit woodwork",
+   "home": 2,
+   "away": 0,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Shots; https://www.bbc.com/sport/football/live/c6kg5dynmze1t Attack"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 28,
+   "away": 11,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Attack"
+  },
+  {
+   "label": "Possession %",
+   "home": 73,
+   "away": 27,
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401876407/troyes-paris-saint-germain Team Stats"
+  },
+  {
+   "label": "Total passes",
+   "home": 893,
+   "away": 326,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Passes; https://www.bbc.com/sport/football/live/c6kg5dynmze1t Distribution"
+  }
+ ],
+ "tactical_change": {
+  "team": "PSG",
+  "minute": 70,
+  "before": "4-3-3",
+  "after": "4-3-3 (shape unchanged in source)",
+  "trigger": "Ndjantou for Torres and Neves for Godts at 70'",
+  "effect": "Not a shape change. Shift is first half to second: PSG took 10 shots (1.09 xG) before the break and 5 shots (0.52 xG) after it, once ahead.",
+  "evidence": [
+   {
+    "label": "PSG shots",
+    "before": 10,
+    "after": 5,
+    "source": "data/matches/troyes-paris-saint-germain-2026-11-07/shots_espn.json (minute <= 45+)"
+   },
+   {
+    "label": "PSG xG",
+    "before": 1.09,
+    "after": 0.52,
+    "source": "shots_espn.json (sum of xg by half)"
+   }
+  ],
+  "confidence": "medium (formation unchanged in source; split computed from shot map)"
+ },
+ "best_player": {
+  "name": "Illia Zabarnyi",
+  "team": "Paris Saint-Germain",
+  "rating": null,
+  "stats": [
+   [
+    "goal",
+    "1"
+   ],
+   [
+    "shots",
+    "2"
+   ],
+   [
+    "xG",
+    "0.13"
+   ],
+   [
+    "minute of goal",
+    "39'"
+   ]
+  ],
+  "why": "Centre-back scored the only goal, a header from a corner (xG 0.10), plus a second header saved at 27'",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401876407/troyes-paris-saint-germain header (Illia Zabarnyi - 39'); shots_espn.json shots 8 and 11 (xG 0.03 + 0.10)"
+ },
+ "worst_player": {
+  "name": "Desire Doue",
+  "team": "Paris Saint-Germain",
+  "rating": null,
+  "stats": [
+   [
+    "shots",
+    "3"
+   ],
+   [
+    "on target",
+    "0"
+   ],
+   [
+    "xG",
+    "0.12"
+   ],
+   [
+    "minutes",
+    "90"
+   ]
+  ],
+  "why": "Played all 90, three shots, none on target: 9' free kick off target, 25' and 69' blocked",
+  "anger_worthy": false,
+  "source": "shots_espn.json (D. Doue shots 3, 7, 21); not substituted per https://www.bbc.com/sport/football/live/c6kg5dynmze1t lineup"
+ },
+ "keeper": {
+  "name": "Hillel Konate",
+  "team": "Troyes",
+  "stats": [
+   [
+    "saves",
+    "6"
+   ],
+   [
+    "shots on goal faced",
+    "7"
+   ],
+   [
+    "xG conceded",
+    "1.60"
+   ]
+  ],
+  "why": "Six saves, faced 1.60 expected goals, conceded one",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401876407/troyes-paris-saint-germain Match Leaders (Saves: 6, 7 SOGA, 1.60 xGC); https://www.espn.com/soccer/team-stats/_/gameId/401876407 / Team Stats Saves 6"
+ },
+ "surprise_stat": {
+  "value": "7",
+  "label": "big chances missed by PSG (of 7 created)",
+  "context": "15 shots, 7 on target, 2 off the woodwork, and the winner came from a corner header worth 0.10 xG",
+  "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876407 Attack (Big Chances Created 7, Big Chances Missed 7); shots_espn.json"
+ },
+ "trend": {
+  "fact": "PSG extended their winning streak to 11 matches in all competitions",
+  "scope": "all competitions",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401876407/troyes-paris-saint-germain (PA report blurb: 'extended their winning streak to 11 matches in all competitions')"
+ },
+ "league_context": {
+  "fact": "PSG 1st on 23 points (10 played); Troyes 16th on 8 points",
+  "source": "https://www.bbc.com/sport/football/live/c6kg5dynmze1t League table / ESPN Ligue 1 table"
+ },
+ "result_context": {
+  "winner": "Paris Saint-Germain",
+  "loser": "Troyes",
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false,
+  "note": "Troyes is not a watched club: no banter. PSG is a favourite and won."
+ },
+ "banter_material": [],
+ "caveats": [
+  "Web path: no player ratings; Zabarnyi and Doue are Scout's picks from shot-map data only.",
+  "Sources list PSG as home (Parc des Princes); slug/ESPN URL lists Troyes first.",
+  "Team xG shown as ESPN's 1.60/0.69; shot-map sums are 1.61/0.68 (rounding).",
+  "Winning streak of 11 comes from one ESPN/PA sentence; no trends.json, trend-scout not run (no extra Firecrawl credits used).",
+  "Doue is not anger_worthy: PSG won and his numbers are modest, not disastrous."
+ ]
+}
