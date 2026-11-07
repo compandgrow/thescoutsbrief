@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 86,
+  "credits": 98,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1250,6 +1250,71 @@
    {
     "at": "2026-11-07T17:52:23Z",
     "what": "scrape https://www.bbc.com/sport/football/live/cq33x0rvmjret",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-07T23:48:37Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401878757/manchester-city-nottingham-forest",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-07T23:48:38Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401878760/hull-city-arsenal",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-07T23:48:38Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882808/real-madrid-valencia",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-07T23:48:39Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401876407/troyes-paris-saint-germain",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-07T23:50:53Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401882808",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-07T23:50:54Z",
+    "what": "search Valencia v Real Madrid BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-07T23:50:55Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c9y7l4p8v268t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-07T23:51:02Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401876407",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-07T23:51:03Z",
+    "what": "search Paris Saint-Germain v Troyes BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-07T23:51:04Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c6kg5dynmze1t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-07T23:51:07Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401878757",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-07T23:51:08Z",
+    "what": "search Nottingham Forest v Manchester City BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-07T23:51:10Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt",
     "credits": 1
    }
   ]
