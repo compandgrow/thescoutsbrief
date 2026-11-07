@@ -1,6 +1,126 @@
 {
- "generated": "2026-11-06T23:47:58Z",
- "ready": [],
- "later_today": [],
- "not_making": []
+ "generated": "2026-11-07T17:49:45Z",
+ "ready": [
+  {
+   "espn_id": "401884740",
+   "slug": "bayern-munich-mainz",
+   "date": "2026-11-07",
+   "team": "BAY",
+   "teams_text": [
+    "Mainz",
+    "Bayern Munich"
+   ],
+   "competition": "German Bundesliga",
+   "score": "1-2",
+   "watched": [
+    "BAY"
+   ],
+   "favourite_involved": true,
+   "winner_key": "BAY",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
+  },
+  {
+   "espn_id": "401878758",
+   "slug": "tottenham-hotspur-leeds-united",
+   "date": "2026-11-07",
+   "team": "TOT",
+   "teams_text": [
+    "Leeds United",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": "1-0",
+   "watched": [
+    "TOT"
+   ],
+   "favourite_involved": false,
+   "winner_key": null,
+   "loser_key": "TOT",
+   "banter": true,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a rival lost (banter)"
+  }
+ ],
+ "later_today": [
+  {
+   "espn_id": "401878757",
+   "slug": "manchester-city-nottingham-forest",
+   "date": "2026-11-07",
+   "team": "MCI",
+   "teams_text": [
+    "Nottingham Forest",
+    "Manchester City"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401882808",
+   "slug": "real-madrid-valencia",
+   "date": "2026-11-07",
+   "team": "RMA",
+   "teams_text": [
+    "Valencia",
+    "Real Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ],
+   "favourite_involved": true
+  },
+  {
+   "espn_id": "401876407",
+   "slug": "troyes-paris-saint-germain",
+   "date": "2026-11-07",
+   "team": "PSG",
+   "teams_text": [
+    "Paris Saint-Germain",
+    "Troyes"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ],
+   "favourite_involved": true
+  }
+ ],
+ "not_making": [
+  {
+   "espn_id": "401878760",
+   "slug": "hull-city-arsenal",
+   "date": "2026-11-07",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Hull City"
+   ],
+   "competition": "English Premier League",
+   "score": "1-0",
+   "watched": [
+    "ARS"
+   ],
+   "favourite_involved": false,
+   "winner_key": "ARS",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  }
+ ]
 }

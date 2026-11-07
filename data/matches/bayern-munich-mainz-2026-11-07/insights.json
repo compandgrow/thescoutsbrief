@@ -1,0 +1,126 @@
+{
+ "match": {
+  "home": "Mainz",
+  "away": "Bayern Munich",
+  "home_short": "M05",
+  "away_short": "BAY",
+  "score": "1-2",
+  "competition": "German Bundesliga",
+  "date": "2026-11-07"
+ },
+ "data_mode": "web (ESPN + BBC cached pages); no player ratings, best/worst are Scout's pick. NB ESPN labels Bayern 'MUN' and Mainz 'M05'.",
+ "headline": "Bayern had 26 shots to Mainz's 11 and Mainz's only shot on goal was a 90+2' goal worth 0.04 xG.",
+ "team_story": [
+  {
+   "label": "Shots",
+   "home": 11,
+   "away": 26,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884740 Shots"
+  },
+  {
+   "label": "Shots on goal",
+   "home": 1,
+   "away": 9,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884740 Shots"
+  },
+  {
+   "label": "Big chances created",
+   "home": 0,
+   "away": 5,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884740 Attack"
+  },
+  {
+   "label": "xG (shot map)",
+   "home": 0.6,
+   "away": 2.68,
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884740/bayern-munich-mainz shot map, summed; data/matches/bayern-munich-mainz-2026-11-07/derived.json"
+  },
+  {
+   "label": "Passes",
+   "home": 318,
+   "away": 716,
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884740 Passes"
+  }
+ ],
+ "tactical_change": {
+  "team": "Bayern Munich",
+  "minute": null,
+  "before": "4-2-3-1",
+  "after": "4-2-3-1",
+  "trigger": "none; shape unchanged",
+  "effect": "second-half shift: Bayern 10 shots / 1.13 xG in the first half, 16 shots / 1.55 xG in the second",
+  "evidence": [
+   {
+    "label": "Bayern shots",
+    "before": 10,
+    "after": 16,
+    "source": "derived.json Bayern_1H/Bayern_2H"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "best_player": {
+  "name": "Lennart Karl",
+  "team": "Bayern Munich",
+  "rating": null,
+  "stats": [
+   [
+    "shots",
+    "4"
+   ],
+   [
+    "xG",
+    "0.46"
+   ],
+   [
+    "goals",
+    "1"
+   ]
+  ],
+  "why": "Scout's pick: scored the 57' goal, 0.21 xG",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401884740/bayern-munich-mainz shot map (derived.json L. Karl)"
+ },
+ "worst_player": {
+  "name": "Harry Kane",
+  "team": "Bayern Munich",
+  "rating": null,
+  "stats": [
+   [
+    "shots",
+    "6"
+   ],
+   [
+    "xG",
+    "0.87"
+   ],
+   [
+    "goals",
+    "0"
+   ]
+  ],
+  "why": "most xG on the pitch, no goal; not anger-worthy (favourite)",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401884740/bayern-munich-mainz shot map (derived.json H. Kane)"
+ },
+ "surprise_stat": {
+  "value": "0.04",
+  "label": "xG of Mainz's only shot on goal (Tietz 90'+2')",
+  "context": "Mainz had 1 shot on goal all game and it was a goal",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401884740/bayern-munich-mainz shot 37 of 37; https://www.espn.com/soccer/team-stats/_/gameId/401884740 Shots"
+ },
+ "result_context": {
+  "winner": "Bayern Munich",
+  "loser": "Mainz",
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [],
+ "standing": {
+  "fact": "Bayern 1st on 21 points after 9 games; Mainz 10th on 10",
+  "source": "https://www.bbc.com/sport/football/live/c6d09x7zknymt Bundesliga table"
+ },
+ "caveats": [
+  "No Bayern shape change in source; no ratings; shots on goal 9 (ESPN team stats) vs 8 counted in the visible shot map (6 shots out of view)."
+ ]
+}

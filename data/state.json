@@ -123,6 +123,24 @@
    "mode": "auto",
    "at": "2026-11-05",
    "scheduled_for": "2026-11-05T01:33:00Z"
+  },
+  {
+   "espn_id": "401884740",
+   "reel": "bayern-munich-mainz-2026-11-07",
+   "zernio_post": "6aef69e4dce4d0423a97a036",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-07",
+   "scheduled_for": "2026-11-07T19:11:00Z"
+  },
+  {
+   "espn_id": "401878758",
+   "reel": "tottenham-hotspur-leeds-united-2026-11-07",
+   "zernio_post": "6aef6b874e8f9eba2868748d",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-07",
+   "scheduled_for": "2026-11-07T19:18:00Z"
   }
  ],
  "skipped": [

@@ -1,0 +1,105 @@
+{
+ "id": "bayern-munich-mainz-2026-11-07",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "twist as beat 1 straight after hook, 2-row compare, ~30 s",
+ "angle_source": "data",
+ "fan_question": "Karl or Kane: who was Bayern's man of the match?",
+ "match": {
+  "pill": "M05 1–2 BAY · BUNDESLIGA",
+  "league": "BUNDESLIGA"
+ },
+ "beats": [
+  {
+   "say": "Twenty-six shots. Mainz managed one on target.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "MAINZ 1–2 BAYERN",
+    "text": "*26* SHOTS\n*1* ON GOAL",
+    "size": 150,
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "And that one was a goal in the ninetieth minute, worth nought point oh four expected goals.",
+   "emotion": "shocked",
+   "card": {
+    "type": "stat",
+    "kicker": "MAINZ'S ONLY SHOT ON GOAL",
+    "value": "0.04",
+    "unit": "xG",
+    "label": "Tietz, 90'+2' — *the* only one",
+    "sub": "ESPN shot map",
+    "source": "ESPN shot map · team stats"
+   }
+  },
+  {
+   "say": "Expected goals, two point six eight to nought point six. Big chances created: five to none.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE NUMBERS",
+    "teams": [
+     "MAINZ",
+     "BAYERN"
+    ],
+    "rows": [
+     {
+      "label": "xG",
+      "a": 0.6,
+      "b": 2.68,
+      "fa": "0.60",
+      "fb": "2.68"
+     },
+     {
+      "label": "BIG CHANCES",
+      "a": 0,
+      "b": 5,
+      "fa": "0",
+      "fb": "5"
+     }
+    ],
+    "source": "ESPN shot map · team stats"
+   }
+  },
+  {
+   "say": "Scout's pick: Lennart Karl. Four shots, nought point four six expected goals, and the second goal.",
+   "emotion": "happy",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Lennart Karl",
+    "team": "Bayern Munich",
+    "rating": "–",
+    "stats": [
+     [
+      "shots",
+      "4"
+     ],
+     [
+      "xG",
+      "0.46"
+     ],
+     [
+      "goals",
+      "1"
+     ]
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Harry Kane had six shots and no goal. Karl or Kane, man of the match?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "KARL OR\n*KANE*?",
+    "source": "ESPN shot map"
+   }
+  }
+ ]
+}

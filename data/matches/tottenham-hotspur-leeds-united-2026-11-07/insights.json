@@ -1,0 +1,122 @@
+{
+ "match": {
+  "home": "Tottenham Hotspur",
+  "away": "Leeds United",
+  "home_short": "TOT",
+  "away_short": "LEE",
+  "score": "0-1",
+  "competition": "English Premier League",
+  "date": "2026-11-07"
+ },
+ "data_mode": "web (BBC + ESPN cached pages); no player ratings, best player is Scout's pick",
+ "headline": "Spurs had 60.8% of the ball and 508 passes but only 7 shots and 0.77 xG; Leeds had 16 shots and 2.02 xG and won 1-0.",
+ "team_story": [
+  {
+   "label": "Possession %",
+   "home": 60.8,
+   "away": 39.2,
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Match Stats Basic"
+  },
+  {
+   "label": "Shots",
+   "home": 7,
+   "away": 16,
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Match Stats Basic"
+  },
+  {
+   "label": "xG",
+   "home": 0.77,
+   "away": 2.02,
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Match Stats Basic"
+  },
+  {
+   "label": "Total passes",
+   "home": 508,
+   "away": 310,
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Distribution"
+  },
+  {
+   "label": "xG from set play",
+   "home": 0.08,
+   "away": 1.21,
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Expected"
+  }
+ ],
+ "tactical_change": {
+  "team": "Leeds United",
+  "minute": null,
+  "before": "-",
+  "after": "-",
+  "trigger": "none in source",
+  "effect": "second-half shift: Leeds 3 shots / 0.19 xG in the first half, 13 shots / 1.84 xG in the second",
+  "evidence": [
+   {
+    "label": "Leeds shots",
+    "before": 3,
+    "after": 13,
+    "source": "data/matches/tottenham-hotspur-leeds-united-2026-11-07/shots_espn.json (1H/2H sums)"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "best_player": {
+  "name": "Noah Okafor",
+  "team": "Leeds United",
+  "rating": null,
+  "stats": [
+   [
+    "shots",
+    "1"
+   ],
+   [
+    "goals",
+    "1"
+   ],
+   [
+    "xG",
+    "0.53"
+   ]
+  ],
+  "why": "Scout's pick: scored the 79' winner",
+  "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret headline; ESPN shot map"
+ },
+ "worst_player": {
+  "name": null,
+  "team": "Tottenham Hotspur",
+  "rating": null,
+  "stats": [],
+  "why": "not assessed",
+  "anger_worthy": false,
+  "source": ""
+ },
+ "surprise_stat": {
+  "value": "60.8%",
+  "label": "Spurs possession, 7 shots",
+  "context": "508 passes to Leeds' 310",
+  "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Match Stats"
+ },
+ "result_context": {
+  "winner": "Leeds United",
+  "loser": "Tottenham Hotspur",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [
+  {
+   "fact": "Leeds' first win since September (BBC headline: 'Noah Okafor downs Tottenham to earn Leeds first win since September')",
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret title"
+  },
+  {
+   "fact": "Spurs 60.8% possession, 508 passes, but 7 shots and 0.77 xG",
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Match Stats"
+  },
+  {
+   "fact": "Spurs 10th on 12 points after the game; Leeds 8th on 14",
+   "source": "https://www.bbc.com/sport/football/live/cq33x0rvmjret Premier League table"
+  }
+ ],
+ "caveats": [
+  "No ratings. Leeds 'first win since September' is BBC's headline wording, not independently counted."
+ ]
+}

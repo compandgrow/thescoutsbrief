@@ -1,0 +1,106 @@
+{
+ "id": "tottenham-hotspur-leeds-united-2026-11-07",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "banter as beat 1 right after hook, 2-row compare, ~30 s",
+ "angle_source": "data",
+ "fan_question": "Is possession overrated?",
+ "match": {
+  "pill": "LEE 1–0 TOT · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "Sixty-one percent for Spurs. Sixteen shots for Leeds.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "SPURS 0–1 LEEDS",
+    "text": "*61%* SPURS\n*16* SHOTS LEEDS",
+    "size": 130,
+    "source": "BBC Sport Match Stats"
+   }
+  },
+  {
+   "say": "Ha! Leeds' first win since September, and Spurs handed it over.",
+   "emotion": "laughing",
+   "hit": true,
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "LEEDS' FIRST WIN\nSINCE *SEPTEMBER*",
+    "size": 96,
+    "stamp": "GIFT WRAPPED",
+    "sub": "Spurs 10th, 12 points",
+    "source": "BBC Sport match report · PL table"
+   }
+  },
+  {
+   "say": "Passes, five hundred and eight to three hundred and ten. Expected goals, nought point seven seven to two point oh two.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THE NUMBERS SPURS LOST WITH",
+    "teams": [
+     "SPURS",
+     "LEEDS"
+    ],
+    "rows": [
+     {
+      "label": "PASSES",
+      "a": 508,
+      "b": 310,
+      "fa": "508",
+      "fb": "310"
+     },
+     {
+      "label": "xG",
+      "a": 0.77,
+      "b": 2.02,
+      "fa": "0.77",
+      "fb": "2.02"
+     }
+    ],
+    "source": "BBC Sport Match Stats"
+   }
+  },
+  {
+   "say": "Scout's pick: Noah Okafor. One shot, one goal, seventy-ninth minute.",
+   "emotion": "happy",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Noah Okafor",
+    "team": "Leeds United",
+    "rating": "–",
+    "stats": [
+     [
+      "shots",
+      "1"
+     ],
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "xG",
+      "0.53"
+     ]
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Is possession overrated? Spurs fans, defend this.",
+   "emotion": "smug",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "POSSESSION:\n*OVERRATED*?",
+    "source": "BBC Sport Match Stats"
+   }
+  }
+ ]
+}
