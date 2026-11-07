@@ -1,0 +1,44 @@
+{
+ "match": {"home":"Valencia","away":"Real Madrid","home_short":"VAL","away_short":"RMA","score":"0-3","competition":"LaLiga","date":"2026-11-07"},
+ "data_mode": "web (ESPN + BBC cached); no official player ratings, best/worst are Scout's pick",
+ "headline": "Real Madrid created 2.26 xG and five big chances; Valencia 0.16 xG and zero, and it finished 3-0.",
+ "team_story": [
+  {"label":"xG","home":0.16,"away":2.26,"why_it_matters":"A 14x gap in chance quality","source":"data/research/scrape_1a79253aa427.json (ESPN match page, Team Stats: Expected Goals)"},
+  {"label":"Big chances created","home":0,"away":5,"why_it_matters":"Valencia never made a clear chance","source":"data/research/scrape_1a79253aa427.json (ESPN Team Stats: Big Chances Created)"},
+  {"label":"Shots on goal","home":2,"away":11,"why_it_matters":"Courtois faced two; Dimitrievski faced eleven","source":"data/research/scrape_1a79253aa427.json (ESPN Team Stats: Shots on Goal)"},
+  {"label":"Possession %","home":32,"away":68,"why_it_matters":"","source":"data/research/scrape_1a79253aa427.json (ESPN Team Stats: Possession)"}
+ ],
+ "tactical_change": {
+  "team":"Real Madrid","minute":null,"before":"4-2-3-1","after":"4-2-3-1 (no change in source)",
+  "trigger":"none; Valencia set up 5-3-2 and Madrid played through it. Gaya red card 79' came after the 75' third goal.",
+  "effect":"No shape change. Madrid xG by half from shot map: 0.76 first half (9 shots) to 1.49 second half (10 shots).",
+  "evidence":[
+   {"label":"Madrid xG","before":0.76,"after":1.49,"source":"data/matches/real-madrid-valencia-2026-11-07/shots_espn.json (sum of xg by minute, <=45'+2' vs after; Scout calc)"}
+  ],
+  "confidence":"low (no formation change; half-to-half shift only)"
+ },
+ "best_player": {
+  "name":"Arda Guler","team":"Real Madrid","rating":null,
+  "stats":[["goal","1"],["xG on goal","0.31"],["shots","2"],["assist (3rd goal)","1"]],
+  "why":"Scored the second goal from six yards and played the pass for Mbappe's third. BBC fan average rating 8.72 (second to Bellingham 8.98).",
+  "source":"shots_espn.json (shots 8 and 9); data/research/scrape_82fb73e8e332.json (BBC report: 'Guler found Mbappe'; live entry 25; Player ratings: Average Rating 8.72)"
+ },
+ "worst_player": {
+  "name":"Jose Gaya","team":"Valencia","rating":null,
+  "stats":[["red card","79'"],["BBC fan rating","5.62"]],
+  "why":"Captain sent off for a last-man foul on Mbappe, 4 minutes after the third goal.",
+  "anger_worthy": false,
+  "source":"data/research/scrape_82fb73e8e332.json (live entry 20; lineup: Red Card at 79 minutes; Average Rating 5.62)"
+ },
+ "surprise_stat": {"value":"0.06","label":"xG of Valverde's opening goal","context":"Captain Federico Valverde, listed at right back, scored the opener from a 6% chance; Guler's was 0.31 and Mbappe's 0.79.","source":"shots_espn.json (shot n=5, n=8, n=20)"},
+ "table_context": {"fact":"Real Madrid 30 points, level with Barcelona (10 wins in 12); Valencia 19th, 9 points","source":"data/research/scrape_1a79253aa427.json (ESPN LALIGA table); BBC report: 'only goal difference keeps Real off top spot'"},
+ "result_context": {"winner":"Real Madrid","loser":"Valencia","banter":false,"banter_by_favourite":false,"favourite_lost":false},
+ "banter_material": [],
+ "caveats": [
+  "No official ratings; BBC ratings are user averages.",
+  "ESPN and BBC disagree on the streak scope (ESPN: 8th straight win; BBC: 4th straight league win), so no streak is used.",
+  "Shot map xG sums to 2.25 for Madrid vs ESPN team stat 2.26 (rounding); team-stat figure used.",
+  "Shot distances differ between ESPN pages and BBC (yards); not used.",
+  "Trend scout skipped (credit budget); no trends.json."
+ ]
+}

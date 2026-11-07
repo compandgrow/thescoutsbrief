@@ -1,0 +1,118 @@
+{
+ "id": "real-madrid-valencia-2026-11-07",
+ "format_version": 2,
+ "trend_used": null,
+ "experiment": "hook-number-first-no-result",
+ "angle_source": null,
+ "fan_question": "Madrid or Barcelona: who wins La Liga?",
+ "match": {
+  "pill": "VAL 0–3 RMA · LALIGA",
+  "league": "LALIGA"
+ },
+ "beats": [
+  {
+   "say": "Madrid, two point two six expected goals. Valencia, point one six.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "VALENCIA 0–3 REAL MADRID",
+    "text": "MADRID *2.26* xG\nVALENCIA *0.16*",
+    "size": 120,
+    "source": "ESPN Team Stats"
+   }
+  },
+  {
+   "say": "Valencia made zero big chances. Madrid made five. Eleven shots on target to two.",
+   "emotion": "excited",
+   "card": {
+    "type": "compare",
+    "kicker": "VALENCIA V REAL MADRID",
+    "teams": [
+     "VALENCIA",
+     "MADRID"
+    ],
+    "rows": [
+     {
+      "label": "BIG CHANCES",
+      "a": 0,
+      "b": 5
+     },
+     {
+      "label": "SHOTS ON TARGET",
+      "a": 2,
+      "b": 11
+     }
+    ],
+    "source": "ESPN Team Stats"
+   }
+  },
+  {
+   "say": "The opener? Captain Valverde, playing right back, from a six percent chance.",
+   "emotion": "shocked",
+   "card": {
+    "type": "stat",
+    "kicker": "VALVERDE'S OPENER",
+    "value": "0.06",
+    "unit": "xG",
+    "label": "the *lowest* of the three goals",
+    "sub": "Güler's was 0.31, Mbappé's 0.79",
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Scout's pick: Arda Güler. A goal from six yards, then the pass for Mbappé's third.",
+   "emotion": "happy",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Güler",
+    "team": "Real Madrid",
+    "stats": [
+     [
+      "goal",
+      "1"
+     ],
+     [
+      "xG on goal",
+      "0.31"
+     ],
+     [
+      "shots",
+      "2"
+     ],
+     [
+      "assist",
+      "1"
+     ]
+    ],
+    "source": "ESPN shot map, BBC Sport report"
+   }
+  },
+  {
+   "say": "Thirty points. Level with Barcelona. Only goal difference keeps Madrid second.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "LALIGA TABLE",
+    "value": "30",
+    "unit": "POINTS",
+    "label": "level with *Barcelona*",
+    "sub": "Valencia: 19th, 9 points",
+    "source": "ESPN LaLiga table, BBC Sport"
+   }
+  },
+  {
+   "say": "Madrid or Barcelona. Who wins La Liga?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "MADRID OR\n*BARCELONA?*",
+    "source": ""
+   }
+  }
+ ]
+}
