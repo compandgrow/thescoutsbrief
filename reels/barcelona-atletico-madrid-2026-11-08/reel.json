@@ -1,0 +1,98 @@
+{
+ "id": "barcelona-atletico-madrid-2026-11-08",
+ "format_version": 2,
+ "trend_used": "t2",
+ "experiment": "banter as beat 1 right after hook, 2-row compare, ~30 s",
+ "angle_source": "fan_buzz",
+ "fan_question": "Did Barcelona win by managing the game with the ball, or did Atlético just fade?",
+ "match": {
+  "pill": "ATM 1–2 BAR · LALIGA",
+  "league": "LALIGA"
+ },
+ "beats": [
+  {
+   "say": "Atlético: seven shots before half-time. Two after.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "ATLÉTICO 1-2 BARCELONA",
+    "text": "*7* SHOTS.\nTHEN *2*.",
+    "size": 150,
+    "source": "ESPN shot map"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Ha! One point three seven expected goals before the break. Point one five after. Nothing on target.",
+   "emotion": "laughing",
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "*1.37* xG BEFORE HALF-TIME.\n*0.15* AFTER.",
+    "stamp": "FADED OUT",
+    "sub": "Second half: 2 shots, 0 on target",
+    "source": "ESPN shot map (summed xG)"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Barcelona kept sixty-three percent of the ball. Six hundred seventy-five passes to three hundred ninety-one.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "THEY RAN THE CLOCK",
+    "teams": ["ATLÉTICO", "BARCELONA"],
+    "rows": [
+     {"label": "POSSESSION %", "a": 37, "b": 63, "fa": "37", "fb": "63"},
+     {"label": "PASSES", "a": 391, "b": 675, "fa": "391", "fb": "675"}
+    ],
+    "source": "BBC Sport, ESPN team stats"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Atlético's last shot on target? The thirty-eighth minute.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "ATLÉTICO · LAST SHOT ON TARGET",
+    "value": "38",
+    "unit": "TH MIN",
+    "label": "*Baena* forces a save",
+    "sub": "two more shots after that, none on target",
+    "source": "ESPN shot map"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Best on the pitch, my pick: Fermín López. Two goals, six shots, point nine two expected goals.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK · BEST ON THE PITCH",
+    "name": "Fermín López",
+    "team": "Barcelona",
+    "stats": [
+     ["goals", "2"],
+     ["shots", "6"],
+     ["on target", "3"],
+     ["xG", "0.92"]
+    ],
+    "source": "ESPN match leaders"
+   },
+   "pause_after": 0.4
+  },
+  {
+   "say": "Two home defeats in a row for Atlético, in all competitions. Did Barcelona manage it, or did Atlético fade? Tell me below.",
+   "emotion": "smug",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "BARÇA MANAGED IT\nOR ATLÉTICO *FADED*?",
+    "source": "ESPN results"
+   }
+  }
+ ]
+}
