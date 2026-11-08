@@ -1,0 +1,29 @@
+{
+ "id": "aston-villa-manchester-united-2026-11-08",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "twist-as-beat-1 (compare window 5-43, no repeat of hook stat), ~30 s, outro in the last beat",
+ "angle_source": "fan_buzz",
+ "fan_question": "United fought back twice. Is the real problem the attack or the defending?",
+ "match": {"pill": "MUN 4–4 AVL · PL", "league": "PL"},
+ "beats": [
+  {"say": "Twenty-six United shots. Twelve for Villa. Still four-four.", "emotion": "shocked", "hit": true,
+   "card": {"type": "hook", "kicker": "SHOTS · UNITED v VILLA", "text": "26 v 12", "size": 190, "source": "ESPN team stats, BBC Sport"}},
+  {"say": "Minute five to forty-three: eleven United shots. Villa had two.", "emotion": "smug",
+   "card": {"type": "compare", "kicker": "AFTER GOING 2-0 DOWN", "teams": ["MAN UTD", "VILLA"],
+    "rows": [
+     {"label": "SHOTS 5'-43'", "a": 11, "b": 2, "fa": "11", "fb": "2"},
+     {"label": "xG 5'-43'", "a": 1.52, "b": 0.13, "fa": "1.52", "fb": "0.13"},
+     {"label": "CORNERS (MATCH)", "a": 8, "b": 1, "fa": "8", "fb": "1"}
+    ], "source": "ESPN shot map, ESPN team stats"}},
+  {"say": "So why four-four? Villa's first three shots: nought point nine seven expected goals. Two goals. And United have one league win in ten.", "emotion": "disappointed", "hit": true,
+   "card": {"type": "stat", "kicker": "VILLA'S FIRST 3 SHOTS", "value": "0.97", "unit": "xG", "label": "two *goals* inside four minutes",
+    "sub": "United: 1 win in 10 league games, 18th", "source": "ESPN shot map, ESPN + BBC table"}},
+  {"say": "Worst on the pitch, Scout's pick: Lammens. Seven shots on target, three saves. BBC says he should have done better on the first two.", "emotion": "disappointed",
+   "card": {"type": "player", "verdict": "worst", "kicker": "SCOUT'S PICK · WORST ON THE PITCH", "name": "Senne Lammens", "team": "Manchester United",
+    "stats": [["saves", "3"], ["shots on target faced", "7"], ["goals conceded", "4"], ["xG conceded", "2.88"]],
+    "source": "ESPN Match Leaders, BBC Sport analysis"}},
+  {"say": "Lammens or Dalot: who cost United more?", "emotion": "happy",
+   "card": {"type": "outro", "kicker": "@THESCOUTBRIEF", "text": "LAMMENS OR\nDALOT: WHO COST\nUNITED *MORE*?", "source": ""}}
+ ]
+}

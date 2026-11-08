@@ -1,0 +1,69 @@
+{
+ "match": "ATM 1-2 BAR (LaLiga)",
+ "generated_at": "2026-11-08T23:58:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "BAR", "type": "form",
+   "claim": "Barcelona have won 11 of their 12 La Liga games this season; the only defeat was home to Real Madrid",
+   "numbers": {"league_wins": 11, "league_played": 12, "league_defeats": 1},
+   "strength": "strong",
+   "sources": [
+    {"what": "BBC match report: 'Barca have now won 11 of their 12 league matches this season, only dropping points in a home defeat by Real'", "url": "https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt"},
+    {"what": "ESPN match page standings 11-0-1, 33 PTS", "url": "https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid"}
+   ],
+   "hook_angle": "Eleven wins in twelve, and this one came from behind at Atlético.",
+   "use_for": "context",
+   "fresh_until": "2026-11-15"},
+  {"id": "t2", "team": "ATM", "type": "form",
+   "claim": "Atlético have lost back-to-back home games in all competitions: 0-2 to Bayern Munich on 3 Nov, then 1-2 to Barcelona",
+   "numbers": {"home_defeats_in_a_row": 2, "goals_for": 1, "goals_against": 4},
+   "strength": "strong",
+   "sources": [
+    {"what": "data/form/1068.json: 2026-11-03 H L 0-2 v Bayern Munich (UEFA Champions League), no gaps; file ends before this match", "url": "https://www.espn.co.uk/football/team/results/_/id/1068"},
+    {"what": "This match: Atlético listed as home team, final 1-2", "url": "https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid"}
+   ],
+   "hook_angle": "Atlético: two home games, two defeats, one goal.",
+   "use_for": "banter",
+   "fresh_until": "2026-11-15"},
+  {"id": "t3", "team": "BAR", "type": "storyline",
+   "claim": "Barcelona go into the international break three points clear of Real Madrid and five clear of Atlético",
+   "numbers": {"lead_over_real_madrid": 3, "lead_over_atletico": 5, "barcelona_points": 33, "atletico_points": 28},
+   "strength": "medium",
+   "sources": [
+    {"what": "BBC: 'three points clear of Real Madrid and five points clear of Atletico'", "url": "https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt"},
+    {"what": "ESPN/PA recap: 'restore their three-point lead at the top of LaLiga'", "url": "https://www.espn.co.uk/football/report/_/gameId/401882816"}
+   ],
+   "hook_angle": "Five points clear of Atlético, and they did it with 63% of the ball.",
+   "use_for": "outro",
+   "fresh_until": "2026-11-15"}
+ ],
+ "fan_buzz": {
+  "thread": {"title": "Post Match Thread: Atlético Madrid 1-2 Barcelona | LaLiga", "upvotes": null, "comments": null, "url": "https://www.reddit.com/r/soccer/comments/1xracm8/post_match_thread_atlético_madrid_12_barcelona/", "note": "RSS mode: no counts; thread ranked first in r/soccer hot order"},
+  "themes": [
+   {"theme": "Barcelona managed the lead with the ball after the break (de Jong, Pedri, Gavi) instead of leaving Atlético chances", "share": "several of the top comments", "confirmed_by": "BBC possession 63% v 37% and live post 'Barcelona's possession continues to eat away at the clock'; insights.json second-half shots 2 v 10", "use_for": "reel angle"},
+   {"theme": "Atlético wasted a dominant first half", "share": "several of the top comments", "confirmed_by": "BBC report ('Atletico had the better of an enthralling first half'); insights.json first-half xG 1.37", "use_for": "banter / hook"},
+   {"theme": "Fermín López as man of the match", "share": "a standalone thread", "confirmed_by": "ESPN Match Leaders: 2 goals, 6 shots, 0.92 xG", "use_for": "outro question"}
+  ],
+  "club_subs": [
+   {"club": "BAR", "hot_topic": "post-match thread and López's two goals", "heat": null},
+   {"club": "ATM", "hot_topic": "post-match thread", "heat": null}
+  ]
+ },
+ "rejected": [
+  {"claim": "Atlético had won seven consecutive league matches before this game", "reason": "only the ESPN live-blog preview states the number; BBC's table shows only the last six league games (five wins, then this loss), so no second outlet for seven"},
+  {"claim": "Barcelona have nine points from losing positions this season (BBC)", "reason": "single outlet and unclear whether this match is included"},
+  {"claim": "De Jong at right-back / Martín moved to left-back", "reason": "Reddit only; neither ESPN nor BBC gives positions after the substitution"},
+  {"claim": "Pre-match tribute and the Atlético tifo about Álvarez's summer", "reason": "off-pitch / red lines"}
+ ],
+ "best_angle": "t2",
+ "reel_angle": {
+  "source": "fan_buzz",
+  "fan_question": "Did Barcelona win by managing the game with the ball, or did Atlético just fade?",
+  "data_answer": "Both: Barcelona had 63% possession and 675 passes to 391, and in the second half Atlético had 2 shots (0 on target, 0.15 xG) after 7 shots and 1.37 xG before the break.",
+  "evidence": ["insights.json half_split", "insights.json team_story possession 37/63", "BBC possession and live post"],
+  "fan_heat": "post-match thread ranked first in r/soccer hot order (RSS, no counts); theme in several top comments",
+  "hook_angle": "Atlético's first half: 1.37 xG. Second half: 0.15.",
+  "why": "the fan argument about Barcelona managing the lead is directly testable with the half split"
+ },
+ "credits_used": 2,
+ "notes": "Firecrawl: one search ('Barcelona Atlético Madrid', 2 credits); form for 83 and 1068 were free (usage 112 -> 114). data/form/1068.json is dated 2026-11-03 and does not include this match; t2 combines it with the ESPN match page. Reddit in RSS mode (no counts). ESPN says de Jong came on at 45', BBC at 46': avoid the exact minute. ESPN player xG (López 0.92, Álvarez 0.24) differs by 0.01 from the shot-map sums. ESPN lists Oblak with 5 shots on target against v 4 for Barcelona: avoid keeper stats."
+}

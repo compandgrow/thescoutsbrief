@@ -1,8 +1,18 @@
 {
  "team_id": "1068",
  "source": "https://www.espn.co.uk/football/team/results/_/id/1068",
- "fetched_at": "2026-11-03T23:52:03Z",
+ "fetched_at": "2026-11-08T23:52:30Z",
  "last": [
+  {
+   "date": "2026-11-03",
+   "opponent": "Bayern Munich",
+   "venue": "H",
+   "score": "0-2",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915386"
+  },
   {
    "date": "2026-10-31",
    "opponent": "Levante",
@@ -52,22 +62,12 @@
    "pens": false,
    "competition": "UEFA Champions League",
    "game_id": "401915412"
-  },
-  {
-   "date": "2026-10-10",
-   "opponent": "Alav\u00e9s",
-   "venue": "A",
-   "score": "2-1",
-   "result": "W",
-   "pens": false,
-   "competition": "Spanish LALIGA",
-   "game_id": "401882856"
   }
  ],
- "run_newest_first": "WWDWWW",
- "wins": 5,
+ "run_newest_first": "LWWDWW",
+ "wins": 4,
  "draws": 1,
- "losses": 0,
+ "losses": 1,
  "gaps": [],
  "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

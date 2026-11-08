@@ -1,0 +1,44 @@
+{
+ "match": {"home": "Manchester United", "away": "Aston Villa", "home_short": "MUN", "away_short": "AVL", "score": "4-4", "competition": "Premier League", "date": "2026-11-08"},
+ "data_mode": "firecrawl (PitchAPI not connected) - no player ratings; best/worst are Scout's pick. Man United were the HOME team (ESPN/BBC) although the slug lists Villa first.",
+ "headline": "United had 26 shots to Villa's 12 and 44 touches in the Villa box to 17, yet needed two stoppage-time goals to draw 4-4 after Villa scored four from 12 shots.",
+ "team_story": [
+  {"label": "Shots", "home": 26, "away": 12, "why_it_matters": "United dominated volume", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879240 Shots; https://www.bbc.com/sport/football/live/cq2d6wgrey22t Basic Stats"},
+  {"label": "xG (Opta, BBC)", "home": 3.55, "away": 2.88, "why_it_matters": "United created more, but Villa still scored four from 2.88", "source": "https://www.bbc.com/sport/football/live/cq2d6wgrey22t Basic Stats (xG). Shot-map sum 3.58 / 2.93 in shots_espn.json, use BBC figure"},
+  {"label": "Touches in opposition box", "home": 44, "away": 17, "why_it_matters": "territorial dominance", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879240 Attack; BBC Basic Stats"},
+  {"label": "Corners won", "home": 8, "away": 1, "why_it_matters": "the equaliser came from a corner", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879240 Attack"},
+  {"label": "Shots, minutes 5-43", "home": 11, "away": 2, "why_it_matters": "after 0-2 in four minutes United took control until the break", "source": "shots_espn.json (computed in analysis.py)"},
+  {"label": "xG, minutes 5-43", "home": 1.52, "away": 0.13, "why_it_matters": "same window", "source": "shots_espn.json (computed in analysis.py)"}
+ ],
+ "tactical_change": {
+  "team": "Manchester United", "minute": 46, "before": "4-2-3-1", "after": "4-2-3-1 (shape unchanged in source)",
+  "trigger": "Heaven on for Maguire at half-time (BBC: 46'); Dorgu for Dalot 66', Mount for Tielemans 66', Lacey for Diallo 66', Zirkzee for Mbeumo 83'",
+  "effect": "Second-half shift: United 14 shots / 1.88 xG after 45+ min vs 12 / 1.70 in the first half, but they conceded twice in the first eight minutes of the second half (48', 53'). Two of the four goals came after 89'.",
+  "evidence": [
+   {"label": "United shots by half", "before": 12, "after": 14, "source": "shots_espn.json (analysis.py)"},
+   {"label": "United xG by half", "before": 1.7, "after": 1.88, "source": "shots_espn.json (analysis.py)"},
+   {"label": "United xG from 89th minute", "before": 0, "after": 1.27, "source": "shots_espn.json: Mount 89' 0.52, Zirkzee 0.2, Mount 0.14, 0.06, Dorgu 0.35"}
+  ],
+  "confidence": "low (formation never changed in the sources; this is the second-half shift)"
+ },
+ "best_player": {"name": "Bruno Fernandes", "team": "Manchester United", "rating": null,
+  "stats": [["goals", "1 (pen)"], ["shots", "6"], ["xG", "0.99"], ["assist", "Dorgu equaliser"]],
+  "why": "Most shots and xG in the match (Match Leaders), scored the penalty and took the corner for Dorgu's 90+6' equaliser",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401879240 Match Leaders (6 shots, 0.99 xG) and commentary 90'+6' ('Bruno Fernandes sends over the corner-kick that Dorgu heads home')"},
+ "worst_player": {"name": "Senne Lammens", "team": "Manchester United", "rating": null,
+  "stats": [["saves", "3"], ["shots on target faced", "7"], ["goals conceded", "4"], ["xG conceded", "2.88"]],
+  "why": "Conceded four from 2.88 xG conceded; BBC analysis: 'Lammens should have done better for the first two goals'; punched the Yoro back-pass onto his own crossbar before Goretzka scored (BBC report)",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401879240 Match Leaders (Lammens 3 saves, 7 SOGA, 2.88 xGC); https://www.bbc.com/sport/football/live/cq2d6wgrey22t match report + Man Utd analysis. Played 90 min. Scout's pick, not a rating. anger_worthy false: first goal xGOT 0.05 is arguable, errors shared with Dalot and Yoro per BBC."},
+ "surprise_stat": {"value": "0.97", "label": "xG from Villa's first three shots (two goals, in four minutes)", "context": "Alysson 1' (0.04), Alysson 4' (0.05), Jackson 4' (0.88); then Villa had two shots in minutes 5-43 (0.13 xG)", "source": "shots_espn.json shots 1-3 (and analysis.py first4min)"},
+ "result_context": {"winner": null, "loser": null, "banter": false, "banter_by_favourite": false, "favourite_lost": false, "favourite_played": true, "note": "Draw. Man United (favourite) drew; Villa are not on the banter list. No banter."},
+ "banter_material": [],
+ "caveats": [
+  "No ratings on this path: best/worst are Scout's pick.",
+  "ESPN shot map puts Fernandes' penalty at 16' (goal list 16' Pen); BBC report says the penalty was awarded in the 14th minute. Avoid the exact minute.",
+  "ESPN commentary says Yoro headed the ball back to Lammens for Goretzka's goal; BBC analysis says Dalot and Yoro were at fault for goals three and four. Avoid naming who was at fault for goal four beyond what the quote says.",
+  "xG: BBC (Opta) 3.55 v 2.88; shot-map sum 3.58 v 2.93; r/reddevils post cites 3.82 v 3.21 (xG Philosophy). Use BBC figures.",
+  "Man United were at home (Old Trafford); Villa listed first in the slug only.",
+  "Possession 55.7% v 44.3% (BBC) ; ESPN 'Possession' table not parsed."
+ ]
+}

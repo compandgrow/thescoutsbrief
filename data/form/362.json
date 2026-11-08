@@ -1,0 +1,73 @@
+{
+ "team_id": "362",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/362",
+ "fetched_at": "2026-11-08T23:52:45Z",
+ "last": [
+  {
+   "date": "2026-11-08",
+   "opponent": "Manchester United",
+   "venue": "A",
+   "score": "4-4",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879240"
+  },
+  {
+   "date": "2026-11-03",
+   "opponent": "Barcelona",
+   "venue": "A",
+   "score": "0-3",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915387"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Fulham",
+   "venue": "H",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879250"
+  },
+  {
+   "date": "2026-10-28",
+   "opponent": "AFC Bournemouth",
+   "venue": "A",
+   "score": "0-3",
+   "result": "L",
+   "pens": false,
+   "competition": "English Carabao Cup",
+   "game_id": "401921840"
+  },
+  {
+   "date": "2026-10-24",
+   "opponent": "Manchester City",
+   "venue": "H",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879256"
+  },
+  {
+   "date": "2026-10-21",
+   "opponent": "Viking FK",
+   "venue": "H",
+   "score": "3-1",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915394"
+  }
+ ],
+ "run_newest_first": "DLDLWW",
+ "wins": 2,
+ "draws": 2,
+ "losses": 2,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

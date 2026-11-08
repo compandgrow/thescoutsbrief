@@ -1,31 +1,6 @@
 {
- "generated": "2026-11-08T17:50:24Z",
+ "generated": "2026-11-08T23:48:51Z",
  "ready": [
-  {
-   "espn_id": "401879239",
-   "slug": "chelsea-sunderland",
-   "date": "2026-11-08",
-   "team": "CHE",
-   "teams_text": [
-    "Sunderland",
-    "Chelsea"
-   ],
-   "competition": "English Premier League",
-   "score": "1-0",
-   "watched": [
-    "CHE"
-   ],
-   "favourite_involved": false,
-   "winner_key": null,
-   "loser_key": "CHE",
-   "banter": true,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a rival lost (banter)"
-  }
- ],
- "later_today": [
   {
    "espn_id": "401879240",
    "slug": "aston-villa-manchester-united",
@@ -36,11 +11,18 @@
     "Aston Villa"
    ],
    "competition": "English Premier League",
-   "score": null,
+   "score": "4-4",
    "watched": [
     "MUN"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": null,
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   },
   {
    "espn_id": "401882816",
@@ -52,14 +34,22 @@
     "Barcelona"
    ],
    "competition": "Spanish LALIGA",
-   "score": null,
+   "score": "1-2",
    "watched": [
     "ATM",
     "BAR"
    ],
-   "favourite_involved": false
+   "favourite_involved": false,
+   "winner_key": "BAR",
+   "loser_key": "ATM",
+   "banter": true,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "two watched clubs met"
   }
  ],
+ "later_today": [],
  "not_making": [
   {
    "espn_id": "401879243",

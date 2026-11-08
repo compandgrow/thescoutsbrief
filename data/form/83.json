@@ -1,0 +1,73 @@
+{
+ "team_id": "83",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/83",
+ "fetched_at": "2026-11-08T23:52:29Z",
+ "last": [
+  {
+   "date": "2026-11-08",
+   "opponent": "Atl\u00e9tico de Madrid",
+   "venue": "A",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882816"
+  },
+  {
+   "date": "2026-11-03",
+   "opponent": "Aston Villa",
+   "venue": "H",
+   "score": "3-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915387"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Alav\u00e9s",
+   "venue": "H",
+   "score": "6-1",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882822"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Real Madrid",
+   "venue": "H",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882832"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "Paris Saint-Germain",
+   "venue": "A",
+   "score": "2-4",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915399"
+  },
+  {
+   "date": "2026-10-17",
+   "opponent": "Real Betis",
+   "venue": "A",
+   "score": "5-2",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882846"
+  }
+ ],
+ "run_newest_first": "WWWLLW",
+ "wins": 4,
+ "draws": 0,
+ "losses": 2,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

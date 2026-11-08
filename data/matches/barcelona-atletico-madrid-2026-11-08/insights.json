@@ -1,0 +1,66 @@
+{
+ "match": {"home": "Atlético Madrid", "away": "Barcelona", "home_short": "ATM", "away_short": "BAR", "score": "1-2", "competition": "LaLiga", "date": "2026-11-08"},
+ "data_mode": "web path (ESPN + BBC cached pages); no player ratings, so best/worst are Scout's pick",
+ "headline": "Atlético made 1.37 xG in the first half and 0.15 after it; Barcelona kept 63% of the ball and came from behind to win 2-1.",
+ "team_story": [
+  {"label": "Possession %", "home": 37, "away": 63, "why_it_matters": "Barcelona kept the ball for most of the game, away from home.", "source": "https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt Basic Stats > Overall possession (cached research/scrape_d0a74296d387.json)"},
+  {"label": "Total passes", "home": 391, "away": 675, "why_it_matters": "Barcelona had 284 more passes; Atlético had 61 long balls to 33 but could not keep the ball.", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882816 Passes (research/scrape_f99b15b08015.json); BBC Distribution agrees"},
+  {"label": "Shots", "home": 9, "away": 19, "why_it_matters": "Barcelona doubled Atlético's shot count, but only 4 were on target for each side.", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882816 Shots; BBC Basic Stats agrees"},
+  {"label": "Shots (second half)", "home": 2, "away": 10, "why_it_matters": "After the break Atlético managed two shots, none on target, and Barcelona took ten.", "source": "derived.json (analysis.py) from shots_espn.json, ESPN shot map https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid"},
+  {"label": "xG (summed from shot map)", "home": 1.52, "away": 1.62, "why_it_matters": "Overall chance quality was close; the first-half/second-half split is the story.", "source": "derived.json: sum of per-shot xG in shots_espn.json (ESPN shot map)"}
+ ],
+ "half_split": {
+  "ATM": {"first_half": {"shots": 7, "xg": 1.37, "on_target": 4}, "second_half": {"shots": 2, "xg": 0.15, "on_target": 0}},
+  "BAR": {"first_half": {"shots": 9, "xg": 0.84, "on_target": 2}, "second_half": {"shots": 10, "xg": 0.78, "on_target": 2}},
+  "source": "derived.json (analysis.py) from shots_espn.json; 45'+N counted as first half"
+ },
+ "tactical_change": {
+  "team": "Barcelona",
+  "minute": null,
+  "before": "4-1-4-1 (starting formation)",
+  "after": "formation after the changes not stated by source",
+  "trigger": "Half-time substitution: Frenkie de Jong on for Brian Fariñas (ESPN 45', BBC 46'); Andreas Christensen on for João Cancelo at 60'",
+  "effect": "Atlético went from 7 shots and 1.37 xG before the break to 2 shots and 0.15 xG after it, with none on target; Barcelona's output stayed level (9 shots, 0.84 xG then 10 shots, 0.78 xG) and the winner came in the 66th minute. This is the second-half shift, not a proven formation change.",
+  "evidence": [
+   {"label": "Atlético shots", "before": 7, "after": 2, "source": "derived.json from shots_espn.json"},
+   {"label": "Atlético xG", "before": 1.37, "after": 0.15, "source": "derived.json from shots_espn.json"},
+   {"label": "Atlético shots on target", "before": 4, "after": 0, "source": "derived.json from shots_espn.json"}
+  ],
+  "confidence": "medium (the sub is confirmed by ESPN and BBC, but neither source says the shape changed or why Atlético faded)"
+ },
+ "best_player": {
+  "name": "Fermín López", "team": "Barcelona", "rating": null,
+  "stats": [["goals", "2"], ["shots", "6"], ["shots on target", "3"], ["xG", "0.92"]],
+  "why": "Scored the equaliser on the stroke of half-time (45') and the winner (66'); most shots and the highest xG on the pitch.",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid Match Leaders (research/scrape_c8eaa32ec14b.json); goals and minutes from the same page and BBC report https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt"
+ },
+ "worst_player": {
+  "name": "Julián Álvarez", "team": "Atlético Madrid", "rating": null,
+  "stats": [["shots", "4"], ["shots on target", "1"], ["xG", "0.24"], ["goals", "0"]],
+  "why": "Scout's pick: led Atlético in shots but had one on target and no goal; two of his four shots came after half-time and neither hit the target. He played the full 90 (not in the substitutions list).",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid Match Leaders and Substitutions; shot minutes from shots_espn.json"
+ },
+ "surprise_stat": {
+  "value": "38th minute",
+  "label": "Atlético's last shot on target",
+  "context": "Their only goal came in the 10th minute; after Baena's save-forcing shot at 38' they had two more shots (55', 71') and none reached the keeper.",
+  "source": "shots_espn.json (ESPN shot map): ATM shots 12 (38', Saved), 21 (55', Off Target), 26 (71', Blocked)"
+ },
+ "result_context": {"winner": "BAR", "loser": "ATM", "banter": true, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [
+  {"fact": "Atlético had 1.37 xG and 7 shots in the first half, then 0.15 xG and 2 shots in the second, none on target.", "source": "derived.json from shots_espn.json (ESPN shot map)"},
+  {"fact": "Atlético had 37% possession and 391 passes at home; Barcelona had 63% and 675 passes.", "source": "BBC Basic Stats https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt; ESPN team stats https://www.espn.com/soccer/team-stats/_/gameId/401882816"},
+  {"fact": "Atlético's last shot on target was in the 38th minute, with 52 minutes of regulation play to go.", "source": "shots_espn.json (ESPN shot map)"},
+  {"fact": "Atlético are now five points behind Barcelona (28 v 33) after being third and two points back before kick-off; BBC report: the loss was their second in the league.", "source": "BBC report and La Liga table https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt"},
+  {"fact": "Points gained from a losing position this season: Barcelona 9, Atlético 1.", "source": "BBC Head to Head > Season so far https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt (unclear whether this match is included)"}
+ ],
+ "caveats": [
+  "No player ratings on the web path: best/worst are Scout's pick from ESPN Match Leaders and the shot map.",
+  "Team xG is the sum of per-shot xG in the ESPN shot map (28 shots, matches the 9+19 team totals); ESPN's own player xG for López (0.92) and Álvarez (0.24) is used for the player cards, and differs by 0.01 from the sums.",
+  "ESPN says de Jong came on at 45', BBC at 46': use 'at half-time'. Neither source states a formation change after the sub, so the tactical beat is the second-half shift (confidence medium).",
+  "ESPN lists Oblak with 5 shots on target against while both sources give Barcelona 4 shots on target: no goalkeeper stats used.",
+  "BBC 'points from a losing position' may or may not include this match.",
+  "The pre-match tribute and the Atlético tifo (off-pitch) are not used."
+ ]
+}

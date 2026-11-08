@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 104,
+  "credits": 116,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1475,6 +1475,81 @@
    {
     "at": "2026-11-08T17:55:20Z",
     "what": "search Sunderland Chelsea",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-08T23:48:50Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879243/liverpool-crystal-palace",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:48:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879240/aston-villa-manchester-united",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:48:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:51:15Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401879240",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-08T23:51:16Z",
+    "what": "search Manchester United v Aston Villa BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-08T23:51:18Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cq2d6wgrey22t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-08T23:51:22Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401882816",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-08T23:51:23Z",
+    "what": "search Atl\u00e9tico de Madrid v Barcelona BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-08T23:51:24Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-08T23:52:29Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/83",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:52:30Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/1068",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:52:39Z",
+    "what": "search Barcelona Atl\u00e9tico Madrid",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-08T23:52:44Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:52:45Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/362",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T23:52:46Z",
+    "what": "search Manchester United Aston Villa",
     "credits": 2
    }
   ]

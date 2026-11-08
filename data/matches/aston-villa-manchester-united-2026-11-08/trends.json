@@ -1,0 +1,55 @@
+{
+ "match": "MUN 4-4 AVL",
+ "generated_at": "2026-11-09T00:05:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "MUN", "type": "form",
+   "claim": "Manchester United have won one of their ten Premier League games this season",
+   "numbers": {"played": 10, "won": 1, "drawn": 5, "lost": 4, "points": 8, "goals_against": 19},
+   "strength": "medium",
+   "sources": [
+    {"what": "ESPN match header: Manchester United 1-5-4, 8 PTS", "url": "https://www.espn.co.uk/football/match/_/gameId/401879240/aston-villa-manchester-united"},
+    {"what": "BBC Premier League table: Man Utd P10 W1 D5 L4 GF14 GA19 Pts 8, position 18", "url": "https://www.bbc.com/sport/football/live/cq2d6wgrey22t"}
+   ],
+   "hook_angle": "Twenty-six shots to twelve, and United still have one league win in ten.",
+   "use_for": "context",
+   "fresh_until": "2026-11-21"},
+  {"id": "t2", "team": "MUN", "type": "pressure",
+   "claim": "Manchester United go into the international break 18th, inside the relegation zone",
+   "numbers": {"position": 18, "points": 8},
+   "strength": "medium",
+   "sources": [
+    {"what": "BBC report: 'leaving them 18th and one point from safety'; BBC table position 18", "url": "https://www.bbc.com/sport/football/live/cq2d6wgrey22t"},
+    {"what": "ESPN: 'Manchester United go into the international break stuck inside the relegation zone'", "url": "https://www.espn.co.uk/football/match/_/gameId/401879240/aston-villa-manchester-united"}
+   ],
+   "hook_angle": "Four-four after a double comeback, and United are still 18th.",
+   "use_for": "outro",
+   "fresh_until": "2026-11-21"}
+ ],
+ "fan_buzz": {
+  "thread": {"title": "Post Match Thread: Manchester United 4-4 Aston Villa | PL MD 10", "upvotes": null, "comments": null, "url": "https://www.reddit.com/r/reddevils/comments/1xr5d90/post_match_thread_manchester_united_44_aston/"},
+  "themes": [
+   {"theme": "Defending: United keep conceding soft goals despite the comeback", "share": "RSS mode: several top posts (relegation zone, goals conceded), no counts", "confirmed_by": "BBC analysis ('defensive frailties'), shots_espn.json, ESPN Match Leaders (Lammens 4 conceded from 2.88 xGC)", "use_for": "reel angle / outro"},
+   {"theme": "Carrick's position and the relegation zone", "share": "several top posts", "confirmed_by": "BBC and ESPN: relegation zone; BBC says it will not ease pressure on Carrick (single outlet, not used)", "use_for": "not used (close to sacking red line)"}
+  ],
+  "club_subs": [{"club": "MUN", "hot_topic": "Post-match thread, relegation zone, goals conceded; also ownership protest banners (off-pitch, skipped)", "heat": 14.0}]
+ },
+ "rejected": [
+  {"claim": "United have conceded 30 goals in all competitions, most in Europe's big five", "reason": "only BBC states it (Opta); Reddit repost of OptaJoe is not an outlet"},
+  {"claim": "Eight Premier League games without a win / no clean sheet in ten games", "reason": "only BBC (Opta); form file 360.json does not include this match and has a gap 2026-09-20 to 2026-10-10"},
+  {"claim": "Carrick under pressure / last match in the dugout", "reason": "BBC opinion/pundit, one outlet, close to the 'should be sacked' red line; Ornstein quote only via Reddit"},
+  {"claim": "Ownership protests (Glazers banners)", "reason": "off-pitch, Reddit only, not testable with match data"},
+  {"claim": "Villa: unbeaten run of seven in Sept-Oct ended, first win in four missed", "reason": "single outlet (BBC); data/form/362.json fetched but not cross-checked against a second source"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "fan_buzz",
+  "fan_question": "United fought back twice. Is the real problem the attack or the defending?",
+  "data_answer": "United had 26 shots, 3.55 xG, 44 touches in Villa's box; Villa scored four from 12 shots and 2.88 xG, and two from their first three shots (0.97 xG). Attack is not the issue.",
+  "evidence": ["insights.json team_story shots / xG / touches", "insights.json surprise_stat", "insights.json worst_player", "t1"],
+  "fan_heat": "r/reddevils post-match thread rank 1 (RSS mode, no counts); goals-conceded and relegation-zone posts in the top 10",
+  "hook_angle": "Twenty-six shots to twelve, and it still finished four-four.",
+  "why": "the fans' defending debate is the one our shot data can settle"
+ },
+ "credits_used": 4,
+ "notes": "form 360 and 362 refetched (1 credit each), one news search (2 credits). form 360.json still ends at the Roma game (ESPN has not added this match yet). Reddit via RSS: no upvote counts; reddit.py match timed out, club MUN worked. BBC report says the first penalty was awarded in the 14th minute, ESPN lists the goal at 16': avoid that minute. Both Fernandes xG (0.99 ESPN) and BBC xG (3.55/2.88) are used as published."
+}
