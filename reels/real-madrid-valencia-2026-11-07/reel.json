@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Madrid, two point two six expected goals. Valencia, point one six.",
+   "say": "Madrid, two point two six xG. Valencia, point one six.",
    "emotion": "smug",
    "hit": true,
    "card": {
