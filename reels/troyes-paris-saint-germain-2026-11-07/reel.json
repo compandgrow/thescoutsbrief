@@ -11,13 +11,13 @@
  },
  "beats": [
   {
-   "say": "PSG missed seven big chances. Eleven wins in a row.",
+   "say": "PSG missed seven big chances. One goal won it.",
    "emotion": "shocked",
    "hit": true,
    "card": {
     "type": "hook",
     "kicker": "PSG 1–0 TROYES",
-    "text": "7 BIG CHANCES\n*MISSED*.\n11 WINS IN A ROW.",
+    "text": "7 BIG CHANCES\n*MISSED*.\nONE GOAL WON IT.",
     "size": 120,
     "source": "ESPN team stats, ESPN match report"
    }
@@ -96,12 +96,12 @@
    }
   },
   {
-   "say": "Eleven straight wins. Dominance, or luck? Tell me.",
+   "say": "Seven big chances missed. Dominance, or luck? Tell me.",
    "emotion": "happy",
    "card": {
     "type": "outro",
     "kicker": "@THESCOUTBRIEF",
-    "text": "11 STRAIGHT.\n*DOMINANCE* OR LUCK?",
+    "text": "7 MISSED.\n*DOMINANCE* OR LUCK?",
     "source": ""
    }
   }
