@@ -157,6 +157,14 @@
    "status": "scheduled",
    "at": "2026-11-08",
    "scheduled_for": "2026-11-08T01:21:00Z"
+  },
+  {
+   "espn_id": "401878757",
+   "reel": "manchester-city-nottingham-forest-2026-11-07",
+   "zernio_post": "6aefc13f7b22ecebf67d7e0d",
+   "status": "scheduled",
+   "at": "2026-11-08",
+   "scheduled_for": "2026-11-08T01:24:00Z"
   }
  ],
  "skipped": [
@@ -189,6 +197,11 @@
    "espn_id": "401915381",
    "reason": "Slavia Prague 1-2 Arsenal: rival didn't lose to an unwatched club",
    "at": "2026-11-05"
+  },
+  {
+   "espn_id": "401878760",
+   "reason": "Arsenal 1-0 Hull: rival didn't lose to an unwatched club",
+   "at": "2026-11-08"
   }
  ]
 }
