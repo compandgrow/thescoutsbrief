@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 98,
+  "credits": 102,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1316,6 +1316,161 @@
     "at": "2026-11-07T23:51:10Z",
     "what": "scrape https://www.bbc.com/sport/football/live/c5wyrmwlv8wvt",
     "credits": 1
+   },
+   {
+    "at": "2026-11-08T17:49:50Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879243/liverpool-crystal-palace",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:49:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879240/aston-villa-manchester-united",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:49:52Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879239/chelsea-sunderland",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:49:53Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882816/barcelona-atletico-madrid",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:49:58Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:49:59Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:00Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:00Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:01Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:02Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:02Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:03Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:04Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:04Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:05Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:11Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:12Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:12Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:13Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:14Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:14Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:15Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:15Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:16Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:16Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:50:17Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:52:39Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401879239",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-08T17:52:40Z",
+    "what": "search Sunderland v Chelsea BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-08T17:52:42Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cwm23qne5pqyt",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-08T17:54:05Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:54:05Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/366",
+    "credits": 0
    }
   ]
  }

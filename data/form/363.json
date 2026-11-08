@@ -1,14 +1,34 @@
 {
  "team_id": "363",
  "source": "https://www.espn.co.uk/football/team/results/_/id/363",
- "fetched_at": "2026-10-31T17:58:14Z",
+ "fetched_at": "2026-11-08T17:54:05Z",
  "last": [
+  {
+   "date": "2026-11-08",
+   "opponent": "Sunderland",
+   "venue": "A",
+   "score": "0-1",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879239"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Manchester United",
+   "venue": "H",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879248"
+  },
   {
    "date": "2026-10-28",
    "opponent": "Liverpool",
    "venue": "A",
    "score": "1-1",
-   "result": "L",
+   "result": "W",
    "pens": true,
    "competition": "English Carabao Cup",
    "game_id": "401921842"
@@ -42,34 +62,12 @@
    "pens": false,
    "competition": "English Premier League",
    "game_id": "401878775"
-  },
-  {
-   "date": "2026-09-18",
-   "opponent": "Brentford",
-   "venue": "A",
-   "score": "0-3",
-   "result": "L",
-   "pens": false,
-   "competition": "English Premier League",
-   "game_id": "401879275"
-  },
-  {
-   "date": "2026-09-12",
-   "opponent": "Hull City",
-   "venue": "H",
-   "score": "2-2",
-   "result": "D",
-   "pens": false,
-   "competition": "English Premier League",
-   "game_id": "401879283"
   }
  ],
- "run_newest_first": "LLWWLD",
- "wins": 2,
- "draws": 1,
- "losses": 3,
- "gaps": [
-  "2026-09-18 to 2026-10-10"
- ],
+ "run_newest_first": "LWWLWW",
+ "wins": 4,
+ "draws": 0,
+ "losses": 2,
+ "gaps": [],
  "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }
