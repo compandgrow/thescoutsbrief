@@ -9,14 +9,14 @@
  },
  "beats": [
   {
-   "say": "Man City: seven wins, then three straight losses.",
+   "say": "Man City. Three league defeats in a row.",
    "emotion": "shocked",
    "hit": true,
    "card": {
     "type": "hook",
     "kicker": "MAN CITY · AT NOTTINGHAM FOREST",
-    "text": "7 WINS.\n*3* LOSSES.",
-    "size": 170,
+    "text": "3 LEAGUE\n*LOSSES*\nIN A ROW",
+    "size": 150,
     "source": "ESPN match page"
    }
   },

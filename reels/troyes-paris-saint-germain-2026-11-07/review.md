@@ -1,24 +1,22 @@
-# Review: troyes-paris-saint-germain-2026-11-07
+PASS
 
-Verdict: FIX
+# Review: troyes-paris-saint-germain-2026-11-07 (round 2)
 
-1. caption.txt, first line: config/format.json sets `debate_question_in_caption_first_line: true`. The first line is the hook ("PSG missed 7 big chances and still won. 🦍"), and the question sits on the last line. Change the first line to a question of 8 words or fewer, e.g. "11 straight wins: PSG dominance or luck? 🦍", and keep the hook sentence in line 2.
-2. Beat 4 / caption, "11 straight wins" (rule 6b): there is no `trends.json` for this match and no `talking_points` entry. The claim is not a strong or medium trend entry, and `data/form/160.json` stops at 2026-11-03 with 6 wins, so the run can't be recounted. The wording is verified: `data/research/scrape_6989decc2e26.json` (ESPN match page, PA report) says "extended their winning streak to 11 matches in all competitions" and the headline says "11th straight win". Either run trend-scout and add a `talking_points` entry, or have the user accept the single ESPN/PA sentence. If accepted, keep "in all competitions" in the caption (it is there) and don't claim league-only.
-3. Minor, optional: duration is 29.87 s, just under the 30 s target floor (max 50, so it passes).
+Verdict: PASS (round 2: only fix was metadata trend_used/fan_question, applied; no re-render needed)
+
+1. reel.json, metadata only: `trend_used` ("PSG 11 straight wins (all competitions)") and `fan_question` ("Eleven straight wins: PSG dominance or luck?") still carry the removed single-source streak claim. Neither is spoken or shown on a card, but fan_question may be reused as a pinned comment or post text. Change `trend_used` to null (or "none") and `fan_question` to "7 big chances missed: dominance or luck?". No re-render is needed, since these fields are not rendered.
+
+Resolved from round 1
+- Caption first line is now a question: "PSG: dominance or luck? 7 big chances missed and still won."
+- No streak, run or "straight wins" wording remains in `say`, cards or caption.txt. A grep of reel.json and caption.txt found only the two metadata fields above, plus "eleven" as a touches count in beat 2.
+- Rule 6b has nothing left to check: no trend claim is made.
 
 Verified OK
-- Facts, checked against scrape_512f9bdfae4a (ESPN team stats) and scrape_6989decc2e26 (ESPN match page):
-  - Big Chances Missed 7 (PSG).
-  - Shots on Goal 7 vs 3, and 15 shots.
-  - Hit Woodwork 2.
-  - Touches In Opposition Box 28 vs 11.
-  - xG 1.60 vs 0.69.
-  - Konaté 6 saves, 7 SOGA, 1.60 xGC.
-  - Zabarnyi 39' header from a corner (xG 0.10, 0.03 at 27', total 0.13, 2 shots).
-  - Names are spelled correctly.
-  - Zabarnyi is credited as "Scout's pick", not a rating.
-- Hook: 9 words (limit 10). Beat 0 starts at 0.45 s and "seven big chances" is spoken within about 2 s. Frame 0 shows the full hook card, so the cover is fine.
-- Contact sheets: no clipped text, no empty cards, and emotions fit each beat. Card entry animations show brief partial frames, which is normal.
-- Specs: 1080x1920, H.264 + AAC, 29.87 s, 5 beats, -14.8 LUFS, true peak -1.4 dBFS.
-- Tone: clean. Banter is correctly absent, since Troyes is not a watched club and PSG won. No fan-buzz claims.
-- Caption: 10 hashtags (limit 6-10), no unsupported numbers.
+- Facts, checked against scrape_512f9bdfae4a (ESPN team stats): Big Chances Missed 7, Shots on Goal 7 vs 3, 15 shots, Hit Woodwork 2, Touches In Opposition Box 28 vs 11, xG 1.60 vs 0.69. Konaté 6 saves and 1.60 xG faced, and Zabarnyi's 39' header from a corner (xG 0.13, 2 shots), were checked against scrape_6989decc2e26. Names are spelled correctly. Zabarnyi is credited as "Scout's pick", not as a rating.
+- Hook: 9 words, with "seven big chances" spoken within about 2 s, and frame 0 shows the hook card.
+- Contact sheets were regenerated from the current reel.mp4 and read. Captions are in sync with the cards and the emotions fit each beat. Nothing is empty or clipped. Brief card entry animations show partial frames, which is normal.
+- On the player card, the mascot's head slightly overlaps the "minute" label under 39'. The number is readable. This is cosmetic and not a fail.
+- Specs: 1080x1920, H.264 + AAC, 5 beats, -14.8 LUFS, true peak -1.4 dBFS.
+- Duration is 29.3 s, slightly under the 30 s target floor and within the 50 s max. Noted, not a fail.
+- Tone is clean, there is no banter (PSG won, Troyes is not a watched club), and there are no fan-buzz claims.
+- Caption: 10 hashtags, no unsupported claims.

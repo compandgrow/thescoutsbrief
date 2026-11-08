@@ -141,6 +141,22 @@
    "mode": "auto",
    "at": "2026-11-07",
    "scheduled_for": "2026-11-07T19:18:00Z"
+  },
+  {
+   "espn_id": "401882808",
+   "reel": "real-madrid-valencia-2026-11-07",
+   "zernio_post": "6aefc0825b7cd51efc6ee337",
+   "status": "scheduled",
+   "at": "2026-11-08",
+   "scheduled_for": "2026-11-08T01:21:00Z"
+  },
+  {
+   "espn_id": "401876407",
+   "reel": "troyes-paris-saint-germain-2026-11-07",
+   "zernio_post": "6aefc0a85b7cd51efc6ee3d8",
+   "status": "scheduled",
+   "at": "2026-11-08",
+   "scheduled_for": "2026-11-08T01:21:00Z"
   }
  ],
  "skipped": [
