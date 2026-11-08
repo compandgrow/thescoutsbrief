@@ -165,6 +165,14 @@
    "status": "scheduled",
    "at": "2026-11-08",
    "scheduled_for": "2026-11-08T01:24:00Z"
+  },
+  {
+   "espn_id": "401879239",
+   "reel": "chelsea-sunderland-2026-11-08",
+   "zernio_post": "6af0c7d772ef1ea98b8f9ddd",
+   "status": "scheduled",
+   "at": "2026-11-08",
+   "scheduled_for": "2026-11-08T20:04:00Z"
   }
  ],
  "skipped": [
@@ -180,12 +188,12 @@
   },
   {
    "espn_id": "401882822",
-   "reason": "Barcelona 6-1 Alav\u00e9s: rival didn't lose to an unwatched club",
+   "reason": "Barcelona 6-1 Alavés: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
    "espn_id": "401882820",
-   "reason": "Levante 0-2 Atl\u00e9tico: rival didn't lose to an unwatched club",
+   "reason": "Levante 0-2 Atlético: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
