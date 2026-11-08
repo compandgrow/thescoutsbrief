@@ -1,0 +1,110 @@
+{
+ "id": "chelsea-sunderland-2026-11-08",
+ "format_version": 2,
+ "trend_used": "t1",
+ "experiment": "banter as beat 1 right after the hook, 2-row compare with the fan-question twist, ~30 s, outro question as a two-way choice",
+ "angle_source": "fan_buzz",
+ "fan_question": "Did the penalty lose Chelsea the game?",
+ "match": {
+  "pill": "SUN 1–0 CHE · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "Chelsea: sixty-nine percent possession, nought point five three expected goals.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "SUNDERLAND 1–0 CHELSEA",
+    "text": "*69%* POSSESSION\n*0.53* xG",
+    "size": 130,
+    "source": "ESPN Team Stats · BBC Sport Match Stats"
+   }
+  },
+  {
+   "say": "Ha! Sunderland's first league win since August. Against Chelsea.",
+   "emotion": "laughing",
+   "hit": true,
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "SUNDERLAND'S FIRST\nLEAGUE WIN SINCE *AUGUST*",
+    "size": 92,
+    "stamp": "FULL TIME L",
+    "sub": "Chelsea 5th, 16 pts · Sunderland 18th, 8 pts",
+    "source": "BBC Sport match report · PL table"
+   }
+  },
+  {
+   "say": "Fans blame the penalty. Open play only: Sunderland one point three eight expected goals, Chelsea nought point three two. Chelsea made a hundred and forty-eight final-third passes. Sunderland, thirty-five.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "IT WASN'T JUST THE PENALTY",
+    "teams": [
+     "SUNDERLAND",
+     "CHELSEA"
+    ],
+    "rows": [
+     {
+      "label": "OPEN-PLAY xG",
+      "a": 1.38,
+      "b": 0.32,
+      "fa": "1.38",
+      "fb": "0.32"
+     },
+     {
+      "label": "FINAL-THIRD PASSES",
+      "a": 35,
+      "b": 148,
+      "fa": "35",
+      "fb": "148"
+     }
+    ],
+    "source": "BBC Sport Match Stats"
+   }
+  },
+  {
+   "say": "Scout's pick: Enzo Le Fée. One shot, one goal, and three Premier League penalties this season.",
+   "emotion": "happy",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Enzo Le Fée",
+    "team": "Sunderland",
+    "rating": "–",
+    "stats": [
+     [
+      "shots",
+      "1"
+     ],
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "xG",
+      "0.79"
+     ],
+     [
+      "PL penalties",
+      "3"
+     ]
+    ],
+    "source": "ESPN shot map · BBC Sport report"
+   }
+  },
+  {
+   "say": "Penalty or performance: what lost Chelsea this one?",
+   "emotion": "smug",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "PENALTY *OR*\nPERFORMANCE?",
+    "source": "ESPN Team Stats · BBC Sport Match Stats"
+   }
+  }
+ ]
+}

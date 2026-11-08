@@ -1,0 +1,60 @@
+{
+ "match": "SUN 1-0 CHE (Premier League, 2026-11-08)",
+ "generated_at": "2026-11-08T18:10:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "SUN", "type": "milestone",
+   "claim": "Sunderland's first Premier League win since August; only their second league win of the season",
+   "numbers": {"league_wins_this_season": 2, "league_position_after": 18, "points": 8, "points_from_safety": 1},
+   "strength": "medium",
+   "sources": [
+    {"what": "BBC Sport match report ('first Premier League win since beating Fulham 1-0 ... in the second game of the season'; 'just their second in the league this season')", "url": "https://www.bbc.com/sport/football/live/cwm23qne5pqyt"},
+    {"what": "ESPN match recap ('win their first league game since August', 'lifts Sunderland off the bottom')", "url": "https://www.espn.co.uk/football/match/_/gameId/401879239/chelsea-sunderland"}
+   ],
+   "hook_angle": "Sunderland's first league win since August came against Chelsea, with 31% of the ball.",
+   "use_for": "banter",
+   "fresh_until": "2026-11-10"},
+  {"id": "t2", "team": "CHE", "type": "form",
+   "claim": "Chelsea have lost two of their last three Premier League games and stay fifth, two points off the top four",
+   "numbers": {"league_games": 3, "league_defeats": 2, "league_position": 5, "points": 16, "points_behind_top_four": 2},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/363.json (league games newest first: 2026-11-08 L 0-1, 2026-10-31 W 2-0, 2026-10-24 L 0-2); table in the BBC page (Chelsea 5th 16 pts, Liverpool 4th 18 pts)", "url": "https://www.espn.co.uk/football/team/results/_/id/363"},
+    {"what": "BBC Sport report ('lost their second league match in three', 'two points off the top four')", "url": "https://www.bbc.com/sport/football/live/cwm23qne5pqyt"}
+   ],
+   "hook_angle": "Chelsea: sixty-nine percent possession, 0.53 expected goals, second league defeat in three.",
+   "use_for": "context",
+   "fresh_until": "2026-11-10"}
+ ],
+ "fan_buzz": {
+  "thread": {"title": "Post-Match Thread: Sunderland v. Chelsea (r/chelseafc)", "upvotes": null, "comments": null, "url": "https://www.reddit.com/r/chelseafc/comments/1xr2mhw/postmatch_thread_sunderland_v_chelsea/"},
+  "themes": [
+   {"theme": "The penalty / refereeing: several of the top r/chelseafc posts in the 5 hours after the game are about the Brobbey penalty, the referee, and the Palmer penalty shout that VAR ruled outside the box", "share": "at least 4 of the top 15 post titles (RSS mode, no counts)", "confirmed_by": "BBC report: penalty 'controversial', referee judged Colwill pulled Brobbey while both grappled; VAR judged the Palmer foul to be outside the box", "use_for": "hook/story: test with xG"},
+   {"theme": "Brobbey's performance against Chelsea's centre-backs", "share": "2-3 post titles", "confirmed_by": "BBC report ('Brobbey put in a particularly impressive performance'); ESPN/insights: Brobbey 2 shots, 0.67 xG", "use_for": "player slot"}
+  ],
+  "club_subs": [{"club": "CHE", "hot_topic": "Sunderland penalty and referee Gillett", "heat": 14}]
+ },
+ "rejected": [
+  {"claim": "Alonso on Brobbey vs Chelsea's centre-backs ('He is not unstoppable...')", "reason": "Only seen as a Reddit post title quoting a journalist; not on a trusted page in our cache"},
+  {"claim": "Sunderland booed off at full-time against Dinamo Zagreb; Le Bris given more time", "reason": "Only the BBC report (one outlet, 'club sources'); not needed for the reel"},
+  {"claim": "Chelsea unbeaten/winning run in cups or 'W' at Liverpool in data/form/363.json", "reason": "ESPN form file marks the 1-1 Carabao Cup tie at Liverpool as a Chelsea W, but the match overview (chelsea-liverpool-2026-10-28) says Liverpool won the shoot-out 6-5; form run LWWLWW is not trusted beyond the league games"},
+  {"claim": "The penalty was wrong / a dive / Gillett had a bad game", "reason": "Opinion. BBC only says the award was 'controversial'. The reel tests the claim with xG instead of ruling on it"},
+  {"claim": "Chelsea 'slip to fifth'", "reason": "ESPN commentary says slip, BBC says stayed fifth; tables show fifth before and after. Only 'fifth' is used"},
+  {"claim": "Brobbey and Xhaka hobbling off with muscle injuries", "reason": "Injury; red line (no mocking injuries) and not needed"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "fan_buzz",
+  "fan_question": "Did the penalty lose Chelsea the game?",
+  "data_answer": "No. Chelsea had 69% of the ball and 0.53 xG; Sunderland's open-play xG alone was 1.38 to Chelsea's 0.32, before the penalty (0.79 xG) is counted.",
+  "evidence": [
+   "insights.json team_story: possession 31/69, xG 2.55/0.53",
+   "insights.json team_story: xG from open play 1.38/0.32 (BBC Match Stats)",
+   "insights.json banter_material: Sunderland's first league win since August (BBC, ESPN)"
+  ],
+  "fan_heat": "r/chelseafc front page after full time: several posts about the penalty and the referee (RSS mode, no vote or comment counts)",
+  "hook_angle": "Chelsea: sixty-nine percent possession, 0.53 expected goals.",
+  "why": "The biggest Chelsea argument is the penalty; our xG shows the game wasn't decided by it. A number-based answer and a banter angle at the same time."
+ },
+ "credits_used": 2,
+ "notes": "Budget check: 102/800 before, 104/800 after (13%). Calls: one Firecrawl search 'Sunderland Chelsea' (2 credits, --days 2). data/form/363.json and 366.json were fetched free (local fetch). Reddit in RSS mode (no keys): club CHE feed read; `reddit.py match` timed out, so no thread size or comment themes beyond titles. Reddit used as a signal only; no usernames or fan quotes used. Minute conflicts: BBC report says Brobbey off in the 77th minute, ESPN lineup says 67' (Isidor shot at 77' as a sub): scriptwriter must not quote the minute. Search pages (Sky live blog, chelseafc.com) were snippets only, not scraped, to save credits. No form claims span a gap (gaps lists are empty)."
+}

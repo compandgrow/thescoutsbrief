@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 102,
+  "credits": 104,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1471,6 +1471,11 @@
     "at": "2026-11-08T17:54:05Z",
     "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/366",
     "credits": 0
+   },
+   {
+    "at": "2026-11-08T17:55:20Z",
+    "what": "search Sunderland Chelsea",
+    "credits": 2
    }
   ]
  }

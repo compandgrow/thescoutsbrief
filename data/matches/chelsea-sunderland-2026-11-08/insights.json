@@ -1,0 +1,168 @@
+{
+ "match": {
+  "home": "Sunderland",
+  "away": "Chelsea",
+  "home_short": "SUN",
+  "away_short": "CHE",
+  "score": "1-0",
+  "competition": "English Premier League",
+  "date": "2026-11-08"
+ },
+ "data_mode": "web: cached ESPN match + team stats pages and BBC Sport match page; no PitchAPI; no official player ratings (best/worst are Scout's pick)",
+ "headline": "Chelsea had 69% of the ball and 0.53 xG; Sunderland had 31% and 2.55 xG, and won 1-0 from a 36th-minute penalty.",
+ "team_story": [
+  {
+   "label": "Possession %",
+   "home": 31,
+   "away": 69,
+   "why_it_matters": "Chelsea had the ball (BBC Opta 31.3 / 68.7) and did nothing with it",
+   "source": "data/research/scrape_4f0775d9a314.json (ESPN https://www.espn.co.uk/football/match/_/gameId/401879239/chelsea-sunderland) Team Stats 'Possession' 31% / 69%; BBC https://www.bbc.com/sport/football/live/cwm23qne5pqyt Match Stats 'Overall possession' 31.3% / 68.7%"
+  },
+  {
+   "label": "xG",
+   "home": 2.55,
+   "away": 0.53,
+   "why_it_matters": "Sunderland created far more: 2.55 to 0.53 (shot-map sum matches the team panel)",
+   "source": "data/research/scrape_4f0775d9a314.json ESPN Team Stats 'Expected Goals' 2.55 / 0.53; BBC Match Stats 'xG' 2.5457 / 0.5306; check in data/matches/chelsea-sunderland-2026-11-08/derived.json"
+  },
+  {
+   "label": "xG from open play",
+   "home": 1.38,
+   "away": 0.32,
+   "why_it_matters": "Without the 0.79 penalty and the set pieces, Sunderland still out-created Chelsea 1.38 to 0.32 in open play",
+   "source": "data/research/scrape_c74d96800865.json BBC Match Stats 'xG from open play' 1.3802 / 0.3161 (Chelsea 0.32 is 0.3161 rounded); penalty xG 0.79 in shots_espn.json shot n=6"
+  },
+  {
+   "label": "Successful final third passes",
+   "home": 35,
+   "away": 148,
+   "why_it_matters": "Chelsea lived in the final third (touches in the opposition box 21 v 14) and still managed 0.53 xG",
+   "source": "data/research/scrape_c74d96800865.json BBC 'Successful final third passes' 35 / 148; 'Total touches inside the opposition box' 14 / 21"
+  },
+  {
+   "label": "Shots",
+   "home": 9,
+   "away": 10,
+   "why_it_matters": "Shots were level (Chelsea 10, Sunderland 9), shots on target Chelsea 4, Sunderland 2: Chelsea's shots were low-quality",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879239 (data/research/scrape_ae904b060260.json) Shots 9 / 10, Shots on Goal 2 / 4"
+  }
+ ],
+ "tactical_change": {
+  "team": "Chelsea",
+  "minute": 46,
+  "before": "4-3-2-1",
+  "after": "4-3-2-1 (shape not reported as changed; Estêvão replaced Colwill at half-time, then Gusto and Welbeck on at 62')",
+  "trigger": "score state (0-1 down) and half-time sub",
+  "effect": "the second-half shift: Chelsea's xG rose from 0.19 (4 shots) in the first half to 0.34 (6 shots) in the second, while Sunderland's fell from 1.78 (5 shots) to 0.77 (4 shots) after BBC says Sunderland went defensive-first following the 67' Brobbey sub",
+  "evidence": [
+   {
+    "label": "Chelsea xG, 1st half v 2nd half",
+    "before": 0.19,
+    "after": 0.34,
+    "source": "data/matches/chelsea-sunderland-2026-11-08/derived.json (analysis.py, shots_espn.json; 1st half includes 45'+6')"
+   },
+   {
+    "label": "Sunderland xG, 1st half v 2nd half",
+    "before": 1.78,
+    "after": 0.77,
+    "source": "data/matches/chelsea-sunderland-2026-11-08/derived.json"
+   }
+  ],
+  "confidence": "low",
+  "note": "No formation change reported by ESPN/BBC lineups (Chelsea 4-3-2-1 per BBC; ESPN shows 4-3-2-1). This is the second-half shift only. The reel does not use it."
+ },
+ "best_player": {
+  "name": "Enzo Le Fée",
+  "team": "Sunderland",
+  "rating": null,
+  "label": "Scout's pick",
+  "stats": [
+   [
+    "Shots",
+    "1"
+   ],
+   [
+    "Goals",
+    "1"
+   ],
+   [
+    "xG",
+    "0.79"
+   ],
+   [
+    "PL penalties this season",
+    "3"
+   ]
+  ],
+  "why": "Scored the only goal, a 36th-minute penalty (xG 0.79, xGOT 0.76); BBC says his three Premier League penalties this season are more than any other player",
+  "source": "data/research/scrape_4f0775d9a314.json ESPN shot map n=6 (E. Le Fée 36' Penalty xG 0.79 xGOT 0.76, Goal); BBC https://www.bbc.com/sport/football/live/cwm23qne5pqyt image caption 'Enzo le Fee has scored three penalties in the Premier League this season, more than any other player'",
+  "alternatives": "Brobbey (2 shots, 0.67 xG, BBC fan-vote player of the match 7.16; not an official rating)"
+ },
+ "worst_player": {
+  "name": "Morgan Rogers",
+  "team": "Chelsea",
+  "rating": null,
+  "label": "Scout's pick",
+  "stats": [
+   [
+    "Shots",
+    "2"
+   ],
+   [
+    "Shots on goal",
+    "1"
+   ],
+   [
+    "xG",
+    "0.13"
+   ],
+   [
+    "Minutes",
+    "90"
+   ]
+  ],
+  "why": "Free header at 25' (xG 0.12) went narrowly wide; BBC says Rogers and Palmer 'did not have their best games'; Palmer had one shot, xG 0.04",
+  "anger_worthy": false,
+  "source": "data/research/scrape_4f0775d9a314.json ESPN Match Leaders (Rogers 2 shots, 1 SOG, 0.13 xG) and shot map n=3, n=9; BBC report 'Cole Palmer ... and Morgan Rogers did not have their best games' and 'Rogers had a free header in the area which he nodded narrowly wide'"
+ },
+ "surprise_stat": {
+  "value": "0.53",
+  "label": "Chelsea's expected goals from 69% possession and 648 passes",
+  "context": "Sunderland: 31% possession, 292 passes, 2.55 xG",
+  "source": "ESPN Team Stats (Expected Goals 2.55/0.53, Possession 31%/69%); BBC Match Stats (Total passes 292 / 648)"
+ },
+ "result_context": {
+  "winner": "Sunderland",
+  "loser": "Chelsea",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [
+  {
+   "fact": "Sunderland's first Premier League win since August: it was only their second league win of the season (BBC)",
+   "source": "BBC report https://www.bbc.com/sport/football/live/cwm23qne5pqyt ('first Premier League win since August' and 'just their second in the league this season'); ESPN/PA 'ended their winless run in the Premier League' (scrape_4f0775d9a314.json)"
+  },
+  {
+   "fact": "Chelsea: 69% possession, 648 passes at 89% accuracy, 148 final-third passes, 21 touches in the opposition box, and 0.53 xG",
+   "source": "BBC Match Stats; ESPN Team Stats (data/research/scrape_c74d96800865.json, scrape_ae904b060260.json)"
+  },
+  {
+   "fact": "Sunderland climbed from 20th to 18th with this win; Chelsea stayed fifth on 16 points, two points off the top four, and have lost two of their last three league games",
+   "source": "BBC report ('climbed from 20th to 18th', 'lost their second league match in three', 'two points off the top four'); BBC/ESPN tables in scrape_c74d96800865.json, scrape_4f0775d9a314.json (Chelsea 16 pts, 4th place Liverpool 18 pts)"
+  },
+  {
+   "fact": "Chelsea created 2 big chances and missed 2; Sunderland created 2 and missed 3, yet Sunderland won. Shots on target: Chelsea 4, Sunderland 2",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879239 Attack: Big Chances Created 2 / 2, Big Chances Missed 3 / 2; Shots on Goal 2 / 4"
+  }
+ ],
+ "caveats": [
+  "No official player ratings: best/worst are Scout's pick. BBC 'Average rating' on the match page is a reader vote and is not used as a rating.",
+  "The 36' penalty was controversial per BBC (referee Gillett judged Colwill pulled Brobbey while both grappled). Reel does not claim it was right or wrong; it uses xG to test whether it decided the match.",
+  "Substitution minute conflict: ESPN lists Isidor on for Brobbey at 67', BBC report text says 77th minute. Not quoted.",
+  "ESPN commentary says Chelsea 'slip to fifth'; BBC says 'stayed fifth' and tables show 5th both before and after. Reel says 'fifth' only.",
+  "Chelsea 0.32 open-play xG is BBC's 0.3161 rounded; BBC set-play xG Sunderland 0.38 / Chelsea 0.21 (0.3772 / 0.2146).",
+  "Shots on target: ESPN and BBC both give SUN 2, CHE 4. Use these panel numbers only (the parsed shot map outcome labels differ slightly for Fofana 66' and Palmer 85').",
+  "Reddit was available in RSS mode only (no counts)."
+ ]
+}
