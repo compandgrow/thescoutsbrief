@@ -1,35 +1,35 @@
 {
- "duration": 32.941,
+ "duration": 31.972,
  "beats": [
   {
    "beat": 0,
    "start": 0.45,
-   "end": 4.626
+   "end": 3.658
   },
   {
    "beat": 1,
-   "start": 4.946,
-   "end": 9.26
+   "start": 3.978,
+   "end": 8.291
   },
   {
    "beat": 2,
-   "start": 9.58,
-   "end": 15.378
+   "start": 8.611,
+   "end": 14.41
   },
   {
    "beat": 3,
-   "start": 15.698,
-   "end": 21.582
+   "start": 14.73,
+   "end": 20.614
   },
   {
    "beat": 4,
-   "start": 21.902,
-   "end": 26.659
+   "start": 20.934,
+   "end": 25.69
   },
   {
    "beat": 5,
-   "start": 26.979,
-   "end": 31.721
+   "start": 26.01,
+   "end": 30.752
   }
  ]
 }
