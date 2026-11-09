@@ -29,9 +29,9 @@
    "card": {
     "type": "banter",
     "kicker": "BANTER ALERT",
-    "text": "*1.37* xG BEFORE HALF-TIME.\n*0.15* AFTER.",
+    "text": "*1.37* xG BEFORE.\n*0.15* AFTER.",
     "stamp": "FADED OUT",
-    "sub": "Second half: 2 shots, 0 on target",
+    "sub": "2nd half: 0 on target",
     "source": "ESPN shot map (summed xG)"
    },
    "pause_after": 0.4
@@ -42,10 +42,25 @@
    "card": {
     "type": "compare",
     "kicker": "THEY RAN THE CLOCK",
-    "teams": ["ATLÉTICO", "BARCELONA"],
+    "teams": [
+     "ATLÉTICO",
+     "BARCELONA"
+    ],
     "rows": [
-     {"label": "POSSESSION %", "a": 37, "b": 63, "fa": "37", "fb": "63"},
-     {"label": "PASSES", "a": 391, "b": 675, "fa": "391", "fb": "675"}
+     {
+      "label": "POSSESSION %",
+      "a": 37,
+      "b": 63,
+      "fa": "37",
+      "fb": "63"
+     },
+     {
+      "label": "PASSES",
+      "a": 391,
+      "b": 675,
+      "fa": "391",
+      "fb": "675"
+     }
     ],
     "source": "BBC Sport, ESPN team stats"
    },
@@ -75,10 +90,14 @@
     "name": "Fermín López",
     "team": "Barcelona",
     "stats": [
-     ["goals", "2"],
-     ["shots", "6"],
-     ["on target", "3"],
-     ["xG", "0.92"]
+     [
+      "goals",
+      "2"
+     ],
+     [
+      "xG",
+      "0.92"
+     ]
     ],
     "source": "ESPN match leaders"
    },
@@ -90,7 +109,7 @@
    "card": {
     "type": "outro",
     "kicker": "@THESCOUTBRIEF",
-    "text": "BARÇA MANAGED IT\nOR ATLÉTICO *FADED*?",
+    "text": "*MANAGED*\nOR *FADED*?",
     "source": "ESPN results"
    }
   }
