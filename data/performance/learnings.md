@@ -1,5 +1,5 @@
 # What works on @thescoutbrief
-Updated 2026-11-09 · 19 reels reviewed · confidence: high (15+)
+Updated 2026-11-10 · 20 reels reviewed · confidence: high (15+)
 
 Early days: nineteen reels, 51-226 views, one share, three saves and no comments in total. The 2026-11-07 late batch: real-madrid-valencia is the best reel yet (226 views, skip 53.9%, watch ratio 0.287, 20.7 engagements/1k), troyes-psg the worst (51 views, 75.6% skip, 0.076). Patterns below are first signals, not proof. No format change made: troyes-psg crossed the failure line (75.6% skip, 0.076 ratio) but the fault was hook wording, not a format key, and the same format gave the best reel (valencia) the same day.
 
@@ -15,6 +15,7 @@ Early days: nineteen reels, 51-226 views, one share, three saves and no comments
 
 - Update 2026-11-09: man city-forest had banter at beat 1 (4.0 s) and the average viewer (6.4 s) reached it, ratio 0.201 above median, so banter holds viewers only when the hook did not lose them. troyes-psg lost them in the hook (average watch 2.2 s), the keeper twist at 5.0 s was never seen. Put the match paradox (lots of X, still lost) for the same club in the hook; streaks go to beat 1. Confidence: low
 - Update 2026-11-06 (2 more reels): real-madrid-aek-athens hook ends on "Still trailing." (73.1% skipped, no club named); liverpool-fenerbahce hook ends on "And they lost." (69.0% skipped) but banter at beat 1 gave watch ratio 0.226 (above median). Both support: name the subject early and don't end the hook on the result. Confidence: medium
+- Update 2026-11-10: chelsea-sunderland (fan_buzz angle, banter at 6.5 s) skip 60.9% (just better than median), watch 6.29 s / 0.175; the average viewer left as the hook ended, before the banter. Hook with two bare decimals about one club again did not hold; use the same measure for both clubs. Confidence: low
 
 ## Experiments to run next
 - Put the two-name fan question (with a stat line for each name) by ~10 s as beat 1 or 2, not at 24 s. Success: first comment or any share. Baseline 0 comments, 0 shares+saves/1k reach.
@@ -24,4 +25,4 @@ Early days: nineteen reels, 51-226 views, one share, three saves and no comments
 - Fan-driven angle: angle_source is still null or talking_point/data on every reel (Reddit keys unset), so there is no fan_buzz reel to compare yet.
 
 ## Channel baseline
-Medians from `performance.py table` (19 reels): views 178 · reach 157 · avg watch 6.35 s · watch ratio 0.181 · skip rate 62.2% · completion n/a (0) · engagements 6.0/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returned null; timeline shows 0)
+Medians from `performance.py table` (20 reels; last full recompute at 19): views 178 · reach 157 · avg watch 6.35 s · watch ratio 0.181 · skip rate 62.2% · completion n/a (0) · engagements 6.0/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returned null; timeline shows 0)

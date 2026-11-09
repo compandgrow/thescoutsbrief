@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T17:49:03Z",
+ "generated": "2026-11-09T23:49:44Z",
  "fixtures": [
   {
    "espn_id": "401884736",
@@ -2530,7 +2530,7 @@
    "date": "2027-02-13",
    "team": "BAY",
    "teams_text": [
-    "1. FC Union Berlin",
+    "1\\. FC Union Berlin",
     "Bayern Munich"
    ],
    "competition": "German Bundesliga",
