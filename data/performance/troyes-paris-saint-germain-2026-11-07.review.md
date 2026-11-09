@@ -1,0 +1,8 @@
+# troyes-paris-saint-germain-2026-11-07 — 24 h review (40 h after posting; day-1 timeline row: 51 views, 0 likes, 0 shares, 0 saves, follows 0, same as the snapshot)
+Scores: hook 75.6% skipped · held 2.22s of 29s (0.076) · 0 shares+saves/1k reach · 0 comments · 51 views
+vs channel median: hook worse (62.2%), held worse (0.181), value same (0.0)
+Main reason: the hook is an abstract claim with the result as its last words ("PSG missed seven big chances. One goal won it.") and no matched measure; a cold viewer gets no contrast to react to, so three in four swiped, and Instagram gave it only 44 reach, the lowest on the channel (median 157).
+Viewers left during: the hook itself (0.5–4.6 s); average viewer left at 2.2 s, before beat 1 "Troyes keeper Konaté made six saves..." (5.0 s) began.
+What worked: 29 s length and a 3-row compare were in range; the caption asks "dominance or luck?" with the 7-big-chances stat. Nothing else to credit: 0 likes, 0 saves.
+What should have worked: one measure for the same club, twist inside the hook (insights.json: 15 shots, 7 on target, 2 off the woodwork, 1.60 xG to 0.69). Hook line: "PSG hit the woodwork twice and had fifteen shots. Troyes kept it to one goal." Better, with club names and numbers first: "PSG: fifteen shots, seven on target, two off the woodwork." Card text: "15 SHOTS / 7 ON TARGET / 2 OFF THE POST". Beat 1 keeper stat (Konaté 6 saves) is a good twist; it just came after the hook had already lost viewers.
+Test next time: never end the hook on "won it"/"lost it"; state a club's own volume figures (shots, on target, woodwork) as the hook and keep the one-goal result for beat 1.

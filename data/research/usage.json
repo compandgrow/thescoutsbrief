@@ -1551,6 +1551,66 @@
     "at": "2026-11-08T23:52:46Z",
     "what": "search Manchester United Aston Villa",
     "credits": 2
+   },
+   {
+    "at": "2026-11-09T17:48:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879243/liverpool-crystal-palace",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:48:56Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:48:56Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:48:57Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:48:58Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:48:59Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:48:59Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:49:00Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:49:01Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:49:01Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:49:02Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-09T17:49:03Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 0
    }
   ]
  }
