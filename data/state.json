@@ -182,6 +182,15 @@
    "mode": "auto",
    "at": "2026-11-09",
    "scheduled_for": "2026-11-09T01:05:00Z"
+  },
+  {
+   "espn_id": "401882816",
+   "reel": "barcelona-atletico-madrid-2026-11-08",
+   "zernio_post": "6af10ff68797527ac574dd32",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-09",
+   "scheduled_for": "2026-11-09T01:12:00Z"
   }
  ],
  "skipped": [
