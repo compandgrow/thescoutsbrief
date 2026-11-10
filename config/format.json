@@ -1,15 +1,15 @@
 {
- "version": 2,
- "updated": "2026-10-30",
- "why": "v1 (35-65 s, build-up hook) got 73.9% skips and 3.6 s average watch on mun-bou-2026-10-25. v2 puts the payoff in the first 3 s and cuts the length.",
+ "version": 3,
+ "updated": "2026-11-10",
+ "why": "v3 shortens the target length from 30-45 s (max 50) to 28-35 s (max 40). Average watch time is the same whatever the length (median 6.49 s on the 14 reels of 35 s or less, 6.29 s on the 5 reels of 35-45 s), so extra seconds only lower the watch ratio: median 0.210 at 35 s or less against 0.175 at 35-45 s and 0.071 above 45 s. Skip rate is also better on short reels (57.7% against 60.9%). barcelona-atletico-madrid-2026-11-08 was planned at about 30 s, came out at 41.7 s inside the old limit and got a 0.146 ratio; aston-villa-manchester-united-2026-11-08 at 34.7 s got 0.220.",
  "owner_note": "The performance-analyst may change anything in 'tunable' (one change per version, see .claude/agents/performance-analyst.md). Nothing in 'locked' may change without the user.",
  "tunable": {
   "duration_s": {
    "target": [
-    30,
-    45
+    28,
+    35
    ],
-   "max": 50
+   "max": 40
   },
   "spoken_words_max": 110,
   "hook": {
@@ -114,6 +114,16 @@
    "from": "2026-10-30",
    "summary": "payoff in 3 s, 30-45 s, 5-8 beats, one story per reel",
    "evidence": "mun-bou-2026-10-25 review",
+   "judge_after_reels": 3,
+   "until": "2026-11-10",
+   "judged": "2026-11-10, after 19 v2 reels: kept. Against the 3 v1/pre-v1 reels, the median skip rate went from 73.9% to 59.1%, avg watch from 4.3 s to 6.43 s and the watch ratio from 0.071 to 0.188. Shares+saves per 1k reach: 0.0 median in both, with 3 v2 reels above 0 (5.2-6.1)."
+  },
+  {
+   "version": 3,
+   "from": "2026-11-10",
+   "summary": "duration target 30-45 s -> 28-35 s, max 50 -> 40 (only change)",
+   "evidence": "performance.py table 2026-11-10: watch ratio median 0.210 (<=35 s, 14 reels) vs 0.175 (35-45 s, 5 reels); barcelona-atletico-madrid-2026-11-08 and aston-villa-manchester-united-2026-11-08 reviews",
+   "compare_on": "watch ratio, skip rate, shares+saves per 1k reach against the v2 reels",
    "judge_after_reels": 3
   }
  ]
