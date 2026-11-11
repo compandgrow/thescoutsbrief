@@ -3,7 +3,7 @@
  "tagline": "The stories behind the players",
  "cadence_days": 2,
  "cadence_note": "One story every 2 days. The performance analyst may move this between 2 and 3 days based on results.",
- "post_hour_uk": "around 13:00-14:00 (lunch scroll), scheduled post_delay_minutes after review",
+ "post_hour_uk": "made in the evening match-day run (17:47 UK) every cadence_days days and scheduled post_delay_minutes after review, so it goes live around 19:30-21:00 UK",
  "theme": "STORY",
  "duration_s": {
   "target": [
@@ -83,5 +83,6 @@
   "approved": "user-approved 2026-11-02; only the user changes the host"
  },
  "music_style": "noir",
- "music_note": "Noir jazz chosen by the user (2026-11-02). engine/music.py styles: noir, thriller, match. reel.json \"music\" overrides."
+ "music_note": "Noir jazz chosen by the user (2026-11-02). engine/music.py styles: noir, thriller, match. reel.json \"music\" overrides.",
+ "runs_in": "the match-day scheduled task (it has the repo and the Zernio connector); the separate Scout Files task is paused"
 }
