@@ -1,0 +1,25 @@
+# Review: story-marc-andre-ter-stegen-2026-11-11
+
+**Verdict: FIX** (round 1)
+
+Checked against data/stories/marc-andre-ter-stegen-2026-11-11/story.json and the cached page data/research/scrape_a7eca9165b41.json (bundesliga.com, "Who will replace Manuel Neuer as Germany's next number one?"). Also opened scrape_706826f2e88a.json (ESPN 2019 row; rejected material, and none of it is used in the reel) and the search caches. Sheets: out/review_a.jpg, out/review_b.jpg, plus a second-half sheet covering 32-55 s.
+
+## Fix list
+
+1. **Beat 0 (hook), beat 6 (now) and caption line 1: "44 caps" is stated as his current total, but the source doesn't support that.** Bundesliga.com lists "International appearances: 44" in a piece written when Klopp announced his first squad for the September/October break. The piece says "Klopp begins his tenure", talks about the "first game" still to come and mentions "three matchdays" of 2026/27. That squad is the one where Klopp said ter Stegen "will be the goalkeeper who starts the first game", and those international windows have now been played. So on 11 Nov his total may well be more than 44. Do one of these:
+   - get his current cap total from an official source (DFB) or two trusted outlets, add it to story.json and use it, or
+   - put a date on the number everywhere. Hook say: "Forty-four caps when Neuer finally stepped away." (8 words, payoff still inside 3 s). Hook card kicker: "WHEN NEUER QUIT IN 2026". Beat 6: change the kicker "NOW · AJAX, ON LOAN FROM BARÇA" / sub "44 caps · …" so that 44 is not shown as a "now" figure (for example sub "44 caps when Klopp took over"). Caption line 1: "44 caps when Neuer quit. One of the world's best keepers."
+2. **Beat 6 card sub: "the frontrunner for the national team" leaves out the source's hedge.** The source says he "now **appears to be** the frontrunner in the national team". Change it to "appears to be the frontrunner", or use the claim the source does support: "Klopp's starter for the first game".
+3. **Beat 3: the "over 100 caps" line is not attributed in the say, and the card makes it look like Klopp said it.** This is Bundesliga.com's editorial opinion, not Klopp's. The say presents it as the narrator's own claim. The card puts it in quotation marks straight after the Klopp quote card in beat 2, and the only credit is the small footer, so viewers will read it as Klopp's words. Change the say to: "The league's own website says: in many other eras, he could easily have over one hundred caps. And that's not even the twist." Change the card sub to: "“…in many other eras he could easily have over 100 caps to his name” — Bundesliga.com".
+4. **Caption line 3 is not verbatim and changes the meaning.** "The official league site says he could easily have over 100 caps." drops "in many other eras", which makes it sound as if he should have 100 caps in this era. Change it to: "The official league site says that in many other eras he could easily have over 100 caps."
+5. **Source footer cannot be read (all beats; template).** "Source: Bundesliga.com" sits on top of the case-file prop at bottom right. It is grey on beige and partly covered, so it can't be read at phone size. The whole story rests on one official source, and fix 3 depends on the credit being visible. Move the footer off the prop, or give it a dark backing.
+
+## What passed
+
+- **Quotes are verbatim.** Beat 2: "For a long time, he was behind Manuel Neuer while still being one of the best goalkeepers in the world." Beat 5 (say and card): "For now, Marc-André ter Stegen will be the goalkeeper who starts the first game." Both are attributed to Klopp at his first squad announcement, which matches the source.
+- **Facts match the source.** Seven Spanish titles plus a UEFA Champions League, former Gladbach keeper, Barcelona: correct. Age 34: correct (and still correct on 2026-11-11). Ajax on loan from Barcelona: correct (The Athletic search snippet also has the loan). "Germany's most experienced goalkeeper at international level": correct. Neuer's second international retirement after the 2026 World Cup exit: correct.
+- **Never list.** The reel leaves out the injury/fitness sentence in Klopp's quote and the source's injury lines. It doesn't mention Neuer's current injury, uses nothing from `rejected` (no Reddit quote, no 2019 row, no Hoeneß), and has no "robbed" or "cheated" framing.
+- **Host, hook and outro.** Host is `presenter: frog3d`. The hook payoff "Forty-four caps" is spoken from 0.45 s, and the hook line is 9 words. Frame 0 shows "ONLY 44 CAPS." as the cover. The outro has the open question plus "Follow for the next Scout File".
+- **Specs.** 1080x1920, H.264 + AAC, 54.6 s (stories max is 60), 8 beats, -14.5 LUFS integrated, true peak -0.6 dBFS.
+- **Frames.** No clipped or overlapping text and no empty cards. Captions match the topic of each card.
+- **Note (not a fix).** For about 0.25 s after the cover (roughly frames 6-13), the hook headline drops out and then animates back in. This is the template's cover behaviour (`templates/match-reel.html`, `cover` logic), not something specific to this reel.
