@@ -11,19 +11,19 @@
  },
  "beats": [
   {
-   "say": "Forty-four caps. For one of the world's best keepers.",
+   "say": "Forty-four caps when Neuer finally stepped away.",
    "emotion": "shocked",
    "hit": true,
    "card": {
     "type": "hook",
-    "kicker": "ONE OF THE WORLD'S BEST KEEPERS",
+    "kicker": "WHEN NEUER QUIT IN 2026",
     "text": "ONLY\n*44* CAPS.",
     "size": 170,
     "source": "Bundesliga.com"
    }
   },
   {
-   "say": "Case file one: Marc-André ter Stegen. Seven Spanish titles and a Champions League with Barcelona.",
+   "say": "Case file one: ter Stegen. Seven Spanish titles and a Champions League with Barcelona.",
    "emotion": "smug",
    "card": {
     "type": "chapter",
@@ -49,7 +49,7 @@
    }
   },
   {
-   "say": "In many other eras, he could easily have over one hundred caps. And that's not even the twist.",
+   "say": "The league's own website says: in many other eras, he could easily have over one hundred caps. And that's not even the twist.",
    "emotion": "disappointed",
    "card": {
     "type": "stat",
@@ -57,7 +57,7 @@
     "value": 100,
     "unit": "CAPS",
     "label": "what he *could* have had",
-    "sub": "“…he could easily have over 100 caps to his name”",
+    "sub": "“…in many other eras he could easily have over 100 caps to his name” — Bundesliga.com",
     "source": "Bundesliga.com"
    }
   },
@@ -92,11 +92,11 @@
    "emotion": "smug",
    "card": {
     "type": "stat",
-    "kicker": "NOW · AJAX, ON LOAN FROM BARÇA",
+    "kicker": "AJAX, ON LOAN FROM BARÇA",
     "value": 34,
     "unit": "YRS",
     "label": "Germany's most *experienced* keeper",
-    "sub": "44 caps · the frontrunner for the national team",
+    "sub": "44 caps when Klopp took over · Klopp's starter for the first game",
     "source": "Bundesliga.com"
    }
   },

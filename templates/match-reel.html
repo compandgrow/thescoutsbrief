@@ -19,6 +19,9 @@ html, body { margin:0; background:#000; }
 #pill { right:60px; top:142px; border:2px solid var(--violet); border-radius:40px; padding:10px 22px; font-size:28px; letter-spacing:1px; background:rgba(var(--rgb),.12); }
 #handle { left:60px; top:1580px; z-index:6; font-size:26px; color:var(--muted); }
 #source { right:60px; top:1580px; z-index:6; font-size:22px; color:var(--muted); max-width:620px; text-align:right; }
+/* 3D hosts (Scout Files): footer sits over desk props, so give it a dark backing */
+body.host3d #handle, body.host3d #source { background:rgba(8,5,5,.85); color:#e9dfd2; padding:6px 14px; border-radius:10px; }
+body.host3d #source:empty { display:none; }
 #cards { left:60px; top:250px; width:960px; height:640px; }
 .card { position:absolute; inset:0; opacity:0; }
 .kicker { display:inline-block; background:var(--violet); color:var(--ink); font-size:30px; padding:8px 18px; letter-spacing:2px; }
@@ -282,6 +285,7 @@ if (HOSTS_3D[reel.presenter]) {
   const [modPath, fn] = HOSTS_3D[reel.presenter];
   const createDetective = (await import(modPath))[fn];
   for (const id of ["presenter", "grid", "slab"]) document.getElementById(id).style.display = "none";
+  document.body.classList.add("host3d");
   Object.assign(document.getElementById("captions").style, { background: "rgba(8,5,5,.72)", borderRadius: "18px", padding: "0 20px", boxSizing: "border-box" });
   pres = createDetective(document.getElementById("stage"), { theme: TH, before: document.getElementById("cards"), mouthTrack: mouth, fps: FPS, pixelRatio: Number(q.get("pr")) || reel.pixel_ratio || 1 });
 } else {
