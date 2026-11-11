@@ -22,7 +22,7 @@ Arguments: none (auto: every finished match that qualifies today), a match id (o
 | 1 | `fixture-scout` | `data/queue.json` | `ready` empty → report `later_today` kickoffs and stop |
 | 2 | `data-collector` | `data/matches/<id>/` + `_overview.md` | score, team stats and either shots or lineups present |
 | 3 | `match-analyst` | `insights.json` (+ `analysis.py`) | every number has a `source` |
-| 3b | `trend-scout` | `data/matches/<id>/trends.json` (+ `data/form/<team>.json`) | every talking point has 2 trusted outlets, 1 official source, or computed form; ≤ 14 credits. Empty is fine |
+| 3b | `trend-scout` (**never skip**) | `data/matches/<id>/trends.json` (+ `data/form/<team>.json`) | must run for every reel, including the Reddit step (`engine/reddit.py match` + `club`, free, no keys needed). Every talking point has 2 trusted outlets, 1 official source, or computed form; ≤ 14 credits. An empty result is fine, a missing file is not |
 | 4 | `scriptwriter` | `reels/<id>/reel.json` (with `match.league`), `caption.txt` | follows `config/format.json` (beats, words, hook payoff in 3 s) |
 | 5 | `producer` | `reels/<id>/out/reel.mp4` | renders, within `format.json` duration max |
 | 6 | `reviewer` | `reels/<id>/review.md` | PASS. FIX → back to 4/5, max 2 rounds, then escalate |
