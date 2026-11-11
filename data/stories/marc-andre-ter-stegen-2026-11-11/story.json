@@ -1,0 +1,157 @@
+{
+ "id": "marc-andre-ter-stegen-2026-11-11",
+ "status": "ok",
+ "player": "Marc-André ter Stegen",
+ "club_key": "BAR",
+ "angle": "Called one of the best goalkeepers in the world, yet stuck on 44 Germany caps because for years Manuel Neuer stood in his way. Now, at 34, Neuer is gone for a second time and Klopp has named ter Stegen the man who starts.",
+ "why_now": "Trending on r/soccer on 2026-11-11: ter Stegen talking about years behind Neuer for Germany. Same day, the Bayern sub reported Neuer is out injured. The Reddit post is signal only and its quote is not used. Every fact below comes from the official Bundesliga site.",
+ "open_loop": "One of the best goalkeepers in the world, with only 44 caps. How?",
+ "hook_line": "One of the world's best keepers. Only 44 caps.",
+ "beats": [
+  {
+   "slot": "cold_open",
+   "fact": "Germany coach Jürgen Klopp: ter Stegen 'was behind Manuel Neuer while still being one of the best goalkeepers in the world'. He has 44 international appearances.",
+   "year": "2026",
+   "numbers": {
+    "international_appearances": 44
+   },
+   "quote": "For a long time, he was behind Manuel Neuer while still being one of the best goalkeepers in the world.",
+   "sources": [
+    {
+     "outlet": "Bundesliga.com (official league site)",
+     "url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099",
+     "cached": "data/research/scrape_a7eca9165b41.json"
+    }
+   ]
+  },
+  {
+   "slot": "setup",
+   "fact": "He used to play for Borussia Mönchengladbach. With Barcelona he has won seven Spanish titles and the UEFA Champions League. He has played at the top of European football for almost his whole career.",
+   "year": null,
+   "numbers": {
+    "spanish_titles": 7,
+    "champions_league_titles": 1
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "Bundesliga.com (official league site)",
+     "url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099",
+     "cached": "data/research/scrape_a7eca9165b41.json"
+    }
+   ]
+  },
+  {
+   "slot": "conflict",
+   "fact": "The problem for Germany was Manuel Neuer. ter Stegen has only 44 caps. The official league site says that 'in many other eras he could easily have over 100 caps to his name'.",
+   "year": null,
+   "numbers": {
+    "international_appearances": 44,
+    "could_have_had": "over 100"
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "Bundesliga.com (official league site)",
+     "url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099",
+     "cached": "data/research/scrape_a7eca9165b41.json"
+    }
+   ]
+  },
+  {
+   "slot": "twist",
+   "fact": "After Germany went out of the 2026 World Cup, Manuel Neuer retired from international football for the second time. When new Germany coach Jürgen Klopp announced his first squad, he named ter Stegen as his starting goalkeeper.",
+   "year": "2026",
+   "numbers": {
+    "neuer_international_retirements": 2
+   },
+   "quote": "For now, Marc-André ter Stegen will be the goalkeeper who starts the first game.",
+   "sources": [
+    {
+     "outlet": "Bundesliga.com (official league site)",
+     "url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099",
+     "cached": "data/research/scrape_a7eca9165b41.json"
+    }
+   ]
+  },
+  {
+   "slot": "now",
+   "fact": "He is 34 and plays for Ajax this season on loan from Barcelona. He is now Germany's most experienced goalkeeper at international level, and the official league site calls him the frontrunner for the national team.",
+   "year": "2026",
+   "numbers": {
+    "age": 34,
+    "international_appearances": 44
+   },
+   "quote": "He brings the experience we need and is doing a very good job at Ajax.",
+   "sources": [
+    {
+     "outlet": "Bundesliga.com (official league site)",
+     "url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099",
+     "cached": "data/research/scrape_a7eca9165b41.json"
+    }
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "text": "For now, Marc-André ter Stegen will be the goalkeeper who starts the first game.",
+   "who": "Jürgen Klopp, Germany head coach",
+   "when": "2026, when announcing his first Germany squad (Sept/Oct international break)",
+   "where": "squad announcement, reported by Bundesliga.com",
+   "source_url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099"
+  },
+  {
+   "text": "I've known Marc-André for many years. For a long time, he was behind Manuel Neuer while still being one of the best goalkeepers in the world.",
+   "who": "Jürgen Klopp, Germany head coach",
+   "when": "2026, when announcing his first Germany squad",
+   "where": "squad announcement, reported by Bundesliga.com",
+   "source_url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099"
+  },
+  {
+   "text": "He brings the experience we need and is doing a very good job at Ajax.",
+   "who": "Jürgen Klopp, Germany head coach",
+   "when": "2026, when announcing his first Germany squad",
+   "where": "squad announcement, reported by Bundesliga.com",
+   "source_url": "https://www.bundesliga.com/en/bundesliga/news/germany-next-number-one-neuer-baumann-urbig-ter-stegen-world-cup-38099"
+  }
+ ],
+ "outro_question": "All those years in Neuer's shadow: was ter Stegen the unluckiest goalkeeper of his generation? Follow for the next Scout File.",
+ "writer_notes": [
+  "Do not say 'a decade' or give a number of years behind Neuer. That is not sourced; use Klopp's words 'for a long time'.",
+  "Do not mention injuries, fitness or why he went to Ajax on loan (never: health). The source mentions injuries, and Klopp's full quote includes 'He was injured at an unfortunate time'. Leave that sentence out.",
+  "Neuer: say only that he retired from international football for the second time after the 2026 World Cup exit. Do not mention Neuer's current injury.",
+  "Frame the story as respect for both keepers. No 'robbed' or 'cheated' framing, and nothing against Neuer."
+ ],
+ "rejected": [
+  {
+   "claim": "ter Stegen quote trending on Reddit ('Did I sometimes have to put my fist in my pocket?... maybe I deserved the chance more')",
+   "reason": "Found only on Reddit; 2 searches found no trusted outlet carrying it. Reddit is never a fact source."
+  },
+  {
+   "claim": "2019 public row: ter Stegen called missing Euro qualifiers a 'massive blow', Neuer said his comments were not helpful, Uli Hoeneß said Germany should 'put Ter Stegen in a corner and make him apologise to Neuer', Löw replied",
+   "reason": "Only one trusted outlet (ESPN, 2 articles) found within the credit budget; a Guardian search returned nothing. That is short of 2 outlets / 1 official source."
+  },
+  {
+   "claim": "Hoeneß threatened that Bayern would stop releasing players to Germany if ter Stegen replaced Neuer (2019)",
+   "reason": "ESPN reports it secondhand: 'According to Sport Bild ... reportedly said'. That is an unconfirmed report and Sport Bild is not trusted."
+  },
+  {
+   "claim": "ter Stegen's injuries, his fitness and the reason for the Ajax loan / 'falling out of favour' at Barcelona",
+   "reason": "Red line (health) and not needed. 'Falling out of favour' appears only in an ESPN search snippet with no cached page."
+  },
+  {
+   "claim": "kicker: ter Stegen played the first two games after Neuer's first retirement",
+   "reason": "Search snippet only; no cached page (budget). Not needed."
+  },
+  {
+   "claim": "Other trends today: Lisandro Martínez–Tielemans flight clash (Man Utd)",
+   "reason": "'It's understood' = unconfirmed report (never: rumours)."
+  },
+  {
+   "claim": "Other trends today: Mourinho 'destroying' Sabry in a 2001 press conference",
+   "reason": "Cruelty framing; the story only works by mocking a player."
+  }
+ ],
+ "research_notes": "The local free fetch was blocked by the proxy (CONNECT 403), so every scrape went through Firecrawl. All beats rest on one official source (Bundesliga.com, the DFL's official league site).",
+ "credits_used": 10
+}
