@@ -1,0 +1,115 @@
+{
+ "id": "story-marc-andre-ter-stegen-2026-11-11",
+ "series": "scout-files",
+ "story_id": "marc-andre-ter-stegen-2026-11-11",
+ "format_version": "story-1",
+ "experiment": "number-first hook (44 caps) with payoff inside 3 s",
+ "presenter": "frog3d",
+ "match": {
+  "pill": "SCOUT FILES #1 · TER STEGEN",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Forty-four caps. For one of the world's best keepers.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "ONE OF THE WORLD'S BEST KEEPERS",
+    "text": "ONLY\n*44* CAPS.",
+    "size": 170,
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "Case file one: Marc-André ter Stegen. Seven Spanish titles and a Champions League with Barcelona.",
+   "emotion": "smug",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 1",
+    "year": "MÖNCHENGLADBACH · BARCELONA",
+    "text": "7 SPANISH TITLES.\n*CHAMPIONS*\nLEAGUE.",
+    "size": 110,
+    "sub": "top of European football for almost his whole career",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "The problem? Manuel Neuer. Jürgen Klopp: for a long time, he was behind Manuel Neuer while still being one of the best goalkeepers in the world.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "GERMANY",
+    "text": "BEHIND\n*MANUEL NEUER*.",
+    "size": 120,
+    "sub": "“For a long time, he was behind Manuel Neuer…” — Jürgen Klopp",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "In many other eras, he could easily have over one hundred caps. And that's not even the twist.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "stat",
+    "kicker": "IN MANY OTHER ERAS: OVER",
+    "value": 100,
+    "unit": "CAPS",
+    "label": "what he *could* have had",
+    "sub": "“…he could easily have over 100 caps to his name”",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "After the twenty twenty-six World Cup exit, Neuer retired from international football. For the second time.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 3",
+    "year": "2026 · AFTER THE WORLD CUP",
+    "text": "NEUER STEPS\nAWAY. *AGAIN*.",
+    "size": 120,
+    "sub": "retired from international football for the second time",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "Then Klopp named his starter. For now, Marc-André ter Stegen will be the goalkeeper who starts the first game.",
+   "emotion": "excited",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD",
+    "text": "FOR NOW, MARC-ANDRÉ\nTER STEGEN WILL BE\nTHE GOALKEEPER WHO\n*STARTS* THE FIRST GAME.",
+    "size": 72,
+    "who": "Jürgen Klopp, Bundesliga.com, 2026",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "He's thirty-four, on loan at Ajax, and now Germany's most experienced goalkeeper.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "NOW · AJAX, ON LOAN FROM BARÇA",
+    "value": 34,
+    "unit": "YRS",
+    "label": "Germany's most *experienced* keeper",
+    "sub": "44 caps · the frontrunner for the national team",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "So, was he the unluckiest keeper of his generation? Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #1",
+    "text": "THE *UNLUCKIEST*\nKEEPER OF HIS\nGENERATION?",
+    "size": 110,
+    "source": ""
+   }
+  }
+ ]
+}
