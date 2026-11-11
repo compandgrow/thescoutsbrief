@@ -1,1 +1,12 @@
-{"done": [], "skipped": []}
+{
+ "done": [
+  {
+   "id": "marc-andre-ter-stegen-2026-11-11",
+   "player": "Marc-André ter Stegen",
+   "club_key": "BAR",
+   "zernio_post": "6af4bd472fc32492846e7006",
+   "scheduled_for": "2026-11-11T20:08:00Z"
+  }
+ ],
+ "skipped": []
+}

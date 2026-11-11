@@ -191,6 +191,15 @@
    "mode": "auto",
    "at": "2026-11-09",
    "scheduled_for": "2026-11-09T01:12:00Z"
+  },
+  {
+   "reel": "story-marc-andre-ter-stegen-2026-11-11",
+   "series": "scout-files",
+   "zernio_post": "6af4bd472fc32492846e7006",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-11",
+   "scheduled_for": "2026-11-11T20:08:00Z"
   }
  ],
  "skipped": [
