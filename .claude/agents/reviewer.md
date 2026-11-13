@@ -21,7 +21,6 @@ Checks
 6b. **Trends** — every form run, streak, milestone or storyline in `say`, cards or caption must be a `talking_points` entry in `trends.json` with strength `strong` or `medium`; form counts must match `data/form/<team_id>.json` exactly (recount the W/D/L). Fail any trend claim that isn't there, any transfer rumour, and anything from `rejected`.
 7. **Specs** — 1080x1920, H.264 + AAC, duration within `config/format.json` → `tunable.duration_s.max` and beat count within `beats`, loudness about -14 LUFS (`ffprobe`/`ebur128`).
 7b. **Scout Files stories** (reel.json has `"series": "scout-files"`): every fact and quote must be in `data/stories/<id>/story.json` with its sources; open at least two cached source pages and confirm. Fail anything from `config/stories.json` → `never` (private life, health, criminal or legal claims, rumours, cruelty, "exposed"/"fraud" labels), any quote that isn't verbatim, and any claim from `rejected`. The host must be `presenter: frog3d`. Check the story's hook lands within 3 s and the outro has the open loop or question.
-7c. **Exhibit prop** (if reel.json has `prop`): it's a generic object (no person, face, crest, logo, kit or brand), it's visible in the frames from its beat on, and it doesn't cover the cards or captions.
 8. **Caption** — `caption.txt` exists, no unsupported claims.
 
 Output: `PASS` or `FIX` followed by a numbered list, each item naming the beat and the exact change. Write the verdict to `reels/<id>/review.md`. Be strict; after two FIX rounds, escalate to the user instead of looping.
