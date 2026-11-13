@@ -1,7 +1,7 @@
 # What works on @thescoutbrief
-Updated 2026-11-10 · 22 reels reviewed · confidence: high (15+)
+Updated 2026-11-12 · 23 reels reviewed (22 `match`, 1 `scout-files`) · confidence: high for match reels (15+), low for Scout Files (1 reel)
 
-The account is still small: 22 reels, 51-226 views each, one share, three saves and **zero comments in total**. What we learn from the hook and from holding viewers is getting solid. What wins shares and comments is still unproven. Newest: aston-villa-man utd has the best skip rate yet (45.8%); barcelona-atletico (62.5%, 0.146) ran 41.7 s.
+The account is still small: 23 reels, 51-226 views each, one share, three saves and **zero comments in total**. What we learn from the hook and from holding viewers is getting solid. What wins shares and comments is still unproven. Newest: aston-villa-man utd has the best skip rate yet (45.8%); barcelona-atletico (62.5%, 0.146) ran 41.7 s.
 
 **Format v3 (2026-11-10): length target is now 28-35 s, max 40 s** (was 30-45, max 50). Write about 70-85 spoken words; the 110-word cap is not a target.
 
@@ -15,12 +15,21 @@ The account is still small: 22 reels, 51-226 views each, one share, three saves 
 - The fan_buzz angle has not yet beaten the data angles on comments or shares. Evidence: chelsea-sunderland, villa-united and barcelona-atletico: 0 comments, 0 shares+saves, median skip 60.9% (spread 45.8-62.5%) against 62.2% for the 19 other reels. Keep using it, but the hook rule matters more than the angle. Confidence: low
 - Put the trend with `use_for: hook` in the hook. Put `best_angle` (when it is a streak) in beat 1 or 2, never only in the outro. Evidence: roma-man utd left the nine-game winless run to 11 s (average watch 7.3 s); barcelona-atletico left t2 (two home defeats in a row, the best_angle) to the outro at 32 s. Confidence: low
 
+## Scout Files (player stories, Inspector Croak), judged only against Scout Files
+Only 1 reel so far, so these are early. Treat them as fixes and experiments, not proven rules.
+- Fix: the cold open must hold a contrast and name the player, not a bare number. Use praise vs number ("One of the world's best keepers. Forty-four caps.") or number vs number ("Forty-four caps. He could have had over a hundred."). Beat 1 explains the contrast; the CV (titles, clubs) never goes in beat 1. Evidence: ter-stegen hook "Forty-four caps when Neuer finally stepped away." with no name and no contrast: 68.8% skipped, average viewer left at 4.7 s just as beat 1 began listing "Seven Spanish titles…". The "over 100 caps" contrast came at 19.8 s. Confidence: low (1 reel, clear failure)
+- Fix: aim for about 35 s, not 40-55. The average viewer left at 4.7 s of 55 s (watch ratio 0.086, 4th worst of 23 reels). Match reels show viewers leave at 6-8 s whatever the length. Cut to hook, why, twist, quote, question. Evidence: ter-stegen 55.4 s, 0.086; match reels at 35 s or less have a median ratio of 0.210. Confidence: low
+- Scout Files #1 won 0 follows and 0 profile views from 123 reach. The series exists to win followers, so follows and profile views per 1k reach are its main score.
+
 ## Experiments to run next
+- Scout Files #2-#4: contrast cold open (name + praise or ceiling vs number) and about 35 s with beat 1 = the reason. Judge against ter-stegen: skip 68.8%, average watch 4.7 s, ratio 0.086, 0 follows. Success: skip below 62% and ratio above 0.15. If it works, the analyst sets `config/stories.json` `duration_s` to [30, 40] (left as it is for now, because story-writer.md hardcodes `format_version: "story-1"`, so a version bump can't be tracked yet).
 - First v3 reels (28-35 s, about 70-85 words). Judge after 3 reels against the v2 medians: watch ratio 0.188, skip 59.1%, shares+saves 0.0/1k reach. Success: watch ratio median above 0.21 and skip no worse.
 - Paradox hook + surprise_stat at beat 1. Use "<club> X. <club> Y. Still <score>." or "<club> X. <club> Y.", then the reason at about 5 s (e.g. "first three shots: 0.97 xG, two goals"). Success: average watch above 8.5 s (only bayern-mainz 8.6 and valencia 9.5 got there).
 - Question at beat 2, about 11 s: the two-name fan question with a stat line for each name, repeated as the caption's first line. Success: first comment on the channel, or any share.
 - Post time: 13 reels at 01 UTC (median skip 57.7%, ratio 0.201, 179 views) against 6 at 19-20 UTC (61.55%, 0.178, 160 views). Zernio best-time has 1-4 posts per slot, too few to trust. Keep 01 UTC as the default until a slot has 5+ reels.
 
 ## Channel baseline
-Medians from `performance.py table` (22 reels, all `match` series): views 171 · reach 152.5 · avg watch 6.32 s · watch ratio 0.179 · skip rate 61.6% · completion n/a (Instagram returns 0) · engagements 6.2/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returns null; timeline shows 0 on every reel).
+Medians from `performance.py table` (all 23 reels, both series): views 168 · reach 151 · avg watch 6.29 s · watch ratio 0.176 · skip rate 62.2% · engagements 6.2/1k · shares+saves 0.0/1k.
+`match` series (22 reels): views 171 · reach 152.5 · avg watch 6.32 s · watch ratio 0.179 · skip rate 61.6% · completion n/a (Instagram returns 0) · engagements 6.2/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returns null; timeline shows 0 on every reel).
 Format v2 only (19 reels): skip 59.1% · avg watch 6.43 s · watch ratio 0.188.
+`scout-files` series (1 reel, story-1): views 137 · reach 123 · avg watch 4.71 s of 55 s · watch ratio 0.086 · skip 68.8% · shares+saves 0.0/1k · follows 0 · profile views 0/1k.
