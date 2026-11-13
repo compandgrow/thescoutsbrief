@@ -14,3 +14,4 @@ data/matches/*/*.json
 data/research/*.json
 !data/research/usage.json
 data/reddit/
+reels/*/props/

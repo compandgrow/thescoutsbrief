@@ -82,6 +82,7 @@ body.host3d #source:empty { display:none; }
   <div id="source" class="abs"></div>
   <div id="flash" class="abs"></div>
 </div>
+<script type="importmap">{ "imports": { "three": "/node_modules/three/build/three.module.js" } }</script>
 <script type="module">
 import { createPresenter, emotionAt, slamAt, fistAt } from "/presenter/presenter.js";
 
@@ -287,7 +288,10 @@ if (HOSTS_3D[reel.presenter]) {
   for (const id of ["presenter", "grid", "slab"]) document.getElementById(id).style.display = "none";
   document.body.classList.add("host3d");
   Object.assign(document.getElementById("captions").style, { background: "rgba(8,5,5,.72)", borderRadius: "18px", padding: "0 20px", boxSizing: "border-box" });
-  pres = createDetective(document.getElementById("stage"), { theme: TH, before: document.getElementById("cards"), mouthTrack: mouth, fps: FPS, pixelRatio: Number(q.get("pr")) || reel.pixel_ratio || 1 });
+  // optional story exhibit: reel.prop = { file: "props/x.glb" (relative to the reel folder), beat: n, size: 0.5 }
+  const prop = reel.prop && reel.prop.file ? { url: `/${dir}/${reel.prop.file}`, from: reel.prop.beat != null && beats[reel.prop.beat] ? beats[reel.prop.beat].start : 0, size: reel.prop.size } : null;
+  pres = createDetective(document.getElementById("stage"), { theme: TH, before: document.getElementById("cards"), mouthTrack: mouth, fps: FPS, pixelRatio: Number(q.get("pr")) || reel.pixel_ratio || 1, prop });
+  if (pres.loaded) await pres.loaded;
 } else {
   pres = createPresenter(document.getElementById("presenter"), { theme: { accent: TH.accent, suit: TH.suit, desk: TH.desk, lapel: TH.lapel } });
 }

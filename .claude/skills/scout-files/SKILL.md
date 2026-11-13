@@ -17,6 +17,7 @@ Arguments: none (auto: make one story if it's due), `force` (make one now), or a
 |---|---|---|---|
 | 1 | `story-scout` | `data/stories/<id>/story.json` | every beat sourced (2 trusted outlets or 1 official); nothing from `never`. `status: no_story` → record in `skipped`, report, stop |
 | 2 | `story-writer` | `reels/story-<id>/reel.json` (`presenter: frog3d`, `series: scout-files`), `caption.txt` | structure + duration from `config/stories.json`, hook payoff within 3 s |
+| 2b | `story-writer` (prop) | `reels/story-<id>/props/prop.glb` + `prop` in reel.json | optional: CC0 catalogue first, else free forge; skip if both fail |
 | 3 | setup | | `bash setup.sh` (voice models etc.) only now |
 | 4 | `producer` | `reels/story-<id>/out/reel.mp4` | renders, ≤ `duration_s.max`; the 3D frog host (WebGL) appears in the frames |
 | 5 | `reviewer` | `reels/story-<id>/review.md` | PASS (incl. the Scout Files checks). FIX → back to 2/4, max 2 rounds, then escalate |

@@ -1,7 +1,7 @@
 {
  "id": "demo-story",
  "match": {
-  "pill": "SCOUT FILES \u00b7 DEMO",
+  "pill": "SCOUT FILES · DEMO",
   "league": "STORY"
  },
  "beats": [
@@ -10,7 +10,7 @@
    "emotion": "shocked",
    "card": {
     "type": "hook",
-    "kicker": "SCOUT FILES \u00b7 DEMO",
+    "kicker": "SCOUT FILES · DEMO",
     "text": "HE WAS *RELEASED*\nAT FIFTEEN.",
     "size": 130,
     "source": "demo"
@@ -22,7 +22,7 @@
    "card": {
     "type": "chapter",
     "kicker": "CHAPTER 1",
-    "year": "DEMO \u00b7 2015",
+    "year": "DEMO · 2015",
     "text": "THE ACADEMY\nSAID *NO*.",
     "sub": "demo text, not a real event",
     "source": "demo"
@@ -53,5 +53,12 @@
    }
   }
  ],
- "presenter": "frog3d"
+ "presenter": "frog3d",
+ "prop": {
+  "file": "props/prop.glb",
+  "beat": 1,
+  "size": 0.5,
+  "source": "three.ws catalogue (Poly Haven, CC0)",
+  "url": "https://pub-2534e921bf9c4314addcd4d8a6e98b7b.r2.dev/objects/polyhaven/glb/football.glb"
+ }
 }

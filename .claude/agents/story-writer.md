@@ -21,6 +21,13 @@ Input: `data/stories/<id>/story.json`. Output: `reels/story-<id>/reel.json` and 
 - Top-level fields: `"series": "scout-files"`, `"story_id"`, `"format_version": "story-1"`, `"experiment": null or a short name`.
 - `say` spells numbers as words; cards keep digits. Every card has a short `source` ("BBC Sport, Guardian").
 
+## Exhibit prop (one per story, optional but encouraged)
+Pick one generic object that sums up the story (a trophy, a football, a contract, a briefcase of cash, a goalkeeper glove, a red card) and put it on Inspector Croak's desk from the beat where it's first mentioned:
+1. `python3 engine/props.py search "<object>"` lists free CC0 catalogue models (photo scans, best quality). If one fits: `python3 engine/props.py catalog reels/story-<id> <glb_url> --beat <n> --size 0.5`.
+2. Otherwise `python3 engine/props.py forge reels/story-<id> "<generic object, material, style>" --beat <n> --size 0.6` (free AI generation, about 3-4 minutes).
+3. If both fail, carry on without a prop. Never a real person, face, club crest, badge, logo, kit or brand.
+Say the object in the script when it appears ("Exhibit A: the glove.").
+
 ## Rules
 - Only facts and quotes from `story.json` beats/quotes, exactly as written. Nothing from `rejected`.
 - Nothing from `config/stories.json` → `never`, even as a joke. No "exposed", "fraud", "snake", or similar labels. Scout can be cheeky about football choices, not about people's lives.

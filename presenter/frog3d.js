@@ -256,6 +256,29 @@ export function createFrog(stage, opts = {}) {
   const lampLight = new THREE.PointLight(0xffc77a, 5, 3.5, 1.5); lampLight.position.set(-1.07, 0.75, 0.8); scene.add(lampLight);
   const rage = new THREE.PointLight(0xff2a1a, 0, 6, 1.4); rage.position.set(0, 2.2, 1.6); scene.add(rage);
 
+  // ---------- optional story "exhibit": a 3D prop (GLB) on the desk, e.g. from three.ws forge_free or a CC0 catalogue ----------
+  // opts.prop = { url, from (seconds), size (metres, default 0.5) }
+  const exhibit = new THREE.Group(); exhibit.position.set(0.5, 0.3, 1.5); exhibit.visible = false; desk.parent.add(exhibit);
+  const exhibitLight = new THREE.SpotLight(0xfff1d6, 0, 4, 0.45, 0.5, 1.2);
+  exhibitLight.position.set(0.5, 1.9, 2.0); exhibitLight.target = exhibit; scene.add(exhibitLight);
+  let loaded = Promise.resolve();
+  if (opts.prop && opts.prop.url) {
+    let envTex = null;   // studio reflections for the prop only (metal looks black without them); the frog keeps its own lighting
+    loaded = Promise.all([import("/node_modules/three/examples/jsm/loaders/GLTFLoader.js"), import("/node_modules/three/examples/jsm/environments/RoomEnvironment.js")]).then(([{ GLTFLoader }, { RoomEnvironment }]) => {
+      envTex = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+      return { GLTFLoader };
+    }).then(({ GLTFLoader }) =>
+      new Promise((res) => new GLTFLoader().load(opts.prop.url, (g) => {
+        const obj = g.scene;
+        const box = new THREE.Box3().setFromObject(obj), size = box.getSize(new THREE.Vector3()), centre = box.getCenter(new THREE.Vector3());
+        const k = (opts.prop.size || 0.5) / Math.max(size.x, size.y, size.z);
+        obj.position.sub(centre).multiplyScalar(k); obj.scale.setScalar(k);
+        obj.position.y += (size.y * k) / 2;                      // sit on the desk
+        obj.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; if (o.material) { o.material.envMap = envTex; o.material.envMapIntensity = 1.4; o.material.needsUpdate = true; } } });
+        exhibit.add(obj); exhibit.visible = true; res();
+      }, undefined, (err) => { console.warn("prop failed to load", err); res(); })));
+  }
+
   const baseTint = new THREE.Color(0xffffff), rageTint = new THREE.Color(0xff9a7a);
 
   function draw({ t, emo, mouth = 0, slam = 0, fistY = 0 }) {
@@ -330,8 +353,16 @@ export function createFrog(stage, opts = {}) {
       p.material.opacity = e.steam * (1 - k) * 0.7;
     });
 
+    if (exhibit.visible) {
+      const from = (opts.prop && opts.prop.from) || 0, k = clamp((t - from) / 0.6);
+      const pop = k === 0 ? 0 : 1 + Math.sin(k * Math.PI) * 0.12 * (1 - k) + (1 - k) * -0.3;   // grow in with a little overshoot
+      exhibit.scale.setScalar(Math.max(0, Math.min(1.1, k < 1 ? k * 1.08 : pop)));
+      exhibit.rotation.y = t * 0.45 + 0.6;
+      exhibit.position.y = 0.3 + Math.sin(t * 1.3) * 0.015 + Math.max(0, slam) * 0.05;
+      exhibitLight.intensity = 6 * k;
+    }
     renderer.render(scene, camera);
   }
 
-  return { draw, canvas: cv };
+  return { draw, canvas: cv, loaded };
 }
