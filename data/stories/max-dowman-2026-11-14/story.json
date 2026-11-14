@@ -1,0 +1,75 @@
+{
+ "id": "max-dowman-2026-11-14",
+ "player": "Max Dowman",
+ "club_key": "ARS",
+ "angle": "A 16-year-old who keeps deleting other people's records: Moukoko's, the Premier League's, and now Jude Bellingham's",
+ "why_now": "trending on r/soccer club sub r/Gunners (2026-11-13 and 2026-11-14 trends): 'Max Dowman becomes the youngest-ever U21 England debutant, surpassing Bellingham', confirmed by arsenal.com",
+ "open_loop": "Bristol, 13 November 2026: a 16-year-old comes off the bench for England U21s and Jude Bellingham's record is gone. It is not the first record he has taken.",
+ "beats": [
+  {
+   "slot": "cold_open",
+   "fact": "Max Dowman became the youngest player ever to represent England under-21s, coming on in a 1-0 defeat against Portugal in Bristol (Ashton Gate, 13 November). He beat the record set by Jude Bellingham, who played Kosovo in 2020.",
+   "year": "2026",
+   "numbers": {"dowman_age": "16 years, 10 months and 13 days", "bellingham_record_age": "17 years, two months and six days", "score": "England U21 0-1 Portugal U21"},
+   "quote": null,
+   "sources": [
+    {"outlet": "Arsenal.com (official)", "url": "https://www.arsenal.com/news/timber-scores-first-netherlands-goals-in-7-0-win-aknKk9M0jWK7", "cached": "data/research/scrape_f9faf116e306.json"},
+    {"outlet": "Arsenal.com (official, fixture date and venue)", "url": "https://www.arsenal.com/news/nine-young-gunners-called-up-for-international-duty-aqRTz5X52Ans", "cached": "data/research/scrape_08224e024ebd.json"}
+   ]
+  },
+  {
+   "slot": "setup",
+   "fact": "Dowman signed for Arsenal on 18 May 2015. In August 2025 he became the second-youngest player in Premier League history when he featured against Leeds United.",
+   "year": "2015",
+   "numbers": {"signed_for_arsenal": "18 May 2015", "pl_debut_opponent": "Leeds United", "pl_debut_month": "August 2025", "pl_age_rank": "second-youngest in Premier League history"},
+   "quote": null,
+   "sources": [
+    {"outlet": "Arsenal.com (official player profile)", "url": "https://www.arsenal.com/fixtures/academy/players/max-dowman-aviBA1J2UPXj", "cached": "data/research/scrape_b7a96d5ded88.json"},
+    {"outlet": "Arsenal.com (official)", "url": "https://www.arsenal.com/news/dowman-becomes-youngest-champions-league-player-aY0jI7I7NAkv", "cached": "data/research/scrape_a36a28f087a2.json"}
+   ]
+  },
+  {
+   "slot": "conflict",
+   "fact": "On 4 November 2025 he came off the bench in the 72nd minute of Arsenal's 3-0 win at Slavia Prague and became the youngest player ever to feature in the Champions League, the first 15-year-old since the 1992 rebrand. He broke Youssoufa Moukoko's record (Borussia Dortmund v Zenit, December 2020). The week before, he had become the youngest player to start a game for Arsenal's men's first team, in the League Cup win over Brighton.",
+   "year": "2025",
+   "numbers": {"dowman_age": "15 years and 308 days", "moukoko_previous_record": "16 years and 18 days", "sub_minute": 72, "score": "Slavia Prague 0-3 Arsenal"},
+   "quote": null,
+   "sources": [
+    {"outlet": "Arsenal.com (official)", "url": "https://www.arsenal.com/news/dowman-becomes-youngest-champions-league-player-aY0jI7I7NAkv", "cached": "data/research/scrape_a36a28f087a2.json"}
+   ]
+  },
+  {
+   "slot": "twist",
+   "fact": "His most iconic moment: off the bench against Everton he set up the opener for Viktor Gyokeres, then scored a solo goal that made him the youngest goalscorer in Premier League history. It was voted Arsenal's 2025/26 Goal of the Season.",
+   "year": "2025/26",
+   "numbers": {"record": "youngest goalscorer in Premier League history", "award": "Arsenal 2025/26 Goal of the Season"},
+   "quote": null,
+   "sources": [
+    {"outlet": "Arsenal.com (official player profile)", "url": "https://www.arsenal.com/fixtures/academy/players/max-dowman-aviBA1J2UPXj", "cached": "data/research/scrape_b7a96d5ded88.json"}
+   ]
+  },
+  {
+   "slot": "now",
+   "fact": "At 16 he is the youngest goalscorer and youngest title winner in Premier League history, the youngest player to appear in a Champions League knockout match, and now England U21s' youngest ever player. England U21s face France at Ashton Gate on 16 November.",
+   "year": "2026",
+   "numbers": {"age": 16, "england_age_groups": "U16, U17, U19, U21 (fourth age group)", "next_u21_match": "France, Ashton Gate, Bristol, 16 November, 7.30pm UK"},
+   "quote": null,
+   "sources": [
+    {"outlet": "Arsenal.com (official player profile)", "url": "https://www.arsenal.com/fixtures/academy/players/max-dowman-aviBA1J2UPXj", "cached": "data/research/scrape_b7a96d5ded88.json"},
+    {"outlet": "Arsenal.com (official)", "url": "https://www.arsenal.com/news/nine-young-gunners-called-up-for-international-duty-aqRTz5X52Ans", "cached": "data/research/scrape_08224e024ebd.json"}
+   ]
+  }
+ ],
+ "quotes": [],
+ "outro_question": "One record still standing: Ansu Fati is the youngest Champions League scorer at 17 years and 40 days, and Arsenal say Max has until February 2027 to beat it. Does he? (source: arsenal.com, data/research/scrape_a36a28f087a2.json)",
+ "rejected": [
+  {"claim": "Dowman was 16 years and 73 days old when he scored, breaking James Vaughan's two-decade Premier League record", "reason": "official arsenal.com, but only a search snippet is cached (data/research/search_9d86c613df63.json); full page not scraped because the 12-credit cap was reached. Not used; scrape https://www.arsenal.com/news/dowman-becomes-arsenals-and-premier-leagues-youngest-scorer-ag5Xq9P2eIql to add it"},
+  {"claim": "Dowman's date of birth (profile says 30 December 2009)", "reason": "inconsistent with the ages Arsenal itself gives (15y 308d on 04/11/2025 and 16y 10m 13d on 13/11/2026 both imply 31 December); outlets disagree, so neither used"},
+  {"claim": "Oliver Kahn criticises Uli Hoeneß's comments about Musiala's contract (trending candidate, BAY)", "reason": "no trusted outlet found in the last 10 days (two searches, 0 trusted results); one source only / unconfirmed"},
+  {"claim": "Raphinha red card v Japan and Brazil 'considering sending him back' to Barcelona", "reason": "BAR was the last story's club (topic_rules); the 'sending back' part is a rumour"},
+  {"claim": "De Bruyne's wife on a Napoli exit", "reason": "red line: private life / family"},
+  {"claim": "Pedro Neto on Saudi interest; Odegaard on contract talks", "reason": "transfer gossip / Reddit-only quotes, not verified on a trusted outlet; no story conflict"},
+  {"claim": "Achraf Hakimi free kick v Niger (trending)", "reason": "not chosen: any backstory risks touching a court case (red line)"}
+ ],
+ "credits_used": 12
+}

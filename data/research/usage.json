@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 148,
+  "credits": 160,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1755,6 +1755,56 @@
    {
     "at": "2026-11-11T17:55:47Z",
     "what": "search Neuer criticises ter Stegen comments Germany number one 2019",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-14T17:54:03Z",
+    "what": "search Kahn Hoene\u00df Musiala contract",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-14T17:54:33Z",
+    "what": "search Oliver Kahn Uli Hoeness Musiala",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-14T17:54:57Z",
+    "what": "search Max Dowman England U21 youngest debut",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-14T17:55:19Z",
+    "what": "search Max Dowman England U21 youngest debut",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-14T17:55:27Z",
+    "what": "scrape https://www.arsenal.com/news/timber-scores-first-netherlands-goals-in-7-0-win-aknKk9M0jWK7",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-14T17:55:35Z",
+    "what": "scrape https://www.arsenal.com/news/nine-young-gunners-called-up-for-international-duty-aqRTz5X52Ans",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-14T17:55:51Z",
+    "what": "search Max Dowman youngest Champions League debut record",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-14T17:56:02Z",
+    "what": "scrape https://www.arsenal.com/fixtures/academy/players/max-dowman-aviBA1J2UPXj",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-14T17:56:12Z",
+    "what": "scrape https://www.arsenal.com/news/dowman-becomes-youngest-champions-league-player-aY0jI7I7NAkv",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-14T17:56:20Z",
+    "what": "search Max Dowman youngest Premier League goalscorer Everton",
     "credits": 2
    }
   ]
