@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Sixteen-year-old Max Dowman just took Jude Bellingham's record.",
+   "say": "Jude Bellingham's record? Gone. Max Dowman is sixteen.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -23,7 +23,7 @@
    }
   },
   {
-   "say": "Case file two. He's now England under-twenty-ones' youngest ever player. Bellingham was seventeen.",
+   "say": "Case file two. England under-twenty-ones' youngest ever player.",
    "emotion": "smug",
    "card": {
     "type": "stat",
@@ -34,23 +34,23 @@
     "sub": "16 yrs, 10 months, 13 days · Bellingham: 17 yrs, 2 months, 6 days (v Kosovo, 2020) · came on in a 1-0 defeat against Portugal",
     "source": "Arsenal.com"
    },
-   "caption": "Case file two. He's now England U21s' youngest ever player. Bellingham was seventeen."
+   "caption": "Case file two. England U21s' youngest ever player."
   },
   {
-   "say": "Not his first record. Against Leeds: second-youngest player in Premier League history.",
+   "say": "Not his first milestone. Against Leeds: the Premier League's second-youngest ever.",
    "emotion": "smug",
    "card": {
     "type": "chapter",
     "kicker": "CHAPTER 1",
-    "year": "SIGNED 18 MAY 2015 · ARSENAL",
+    "year": "AUGUST 2025 · LEEDS UNITED",
     "text": "PL DEBUT:\n*2ND-YOUNGEST*\nEVER.",
     "size": 110,
-    "sub": "v Leeds United, August 2025",
+    "sub": "signed for Arsenal 18 May 2015",
     "source": "Arsenal.com"
    }
   },
   {
-   "say": "Then Slavia Prague: youngest player ever in the Champions League. At fifteen. Moukoko's record? Gone too.",
+   "say": "Then Prague: youngest player ever in the Champions League. Moukoko's record? Gone.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -64,7 +64,7 @@
    }
   },
   {
-   "say": "And that's not even the wild part. Against Everton: an assist, then a solo goal. Youngest scorer in Premier League history.",
+   "say": "And it gets wilder. Against Everton: an assist, then a solo goal. Arsenal's Goal of the Season. He's also the Premier League's youngest ever scorer.",
    "emotion": "excited",
    "card": {
     "type": "chapter",
@@ -72,12 +72,12 @@
     "year": "2025/26 · EVERTON",
     "text": "AN ASSIST.\nTHEN A *SOLO*\nGOAL.",
     "size": 115,
-    "sub": "youngest goalscorer in PL history · Arsenal's 2025/26 Goal of the Season",
+    "sub": "Arsenal's 2025/26 Goal of the Season · also: youngest PL goalscorer ever",
     "source": "Arsenal.com"
    }
   },
   {
-   "say": "At sixteen: the Premier League's youngest title winner. Four England age groups. France next.",
+   "say": "At sixteen: youngest Premier League title winner. France next.",
    "emotion": "smug",
    "card": {
     "type": "stat",
@@ -90,7 +90,7 @@
    }
   },
   {
-   "say": "One record left: Ansu Fati's, youngest Champions League scorer. Arsenal say Max has until February twenty twenty-seven. Does he do it? Follow for the next Scout File.",
+   "say": "Next record in his sights: Ansu Fati's, youngest Champions League scorer. He has until February twenty twenty-seven. Does he do it? Follow for the next Scout File.",
    "emotion": "happy",
    "card": {
     "type": "outro",
