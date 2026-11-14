@@ -1,6 +1,6 @@
 # Review: story-max-dowman-2026-11-14 (Scout Files #2)
 
-**Verdict: FIX**
+**Final verdict (round 2): PASS** (round 1 verdict was FIX; see the round-2 section at the end)
 
 Reviewed 2026-11-14 against the cached pages, not only against story.json:
 - `data/research/scrape_f9faf116e306.json`: arsenal.com, "Timber scores first Netherlands goals", 14 Nov 2026
@@ -85,3 +85,53 @@ After the fixes, re-render and re-check the hook timing in `timing.json` and the
 
 - **Fati's record and the article's age.** The source article is from Nov 2025, so it does not show directly that Fati's record still stands in Nov 2026. The current profile, fetched today, lists his records and includes no Champions League goal, which supports the outro.
 - **Empty subtitle bar.** The cover frame and the final second show an empty dark subtitle bar. Hide it when there is no text, if that is easy to do.
+
+---
+
+# Round 2: re-render (48.7 s)
+
+**Verdict: PASS**
+
+I checked the updated reel.json, caption.txt, timing.json and the twist beat in story.json against the cached arsenal.com pages again. I also re-ran ffprobe, ebur128 and silencedetect, and read sheets of frames covering the whole runtime: `out/review2_a.jpg` (0-28 s), `out/review2_a2.jpg` (28-48.7 s) and `out/review2_f0.jpg` (cover).
+
+## Round-1 items
+
+1. **Beat 5 (Everton): fixed.** The voiceover is now "...Against Everton: an assist, then a solo goal. Arsenal's Goal of the Season. He's also the Premier League's youngest ever scorer." The card sub is now "Arsenal's 2025/26 Goal of the Season · also: youngest PL goalscorer ever". The record and the Everton goal are now two separate facts, as they are on the profile page (scrape_b7a96d5ded88). The twist fact in story.json is corrected and says the profile does not name the record goal.
+2. **Beat 3 (Leeds): fixed.** The voiceover now says "Not his first milestone. Against Leeds: the Premier League's second-youngest ever." The card says "2ND-YOUNGEST IN PL HISTORY", with "August 2025 · Leeds United" and "signed for Arsenal 18 May 2015". All of this matches scrape_a36a28f087a2 and scrape_b7a96d5ded88.
+3. **Caption: fixed.** It now reads "Before this: second-youngest player in PL history, youngest ever Champions League player, youngest PL scorer and title winner." Each item is in the sources, and none of them is framed as a record he took unless it really was one.
+4. **Hook timing: fixed.** The new line is "Jude Bellingham's record? Gone. Max Dowman is sixteen." (8 words). Silencedetect on `audio/voice.wav` shows the timing:
+   - Speech starts at 0.45 s.
+   - "Jude Bellingham's record?" runs to 1.90 s.
+   - After a pause, "Gone." runs from 2.25 s to 2.79 s.
+
+   The payoff is complete by about 2.8 s, inside the 3 s limit, and frame 0 shows the full hook card.
+5. **Outro: fixed.** The voiceover and caption now say "Next record in his sights: Ansu Fati's...". The voiceover says "He has until February twenty twenty-seven" and the caption keeps "Arsenal say". Both match scrape_a36a28f087a2 (17 years 40 days, "until February 2027").
+
+## Re-checked
+
+**Facts:**
+- 16y 10m 13d; Bellingham 17y 2m 6d v Kosovo, 2020; the 1-0 defeat to Portugal in Bristol. Source: f9faf116e306.
+- U16, U17, U19 then U21 (4 age groups); France at Ashton Gate on 16 Nov. Source: 08224e024ebd.
+- Slavia Prague 0-3 Arsenal; 15y 308d; Moukoko 16y 18d. Source: a36a28f087a2.
+- Youngest PL title winner. Source: b7a96d5ded88.
+
+**Sources and rules:**
+- No quotes are used. Nothing from `rejected` appears.
+- No `never` rule or banter red line is touched.
+- The host is `presenter: frog3d`. The outro has the open question and "Follow for the next Scout File".
+
+**Video:**
+- 1080x1920, H.264 30 fps, AAC 44.1 kHz stereo.
+- 48.7 s (stories target 40-55, max 60). 7 beats.
+- Integrated loudness -14.6 LUFS, LRA 2.0.
+
+**Frames:**
+- No clipped or overlapping text and no empty cards. Subtitles stay in sync with the card topic.
+- Number count-ups (0 to 16, 2 to 4) settle on the correct values.
+
+## Advisory (not blocking)
+
+- **Stale text in story.json.** `outro_question` still says "One record still standing". Nothing on screen or in the caption uses it, but update it for consistency.
+- **Headline after the cover frame.** Frame 0 is the full hook card, but the headline re-animates in just after it (the 0.0 s tile in the sheet shows only the kicker). This is fine as a cover; just noting it.
+- **Empty subtitle bar.** It still shows on the cover and in the last second (cosmetic).
+- **Fati's record and the article's age.** The source is from Nov 2025. Today's profile lists no Champions League goal, which supports the outro.

@@ -200,6 +200,15 @@
    "mode": "auto",
    "at": "2026-11-11",
    "scheduled_for": "2026-11-11T20:08:00Z"
+  },
+  {
+   "reel": "story-max-dowman-2026-11-14",
+   "series": "scout-files",
+   "zernio_post": "6af8aeb6d603bec5e85e87ad",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-14",
+   "scheduled_for": "2026-11-14T19:55:00Z"
   }
  ],
  "skipped": [
