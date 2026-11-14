@@ -23,7 +23,7 @@
    }
   },
   {
-   "say": "Case file two. A one-nil defeat against Portugal, and he's England under-twenty-ones' youngest ever player. Bellingham was seventeen.",
+   "say": "Case file two. He's now England under-twenty-ones' youngest ever player. Bellingham was seventeen.",
    "emotion": "smug",
    "card": {
     "type": "stat",
@@ -33,10 +33,11 @@
     "label": "England U21s' *youngest* ever",
     "sub": "16 yrs, 10 months, 13 days · Bellingham: 17 yrs, 2 months, 6 days (v Kosovo, 2020) · came on in a 1-0 defeat against Portugal",
     "source": "Arsenal.com"
-   }
+   },
+   "caption": "Case file two. He's now England U21s' youngest ever player. Bellingham was seventeen."
   },
   {
-   "say": "Not his first record. August twenty twenty-five, against Leeds: second-youngest player in Premier League history.",
+   "say": "Not his first record. Against Leeds: second-youngest player in Premier League history.",
    "emotion": "smug",
    "card": {
     "type": "chapter",
@@ -49,7 +50,7 @@
    }
   },
   {
-   "say": "Then Slavia Prague, off the bench: youngest player ever in the Champions League. At fifteen. Moukoko's record? Gone too.",
+   "say": "Then Slavia Prague: youngest player ever in the Champions League. At fifteen. Moukoko's record? Gone too.",
    "emotion": "shocked",
    "hit": true,
    "card": {
