@@ -30,6 +30,32 @@ body.host3d #source:empty { display:none; }
 .year { font-family:Anton; font-size:44px; color:var(--lilac); letter-spacing:3px; margin-top:20px; }
 .quote { font-family:Anton; font-size:84px; line-height:1.02; margin-top:26px; }
 .quote .qm { color:var(--violet); font-size:170px; line-height:1; display:block; height:96px; overflow:hidden; margin-top:4px; }
+/* kinetic hook: words slam in one by one */
+.kin { font-family:Anton; font-size:118px; line-height:1.0; text-transform:uppercase; margin-top:26px; }
+.kin .ln { display:block; white-space:nowrap; }
+.kin .kw { display:inline-block; margin-right:22px; transform-origin:50% 70%; will-change:transform; }
+.kin .kw.hl { color:var(--violet); position:relative; }
+.kin .kw.hl::after { content:""; position:absolute; left:-6px; right:-6px; bottom:6px; height:16px; background:var(--violet); opacity:.35; transform:scaleX(var(--u,0)); transform-origin:left; }
+.kstamp { position:absolute; right:30px; top:300px; border:9px solid var(--violet); color:var(--violet); font-family:Anton; font-size:92px; padding:4px 26px; line-height:1; border-radius:12px; letter-spacing:2px; background:rgba(13,10,20,.45); }
+/* evidence board */
+.board { position:absolute; left:-40px; top:70px; width:1040px; height:600px; border-radius:18px; overflow:hidden;
+  background: radial-gradient(circle at 30% 20%, rgba(255,220,170,.12), transparent 60%), repeating-radial-gradient(circle at 17% 31%, #6b4a2c 0 2px, #5d3f25 2px 5px), #5a3d24;
+  box-shadow: inset 0 0 0 10px #2a1a10, inset 0 0 80px rgba(0,0,0,.65), 0 20px 50px rgba(0,0,0,.6); }
+.board .cam { position:absolute; inset:0; transform-origin:0 0; }
+.board svg.strings { position:absolute; inset:0; overflow:visible; }
+.bi { position:absolute; transform-origin:50% 0; filter: drop-shadow(0 10px 14px rgba(0,0,0,.55)); }
+.bi .pin { position:absolute; top:-10px; left:50%; width:24px; height:24px; margin-left:-12px; border-radius:50%; background: radial-gradient(circle at 35% 35%, #ff8a8a, #b3121b 60%, #5a0a0e); box-shadow: 0 3px 4px rgba(0,0,0,.5); z-index:2; }
+.bi.clip { background:#efe6d2; color:#1d1712; padding:22px 26px 18px; font-family:"Times New Roman", Georgia, serif; }
+.bi.clip .h { font-family:Anton; font-size:44px; line-height:1; letter-spacing:.5px; margin-bottom:10px; text-transform:uppercase; }
+.bi.clip .t { font-size:27px; line-height:1.25; }
+.bi.clip .s { font-family:Plex; font-size:18px; color:#7a6a58; margin-top:10px; letter-spacing:1px; text-transform:uppercase; }
+.bi.note { background:#f4d35e; color:#1d1712; padding:18px 22px; text-align:center; }
+.bi.note .big { font-family:Anton; font-size:150px; line-height:.95; }
+.bi.note .t { font-family:Plex; font-size:26px; text-transform:uppercase; letter-spacing:2px; }
+.bi.quote { background:#f7f2e7; color:#1d1712; padding:26px 30px 20px; font-family:Georgia, serif; font-size:38px; line-height:1.25; font-style:italic; }
+.bi.quote .mark { background-image: linear-gradient(transparent 55%, rgba(255,214,0,.85) 55%, rgba(255,214,0,.85) 92%, transparent 92%); background-repeat:no-repeat; background-size: var(--hw,0%) 100%; }
+.bi.quote .w { display:block; font-family:Plex; font-style:normal; font-size:20px; color:#6f6250; margin-top:14px; letter-spacing:1px; text-transform:uppercase; }
+.bi.stamp { border:12px solid #c4161c; color:#c4161c; font-family:Anton; font-size:120px; line-height:1; padding:6px 28px; border-radius:14px; letter-spacing:4px; mix-blend-mode:normal; background:rgba(255,240,230,.08); filter:none; }
 .who { font-size:34px; color:var(--lilac); margin-top:22px; letter-spacing:1px; }
 .mask { display:block; overflow:hidden; padding-top:.14em; margin-top:-.14em; }
 .mask > span { display:inline-block; }
@@ -165,6 +191,23 @@ function build(c) {
     // a sourced, verbatim quote: text + who said it and where
     const lines = c.text.split("\n").map((l) => `<span class="mask"><span>${hl(l)}</span></span>`).join("");
     d.innerHTML = `${kick}<div class="quote" style="font-size:${c.size || 84}px"><span class="qm">“</span>${lines}</div><div class="who">— ${esc(c.who || "")}</div>`;
+  } else if (c.type === "kinetic") {
+    // word-by-word slam; *word* = accent + underline wipe
+    const lines = c.text.split("\n").map((l) => `<span class="ln">${l.split(/\s+/).filter(Boolean).map((w) => {
+      const h = /^\*.*\*[.,!?]*$/.test(w); return `<span class="kw${h ? " hl" : ""}">${esc(w.replace(/\*/g, ""))}</span>`; }).join("")}</span>`).join("");
+    d.innerHTML = `${kick}<div class="kin">${lines}</div>${c.stamp ? `<div class="kstamp">${esc(c.stamp)}</div>` : ""}`;
+  } else if (c.type === "board") {
+    // evidence board: pinned clippings, notes, quotes and stamps, red strings, a slow camera across it
+    const items = (c.items || []).map((it, i) => {
+      const pin = it.kind === "stamp" ? "" : '<div class="pin"></div>';
+      let inner = "";
+      if (it.kind === "clip") inner = `<div class="h">${esc(it.head || "")}</div><div class="t">${esc(it.text || "")}</div>${it.sub ? `<div class="s">${esc(it.sub)}</div>` : ""}`;
+      else if (it.kind === "note") inner = `<div class="big">${esc(it.big || "")}</div><div class="t">${esc(it.text || "")}</div>`;
+      else if (it.kind === "quote") inner = `“${esc(it.text || "").replace(/\*(.+?)\*/g, '<span class="mark">$1</span>')}”${it.who ? `<span class="w">— ${esc(it.who)}</span>` : ""}`;
+      else if (it.kind === "stamp") inner = esc(it.text || "");
+      return `<div class="bi ${it.kind}" data-i="${i}" style="left:${it.x}px;top:${it.y}px;${it.w ? `width:${it.w}px;` : ""}">${pin}${inner}</div>`;
+    }).join("");
+    d.innerHTML = `${kick}<div class="board"><div class="cam"><svg class="strings" width="1040" height="600"></svg>${items}</div></div>`;
   } else if (c.type === "formation") {
     d.innerHTML = `${kick}<div class="ctitle">${hl(c.title || "")}</div><svg class="pitch" viewBox="0 0 960 470" width="960" height="470"></svg>`;
   }
@@ -172,6 +215,81 @@ function build(c) {
   return d;
 }
 shots.forEach((s) => (s.el = build(s.card)));
+
+// ---------- kinetic hook ----------
+function drawKinetic(s, t, cover) {
+  const ws = [...s.el.querySelectorAll(".kw")];
+  const b = beats[s.beat], speak = Math.max(0.6, (b.end - b.start) * 0.85);
+  ws.forEach((w, i) => {
+    const at = b.start + 0.05 + (i / ws.length) * speak;     // words land roughly as they are spoken
+    const k = cover ? 1 : p(t, at, at + 0.22);
+    const sc = cover ? 1 : (k <= 0 ? 0 : 1 + (1 - back(k)) * 0.0 + (1 - k) * 0.9);
+    w.style.opacity = k > 0 ? 1 : 0;
+    w.style.transform = `scale(${sc}) rotate(${(1 - k) * (i % 2 ? 6 : -6)}deg) translateY(${(1 - k) * 40}px)`;
+    if (w.classList.contains("hl")) w.style.setProperty("--u", cover ? 1 : expo(p(t, at + 0.2, at + 0.6)));
+  });
+  const st = s.el.querySelector(".kstamp");
+  if (st) {
+    const at = b.start + speak + 0.1, k = cover ? 1 : p(t, at, at + 0.16);
+    st.style.opacity = k > 0 ? 1 : 0;
+    st.style.transform = `rotate(-10deg) scale(${1 + (1 - k) * 1.8})`;
+  }
+  // tiny shake on each word landing
+  const last = ws.reduce((m, w, i) => { const at = b.start + 0.05 + (i / ws.length) * speak; return t >= at ? at : m; }, -9);
+  const j = cover ? 0 : Math.exp(-(t - last) * 18) * 6;
+  s.el.querySelector(".kin").style.translate = `${Math.sin(t * 90) * j}px ${Math.cos(t * 70) * j * 0.6}px`;
+}
+
+// ---------- evidence board ----------
+function itemTime(s, it) {
+  const bi = it.beat != null && beats[it.beat] ? beats[it.beat].start : beats[s.beat].start;
+  return bi + (it.at || 0);
+}
+function drawBoard(s, t, cover) {
+  const c = s.card, els = [...s.el.querySelectorAll(".bi")];
+  const times = (c.items || []).map((it) => itemTime(s, it));
+  els.forEach((el, i) => {
+    const it = c.items[i], at = times[i];
+    const k = cover ? 1 : p(t, at, at + (it.kind === "stamp" ? 0.18 : 0.5));
+    el.style.opacity = k > 0 ? 1 : 0;
+    if (it.kind === "stamp") el.style.transform = `rotate(${it.rot || -12}deg) scale(${1 + (1 - k) * 2.2})`;
+    else el.style.transform = `translateY(${(1 - back(k)) * -160}px) rotate(${(it.rot || 0) + (1 - k) * 14}deg)`;
+    const m = el.querySelector(".mark");
+    if (m) m.style.setProperty("--hw", `${(cover ? 1 : cubic(p(t, at + 1.2, at + 3.2))) * 100}%`);
+  });
+  // red strings draw between pinned items
+  const svg = s.el.querySelector("svg.strings");
+  if (!svg.dataset.init) {
+    svg.innerHTML = (c.strings || []).map(() => '<line stroke="#d11a24" stroke-width="5" stroke-linecap="round"/>').join("");
+    svg.dataset.init = 1;
+  }
+  const centre = (i) => { const it = c.items[i]; return [it.x + (it.w || 300) / 2, it.y + 12]; };
+  [...svg.querySelectorAll("line")].forEach((ln, n) => {
+    const [a, b2, delay] = c.strings[n];
+    const at = times[b2] + (delay == null ? 0.35 : delay);          // the string runs once the item it points to is pinned
+    const k = cover ? 1 : cubic(p(t, at, at + 0.7));
+    const [x1, y1] = centre(a), [x2, y2] = centre(b2);
+    ln.setAttribute("x1", x1); ln.setAttribute("y1", y1);
+    ln.setAttribute("x2", x1 + (x2 - x1) * k); ln.setAttribute("y2", y1 + (y2 - y1) * k);
+    ln.style.opacity = k > 0 ? 0.9 : 0;
+  });
+  // camera: always moving; glides toward the newest item, slow push-in over the whole board
+  const shown = times.map((at, i) => [at, i]).filter(([at]) => cover || t >= at);
+  const focusOf = (i) => { const it = c.items[i]; return [it.x + (it.w || 300) / 2, it.y + 120]; };
+  let fx = 520, fy = 300;
+  if (shown.length) {
+    const [atN, iN] = shown[shown.length - 1];
+    const prev = shown.length > 1 ? focusOf(shown[shown.length - 2][1]) : [520, 300];
+    const k = cover ? 1 : cubic(p(t, atN, atN + 1.1));
+    const cur = focusOf(iN);
+    fx = prev[0] + (cur[0] - prev[0]) * k; fy = prev[1] + (cur[1] - prev[1]) * k;
+  }
+  const span = Math.max(1, (beats[beats.length - 1].end - s.start));
+  const z = 0.9 + 0.08 * p(t, s.start, s.start + span);          // slow push-in over the whole board
+  const tx = 520 + (fx - 520) * 0.7 - fx * z, ty = 300 + (fy - 300) * 0.7 - fy * z;   // keep the newest item near centre
+  const cam = s.el.querySelector(".cam");
+  cam.style.transform = `translate(${tx}px, ${ty}px) scale(${z})`;
+}
 
 // formation: list of [x,y] in a 0..1 box for "4-3-3" etc. (own goal at left)
 function formation(str) {
@@ -241,6 +359,8 @@ function drawCard(s, t) {
     });
   }
   if (c.type === "formation") drawPitch(s, t);
+  if (c.type === "kinetic") drawKinetic(s, t, cover);
+  if (c.type === "board") drawBoard(s, t, cover);
   if (c.type === "banter") {
     const st = s.el.querySelector(".stamp");
     if (st) { const k = p(t, s.start + 0.9, s.start + 1.1); st.style.opacity = k > 0 ? 1 : 0; st.style.transform = `rotate(-12deg) scale(${1 + (1 - k) * 1.6})`; }

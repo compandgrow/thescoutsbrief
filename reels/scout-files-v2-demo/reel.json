@@ -1,0 +1,137 @@
+{
+ "id": "scout-files-v2-demo",
+ "series": "scout-files",
+ "format_version": "story-2",
+ "presenter": "frog3d",
+ "music": "noir",
+ "match": {
+  "pill": "SCOUT FILES #1 · TER STEGEN",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Ter Stegen. One of the world's best keepers. Forty-four caps.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "kinetic",
+    "kicker": "CASE FILE #1 · TER STEGEN",
+    "text": "ONE OF THE WORLD'S\nBEST KEEPERS.\n*44* CAPS.",
+    "stamp": "CASE OPEN",
+    "source": "Bundesliga.com"
+   }
+  },
+  {
+   "say": "How? For years, one man stood in his way. Manuel Neuer.",
+   "emotion": "smug",
+   "card": {
+    "type": "board",
+    "kicker": "THE EVIDENCE",
+    "source": "Bundesliga.com",
+    "items": [
+     {
+      "kind": "note",
+      "x": 60,
+      "y": 40,
+      "w": 300,
+      "rot": -4,
+      "at": 0.0,
+      "big": "44",
+      "text": "Germany caps",
+      "beat": 1
+     },
+     {
+      "kind": "clip",
+      "x": 470,
+      "y": 30,
+      "w": 430,
+      "rot": 3,
+      "at": 1.6,
+      "head": "THE MAN IN THE WAY",
+      "text": "Manuel Neuer, Germany's No. 1 for years",
+      "sub": "Bundesliga.com",
+      "beat": 1
+     },
+     {
+      "kind": "quote",
+      "x": 30,
+      "y": 300,
+      "w": 520,
+      "rot": -2,
+      "at": 0.4,
+      "text": "He was behind Manuel Neuer while still being *one of the best goalkeepers in the world.*",
+      "who": "Jürgen Klopp, Germany coach",
+      "beat": 2
+     },
+     {
+      "kind": "clip",
+      "x": 600,
+      "y": 290,
+      "w": 350,
+      "rot": 5,
+      "at": 0.6,
+      "head": "NEUER RETIRES. AGAIN.",
+      "text": "After the 2026 World Cup exit, his second international retirement",
+      "sub": "Bundesliga.com, 2026",
+      "beat": 3
+     },
+     {
+      "kind": "stamp",
+      "x": 430,
+      "y": 150,
+      "w": 420,
+      "rot": -12,
+      "at": 1.0,
+      "text": "STARTER",
+      "beat": 4
+     }
+    ],
+    "strings": [
+     [
+      0,
+      1,
+      0.4
+     ],
+     [
+      1,
+      2,
+      0.5
+     ],
+     [
+      2,
+      3,
+      0.5
+     ],
+     [
+      3,
+      4,
+      0.2
+     ]
+    ]
+   }
+  },
+  {
+   "say": "Klopp said it himself. He was behind Neuer while still being one of the best goalkeepers in the world.",
+   "emotion": "disappointed"
+  },
+  {
+   "say": "Then, after the twenty twenty-six World Cup exit, Neuer retired from Germany. For the second time.",
+   "emotion": "shocked"
+  },
+  {
+   "say": "Klopp's first squad? Ter Stegen starts.",
+   "emotion": "excited",
+   "hit": true
+  },
+  {
+   "say": "So, unluckiest keeper of his generation? Tell me below, and follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "YOUR VERDICT",
+    "text": "UNLUCKIEST KEEPER\nOF HIS *GENERATION*?",
+    "source": ""
+   }
+  }
+ ]
+}
