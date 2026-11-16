@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 160,
+  "credits": 163,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1806,6 +1806,36 @@
     "at": "2026-11-14T17:56:20Z",
     "what": "search Max Dowman youngest Premier League goalscorer Everton",
     "credits": 2
+   },
+   {
+    "at": "2026-11-16T17:54:53Z",
+    "what": "search James Trafford save Spain England",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-16T17:55:00Z",
+    "what": "local scrape https://www.skysports.com/football/news/13612624/james-trafford-has-leeds-goalkeeper-overtaken-jordan-pickford-as-englands-no-1-after-starring-display-against-spain",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-16T17:55:01Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-16T17:55:01Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/c6742l4z91lwo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-16T17:55:06Z",
+    "what": "scrape http://kwese.espn.com/football/story/_/id/50501295/james-trafford-jordan-pickford-england-goalkeeper",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-16T17:55:06Z",
+    "what": "local scrape https://www.skysports.com/football/video/13612783/james-traffords-save-against-port-vale-for-bolton-in-2022",
+    "credits": 0
    }
   ]
  }
