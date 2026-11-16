@@ -1,5 +1,7 @@
 # Review: story-james-trafford-2026-11-16 (Scout Files #3)
 
+## Final verdict: PASS (round 2), see the round-2 section at the end
+
 ## Verdict: FIX (round 1)
 
 Three required fixes. The story itself holds up: nearly every fact is confirmed in the cached pages, and nothing from `rejected` or `never` appears. But the cover frame has no headline, one number has only one source, and one burned-in caption reads like a typo.
@@ -77,3 +79,46 @@ After the re-render, the reviewer re-checks:
 - the beat 4 voice and caption;
 - the beat 5 caption;
 - that "Over" still starts at or before 3.0 s.
+
+---
+
+# Round 2 (re-render, out/reel.mp4 45.63 s)
+
+## Verdict: PASS
+
+All three round-1 fixes are in the rendered MP4. There are no regressions.
+
+## Fixes re-checked in the MP4 (not just in reel.json)
+1. **Frame 0 (cover): fixed.** The first decoded frame of out/reel.mp4 shows:
+   - the kicker "JAMES TRAFFORD · SPAIN 2-3 ENGLAND";
+   - the full headline "SPAIN: 43 UNBEATEN? OVER." with OVER in red;
+   - the caption "SPAIN, 43 UNBEATEN? OVER.";
+   - the frog host.
+2. **Beat 4 "Stoppage time": fixed, and confirmed by ear with a speech recogniser.**
+   - Method: offline Whisper (openai/whisper-small.en via transformers) on the MP4's own audio track, 25.2-32.6 s.
+   - Transcript: "Then Madrid, England, down to 10, stoppage time, a double-save [Tuchel?], absolutely brilliant." "Tuchel?" was misheard as "two-child" under the music. No "ninety-second" anywhere.
+   - Supporting evidence: indextts/jobs.json has the new text, and line_34c594545d03.wav was written at 18:24, after the round-1 review.
+   - Burned-in caption reads "…TO TEN. STOPPAGE TIME:" then "A DOUBLE SAVE. TUCHEL?" then "ABSOLUTELY BRILLIANT." The quote card is unchanged.
+   - Sources: "stoppage time" is in Sky a147 word for word ("double save in stoppage time"). ESPN 9182 has "92nd minute" (= stoppage time) and BBC a720 has "late double save". That is 2+ outlets.
+3. **Beat 5 caption: fixed.** The burned-in caption reads "THERE'S NO NUMBER ONE." Whisper hears "There is no number one." The stat card's sub line keeps Sky's mixed-case wording "There's no No 1.", as allowed in round 1.
+
+## Hook timing
+- voice.wav silencedetect: "Spain" 0.05-0.71 s, "forty-three unbeaten?" 0.98-2.42 s, **"Over" starts at 2.60 s** (≤ 3.0 s).
+- The MP4 audio lines up with voice.wav (cross-correlation lag 0.00 s).
+- Whisper on the MP4's first 6 s: "Spain 43 unbeaten, over last save, City's former Cup goalkeeper."
+
+## Regression pass
+- Sheets: out/review_a.jpg (0-32 s, regenerated) and 32-45 s at 2 fps, plus full-res frames at 22.0, 27.6, 29.2 and 37.6 s.
+- The frog host is visible in every frame.
+- No clipped card or caption text beyond the normal in/out mask animations. No empty cards.
+- Every card fact is unchanged from round 1 and still matches the cached sources: 43 unbeaten, 2-3, £31m, £19m, Donnarumma / cup goalkeeper, £45m, the BBC "most expensive… twice" line, the Tuchel quote, 5 caps, 24/32, Pickford 94.
+- caption.txt is unchanged.
+- Beat 6 outro: question plus follow call.
+- Specs:
+  - 1080x1920 H.264, 30 fps;
+  - AAC 44.1 kHz stereo;
+  - duration 45.63 s (≤ 60);
+  - 7 beats;
+  - integrated loudness -14.8 LUFS;
+  - `presenter: frog3d`, `series: scout-files`.
+- Non-blocking, carried over: the caption highlight runs about 0.3-0.6 s ahead of the voice on the hook page. Digits are timed by character count.
