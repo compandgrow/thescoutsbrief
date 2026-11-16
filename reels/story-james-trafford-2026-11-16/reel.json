@@ -69,8 +69,8 @@
    }
   },
   {
-   "say": "Then Madrid. England down to ten. Ninety-second minute: a double save. Tuchel? Absolutely brilliant.",
-   "caption": "Then Madrid. England down to ten. 92nd minute: a double save. Tuchel? Absolutely brilliant.",
+   "say": "Then Madrid. England down to ten. Stoppage time: a double save. Tuchel? Absolutely brilliant.",
+   "caption": "Then Madrid. England down to ten. Stoppage time: a double save. Tuchel? Absolutely brilliant.",
    "emotion": "excited",
    "card": {
     "type": "quote",
@@ -82,7 +82,7 @@
   },
   {
    "say": "Five England caps. Pickford has ninety-four. Tuchel's verdict? There's no number one.",
-   "caption": "Five England caps. Pickford has 94. Tuchel's verdict? There's no No 1.",
+   "caption": "Five England caps. Pickford has 94. Tuchel's verdict? There's no number one.",
    "emotion": "smug",
    "card": {
     "type": "stat",

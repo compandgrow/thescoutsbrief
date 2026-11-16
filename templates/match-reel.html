@@ -323,7 +323,7 @@ function drawPitch(s, t) {
 }
 
 function drawCard(s, t) {
-  const cover = s === shots[0] && t < s.start;  // first frame doubles as the Instagram cover
+  const cover = s === shots[0] && t < Math.max(s.start, 0.001);  // first frame doubles as the Instagram cover
   const inK = cover ? 1 : expo(p(t, s.start, s.start + 0.45));
   const outK = cubic(p(t, s.end - 0.3, s.end));
   const on = cover || (t >= s.start && t < s.end);
