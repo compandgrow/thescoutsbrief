@@ -209,6 +209,15 @@
    "mode": "auto",
    "at": "2026-11-14",
    "scheduled_for": "2026-11-14T19:55:00Z"
+  },
+  {
+   "reel": "story-james-trafford-2026-11-16",
+   "series": "scout-files",
+   "zernio_post": "6afb4da48c60e7546f28c6fb",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-16",
+   "scheduled_for": "2026-11-16T19:38:00Z"
   }
  ],
  "skipped": [
