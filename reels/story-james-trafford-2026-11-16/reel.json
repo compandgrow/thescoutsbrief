@@ -1,0 +1,109 @@
+{
+ "id": "story-james-trafford-2026-11-16",
+ "series": "scout-files",
+ "story_id": "james-trafford-2026-11-16",
+ "format_version": "story-1",
+ "experiment": "number+contrast cold open, payoff word ~2.5 s; ~43 s / ~93 words; beat 1 = sold-then-bought-back surprise (no CV); re-hook ~17 s",
+ "presenter": "frog3d",
+ "match": {
+  "pill": "SCOUT FILES #3 · TRAFFORD",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Spain, forty-three unbeaten? Over. Last save: City's former cup goalkeeper.",
+   "caption": "Spain, 43 unbeaten? Over. Last save: City's former cup goalkeeper.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "JAMES TRAFFORD · SPAIN 2-3 ENGLAND",
+    "text": "SPAIN: 43\nUNBEATEN? *OVER*.",
+    "size": 120,
+    "source": "BBC Sport, Sky Sports, ESPN"
+   }
+  },
+  {
+   "say": "Case file three. James Trafford: City's academy kid, sold to Burnley. Then bought back for thirty-one million.",
+   "caption": "Case file three. James Trafford: City's academy kid, sold to Burnley. Then bought back for £31m.",
+   "emotion": "smug",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 1",
+    "year": "2023 → 2025 · MANCHESTER CITY",
+    "text": "SOLD.\nTHEN BOUGHT\nBACK FOR *£31M*.",
+    "size": 115,
+    "sub": "almost 8 years in City's academy · sold to Burnley in 2023 (deal worth up to £19m) · back in 2025 on a five-year deal",
+    "source": "Man City (official), BBC Sport"
+   }
+  },
+  {
+   "say": "Chapter two. City sign Donnarumma. Trafford becomes Pep's cup goalkeeper.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "2025 · MANCHESTER CITY",
+    "text": "THEN CAME\n*DONNARUMMA*.",
+    "size": 120,
+    "sub": "Trafford limited to Pep Guardiola's 'cup goalkeeper'",
+    "source": "BBC Sport, ESPN"
+   },
+   "slam": [
+    1.0
+   ]
+  },
+  {
+   "say": "And it gets wilder. Leeds pay forty-five million. Now he's their number one.",
+   "caption": "And it gets wilder. Leeds pay £45m. Now he's their No 1.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 3",
+    "year": "SUMMER 2026 · LEEDS UNITED",
+    "text": "SOLD AGAIN.\n*£45M*.",
+    "size": 130,
+    "sub": "England's most expensive goalkeeper by transfer fee… twice (BBC Sport)",
+    "source": "BBC Sport, ESPN"
+   }
+  },
+  {
+   "say": "Then Madrid. England down to ten. Ninety-second minute: a double save. Tuchel? Absolutely brilliant.",
+   "caption": "Then Madrid. England down to ten. 92nd minute: a double save. Tuchel? Absolutely brilliant.",
+   "emotion": "excited",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD",
+    "text": "…THE DOUBLE SAVE AT\nTHE VERY END.\n*ABSOLUTELY BRILLIANT.*",
+    "who": "Thomas Tuchel, Sky Sports / ESPN, 2026",
+    "source": "Sky Sports, ESPN"
+   }
+  },
+  {
+   "say": "Five England caps. Pickford has ninety-four. Tuchel's verdict? There's no number one.",
+   "caption": "Five England caps. Pickford has 94. Tuchel's verdict? There's no No 1.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "ENGLAND · NOV 2026",
+    "value": 5,
+    "unit": "CAPS",
+    "label": "Trafford, 24 · Pickford, 32: *94*",
+    "sub": "Pickford first choice for almost a decade · Tuchel: \"There's no No 1.\"",
+    "source": "BBC Sport, Sky Sports"
+   }
+  },
+  {
+   "say": "Trafford or Pickford for the quarter-final? Your call. Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #3",
+    "text": "TRAFFORD OR\n*PICKFORD*?",
+    "size": 120,
+    "source": "BBC Sport, Sky Sports"
+   }
+  }
+ ]
+}
