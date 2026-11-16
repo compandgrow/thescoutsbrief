@@ -29,7 +29,7 @@ STYLE = {
     "angry":        {"mix": {"am_echo": 1.0}, "speed": 1.12, "pitch": 0, "gain": 1.35, "pause": 0.14, "grit": 0},
     "furious":      {"mix": {"am_echo": 1.0}, "speed": 1.18, "pitch": 0, "gain": 1.55, "pause": 0.10, "grit": 0},
 }
-LEAD_IN = 0.45   # silence before first line
+LEAD_IN = 0.05   # silence before first line (hook must land fast; reel.json "lead_in" overrides)
 GAP = 0.32       # silence between lines
 TAIL = 0.9       # silence after the last line
 
@@ -48,8 +48,9 @@ def main(path):
     if beat_audio is None:
         beat_audio = kokoro_beats(reel["beats"])
 
-    pieces, timing, t = [], [], LEAD_IN
-    pieces.append(np.zeros(int(LEAD_IN * SR), np.float32))
+    lead = float(reel.get("lead_in", LEAD_IN))
+    pieces, timing, t = [], [], lead
+    pieces.append(np.zeros(int(lead * SR), np.float32))
     for i, (beat, audio) in enumerate(zip(reel["beats"], beat_audio)):
         dur = len(audio) / SR
         timing.append({"beat": i, "start": round(t, 3), "end": round(t + dur, 3)})
