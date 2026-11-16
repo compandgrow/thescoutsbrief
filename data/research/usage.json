@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 163,
+  "credits": 166,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1835,6 +1835,26 @@
    {
     "at": "2026-11-16T17:55:06Z",
     "what": "local scrape https://www.skysports.com/football/video/13612783/james-traffords-save-against-port-vale-for-bolton-in-2022",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-16T17:55:38Z",
+    "what": "search James Trafford Burnley signing from Manchester City 2023 Under-21 Euro final penalty save",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-16T17:55:44Z",
+    "what": "local scrape https://www.skysports.com/football/news/12919060/james-trafford-man-city-youth-product-and-u21-penalty-hero-is-a-future-england-no-1-who-can-shine-at-burnley",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-16T17:55:51Z",
+    "what": "scrape https://www.mancity.com/news/mens/james-trafford-joins-manchester-city-63889403",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-16T17:55:52Z",
+    "what": "local scrape https://www.bbc.com/sport/football/66145646",
     "credits": 0
    }
   ]

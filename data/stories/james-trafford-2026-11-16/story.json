@@ -1,0 +1,81 @@
+{
+ "id": "james-trafford-2026-11-16",
+ "player": "James Trafford",
+ "club_key": "MCI",
+ "angle": "Man City's academy keeper was sold, bought back for £31m, reduced to 'cup goalkeeper' and sold again for £45m. Now he's the man who ended world champions Spain's 43-match unbeaten run, and England have a No 1 debate.",
+ "why_now": "Trending on r/soccer 15-16 Nov 2026 ('James Trafford save against Spain 90+2'', 'Trafford wins the game for England' on r/MCFC) after his stoppage-time double save in Spain 2-3 England (Nations League, Madrid, 15 Nov 2026). Note: data/trends/2026-11-16.json was not ready, so the fan signal comes from data/trends/2026-11-15.json.",
+ "open_loop": "The 92nd minute in Madrid: 10-man England lead 3-2, and Trafford makes two saves in about two seconds to finish Spain's 43-match unbeaten run. How did City's 'cup goalkeeper' end up there?",
+ "hook_suggestion": "Man City paid £31m to bring him home. Then benched him.",
+ "hook_alt": "Spain again. Stoppage time again. Trafford again.",
+ "beats": [
+  {"slot": "cold_open",
+   "fact": "Spain 2-3 England, Nations League, Riyadh Air Metropolitano, Madrid. England led 3-0, then Elliot Anderson was sent off in the 63rd minute and Spain scored twice. With England down to 10 men, Trafford made a double save in the 92nd minute to protect the 3-2 win, which ended Spain's 43-match unbeaten run.",
+   "year": "2026",
+   "numbers": {"score": "Spain 2-3 England", "red_card_minute": 63, "double_save_minute": 92, "spain_unbeaten_run_ended": 43},
+   "quote": null,
+   "note": "Don't name the players the double save denied. Sky says Fermín López then Oyarzabal, BBC says Yamal/Fermín López, and ESPN names nobody. Outlets disagree, so name none.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo", "cached": "data/research/scrape_a7203468556b.json"},
+    {"outlet": "ESPN", "url": "http://kwese.espn.com/football/story/_/id/50501295/james-trafford-jordan-pickford-england-goalkeeper", "cached": "data/research/scrape_91827422656f.json"},
+    {"outlet": "Sky Sports", "url": "https://www.skysports.com/football/news/13612624/james-trafford-has-leeds-goalkeeper-overtaken-jordan-pickford-as-englands-no-1-after-starring-display-against-spain", "cached": "data/research/scrape_a147e34e5fb5.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/c6742l4z91lwo", "cached": "data/research/scrape_ddf9ab660cca.json"}
+   ]},
+  {"slot": "setup",
+   "fact": "CHAPTER 1: Trafford spent almost eight years in Manchester City's academy. In 2023 he saved a stoppage-time penalty in the European Under-21 Championship final against Spain, England kept six consecutive clean sheets in the tournament, and City sold him to Burnley in a deal worth up to £19m.",
+   "year": "2023",
+   "numbers": {"academy_years": "almost eight", "u21_consecutive_clean_sheets": 6, "burnley_fee": "up to £19m"},
+   "quote": null,
+   "sources": [
+    {"outlet": "Manchester City (official)", "url": "https://www.mancity.com/news/mens/james-trafford-joins-manchester-city-63889403", "cached": "data/research/scrape_fc7cfb77e514.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.com/sport/football/66145646", "cached": "data/research/scrape_4c0e69632de0.json"},
+    {"outlet": "Sky Sports", "url": "https://www.skysports.com/football/news/12919060/james-trafford-man-city-youth-product-and-u21-penalty-hero-is-a-future-england-no-1-who-can-shine-at-burnley", "cached": "data/research/scrape_361205249671.json"}
+   ]},
+  {"slot": "conflict",
+   "fact": "CHAPTER 2: In 2025 City bought him back from Burnley for £31m. City's own site confirmed a five-year deal and called it an emotional return. Then City signed Gianluigi Donnarumma and Trafford was reduced to Pep Guardiola's 'cup goalkeeper'.",
+   "year": "2025",
+   "numbers": {"fee_back_to_city": "£31m", "contract": "five years, to June 2030"},
+   "quote": null,
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo", "cached": "data/research/scrape_a7203468556b.json"},
+    {"outlet": "ESPN", "url": "http://kwese.espn.com/football/story/_/id/50501295/james-trafford-jordan-pickford-england-goalkeeper", "cached": "data/research/scrape_91827422656f.json"},
+    {"outlet": "Manchester City (official)", "url": "https://www.mancity.com/news/mens/james-trafford-joins-manchester-city-63889403", "cached": "data/research/scrape_fc7cfb77e514.json"}
+   ]},
+  {"slot": "twist",
+   "fact": "He left City for Leeds for £45m in summer 2026 and became their No 1. BBC says he has now been England's most expensive goalkeeper by transfer fee twice. He then started in Madrid ahead of Jordan Pickford, and Thomas Tuchel singled out the double save.",
+   "year": "2026",
+   "numbers": {"fee_to_leeds": "£45m"},
+   "quote": "The obvious save, where he deserves full credit, is the double save at the very end. Absolutely brilliant.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo", "cached": "data/research/scrape_a7203468556b.json"},
+    {"outlet": "ESPN", "url": "http://kwese.espn.com/football/story/_/id/50501295/james-trafford-jordan-pickford-england-goalkeeper", "cached": "data/research/scrape_91827422656f.json"},
+    {"outlet": "Sky Sports", "url": "https://www.skysports.com/football/news/13612624/james-trafford-has-leeds-goalkeeper-overtaken-jordan-pickford-as-englands-no-1-after-starring-display-against-spain", "cached": "data/research/scrape_a147e34e5fb5.json"}
+   ]},
+  {"slot": "now",
+   "fact": "Trafford, 24, has 5 England caps, all in 2026. Pickford, 32, has 94 and has been first choice for almost a decade. After the game Tuchel said there's no No 1.",
+   "year": "2026",
+   "numbers": {"trafford_caps": 5, "trafford_age": 24, "pickford_caps": 94, "pickford_age": 32},
+   "quote": "There's no No 1.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo", "cached": "data/research/scrape_a7203468556b.json"},
+    {"outlet": "Sky Sports", "url": "https://www.skysports.com/football/news/13612624/james-trafford-has-leeds-goalkeeper-overtaken-jordan-pickford-as-englands-no-1-after-starring-display-against-spain", "cached": "data/research/scrape_a147e34e5fb5.json"}
+   ]}
+ ],
+ "quotes": [
+  {"text": "The obvious save, where he deserves full credit, is the double save at the very end. Absolutely brilliant.", "who": "Thomas Tuchel, England head coach", "when": "15 Nov 2026, after Spain 2-3 England", "where": "post-match press conference, Madrid (reported verbatim by Sky Sports and ESPN)", "source_url": "https://www.skysports.com/football/news/13612624/james-trafford-has-leeds-goalkeeper-overtaken-jordan-pickford-as-englands-no-1-after-starring-display-against-spain"},
+  {"text": "There's no No 1.", "who": "Thomas Tuchel, England head coach", "when": "15 Nov 2026, after Spain 2-3 England", "where": "after full-time (Sky Sports; BBC reports it as told to ITV Sport: \"there's no number one\")", "source_url": "https://www.skysports.com/football/news/13612624/james-trafford-has-leeds-goalkeeper-overtaken-jordan-pickford-as-englands-no-1-after-starring-display-against-spain"},
+  {"text": "Everything happened so quick so for him to make two in the space of two seconds is massive. A massive night for him.", "who": "Declan Rice, England midfielder", "when": "15 Nov 2026, after Spain 2-3 England", "where": "ITV, reported by BBC Sport", "source_url": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo"},
+  {"text": "This is the place I call home", "who": "James Trafford", "when": "2025, on rejoining Manchester City", "where": "mancity.com (official)", "source_url": "https://www.mancity.com/news/mens/james-trafford-joins-manchester-city-63889403"}
+ ],
+ "outro_question": "Trafford or Pickford: who should be in goal for England's Nations League quarter-final? Follow for the next Scout File.",
+ "rejected": [
+  {"claim": "Names of the players the 92nd-minute double save denied (Fermín López / Oyarzabal / Yamal)", "reason": "outlets disagree (Sky vs BBC), so use neither"},
+  {"claim": "Donnarumma arrived 33 days after Trafford signed (by 1 Sept 2025)", "reason": "one source only (ESPN); use 'then City signed Donnarumma' with no timing"},
+  {"claim": "Trafford quotes about not playing at City affecting his 'mental wellbeing' ('horrendous feeling')", "reason": "mental health is a red line even when said publicly; not needed for the story"},
+  {"claim": "Went to the 2026 World Cup as third-choice keeper", "reason": "one source only (ESPN)"},
+  {"claim": "£45m is a record fee for a British goalkeeper", "reason": "only ESPN says this; BBC phrases it differently ('England's most expensive goalkeeper... twice'), so use BBC's wording with credit or just the fee"},
+  {"claim": "Six saves, four in the final 12 minutes; 81.4% save rate; tops PL for goals prevented (4.40)", "reason": "each from one outlet only"},
+  {"claim": "Guardiola penalty challenge anecdote ('Can I start on the weekend?')", "reason": "one source (Sky 2023) with no date or setting for the quote"},
+  {"claim": "First time Spain lost in Madrid in 39 years", "reason": "one source only (BBC)"}
+ ],
+ "credits_used": 6
+}
