@@ -7,11 +7,32 @@
  "theme": "STORY",
  "duration_s": {
   "target": [
-   40,
-   55
+   30,
+   40
   ],
-  "max": 60
+  "max": 45
  },
+ "duration_history": [
+  {
+   "updated": "2026-11-17",
+   "old": {
+    "target": [
+     40,
+     55
+    ],
+    "max": 60
+   },
+   "new": {
+    "target": [
+     30,
+     40
+    ],
+    "max": 45
+   },
+   "why": "Scout Files #1-#3 lost the average viewer at 4.7-7.2 s whatever the length (ter-stegen 55.4 s ratio 0.086, max-dowman 48.7 s 0.138, trafford 45.6 s 0.159); every cliffhanger question came after 37 s. About 75-95 spoken words.",
+   "judge_after_reels": 3
+  }
+ ],
  "credits_max_per_story": 12,
  "spicy_means": [
   "on-pitch drama: red cards, meltdowns, bust-ups with team-mates or opponents, famous confrontations",
