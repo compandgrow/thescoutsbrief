@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T23:52:05Z",
+ "generated": "2026-11-17T17:48:54Z",
  "fixtures": [
   {
    "espn_id": "401884736",
@@ -651,6 +651,21 @@
    ]
   },
   {
+   "espn_id": "401882783",
+   "slug": "celta-vigo-barcelona",
+   "date": "2026-12-05",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Celta Vigo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
    "espn_id": "401879209",
    "slug": "arsenal-tottenham-hotspur",
    "date": "2026-12-06",
@@ -679,21 +694,6 @@
    "score": null,
    "watched": [
     "RMA"
-   ]
-  },
-  {
-   "espn_id": "401882783",
-   "slug": "celta-vigo-barcelona",
-   "date": "2026-12-06",
-   "team": "BAR",
-   "teams_text": [
-    "Barcelona",
-    "Celta Vigo"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "BAR"
    ]
   },
   {
@@ -1465,6 +1465,21 @@
    "score": null,
    "watched": [
     "ARS"
+   ]
+  },
+  {
+   "espn_id": "401934397",
+   "slug": "ajax-amsterdam-bayern-munich",
+   "date": "2027-01-05",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "Ajax Amsterdam"
+   ],
+   "competition": "Club Friendly",
+   "score": null,
+   "watched": [
+    "BAY"
    ]
   },
   {
@@ -2530,7 +2545,7 @@
    "date": "2027-02-13",
    "team": "BAY",
    "teams_text": [
-    "1\\. FC Union Berlin",
+    "1. FC Union Berlin",
     "Bayern Munich"
    ],
    "competition": "German Bundesliga",
