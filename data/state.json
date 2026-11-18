@@ -218,6 +218,15 @@
    "mode": "auto",
    "at": "2026-11-16",
    "scheduled_for": "2026-11-16T19:38:00Z"
+  },
+  {
+   "reel": "story-florian-wirtz-2026-11-18",
+   "series": "scout-files",
+   "zernio_post": "6afdf217e078d3865c655a72",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-18",
+   "scheduled_for": "2026-11-18T19:44:00Z"
   }
  ],
  "skipped": [
