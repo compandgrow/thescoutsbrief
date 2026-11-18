@@ -11,8 +11,8 @@
  },
  "beats": [
   {
-   "say": "Klopp's Germany, five-nil. Two goals: Florian Wirtz.",
-   "caption": "Klopp's Germany, 5-0. Two goals: Florian Wirtz.",
+   "say": "Five-nil. Wirtz scores two for Klopp's Germany.",
+   "caption": "5-0. Wirtz scores two for Klopp's Germany.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -24,8 +24,8 @@
    }
   },
   {
-   "say": "Paraguay. Five months ago, they knocked Germany out of the World Cup. Then Klopp replaced Nagelsmann.",
-   "caption": "Paraguay. Five months ago, they knocked Germany out of the World Cup. Then Klopp replaced Nagelsmann.",
+   "say": "Paraguay. This summer, they knocked Germany out of the World Cup. Then Klopp replaced Nagelsmann. ",
+   "caption": "Paraguay. This summer, they knocked Germany out of the World Cup. Then Klopp replaced Nagelsmann.",
    "emotion": "disappointed",
    "card": {
     "type": "chapter",
@@ -41,8 +41,8 @@
    ]
   },
   {
-   "say": "Klopp: the new coach would have to drink himself into a stupor to look at them. Then? Love at first sight.",
-   "caption": "Klopp: the new coach would have to drink himself into a stupor to look at them. Then? Love at first sight.",
+   "say": "Klopp says that over the summer, it felt like the new coach would have to drink himself into a stupor just to look at this team. Then? Love at first sight. ",
+   "caption": "Klopp says that over the summer, it felt like the new coach would have to drink himself into a stupor just to look at this team. Then? Love at first sight.",
    "emotion": "smug",
    "card": {
     "type": "quote",
@@ -53,8 +53,8 @@
    }
   },
   {
-   "say": "Liverpool paid a club-record hundred and sixteen million. Can he bring this form back?",
-   "caption": "Liverpool paid a club-record £116m. Can he bring this form back?",
+   "say": "Liverpool signed him in a club-record hundred-and-sixteen-million deal. Can he bring this form back? ",
+   "caption": "Liverpool signed him in a club-record £116m deal. Can he bring this form back?",
    "emotion": "excited",
    "hit": true,
    "card": {
@@ -82,8 +82,8 @@
    }
   },
   {
-   "say": "Group winners. Klopp: no-one will be questioning them for three or four months. Follow for the next Scout File.",
-   "caption": "Group winners. Klopp: no-one will be questioning them for three or four months. Follow for the next Scout File.",
+   "say": "Group winners. Klopp says no-one will question them for at least three or four months. Follow for the next Scout File. ",
+   "caption": "Group winners. Klopp says no-one will question them for at least three or four months. Follow for the next Scout File.",
    "emotion": "happy",
    "card": {
     "type": "outro",
