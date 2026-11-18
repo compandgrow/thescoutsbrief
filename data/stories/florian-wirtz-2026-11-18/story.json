@@ -1,0 +1,81 @@
+{
+ "id": "florian-wirtz-2026-11-18",
+ "player": "Florian Wirtz",
+ "club_key": "LIV",
+ "angle": "Liverpool's club-record £116m signing scores twice as Jürgen Klopp's Germany, knocked out of the World Cup by Paraguay in the summer, thrash the Netherlands 5-0.",
+ "why_now": "Trending on r/LiverpoolFC (trends 2026-11-17, Reddit digest failed again on 2026-11-18 with 404): Wirtz's goals for Klopp's Germany v Netherlands on 16 Nov 2026. Reddit is signal only; every fact below is from trusted outlets.",
+ "open_loop": "Florian Wirtz cost Liverpool £116m. For Jürgen Klopp's Germany: two goals, five-nil over the Dutch. How did a team knocked out of the World Cup by Paraguay get here?",
+ "beats": [
+  {"slot": "cold_open",
+   "fact": "Florian Wirtz scored twice (60', 71') as Jürgen Klopp's Germany beat the Netherlands 5-0 in Berlin on Monday 16 November 2026. Wirtz joined Liverpool from Bayer Leverkusen in June 2025 for a club record £116m (£100m guaranteed plus £16m in add-ons).",
+   "year": "2026",
+   "numbers": {"score": "5-0", "wirtz_goals": 2, "goal_minutes": ["60'", "71'"], "fee_total": "£116m", "fee_guaranteed": "£100m", "add_ons": "£16m"},
+   "quote": null,
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t", "cached": "data/research/scrape_f7c4443cb826.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2026/nov/16/nations-league-roundup-germany-netherlands-greece-serbia", "cached": "data/research/scrape_1dcfdaa97df3.json"},
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout", "cached": "data/research/scrape_a8fcc558c393.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cg4rl52kee2o", "cached": "data/research/scrape_9d7b1cbfe3cd.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2025/jun/20/florian-wirtz-liverpool-bayer-leverkusen-club-record-116m-deal", "cached": "data/research/scrape_025349f74c43.json"}
+   ]},
+  {"slot": "setup",
+   "fact": "Beat 1 surprise: five months earlier Germany were knocked out of the 2026 World Cup in the round of 32 by Paraguay. Klopp then replaced Julian Nagelsmann as Germany coach.",
+   "year": "2026",
+   "numbers": {"stage": "last 32 / round of 32", "opponent": "Paraguay"},
+   "quote": null,
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/ced44061g8qo", "cached": "data/research/scrape_7a597d9b77a9.json"},
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout", "cached": "data/research/scrape_a8fcc558c393.json"}
+   ]},
+  {"slot": "conflict",
+   "fact": "Klopp on the mood he inherited: over the summer, he said, it felt like the new coach would have to drink himself into a stupor just to look at the German national team - 'But then I arrived, and it was love at first sight.'",
+   "year": "2026",
+   "numbers": {},
+   "quote": "Over the summer, it felt as though the new coach -- that's me -- would have to drink himself into a stupor just to be able to look at the German national team. But then I arrived, and it was love at first sight.",
+   "sources": [
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout", "cached": "data/research/scrape_a8fcc558c393.json"}
+   ]},
+  {"slot": "twist",
+   "fact": "Wirtz's first: on the hour he won the ball back from Netherlands captain Denzel Dumfries and fired in off the left post from outside the box. His second: in the 71st minute from a Brajan Gruda cut-back. Gruda scored one and set up two.",
+   "year": "2026",
+   "numbers": {"first_goal": "60'", "second_goal": "71'", "gruda_goals": 1, "gruda_assists": 2},
+   "quote": null,
+   "sources": [
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout", "cached": "data/research/scrape_a8fcc558c393.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t", "cached": "data/research/scrape_f7c4443cb826.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2026/nov/16/nations-league-roundup-germany-netherlands-greece-serbia", "cached": "data/research/scrape_1dcfdaa97df3.json"}
+   ]},
+  {"slot": "now",
+   "fact": "The 5-0 took Germany to the top of their Nations League group and into the quarter-finals as group winners; the Netherlands also qualified, in second. Klopp: no-one will be questioning the German national team for the next three or four months.",
+   "year": "2026",
+   "numbers": {"score": "5-0", "next_round": "Nations League quarter-finals", "klopp_months": "three or four"},
+   "quote": "Everyone will go home with a smile on their face – and for at least the next three or four months, no-one will be questioning the German national team.",
+   "sources": [
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2026/nov/16/nations-league-roundup-germany-netherlands-greece-serbia", "cached": "data/research/scrape_1dcfdaa97df3.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t", "cached": "data/research/scrape_f7c4443cb826.json"},
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout", "cached": "data/research/scrape_a8fcc558c393.json"}
+   ]}
+ ],
+ "quotes": [
+  {"text": "Over the summer, it felt as though the new coach -- that's me -- would have to drink himself into a stupor just to be able to look at the German national team. But then I arrived, and it was love at first sight. If we can get our highly talented players firing on all cylinders, then playing against us won't be any fun at all.", "who": "Jürgen Klopp, Germany coach", "when": "16 November 2026, after Germany 5-0 Netherlands", "where": "post-match comments in Berlin, reported by ESPN", "source_url": "https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout"},
+  {"text": "Everyone will go home with a smile on their face – and for at least the next three or four months, no-one will be questioning the German national team.", "who": "Jürgen Klopp, Germany coach", "when": "16 November 2026, after Germany 5-0 Netherlands", "where": "post-match comments, reported by The Guardian (ESPN carries a differently translated version from ARD; use the Guardian wording verbatim)", "source_url": "https://www.theguardian.com/football/2026/nov/16/nations-league-roundup-germany-netherlands-greece-serbia"},
+  {"text": "We hope that we can make it fun for the fans. It was definitely fun for us, especially in the second half.", "who": "Florian Wirtz", "when": "16 November 2026, after Germany 5-0 Netherlands", "where": "German broadcaster ARD, reported by BBC Sport", "source_url": "https://www.bbc.com/sport/football/live/cmly7wxld228t"},
+  {"text": "I would like to win everything every year.", "who": "Florian Wirtz", "when": "June 2025, on signing for Liverpool", "where": "Liverpool's website, reported by BBC Sport and The Guardian", "source_url": "https://www.theguardian.com/football/2025/jun/20/florian-wirtz-liverpool-bayer-leverkusen-club-record-116m-deal"}
+ ],
+ "outro_question": "Klopp says no-one will question Germany for three or four months. Can Wirtz bring this form back to Liverpool? Follow for the next Scout File.",
+ "rejected": [
+  {"claim": "Wirtz has scored eight goals for Germany since joining Liverpool, one behind his Liverpool total", "reason": "one source only (BBC live caption); not usable in the hook"},
+  {"claim": "Klopp: 'I only knew him from television. I was shocked when I saw him on the pitch for the first time'", "reason": "Reddit only; not found on a trusted outlet (search_977b5dea5c2b.json)"},
+  {"claim": "Four goals in Wirtz's last four starts under Klopp", "reason": "Reddit only"},
+  {"claim": "Germany's biggest win over the Netherlands since a 7-0 in 1959", "reason": "one source only (Guardian)"},
+  {"claim": "How Nagelsmann left (fired vs resigned)", "reason": "outlets disagree: ESPN says fired, BBC says resigned; use neither, say only that Klopp replaced him"},
+  {"claim": "Germany lost to Paraguay on penalties", "reason": "one source only (BBC); say 'knocked out by Paraguay in the last 32'"},
+  {"claim": "Klopp took over in August / six games in charge / Wirtz is 23", "reason": "one source only (ESPN)"},
+  {"claim": "Klopp's first coaching job since leaving Liverpool in summer 2024 after nine years", "reason": "one outlet only (BBC); don't state Klopp's Liverpool history on screen"},
+  {"claim": "Wirtz is the British transfer record", "reason": "only if the £16m add-ons are met (BBC, Guardian); call it a Liverpool club record"},
+  {"claim": "Youngest Bundesliga goalscorer at 17 v Bayern; 57 goals in 197 Leverkusen games", "reason": "one source only (BBC)"},
+  {"claim": "Rooney story (trending r/soccer)", "reason": "red line: mental health / private"},
+  {"claim": "Raphinha red card v Japan (trending r/soccer)", "reason": "Barcelona excluded by club rotation (BAR story #1); Man City excluded as last club"}
+ ],
+ "credits_used": 12
+}
