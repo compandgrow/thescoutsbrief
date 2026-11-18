@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 166,
+  "credits": 178,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -1910,6 +1910,61 @@
    {
     "at": "2026-11-17T17:48:54Z",
     "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-18T17:51:27Z",
+    "what": "search Florian Wirtz Germany Netherlands Klopp goals",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-18T17:51:38Z",
+    "what": "scrape https://www.espn.com/soccer/story/_/id/50505834/klopp-germany-netherlands-rout",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-18T17:51:38Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/16/nations-league-roundup-germany-netherlands-greece-serbia",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-18T17:51:40Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cmly7wxld228t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-18T17:52:02Z",
+    "what": "search Klopp Wirtz shocked when I saw him on the pitch",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-18T17:52:06Z",
+    "what": "search Florian Wirtz completes British record move Liverpool from Bayer Leverkusen",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-18T17:52:08Z",
+    "what": "search Florian Wirtz Liverpool British record transfer Leverkusen fee",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-18T17:52:14Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cg4rl52kee2o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-18T17:52:14Z",
+    "what": "local scrape https://www.theguardian.com/football/2025/jun/20/florian-wirtz-liverpool-bayer-leverkusen-club-record-116m-deal",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-18T17:52:30Z",
+    "what": "search Jurgen Klopp appointed Germany head coach Nagelsmann sacked Paraguay World Cup",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-18T17:52:36Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/ced44061g8qo",
     "credits": 0
    }
   ]
