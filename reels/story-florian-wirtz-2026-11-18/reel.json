@@ -1,0 +1,98 @@
+{
+ "id": "story-florian-wirtz-2026-11-18",
+ "series": "scout-files",
+ "story_id": "florian-wirtz-2026-11-18",
+ "format_version": "story-2",
+ "experiment": "story-2 30-40 s / ~92 words; spoken hook names Wirtz + Klopp + 5-0, payoff ~1.5 s; beat 1 starts on 'Paraguay' (no case-file preamble); question at ~20 s",
+ "presenter": "frog3d",
+ "match": {
+  "pill": "SCOUT FILES #4 · WIRTZ",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Klopp's Germany, five-nil. Two goals: Florian Wirtz.",
+   "caption": "Klopp's Germany, 5-0. Two goals: Florian Wirtz.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "FLORIAN WIRTZ · GERMANY 5-0 NETHERLANDS",
+    "text": "KLOPP'S GERMANY:\n*5-0*.",
+    "size": 130,
+    "source": "BBC Sport, Guardian, ESPN"
+   }
+  },
+  {
+   "say": "Paraguay. Five months ago, they knocked Germany out of the World Cup. Then Klopp replaced Nagelsmann.",
+   "caption": "Paraguay. Five months ago, they knocked Germany out of the World Cup. Then Klopp replaced Nagelsmann.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "chapter",
+    "kicker": "CASE FILE #4 · CHAPTER 1",
+    "year": "SUMMER 2026 · WORLD CUP",
+    "text": "KNOCKED OUT\nBY *PARAGUAY*.",
+    "size": 120,
+    "sub": "round of 32 · Jürgen Klopp then replaced Julian Nagelsmann",
+    "source": "BBC Sport, ESPN"
+   },
+   "slam": [
+    0.3
+   ]
+  },
+  {
+   "say": "Klopp: the new coach would have to drink himself into a stupor to look at them. Then? Love at first sight.",
+   "caption": "Klopp: the new coach would have to drink himself into a stupor to look at them. Then? Love at first sight.",
+   "emotion": "smug",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD",
+    "text": "…DRINK HIMSELF INTO A STUPOR…\nBUT THEN I ARRIVED, AND IT WAS\n*LOVE AT FIRST SIGHT.*",
+    "who": "Jürgen Klopp, ESPN, 2026",
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "Liverpool paid a club-record hundred and sixteen million. Can he bring this form back?",
+   "caption": "Liverpool paid a club-record £116m. Can he bring this form back?",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "LIVERPOOL · JUNE 2025",
+    "value": 116,
+    "unit": "£M",
+    "label": "Liverpool's *club record*",
+    "sub": "£100m guaranteed + £16m add-ons · from Bayer Leverkusen",
+    "source": "BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "On the hour, Wirtz wins it off Dumfries, fires in from outside the box. Then a second.",
+   "caption": "On the hour, Wirtz wins it off Dumfries, fires in from outside the box. Then a second.",
+   "emotion": "excited",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "16 NOV 2026 · BERLIN",
+    "text": "60'. 71'.\n*TWO GOALS*.",
+    "size": 125,
+    "sub": "won the ball from Netherlands captain Denzel Dumfries · second from a Brajan Gruda cut-back",
+    "source": "ESPN, BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "Group winners. Klopp: no-one will be questioning them for three or four months. Follow for the next Scout File.",
+   "caption": "Group winners. Klopp: no-one will be questioning them for three or four months. Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #4",
+    "text": "WIRTZ: BRING IT\nBACK TO *LIVERPOOL*?",
+    "size": 115,
+    "sub": "Germany into the Nations League quarter-finals as group winners",
+    "source": "Guardian, BBC Sport, ESPN"
+   }
+  }
+ ]
+}
