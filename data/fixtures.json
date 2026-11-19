@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T23:49:08Z",
+ "generated": "2026-11-19T23:49:54Z",
  "fixtures": [
   {
    "espn_id": "401884736",
@@ -1693,21 +1693,6 @@
    ]
   },
   {
-   "espn_id": "401879165",
-   "slug": "leeds-united-tottenham-hotspur",
-   "date": "2027-01-16",
-   "team": "TOT",
-   "teams_text": [
-    "Tottenham Hotspur",
-    "Leeds United"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "TOT"
-   ]
-  },
-  {
    "espn_id": "401884669",
    "slug": "bayern-munich-eintracht-frankfurt",
    "date": "2027-01-16",
@@ -1735,6 +1720,21 @@
    "score": null,
    "watched": [
     "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879165",
+   "slug": "leeds-united-tottenham-hotspur",
+   "date": "2027-01-17",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Leeds United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
    ]
   },
   {
@@ -1904,22 +1904,6 @@
    ]
   },
   {
-   "espn_id": "401878718",
-   "slug": "liverpool-manchester-united",
-   "date": "2027-01-23",
-   "team": "LIV",
-   "teams_text": [
-    "Manchester United",
-    "Liverpool"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "LIV",
-    "MUN"
-   ]
-  },
-  {
    "espn_id": "401879164",
    "slug": "manchester-city-brighton-hove-albion",
    "date": "2027-01-23",
@@ -1935,21 +1919,6 @@
    ]
   },
   {
-   "espn_id": "401879160",
-   "slug": "chelsea-leeds-united",
-   "date": "2027-01-23",
-   "team": "CHE",
-   "teams_text": [
-    "Leeds United",
-    "Chelsea"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "CHE"
-   ]
-  },
-  {
    "espn_id": "401878720",
    "slug": "newcastle-united-arsenal",
    "date": "2027-01-23",
@@ -1962,21 +1931,6 @@
    "score": null,
    "watched": [
     "ARS"
-   ]
-  },
-  {
-   "espn_id": "401879163",
-   "slug": "tottenham-hotspur-crystal-palace",
-   "date": "2027-01-23",
-   "team": "TOT",
-   "teams_text": [
-    "Crystal Palace",
-    "Tottenham Hotspur"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "TOT"
    ]
   },
   {
@@ -2007,6 +1961,37 @@
    "score": null,
    "watched": [
     "PSG"
+   ]
+  },
+  {
+   "espn_id": "401878718",
+   "slug": "liverpool-manchester-united",
+   "date": "2027-01-24",
+   "team": "LIV",
+   "teams_text": [
+    "Manchester United",
+    "Liverpool"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "LIV",
+    "MUN"
+   ]
+  },
+  {
+   "espn_id": "401879163",
+   "slug": "tottenham-hotspur-crystal-palace",
+   "date": "2027-01-24",
+   "team": "TOT",
+   "teams_text": [
+    "Crystal Palace",
+    "Tottenham Hotspur"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
    ]
   },
   {
@@ -2052,6 +2037,21 @@
    "score": null,
    "watched": [
     "ATM"
+   ]
+  },
+  {
+   "espn_id": "401879160",
+   "slug": "chelsea-leeds-united",
+   "date": "2027-01-25",
+   "team": "CHE",
+   "teams_text": [
+    "Leeds United",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
    ]
   },
   {
@@ -2205,37 +2205,6 @@
    ]
   },
   {
-   "espn_id": "401878715",
-   "slug": "manchester-united-brentford",
-   "date": "2027-01-30",
-   "team": "MUN",
-   "teams_text": [
-    "Brentford",
-    "Manchester United"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "MUN"
-   ]
-  },
-  {
-   "espn_id": "401879154",
-   "slug": "arsenal-manchester-city",
-   "date": "2027-01-30",
-   "team": "MCI",
-   "teams_text": [
-    "Manchester City",
-    "Arsenal"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "MCI",
-    "ARS"
-   ]
-  },
-  {
    "espn_id": "401878714",
    "slug": "nottingham-forest-chelsea",
    "date": "2027-01-30",
@@ -2248,21 +2217,6 @@
    "score": null,
    "watched": [
     "CHE"
-   ]
-  },
-  {
-   "espn_id": "401879153",
-   "slug": "sunderland-tottenham-hotspur",
-   "date": "2027-01-30",
-   "team": "TOT",
-   "teams_text": [
-    "Tottenham Hotspur",
-    "Sunderland"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "TOT"
    ]
   },
   {
@@ -2293,6 +2247,37 @@
    "score": null,
    "watched": [
     "PSG"
+   ]
+  },
+  {
+   "espn_id": "401879154",
+   "slug": "arsenal-manchester-city",
+   "date": "2027-01-31",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MCI",
+    "ARS"
+   ]
+  },
+  {
+   "espn_id": "401879153",
+   "slug": "sunderland-tottenham-hotspur",
+   "date": "2027-01-31",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Sunderland"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "TOT"
    ]
   },
   {
@@ -2338,6 +2323,21 @@
    "score": null,
    "watched": [
     "ATM"
+   ]
+  },
+  {
+   "espn_id": "401878715",
+   "slug": "manchester-united-brentford",
+   "date": "2027-02-01",
+   "team": "MUN",
+   "teams_text": [
+    "Brentford",
+    "Manchester United"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "MUN"
    ]
   },
   {

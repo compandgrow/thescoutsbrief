@@ -1,5 +1,5 @@
 # What works on @thescoutbrief
-Updated 2026-11-17 · 25 reels reviewed (22 `match`, 3 `scout-files`) · confidence: high for match reels (15+), low for Scout Files (3 reels)
+Updated 2026-11-19 · 26 reels reviewed (22 `match`, 4 `scout-files`) · confidence: high for match reels (15+), low for Scout Files (4 reels)
 
 The account is still small: 25 reels, 51-226 views each, one share, three saves and **zero comments in total**. What we learn from the hook and from holding viewers is getting solid. What wins shares and comments is still unproven. Newest: aston-villa-man utd has the best skip rate yet (45.8%); barcelona-atletico (62.5%, 0.146) ran 41.7 s.
 
@@ -16,7 +16,8 @@ The account is still small: 25 reels, 51-226 views each, one share, three saves 
 - Put the trend with `use_for: hook` in the hook. Put `best_angle` (when it is a streak) in beat 1 or 2, never only in the outro. Evidence: roma-man utd left the nine-game winless run to 11 s (average watch 7.3 s); barcelona-atletico left t2 (two home defeats in a row, the best_angle) to the outro at 32 s. Confidence: low
 
 ## Scout Files (player stories, Inspector Croak), judged only against Scout Files
-Only 3 reels so far, so these are early. Treat them as fixes and experiments, not proven rules.
+- **New (#4 wirtz, 2026-11-18):** beat 1 must be the present-day payoff, never backstory. Wirtz started beat 1 on its surprise word as asked, but the word opened a flashback ("Paraguay. This summer…"); viewers left at 5.74 s, the series' second-worst hold, and the Liverpool £116m angle (the audience's club) waited until 20 s. When the story is a national-team night, put the player's club and its number in the hook. Confidence: low
+Only 3 reels so far (now 4), so these are early. Treat them as fixes and experiments, not proven rules.
 - **Length: now 30-40 s, max 45** (`config/stories.json` → `duration_s`, changed 2026-11-17 from 40-55, max 60). About 75-95 spoken words, even though story-writer.md still says 110-140. The average viewer leaves at 4.7-7.2 s whatever the length, so the ratio rises as reels get shorter: ter-stegen 55.4 s 0.086, max-dowman 48.7 s 0.138, trafford 45.6 s 0.159. Ask the cliffhanger question by about 20 s (it came at 37-39 s on all three). Confidence: low-medium (3 reels, consistent)
 - Beat 1 starts on its surprise word. No "Case file N." or the player's name read out at the top of beat 1; put those on the card kicker. Viewers left about 1 s into beat 1 on all three reels: trafford at 7.2 s ("Case file three. James Trafford:…", beat 1 from 6.3 s, the £31m payoff at ~11 s), dowman at 6.6 s ("Case file two. England under-twenty-ones'…", from 5.3 s), ter-stegen at 4.7 s (CV list). Confidence: low (3 reels, consistent)
 - Beat 1 must add the most surprising fact NOT already in the hook, never the CV. Trafford's beat 1 was new (sold, then bought back for £31m) and got the series' best average watch (7.16 s, against 6.62 s for dowman, which restated the hook, and 4.71 s for ter-stegen, a CV list). Confidence: low
@@ -34,4 +35,4 @@ Only 3 reels so far, so these are early. Treat them as fixes and experiments, no
 Medians from `performance.py table` (all 25 reels, both series): views 168 · reach 151 · avg watch 6.35 s · watch ratio 0.175 · skip rate 60.9% · engagements 6.2/1k · shares+saves 0.0/1k.
 `match` series (22 reels): views 171 · reach 152.5 · avg watch 6.32 s · watch ratio 0.179 · skip rate 61.6% · completion n/a (Instagram returns 0) · engagements 6.2/1k reach · shares+saves 0.0/1k reach · follows n/a (Zernio returns null; timeline shows 0 on every reel).
 Format v2 only (19 reels): skip 59.1% · avg watch 6.43 s · watch ratio 0.188.
-`scout-files` series (3 reels, story-1, 45-55 s): views 137 · reach 123 · avg watch 6.62 s · watch ratio 0.138 · skip 57.7% · engagements 18.9/1k · shares+saves 0.0/1k · comments 0 · follows 0 · profile views 0/1k.
+`scout-files` series (4 reels, 42-55 s): views 132 · reach 114.5 · avg watch 6.18 s · watch ratio 0.138 · skip 57.6% · shares+saves 0.0/1k · comments 0 · follows 0 · profile views 0/1k. Experiment check after #4 (42 s): ratio 0.137, avg watch 5.74 s, no follow/comment yet — not a success so far; judge again after #5-#6.
