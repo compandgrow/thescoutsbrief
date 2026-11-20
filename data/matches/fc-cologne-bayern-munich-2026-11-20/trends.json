@@ -1,0 +1,133 @@
+{
+ "match": "BAY 1-1 KOE (Bundesliga matchday 10)",
+ "generated_at": "2026-11-20T23:55:00Z",
+ "talking_points": [
+  {
+   "id": "t1",
+   "team": "BAY",
+   "type": "storyline",
+   "claim": "Ballon d'Or winner Harry Kane was forced off with a left-ankle injury after a challenge by Joël Schmied and replaced by Tom Bischof in the 20th minute",
+   "numbers": {
+    "minute_off": 20,
+    "kane_season_goals": 10,
+    "kane_season_assists": 10,
+    "kane_season_games": 16
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "Official league source: bundesliga.com ('forced off in the first half ... with a suspected ankle injury', 'replaced by Tom Bischof in the 20th minute', '10 goals and 10 assists in 16 competitive games'), cached data/research/scrape_b053688dcbac.json",
+     "url": "https://www.bundesliga.com/en/bundesliga/news/harry-kane-ankle-injury-bayern-munich-cologne-england-40055"
+    },
+    {
+     "what": "ESPN News Services (Kane hurt in challenge with Schmied, off for Bischof in the 20th minute), cached data/research/scrape_fe3537c9ce70.json",
+     "url": "https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich"
+    },
+    {
+     "what": "ESPN match page substitutions: Bischof for Kane 20'",
+     "url": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich"
+    }
+   ],
+   "hook_angle": "Bayern lost Kane after 20 minutes. Then hit the target once.",
+   "use_for": "hook",
+   "fresh_until": "2026-11-25"
+  },
+  {
+   "id": "t2",
+   "team": "BAY",
+   "type": "form",
+   "claim": "Bayern are still unbeaten in the Bundesliga this season (6 wins, 4 draws in 10), but the lead over Dortmund is one point and Dortmund have a game in hand",
+   "numbers": {
+    "played": 10,
+    "won": 6,
+    "drawn": 4,
+    "lost": 0,
+    "points": 22,
+    "dortmund_points": 21,
+    "dortmund_played": 9,
+    "scope": "Bundesliga only"
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "ESPN Bundesliga table after this match (data/research/scrape_224cd33dfe21.json): Bayern 10 6 4 0 +20 22; Dortmund 9 6 3 0 +9 21",
+     "url": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich"
+    },
+    {
+     "what": "BBC pre-match table (data/research/scrape_25bee576ee02.json): Bayern 9 6 3 0, 21 pts; Dortmund 9 6 3 0, 21 pts. Plus this 1-1 = 10 games, 22 pts, matches ESPN",
+     "url": "https://www.bbc.com/sport/football/live/cw99ex0kn0p4t"
+    }
+   ],
+   "hook_angle": "Still unbeaten, but Dortmund are one point back with a game in hand.",
+   "use_for": "context",
+   "fresh_until": "2026-11-22"
+  },
+  {
+   "id": "t3",
+   "team": "KOE",
+   "type": "form",
+   "claim": "Cologne had one win in six in all competitions (the win was in the German Cup); this draw is their third in six",
+   "numbers": {
+    "run_newest_first": "DLDWDL",
+    "wins": 1,
+    "draws": 3,
+    "losses": 2,
+    "scope": "all competitions, includes this match"
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "ESPN results via data/form/122.json (newest first: D 1-1 Bayern (A), L 1-2 Leverkusen, D 1-1 Union Berlin, W 5-0 Union Berlin (cup), D 0-0 Schalke, L 0-1 Frankfurt; gaps: none)",
+     "url": "https://www.espn.co.uk/football/team/results/_/id/122"
+    }
+   ],
+   "hook_angle": "Cologne arrived with one win in five and left with a point.",
+   "use_for": "context",
+   "fresh_until": "2026-11-23"
+  }
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [],
+  "club_subs": []
+ },
+ "rejected": [
+  {
+   "claim": "Kane out for 'the next few months' / about three months with a ligament tear",
+   "reason": "only one trusted outlet (ESPN News Services, quoting Bayern and Eberl); the official bundesliga.com piece only says 'suspected ankle injury'. Search/scrape budget for this match used, fcbayern.com not checked. Say 'ankle injury, off after 20 minutes' only"
+  },
+  {
+   "claim": "Olise bruised forefoot, left on crutches",
+   "reason": "only ESPN; the 45' substitution itself is in the ESPN match data and can be stated"
+  },
+  {
+   "claim": "Bayern unbeaten in six in all competitions (DWWDWW)",
+   "reason": "data/form/132.json shows a gap 2026-11-07 to 2026-11-20 (international break); no trusted outlet states the run"
+  },
+  {
+   "claim": "Kane + Olise = 41% of Bayern's goals (22 of 54)",
+   "reason": "ESPN only; not needed"
+  },
+  {
+   "claim": "Mikey Moore scoring against former Spurs teammate Kane",
+   "reason": "storyline is fine but the reel need not use it; bundesliga.com (official) states 'Tottenham Hotspur loanee ... a former teammate of Kane's', usable as context only if needed"
+  }
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "Was this just a Bayern side without Kane, or a bad night?",
+  "data_answer": "Bayern took 15 shots after Kane went off (0.86 xG) and got one on target, the goal. In the second half: 7 shots, none on target. Cologne's 7 shots were worth 1.99 xG to Bayern's 1.07 over 90 minutes.",
+  "evidence": [
+   "insights.json tactical_change",
+   "insights.json team_story xG and shots on goal",
+   "derived.json BAY_from_20 / BAY_2H",
+   "bundesliga.com Kane off 20'"
+  ],
+  "fan_heat": "unknown: Reddit unreachable (RSS 404)",
+  "hook_angle": "Bayern lost Kane after 20 minutes. Then hit the target once.",
+  "why": "Kane's injury is the story everyone will see; the shot data tests what Bayern looked like without him. No mocking of the injury: the reel is about Bayern's finishing numbers."
+ },
+ "credits_used": 5,
+ "notes": "Credits: form 132 and 122 were free local fetches (0); search 'Bayern Munich Cologne' (2), search 'Bayern Harry Kane injury ankle' (2), scrape bundesliga.com Kane article (1, local fetch blocked by proxy 403 so Firecrawl) = 5. The ESPN Kane story and commentary were fetched free by the analyst. Reddit: engine/reddit.py match 'Bayern Munich' 'FC Cologne' -> 'Reddit RSS error 404 on /r/soccer/search' (retried 'Bayern' 'Koln', same); club BAY -> 'Reddit RSS error 404 on /r/fcbayern/hot/'. No Reddit keys, so no fan_buzz. ESPN Match Leaders gives Karl 0.48 xG; shot-map sum is 0.49: use 0.48. BBC page is pre-match; its table (9 games) is not the current one, use ESPN's for current standing."
+}

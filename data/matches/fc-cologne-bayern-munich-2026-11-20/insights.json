@@ -1,0 +1,205 @@
+{
+ "match": {
+  "home": "Bayern Munich",
+  "away": "FC Cologne",
+  "home_short": "BAY",
+  "away_short": "KOE",
+  "score": "1-1",
+  "competition": "German Bundesliga",
+  "date": "2026-11-20",
+  "venue": "Allianz Arena"
+ },
+ "data_mode": "web (ESPN match page, team stats, commentary 62'+ and news story; BBC page was pre-match only); no player ratings, best/worst are Scout's pick. NB ESPN labels Bayern 'MUN'.",
+ "headline": "Bayern had 72% of the ball and 17 shots but only one on target, and lost Harry Kane to an ankle ligament tear after 20 minutes; Cologne's 7 shots were worth 1.99 xG to Bayern's 1.07.",
+ "goals": [
+  {
+   "minute": "12'",
+   "player": "Mikey Moore",
+   "team": "FC Cologne",
+   "xg": 0.93,
+   "situation": "Fast Break",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich shot map shot 2 of 24 (data/research/scrape_224cd33dfe21.json)"
+  },
+  {
+   "minute": "37'",
+   "player": "Nathaniel Brown",
+   "team": "Bayern Munich",
+   "xg": 0.06,
+   "xgot": 0.38,
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich shot map shot 8 of 24"
+  }
+ ],
+ "team_story": [
+  {
+   "label": "Possession %",
+   "home": 72,
+   "away": 28,
+   "why_it_matters": "Bayern had the ball; Cologne had the chances.",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Team Stats (data/research/scrape_224cd33dfe21.json)"
+  },
+  {
+   "label": "Shots on goal",
+   "home": 1,
+   "away": 4,
+   "why_it_matters": "Bayern's only shot on target all night was Brown's equaliser.",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884736 Shots (data/research/scrape_fb37c40bdf78.json)"
+  },
+  {
+   "label": "xG",
+   "home": 1.07,
+   "away": 1.99,
+   "why_it_matters": "Cologne made fewer, far better chances.",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Team Stats; matches shot-map sum in data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json BAY_all/KOE_all"
+  },
+  {
+   "label": "Big chances created",
+   "home": 2,
+   "away": 4,
+   "why_it_matters": "The visitors created double Bayern's clear-cut chances.",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884736 Attack"
+  },
+  {
+   "label": "Attempts outside box",
+   "home": 11,
+   "away": 0,
+   "why_it_matters": "11 of Bayern's 17 shots came from distance.",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401884736 Shots"
+  }
+ ],
+ "tactical_change": {
+  "team": "Bayern Munich",
+  "minute": 20,
+  "before": "4-2-3-1 with Kane up front",
+  "after": "4-2-3-1 (shape unchanged in source), Bischof on for Kane",
+  "trigger": "injury: Kane ligament tear in left ankle (ESPN story, citing Bayern); Olise also off at half-time (Binder on, bruised forefoot)",
+  "effect": "Without Kane, Bayern took 15 shots worth 0.86 xG and got one on target (the goal). In the second half Bayern had 7 shots, 0.56 xG, 0 on target; Cologne had 6 shots, 1.06 xG, 3 on target.",
+  "evidence": [
+   {
+    "label": "Bayern shots from 20'",
+    "before": 2,
+    "after": 15,
+    "source": "data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json BAY_before_20 / BAY_from_20 (from https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich shot map)"
+   },
+   {
+    "label": "Bayern shots on target, 2nd half",
+    "before": 1,
+    "after": 0,
+    "source": "data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json BAY_1H / BAY_2H"
+   },
+   {
+    "label": "Cologne xG by half",
+    "before": 0.93,
+    "after": 1.06,
+    "source": "data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json KOE_1H / KOE_2H"
+   }
+  ],
+  "confidence": "medium (sub minutes and injury are sourced; no formation change is stated, so this is the 'second-half shift')"
+ },
+ "best_player": {
+  "name": "Mikey Moore",
+  "team": "FC Cologne",
+  "rating": null,
+  "stats": [
+   [
+    "goals",
+    "1"
+   ],
+   [
+    "shots",
+    "2"
+   ],
+   [
+    "shots on target",
+    "2"
+   ],
+   [
+    "xG",
+    "1.43"
+   ]
+  ],
+  "why": "Scout's pick: scored the 12' opener from a fast break (0.93 xG) and had the highest xG on the pitch; both his shots were on target.",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Match Leaders (M. Moore 2 SOG, 1.43 xG) and shot map shots 2 and 12; data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json KOE_moore"
+ },
+ "worst_player": {
+  "name": "Lennart Karl",
+  "team": "Bayern Munich",
+  "rating": null,
+  "stats": [
+   [
+    "shots",
+    "3"
+   ],
+   [
+    "shots on target",
+    "0"
+   ],
+   [
+    "xG",
+    "0.48"
+   ],
+   [
+    "best Bayern chance (54')",
+    "0.28 xG, off target"
+   ]
+  ],
+  "why": "Scout's pick: had Bayern's best chance of the night (0.28 xG at 54') and most Bayern shots, none on target. Played 90 (not substituted). Not anger-worthy: the numbers are a quiet night, not a disaster.",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Match Leaders (L. Karl 0 SOG, 0.48 xG) and shot map shots 1, 3, 13; data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json BAY_best_single_chance_xg"
+ },
+ "surprise_stat": {
+  "value": "1",
+  "label": "Bayern shots on target, at home, in the Bundesliga",
+  "context": "ESPN: \"It was the first time Bayern Munich had just one shot on target in a Bundesliga home game since at least 2004-05.\"",
+  "source": "https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich (data/research/scrape_fe3537c9ce70.json); https://www.espn.com/soccer/team-stats/_/gameId/401884736 Shots on Goal 1"
+ },
+ "extra_facts": [
+  {
+   "fact": "Kane off in the 20th minute for Tom Bischof with a ligament tear in his left ankle; Bayern said he will be out 'for the next few months'; Eberl expects about three months.",
+   "source": "https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich; sub minute https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Substitutions"
+  },
+  {
+   "fact": "Kane and Olise account for 22 of Bayern's 54 goals (41%) this season.",
+   "source": "https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich"
+  },
+  {
+   "fact": "Olise substituted at half-time (Binder on 45'), bruised forefoot.",
+   "source": "https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich; https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Substitutions"
+  },
+  {
+   "fact": "14 of Bayern's 17 shots were worth under 0.10 xG; their best single chance was 0.28.",
+   "source": "data/matches/fc-cologne-bayern-munich-2026-11-20/derived.json BAY_shots_under_0.10_xg / BAY_best_single_chance_xg"
+  },
+  {
+   "fact": "Kimmich completed 131 of 136 passes.",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Match Leaders"
+  },
+  {
+   "fact": "Cologne won 51 duels to Bayern's 30.",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich Team Stats"
+  },
+  {
+   "fact": "Yellow cards: Upamecano 62', S. El Mala 66' (commentary covers 62' onwards only).",
+   "source": "https://www.espn.co.uk/football/commentary/_/gameId/401884736"
+  }
+ ],
+ "standing": {
+  "fact": "Bayern 1st on 22 points from 10 games, Dortmund 2nd on 21 from 9 (Dortmund visit Gladbach on Saturday); Cologne 14th on 10 from 10.",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich German Bundesliga Table; https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich"
+ },
+ "result_context": {
+  "winner": null,
+  "loser": null,
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path: best/worst are Scout's pick from shot-map and Match Leaders numbers.",
+  "Shot-map sum gives Karl 0.49 xG; ESPN Match Leaders shows 0.48 (rounding). Use 0.48.",
+  "ESPN commentary in cache starts at 62': first-half cards/events beyond shots and subs are unknown.",
+  "Kane injury: single trusted outlet (ESPN) quoting Bayern's confirmation; trend-scout should add an official/second source before the reel states 'months'. Never mock it (red line).",
+  "No formation change in source; managers' tactical explanation not cached.",
+  "Favourite drew: no banter, no anger at Bayern beyond performance numbers."
+ ]
+}

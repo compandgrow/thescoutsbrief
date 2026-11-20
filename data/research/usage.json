@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 188,
+  "credits": 197,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2126,6 +2126,56 @@
     "at": "2026-11-20T23:48:15Z",
     "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401884736/fc-cologne-bayern-munich",
     "credits": 0
+   },
+   {
+    "at": "2026-11-20T23:48:58Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401884736",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-20T23:49:11Z",
+    "what": "search Bayern Munich v FC Cologne BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-20T23:49:12Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cw99ex0kn0p4t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-20T23:50:25Z",
+    "what": "local scrape https://www.espn.co.uk/football/story/_/id/50543079/harry-kane-injury-bayern-munich",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-20T23:50:26Z",
+    "what": "local scrape https://www.espn.co.uk/football/commentary/_/gameId/401884736",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-20T23:51:43Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-20T23:51:44Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/122",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-20T23:51:58Z",
+    "what": "search Bayern Munich Cologne",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-20T23:52:18Z",
+    "what": "search Bayern Harry Kane injury ankle",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-20T23:52:25Z",
+    "what": "scrape https://www.bundesliga.com/en/bundesliga/news/harry-kane-ankle-injury-bayern-munich-cologne-england-40055",
+    "credits": 1
    }
   ]
  }
