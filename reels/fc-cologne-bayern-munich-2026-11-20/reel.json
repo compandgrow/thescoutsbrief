@@ -1,0 +1,107 @@
+{
+ "id": "fc-cologne-bayern-munich-2026-11-20",
+ "format_version": 3,
+ "trend_used": "t1",
+ "experiment": "first v3 reel (28-35 s, ~80 words); paradox hook '<club> X. <club> Y. Still <score>.' with the possession/xG twist at beat 1",
+ "angle_source": "talking_point",
+ "fan_question": "Was it missing Kane, or missing the target?",
+ "match": {
+  "pill": "BAY 1–1 KOE · BUNDESLIGA",
+  "league": "BUNDESLIGA"
+ },
+ "beats": [
+  {
+   "say": "Bayern, one shot on target. Cologne, four. Still one-one.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "BAYERN 1–1 COLOGNE",
+    "text": "BAYERN *1*\nCOLOGNE *4*\nON TARGET",
+    "size": 140,
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "Seventy-two percent of the ball. Cologne still made more: one point nine nine expected goals to one point oh seven.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "compare",
+    "kicker": "THE BALL VS THE CHANCES",
+    "teams": [
+     "BAYERN",
+     "COLOGNE"
+    ],
+    "rows": [
+     {
+      "label": "POSSESSION %",
+      "a": 72,
+      "b": 28
+     },
+     {
+      "label": "xG",
+      "a": 1.07,
+      "b": 1.99,
+      "fa": "1.07",
+      "fb": "1.99"
+     }
+    ],
+    "source": "ESPN match stats"
+   }
+  },
+  {
+   "say": "And Harry Kane went off injured after twenty minutes. After that, Bayern took fifteen shots, worth nought point eight six expected goals.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "stat",
+    "kicker": "AFTER KANE WENT OFF (20')",
+    "value": "15",
+    "unit": "SHOTS",
+    "label": "worth *0.86* xG",
+    "sub": "Kane: ankle injury, replaced by Bischof",
+    "source": "bundesliga.com · ESPN shot map"
+   }
+  },
+  {
+   "say": "Scout's pick plays for Cologne. Mikey Moore: two shots, both on target, one point four three expected goals, and the opener.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Mikey Moore",
+    "team": "FC Cologne",
+    "rating": "–",
+    "stats": [
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "shots",
+      "2"
+     ],
+     [
+      "on target",
+      "2"
+     ],
+     [
+      "xG",
+      "1.43"
+     ]
+    ],
+    "source": "ESPN shot map · match leaders"
+   }
+  },
+  {
+   "say": "Was it missing Kane, or missing the target? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "MISSING KANE OR\nMISSING THE *TARGET*?",
+    "source": "ESPN · bundesliga.com"
+   }
+  }
+ ]
+}
