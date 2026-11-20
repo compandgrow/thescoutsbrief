@@ -227,6 +227,15 @@
    "mode": "auto",
    "at": "2026-11-18",
    "scheduled_for": "2026-11-18T19:44:00Z"
+  },
+  {
+   "reel": "story-raphinha-2026-11-20",
+   "series": "scout-files",
+   "zernio_post": "6b009019060c44dac8175666",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-20",
+   "scheduled_for": "2026-11-20T19:23:00Z"
   }
  ],
  "skipped": [

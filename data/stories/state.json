@@ -2,7 +2,7 @@
     "done": [
         {
             "id": "marc-andre-ter-stegen-2026-11-11",
-            "player": "Marc-André ter Stegen",
+            "player": "Marc-Andr\u00e9 ter Stegen",
             "club_key": "BAR",
             "zernio_post": "6af4bd472fc32492846e7006",
             "scheduled_for": "2026-11-11T20:08:00Z"
@@ -27,6 +27,13 @@
             "club_key": "LIV",
             "zernio_post": "6afdf217e078d3865c655a72",
             "scheduled_for": "2026-11-18T19:44:00Z"
+        },
+        {
+            "id": "raphinha-2026-11-20",
+            "player": "Raphinha",
+            "club_key": "BAR",
+            "zernio_post": "6b009019060c44dac8175666",
+            "scheduled_for": "2026-11-20T19:23:00Z"
         }
     ],
     "skipped": []
