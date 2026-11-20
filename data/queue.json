@@ -1,6 +1,23 @@
 {
- "generated": "2026-11-19T23:49:54Z",
+ "generated": "2026-11-20T17:48:46Z",
  "ready": [],
- "later_today": [],
+ "later_today": [
+  {
+   "espn_id": "401884736",
+   "slug": "fc-cologne-bayern-munich",
+   "date": "2026-11-20",
+   "team": "BAY",
+   "teams_text": [
+    "Bayern Munich",
+    "FC Cologne"
+   ],
+   "competition": "German Bundesliga",
+   "score": null,
+   "watched": [
+    "BAY"
+   ],
+   "favourite_involved": true
+  }
+ ],
  "not_making": []
 }
