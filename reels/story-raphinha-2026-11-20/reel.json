@@ -1,0 +1,113 @@
+{
+ "id": "story-raphinha-2026-11-20",
+ "series": "scout-files",
+ "story_id": "raphinha-2026-11-20",
+ "format_version": "story-2",
+ "experiment": "story-2 30-40 s / ~91 words; club in hook (Barcelona's Raphinha + Ancelotti, 2 red cards), beat 1 present-day surprise 'Substituted', question at ~18 s",
+ "presenter": "frog3d",
+ "match": {
+  "pill": "SCOUT FILES #5 · RAPHINHA",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Two red cards. Barcelona's Raphinha and Ancelotti, both sent off.",
+   "caption": "2 red cards. Barcelona's Raphinha and Ancelotti, both sent off.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "BARCELONA'S RAPHINHA · JAPAN 3-2 BRAZIL",
+    "text": "RAPHINHA + ANCELOTTI:\n*2 RED CARDS*.",
+    "size": 120,
+    "source": "BBC Sport, AP, ESPN"
+   }
+  },
+  {
+   "say": "Substituted. Brazil's captain for the day was already off the pitch.",
+   "caption": "Substituted. Brazil's captain for the day was already off the pitch.",
+   "emotion": "smug",
+   "card": {
+    "type": "chapter",
+    "kicker": "CASE FILE #5 · CHAPTER 1",
+    "year": "14 NOV 2026 · FRIENDLY · SINGAPORE",
+    "text": "ALREADY\n*SUBSTITUTED*.",
+    "size": 125,
+    "sub": "captain for the day · Endrick came on for him",
+    "source": "BBC Sport, ESPN"
+   },
+   "slam": [
+    0.3
+   ]
+  },
+  {
+   "say": "Ninety-first minute, Japan win it three-two. Brazil want a foul. Raphinha and Ancelotti protest on the touchline. Both off.",
+   "caption": "91st minute, Japan win it 3-2. Brazil want a foul. Raphinha and Ancelotti protest on the touchline. Both off.",
+   "emotion": "angry",
+   "hit": true,
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "91' · JAPAN 3-2 BRAZIL",
+    "text": "TOUCHLINE PROTEST.\n*BOTH SENT OFF*.",
+    "size": 115,
+    "sub": "Tatsuhiro Sakamoto's winner · Brazil wanted a foul on João Gomes",
+    "source": "BBC Sport, AP, ESPN"
+   }
+  },
+  {
+   "say": "Captain, substituted, sent off. Right to protest, or should a captain keep his head?",
+   "caption": "Captain, substituted, sent off. Right to protest, or should a captain keep his head?",
+   "emotion": "disappointed",
+   "card": {
+    "type": "chapter",
+    "kicker": "YOUR CALL",
+    "year": "COMMENT BELOW",
+    "text": "RIGHT TO PROTEST?\nOR *KEEP HIS HEAD*?",
+    "size": 115,
+    "sub": "Barcelona's Raphinha captained Brazil for the day",
+    "source": "BBC Sport, AP, ESPN"
+   }
+  },
+  {
+   "say": "Ancelotti blamed the ref: I don't think he had the experience to handle this kind of game.",
+   "caption": "Ancelotti blamed the ref: \"I don't think he had the experience to handle this kind of game.\"",
+   "emotion": "excited",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD",
+    "text": "…IT'S NOT HIS FAULT. … I DON'T THINK\nHE HAD THE EXPERIENCE TO HANDLE\n*THIS KIND OF GAME.*",
+    "who": "Carlo Ancelotti, BBC Sport, 2026",
+    "source": "BBC Sport"
+   }
+  },
+  {
+   "say": "Three days later, both watched from the stands as Brazil thrashed Singapore seven-nil.",
+   "caption": "3 days later, both watched from the stands as Brazil thrashed Singapore 7-0.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "17 NOV 2026 · BRAZIL 7-0 SINGAPORE",
+    "value": 7,
+    "unit": "-0",
+    "label": "Watched *from the stands*",
+    "sub": "Vinícius Júnior hat-trick inside 21 minutes",
+    "source": "Reuters, ESPN"
+   }
+  },
+  {
+   "say": "Follow for the next Scout File.",
+   "caption": "Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #5",
+    "text": "RAPHINHA: RIGHT TO\n*PROTEST*?",
+    "size": 115,
+    "sub": "Japan 3-2 Brazil · 14 Nov 2026 · Singapore",
+    "source": "BBC Sport, AP, ESPN"
+   }
+  }
+ ]
+}

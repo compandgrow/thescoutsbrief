@@ -1,0 +1,213 @@
+{
+ "id": "raphinha-2026-11-20",
+ "player": "Raphinha",
+ "club_key": "BAR",
+ "angle": "Barcelona's Raphinha captained Brazil against Japan, was substituted, and was still sent off from the touchline alongside his coach Carlo Ancelotti after a stoppage-time Japan winner.",
+ "why_now": "Trending on r/soccer (trends 2026-11-17; Reddit digest failed today with a 404, so trends are stale): 'Raphinha and Carlo Ancelotti watching the Brazil vs Singapore game from the stands. They both got red cards against Japan.' In the news this week (Japan 3-2 Brazil on Sat 14 Nov, Brazil 7-0 Singapore on Tue 17 Nov). Reddit is signal only; every fact below is from trusted outlets.",
+ "open_loop": "He was already off the pitch. He still got a red card, and so did his manager. How does a substituted captain get sent off?",
+ "beats": [
+  {
+   "slot": "cold_open",
+   "fact": "Brazil captain Raphinha was sent off on the touchline after he had already been substituted, along with Brazil coach Carlo Ancelotti, as Japan beat Brazil 3-2 in a friendly in Singapore on Saturday 14 November 2026.",
+   "year": "2026",
+   "numbers": {
+    "score": "Japan 3-2 Brazil",
+    "red_cards": 2,
+    "date": "14 Nov 2026",
+    "venue": "Singapore"
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/live/cv5yny98z474t",
+     "cached": "data/research/scrape_bf9d91b9f592.json"
+    },
+    {
+     "outlet": "AP",
+     "url": "https://apnews.com/article/japan-brazil-ancelotti-raphinha-ff83e9fffbfae0aafd2bb61b282d5be0",
+     "cached": "data/research/scrape_51cbd106fc19.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50479572/brazil-japan-carlo-ancelotti-red-card",
+     "cached": "data/research/scrape_819e60fb55f3.json"
+    },
+    {
+     "outlet": "Reuters",
+     "url": "https://www.reuters.com/sports/soccer/vinicius-nets-first-half-hat-trick-brazil-crush-singapore-7-0-2026-11-17/",
+     "cached": "data/research/scrape_88639b6f352d.json"
+    }
+   ]
+  },
+  {
+   "slot": "setup",
+   "fact": "Brazil had knocked Japan out of this summer's World Cup in the round of 32. In the rematch Barcelona's Raphinha was made Brazil captain for the day.",
+   "year": "2026",
+   "numbers": {
+    "world_cup_stage": "round of 32 / last 32"
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "AP",
+     "url": "https://apnews.com/article/japan-brazil-ancelotti-raphinha-ff83e9fffbfae0aafd2bb61b282d5be0",
+     "cached": "data/research/scrape_51cbd106fc19.json"
+    },
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/live/cv5yny98z474t",
+     "cached": "data/research/scrape_bf9d91b9f592.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50479572/brazil-japan-carlo-ancelotti-red-card",
+     "cached": "data/research/scrape_819e60fb55f3.json"
+    }
+   ]
+  },
+  {
+   "slot": "conflict",
+   "fact": "Japan led 2-0 inside the first 19 minutes through Takefusa Kubo (15') and Keito Nakamura (19'). Vinícius Júnior scored either side of half-time to make it 2-2. Raphinha was substituted, with Endrick coming on for him.",
+   "year": "2026",
+   "numbers": {
+    "japan_lead": "2-0 inside 19 minutes",
+    "kubo_goal": "15'",
+    "nakamura_goal": "19'",
+    "vinicius_goals": 2,
+    "score_after_comeback": "2-2"
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "AP",
+     "url": "https://apnews.com/article/japan-brazil-ancelotti-raphinha-ff83e9fffbfae0aafd2bb61b282d5be0",
+     "cached": "data/research/scrape_51cbd106fc19.json"
+    },
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/live/cv5yny98z474t",
+     "cached": "data/research/scrape_bf9d91b9f592.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50479572/brazil-japan-carlo-ancelotti-red-card",
+     "cached": "data/research/scrape_819e60fb55f3.json"
+    }
+   ]
+  },
+  {
+   "slot": "twist",
+   "fact": "In the 91st minute (first minute of stoppage time) Coventry's Tatsuhiro Sakamoto poked in Japan's winner. Brazil wanted a foul on João Gomes in the build-up; Ancelotti and the already-substituted Raphinha protested on the touchline and both were sent off. Ancelotti blamed the referee's inexperience.",
+   "year": "2026",
+   "numbers": {
+    "winner_minute": "91st minute / first minute of injury time",
+    "final_score": "3-2"
+   },
+   "quote": "The referee gave me a red card because he said I wasn't able to control the bench, and that all the players were on the field. The result, obviously, was influenced by the referee's performance. But it's not his fault. It was a high-level match and I don't think he had the experience to handle this kind of game.",
+   "sources": [
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/live/cv5yny98z474t",
+     "cached": "data/research/scrape_bf9d91b9f592.json"
+    },
+    {
+     "outlet": "AP",
+     "url": "https://apnews.com/article/japan-brazil-ancelotti-raphinha-ff83e9fffbfae0aafd2bb61b282d5be0",
+     "cached": "data/research/scrape_51cbd106fc19.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50479572/brazil-japan-carlo-ancelotti-red-card",
+     "cached": "data/research/scrape_819e60fb55f3.json"
+    },
+    {
+     "outlet": "Reuters",
+     "url": "https://www.reuters.com/sports/soccer/vinicius-nets-first-half-hat-trick-brazil-crush-singapore-7-0-2026-11-17/",
+     "cached": "data/research/scrape_88639b6f352d.json"
+    }
+   ]
+  },
+  {
+   "slot": "now",
+   "fact": "Three days later, on Tuesday 17 November, Raphinha and Ancelotti watched from the stands as Brazil thrashed Singapore 7-0, with a Vinícius Júnior hat-trick inside 21 minutes.",
+   "year": "2026",
+   "numbers": {
+    "score": "Brazil 7-0 Singapore",
+    "date": "17 Nov 2026",
+    "vinicius_goals": 3,
+    "hat_trick_inside_minutes": 21
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "Reuters",
+     "url": "https://www.reuters.com/sports/soccer/vinicius-nets-first-half-hat-trick-brazil-crush-singapore-7-0-2026-11-17/",
+     "cached": "data/research/scrape_88639b6f352d.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://global.espn.com/football/story/_/id/50510075/vinicius-junior-brazil-emphatic-win-singapore",
+     "cached": "data/research/scrape_062b79f5c050.json"
+    }
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "text": "The referee gave me a red card because he said I wasn't able to control the bench, and that all the players were on the field. The result, obviously, was influenced by the referee's performance. But it's not his fault. It was a high-level match and I don't think he had the experience to handle this kind of game.",
+   "who": "Carlo Ancelotti, Brazil coach",
+   "when": "14 November 2026, after Japan 3-2 Brazil",
+   "where": "post-match comments in Singapore, reported by BBC Sport",
+   "source_url": "https://www.bbc.co.uk/sport/football/live/cv5yny98z474t"
+  }
+ ],
+ "outro_question": "Captain, substituted, then sent off from the touchline: was Raphinha right to protest, or should a captain keep his head? Follow for the next Scout File.",
+ "rejected": [
+  {
+   "claim": "Red card shown at 90+2 minutes",
+   "reason": "one source only (BBC line-up graphic); use 'in stoppage time' instead"
+  },
+  {
+   "claim": "Raphinha was substituted in the 71st minute",
+   "reason": "minute from one source only (BBC); the substitution itself is confirmed by BBC and ESPN"
+  },
+  {
+   "claim": "Raphinha remonstrated with the fourth official as he left the field",
+   "reason": "one source only (BBC)"
+  },
+  {
+   "claim": "Raphinha and Ancelotti reacted angrily to a turned-down first-half penalty appeal for a foul on Raphinha",
+   "reason": "one source only (BBC)"
+  },
+  {
+   "claim": "Security separated Brazil players from the officials after the final whistle",
+   "reason": "one source only (BBC)"
+  },
+  {
+   "claim": "Japan's win came 'in 13 months' (AP) vs 'in the past 18 months' (BBC) since the previous defeat",
+   "reason": "outlets disagree on the timeframe; use neither"
+  },
+  {
+   "claim": "Brazil beat Japan 2-1 in the World Cup last 32",
+   "reason": "score from one source only (BBC); the round itself is confirmed by AP and BBC"
+  },
+  {
+   "claim": "Brazil were knocked out of the 2026 World Cup by Norway in the round of 16",
+   "reason": "one source only (ESPN)"
+  },
+  {
+   "claim": "Ancelotti's red card shows he is feeling the pressure / 'It was not a good look'",
+   "reason": "opinion from an ESPN column, not a fact"
+  },
+  {
+   "claim": "Any suspension or disciplinary consequence for Raphinha at Barcelona or in future Brazil games",
+   "reason": "not reported by any trusted outlet; do not imply one"
+  },
+  {
+   "claim": "Raphinha's form at Barcelona ('scintillating club form')",
+   "reason": "opinion, no sourced numbers"
+  }
+ ],
+ "credits_used": 9
+}
