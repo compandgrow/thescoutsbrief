@@ -245,6 +245,15 @@
    "mode": "auto",
    "at": "2026-11-21",
    "scheduled_for": "2026-11-21T01:16:00Z"
+  },
+  {
+   "reel": "leeds-united-chelsea-2026-11-21",
+   "espn_id": "401879236",
+   "zernio_post": "6b01e17115d19fe238342177",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-21",
+   "scheduled_for": "2026-11-21T19:22:00Z"
   }
  ],
  "skipped": [
@@ -282,6 +291,16 @@
    "espn_id": "401878760",
    "reason": "Arsenal 1-0 Hull: rival didn't lose to an unwatched club",
    "at": "2026-11-08"
+  },
+  {
+   "espn_id": "401879233",
+   "reason": "Man City 1-1 Fulham: rival didn't lose to an unwatched club",
+   "at": "2026-11-21"
+  },
+  {
+   "espn_id": "401878754",
+   "reason": "Tottenham 2-0 Ipswich: rival didn't lose to an unwatched club",
+   "at": "2026-11-21"
   }
  ]
 }
