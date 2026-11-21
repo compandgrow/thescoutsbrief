@@ -236,6 +236,15 @@
    "mode": "auto",
    "at": "2026-11-20",
    "scheduled_for": "2026-11-20T19:23:00Z"
+  },
+  {
+   "reel": "fc-cologne-bayern-munich-2026-11-20",
+   "espn_id": "401884736",
+   "zernio_post": "6b00e2d9cca69ebb409f67e5",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-21",
+   "scheduled_for": "2026-11-21T01:16:00Z"
   }
  ],
  "skipped": [

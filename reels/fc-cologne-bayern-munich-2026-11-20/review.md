@@ -1,4 +1,61 @@
-# Review: fc-cologne-bayern-munich-2026-11-20 (round 1)
+# Review: fc-cologne-bayern-munich-2026-11-20
+
+## Round 2 (final round, 2 of 2)
+
+**Verdict: PASS**
+
+Re-render reviewed: `out/reel.mp4`, 34.23 s, timing.json duration 34.216 s.
+
+### Round-1 fixes
+
+1. **Beat 3, gorilla covering the stat row: resolved.** The card now has 3 tiles: "1 goals", "1.43 xG" and "2 of 2 shots on target". The frames at 24 s and 27 s show all three labels clear of the head. The bottom-left tile's corner slightly overlaps the top of the head, but no text is covered.
+2. **Beat 3, empty rating tile: resolved.** There is no rating tile and no "–". The "SCOUT'S PICK" badge is used.
+3. **Beat 4, outro text running into the presenter: resolved.** "MISSING KANE / OR THE TARGET?" ends well above the head at 31 s and 33 s.
+4. **Beat 0, hook payoff after 3 s: resolved, with almost no margin.** The new line is "Bayern one on target, Cologne four. Still one-one." I measured it on voice.wav with energy plus spectral centroid and zero-crossing rate:
+   - the "Cologne" /k/ burst is at 2.08 s;
+   - the "four" /f/ fricative runs 2.48–2.63 s;
+   - the "four" vowel runs 2.64–2.98 s and falls under -50 dB at 2.98 s;
+   - "Still" starts at 3.22 s.
+
+   The payoff is spoken by 2.98 s, against `hook.payoff_within_s` of 3. The hook is 8 words (max 10). Frame 0 is the full hook card ("BAYERN 1 / COLOGNE 4 / ON TARGET").
+5. **Beat lengths and total duration: resolved.**
+   - Beat lengths: beat 0 4.68 s, beat 1 7.88 s, beat 2 7.75 s, beat 3 7.62 s and beat 4 3.74 s. All are 8 s or less.
+   - Total: 34.2 s, inside the 28–35 s target and the 40 s max.
+   - Beat 1 now says whose 72% it is ("Bayern had seventy-two percent of the ball").
+6. **Caption milestone line: resolved.** The "first time since at least 2004-05" line has been removed. No trend claim is left in the caption that is not a talking point.
+
+### Round-2 checks
+
+- **Facts:** I re-checked every number on screen, in the voiceover and in the caption against the cached pages.
+  - **1 v 4 on target, 72/28 possession, 1.07/1.99 xG:** ESPN match page `scrape_224cd33dfe21.json` ("1.07 Expected Goals 1.99 72% Possession 28% 1 (6%) Shots on Goal 4 (57%)") and ESPN team stats `scrape_fb37c40bdf78.json` ("1Shots on Goal4").
+  - **Kane off at 20' for Bischof, ankle injury:** bundesliga.com `scrape_b053688dcbac.json` ("suspected ankle injury", "replaced by Tom Bischof … in the 20th minute") and the ESPN substitutions. Only "ankle injury" is used; the rejected "months out" claim is not.
+  - **15 shots and 0.86 xG after Kane went off:** recounted from shots_espn.json (MUN shots from 22' to 80', 15 shots, xG 0.86), which matches derived.json `BAY_from_20`. Bayern's full-match total was 17 shots with 1 on target, which also matches.
+  - **Moore 1 goal, 2 shots, both on target, 1.43 xG:** shots_espn.json, shot 2 (Goal, 0.93) and shot 12 (Saved, 0.50); ESPN Match Leaders "M. Moore … 2 SOG, 1.43 xG".
+  - **Names:** spelled as in the data (Mikey Moore, Kane, Bischof).
+- **Specs:** 1080x1920, H.264 + AAC 44.1 kHz stereo, 34.23 s, 5 beats (5–8 allowed), -14.7 LUFS integrated, 76 spoken words (110 max).
+- **Watch:** I read `out/review_a.jpg` and `out/review_b.jpg`, plus single frames at 0, 3, 9, 17, 24, 27, 31 and 33 s.
+  - No text is clipped or overlapping, and no card is empty.
+  - The captions follow each card's topic.
+  - Emotions fit their beats: shocked on the hook, disappointed on proof and story, excited on the player, happy on the outro.
+- **Tone and banter:** `result_context.banter` is false (Bayern, a favourite, drew), and there is no banter beat. None of the `banter.red_lines` is crossed:
+  - the injury is stated, not mocked;
+  - there are no tragedy references and no personal remarks;
+  - the criticism is aimed only at the shot numbers.
+- **Trends:** trends.json is present and its notes show the Reddit step was tried. The reel makes no claim about what fans think. The Kane storyline is t1 (strong). No claim from `rejected` is used.
+- **Caption:**
+  - The first line is "Bayern 1 on target, Cologne 4." (6 words) plus the debate question.
+  - There are 10 hashtags.
+  - Every number matches the sources.
+
+### Notes (not blocking)
+
+- The hook payoff ends at about 2.98 s, only 0.02 s inside the limit. Future hooks should leave more room.
+- Frame 0 shows the full hook card, which is the cover. Frames 1–11 then re-animate the headline in, so the card is partly drawn for about 0.35 s. This is a template behaviour and is acceptable.
+- On the player card, "1 goals" should be singular ("goal"). This is a template label.
+
+---
+
+## Round 1
 
 **Verdict: FIX**
 
