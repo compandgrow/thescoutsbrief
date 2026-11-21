@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Bayern, one shot on target. Cologne, four. Still one-one.",
+   "say": "Bayern one on target, Cologne four. Still one-one.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -23,7 +23,7 @@
    }
   },
   {
-   "say": "Seventy-two percent of the ball. Cologne still made more: one point nine nine expected goals to one point oh seven.",
+   "say": "Bayern had seventy-two percent of the ball. Cologne had more xG: one point nine nine to one point oh seven.",
    "emotion": "disappointed",
    "card": {
     "type": "compare",
@@ -50,7 +50,7 @@
    }
   },
   {
-   "say": "And Harry Kane went off injured after twenty minutes. After that, Bayern took fifteen shots, worth nought point eight six expected goals.",
+   "say": "Kane went off injured after twenty minutes. Then: fifteen Bayern shots, nought point eight six expected goals.",
    "emotion": "disappointed",
    "card": {
     "type": "stat",
@@ -63,7 +63,7 @@
    }
   },
   {
-   "say": "Scout's pick plays for Cologne. Mikey Moore: two shots, both on target, one point four three expected goals, and the opener.",
+   "say": "Scout's pick plays for Cologne. Mikey Moore: two shots, both on target, one point four three xG, and the opener.",
    "emotion": "excited",
    "card": {
     "type": "player",
@@ -71,23 +71,18 @@
     "kicker": "SCOUT'S PICK",
     "name": "Mikey Moore",
     "team": "FC Cologne",
-    "rating": "–",
     "stats": [
      [
       "goals",
       "1"
      ],
      [
-      "shots",
-      "2"
-     ],
-     [
-      "on target",
-      "2"
-     ],
-     [
       "xG",
       "1.43"
+     ],
+     [
+      "shots on target",
+      "2 of 2"
      ]
     ],
     "source": "ESPN shot map · match leaders"
@@ -99,8 +94,9 @@
    "card": {
     "type": "outro",
     "kicker": "@THESCOUTBRIEF",
-    "text": "MISSING KANE OR\nMISSING THE *TARGET*?",
-    "source": "ESPN · bundesliga.com"
+    "text": "MISSING KANE\nOR THE *TARGET*?",
+    "source": "ESPN · bundesliga.com",
+    "size": 120
    }
   }
  ]
