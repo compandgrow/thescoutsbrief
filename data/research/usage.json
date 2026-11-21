@@ -2176,6 +2176,91 @@
     "at": "2026-11-20T23:52:25Z",
     "what": "scrape https://www.bundesliga.com/en/bundesliga/news/harry-kane-ankle-injury-bayern-munich-cologne-england-40055",
     "credits": 1
+   },
+   {
+    "at": "2026-11-21T17:48:40Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879233/fulham-manchester-city",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:41Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879236/leeds-united-chelsea",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:42Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401879232/arsenal-newcastle-united",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:43Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401878754/ipswich-town-tottenham-hotspur",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:43Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882798/celta-vigo-real-madrid",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:44Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:48Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:49Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:50Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:52Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:52Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:53Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:54Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:55Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:56Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:48:56Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 0
    }
   ]
  }

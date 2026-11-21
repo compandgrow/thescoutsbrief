@@ -1,30 +1,126 @@
 {
- "generated": "2026-11-20T23:48:15Z",
+ "generated": "2026-11-21T17:49:06Z",
  "ready": [
   {
-   "espn_id": "401884736",
-   "slug": "fc-cologne-bayern-munich",
-   "date": "2026-11-20",
-   "team": "BAY",
+   "espn_id": "401879236",
+   "slug": "leeds-united-chelsea",
+   "date": "2026-11-21",
+   "team": "CHE",
    "teams_text": [
-    "Bayern Munich",
-    "FC Cologne"
+    "Chelsea",
+    "Leeds United"
    ],
-   "competition": "German Bundesliga",
+   "competition": "English Premier League",
+   "score": "1-4",
+   "watched": [
+    "CHE"
+   ],
+   "favourite_involved": false,
+   "winner_key": null,
+   "loser_key": "CHE",
+   "banter": true,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a rival lost (banter)"
+  }
+ ],
+ "later_today": [
+  {
+   "espn_id": "401879232",
+   "slug": "arsenal-newcastle-united",
+   "date": "2026-11-21",
+   "team": "ARS",
+   "teams_text": [
+    "Newcastle United",
+    "Arsenal"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401882798",
+   "slug": "celta-vigo-real-madrid",
+   "date": "2026-11-21",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "Celta Vigo"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "RMA"
+   ],
+   "favourite_involved": true
+  },
+  {
+   "espn_id": "401876398",
+   "slug": "paris-saint-germain-nice",
+   "date": "2026-11-21",
+   "team": "PSG",
+   "teams_text": [
+    "Nice",
+    "Paris Saint-Germain"
+   ],
+   "competition": "French Ligue 1",
+   "score": null,
+   "watched": [
+    "PSG"
+   ],
+   "favourite_involved": true
+  }
+ ],
+ "not_making": [
+  {
+   "espn_id": "401879233",
+   "slug": "fulham-manchester-city",
+   "date": "2026-11-21",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Fulham"
+   ],
+   "competition": "English Premier League",
    "score": "1-1",
    "watched": [
-    "BAY"
+    "MCI"
    ],
-   "favourite_involved": true,
+   "favourite_involved": false,
    "winner_key": null,
    "loser_key": null,
    "banter": false,
    "banter_by_favourite": false,
    "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  },
+  {
+   "espn_id": "401878754",
+   "slug": "ipswich-town-tottenham-hotspur",
+   "date": "2026-11-21",
+   "team": "TOT",
+   "teams_text": [
+    "Tottenham Hotspur",
+    "Ipswich Town"
+   ],
+   "competition": "English Premier League",
+   "score": "2-0",
+   "watched": [
+    "TOT"
+   ],
+   "favourite_involved": false,
+   "winner_key": "TOT",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
   }
- ],
- "later_today": [],
- "not_making": []
+ ]
 }
