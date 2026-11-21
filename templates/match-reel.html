@@ -72,7 +72,7 @@ body.host3d #source:empty { display:none; }
 .track .b { background:var(--lilac); }
 .half { flex:1; display:flex; }
 .teamhead { display:flex; justify-content:space-between; font-family:Anton; font-size:44px; margin-bottom:18px; }
-.player .name { font-family:Anton; font-size:118px; line-height:.95; text-transform:uppercase; }
+.player .name { font-family:Anton; font-size:118px; line-height:1.12; text-transform:uppercase; }
 .player .team { font-size:30px; color:var(--muted); margin-top:6px; }
 .rating { position:absolute; right:0; top:0; width:200px; height:200px; border-radius:24px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
 .rating .n { font-family:Anton; font-size:96px; line-height:1; }
@@ -179,8 +179,8 @@ function build(c) {
       <div class="player" style="position:relative;margin-top:26px">
         <div class="name">${(c.name || "").split(" ").map((w) => `<span class="mask"><span>${esc(w)}</span></span>`).join("")}</div>
         <div class="team">${esc(c.team || "")}</div>
-        ${c.rating != null ? `<div class="rating" style="background:${col};color:var(--ink)"><div class="n">${esc(c.rating)}</div><div class="l">${esc(c.ratingLabel || "RATING")}</div></div>` : ""}
-      </div><div class="stats">${stats}</div>`;
+        ${c.rating != null && !["", "–", "—", "-"].includes(String(c.rating).trim()) ? `<div class="rating" style="background:${col};color:var(--ink)"><div class="n">${esc(c.rating)}</div><div class="l">${esc(c.ratingLabel || "RATING")}</div></div>` : ""}
+      </div><div class="stats"${(c.stats || []).length === 3 ? ' style="grid-template-columns:1fr 1fr 1fr"' : ""}>${stats}</div>`;
   } else if (c.type === "stat") {
     d.innerHTML = `${kick}<div style="margin-top:30px"><span class="counter">0</span><span class="unit">${esc(c.unit || "")}</span></div><div class="ctitle" style="font-size:60px">${hl(c.label || "")}</div><div class="sub">${hl(c.sub || "")}</div>`;
   } else if (c.type === "chapter") {

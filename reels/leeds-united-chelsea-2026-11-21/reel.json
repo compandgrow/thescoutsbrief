@@ -23,7 +23,7 @@
    }
   },
   {
-   "say": "Chelsea had more of the ball. Expected goals: nought point five six. Leeds: two point five one.",
+   "say": "More ball for Chelsea. xG: nought point five six to two point five one.",
    "emotion": "smug",
    "card": {
     "type": "compare",
@@ -52,7 +52,7 @@
    }
   },
   {
-   "say": "Ha! Leeds hadn't won at Stamford Bridge since nineteen ninety-nine. Now Chelsea drop to eighth, with Leeds above them.",
+   "say": "Ha! Leeds hadn't won at Stamford Bridge since nineteen ninety-nine. Chelsea drop to eighth tonight, with Leeds above them.",
    "emotion": "laughing",
    "hit": true,
    "emote": [
@@ -67,12 +67,12 @@
     "text": "FIRST LEEDS WIN\nAT THE BRIDGE\nSINCE *1999*",
     "size": 92,
     "stamp": "WAIT OVER",
-    "sub": "CHE 8th, 16 pts · LEE 6th, 17 pts",
+    "sub": "CHE 8th tonight · LEE 6th",
     "source": "chelseafc.com · BBC Sport · ESPN table"
    }
   },
   {
-   "say": "Worst on the pitch: Emiliano Martínez. Eight shots on target faced, four conceded, from two point five eight expected on target.",
+   "say": "Worst on the pitch: Emiliano Martínez. Four conceded, from two point five eight expected on target.",
    "emotion": "disappointed",
    "emote": [
     [
@@ -86,7 +86,6 @@
     "kicker": "SCOUT'S PICK",
     "name": "Emiliano Martínez",
     "team": "Chelsea",
-    "rating": "–",
     "stats": [
      [
       "on target faced",
@@ -99,17 +98,13 @@
      [
       "xGOT faced",
       "2.58"
-     ],
-     [
-      "saves",
-      "4"
      ]
     ],
     "source": "ESPN shot map · match leaders"
    }
   },
   {
-   "say": "And Chelsea's best chance all game? Nought point oh nine xG.",
+   "say": "Chelsea's best chance? Nought point oh nine xG.",
    "emotion": "smug",
    "emote": [
     [
