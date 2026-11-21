@@ -1,0 +1,127 @@
+{
+ "match": "CHE 1-4 LEE",
+ "generated_at": "2026-11-21T18:20:00Z",
+ "talking_points": [
+  {
+   "id": "t1",
+   "team": "LEE",
+   "type": "milestone",
+   "claim": "Leeds' first win at Stamford Bridge since December 1999",
+   "numbers": {
+    "last_leeds_win_at_the_bridge": "December 1999"
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "Official Chelsea preview: \"Leeds' last win at the Bridge was in December 1999\"",
+     "url": "https://www.chelseafc.com/en/news/article/chelsea-vs-leeds-key-statistics-and-facts-26-27"
+    },
+    {
+     "what": "BBC report: \"Leeds' first win at Chelsea since 1999\"",
+     "url": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt"
+    },
+    {
+     "what": "ESPN/PA report: \"first Premier League win at Stamford Bridge in 27 years\"",
+     "url": "https://www.espn.co.uk/football/report/_/gameId/401879236"
+    }
+   ],
+   "hook_angle": "Leeds hadn't won here since 1999. Chelsea made zero big chances.",
+   "use_for": "hook",
+   "fresh_until": "2026-11-23"
+  },
+  {
+   "id": "t2",
+   "team": "CHE",
+   "type": "form",
+   "claim": "Chelsea have lost back-to-back Premier League games (Sunderland away, Leeds at home) and dropped from 5th before this round to 8th",
+   "numbers": {
+    "league_defeats_in_a_row": 2,
+    "position_before_round": 5,
+    "position_after": 8,
+    "points": 16
+   },
+   "strength": "strong",
+   "sources": [
+    {
+     "what": "ESPN results via data/form/363.json (L 1-4 Leeds 21 Nov, L 0-1 Sunderland 8 Nov; gap 8-21 Nov is the international break)",
+     "url": "https://www.espn.co.uk/football/team/results/_/id/363"
+    },
+    {
+     "what": "BBC report: \"Chelsea, looking to bounce back from defeat at Sunderland\"; table Chelsea 8th 16 pts",
+     "url": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt"
+    },
+    {
+     "what": "Official preview: \"The Premier League resumes this weekend after the international break with Chelsea in fifth position\"",
+     "url": "https://www.chelseafc.com/en/news/article/chelsea-vs-leeds-key-statistics-and-facts-26-27"
+    },
+    {
+     "what": "ESPN table after match: Leeds 6th 17 pts, Chelsea 8th 16 pts",
+     "url": "https://www.espn.co.uk/football/match/_/gameId/401879236/leeds-united-chelsea"
+    }
+   ],
+   "hook_angle": "Fifth before the round, eighth after it, with Leeds above them.",
+   "use_for": "banter",
+   "fresh_until": "2026-11-28"
+  },
+  {
+   "id": "t3",
+   "team": "CHE",
+   "type": "pressure",
+   "claim": "Pressure building on Xabi Alonso; Chelsea booed off at half-time and at full time",
+   "numbers": {},
+   "strength": "medium",
+   "sources": [
+    {
+     "what": "BBC: \"Chelsea analysis: Pressure building on Alonso\"; \"Boos could be heard from some Chelsea fans in the latter stages\"",
+     "url": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt"
+    },
+    {
+     "what": "ESPN/PA report: \"Chelsea were a mess and were booed off at the break\" ... \"more boos for Alonso's players at the end\"",
+     "url": "https://www.espn.co.uk/football/report/_/gameId/401879236"
+    }
+   ],
+   "hook_angle": "Booed off twice, 0.56 xG at home. The Bridge has noticed.",
+   "use_for": "context",
+   "fresh_until": "2026-11-28"
+  }
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [],
+  "club_subs": []
+ },
+ "rejected": [
+  {
+   "claim": "Chelsea have lost five of their past eight in all competitions",
+   "reason": "BBC only; form file covers 6 games and has a gap; no second outlet"
+  },
+  {
+   "claim": "Chelsea were unbeaten in N home games v Leeds before this",
+   "reason": "sources disagree (chelseafc.com: 10 games, 8 wins 2 draws; ESPN commentary: seven home meetings, six wins); use neither number"
+  },
+  {
+   "claim": "Caicedo forced off at 22'",
+   "reason": "injury: banter red line"
+  },
+  {
+   "claim": "Joao Pedro's absence / injury-hit Chelsea (Reuters snippet)",
+   "reason": "injury storyline, red line for banter; not needed"
+  }
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "Leeds brilliant, or Chelsea awful?",
+  "data_answer": "Both: Leeds' first win at the Bridge since 1999, built on 21 shots and 2.51 xG; Chelsea had 56.7% of the ball, 0 big chances and their best chance was 0.09 xG.",
+  "evidence": [
+   "trends.json t1",
+   "insights.json team_story xG / big chances / possession",
+   "insights.json surprise_stat"
+  ],
+  "fan_heat": "unknown: Reddit unreachable (RSS 404, no API keys)",
+  "hook_angle": "Leeds hadn't won here since 1999. Chelsea made zero big chances.",
+  "why": "strongest verified storyline (official club + BBC + ESPN) and it ties directly to the 0 v 5 big-chance stat"
+ },
+ "credits_used": 5,
+ "notes": "Credits: form 363 and 357 free local fetches (0); search 'Chelsea Leeds' (2); search 'Chelsea Alonso Leeds defeat' (2); scrape chelseafc.com key-stats preview (1, local fetch blocked by proxy 403, so Firecrawl) = 5. Reddit: engine/reddit.py match 'Chelsea' 'Leeds United' -> 'Reddit RSS error 404 on /r/soccer/search' (retried 'Chelsea' 'Leeds', same); club CHE -> 'Reddit RSS error 404 on /r/chelseafc/hot/'. No Reddit keys, so no fan_buzz. Goal minutes: ESPN has Emegha 25', Okafor 28'; BBC report says Emegha 28th minute and Okafor 'three minutes later', so avoid those two minutes on screen. ESPN report says Okafor's second came 'just before the half-hour' (a slip; ESPN scorers and shot map have 58'): avoid. Form files show gaps (international break, confirmed by chelseafc.com 'resumes this weekend after the international break'). Chelsea's 5th place was before Matchweek 11 started; other games may still move the table on Sunday, so say '8th tonight' rather than final."
+}

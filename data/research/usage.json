@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 201,
+  "credits": 206,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2286,6 +2286,31 @@
     "at": "2026-11-21T17:50:51Z",
     "what": "local scrape https://www.espn.co.uk/football/report/_/gameId/401879236",
     "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:52:26Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:52:27Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/357",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T17:52:42Z",
+    "what": "search Chelsea Leeds",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-21T17:52:53Z",
+    "what": "search Chelsea Alonso Leeds defeat",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-21T17:52:59Z",
+    "what": "scrape https://www.chelseafc.com/en/news/article/chelsea-vs-leeds-key-statistics-and-facts-26-27",
+    "credits": 1
    }
   ]
  }

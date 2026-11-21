@@ -1,8 +1,18 @@
 {
  "team_id": "363",
  "source": "https://www.espn.co.uk/football/team/results/_/id/363",
- "fetched_at": "2026-11-08T17:54:05Z",
+ "fetched_at": "2026-11-21T17:52:26Z",
  "last": [
+  {
+   "date": "2026-11-21",
+   "opponent": "Leeds United",
+   "venue": "H",
+   "score": "1-4",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401879236"
+  },
   {
    "date": "2026-11-08",
    "opponent": "Sunderland",
@@ -52,22 +62,14 @@
    "pens": false,
    "competition": "English Premier League",
    "game_id": "401878771"
-  },
-  {
-   "date": "2026-10-10",
-   "opponent": "AFC Bournemouth",
-   "venue": "H",
-   "score": "5-1",
-   "result": "W",
-   "pens": false,
-   "competition": "English Premier League",
-   "game_id": "401878775"
   }
  ],
- "run_newest_first": "LWWLWW",
- "wins": 4,
+ "run_newest_first": "LLWWLW",
+ "wins": 3,
  "draws": 0,
- "losses": 2,
- "gaps": [],
+ "losses": 3,
+ "gaps": [
+  "2026-11-08 to 2026-11-21"
+ ],
  "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

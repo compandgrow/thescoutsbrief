@@ -1,0 +1,165 @@
+{
+ "match": {
+  "home": "Chelsea",
+  "away": "Leeds United",
+  "home_short": "CHE",
+  "away_short": "LEE",
+  "score": "1-4",
+  "competition": "English Premier League",
+  "date": "2026-11-21"
+ },
+ "data_mode": "web (ESPN + BBC cached pages); no player ratings, best/worst are Scout's pick",
+ "headline": "Chelsea had 56.7% of the ball but 0 big chances and 0.56 xG; Leeds had 21 shots, 2.51 xG and won 4-1 for their first win at Stamford Bridge since 1999.",
+ "team_story": [
+  {
+   "label": "xG",
+   "home": 0.56,
+   "away": 2.51,
+   "why_it_matters": "Leeds created more than four times Chelsea's chance quality",
+   "source": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt Match Stats Basic (xG 0.5565 v 2.5094); ESPN match page Team Stats (data/research/scrape_53aaa01ab081.json)"
+  },
+  {
+   "label": "Big chances created",
+   "home": 0,
+   "away": 5,
+   "why_it_matters": "Chelsea never made one clear chance at home",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879236 Attack (data/research/scrape_5ffdcfb0c0e7.json)"
+  },
+  {
+   "label": "Possession %",
+   "home": 56.7,
+   "away": 43.3,
+   "why_it_matters": "Chelsea had more of the ball and did nothing with it",
+   "source": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt Match Stats Basic (data/research/scrape_3a0099246e6f.json)"
+  },
+  {
+   "label": "Touches in opposition box",
+   "home": 16,
+   "away": 34,
+   "why_it_matters": "Leeds lived in Chelsea's box; Chelsea barely reached Leeds'",
+   "source": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt Match Stats Basic; ESPN team stats Attack"
+  },
+  {
+   "label": "Shots on target",
+   "home": 3,
+   "away": 8,
+   "why_it_matters": "",
+   "source": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt Match Stats Basic; ESPN team stats Shots"
+  }
+ ],
+ "tactical_change": {
+  "team": "Leeds United",
+  "minute": null,
+  "before": "3-4-2-1",
+  "after": "3-4-2-1",
+  "trigger": "none in source (no formation change reported); the second-half shift",
+  "effect": "Leeds went from 9 shots / 0.77 xG / 1 goal in the first half to 12 shots / 1.76 xG / 3 goals in the second; Chelsea's shots on target worth 0.58 xGOT before the break, 0.07 after it",
+  "evidence": [
+   {
+    "label": "Leeds xG",
+    "before": 0.77,
+    "after": 1.76,
+    "source": "data/matches/leeds-united-chelsea-2026-11-21/shots_espn.json (LEE_1H / LEE_2H in analysis.py) from https://www.espn.co.uk/football/match/_/gameId/401879236/leeds-united-chelsea Shot Map"
+   },
+   {
+    "label": "Leeds goals",
+    "before": 1,
+    "after": 3,
+    "source": "shots_espn.json via analysis.py; ESPN scorers 28', 53' pen, 58', 90'+1'"
+   },
+   {
+    "label": "Chelsea xGOT",
+    "before": 0.58,
+    "after": 0.07,
+    "source": "shots_espn.json via analysis.py (CHE_1H / CHE_2H)"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "best_player": {
+  "name": "Noah Okafor",
+  "team": "Leeds United",
+  "rating": null,
+  "stats": [
+   [
+    "goals",
+    "2"
+   ],
+   [
+    "shots",
+    "3"
+   ],
+   [
+    "xG",
+    "0.30"
+   ]
+  ],
+  "why": "Scout's pick: two goals from 3 shots worth 0.30 xG; BBC report: 'Okafor was the star of the show'",
+  "source": "shots_espn.json players_by_xg (analysis.py) from ESPN Shot Map; ESPN scorers 28', 58'; https://www.bbc.com/sport/football/live/c3dx19jxx15zt Leeds analysis"
+ },
+ "worst_player": {
+  "name": "Emiliano Martínez",
+  "team": "Chelsea",
+  "rating": null,
+  "stats": [
+   [
+    "shots on target faced",
+    "8"
+   ],
+   [
+    "goals conceded",
+    "4"
+   ],
+   [
+    "xGOT faced",
+    "2.58"
+   ],
+   [
+    "goals prevented",
+    "-1.42"
+   ]
+  ],
+  "why": "Scout's pick: conceded 4 from shots on target worth 2.58 xGOT, so 1.42 more than an average keeper (penalty included). Former England defender on BBC Final Score: 'It's poor from Emi Martinez going through his legs.'",
+  "anger_worthy": true,
+  "source": "shots_espn.json (martinez block in analysis.py: xGOT sum of Leeds Goal/Saved shots) from ESPN Shot Map; ESPN Match Leaders (4 saves, 8 SOGA); https://www.bbc.com/sport/football/live/c3dx19jxx15zt live text"
+ },
+ "surprise_stat": {
+  "value": "0.09",
+  "label": "Chelsea's best chance all game (xG)",
+  "context": "All 14 Chelsea shots were under 0.10 xG; even the Emegha goal was a 0.06 xG strike",
+  "source": "shots_espn.json via analysis.py (CHE_best_single_chance_xg, CHE_shots_under_0.10_xg) from ESPN Shot Map"
+ },
+ "result_context": {
+  "winner": "Leeds United",
+  "loser": "Chelsea",
+  "banter": true,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [
+  {
+   "fact": "Leeds' first win at Chelsea since 1999 (BBC); ESPN: 'first Premier League win at Stamford Bridge in 27 years'",
+   "source": "https://www.bbc.com/sport/football/live/c3dx19jxx15zt report; https://www.espn.co.uk/football/report/_/gameId/401879236 (data/research/scrape_2222d3641408.json)"
+  },
+  {
+   "fact": "Chelsea 0 big chances created at home, Leeds 5",
+   "source": "https://www.espn.com/soccer/team-stats/_/gameId/401879236 Attack"
+  },
+  {
+   "fact": "Chelsea 8th on 16 points; Leeds 6th on 17, above them",
+   "source": "https://www.espn.co.uk/football/match/_/gameId/401879236/leeds-united-chelsea English Premier League Table; BBC Premier League Table"
+  },
+  {
+   "fact": "Chelsea were 5th before this round (chelseafc.com preview) and are 8th after it, with Leeds (6th) now above them",
+   "source": "https://www.chelseafc.com/en/news/article/chelsea-vs-leeds-key-statistics-and-facts-26-27 (data/research/scrape_8d5754179d39.json); ESPN match page Premier League table"
+  }
+ ],
+ "caveats": [
+  "No player ratings on the web path: best and worst are Scout's pick from shot-map numbers and goals.",
+  "Goal minutes for the first two goals differ: ESPN 25'/28', BBC text 28' and 'three minutes later'. Do not show those minutes on screen.",
+  "Shot-map sums (0.57 / 2.53) differ by rounding from the header xG; on screen use 0.56 / 2.51.",
+  "Martínez 'goals prevented' (-1.42) is computed by us from ESPN xGOT per shot and includes the penalty (0.78 xGOT); without the penalty: 3 conceded from 1.80 xGOT.",
+  "Caicedo went off at 22' after landing awkwardly (ESPN report): injury, not for banter.",
+  "No formation change in any source; tactical item is the second-half shift."
+ ]
+}

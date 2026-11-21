@@ -1,0 +1,142 @@
+{
+ "id": "leeds-united-chelsea-2026-11-21",
+ "format_version": 3,
+ "trend_used": "t1",
+ "experiment": "v3 (28-35 s, ~78 words); same-measure hook naming both clubs, possession/xG twist at beat 1, verified trend banter at beat 2 (~8 s)",
+ "angle_source": "talking_point",
+ "fan_question": "Leeds brilliant, or Chelsea awful?",
+ "match": {
+  "pill": "CHE 1–4 LEE · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "Chelsea, zero big chances. Leeds, five.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "CHELSEA 1–4 LEEDS",
+    "text": "BIG CHANCES\nCHELSEA *0*\nLEEDS *5*",
+    "size": 130,
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "Chelsea had more of the ball. Expected goals: nought point five six. Leeds: two point five one.",
+   "emotion": "smug",
+   "card": {
+    "type": "compare",
+    "kicker": "ALL BALL, NO CHANCES",
+    "teams": [
+     "CHELSEA",
+     "LEEDS"
+    ],
+    "rows": [
+     {
+      "label": "POSSESSION %",
+      "a": 56.7,
+      "b": 43.3,
+      "fa": "56.7",
+      "fb": "43.3"
+     },
+     {
+      "label": "xG",
+      "a": 0.56,
+      "b": 2.51,
+      "fa": "0.56",
+      "fb": "2.51"
+     }
+    ],
+    "source": "BBC Sport Match Stats (Opta)"
+   }
+  },
+  {
+   "say": "Ha! Leeds hadn't won at Stamford Bridge since nineteen ninety-nine. Now Chelsea drop to eighth, with Leeds above them.",
+   "emotion": "laughing",
+   "hit": true,
+   "emote": [
+    [
+     4.2,
+     "smug"
+    ]
+   ],
+   "card": {
+    "type": "banter",
+    "kicker": "BANTER ALERT",
+    "text": "FIRST LEEDS WIN\nAT THE BRIDGE\nSINCE *1999*",
+    "size": 92,
+    "stamp": "WAIT OVER",
+    "sub": "Chelsea 8th, 16 pts · Leeds 6th, 17 pts",
+    "source": "chelseafc.com · BBC Sport · ESPN table"
+   }
+  },
+  {
+   "say": "Worst on the pitch: Emiliano Martínez. Eight shots on target faced, four conceded, from two point five eight expected on target.",
+   "emotion": "disappointed",
+   "emote": [
+    [
+     3.0,
+     "angry"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "SCOUT'S PICK",
+    "name": "Emiliano Martínez",
+    "team": "Chelsea",
+    "rating": "–",
+    "stats": [
+     [
+      "on target faced",
+      "8"
+     ],
+     [
+      "saves",
+      "4"
+     ],
+     [
+      "conceded",
+      "4"
+     ],
+     [
+      "xGOT faced",
+      "2.58"
+     ]
+    ],
+    "source": "ESPN shot map · match leaders"
+   }
+  },
+  {
+   "say": "And Chelsea's best chance all game? Nought point oh nine xG.",
+   "emotion": "smug",
+   "emote": [
+    [
+     1.8,
+     "laughing"
+    ]
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "CHELSEA'S BEST CHANCE",
+    "value": "0.09",
+    "unit": "xG",
+    "label": "the *best* of 14 shots",
+    "sub": "all 14 Chelsea shots under 0.10 xG",
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Leeds brilliant, or Chelsea awful? Pick one below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "LEEDS *BRILLIANT*\nOR CHELSEA *AWFUL*?",
+    "size": 110,
+    "source": "ESPN · BBC Sport"
+   }
+  }
+ ]
+}
