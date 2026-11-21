@@ -67,7 +67,7 @@
     "text": "FIRST LEEDS WIN\nAT THE BRIDGE\nSINCE *1999*",
     "size": 92,
     "stamp": "WAIT OVER",
-    "sub": "Chelsea 8th, 16 pts · Leeds 6th, 17 pts",
+    "sub": "CHE 8th, 16 pts · LEE 6th, 17 pts",
     "source": "chelseafc.com · BBC Sport · ESPN table"
    }
   },
@@ -93,16 +93,16 @@
       "8"
      ],
      [
-      "saves",
-      "4"
-     ],
-     [
       "conceded",
       "4"
      ],
      [
       "xGOT faced",
       "2.58"
+     ],
+     [
+      "saves",
+      "4"
      ]
     ],
     "source": "ESPN shot map · match leaders"
