@@ -1,7 +1,6 @@
 {
- "generated": "2026-11-22T17:49:35Z",
- "ready": [],
- "later_today": [
+ "generated": "2026-11-22T18:30:23Z",
+ "ready": [
   {
    "espn_id": "401878755",
    "slug": "manchester-united-liverpool",
@@ -12,13 +11,22 @@
     "Manchester United"
    ],
    "competition": "English Premier League",
-   "score": null,
+   "score": "4-0",
    "watched": [
     "LIV",
     "MUN"
    ],
-   "favourite_involved": true
-  },
+   "favourite_involved": true,
+   "winner_key": "LIV",
+   "loser_key": "MUN",
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": true,
+   "make_reel": true,
+   "why": "a favourite played"
+  }
+ ],
+ "later_today": [
   {
    "espn_id": "401882803",
    "slug": "atletico-madrid-getafe",
