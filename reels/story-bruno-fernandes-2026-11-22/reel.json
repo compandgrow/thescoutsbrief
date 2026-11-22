@@ -1,0 +1,113 @@
+{
+ "id": "story-bruno-fernandes-2026-11-22",
+ "series": "scout-files",
+ "story_id": "bruno-fernandes-2026-11-22",
+ "format_version": "story-2",
+ "experiment": "story-2 #3 of 3: 30-40 s / ~95 words; contradiction hook with club + player (United's Bruno Fernandes: player of the year, then benched), beat 1 opens on 'Como', question at ~18 s",
+ "presenter": "frog3d",
+ "match": {
+  "pill": "SCOUT FILES #6 · BRUNO FERNANDES",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "United's Bruno Fernandes. Player of the year. Then benched.",
+   "caption": "United's Bruno Fernandes. Player of the year. Then benched.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "MAN UNITED CAPTAIN · BRUNO FERNANDES",
+    "text": "PLAYER OF THE YEAR.\nTHEN *BENCHED*.",
+    "size": 120,
+    "source": "BBC Sport, Sky Sports, AP, manutd.com"
+   }
+  },
+  {
+   "say": "Como, four-one. Then, on TV, the captain said: it's a decision from the staff to not press man-to-man.",
+   "caption": "Como 4-1. Then, on TV, the captain said: \"It's a decision from the staff to not press man-to-man.\"",
+   "emotion": "angry",
+   "card": {
+    "type": "chapter",
+    "kicker": "CASE FILE #6 · CHAPTER 1",
+    "year": "OCT 2026 · COMO 4-1 MAN UTD",
+    "text": "\"A DECISION\nFROM *THE STAFF*.\"",
+    "size": 120,
+    "sub": "Champions League · Fernandes after the defeat, on TV",
+    "source": "BBC Sport, Sky Sports, AP"
+   },
+   "slam": [
+    0.3
+   ]
+  },
+  {
+   "say": "Four days later, Carrick benched him. United lost three-nil to Bournemouth. Fernandes never came on.",
+   "caption": "4 days later, Carrick benched him. United lost 3-0 to Bournemouth. Fernandes never came on.",
+   "emotion": "disappointed",
+   "hit": true,
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "4 DAYS LATER · MAN UTD 0-3 BOURNEMOUTH",
+    "text": "THE CAPTAIN\nON *THE BENCH*.",
+    "size": 120,
+    "sub": "Carrick: a \"pure football\" decision · unused substitute",
+    "source": "BBC Sport, Sky Sports, AP"
+   }
+  },
+  {
+   "say": "Was Carrick right to bench his captain? Comment below.",
+   "caption": "Was Carrick right to bench his captain? Comment below.",
+   "emotion": "smug",
+   "card": {
+    "type": "chapter",
+    "kicker": "YOUR CALL",
+    "year": "COMMENT BELOW",
+    "text": "RIGHT TO BENCH\nHIS *CAPTAIN*?",
+    "size": 120,
+    "sub": "Fernandes: PFA + FWA Player of the Year last season",
+    "source": "manutd.com, BBC Sport, ESPN"
+   }
+  },
+  {
+   "say": "The twist? Bruno agreed. Everyone thought that was a punishment. If it was, it was right.",
+   "caption": "The twist? Bruno agreed. \"Everyone thought that was a punishment… If it was, it was right.\"",
+   "emotion": "excited",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD · AFTER MAN UTD 3-2 ROMA",
+    "text": "EVERYONE THOUGHT THAT\nWAS A PUNISHMENT…\n*IF IT WAS, IT WAS RIGHT.*",
+    "who": "Bruno Fernandes, ESPN, 2026",
+    "source": "ESPN"
+   }
+  },
+  {
+   "say": "November twelfth, Carrick was sacked. Bruno's still captain, and contract talks can wait. If I wanted more money, I wouldn't be here.",
+   "caption": "12 November, Carrick was sacked. Bruno's still captain, and contract talks can wait: \"If I wanted more money, I wouldn't be here.\"",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "12 NOV 2026 · CARRICK SACKED",
+    "value": 12,
+    "unit": " NOV",
+    "label": "Carrick out · Bruno *still captain*",
+    "sub": "\"If I wanted more money, I wouldn't be here.\" · Fernandes to Sky Sports, 21 Nov",
+    "source": "Guardian, BBC Sport, manutd.com"
+   }
+  },
+  {
+   "say": "Follow for the next Scout File.",
+   "caption": "Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #6",
+    "text": "RIGHT TO BENCH\nHIS *CAPTAIN*?",
+    "size": 115,
+    "sub": "Como 4-1 · benched v Bournemouth · Carrick sacked 12 Nov 2026",
+    "source": "BBC Sport, Sky Sports, AP, ESPN, Guardian"
+   }
+  }
+ ]
+}
