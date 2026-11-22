@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "United's Bruno Fernandes. Player of the year. Then benched.",
+   "say": "Player of the year. Then benched.",
    "caption": "United's Bruno Fernandes. Player of the year. Then benched.",
    "emotion": "shocked",
    "hit": true,
@@ -41,7 +41,7 @@
    ]
   },
   {
-   "say": "Four days later, Carrick benched him. United lost three-nil to Bournemouth. Fernandes never came on.",
+   "say": "Four days later, Carrick benched him. United lost three-nil to Bournemouth. Bruno never came on.",
    "caption": "4 days later, Carrick benched him. United lost 3-0 to Bournemouth. Fernandes never came on.",
    "emotion": "disappointed",
    "hit": true,
@@ -56,7 +56,7 @@
    }
   },
   {
-   "say": "Was Carrick right to bench his captain? Comment below.",
+   "say": "Was Carrick right to bench his captain?",
    "caption": "Was Carrick right to bench his captain? Comment below.",
    "emotion": "smug",
    "card": {
@@ -70,7 +70,7 @@
    }
   },
   {
-   "say": "The twist? Bruno agreed. Everyone thought that was a punishment. If it was, it was right.",
+   "say": "The twist? Bruno agreed. Everyone thought that was a punishment for the words that I had. If it was, it was right.",
    "caption": "The twist? Bruno agreed. \"Everyone thought that was a punishment… If it was, it was right.\"",
    "emotion": "excited",
    "card": {
@@ -82,7 +82,7 @@
    }
   },
   {
-   "say": "November twelfth, Carrick was sacked. Bruno's still captain, and contract talks can wait. If I wanted more money, I wouldn't be here.",
+   "say": "November twelfth, Carrick was sacked. Bruno's still captain. Contract talks? If I wanted more money, I wouldn't be here.",
    "caption": "12 November, Carrick was sacked. Bruno's still captain, and contract talks can wait: \"If I wanted more money, I wouldn't be here.\"",
    "emotion": "smug",
    "hit": true,
