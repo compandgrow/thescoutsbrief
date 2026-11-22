@@ -1,0 +1,15 @@
+# leeds-united-chelsea-2026-11-21 — 24 h review (27.2 h after posting; second format v3 reel)
+Scores: hook 55.1% skipped · held 6.11s of 34.5s (0.18) · 9.4/1k reach (1 share, 0 saves) · 0 comments · 121 views (reach 106) · 2 likes (28.3 engagements/1k reach) · follows 0 (timeline; single-post call returns null), profile views 0
+Day-1 timeline row (21 Nov): 118 views, reach 104, 2 likes, 1 share, 0 saves, 0 follows. The 27.2 h snapshot is effectively the day-1 result.
+vs channel median (`match`, 24 reels: skip 60.0%, avg watch 6.31 s, ratio 0.180, shares+saves 0.0/1k, views 168): hook better, held same (6.11 s vs 6.31 s; ratio 0.18 = median), value better (9.4/1k is the best on the channel; only the 4th match reel with any share or save, after dortmund-bayern 6.1, psg-villarreal 5.7, valencia 5.2). Reach 106 is the third lowest match reel; the last two match reels both reached about 105.
+Main reason: beat 1 again opened on a measure of control ("More ball for Chelsea" plus the xG split), so the average viewer left at 6.1 s, 1.9 s into it, and never reached the strongest story, t1 "first Leeds win at the Bridge since 1999" (`use_for: hook`, the `best_angle`), which only started at 9.6 s.
+Viewers left during: beat 1 "More ball for Chelsea. xG: nought point five six to two point five one." (4.19–9.24 s); average watch 6.11 s.
+What worked:
+- Hook built to the rule: both clubs, one measure, number first, 7 words, payoff by 3.9 s, full "BIG CHANCES CHELSEA 0 / LEEDS 5" card on frame 0. 55.1% skip against the 60.0% match median. That makes 8 rule-following hooks between 45.8% and 55.1%.
+- Value: 1 share and 2 likes from 106 reach (9.4 shares+saves/1k, 28.3 engagements/1k, both best among match reels). Banter reel against a rival (`rival_lost`, has_banter), posted 19 h after full time.
+- Length to v3: 34.5 s, 71 words. Ratio 0.18 is level with the v2 median (0.188), as on cologne-bayern.
+What should have worked:
+- Put t1 in the hook, as trends.json told us (`use_for: hook`, hook_angle "Leeds hadn't won here since 1999. Chelsea made zero big chances."): spoken "Chelsea one, Leeds four. Leeds' first win here since 1999." Card: kicker "CHELSEA 1–4 LEEDS", text "FIRST LEEDS WIN\nAT THE BRIDGE\nSINCE *1999*". The score was never said or shown big; a 4-1 away win at a top club is itself the surprise.
+- Beat 1 = the reason, not possession: "Chelsea's best chance all game? Nought point oh nine xG. Leeds made five big ones." (surprise_stat 0.09 + big chances 0 v 5). Card: stat "BEST CHANCE *0.09* xG", kicker "CHELSEA'S BEST SHOT, ALL GAME". Drop "56.7% of the ball" from the script; leave it in the caption.
+- Ask the question at beat 2, about 11 s, with a stat each: "Leeds brilliant, or Chelsea awful? Leeds: twenty-one shots. Chelsea: none above nought point one xG." (insights: 21 shots; all 14 Chelsea shots under 0.10 xG.)
+Test next time: when trends.json has a `use_for: hook` milestone, it goes in the spoken hook with the score; beat 1 never opens on possession, passes or corners.
