@@ -305,12 +305,12 @@
   },
   {
    "espn_id": "401882822",
-   "reason": "Barcelona 6-1 Alavés: rival didn't lose to an unwatched club",
+   "reason": "Barcelona 6-1 Alav\u00e9s: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
    "espn_id": "401882820",
-   "reason": "Levante 0-2 Atlético: rival didn't lose to an unwatched club",
+   "reason": "Levante 0-2 Atl\u00e9tico: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
@@ -342,6 +342,16 @@
    "espn_id": "401879232",
    "reason": "Newcastle 2-2 Arsenal: rival didn't lose to an unwatched club",
    "at": "2026-11-21"
+  },
+  {
+   "espn_id": "401882804",
+   "reason": "Barcelona 3-2 Villarreal: rival didn't lose to an unwatched club",
+   "at": "2026-11-22"
+  },
+  {
+   "espn_id": "401882803",
+   "reason": "Getafe 0-3 Atl\u00e9tico: rival didn't lose to an unwatched club",
+   "at": "2026-11-22"
   }
  ]
 }
