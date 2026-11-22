@@ -347,8 +347,12 @@ function drawCard(s, t) {
   }
   if (c.type === "stat") {
     const k = expo(p(t, s.start + 0.2, s.start + 1.4));
-    const v = Number(c.value) * k, dec = c.decimals ?? (String(c.value).split(".")[1] || "").length;
-    s.el.querySelector(".counter").textContent = v.toFixed(dec);
+    const n = Number(c.value);
+    if (!Number.isFinite(n)) { s.el.querySelector(".counter").textContent = String(c.value); }  // non-numeric value (e.g. "8'", "19th"): show as-is, no count-up
+    else {
+      const v = n * k, dec = c.decimals ?? (String(c.value).split(".")[1] || "").length;
+      s.el.querySelector(".counter").textContent = v.toFixed(dec);
+    }
   }
   if (c.type === "player") {
     const r = s.el.querySelector(".rating");
