@@ -272,6 +272,15 @@
    "mode": "auto",
    "at": "2026-11-22",
    "scheduled_for": "2026-11-22T01:53:00Z"
+  },
+  {
+   "reel": "story-bruno-fernandes-2026-11-22",
+   "series": "scout-files",
+   "zernio_post": "6b03382b14869f290467a2c2",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-22",
+   "scheduled_for": "2026-11-22T19:44:00Z"
   }
  ],
  "skipped": [
