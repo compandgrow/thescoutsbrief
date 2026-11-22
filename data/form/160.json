@@ -1,8 +1,28 @@
 {
  "team_id": "160",
  "source": "https://www.espn.co.uk/football/team/results/_/id/160",
- "fetched_at": "2026-11-03T23:51:50Z",
+ "fetched_at": "2026-11-21T23:52:50Z",
  "last": [
+  {
+   "date": "2026-11-21",
+   "opponent": "Nice",
+   "venue": "A",
+   "score": "3-2",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876398"
+  },
+  {
+   "date": "2026-11-07",
+   "opponent": "Troyes",
+   "venue": "H",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876407"
+  },
   {
    "date": "2026-11-03",
    "opponent": "Villarreal",
@@ -64,10 +84,12 @@
    "game_id": "401915407"
   }
  ],
- "run_newest_first": "WWWWWW",
- "wins": 6,
+ "run_newest_first": "WWWWWWWW",
+ "wins": 8,
  "draws": 0,
  "losses": 0,
- "gaps": [],
+ "gaps": [
+  "2026-11-07 to 2026-11-21"
+ ],
  "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

@@ -1,0 +1,119 @@
+{
+ "id": "paris-saint-germain-nice-2026-11-21",
+ "format_version": 3,
+ "trend_used": "t1",
+ "experiment": "v3 (28-35 s, ~80 words); same-measure hook naming both clubs with paradox ending, surprise_stat (Nice's shot timeline) at beat 1, verified streak (best_angle) at beat 3",
+ "angle_source": "talking_point",
+ "fan_question": "Nice clinical, or PSG sloppy?",
+ "match": {
+  "pill": "NIC 2–3 PSG · LIGUE 1",
+  "league": "Ligue 1"
+ },
+ "beats": [
+  {
+   "say": "PSG, fourteen shots. Nice, four. Nice still scored twice.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "NICE 2–3 PSG",
+    "text": "SHOTS\nPSG *14*\nNICE *4*",
+    "size": 130,
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "Nice's first shot: minute eight, goal. Next? Stoppage time. Nothing in between.",
+   "emotion": "smug",
+   "card": {
+    "type": "stat",
+    "kicker": "NICE SHOTS, 8' TO 90'+4'",
+    "value": "0",
+    "unit": "SHOTS",
+    "label": "then *3* in stoppage time",
+    "sub": "4 shots · 2 goals",
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "PSG also won the xG: one point nine to nought point seven eight.",
+   "emotion": "happy",
+   "card": {
+    "type": "compare",
+    "kicker": "PSG HAD THE GAME",
+    "teams": [
+     "NICE",
+     "PSG"
+    ],
+    "rows": [
+     {
+      "label": "xG",
+      "a": 0.78,
+      "b": 1.9,
+      "fa": "0.78",
+      "fb": "1.90"
+     },
+     {
+      "label": "POSSESSION %",
+      "a": 36.7,
+      "b": 63.3,
+      "fa": "36.7",
+      "fb": "63.3"
+     }
+    ],
+    "source": "ESPN match stats · BBC Sport (Opta)"
+   }
+  },
+  {
+   "say": "And that's eight straight wins for PSG, in all competitions.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "PSG FORM",
+    "value": "8",
+    "unit": "WINS IN A ROW",
+    "label": "in *all competitions*",
+    "sub": "8th: Nice 2–3 PSG",
+    "source": "ESPN results · BBC Sport form guide"
+   }
+  },
+  {
+   "say": "Scout's pick: João Neves. A hundred and thirty accurate passes, seven defensive interventions.",
+   "emotion": "excited",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "João Neves",
+    "team": "Paris Saint-Germain",
+    "stats": [
+     [
+      "accurate passes",
+      "130"
+     ],
+     [
+      "passes",
+      "141"
+     ],
+     [
+      "def. interventions",
+      "7"
+     ]
+    ],
+    "source": "ESPN match leaders"
+   }
+  },
+  {
+   "say": "Nice clinical, or PSG sloppy? Pick one below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "NICE *CLINICAL*\nOR PSG *SLOPPY*?",
+    "size": 110,
+    "source": "ESPN · BBC Sport"
+   }
+  }
+ ]
+}

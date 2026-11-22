@@ -1,0 +1,75 @@
+{
+ "match": "NIC 2-3 PSG",
+ "generated_at": "2026-11-21T23:56:00Z",
+ "talking_points": [
+  {
+   "id": "t1",
+   "team": "PSG",
+   "type": "form",
+   "claim": "PSG have won eight in a row in all competitions",
+   "numbers": {"wins_in_a_row": 8},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/160.json (run_newest_first WWWWWWWW: Nice 3-2, Troyes 1-0, Villarreal 6-0, Le Havre 5-1, Lyon 2-0, Barcelona 4-2, Strasbourg 3-1, Man City 4-2)", "url": "https://www.espn.co.uk/football/team/results/_/id/160"},
+    {"what": "BBC Sport form guide, all competitions (PSG's last 5 before this game: W Troyes, W Villarreal, W Le Havre, W Lyon, W Barcelona) — confirms no missing game in the 2026-11-07 to 2026-11-21 gap flagged in the form file (international break)", "url": "https://www.bbc.com/sport/football/live/cwdd16gddm4jt"}
+   ],
+   "hook_angle": "Eight straight wins. This one: fourteen shots to four, and still only 3-2.",
+   "use_for": "context",
+   "fresh_until": "2026-11-26"
+  },
+  {
+   "id": "t2",
+   "team": "PSG",
+   "type": "storyline",
+   "claim": "PSG stay top of Ligue 1 on 26 points, five clear of second-placed Lille (21)",
+   "numbers": {"psg_points": 26, "lille_points": 21, "gap": 5},
+   "strength": "medium",
+   "sources": [
+    {"what": "ESPN Ligue 1 table on the match page (after Lille's 11th game): PSG 26, Lille 21", "url": "https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice"},
+    {"what": "BBC Sport Ligue 1 table (updated 18:17, before Lille v Lyon): PSG 1st 26, Lille 2nd 21", "url": "https://www.bbc.com/sport/football/live/cwdd16gddm4jt"}
+   ],
+   "hook_angle": "Top by five, and Nice still made it 3-2 with four shots.",
+   "use_for": "context",
+   "fresh_until": "2026-11-28"
+  },
+  {
+   "id": "t3",
+   "team": "PSG",
+   "type": "storyline",
+   "claim": "Désiré Doué was stretchered off with a serious knee injury in the first half; Ferran Torres replaced him",
+   "numbers": {"injury_minute": 39, "sub_minute": 44},
+   "strength": "medium",
+   "sources": [
+    {"what": "ESPN/AP report: stretchered off, right knee, 39th minute, Torres replaced him; ESPN headline 'serious' knee injury", "url": "https://www.espn.co.uk/football/report/_/gameId/401876398"},
+    {"what": "BBC Sport page title in search results: 'PSG and France winger sustains serious injury in win over ...'", "url": "https://www.bbc.com/sport/football/live/cwdd16gddm4jt"}
+   ],
+   "hook_angle": "Sympathy only: Torres, on for the injured Doué, scored the decisive third.",
+   "use_for": "context",
+   "red_line": "injury: never mocked, no speculation on how long he is out (no source gives a timeline); neutral or sympathetic mention only",
+   "fresh_until": "2026-11-24"
+  }
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [],
+  "club_subs": [],
+  "status": "Reddit unreachable: RSS mode (no REDDIT_CLIENT_ID/SECRET). engine/reddit.py match 'Nice' 'Paris Saint-Germain' -> 'Reddit RSS error 404 on /r/soccer/search'; engine/reddit.py club PSG -> 'Reddit RSS error 404 on /r/psg/hot/'. Same 404 as earlier tonight."
+ },
+ "rejected": [
+  {"claim": "How long Doué will be out", "reason": "no trusted source gives a timeline; injury speculation is a red line"},
+  {"claim": "Nice 6th / 7th in Ligue 1", "reason": "BBC (18:17) and ESPN (later) disagree after the 19:45 games; use neither"},
+  {"claim": "PSG twelve wins in a row", "reason": "form file at --n 12 showed 12 W, but it spans a 2026-09-20 to 2026-10-10 gap with no second source; also PSG's 8-2-1 league record means the run start is unverified. Use 8 only."}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "Eighth win in a row, but was it closer than it should have been?",
+  "data_answer": "Only on the scoreboard: PSG had 14 shots to 4 and 1.90 xG to 0.78; Nice took one shot at 8' and none again until 90'+4', then scored with their third stoppage-time shot.",
+  "evidence": ["insights.json team_story shots / xG", "insights.json surprise_stat (derived.json NICE_shot_minutes)", "data/form/160.json"],
+  "fan_heat": "no Reddit data (404); storyline from ESPN results + BBC form guide",
+  "hook_angle": "PSG fourteen shots, Nice four. Nice still scored twice.",
+  "why": "No fan thread available; the eight-win run is the verified storyline and the 4-shots-2-goals paradox is the strongest number in the match data."
+ },
+ "credits_used": 2,
+ "notes": "Trend-scout credits: form 160 (n=8 and n=12) and 2502 were free local fetches (0); search 'Nice Paris Saint-Germain' --days 2 (2 credits, 1 result: BBC match page); search 'PSG Doue injury Luis Enrique' --days 3 (0 credits, 0 results). No scrape needed. Data-collector used 4 credits (ESPN team stats 1, BBC search 2, BBC page 1); match total 6. Reddit step attempted, both calls 404 (see fan_buzz.status). Form file 160 has a 2026-11-07 to 2026-11-21 gap (international break) which BBC's form guide covers, so the 8-win run is confirmed. Nice form (data/form/2502.json): LWWWLW newest first."
+}

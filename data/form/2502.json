@@ -1,0 +1,75 @@
+{
+ "team_id": "2502",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/2502",
+ "fetched_at": "2026-11-21T23:52:51Z",
+ "last": [
+  {
+   "date": "2026-11-21",
+   "opponent": "Paris Saint-Germain",
+   "venue": "H",
+   "score": "2-3",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876398"
+  },
+  {
+   "date": "2026-11-08",
+   "opponent": "Angers",
+   "venue": "A",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876412"
+  },
+  {
+   "date": "2026-10-30",
+   "opponent": "Stade Rennais",
+   "venue": "H",
+   "score": "5-2",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876416"
+  },
+  {
+   "date": "2026-10-23",
+   "opponent": "Brest",
+   "venue": "A",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876428"
+  },
+  {
+   "date": "2026-10-18",
+   "opponent": "Lyon",
+   "venue": "A",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876434"
+  },
+  {
+   "date": "2026-10-11",
+   "opponent": "Strasbourg",
+   "venue": "H",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876443"
+  }
+ ],
+ "run_newest_first": "LWWWLW",
+ "wins": 4,
+ "draws": 0,
+ "losses": 2,
+ "gaps": [
+  "2026-11-08 to 2026-11-21"
+ ],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

@@ -1,0 +1,84 @@
+{
+ "match": {
+  "home": "Nice",
+  "away": "Paris Saint-Germain",
+  "home_short": "NIC",
+  "away_short": "PSG",
+  "score": "2-3",
+  "competition": "French Ligue 1",
+  "date": "2026-11-21",
+  "venue": "Allianz Riviera"
+ },
+ "data_mode": "web (ESPN match page, ESPN team stats, BBC Sport match page with Opta stats, ESPN commentary 79'+ and AP report); no player ratings, best/worst are Scout's pick. ESPN labels Nice 'NICE'.",
+ "headline": "PSG had 63% of the ball, 14 shots and 1.90 xG to Nice's 4 shots and 0.78 xG, but Nice turned their 4 shots into 2 goals: one at 8' and three shots in stoppage time, with not a single Nice shot in between.",
+ "goals": [
+  {"minute": "8'", "player": "Mohamed Amoura", "team": "Nice", "xg": 0.34, "situation": "Regular Play", "source": "https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice shot map shot 2 of 18 (data/research/scrape_e2d75ed17d06.json)"},
+  {"minute": "31'", "player": "Senny Mayulu", "team": "Paris Saint-Germain", "xg": 0.79, "situation": "Penalty", "source": "ESPN shot map shot 4 of 18"},
+  {"minute": "32'", "player": "Désiré Doué", "team": "Paris Saint-Germain", "xg": 0.39, "situation": "Fast Break", "source": "ESPN shot map shot 5 of 18"},
+  {"minute": "85'", "player": "Ferran Torres", "team": "Paris Saint-Germain", "xg": 0.11, "assist": "Ousmane Dembélé", "source": "ESPN shot map shot 12 of 18; assist: https://www.espn.co.uk/football/commentary/_/gameId/401876398 85' (data/research/scrape_f0a570fbac50.json)"},
+  {"minute": "90'+5'", "player": "Ali Abdi", "team": "Nice", "xg": 0.34, "assist": "Jonathan Clauss", "source": "ESPN shot map shot 18 of 18; assist: ESPN commentary 90'+5'"}
+ ],
+ "team_story": [
+  {"label": "Shots", "home": 4, "away": 14, "why_it_matters": "PSG shot more than three times as often.", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401876398 Shots (data/research/scrape_63ddce9ab04f.json); BBC Opta Shots 4 v 14 (data/research/scrape_3e1d35bcc3b7.json)"},
+  {"label": "Goals from shots", "home": "2 of 4", "away": "3 of 14", "why_it_matters": "Nice scored with half their shots; PSG with about one in five.", "source": "data/matches/paris-saint-germain-nice-2026-11-21/derived.json NICE_goals_per_shot / PSG_goals_per_shot (ESPN shot map)"},
+  {"label": "xG", "home": 0.78, "away": 1.90, "why_it_matters": "PSG made the better chances; the result was closer than the play.", "source": "https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice Team Stats (data/research/scrape_e2d75ed17d06.json)"},
+  {"label": "Possession %", "home": 36.7, "away": 63.3, "why_it_matters": "PSG had the ball.", "source": "https://www.bbc.com/sport/football/live/cwdd16gddm4jt Match Stats (Opta) (data/research/scrape_3e1d35bcc3b7.json); ESPN 37 v 63"},
+  {"label": "Successful final-third passes", "home": 40, "away": 194, "why_it_matters": "PSG lived in Nice's third.", "source": "https://www.bbc.com/sport/football/live/cwdd16gddm4jt Match Stats (Opta) Distribution"},
+  {"label": "Touches in opposition box", "home": 7, "away": 22, "why_it_matters": "Territory to match.", "source": "BBC Opta Match Stats; ESPN team stats Attack 7 v 22"}
+ ],
+ "tactical_change": {
+  "team": "Paris Saint-Germain",
+  "minute": 44,
+  "before": "4-3-3 with Doué on the left",
+  "after": "4-3-3 (shape unchanged in source), Ferran Torres on for Doué",
+  "trigger": "injury: Doué stretchered off with a right-knee injury (ESPN/AP report, 39th minute) — red line: sympathy only, never mocked",
+  "effect": "The second-half shift: PSG's xG fell from 1.46 on 6 first-half shots to 0.45 on 8 second-half shots. Nice did not take a shot from 8' until 90'+4'.",
+  "evidence": [
+   {"label": "PSG xG by half", "before": 1.46, "after": 0.45, "source": "data/matches/paris-saint-germain-nice-2026-11-21/derived.json PSG_1H / PSG_2H (ESPN shot map)"},
+   {"label": "PSG shots by half", "before": 6, "after": 8, "source": "derived.json PSG_1H / PSG_2H"},
+   {"label": "Nice shots by half", "before": 1, "after": 3, "source": "derived.json NICE_1H / NICE_2H"}
+  ],
+  "confidence": "medium (sub minute and injury are sourced; no formation change is stated, so this is the 'second-half shift', not a tactical switch)"
+ },
+ "best_player": {
+  "name": "João Neves",
+  "team": "Paris Saint-Germain",
+  "rating": null,
+  "stats": [["accurate passes", "130"], ["passes", "141"], ["defensive interventions", "7"], ["duels won", "2"]],
+  "why": "Scout's pick: ran the game for PSG — most accurate passes on the pitch (130 of 141) plus 7 defensive interventions (ESPN Match Leaders). Played 90 (not substituted).",
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice Match Leaders (J. Neves 130 accurate passes, 141 PASS; 7 defensive interventions, 1 TKL, 2 DUELW) (data/research/scrape_e2d75ed17d06.json)"
+ },
+ "impact_sub": {
+  "name": "Ferran Torres",
+  "team": "Paris Saint-Germain",
+  "stats": [["on at", "44'"], ["goals", "1"], ["shots", "2"], ["xG", "0.27"]],
+  "why": "Came on for the injured Doué and scored PSG's third at 85' (the goal that decided it: Nice's second came at 90'+5'), assisted by fellow sub Dembélé.",
+  "source": "ESPN shot map shots 7 and 12; derived.json players_by_xg; subs from BBC lineups; assist from ESPN commentary 85'"
+ },
+ "worst_player": {
+  "name": "Matvey Safonov",
+  "team": "Paris Saint-Germain",
+  "rating": null,
+  "stats": [["shots on target faced", "3"], ["goals conceded", "2"], ["saves", "1"], ["xG conceded", "0.78"]],
+  "why": "Scout's pick, weak case: PSG's keeper conceded 2 from the 3 Nice shots on target (ESPN Match Leaders: 1 save, 3 SOGA, 0.78 xGC). Not anger-worthy: both goals came from good chances (0.34 xG each) and PSG won.",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice Match Leaders (M. Safonov 1 save, 3 SOGA, 0.78 xGC); derived.json 'GK Safonov (PSG)'"
+ },
+ "surprise_stat": {
+  "value": "0",
+  "label": "Nice shots between 8' and 90'+4'",
+  "context": "Nice's 4 shots: Amoura's goal at 8', then nothing until three shots in stoppage time (90'+4', 90'+4', 90'+5' goal). 4 shots, 2 goals.",
+  "source": "data/matches/paris-saint-germain-nice-2026-11-21/derived.json NICE_shot_minutes (ESPN shot map, all 4 Nice shots = ESPN team stats total 4)"
+ },
+ "result_context": {"winner": "Paris Saint-Germain", "loser": "Nice", "banter": false, "banter_by_favourite": false, "favourite_lost": false},
+ "table_context": {"fact": "PSG top of Ligue 1 on 26 points after 11 games, Lille 2nd on 21 (after Lille's 11th game)", "source": "https://www.espn.co.uk/football/match/_/gameId/401876398/paris-saint-germain-nice French Ligue 1 Table (data/research/scrape_e2d75ed17d06.json); one source, use only as context"},
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path: best/worst are Scout's pick from ESPN Match Leaders and the shot map.",
+  "Doué's knee injury (stretchered off, ESPN/AP) is a red line: never mocked; any mention sympathetic.",
+  "ESPN commentary covers 79'+ only, so Dembélé's full chance count is unknown; only his assist for Torres is used.",
+  "xG: ESPN header 0.78 v 1.90; shot-map sum is 0.78 v 1.91 (rounding). Use 1.90.",
+  "League position of Nice differs between BBC (6th, 18:17) and ESPN (7th, later). Don't show Nice's position.",
+  "No research searches used by the analyst (0 Firecrawl credits); ESPN report + commentary were free local fetches."
+ ]
+}
