@@ -1,71 +1,58 @@
 {
- "generated": "2026-11-21T23:49:10Z",
- "ready": [
+ "generated": "2026-11-22T17:49:35Z",
+ "ready": [],
+ "later_today": [
   {
-   "espn_id": "401882798",
-   "slug": "celta-vigo-real-madrid",
-   "date": "2026-11-21",
-   "team": "RMA",
+   "espn_id": "401878755",
+   "slug": "manchester-united-liverpool",
+   "date": "2026-11-22",
+   "team": "LIV",
    "teams_text": [
-    "Real Madrid",
-    "Celta Vigo"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": "2-1",
-   "watched": [
-    "RMA"
-   ],
-   "favourite_involved": true,
-   "winner_key": "RMA",
-   "loser_key": null,
-   "banter": false,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
-  },
-  {
-   "espn_id": "401876398",
-   "slug": "paris-saint-germain-nice",
-   "date": "2026-11-21",
-   "team": "PSG",
-   "teams_text": [
-    "Nice",
-    "Paris Saint-Germain"
-   ],
-   "competition": "French Ligue 1",
-   "score": "2-3",
-   "watched": [
-    "PSG"
-   ],
-   "favourite_involved": true,
-   "winner_key": "PSG",
-   "loser_key": null,
-   "banter": false,
-   "banter_by_favourite": false,
-   "favourite_lost": false,
-   "make_reel": true,
-   "why": "a favourite played"
-  }
- ],
- "later_today": [],
- "not_making": [
-  {
-   "espn_id": "401879232",
-   "slug": "arsenal-newcastle-united",
-   "date": "2026-11-21",
-   "team": "ARS",
-   "teams_text": [
-    "Newcastle United",
-    "Arsenal"
+    "Liverpool",
+    "Manchester United"
    ],
    "competition": "English Premier League",
-   "score": "2-2",
+   "score": null,
    "watched": [
-    "ARS"
+    "LIV",
+    "MUN"
+   ],
+   "favourite_involved": true
+  },
+  {
+   "espn_id": "401882803",
+   "slug": "atletico-madrid-getafe",
+   "date": "2026-11-22",
+   "team": "ATM",
+   "teams_text": [
+    "Getafe",
+    "Atl\u00e9tico de Madrid"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "ATM"
+   ],
+   "favourite_involved": false
+  }
+ ],
+ "not_making": [
+  {
+   "espn_id": "401882804",
+   "slug": "villarreal-barcelona",
+   "date": "2026-11-22",
+   "team": "BAR",
+   "teams_text": [
+    "Barcelona",
+    "Villarreal"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": "3-2",
+   "watched": [
+    "BAR"
    ],
    "favourite_involved": false,
-   "winner_key": null,
+   "winner_key": "BAR",
    "loser_key": null,
    "banter": false,
    "banter_by_favourite": false,
