@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 228,
+  "credits": 229,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2671,6 +2671,11 @@
     "at": "2026-11-22T18:30:23Z",
     "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882803/atletico-madrid-getafe",
     "credits": 0
+   },
+   {
+    "at": "2026-11-22T18:31:03Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401878755",
+    "credits": 1
    }
   ]
  }
