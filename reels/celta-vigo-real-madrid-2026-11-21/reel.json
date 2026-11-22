@@ -1,0 +1,141 @@
+{
+ "id": "celta-vigo-real-madrid-2026-11-21",
+ "format_version": 3,
+ "trend_used": "t1",
+ "experiment": "v3 (28-35 s, ~62 words); same-measure hook naming both clubs with paradox ending; beat 1 = the reason (big chances missed + penalty), not another shot count; two-name question (Vinícius or Espí) set up with a stat per name in beats 3-4 and repeated as caption first line",
+ "angle_source": "data",
+ "fan_question": "Who won it for Madrid: Vinícius or Espí?",
+ "match": {
+  "pill": "RMA 2–1 CEL · LALIGA",
+  "league": "LALIGA"
+ },
+ "beats": [
+  {
+   "say": "Madrid, twenty-four shots. Celta, eight. Still needed minute eighty-five.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "REAL MADRID 2–1 CELTA",
+    "text": "SHOTS\nMADRID *24*\nCELTA *8*",
+    "size": 130,
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "Why so late? Five big chances missed. And Mbappé skied a penalty.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "compare",
+    "kicker": "WASTEFUL MADRID",
+    "teams": [
+     "MADRID",
+     "CELTA"
+    ],
+    "rows": [
+     {
+      "label": "BIG CHANCES MISSED",
+      "a": 5,
+      "b": 0,
+      "fa": "5",
+      "fb": "0"
+     },
+     {
+      "label": "xG",
+      "a": 3.75,
+      "b": 1.64,
+      "fa": "3.75",
+      "fb": "1.64"
+     }
+    ],
+    "source": "ESPN team stats · ESPN report"
+   }
+  },
+  {
+   "say": "Then the fifty-seventh-minute triple sub. Before it: zero goals. After it: two.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "compare",
+    "kicker": "THE 57' TRIPLE SUB",
+    "teams": [
+     "TO 57'",
+     "AFTER 57'"
+    ],
+    "rows": [
+     {
+      "label": "MADRID SHOTS",
+      "a": 15,
+      "b": 9,
+      "fa": "15",
+      "fb": "9"
+     },
+     {
+      "label": "MADRID GOALS",
+      "a": 0,
+      "b": 2,
+      "fa": "0",
+      "fb": "2"
+     }
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Scout's pick: Vinícius. Off the bench, nought point seven one expected assists.",
+   "emotion": "happy",
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Vinícius Júnior",
+    "team": "Real Madrid",
+    "stats": [
+     [
+      "on at",
+      "57'"
+     ],
+     [
+      "xA",
+      "0.71"
+     ],
+     [
+      "big chances created",
+      "2"
+     ]
+    ],
+    "source": "ESPN player stats"
+   }
+  },
+  {
+   "say": "And Carlos Espí? Five touches. One of them, the winner.",
+   "emotion": "excited",
+   "emote": [
+    [
+     2.2,
+     "smug"
+    ]
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "ESPÍ · ON AT 79'",
+    "value": "5",
+    "unit": "TOUCHES",
+    "label": "*1* goal: the 85' winner",
+    "sub": "header saved, rebound scored",
+    "source": "ESPN player stats · ESPN report"
+   }
+  },
+  {
+   "say": "Level with Barça, for now. Vinícius or Espí: who won it?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "VINÍCIUS\nOR *ESPÍ*?",
+    "size": 130,
+    "source": "ESPN · Reuters · BBC Sport table"
+   }
+  }
+ ]
+}

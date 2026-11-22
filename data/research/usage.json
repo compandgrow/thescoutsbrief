@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 214,
+  "credits": 219,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2486,6 +2486,56 @@
     "at": "2026-11-21T23:51:18Z",
     "what": "local scrape https://www.espn.co.uk/football/commentary/_/gameId/401876398",
     "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:51:40Z",
+    "what": "local scrape https://www.espn.co.uk/football/player-stats/_/gameId/401882798",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:52:50Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/160",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:52:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/2502",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:53:14Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:53:15Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/85",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:53:20Z",
+    "what": "search Nice Paris Saint-Germain",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-21T23:53:44Z",
+    "what": "search Real Madrid Celta Vigo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:54:03Z",
+    "what": "search Real Madrid Mbappe penalty Celta",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-21T23:54:10Z",
+    "what": "search PSG Doue injury Luis Enrique",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-21T23:54:12Z",
+    "what": "scrape https://www.reuters.com/sports/soccer/espi-spares-mbappes-blushes-real-madrid-beat-celta-vigo-2026-11-21/",
+    "credits": 1
    }
   ]
  }

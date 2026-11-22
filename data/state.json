@@ -254,6 +254,15 @@
    "mode": "auto",
    "at": "2026-11-21",
    "scheduled_for": "2026-11-21T19:22:00Z"
+  },
+  {
+   "reel": "celta-vigo-real-madrid-2026-11-21",
+   "espn_id": "401882798",
+   "zernio_post": "6b023c7fa01f869c19b481ff",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-22",
+   "scheduled_for": "2026-11-22T01:51:00Z"
   }
  ],
  "skipped": [

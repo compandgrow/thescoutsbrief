@@ -1,0 +1,58 @@
+{
+ "match": "RMA 2-1 CEL (Spanish LALIGA, 2026-11-21)",
+ "generated_at": "2026-11-21T23:58:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "RMA", "type": "storyline",
+   "claim": "Real Madrid have 33 points from 13 LaLiga games, level on points with leaders Barcelona, who have played a game fewer (Barcelona host Villarreal on Sunday)",
+   "numbers": {"points": 33, "played": 13, "barcelona_points": 33, "barcelona_played": 12},
+   "strength": "strong",
+   "sources": [
+    {"what": "Reuters match report: 'Real have 33 points from 13 LaLiga games, level with leaders Barcelona, but have now played a game more'", "url": "https://www.reuters.com/sports/soccer/espi-spares-mbappes-blushes-real-madrid-beat-celta-vigo-2026-11-21/", "cache": "data/research/scrape_d9a3081d5c25.json"},
+    {"what": "ESPN report: 'draw level on points with Barcelona at the top of LaLiga'; ESPN LALIGA table Barcelona 12 GP 33 P, Real Madrid 13 GP 33 P", "url": "https://www.espn.co.uk/football/report/_/gameId/401882798", "cache": "data/research/scrape_2b49b105c142.json"},
+    {"what": "BBC Sport La Liga table 'On Saturday 21st November': Barcelona 12 played 33 pts, Real Madrid 13 played 33 pts", "url": "https://www.bbc.com/sport/football/live/cm2d933j21n8t", "cache": "data/research/scrape_bc5df744ea67.json"}
+   ],
+   "hook_angle": "Twenty-four shots, one sub's rebound, and Madrid are level with Barça.",
+   "use_for": "context",
+   "fresh_until": "2026-11-22"},
+  {"id": "t2", "team": "RMA", "type": "form",
+   "claim": "Real Madrid have won six in a row in all competitions (ESPN results), the last four league games among them",
+   "numbers": {"wins_in_a_row": 6},
+   "strength": "medium",
+   "sources": [
+    {"what": "ESPN results via data/form/86.json (WWWWWW, GAP 2026-11-07 to 2026-11-21 = international break window)", "url": "https://www.espn.co.uk/football/team/results/_/id/86"},
+    {"what": "BBC Sport La Liga table form guide, last 6 league games: W W W W W W (league only, covers the same gap with no league game missing)", "url": "https://www.bbc.com/sport/football/live/cm2d933j21n8t"}
+   ],
+   "hook_angle": "Six straight wins, and this one took a missed penalty and an 85th-minute rebound.",
+   "use_for": "context",
+   "fresh_until": "2026-11-25",
+   "caution": "The all-competitions run spans an ESPN gap (07-21 Nov). The BBC form guide confirms only the LEAGUE run. Safest wording on screen: 'six straight La Liga wins (BBC form guide)' or avoid the count."}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [
+   {"theme": "Mbappé skied the 39th-minute penalty (not from Reddit: Reddit unreachable; from headlines of ESPN, Reuters and the BBC video page)", "share": "every trusted headline leads on it", "confirmed_by": "ESPN report + Reuters report + shots_espn.json shot 15", "use_for": "proof beat"},
+   {"theme": "The bench won it: Vinícius on at 57', sub Espí's winner after six minutes on the pitch", "share": "ESPN and Reuters headlines (\"Bellingham, Espí rescue Madrid\", \"Espi spares Mbappe's blushes\")", "confirmed_by": "ESPN report + Reuters + insights.json tactical_change", "use_for": "outro question"}
+  ],
+  "club_subs": [],
+  "note": "Reddit not reachable: `engine/reddit.py match \"Real Madrid\" \"Celta Vigo\"` -> 'Reddit RSS error 404 on /r/soccer/search'; `engine/reddit.py club RMA` -> 'Reddit RSS error 404 on /r/realmadrid/hot/'. No Reddit keys set (RSS mode). No fan-opinion claims may be made in the reel."
+ },
+ "rejected": [
+  {"claim": "Mbappé's third miss in his last six penalty attempts for club and country", "reason": "only one outlet (Reuters); not confirmed by a second trusted outlet or official source"},
+  {"claim": "Mbappé also missed a penalty in the 1-0 defeat at Real Betis in September", "reason": "only one outlet (Reuters)"},
+  {"claim": "Celta won 2-0 at the Bernabéu last season (revenge storyline)", "reason": "only one outlet (ESPN report); ESPN head-to-head shows a 2-0 Celta win but only as an unlabelled score line; not needed"},
+  {"claim": "Pre-match tribute to a deceased Tenerife player", "reason": "red line: tragedy reference"},
+  {"claim": "Vinícius' first game after a four-match ban", "reason": "only one outlet (ESPN report); allowed as context only, not as a talking point"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "data",
+  "fan_question": "Who won it for Madrid: Vinícius or Espí?",
+  "data_answer": "Madrid had 24 shots to 8 and 3.75 xG to 1.64 but missed 5 big chances and a penalty. Up to the 57' triple sub: 15 shots, 0 goals; after: 9 shots, 2 goals. Vinícius: 0.71 xA, 2 big chances created off the bench; Espí: 5 touches, 1 goal.",
+  "evidence": ["insights.json team_story (shots, xG, big chances missed)", "insights.json tactical_change", "insights.json best_player", "insights.json surprise_stat", "ESPN report + Reuters report (penalty over the bar)"],
+  "fan_heat": "Reddit unreachable (RSS 404); headlines of ESPN, Reuters and BBC Sport all lead on the missed penalty and the substitutes",
+  "hook_angle": "Madrid, twenty-four shots. Celta, eight. Still needed minute eighty-five.",
+  "why": "No Reddit theme available, so the angle is the data story every trusted headline already frames: domination, a skied penalty, and a bench that fixed it. t1 (level with Barça) is the context/outro line."
+ },
+ "credits_used": 3,
+ "notes": "Form: data/form/86.json (RMA WWWWWW, gap 07-21 Nov) and data/form/85.json (Celta LWDLLD newest first: 1 win in last 6, a Copa del Rey 5-0 at Salamanca UDS) from free local ESPN fetches (0 credits). News search 'Real Madrid Celta Vigo' --days 2 returned 0 results (0 credits logged); second search 'Real Madrid Mbappe penalty Celta' --days 3 (2 credits); Reuters page scraped (local fetch failed, Firecrawl fallback, 1 credit). Reddit: RSS 404 on both match and club calls (see fan_buzz.note). Goal minute/numbers in Reuters agree with insights.json (Bellingham 66', Espí rebound). Reuters says Durán turned in Swedberg's low cross; ESPN player stats credit Swedberg 1 assist, consistent."
+}

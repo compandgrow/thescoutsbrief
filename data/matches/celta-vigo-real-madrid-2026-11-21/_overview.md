@@ -1,0 +1,33 @@
+# Real Madrid 2-1 Celta Vigo, Spanish LALIGA, 2026-11-21, Santiago Bernabéu (Madrid)
+Data folder / reel id: `celta-vigo-real-madrid-2026-11-21` (ESPN slug order, same convention as leeds-united-chelsea-2026-11-21; Real Madrid are the HOME side).
+Goals (ESPN): Pablo Durán 6' (CEL); Jude Bellingham 66' (RMA); Carlos Espí 85' (RMA, rebound after his own saved header).
+Mbappé penalty 39' missed (over the bar; ESPN report + shot map "Penalty", Off Target, 0.79 xG).
+Favourite (Real Madrid) won: banter false, banter_by_favourite false, favourite_lost false (data/queue.json).
+Web path (no PITCHAPI_API_KEY). NO player ratings on this path: label best/worst as "Scout's pick".
+Manager: Real Madrid Jose Mourinho (ESPN report). Celta manager: not in any cached source.
+Formations (ESPN lineups "4-1-4-1 / 3-4-3"): Real Madrid 4-1-4-1, Celta 3-4-3. No shape change stated in any source.
+Real Madrid XI (ESPN): Courtois; Alexander-Arnold, Konaté, Huijsen, Carreras; Camavinga; Silva, Bellingham, Güler, Diomande; Mbappé.
+Real Madrid subs (ESPN lineups): Cucurella for Carreras 57'; Valverde for B. Silva 57'; Vinícius Júnior for Alexander-Arnold 57'; Endrick for Diomande 71'; Espí for Camavinga 79' (commentary confirms Espí 79').
+  CONFLICT: ESPN report says Vinícius replaced Bernardo Silva; ESPN lineup pairs him with Alexander-Arnold. Do not say who Vinícius replaced. Both agree: on at 57'; report: Alexander-Arnold "hauled off before the hour mark".
+Celta XI (ESPN): Radu; Rodríguez, Lago, Alonso; Burcio, Moriba, Carreira, Galán; Álvarez, Swedberg, Durán.
+Celta subs: Jutglà for H. Álvarez 45'; Driouech for Burcio 67'; Febas for Swedberg 67'; Aspas for Durán 76'; Rueda for Galán 76'.
+Cards (ESPN commentary, 71'-FT only cached): Lago 74' (CEL), J. Rodríguez 82' (CEL), Espí 90'+4' (RMA). Earlier cards unknown.
+
+## Cached files (data/research/) and what is in them
+- scrape_0f6773c67f43.json = ESPN match page https://www.espn.co.uk/football/match/_/gameId/401882798/celta-vigo-real-madrid (fetched 2026-11-21T23:49:09Z, free local fetch): score, scorers, records after match (RMA 11-0-2 33 pts, CEL 2-7-4 13 pts), formations/lineups/subs/bench, Match Leaders (Bellingham 5 shots 2 SOG 0.26 xG; Durán 3 shots 3 SOG 0.91 xG; Huijsen 79 acc passes of 88, 10 def. interventions; Alonso 55 acc passes; J. Rodríguez 14 def. interventions; Courtois 3 saves, 4 SOGA, 1.64 xGC; Radu 5 saves, 7 SOGA, 3.76 xGC), 32-shot map, short Team Stats (xG 3.75 v 1.64, possession 64% v 36%, shots on goal 7 (29%) v 4 (50%), big chances created 4 v 1, corners 8 v 3, accurate passes 553 (90%) v 288 (80%), duels won 43 v 23, saves 3 v 5, fouls 4 v 13), head-to-head last 5, LALIGA table after match (Barcelona 12 GP 33 pts 1st, Real Madrid 13 GP 33 pts 2nd, Celta 13th 13 pts).
+- scrape_9644e9ecf75e.json = ESPN team stats https://www.espn.com/soccer/team-stats/_/gameId/401882798 (Firecrawl, 1 credit): Shots 24 v 8, on goal 7 v 4, blocked 8 v 1, woodwork 0 v 0, inside box 16 v 5, outside 8 v 3; Attack: big chances created 4 v 1, big chances missed 5 v 0, through balls 1 v 0, touches in opp box 66 v 11, fouled in final third 3 v 0, corners 8 v 3; Passes: accurate 553 (90%) v 288 (80%), passes 612 v 360, accurate long balls 24 v 19, accurate crosses 8 v 0. Real Madrid last 5 before this match: W3-0 @VAL, W3-2 @AEK, W3-0 @RAC, W2-1 @BAR, W4-1 v RBL.
+- scrape_20b27ea37a9c.json = ESPN player stats https://www.espn.co.uk/football/player-stats/_/gameId/401882798 (free local fetch). Table rows follow the player list order per position group. Key rows: Mbappé TCH 51, G 0, A 1, xG 0.89, xA 0.42, SOG 0, SHOT 4, BCC 1; Vinícius TCH 26, A 0, xG 0.01, xA 0.71, SOG 0, SHOT 1, BCC 2; Endrick xG 0.60, SOG 1, SHOT 1; Espí TCH 5, G 1, xG 0.93, SOG 2, SHOT 2; Güler TCH 98, xG 0.14, SHOT 4, DINT 5, DUELW 7; Bellingham TCH 71, G 1, xG 0.26, SOG 2, SHOT 5, DINT 5, DUELW 5; B. Silva xG 0.56, SHOT 2; Huijsen TCH 103, DINT 10, DUELW 6; Alexander-Arnold TCH 56, xG 0.03, xA 0.23, SHOT 1, DINT 4. Courtois GA 1, SV 3, SOGA 4, xGC 1.64, xGOTC 1.50, GP 0.50. Celta: Durán TCH 28, G 1, xG 0.91, SOG 3, SHOT 3; Swedberg A 1, xG 0.52, xA 0.64, SHOT 3, BCC 1; Radu GA 2, SV 5, SOGA 7, xGC 3.75, xGOTC 1.82, GP -0.18, BCS 2.
+- scrape_2b49b105c142.json = ESPN report https://www.espn.co.uk/football/report/_/gameId/401882798 (free local fetch, PA copy): came from behind, level on points with Barcelona at the top (Barça play Villarreal Sunday); Mbappé penalty 39' "sailing over the crossbar" after Javi Rodríguez grabbed his shirt/arm ("Contact was minimal"); Vinícius on at 57' after the end of his four-match ban, "swiftly helped set up the equaliser" (Vinícius ran down left, set up Mbappé, who laid off for Bellingham, bottom corner from edge of box); Espí "only been on the field for six minutes", header saved by Radu then tucked away the rebound, Vinícius cross; Courtois "strong hand" to deny Durán before the equaliser; Celta won 2-0 at the Bernabéu last season. ALSO: pre-match tribute to a deceased Tenerife player (RED LINE: never reference), Nadal elected to Madrid's board (off-topic).
+- scrape_fc0114fa8e3f.json = ESPN commentary https://www.espn.co.uk/football/commentary/_/gameId/401882798 (free local fetch): 71' to FT only. 85' Espí header saved (assisted by Vinícius, cross) then goal; 89' Endrick shot saved (assisted by Vinícius); 90' Mbappé shot wide (assisted by Bellingham); 90' 4 minutes added; cards above.
+- scrape_bc5df744ea67.json = BBC live page https://www.bbc.com/sport/football/live/cm2d933j21n8t — WRONG MATCH: it is the Osasuna v Málaga page (web_data.py took the search's 2nd hit). Usable only for its La Liga table "On Saturday 21st November" (Real Madrid 2nd, 13 played, 11 W, 33 pts, form last 6 oldest first W W W W W W; Barcelona 1st, 12 played, 33 pts). No BBC match page for Real Madrid v Celta was found (search hit 1 was a BBC video page "Real Madrid 2-1 Celta Vigo - Kylian Mbappe missed penalty", not scraped).
+- shots_espn.json (local): 32 shots (RMA 24, CEL 8), xG/xGOT/minute/situation. Shot-map xG sums 4.13 / 1.64; RMA sum is higher than the 3.75 header (Espí's saved header 0.44 + rebound goal 0.88 are both counted). Use the header 3.75 / 1.64 on screen; use shot COUNTS (not summed xG) for half splits.
+- _web_sources.json (local): the ESPN match + team stats URLs and the wrong BBC URL (see above).
+
+## Gate
+Score: yes. Team stats: yes (ESPN match page + ESPN team stats). Shots: yes (32). Lineups: yes (ESPN). PASS.
+
+## Caveats for the analyst
+- No player ratings. Best/worst = "Scout's pick".
+- No BBC Opta stats; possession 64/36 is ESPN only.
+- Who Vinícius replaced is disputed (see above); don't say it.
+- Red line: pre-match tribute to a deceased player in the ESPN report — never mention.

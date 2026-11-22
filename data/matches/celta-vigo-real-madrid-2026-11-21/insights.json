@@ -1,0 +1,61 @@
+{
+ "match": {"home": "Real Madrid", "away": "Celta Vigo", "home_short": "RMA", "away_short": "CEL", "score": "2-1", "competition": "Spanish LALIGA", "date": "2026-11-21"},
+ "data_mode": "web (ESPN match page, team stats, player stats, report, commentary cached); no BBC match page, no player ratings: best/worst are Scout's pick",
+ "headline": "Real Madrid had 24 shots to Celta's 8 and 3.75 xG to 1.64, missed a penalty and 5 big chances, and needed two goals after the 57th-minute triple sub to win 2-1.",
+ "team_story": [
+  {"label": "Shots", "home": 24, "away": 8, "why_it_matters": "Madrid had three times Celta's shots and still trailed for 60 minutes", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882798 Shots (data/research/scrape_9644e9ecf75e.json); 24 v 8 also in shots_espn.json"},
+  {"label": "xG", "home": 3.75, "away": 1.64, "why_it_matters": "Madrid made more than double Celta's chance quality", "source": "https://www.espn.co.uk/football/match/_/gameId/401882798/celta-vigo-real-madrid Team Stats: Expected Goals (data/research/scrape_0f6773c67f43.json)"},
+  {"label": "Big chances missed", "home": 5, "away": 0, "why_it_matters": "the reason a 24-shot game was 2-1", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882798 Attack: Big Chances Missed (data/research/scrape_9644e9ecf75e.json)"},
+  {"label": "Touches in opposition box", "home": 66, "away": 11, "why_it_matters": "Madrid lived in Celta's box", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401882798 Attack (data/research/scrape_9644e9ecf75e.json)"},
+  {"label": "Possession %", "home": 64, "away": 36, "why_it_matters": "", "source": "ESPN match page Team Stats: Possession (data/research/scrape_0f6773c67f43.json)"}
+ ],
+ "tactical_change": {
+  "team": "Real Madrid",
+  "minute": 57,
+  "before": "4-1-4-1",
+  "after": "4-1-4-1 (no formation change in source)",
+  "trigger": "triple substitution at 57': Cucurella, Valverde and Vinícius Júnior on (ESPN lineups; report: Vinícius on at 57'). Who Vinícius replaced is disputed between ESPN lineup and report, so don't say it.",
+  "effect": "Up to 57': 15 shots, 3 on target, 0 goals. After 57': 9 shots, 4 on target, 2 goals. Celta after 57': 2 shots. Both goals involved Vinícius per the ESPN report (set up the move for Bellingham's equaliser; cross for Espí's header before the rebound winner).",
+  "evidence": [
+   {"label": "Madrid shots", "before": 15, "after": 9, "source": "data/matches/celta-vigo-real-madrid-2026-11-21/shots_espn.json (RMA_before_57 / RMA_after_57 in analysis.py) from https://www.espn.co.uk/football/match/_/gameId/401882798/celta-vigo-real-madrid Shot Map"},
+   {"label": "Madrid shots on target", "before": 3, "after": 4, "source": "shots_espn.json via analysis.py (RMA_before_57 / RMA_after_57)"},
+   {"label": "Madrid goals", "before": 0, "after": 2, "source": "shots_espn.json via analysis.py; ESPN scorers 66' and 85'"},
+   {"label": "Celta shots", "before": 6, "after": 2, "source": "shots_espn.json via analysis.py (CEL_before_57 / CEL_after_57)"}
+  ],
+  "confidence": "medium (timing and numbers are solid; cause is inferred, supported by the ESPN report's account of Vinícius' role)"
+ },
+ "best_player": {
+  "name": "Vinícius Júnior", "team": "RMA", "rating": null,
+  "stats": [["Minutes", "on at 57'"], ["xA", "0.71"], ["Big chances created", "2"], ["Touches", "26"]],
+  "why": "Scout's pick. Off the bench at 57' (first game after a four-match ban, ESPN report) and the team's highest xA (0.71) and most big chances created (2) in about half an hour. Report: helped set up the equaliser and crossed for Espí's header before the winner. Note ESPN credits him 0 assists.",
+  "source": "https://www.espn.co.uk/football/player-stats/_/gameId/401882798 (data/research/scrape_20b27ea37a9c.json, Vinícius row: TCH 26, A 0, xG 0.01, xA 0.71, SHOT 1, BCC 2); ESPN report (data/research/scrape_2b49b105c142.json)"
+ },
+ "worst_player": {
+  "name": "Kylian Mbappé", "team": "RMA", "rating": null,
+  "stats": [["Shots", "4"], ["On target", "0"], ["xG", "0.89"], ["Penalty", "missed 39'"]],
+  "why": "Scout's pick. Played 90 minutes, four shots, none on target, 0.89 xG, and blazed the 39th-minute penalty over the bar at 0-1. Fair balance: ESPN credits him the assist for Bellingham's equaliser (A 1, xA 0.42).",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/player-stats/_/gameId/401882798 (data/research/scrape_20b27ea37a9c.json, Mbappé row: TCH 51, G 0, A 1, xG 0.89, xA 0.42, SOG 0, SHOT 4); shots_espn.json shot 15 (39', Penalty, Off Target, 0.79 xG); ESPN report 'sent his penalty sailing over the crossbar'"
+ },
+ "surprise_stat": {
+  "value": "5", "label": "touches for Carlos Espí, one of them the winner",
+  "context": "On at 79'; ESPN player stats TCH 5, G 1, SHOT 2, SOG 2. Report: 'only been on the field for six minutes' when he scored at 85'.",
+  "source": "https://www.espn.co.uk/football/player-stats/_/gameId/401882798 (data/research/scrape_20b27ea37a9c.json, Espí row); ESPN report (data/research/scrape_2b49b105c142.json)"
+ },
+ "goalkeepers": {
+  "courtois": {"saves": 3, "sot_faced": 4, "xgot_faced": 1.50, "goals_prevented": 0.50, "source": "ESPN player stats Courtois row (scrape_20b27ea37a9c.json)"},
+  "radu": {"saves": 5, "sot_faced": 7, "xgot_faced": 1.82, "goals_prevented": -0.18, "source": "ESPN player stats Radu row (scrape_20b27ea37a9c.json)"}
+ },
+ "result_context": {"winner": "Real Madrid", "loser": "Celta Vigo", "banter": false, "banter_by_favourite": false, "favourite_lost": false,
+  "table": "Real Madrid level with Barcelona on 33 points (Madrid 13 played, Barcelona 12), ESPN match page LALIGA table + ESPN report; Barcelona play Villarreal Sunday"},
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path: best/worst are Scout's pick from ESPN player stats.",
+  "No BBC match page found; the cached BBC URL in _web_sources.json is Osasuna v Málaga (only its La Liga table used).",
+  "Shot-map xG sum for Madrid is 4.13 vs ESPN header 3.75 (rebound double-count); use 3.75 on screen and shot counts, not xG sums, for splits.",
+  "Who Vinícius replaced at 57' is disputed (ESPN lineup: Alexander-Arnold; ESPN report: Bernardo Silva).",
+  "ESPN credits Vinícius 0 assists; say 'set up' / big chances / xA, not 'two assists'.",
+  "Red line: the ESPN report mentions a pre-match tribute to a deceased Tenerife player. Never reference it.",
+  "No Firecrawl research in this step (data from free ESPN fetches)."
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "team_id": "85",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/85",
+ "fetched_at": "2026-11-21T23:53:15Z",
+ "last": [
+  {
+   "date": "2026-11-21",
+   "opponent": "Real Madrid",
+   "venue": "A",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882798"
+  },
+  {
+   "date": "2026-11-13",
+   "opponent": "Salamanca UDS",
+   "venue": "A",
+   "score": "5-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Spanish Copa del Rey",
+   "game_id": "401928487"
+  },
+  {
+   "date": "2026-11-08",
+   "opponent": "Levante",
+   "venue": "H",
+   "score": "0-0",
+   "result": "D",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882815"
+  },
+  {
+   "date": "2026-11-05",
+   "opponent": "Union St.-Gilloise",
+   "venue": "H",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Europa League",
+   "game_id": "401915531"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Rayo Vallecano",
+   "venue": "A",
+   "score": "0-3",
+   "result": "L",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882818"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Real Betis",
+   "venue": "H",
+   "score": "0-0",
+   "result": "D",
+   "pens": false,
+   "competition": "Spanish LALIGA",
+   "game_id": "401882833"
+  }
+ ],
+ "run_newest_first": "LWDLLD",
+ "wins": 1,
+ "draws": 2,
+ "losses": 3,
+ "gaps": [],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}
