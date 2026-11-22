@@ -1,0 +1,88 @@
+{
+ "match": {"home": "Liverpool", "away": "Manchester United", "home_short": "LIV", "away_short": "MUN", "score": "4-0", "competition": "Premier League", "date": "2026-11-22"},
+ "data_mode": "web (ESPN match page, team stats, player stats, commentary 65'-FT; BBC live page with match stats, line-ups and report; BBC + ESPN red-card articles); no player ratings: best/worst are Scout's pick",
+ "headline": "Yoro was sent off after 8 minutes of Pochettino's first game; from then on Liverpool had 25 shots and 3.98 xG to United's 9 and 0.59, and won 4-0 with 7 big chances to United's 0.",
+ "team_story": [
+  {"label": "xG", "home": 4.38, "away": 0.63, "why_it_matters": "Liverpool made seven times United's chance quality; 4 goals was not luck", "source": "https://www.espn.co.uk/football/match/_/gameId/401878755/manchester-united-liverpool Team Stats: Expected Goals (data/research/scrape_3b90fda75a3c.json); BBC Match Stats xG 4.3777 v 0.6309 (data/research/scrape_b0f3ea25478b.json)"},
+  {"label": "Big chances created", "home": 7, "away": 0, "why_it_matters": "United did not create one clear chance all game", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878755 Attack: Big Chances Created (data/research/scrape_da15b643b3e0.json)"},
+  {"label": "Touches in opposition box", "home": 60, "away": 9, "why_it_matters": "Liverpool lived in United's box; United barely reached Liverpool's", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878755 Attack (data/research/scrape_da15b643b3e0.json); BBC Basic Stats 60 v 9 (data/research/scrape_b0f3ea25478b.json)"},
+  {"label": "Shots", "home": 28, "away": 10, "why_it_matters": "almost three to one", "source": "https://www.espn.com/soccer/team-stats/_/gameId/401878755 Shots (data/research/scrape_da15b643b3e0.json); BBC 28 v 10; 28 v 10 in shots_espn.json"},
+  {"label": "Successful final-third passes", "home": 237, "away": 30, "why_it_matters": "United could not get into Liverpool's third", "source": "https://www.bbc.com/sport/football/live/cm62pqqw6d29t In-depth match stats: Distribution (data/research/scrape_b0f3ea25478b.json)"},
+  {"label": "Possession %", "home": 64, "away": 36, "why_it_matters": "", "source": "ESPN match page Team Stats: Possession (data/research/scrape_3b90fda75a3c.json); BBC 63.8 v 36.2"}
+ ],
+ "turning_point": {
+  "minute": 8, "event": "Leny Yoro straight red card, denial of an obvious goalscoring opportunity (foul on Isak just outside the box)",
+  "facts": [
+   {"fact": "United's earliest red card in the Premier League", "source": "https://www.bbc.com/sport/football/articles/cq7827p8emmxo image caption: 'The sending-off after eight minutes was Manchester United's earliest red card in the Premier League' (data/research/scrape_e1535da10a3b.json)"},
+   {"fact": "Szoboszlai scored the resulting free-kick at 10' (0.20 xG); Wirtz made it 2-0 at 13'", "source": "BBC report in https://www.bbc.com/sport/football/live/cm62pqqw6d29t ('Dominik Szoboszlai stepped up to send the free-kick into the bottom left corner'); shots_espn.json shots 5 and 7"},
+   {"fact": "Kop chanted 'sacked in the morning' 13 minutes into Pochettino's first game", "source": "https://www.espn.co.uk/football/story/_/id/50563425/liverpool-fans-taunt-mauricio-pochettino-calamitous-man-united-defeat-sacked-morning (data/research/scrape_29b2ffc5bdb8.json)"},
+   {"fact": "Verdict split: BBC's Dale Johnson calls it 'a borderline case' and says Yoro 'can count himself a little unfortunate'; ESPN's VAR review calls it 'a straightforward decision'. Neville: 'It's so clumsy from Yoro.'", "source": "data/research/scrape_e1535da10a3b.json (BBC); data/research/scrape_06a61a121663.json (ESPN)"}
+  ]
+ },
+ "tactical_change": {
+  "team": "Manchester United",
+  "minute": 22,
+  "before": "4-2-3-1",
+  "after": "10 men; shape after the change not stated by any source",
+  "trigger": "red card (Yoro 8') then Maguire on for Mbeumo at 22' (BBC + ESPN line-ups)",
+  "effect": "Between the red card and Maguire's arrival (8'-22') Liverpool had 4 shots, 0.88 xG and scored twice. From 22' to half-time: 5 shots, 0.40 xG, no goals, so the extra centre-back stopped the bleeding until the break. After half-time Liverpool had 16 shots and 2.70 xG and scored twice more.",
+  "evidence": [
+   {"label": "Liverpool shots", "before": 4, "after": 5, "source": "data/matches/manchester-united-liverpool-2026-11-22/shots_espn.json via analysis.py (LIV_8-22 / LIV_22-45+) from https://www.espn.co.uk/football/match/_/gameId/401878755/manchester-united-liverpool Shot Map"},
+   {"label": "Liverpool xG", "before": 0.88, "after": 0.40, "source": "analysis.py derived.json (LIV_8-22 / LIV_22-45+)"},
+   {"label": "Liverpool goals", "before": 2, "after": 0, "source": "analysis.py derived.json; ESPN scorers 10' and 13'"},
+   {"label": "Liverpool 2nd-half shots / xG", "before": "12 / 1.68 (1st half)", "after": "16 / 2.70 (2nd half)", "source": "analysis.py derived.json (LIV_1st half / LIV_2nd half)"}
+  ],
+  "confidence": "medium (sub minute and numbers solid; the 22'-45' period is short and the shape after the sub is not in any source)"
+ },
+ "best_player": {
+  "name": "Florian Wirtz", "team": "LIV", "rating": null,
+  "stats": [["Goals", "1"], ["Assists", "1"], ["Big chances created", "5"], ["xA", "1.08"]],
+  "why": "Scout's pick. Scored the second (13'), assisted Muñoz's fourth (82'), and created 5 of Liverpool's 7 big chances (highest xA on the pitch, 1.08). ESPN commentary: 'having one of his best games in a Liverpool shirt'; named a standout with Ngumoha in the FT summary.",
+  "source": "https://www.espn.co.uk/football/player-stats/_/gameId/401878755 (data/research/scrape_c3f32da84d0c.json, Wirtz row: TCH 76, G 1, A 1, xG 0.36, xA 1.08, SOG 1, SHOT 2, BCC 5); team BCC 7 from https://www.espn.com/soccer/team-stats/_/gameId/401878755; ESPN commentary 82' (data/research/scrape_873659298bd4.json)"
+ },
+ "worst_player": {
+  "name": "Matheus Cunha", "team": "MUN", "rating": null,
+  "stats": [["Minutes", "45 (off at half-time)"], ["Touches", "21"], ["Shots", "0"], ["xG", "0.00"]],
+  "why": "Scout's pick among players with 45+ minutes (Yoro played 8, so he is not eligible). United's lone starting forward had 21 touches, no shot and 0.01 xA before being replaced at half-time. Context: United played with 10 men from the 8th minute, so this is a low-impact pick, not an anger pick.",
+  "anger_worthy": false,
+  "source": "https://www.espn.co.uk/football/player-stats/_/gameId/401878755 (data/research/scrape_c3f32da84d0c.json, Cunha row: TCH 21, G 0, A 0, xG 0.00, xA 0.01, SOG 0, SHOT 0); BBC line-ups 'substituted for J. Zirkzee at 46 minutes' (data/research/scrape_b0f3ea25478b.json)"
+ },
+ "red_card_player": {
+  "name": "Leny Yoro", "team": "MUN", "minutes": 8, "touches": 6,
+  "note": "Not eligible for worst (under 45 minutes) but he is the story. Keep the verdict neutral: BBC 'borderline', ESPN 'straightforward'.",
+  "source": "BBC line-ups 'L. Yoro 8', Red Card at 8 minutes' (scrape_b0f3ea25478b.json); ESPN player stats Yoro TCH 6 (scrape_c3f32da84d0c.json)"
+ },
+ "surprise_stat": {
+  "value": "6", "label": "shots for Alexander Isak, 1.31 xG, zero goals",
+  "context": "The highest xG on the pitch and the man Yoro fouled for the red card, yet the only Liverpool forward who started and did not score. Lammens made 7 saves.",
+  "source": "https://www.espn.co.uk/football/player-stats/_/gameId/401878755 (scrape_c3f32da84d0c.json, Isak row: TCH 39, G 0, xG 1.31, SOG 3, SHOT 6); shots_espn.json via analysis.py players_by_xg; Lammens SV 7"
+ },
+ "other_surprises": [
+  {"fact": "First time since 1937 that United arrived at Anfield in the bottom three", "source": "BBC report (Gary Rose) on https://www.bbc.com/sport/football/live/cm62pqqw6d29t (scrape_b0f3ea25478b.json)"},
+  {"fact": "Rio Ngumoha became the youngest goalscorer in the history of this fixture, beating Michael Owen's record", "source": "ESPN commentary 78' (scrape_873659298bd4.json)"},
+  {"fact": "United have conceded 34 goals in all competitions this season, the most of any team in Europe's big five leagues", "source": "BBC live text on https://www.bbc.com/sport/football/live/cm62pqqw6d29t (scrape_b0f3ea25478b.json)"},
+  {"fact": "United's best attacker: Bruno Fernandes 3 of United's 3 shots on target, 0.42 of their 0.63 xG", "source": "ESPN player stats Fernandes row (SOG 3, SHOT 4, xG 0.42) + team header xG 0.63 / SOG 3 (scrape_c3f32da84d0c.json, scrape_3b90fda75a3c.json)"}
+ ],
+ "goalkeepers": {
+  "lammens": {"saves": 7, "sot_faced": 11, "xgot_faced": 3.30, "goals_prevented": -0.70, "source": "ESPN player stats Lammens row (scrape_c3f32da84d0c.json)"},
+  "alisson": {"saves": 4, "sot_faced": 4, "xgot_faced": 0.32, "goals_prevented": 0.32, "source": "ESPN player stats Alisson row (scrape_c3f32da84d0c.json)"}
+ },
+ "result_context": {"winner": "LIV", "loser": "MUN", "banter": false, "banter_by_favourite": false, "favourite_lost": true,
+  "table": "Liverpool 4th on 21 pts (11 played); Man United 19th on 8 pts, 1 win in 11 league games, a point from safety (Sunderland and Forest 9). Source: ESPN match page PL table (scrape_3b90fda75a3c.json) + ESPN commentary FT summary (scrape_873659298bd4.json)"},
+ "context": [
+  {"fact": "Pochettino's first game in charge of United; BBC: he is United's eighth permanent manager since Sir Alex Ferguson stood down", "source": "BBC live page image caption + report (scrape_b0f3ea25478b.json)"},
+  {"fact": "Liverpool are a point behind Brighton and Man City and seven behind leaders Arsenal", "source": "BBC live text + ESPN PL table (scrape_b0f3ea25478b.json, scrape_3b90fda75a3c.json)"}
+ ],
+ "banter_material": [],
+ "caveats": [
+  "No player ratings on the web path: best/worst are Scout's pick from ESPN player stats.",
+  "Yoro (8 minutes) is not eligible for worst player under the 45-minute rule; he is recorded as red_card_player.",
+  "Red-card verdict is disputed (BBC 'borderline', ESPN 'straightforward'): the reel should not call it wrong or right.",
+  "ESPN FT summary mentions 'De Ligt's error' before the red; BBC describes an Araujo long ball and Isak's heavy touch. Not used.",
+  "ESPN commentary is cached only from 65' to FT; first-half events come from BBC and the shot map.",
+  "Zirkzee's entry: BBC 46', ESPN 45'. Use 'at half-time'.",
+  "ESPN commentary says United xG 0.64; header, shot map and BBC say 0.63. Use 0.63.",
+  "No banter: favourite (Man United) lost.",
+  "Firecrawl in this step: 1 BBC search + 1 BBC page scrape (JS stats) = 2 calls / 3 credits; ESPN articles and pages were free local fetches."
+ ]
+}

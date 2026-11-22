@@ -1,8 +1,18 @@
 {
  "team_id": "360",
  "source": "https://www.espn.co.uk/football/team/results/_/id/360",
- "fetched_at": "2026-11-08T23:52:44Z",
+ "fetched_at": "2026-11-22T18:35:16Z",
  "last": [
+  {
+   "date": "2026-11-22",
+   "opponent": "Liverpool",
+   "venue": "A",
+   "score": "0-4",
+   "result": "L",
+   "pens": false,
+   "competition": "English Premier League",
+   "game_id": "401878755"
+  },
   {
    "date": "2026-11-08",
    "opponent": "Aston Villa",
@@ -52,22 +62,14 @@
    "pens": false,
    "competition": "UEFA Champions League",
    "game_id": "401915395"
-  },
-  {
-   "date": "2026-10-18",
-   "opponent": "Leeds United",
-   "venue": "A",
-   "score": "1-1",
-   "result": "D",
-   "pens": false,
-   "competition": "English Premier League",
-   "game_id": "401879260"
   }
  ],
- "run_newest_first": "DWLLLD",
+ "run_newest_first": "LDWLLL",
  "wins": 1,
- "draws": 2,
- "losses": 3,
- "gaps": [],
+ "draws": 1,
+ "losses": 4,
+ "gaps": [
+  "2026-11-08 to 2026-11-22"
+ ],
  "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
 }

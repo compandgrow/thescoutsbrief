@@ -1,0 +1,141 @@
+{
+ "id": "manchester-united-liverpool-2026-11-22",
+ "format_version": 3,
+ "trend_used": "t1",
+ "experiment": "v3 (28-35 s, ~75 words); same-measure hook naming both clubs, number first (big chances 7 v 0); beat 1 = the reason (Yoro red 8'), not another count; two-sided question at beat 2 (~11 s) with a stat per side, repeated as outro and caption first line",
+ "angle_source": "data",
+ "fan_question": "Was it all Yoro's red card?",
+ "match": {
+  "pill": "LIV 4–0 MUN · PL",
+  "league": "PL"
+ },
+ "beats": [
+  {
+   "say": "Seven big chances for Liverpool. Zero for United.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "LIVERPOOL 4–0 MAN UTD",
+    "text": "BIG CHANCES\nLIVERPOOL *7*\nUNITED *0*",
+    "size": 130,
+    "source": "ESPN team stats"
+   }
+  },
+  {
+   "say": "The reason? Yoro, sent off after eight minutes. Two-nil by minute thirteen.",
+   "emotion": "disappointed",
+   "slam": [
+    1.6
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "STRAIGHT RED · YORO",
+    "value": "8'",
+    "unit": "RED CARD",
+    "label": "*2–0* by 13'",
+    "sub": "foul on Isak · Szoboszlai free-kick 10' · Wirtz 13'",
+    "source": "BBC Sport line-ups · ESPN"
+   }
+  },
+  {
+   "say": "Before the red, shots were already three to one. After: twenty-five to nine. Red card, or Liverpool?",
+   "emotion": "neutral",
+   "emote": [
+    [
+     5.4,
+     "smug"
+    ]
+   ],
+   "card": {
+    "type": "compare",
+    "kicker": "RED CARD, OR LIVERPOOL?",
+    "teams": [
+     "LIVERPOOL",
+     "UNITED"
+    ],
+    "rows": [
+     {
+      "label": "SHOTS BEFORE THE RED (0–8')",
+      "a": 3,
+      "b": 1,
+      "fa": "3",
+      "fb": "1"
+     },
+     {
+      "label": "SHOTS AFTER IT",
+      "a": 25,
+      "b": 9,
+      "fa": "25",
+      "fb": "9"
+     }
+    ],
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "Scout's pick, through gritted teeth: Wirtz. A goal, an assist, five big chances created.",
+   "emotion": "happy",
+   "emote": [
+    [
+     0.2,
+     "disappointed"
+    ],
+    [
+     2.4,
+     "happy"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Florian Wirtz",
+    "team": "Liverpool",
+    "stats": [
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "assists",
+      "1"
+     ],
+     [
+      "big chances created",
+      "5"
+     ],
+     [
+      "xA",
+      "1.08"
+     ]
+    ],
+    "source": "ESPN player stats"
+   }
+  },
+  {
+   "say": "Pochettino's first game. United nineteenth, one league win in eleven.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "stat",
+    "kicker": "POCHETTINO'S FIRST GAME",
+    "value": "19th",
+    "unit": "IN THE PL",
+    "label": "*1* league win in 11",
+    "sub": "8 points",
+    "source": "ESPN · BBC Sport table"
+   }
+  },
+  {
+   "say": "Yoro's red card, or United's attack: what lost it?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "YORO'S RED\nOR *UNITED'S ATTACK*?",
+    "size": 120,
+    "source": "ESPN · BBC Sport"
+   }
+  }
+ ]
+}

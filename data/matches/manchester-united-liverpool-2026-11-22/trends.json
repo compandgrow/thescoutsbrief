@@ -1,0 +1,71 @@
+{
+ "match": "LIV 4-0 MUN (Premier League, 2026-11-22)",
+ "generated_at": "2026-11-22T18:45:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "MUN", "type": "pressure",
+   "claim": "Pochettino's first game in charge ended 4-0 at Anfield; United are 19th with 8 points and one league win in 11 games",
+   "numbers": {"position": 19, "points": 8, "played": 11, "wins": 1, "draws": 5, "losses": 5},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN match page PL table: Manchester United 11 GP, 1 W, 5 D, 5 L, -9, 8 P (19th); header record 1-5-5, 8 PTS", "url": "https://www.espn.co.uk/football/match/_/gameId/401878755/manchester-united-liverpool", "cache": "data/research/scrape_3b90fda75a3c.json"},
+    {"what": "BBC Sport PL table on the live page (19 Manchester United, 11 played, 1-5-5, 8 pts; last updated 22 Nov 18:22) and BBC report: 'Mauricio Pochettino's reign as Manchester United manager began in desperate fashion ... remain in the Premier League relegation zone'", "url": "https://www.bbc.com/sport/football/live/cm62pqqw6d29t", "cache": "data/research/scrape_b0f3ea25478b.json"},
+    {"what": "ESPN recap: 'Liverpool spoil Mauricio Pochettino's debut by crushing Man United'; ESPN commentary FT: 'just one win from 11 league games, and they are 19th in the table, a point from safety'", "url": "https://www.espn.co.uk/football/story/_/id/50533932/live-updates-pochettino-manchester-united-liverpool", "cache": "data/research/scrape_1cfc1f494d0b.json, data/research/scrape_873659298bd4.json"}
+   ],
+   "hook_angle": "Pochettino's first game: ten men by minute eight, four down by full-time.",
+   "use_for": "context",
+   "fresh_until": "2026-11-29"},
+  {"id": "t2", "team": "MUN", "type": "form",
+   "claim": "United have one win in their last six games in all competitions (L D W L L L, newest first): four defeats",
+   "numbers": {"wins": 1, "draws": 1, "losses": 4, "games": 6},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/360.json (LDWLLL newest first; GAP 2026-11-08 to 2026-11-22 = international break)", "url": "https://www.espn.co.uk/football/team/results/_/id/360"},
+    {"what": "BBC Sport form guide (all competitions) on the live page lists United's five games before this one with no game missing across the gap: D v Aston Villa 4-4, W v Roma 3-2, L v Chelsea 0-2, L v Bournemouth 0-3, L v Como 1-4", "url": "https://www.bbc.com/sport/football/live/cm62pqqw6d29t", "cache": "data/research/scrape_b0f3ea25478b.json"}
+   ],
+   "hook_angle": "One win in six, and this one was over by minute thirteen.",
+   "use_for": "context",
+   "fresh_until": "2026-11-29"},
+  {"id": "t3", "team": "LIV", "type": "storyline",
+   "claim": "Liverpool go fourth on 21 points, a point behind Brighton and Manchester City (22) and seven behind leaders Arsenal (28)",
+   "numbers": {"position": 4, "points": 21, "brighton": 22, "man_city": 22, "arsenal": 28},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN match page PL table after the match", "url": "https://www.espn.co.uk/football/match/_/gameId/401878755/manchester-united-liverpool", "cache": "data/research/scrape_3b90fda75a3c.json"},
+    {"what": "BBC live text: 'Liverpool go into the top four with this win. They are only one point off Brighton and Manchester City - and seven behind Arsenal.'", "url": "https://www.bbc.com/sport/football/live/cm62pqqw6d29t", "cache": "data/research/scrape_b0f3ea25478b.json"}
+   ],
+   "hook_angle": "Liverpool into the top four, a point off second.",
+   "use_for": "outro",
+   "fresh_until": "2026-11-29"}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [
+   {"theme": "Yoro's 8th-minute red card: right call, and did it decide the game? (not from Reddit: Reddit unreachable; every trusted headline leads on it)", "share": "BBC article 'The red card that changed Liverpool-Man Utd: correct call?', ESPN 'VAR review: Explaining Yoro's early red card', BBC summary 'Should Yoro have been sent off? Have your say'", "confirmed_by": "BBC line-ups (red 8'), BBC + ESPN red-card articles, insights.json turning_point", "use_for": "hook + proof"},
+   {"theme": "Was it only the red card, or are United just this bad? (BBC live text: Roy Keane on Sky: 'Has a team ever got a result before with 10 men? It can be done.')", "share": "BBC live page pundit quotes", "confirmed_by": "insights.json team_story (big chances 7 v 0) - quote itself single outlet, do not put on screen", "use_for": "outro question"}
+  ],
+  "club_subs": [],
+  "note": "Reddit not reachable: `engine/reddit.py match \"Liverpool\" \"Manchester United\"` -> 'Reddit RSS error 404 on /r/soccer/search'; `engine/reddit.py club MUN` -> 'Reddit RSS error 404 on /r/reddevils/hot/'; `engine/reddit.py club LIV` -> 'Reddit RSS error 404 on /r/LiverpoolFC/hot/'. No Reddit keys set (RSS mode). No fan-opinion claims may be made in the reel."
+ },
+ "rejected": [
+  {"claim": "Yoro's red was United's earliest red card in the Premier League", "reason": "only one outlet (BBC image caption); ESPN says 'just eight minutes in' but not 'earliest'"},
+  {"claim": "First time since 1937 United arrived at Anfield in the bottom three", "reason": "only one outlet (BBC report)"},
+  {"claim": "Ngumoha is the youngest scorer in the history of the fixture, beating Michael Owen", "reason": "only one outlet (ESPN commentary)"},
+  {"claim": "United have conceded 34 goals in all competitions, most in Europe's big five leagues", "reason": "only one outlet (BBC live text)"},
+  {"claim": "Kop chanted 'sacked in the morning' after 13 minutes", "reason": "only one outlet (ESPN/PA), and close to the 'should be sacked' red line: not for the reel"},
+  {"claim": "De Ligt's error led to the red card", "reason": "ESPN FT summary conflicts with BBC (Araujo long ball, Isak heavy touch)"},
+  {"claim": "Red card was wrong / should be appealed", "reason": "sources split (BBC 'borderline', ESPN 'straightforward'); no verdict on screen"},
+  {"claim": "Fernandes paused contract talks before the game", "reason": "off-match storyline, Scout File territory tonight; not needed"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "data",
+  "fan_question": "Was it all Yoro's red card?",
+  "data_answer": "The red made it worse but did not create the gap. Before it (0-8') Liverpool already had 3 shots and 0.40 xG to United's 1 shot and 0.04. After it Liverpool had 25 shots and 3.98 xG to United's 9 and 0.59. Over 90 minutes United created 0 big chances to Liverpool's 7 and had 9 touches in Liverpool's box to 60.",
+  "evidence": ["insights.json headline", "insights.json team_story (xG, big chances, box touches)", "analysis.py derived.json LIV/MAN 0-8 and after red", "insights.json turning_point", "BBC + ESPN red-card articles"],
+  "fan_heat": "Reddit unreachable (RSS 404). Every trusted headline leads on the red card: BBC 'The red card that changed Liverpool-Man Utd', ESPN VAR review, BBC 'Have your say' poll.",
+  "hook_angle": "Liverpool 4.38 xG, United 0.63. The red card explains some of it.",
+  "why": "The red card is the argument every outlet is having; the shot data can test it, and the answer (United made 0 big chances, Liverpool were on top before the red) is honest for a United-leaning channel. t1 (Pochettino's first game, 19th) is the context; t3 the outro."
+ },
+ "credits_used": 2,
+ "notes": "Form: data/form/364.json (LIV WLLWWW newest first, does NOT yet include today's win; no gaps) and data/form/360.json (MUN LDWLLL newest first, includes today's 0-4; GAP 08-22 Nov covered by the BBC form guide) from free local ESPN fetches (0 credits). News search 'Liverpool Manchester United' --days 2 returned 0 results (0 credits). Second search 'Pochettino Manchester United Liverpool' --days 3 (2 credits) -> ESPN recap/live page, scraped free (local fetch). Reddit: RSS 404 on match + both club calls (see fan_buzz.note). Numbers: ESPN commentary says United xG 0.64; header, shot map and BBC say 0.63 - use 0.63. Zirkzee on at 45' (ESPN) / 46' (BBC): say 'half-time'. Do not claim Liverpool's run including today from 364.json (today's game not in the file)."
+}
