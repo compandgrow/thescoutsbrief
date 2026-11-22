@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 219,
+  "credits": 220,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2550,6 +2550,56 @@
    {
     "at": "2026-11-22T17:49:35Z",
     "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882803/atletico-madrid-getafe",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:50:33Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:50:45Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/articles/cx2z7rjn2p2o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:50:46Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/videos/cmlyd0008471o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:50:46Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:03Z",
+    "what": "scrape https://www.bbc.co.uk/sport/football/live/cm62pqqw6d29t",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-22T17:51:17Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/c8p3gx161d7ko",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:17Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cmrlye5w3p79o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:18Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:19Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:30Z",
+    "what": "local scrape https://www.skysports.com/manchester-united-news",
     "credits": 0
    }
   ]
