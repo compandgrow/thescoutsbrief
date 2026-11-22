@@ -1,0 +1,93 @@
+{
+ "id": "bruno-fernandes-2026-11-22",
+ "player": "Bruno Fernandes",
+ "club_key": "MUN",
+ "angle": "Man United's captain, last season's PFA and FWA Player of the Year, publicly questioned Michael Carrick's tactics after a 4-1 thrashing at Como, was benched four days later, then said the punishment was right. Three weeks on Carrick is gone, and Fernandes has put contract talks on hold: 'If I wanted more money, I wouldn't be here.'",
+ "why_now": "In the news today (22 Nov 2026): Fernandes told Sky Sports on Sat 21 Nov that it is 'not the right time' for contract talks (BBC Sport, Sky Sports), on the day of Mauricio Pochettino's first game in charge, at Anfield. Reddit digest failed (RSS 404) and the newest trends file is 2026-11-17, so this was picked from trusted news (BBC Sport football index). Every fact below is from trusted outlets or manutd.com. Today's Liverpool v Man Utd result is NOT used (match was in progress during research).",
+ "open_loop": "He's Manchester United's captain and England's player of the year. He criticised his manager on TV, and four days later he was on the bench. What happened next?",
+ "beats": [
+  {
+   "slot": "cold_open",
+   "fact": "Manchester United captain Bruno Fernandes criticised Michael Carrick's tactics after a 4-1 Champions League defeat at Como, and four days later Carrick left him on the bench for the 3-0 Premier League defeat by Bournemouth at Old Trafford. He did not come on.",
+   "year": "2026",
+   "numbers": {"como_score": "Como 4-1 Man Utd", "bournemouth_score": "Man Utd 0-3 Bournemouth", "days_between": 4},
+   "quote": null,
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cmrlye5w3p79o", "cached": "data/research/scrape_d2f8191d8fa1.json"},
+    {"outlet": "Sky Sports", "url": "https://www.skysports.com/football/news/13603513/bruno-fernandes-manchester-united-captain-dropped-for-crucial-premier-league-game-against-bournemouth", "cached": "data/research/scrape_78c6cd1fa0ee.json"},
+    {"outlet": "AP", "url": "https://apnews.com/article/premier-league-united-fernandes-carrick-liverpool-brighton-57e53e3d3e2bc249dfa54c7f05b68da5", "cached": "data/research/scrape_9c23f8f04c40.json"}
+   ]
+  },
+  {
+   "slot": "setup",
+   "fact": "Fernandes has been Manchester United's permanent captain since 2023. Last season he set the Premier League record for most assists in a season and was named PFA and FWA Player of the Year.",
+   "year": "2023",
+   "numbers": {"captain_since": 2023, "awards": "PFA + FWA Player of the Year (last season)", "record": "most assists in a Premier League season"},
+   "quote": null,
+   "sources": [
+    {"outlet": "manutd.com (official)", "url": "https://www.manutd.com/en/news/mauricio-pochettino-addresses-bruno-fernandes-captaincy-question", "cached": "data/research/scrape_70fd7f9cdf86.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po", "cached": "data/research/scrape_09da77b3eee4.json"},
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50373037/bruno-fernandes-michael-carrick-right-drop-man-united", "cached": "data/research/scrape_a7b755baff64.json"},
+    {"outlet": "AP", "url": "https://apnews.com/article/premier-league-united-fernandes-carrick-liverpool-brighton-57e53e3d3e2bc249dfa54c7f05b68da5", "cached": "data/research/scrape_9c23f8f04c40.json"}
+   ]
+  },
+  {
+   "slot": "conflict",
+   "fact": "After the 4-1 defeat at Como in October 2026, Fernandes said on TV that not pressing man-to-man was the staff's decision, and when asked whether the tactics were to blame said that was for the manager and staff to judge, not him. Carrick called dropping him a 'pure football' decision.",
+   "year": "2026",
+   "numbers": {"como_score": "4-1", "competition": "Champions League"},
+   "quote": "It's a decision from the staff to not press man-to-man",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/c8p3gx161d7ko", "cached": "data/research/scrape_8992742d9605.json"},
+    {"outlet": "Sky Sports", "url": "https://www.skysports.com/football/news/13603513/bruno-fernandes-manchester-united-captain-dropped-for-crucial-premier-league-game-against-bournemouth", "cached": "data/research/scrape_78c6cd1fa0ee.json"},
+    {"outlet": "AP", "url": "https://apnews.com/article/premier-league-united-fernandes-carrick-liverpool-brighton-57e53e3d3e2bc249dfa54c7f05b68da5", "cached": "data/research/scrape_9c23f8f04c40.json"}
+   ]
+  },
+  {
+   "slot": "twist",
+   "fact": "Instead of fighting the decision, Fernandes inspired a 3-2 Champions League comeback win over Roma from 2-0 down, then said Carrick had been right to drop him.",
+   "year": "2026",
+   "numbers": {"roma_score": "Man Utd 3-2 Roma", "deficit_overturned": "2-0"},
+   "quote": "Everyone thought that was a punishment for the words that I had. If it was, it was right. The manager is the one who makes the decisions.",
+   "sources": [
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50373037/bruno-fernandes-michael-carrick-right-drop-man-united", "cached": "data/research/scrape_a7b755baff64.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo", "cached": "data/research/scrape_2b49a019e43a.json"}
+   ]
+  },
+  {
+   "slot": "now",
+   "fact": "Carrick was sacked on 12 November 2026 with United in the Premier League relegation zone (United's worst start to a season since 1986). New head coach Mauricio Pochettino confirmed Fernandes stays captain. Fernandes says United have offered him a new contract but it is 'not the right time' to talk, and that he has always chosen to stay.",
+   "year": "2026",
+   "numbers": {"carrick_sacked": "12 Nov 2026", "worst_start_since": 1986},
+   "quote": "If I wanted more money, I wouldn't be here.",
+   "sources": [
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2026/nov/12/michael-carrick-sacked-manchester-united-mauricio-pochettino", "cached": "data/research/scrape_2603dba5c82d.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po", "cached": "data/research/scrape_09da77b3eee4.json"},
+    {"outlet": "ESPN", "url": "https://www.espn.com/soccer/story/_/id/50373037/bruno-fernandes-michael-carrick-right-drop-man-united", "cached": "data/research/scrape_a7b755baff64.json"},
+    {"outlet": "manutd.com (official)", "url": "https://www.manutd.com/en/news/mauricio-pochettino-addresses-bruno-fernandes-captaincy-question", "cached": "data/research/scrape_70fd7f9cdf86.json"},
+    {"outlet": "Sky Sports (video, 21 Nov 2026)", "url": "https://www.skysports.com/football/video/13615021/man-utd-bruno-fernandes-discusses-his-contract-situation-at-the-club", "cached": "data/research/scrape_23d07871787b.json"}
+   ]
+  }
+ ],
+ "quotes": [
+  {"text": "It's a decision from the staff to not press man-to-man", "who": "Bruno Fernandes", "when": "21 October 2026, after Como 4-1 Man Utd", "where": "post-match TV interview (TNT Sports), reported by BBC Sport and Sky Sports (identical wording apart from hyphens)", "source_url": "https://www.skysports.com/football/news/13603513/bruno-fernandes-manchester-united-captain-dropped-for-crucial-premier-league-game-against-bournemouth"},
+  {"text": "Everyone thought that was a punishment for the words that I had. If it was, it was right. The manager is the one who makes the decisions.", "who": "Bruno Fernandes", "when": "after Man Utd 3-2 Roma (Champions League, early November 2026)", "where": "Amazon Prime interview, reported by ESPN", "source_url": "https://www.espn.com/soccer/story/_/id/50373037/bruno-fernandes-michael-carrick-right-drop-man-united"},
+  {"text": "If I wanted more money, I wouldn't be here.", "who": "Bruno Fernandes", "when": "21 November 2026", "where": "Sky Sports interview, reported by BBC Sport", "source_url": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po"},
+  {"text": "Two summers ago, three summers ago, last summer, I always had the chance to leave and I always chose to be here.", "who": "Bruno Fernandes", "when": "21 November 2026", "where": "Sky Sports interview, reported by BBC Sport; Sky Sports video titled 'I always chose to be here'", "source_url": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po"},
+  {"text": "Picking the team is always a difficult decision. We've got to make what we feel is the right one for the team to try to get the performance we want.", "who": "Michael Carrick, then Man Utd head coach", "when": "25 October 2026, before Man Utd v Bournemouth", "where": "Sky Sports", "source_url": "https://www.skysports.com/football/news/13603513/bruno-fernandes-manchester-united-captain-dropped-for-crucial-premier-league-game-against-bournemouth"},
+  {"text": "Bruno is our captain and is a very important player.", "who": "Mauricio Pochettino, Man Utd head coach", "when": "20 November 2026", "where": "first press conference, manutd.com", "source_url": "https://www.manutd.com/en/news/mauricio-pochettino-addresses-bruno-fernandes-captaincy-question"}
+ ],
+ "outro_question": "Was Carrick right to bench his captain for speaking out, or should a club's best player be allowed to say it? Follow for the next Scout File.",
+ "rejected": [
+  {"claim": "Fernandes has rejected a second contract offer from United", "reason": "'sources have told BBC Sport': unconfirmed, one outlet; Fernandes himself only says an offer was made and no negotiations are ongoing"},
+  {"claim": "Carrick and Fernandes held clear-the-air talks at Carrington", "reason": "'Sky Sports News has been told': sources-based, one outlet"},
+  {"claim": "Contract ends this season with a club option to 2028", "reason": "BBC only (one outlet); not needed"},
+  {"claim": "Saudi Pro League interest 18 months ago / near move to Pochettino's Spurs in 2019", "reason": "transfer interest, BBC analysis only; rumour territory"},
+  {"claim": "Result of today's Liverpool v Man Utd (Yoro sent off 8')", "reason": "match was in progress during research; outcome unknown, and not Fernandes' story"},
+  {"claim": "Fernandes scored a penalty v Roma", "reason": "one source only (ESPN)"},
+  {"claim": "Only the sixth time he was benched for a Premier League game; 75 Premier League goals", "reason": "one source only (BBC)"},
+  {"claim": "Gary Neville: 'read the room, Bruno' / Carragher: team-mates don't like playing with him", "reason": "pundit criticism, one outlet; Carragher line is cruel - red line"},
+  {"claim": "Lisandro Martinez also criticised the club hierarchy", "reason": "not needed; keeps the story on Fernandes"}
+ ],
+ "credits_used": 9
+}

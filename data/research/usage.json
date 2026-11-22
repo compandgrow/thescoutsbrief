@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 220,
+  "credits": 228,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2600,6 +2600,61 @@
    {
     "at": "2026-11-22T17:51:30Z",
     "what": "local scrape https://www.skysports.com/manchester-united-news",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:33Z",
+    "what": "scrape https://www.manutd.com/en/news",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-22T17:51:40Z",
+    "what": "local scrape https://www.skysports.com/football/video/13615021/man-utd-bruno-fernandes-discusses-his-contract-situation-at-the-club",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:51:44Z",
+    "what": "scrape https://www.manutd.com/en/news/mauricio-pochettino-addresses-bruno-fernandes-captaincy-question",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-22T17:52:01Z",
+    "what": "search Bruno Fernandes dropped Carrick Como comments Bournemouth",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-22T17:52:06Z",
+    "what": "local scrape https://www.skysports.com/football/news/13603513/bruno-fernandes-manchester-united-captain-dropped-for-crucial-premier-league-game-against-bournemouth",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:52:12Z",
+    "what": "scrape https://www.espn.com/soccer/story/_/id/50373037/bruno-fernandes-michael-carrick-right-drop-man-united",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-22T17:52:18Z",
+    "what": "scrape https://apnews.com/article/premier-league-united-fernandes-carrick-liverpool-brighton-57e53e3d3e2bc249dfa54c7f05b68da5",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-22T17:52:19Z",
+    "what": "local scrape https://www.skysports.com/football/news/13604738/bruno-fernandes-man-utd-head-coach-michael-carrick-and-club-captain-hold-clear-the-air-talks-ahead-of-chelsea-fixture",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:52:35Z",
+    "what": "local scrape https://www.skysports.com/football/news/13612583/mauricio-pochettino-at-man-utd-seven-years-on-from-the-sack-at-spurs-what-sort-of-coach-is-he-now-we-will-soon-find-out",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-22T17:52:53Z",
+    "what": "search Manchester United sack Michael Carrick head coach",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-22T17:52:57Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/12/michael-carrick-sacked-manchester-united-mauricio-pochettino",
     "credits": 0
    }
   ]
