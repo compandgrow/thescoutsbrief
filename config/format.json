@@ -1,7 +1,7 @@
 {
- "version": 3,
- "updated": "2026-11-10",
- "why": "v3 shortens the target length from 30-45 s (max 50) to 28-35 s (max 40). Average watch time is the same whatever the length (median 6.49 s on the 14 reels of 35 s or less, 6.29 s on the 5 reels of 35-45 s), so extra seconds only lower the watch ratio: median 0.210 at 35 s or less against 0.175 at 35-45 s and 0.071 above 45 s. Skip rate is also better on short reels (57.7% against 60.9%). barcelona-atletico-madrid-2026-11-08 was planned at about 30 s, came out at 41.7 s inside the old limit and got a 0.146 ratio; aston-villa-manchester-united-2026-11-08 at 34.7 s got 0.220.",
+ "version": 4,
+ "updated": "2026-11-23",
+ "why": "v4 changes only the beat-1 ('proof') slot note: from '2-3 numbers that back the hook' to 'the reason behind the hook's paradox, never another count or a control measure'. Viewers leave during beat 1 on almost every reel, and the only v3 reel whose beat 1 gave the reason (celta-vigo-real-madrid-2026-11-21: 5 big chances missed + Mbappé's missed penalty) held 8.38 s (ratio 0.246), against 6.32 s on fc-cologne-bayern-munich-2026-11-20 and 6.11 s on leeds-united-chelsea-2026-11-21, which opened beat 1 on possession; v2 reels with a backing-stat beat 1 (barcelona-atletico 6.01 s, villa-united 7.48 s, valencia, psg-villarreal, roma-man utd) lost viewers on it too.",
  "owner_note": "The performance-analyst may change anything in 'tunable' (one change per version, see .claude/agents/performance-analyst.md). Nothing in 'locked' may change without the user.",
  "tunable": {
   "duration_s": {
@@ -35,8 +35,8 @@
    },
    {
     "slot": "proof",
-    "card": "compare",
-    "note": "2-3 numbers that back the hook, straight after it"
+    "card": "compare or stat",
+    "note": "the REASON behind the hook's paradox (missed big chances, a missed penalty, a red card, an injury, a sub or tactical change, or the surprise_stat), 1-2 numbers, straight after it. Never another count of the hook's own measure and never a control measure (possession, passes, corners)."
    },
    {
     "slot": "story",
@@ -124,6 +124,20 @@
    "summary": "duration target 30-45 s -> 28-35 s, max 50 -> 40 (only change)",
    "evidence": "performance.py table 2026-11-10: watch ratio median 0.210 (<=35 s, 14 reels) vs 0.175 (35-45 s, 5 reels); barcelona-atletico-madrid-2026-11-08 and aston-villa-manchester-united-2026-11-08 reviews",
    "compare_on": "watch ratio, skip rate, shares+saves per 1k reach against the v2 reels",
+   "judge_after_reels": 3,
+   "until": "2026-11-23",
+   "judged": "2026-11-23, after 4 v3 reels (cologne-bayern, leeds-chelsea, celta-real-madrid, psg-nice): kept. Against the 19 v2 reels, median skip 51.7% vs 59.1% (better), watch ratio 0.183 vs 0.188 (level, success bar of 0.21 not met), shares+saves 0.0/1k vs 0.0/1k (1 v3 reel above 0: leeds-chelsea 9.4). Not worse, so no revert."
+  },
+  {
+   "version": 4,
+   "from": "2026-11-23",
+   "summary": "structure[1] 'proof' note: 2-3 numbers that back the hook -> the reason behind the hook's paradox, never a re-count or control measure; card compare -> compare or stat (only change)",
+   "previous": {
+    "note": "2-3 numbers that back the hook, straight after it",
+    "card": "compare"
+   },
+   "evidence": "celta-vigo-real-madrid-2026-11-21 review (beat 1 = reason, avg watch 8.38 s, ratio 0.246) vs fc-cologne-bayern-munich-2026-11-20 (6.32 s) and leeds-united-chelsea-2026-11-21 (6.11 s) reviews; learnings.md beat-1 rule",
+   "compare_on": "avg watch s, watch ratio, skip rate, shares+saves per 1k reach against the v3 reels",
    "judge_after_reels": 3
   }
  ]
