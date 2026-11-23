@@ -30,7 +30,8 @@
     "max": 45
    },
    "why": "Scout Files #1-#3 lost the average viewer at 4.7-7.2 s whatever the length (ter-stegen 55.4 s ratio 0.086, max-dowman 48.7 s 0.138, trafford 45.6 s 0.159); every cliffhanger question came after 37 s. About 75-95 spoken words.",
-   "judge_after_reels": 3
+   "judge_after_reels": 3,
+   "judged": "2026-11-23, after 3 story-2 reels (wirtz, raphinha, bruno-fernandes): kept. Against story-1 (ter-stegen, dowman, trafford): median skip 57.4% vs 57.7% (level), watch ratio 0.137 vs 0.138 (level), avg watch 5.74 s vs 6.62 s (worse), shares+saves 0 vs 0, follows 0 vs 0. Not reverted: the planned test said revert only if #6 failed to lift the ratio above 0.138 with a good hook; bruno-fernandes (good hook, 44.3% skip) reached 0.174, the series' best. The weak reels lost viewers in the hook (raphinha 3.67 s) or 1-4 s into beat 1 (wirtz 5.74 s), before length could matter. Success bar (ratio > 0.20, avg watch > 7.5 s, a first follow) not met."
   }
  ],
  "credits_max_per_story": 12,
@@ -62,7 +63,7 @@
   {
    "slot": "setup",
    "card": "chapter",
-   "note": "CHAPTER 1: who, where, when; year on the card"
+   "note": "CHAPTER 1: the conflict or most surprising fact NOT in the hook, said in one plain sentence of at most 12 words (no CV, no flashback, no 'Case file N' preamble); quotes longer than 8 words go on the card, not in the voice; year on the card"
   },
   {
    "slot": "conflict",
@@ -83,6 +84,21 @@
    "slot": "outro",
    "card": "outro",
    "note": "open loop or debate question + 'follow for the next Scout File'"
+  }
+ ],
+ "structure_history": [
+  {
+   "updated": "2026-11-23",
+   "slot": "setup",
+   "old": {
+    "note": "CHAPTER 1: who, where, when; year on the card"
+   },
+   "new": {
+    "note": "CHAPTER 1: the conflict or most surprising fact NOT in the hook, said in one plain sentence of at most 12 words (no CV, no flashback, no 'Case file N' preamble); quotes longer than 8 words go on the card, not in the voice; year on the card"
+   },
+   "why": "On all 6 Scout Files the average viewer left before or during beat 1 (3.7-7.2 s). Beat 1 as backstory or long quote held worst: ter-stegen CV list 4.71 s, wirtz flashback 5.74 s, bruno-fernandes 21-word tactical quote (left at 6.97 s, 4 s into it). The one beat 1 that was a new plain fact (trafford: sold, then bought back for 31m) held best, 7.16 s. Only change after the story-2 duration test ended; duration_s and cadence_days unchanged.",
+   "compare_on": "avg watch s, watch ratio, skip rate, follows + profile views per 1k reach against story-2 (wirtz, raphinha, bruno-fernandes: avg watch 5.74 s, ratio 0.137, skip 57.4%)",
+   "judge_after_reels": 3
   }
  ],
  "hook_styles": [
