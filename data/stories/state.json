@@ -41,6 +41,13 @@
    "club_key": "MUN",
    "zernio_post": "6b03382b14869f290467a2c2",
    "scheduled_for": "2026-11-22T19:44:00Z"
+  },
+  {
+   "id": "harry-kane-2026-11-24",
+   "player": "Harry Kane",
+   "club_key": "BAY",
+   "zernio_post": "6b05d85fe6543d826edfc2a9",
+   "scheduled_for": "2026-11-24T19:33:00Z"
   }
  ],
  "skipped": []

@@ -95,7 +95,7 @@
   },
   {
    "slot": "twist",
-   "fact": "Last season he scored 61 goals in 51 games for Bayern, the most a Bayern player has scored in a season, and 73 for club and country. Then the Ballon d'Or, and his own verdict on the journey.",
+   "fact": "Last season he scored 61 goals in 51 games for Bayern, and 73 for club and country. Then the Ballon d'Or, and his own verdict on the journey.",
    "year": "2026",
    "numbers": {
     "bayern_goals_2025_26": 61,
@@ -223,6 +223,10 @@
   {
    "claim": "Other candidates: Leny Yoro red card overturned (MUN), Cole Palmer red card (CHE), Gyokeres goal drought (ARS), De Bruyne return to Man City",
    "reason": "Yoro: club of the last story (MUN). Others: weaker open loop; Gyokeres angle risks 'flop' framing"
+  },
+  {
+   "claim": "61 goals was the most by a Bayern player in a season (club record)",
+   "reason": "one source only (BBC Sport); removed in review round 1"
   }
  ],
  "credits_used": 5

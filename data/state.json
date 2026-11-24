@@ -290,6 +290,15 @@
    "mode": "auto",
    "at": "2026-11-22",
    "scheduled_for": "2026-11-22T19:53:00Z"
+  },
+  {
+   "reel": "story-harry-kane-2026-11-24",
+   "series": "scout-files",
+   "zernio_post": "6b05d85fe6543d826edfc2a9",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-24",
+   "scheduled_for": "2026-11-24T19:33:00Z"
   }
  ],
  "skipped": [
@@ -305,12 +314,12 @@
   },
   {
    "espn_id": "401882822",
-   "reason": "Barcelona 6-1 Alav\u00e9s: rival didn't lose to an unwatched club",
+   "reason": "Barcelona 6-1 Alavés: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
    "espn_id": "401882820",
-   "reason": "Levante 0-2 Atl\u00e9tico: rival didn't lose to an unwatched club",
+   "reason": "Levante 0-2 Atlético: rival didn't lose to an unwatched club",
    "at": "2026-11-02"
   },
   {
@@ -350,7 +359,7 @@
   },
   {
    "espn_id": "401882803",
-   "reason": "Getafe 0-3 Atl\u00e9tico: rival didn't lose to an unwatched club",
+   "reason": "Getafe 0-3 Atlético: rival didn't lose to an unwatched club",
    "at": "2026-11-22"
   }
  ]
