@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 252,
+  "credits": 259,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2986,6 +2986,51 @@
     "at": "2026-11-24T17:53:22Z",
     "what": "scrape https://global.espn.com/football/story/_/id/50330001/2026-ballon-dor-results-men-full-women-votes-kane-mbappe",
     "credits": 1
+   },
+   {
+    "at": "2026-11-24T23:48:27Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401915379/napoli-manchester-city",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T23:48:28Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401915295/borussia-dortmund-arsenal",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T23:48:29Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401915298/psv-eindhoven-real-madrid",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T23:48:53Z",
+    "what": "scrape https://www.espn.com/soccer/team-stats/_/gameId/401915298",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T23:49:04Z",
+    "what": "search Real Madrid v PSV Eindhoven BBC Sport",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-24T23:49:05Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/cwly0rk8v8mrt",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T23:49:59Z",
+    "what": "search Real Madrid v PSV Eindhoven",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-24T23:50:03Z",
+    "what": "scrape https://www.bbc.com/sport/football/live/c6zxvne4nk7wt",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T23:51:35Z",
+    "what": "local scrape https://www.espn.co.uk/football/player-stats/_/gameId/401915298",
+    "credits": 0
    }
   ]
  }

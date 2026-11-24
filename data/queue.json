@@ -1,7 +1,32 @@
 {
- "generated": "2026-11-24T17:49:42Z",
- "ready": [],
- "later_today": [
+ "generated": "2026-11-24T23:48:29Z",
+ "ready": [
+  {
+   "espn_id": "401915298",
+   "slug": "psv-eindhoven-real-madrid",
+   "date": "2026-11-24",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "PSV Eindhoven"
+   ],
+   "competition": "UEFA Champions League",
+   "score": "5-1",
+   "watched": [
+    "RMA"
+   ],
+   "favourite_involved": true,
+   "winner_key": "RMA",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
+  }
+ ],
+ "later_today": [],
+ "not_making": [
   {
    "espn_id": "401915379",
    "slug": "napoli-manchester-city",
@@ -12,11 +37,18 @@
     "Napoli"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "2-2",
    "watched": [
     "MCI"
    ],
-   "favourite_involved": false
+   "favourite_involved": false,
+   "winner_key": null,
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
   },
   {
    "espn_id": "401915295",
@@ -28,28 +60,18 @@
     "Borussia Dortmund"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "1-1",
    "watched": [
     "ARS"
    ],
-   "favourite_involved": false
-  },
-  {
-   "espn_id": "401915298",
-   "slug": "psv-eindhoven-real-madrid",
-   "date": "2026-11-24",
-   "team": "RMA",
-   "teams_text": [
-    "Real Madrid",
-    "PSV Eindhoven"
-   ],
-   "competition": "UEFA Champions League",
-   "score": null,
-   "watched": [
-    "RMA"
-   ],
-   "favourite_involved": true
+   "favourite_involved": false,
+   "winner_key": null,
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
   }
- ],
- "not_making": []
+ ]
 }
