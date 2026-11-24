@@ -1,6 +1,55 @@
 {
- "generated": "2026-11-23T23:48:32Z",
+ "generated": "2026-11-24T17:49:42Z",
  "ready": [],
- "later_today": [],
+ "later_today": [
+  {
+   "espn_id": "401915379",
+   "slug": "napoli-manchester-city",
+   "date": "2026-11-24",
+   "team": "MCI",
+   "teams_text": [
+    "Manchester City",
+    "Napoli"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "MCI"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401915295",
+   "slug": "borussia-dortmund-arsenal",
+   "date": "2026-11-24",
+   "team": "ARS",
+   "teams_text": [
+    "Arsenal",
+    "Borussia Dortmund"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "ARS"
+   ],
+   "favourite_involved": false
+  },
+  {
+   "espn_id": "401915298",
+   "slug": "psv-eindhoven-real-madrid",
+   "date": "2026-11-24",
+   "team": "RMA",
+   "teams_text": [
+    "Real Madrid",
+    "PSV Eindhoven"
+   ],
+   "competition": "UEFA Champions League",
+   "score": null,
+   "watched": [
+    "RMA"
+   ],
+   "favourite_involved": true
+  }
+ ],
  "not_making": []
 }

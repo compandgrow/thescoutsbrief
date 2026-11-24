@@ -1,157 +1,6 @@
 {
- "generated": "2026-11-19T23:49:54Z",
+ "generated": "2026-11-24T17:49:51Z",
  "fixtures": [
-  {
-   "espn_id": "401884736",
-   "slug": "fc-cologne-bayern-munich",
-   "date": "2026-11-20",
-   "team": "BAY",
-   "teams_text": [
-    "Bayern Munich",
-    "FC Cologne"
-   ],
-   "competition": "German Bundesliga",
-   "score": null,
-   "watched": [
-    "BAY"
-   ]
-  },
-  {
-   "espn_id": "401879233",
-   "slug": "fulham-manchester-city",
-   "date": "2026-11-21",
-   "team": "MCI",
-   "teams_text": [
-    "Manchester City",
-    "Fulham"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "MCI"
-   ]
-  },
-  {
-   "espn_id": "401879236",
-   "slug": "leeds-united-chelsea",
-   "date": "2026-11-21",
-   "team": "CHE",
-   "teams_text": [
-    "Chelsea",
-    "Leeds United"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "CHE"
-   ]
-  },
-  {
-   "espn_id": "401879232",
-   "slug": "arsenal-newcastle-united",
-   "date": "2026-11-21",
-   "team": "ARS",
-   "teams_text": [
-    "Newcastle United",
-    "Arsenal"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "ARS"
-   ]
-  },
-  {
-   "espn_id": "401878754",
-   "slug": "ipswich-town-tottenham-hotspur",
-   "date": "2026-11-21",
-   "team": "TOT",
-   "teams_text": [
-    "Tottenham Hotspur",
-    "Ipswich Town"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "TOT"
-   ]
-  },
-  {
-   "espn_id": "401882798",
-   "slug": "celta-vigo-real-madrid",
-   "date": "2026-11-21",
-   "team": "RMA",
-   "teams_text": [
-    "Real Madrid",
-    "Celta Vigo"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "RMA"
-   ]
-  },
-  {
-   "espn_id": "401876398",
-   "slug": "paris-saint-germain-nice",
-   "date": "2026-11-21",
-   "team": "PSG",
-   "teams_text": [
-    "Nice",
-    "Paris Saint-Germain"
-   ],
-   "competition": "French Ligue 1",
-   "score": null,
-   "watched": [
-    "PSG"
-   ]
-  },
-  {
-   "espn_id": "401878755",
-   "slug": "manchester-united-liverpool",
-   "date": "2026-11-22",
-   "team": "LIV",
-   "teams_text": [
-    "Liverpool",
-    "Manchester United"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "LIV",
-    "MUN"
-   ]
-  },
-  {
-   "espn_id": "401882804",
-   "slug": "villarreal-barcelona",
-   "date": "2026-11-22",
-   "team": "BAR",
-   "teams_text": [
-    "Barcelona",
-    "Villarreal"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "BAR"
-   ]
-  },
-  {
-   "espn_id": "401882803",
-   "slug": "atletico-madrid-getafe",
-   "date": "2026-11-22",
-   "team": "ATM",
-   "teams_text": [
-    "Getafe",
-    "Atl\u00e9tico de Madrid"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "ATM"
-   ]
-  },
   {
    "espn_id": "401915379",
    "slug": "napoli-manchester-city",
@@ -850,6 +699,21 @@
    ]
   },
   {
+   "espn_id": "401882770",
+   "slug": "barcelona-malaga",
+   "date": "2026-12-12",
+   "team": "BAR",
+   "teams_text": [
+    "M\u00e1laga",
+    "Barcelona"
+   ],
+   "competition": "Spanish LALIGA",
+   "score": null,
+   "watched": [
+    "BAR"
+   ]
+  },
+  {
    "espn_id": "401876370",
    "slug": "paris-fc-paris-saint-germain",
    "date": "2026-12-12",
@@ -907,21 +771,6 @@
    "score": null,
    "watched": [
     "RMA"
-   ]
-  },
-  {
-   "espn_id": "401882770",
-   "slug": "barcelona-malaga",
-   "date": "2026-12-13",
-   "team": "BAR",
-   "teams_text": [
-    "M\u00e1laga",
-    "Barcelona"
-   ],
-   "competition": "Spanish LALIGA",
-   "score": null,
-   "watched": [
-    "BAR"
    ]
   },
   {

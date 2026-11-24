@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 236,
+  "credits": 247,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2770,6 +2770,131 @@
    {
     "at": "2026-11-22T23:48:25Z",
     "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401882803/atletico-madrid-getafe",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:48:36Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:39Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:42Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:45Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:47Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:50Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:52Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:54Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:57Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:48:59Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:49:39Z",
+    "what": "scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:49:41Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401915379/napoli-manchester-city",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:41Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401915295/borussia-dortmund-arsenal",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:42Z",
+    "what": "local scrape https://www.espn.co.uk/football/match/_/gameId/401915298/psv-eindhoven-real-madrid",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:45Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/364",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:46Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:46Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/382",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:47Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/363",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:48Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/359",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:48Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/367",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:49Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:49Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/83",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:50Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/1068",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:49:51Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
     "credits": 0
    }
   ]
