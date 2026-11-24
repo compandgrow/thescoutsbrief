@@ -57,8 +57,8 @@
    }
   },
   {
-   "say": "And that's not the wild part. Last season, sixty-one goals for Bayern. A club record.",
-   "caption": "And that's not the wild part. Last season, 61 goals for Bayern. A club record.",
+   "say": "And that's not the wild part. Last season, sixty-one goals for Bayern in fifty-one games.",
+   "caption": "And that's not the wild part. Last season, 61 goals for Bayern in 51 games.",
    "emotion": "excited",
    "hit": true,
    "card": {
@@ -66,8 +66,8 @@
     "kicker": "2025-26 · BAYERN MUNICH",
     "value": 61,
     "unit": " GOALS",
-    "label": "in 51 games · *most by a Bayern player* in a season",
-    "sub": "73 for club and country",
+    "label": "in 51 games · *73* for club and country",
+    "sub": "2025-26 season",
     "source": "BBC Sport, Guardian, ESPN"
    }
   },

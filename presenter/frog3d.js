@@ -111,7 +111,7 @@ export function createFrog(stage, opts = {}) {
   mesh(new THREE.PlaneGeometry(9, 12), new THREE.MeshStandardMaterial({ map: wallTexture(), roughness: 1 }), scene, { pos: [0, 3, -2.2], shadow: false });
   const board = mesh(new THREE.BoxGeometry(2.0, 1.3, 0.05), cloth(0x2c1d15), scene, { pos: [1.65, 2.95, -2.12], shadow: false });
   for (let i = 0; i < 6; i++) {
-    mesh(new THREE.PlaneGeometry(0.28, 0.2), cloth(i % 2 ? 0xe9e1cf : 0xd9b66c), board,
+    mesh(new THREE.PlaneGeometry(0.28, 0.2), cloth(i % 2 ? 0x5e574b : 0x5a4a2c), board,   // dim aged paper: white headline text stays readable where a note sits behind it
       { pos: [(hash(i) - 0.5) * 1.6, (hash(i + 9) - 0.5) * 1.0, 0.03], rot: [0, 0, (hash(i + 3) - 0.5) * 0.4], shadow: false });
   }
   const pins = [0, 3, 1, 4, 2, 5, 0, 4].map((i) => new THREE.Vector3(1.65 + (hash(i) - 0.5) * 1.6, 2.95 + (hash(i + 9) - 0.5) * 1.0, -2.07));
