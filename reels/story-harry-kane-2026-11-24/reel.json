@@ -1,0 +1,115 @@
+{
+ "id": "story-harry-kane-2026-11-24",
+ "series": "scout-files",
+ "story_id": "harry-kane-2026-11-24",
+ "format_version": "story-2",
+ "experiment": "setup-plain-sentence #1 of 3: beat 1 = one plain sentence of 11 words, quote only on the card; contradiction hook; 30-40 s",
+ "presenter": "frog3d",
+ "music": "noir",
+ "match": {
+  "pill": "SCOUT FILES #7 · HARRY KANE",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Rejected by Arsenal, then the Ballon d'Or.",
+   "caption": "Rejected by Arsenal, then the Ballon d'Or.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "BAYERN STRIKER · HARRY KANE",
+    "text": "REJECTED BY ARSENAL.\nTHEN THE *BALLON D'OR*.",
+    "size": 110,
+    "source": "BBC Sport, ESPN, Guardian"
+   }
+  },
+  {
+   "say": "Even Spurs' youth coach didn't rate him top of his group.",
+   "caption": "Even Spurs' youth coach didn't rate him top of his group.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 1",
+    "year": "2009 · TOTTENHAM ACADEMY",
+    "text": "\"HE PROBABLY WASN'T\nEVEN ON *THE PODIUM*.\"",
+    "size": 110,
+    "sub": "Alex Inglethorpe, ex-Spurs youth coach · BBC Sport, 2026",
+    "source": "BBC Sport, Guardian"
+   },
+   "slam": [
+    0.3
+   ]
+  },
+  {
+   "say": "So Spurs loaned him out. Four times.",
+   "caption": "So Spurs loaned him out. 4 times.",
+   "emotion": "angry",
+   "hit": true,
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "2011 · LEYTON ORIENT",
+    "text": "LOANED OUT\n*FOUR* TIMES.",
+    "size": 120,
+    "sub": "Orient: 5 goals in 18 · Millwall: 9 goals · then Norwich, Leicester",
+    "source": "BBC Sport, ESPN, Guardian"
+   }
+  },
+  {
+   "say": "And that's not the wild part. Last season, sixty-one goals for Bayern. A club record.",
+   "caption": "And that's not the wild part. Last season, 61 goals for Bayern. A club record.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "2025-26 · BAYERN MUNICH",
+    "value": 61,
+    "unit": " GOALS",
+    "label": "in 51 games · *most by a Bayern player* in a season",
+    "sub": "73 for club and country",
+    "source": "BBC Sport, Guardian, ESPN"
+   }
+  },
+  {
+   "say": "October, the Ballon d'Or. First Englishman since Michael Owen. Kane? I was never the person that people thought was going to be the superstar.",
+   "caption": "October, the Ballon d'Or. First Englishman since Michael Owen. Kane? \"I was never the person that people thought was going to be the superstar.\"",
+   "emotion": "excited",
+   "card": {
+    "type": "quote",
+    "kicker": "ON THE RECORD · BALLON D'OR NIGHT",
+    "text": "I WAS NEVER THE PERSON\nTHAT PEOPLE THOUGHT WAS\nGOING TO BE *THE SUPERSTAR*.",
+    "who": "Harry Kane, to Dazn via BBC Sport, 2026",
+    "source": "BBC Sport"
+   }
+  },
+  {
+   "say": "Now? A hundred and twenty-six caps. England's most-capped men's player.",
+   "caption": "Now? 126 caps. England's most-capped men's player.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "12 NOV 2026 · ENGLAND v CROATIA",
+    "value": 126,
+    "unit": " CAPS",
+    "label": "England's *most-capped* men's player",
+    "sub": "Bayern: 156 goals in 161 games · contract to 2029",
+    "source": "Guardian, ESPN, BBC Sport"
+   }
+  },
+  {
+   "say": "Arsenal let him go. Spurs loaned him out. Who got Kane most wrong? Follow for the next Scout File.",
+   "caption": "Arsenal let him go. Spurs loaned him out. Who got Kane most wrong? Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #7",
+    "text": "WHO GOT KANE\n*MOST WRONG*?",
+    "size": 115,
+    "sub": "Arsenal let him go · 4 loans from Spurs · Ballon d'Or 2026",
+    "source": "BBC Sport, ESPN, Guardian"
+   }
+  }
+ ]
+}
