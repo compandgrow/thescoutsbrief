@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 247,
+  "credits": 249,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2896,6 +2896,81 @@
     "at": "2026-11-24T17:49:51Z",
     "what": "local scrape https://www.espn.co.uk/football/team/fixtures/_/id/160",
     "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:51:26Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:51:51Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/videos/cmlyd0008471o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:51:52Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/c61wrqr7l1d8o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:51:52Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/european",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:06Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/ckx2qdxgzzz7o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:12Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:13Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cqlye4jpzzxyo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:35Z",
+    "what": "local scrape https://www.theguardian.com/football/harry-kane",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:39Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/oct/26/harry-kane-ends-englands-25-year-wait-for-a-mens-ballon-dor",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:41Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/12/harry-kane-england-caps-record-career-in-numbers-charts",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:42Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/13/happy-harry-kane-day-englands-finest-seizes-his-moment-croatia-nations-league",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:52Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/05/ballon-dor-winner-harry-kane-signs-new-contract-with-bayern-munich-2029",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:52Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/11/harry-kane-record-england-cap-bone-broth-sweets-ban-acupuncture",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:52:53Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/oct/27/harry-kane-ballon-dor-triumph-ceremony-barney-ronay",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T17:53:02Z",
+    "what": "search Harry Kane released by Arsenal as a boy Ballon d'Or",
+    "credits": 2
    }
   ]
  }
