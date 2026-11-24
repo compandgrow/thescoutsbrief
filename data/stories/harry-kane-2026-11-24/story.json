@@ -1,0 +1,229 @@
+{
+ "id": "harry-kane-2026-11-24",
+ "player": "Harry Kane",
+ "club_key": "BAY",
+ "angle": "Arsenal let him go as a boy, Spurs' own youth coach says he 'wasn't even on the podium' of his age group, and he was shipped out on four loans. In 2026 he became the first Englishman in 25 years to win the Ballon d'Or.",
+ "why_now": "In the news this month: Ballon d'Or (26 Oct), new Bayern contract to 2029 (5 Nov), England's most-capped men's player with his 126th cap v Croatia (12 Nov), and on the five-man shortlist for the first BBC Men's Footballer of the Year, voting open until 27 Nov (BBC Sport, 19 Nov). Reddit digest failed today (RSS 404/429) and the newest trends file is 2026-11-17, so this was picked from the BBC Sport football index and trusted news. Bayern (BAY) has not had a Scout File yet; last story was MUN.",
+ "open_loop": "Arsenal let him go as a boy. In October he won the Ballon d'Or. How did the kid nobody picked end up the best player in the world?",
+ "beats": [
+  {
+   "slot": "cold_open",
+   "fact": "Harry Kane was rejected by Arsenal's academy as a boy. In October 2026 he won the Ballon d'Or, the first Englishman to win it since Michael Owen in 2001.",
+   "year": "2026",
+   "numbers": {
+    "ballon_dor": "2026",
+    "years_since_last_english_winner": 25,
+    "last_english_winner": "Michael Owen, 2001"
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo",
+     "cached": "data/research/scrape_3c5d97d6ff40.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50442704/harry-kane-ballon-dor-england-tottenham-hotspur-bayern-munich",
+     "cached": "data/research/scrape_be1c9708f5e2.json"
+    },
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cqlye4jpzzxyo",
+     "cached": "data/research/scrape_9e593cbe4d28.json"
+    },
+    {
+     "outlet": "The Guardian",
+     "url": "https://www.theguardian.com/football/2026/oct/26/harry-kane-ends-englands-25-year-wait-for-a-mens-ballon-dor",
+     "cached": "data/research/scrape_157cddf697d3.json"
+    }
+   ]
+  },
+  {
+   "slot": "setup",
+   "fact": "Even at Tottenham's academy he was not seen as a future star. (Voice, max 12 words: 'Even Spurs' youth coach didn't rate him top of his group.') His former Spurs youth coach Alex Inglethorpe said he 'probably wasn't even on the podium' of his age group.",
+   "year": "2009",
+   "numbers": {
+    "signed_scholarship": "16th birthday, July 2009"
+   },
+   "quote": "I'd like to say he was the gold medallist in the group and we'd all spotted he was going to be the fantastic player, but I'd be lying. He probably wasn't even on the podium.",
+   "sources": [
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo",
+     "cached": "data/research/scrape_3c5d97d6ff40.json"
+    },
+    {
+     "outlet": "The Guardian (\"Kane was never a wonderkid at Spurs\")",
+     "url": "https://www.theguardian.com/football/2026/nov/11/harry-kane-record-england-cap-bone-broth-sweets-ban-acupuncture",
+     "cached": "data/research/scrape_17dbab5c6748.json"
+    },
+    {
+     "outlet": "The Guardian (\"He was unexceptional as a junior\")",
+     "url": "https://www.theguardian.com/football/2026/oct/27/harry-kane-ballon-dor-triumph-ceremony-barney-ronay",
+     "cached": "data/research/scrape_19ce71920e91.json"
+    }
+   ]
+  },
+  {
+   "slot": "conflict",
+   "fact": "Spurs sent him out on four loans: Leyton Orient (5 goals in 18 games, 2011), Millwall (9 goals, 2012), then Norwich and Leicester.",
+   "year": "2011",
+   "numbers": {
+    "loans": 4,
+    "orient": "5 goals in 18 games",
+    "millwall_goals": 9
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo",
+     "cached": "data/research/scrape_3c5d97d6ff40.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50442704/harry-kane-ballon-dor-england-tottenham-hotspur-bayern-munich",
+     "cached": "data/research/scrape_be1c9708f5e2.json"
+    },
+    {
+     "outlet": "The Guardian",
+     "url": "https://www.theguardian.com/football/2026/oct/27/harry-kane-ballon-dor-triumph-ceremony-barney-ronay",
+     "cached": "data/research/scrape_19ce71920e91.json"
+    }
+   ]
+  },
+  {
+   "slot": "twist",
+   "fact": "Last season he scored 61 goals in 51 games for Bayern, the most a Bayern player has scored in a season, and 73 for club and country. Then the Ballon d'Or, and his own verdict on the journey.",
+   "year": "2026",
+   "numbers": {
+    "bayern_goals_2025_26": 61,
+    "bayern_games_2025_26": 51,
+    "club_and_country_goals_2025_26": 73,
+    "club_and_country_games_2025_26": 65
+   },
+   "quote": "I was never the person that people thought was going to be the superstar like some of the guys now.",
+   "sources": [
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/cqlye4jpzzxyo",
+     "cached": "data/research/scrape_9e593cbe4d28.json"
+    },
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/c61wrqr7l1d8o",
+     "cached": "data/research/scrape_f8287557bd95.json"
+    },
+    {
+     "outlet": "The Guardian (61 for Bayern, 12 for England)",
+     "url": "https://www.theguardian.com/football/2026/nov/11/harry-kane-record-england-cap-bone-broth-sweets-ban-acupuncture",
+     "cached": "data/research/scrape_17dbab5c6748.json"
+    },
+    {
+     "outlet": "ESPN (73 for club and country)",
+     "url": "https://global.espn.com/football/story/_/id/50330001/2026-ballon-dor-results-men-full-women-votes-kane-mbappe",
+     "cached": "data/research/scrape_cb7bca64bce4.json"
+    }
+   ]
+  },
+  {
+   "slot": "now",
+   "fact": "Kane has 156 goals in 161 games for Bayern, has signed a new contract to 2029, and on 12 November won his 126th England cap, passing Peter Shilton as England's most-capped men's player. He scored in that game.",
+   "year": "2026",
+   "numbers": {
+    "bayern_goals": 156,
+    "bayern_games": 161,
+    "contract_until": 2029,
+    "england_caps": 126,
+    "england_goals_after_126th_cap": 92
+   },
+   "quote": null,
+   "sources": [
+    {
+     "outlet": "The Guardian",
+     "url": "https://www.theguardian.com/football/2026/nov/05/ballon-dor-winner-harry-kane-signs-new-contract-with-bayern-munich-2029",
+     "cached": "data/research/scrape_a678e02b78f4.json"
+    },
+    {
+     "outlet": "ESPN",
+     "url": "https://www.espn.com/soccer/story/_/id/50442704/harry-kane-ballon-dor-england-tottenham-hotspur-bayern-munich",
+     "cached": "data/research/scrape_be1c9708f5e2.json"
+    },
+    {
+     "outlet": "The Guardian",
+     "url": "https://www.theguardian.com/football/2026/nov/13/happy-harry-kane-day-englands-finest-seizes-his-moment-croatia-nations-league",
+     "cached": "data/research/scrape_dfb5899beaff.json"
+    },
+    {
+     "outlet": "BBC Sport",
+     "url": "https://www.bbc.co.uk/sport/football/articles/c61wrqr7l1d8o",
+     "cached": "data/research/scrape_f8287557bd95.json"
+    }
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "text": "I'd like to say he was the gold medallist in the group and we'd all spotted he was going to be the fantastic player, but I'd be lying. He probably wasn't even on the podium.",
+   "who": "Alex Inglethorpe, former Tottenham youth-team coach",
+   "when": "published 6 October 2026 (updated 27 October 2026)",
+   "where": "BBC Sport, 'Kane's rise from childhood keeper to the best in the world'",
+   "source_url": "https://www.bbc.co.uk/sport/football/articles/cx2ln5n7yqdo"
+  },
+  {
+   "text": "I was never the person that people thought was going to be the superstar like some of the guys now.",
+   "who": "Harry Kane",
+   "when": "26 October 2026, after winning the Ballon d'Or",
+   "where": "told Dazn, reported by BBC Sport",
+   "source_url": "https://www.bbc.co.uk/sport/football/articles/cqlye4jpzzxyo"
+  },
+  {
+   "text": "Not many people would have thought it, and maybe even I wouldn't have thought I'd be this far",
+   "who": "Harry Kane",
+   "when": "26 October 2026, after winning the Ballon d'Or",
+   "where": "told Dazn, reported by BBC Sport",
+   "source_url": "https://www.bbc.co.uk/sport/football/articles/cqlye4jpzzxyo"
+  }
+ ],
+ "outro_question": "Arsenal let him go and Spurs loaned him out four times. Who got Harry Kane most wrong? Follow for the next Scout File.",
+ "rejected": [
+  {
+   "claim": "Kane's age when Arsenal released him (ESPN: joined at 7, released at 9; BBC quotes Dave Bricknell: Arsenal decided 'at 11 years of age')",
+   "reason": "outlets disagree; use neither. Say 'as a boy'."
+  },
+  {
+   "claim": "Liam Brady's reason for releasing him ('a bit chubby', ESPN)",
+   "reason": "red line: appearance"
+  },
+  {
+   "claim": "Bayern's fee for Kane (Guardian: record EUR 100m; ESPN: EUR 120m)",
+   "reason": "outlets disagree; use neither"
+  },
+  {
+   "claim": "Kane beat Mbappe by 28 points (1,055 v 1,027) in the Ballon d'Or vote",
+   "reason": "one source only (ESPN citing L'Equipe); not confirmed by a second trusted outlet"
+  },
+  {
+   "claim": "Tim Sherwood: 'Every manager I loaned him to, not one of them said he'd be a player'",
+   "reason": "ESPN gives only 'said in September'; venue not given, so who/when/where incomplete"
+  },
+  {
+   "claim": "Kane left out of the FIFPRO men's World 11 despite winning the Ballon d'Or",
+   "reason": "one source only (ESPN)"
+  },
+  {
+   "claim": "Watford also passed on Kane",
+   "reason": "one source only (BBC says Watford 'passed up the opportunity'; ESPN only says he was on trial there)"
+  },
+  {
+   "claim": "Kane's wage (more than EUR 30m a year, ESPN) and his parents' reaction at the ceremony",
+   "reason": "red line: money outside football / family"
+  },
+  {
+   "claim": "Other candidates: Leny Yoro red card overturned (MUN), Cole Palmer red card (CHE), Gyokeres goal drought (ARS), De Bruyne return to Man City",
+   "reason": "Yoro: club of the last story (MUN). Others: weaker open loop; Gyokeres angle risks 'flop' framing"
+  }
+ ],
+ "credits_used": 5
+}

@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 249,
+  "credits": 252,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -2971,6 +2971,21 @@
     "at": "2026-11-24T17:53:02Z",
     "what": "search Harry Kane released by Arsenal as a boy Ballon d'Or",
     "credits": 2
+   },
+   {
+    "at": "2026-11-24T17:53:11Z",
+    "what": "scrape https://www.espn.com/soccer/story/_/id/50442704/harry-kane-ballon-dor-england-tottenham-hotspur-bayern-munich",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:53:17Z",
+    "what": "scrape https://global.espn.com/football/story/_/id/50433574/ballon-dor-winner-harry-kane-fifpro-team-year",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-24T17:53:22Z",
+    "what": "scrape https://global.espn.com/football/story/_/id/50330001/2026-ballon-dor-results-men-full-women-votes-kane-mbappe",
+    "credits": 1
    }
   ]
  }
