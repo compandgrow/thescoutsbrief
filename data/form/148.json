@@ -1,0 +1,75 @@
+{
+ "team_id": "148",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/148",
+ "fetched_at": "2026-11-24T23:51:58Z",
+ "last": [
+  {
+   "date": "2026-11-21",
+   "opponent": "NEC Nijmegen",
+   "venue": "A",
+   "score": "4-1",
+   "result": "W",
+   "pens": false,
+   "competition": "Dutch Eredivisie",
+   "game_id": "401875541"
+  },
+  {
+   "date": "2026-11-08",
+   "opponent": "SC Cambuur",
+   "venue": "A",
+   "score": "5-2",
+   "result": "W",
+   "pens": false,
+   "competition": "Dutch Eredivisie",
+   "game_id": "401875553"
+  },
+  {
+   "date": "2026-11-04",
+   "opponent": "Club Brugge",
+   "venue": "H",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915303"
+  },
+  {
+   "date": "2026-10-31",
+   "opponent": "Willem II",
+   "venue": "H",
+   "score": "7-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Dutch Eredivisie",
+   "game_id": "401875564"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Feyenoord Rotterdam",
+   "venue": "H",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "Dutch Eredivisie",
+   "game_id": "401875568"
+  },
+  {
+   "date": "2026-10-20",
+   "opponent": "FC Porto",
+   "venue": "A",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915398"
+  }
+ ],
+ "run_newest_first": "WWLWDW",
+ "wins": 4,
+ "draws": 1,
+ "losses": 1,
+ "gaps": [
+  "2026-11-08 to 2026-11-21"
+ ],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

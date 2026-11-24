@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 259,
+  "credits": 261,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -3030,6 +3030,26 @@
    {
     "at": "2026-11-24T23:51:35Z",
     "what": "local scrape https://www.espn.co.uk/football/player-stats/_/gameId/401915298",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T23:51:56Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/86",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T23:51:58Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/148",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-24T23:52:11Z",
+    "what": "search Real Madrid PSV Eindhoven",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-24T23:52:16Z",
+    "what": "local scrape https://www.espn.co.uk/football/story/_/id/50586644/bellingham-mourinho-real-madrid-stunner",
     "credits": 0
    }
   ]

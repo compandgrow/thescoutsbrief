@@ -1,8 +1,18 @@
 {
  "team_id": "86",
  "source": "https://www.espn.co.uk/football/team/results/_/id/86",
- "fetched_at": "2026-11-21T23:53:14Z",
+ "fetched_at": "2026-11-24T23:51:56Z",
  "last": [
+  {
+   "date": "2026-11-24",
+   "opponent": "PSV Eindhoven",
+   "venue": "H",
+   "score": "5-1",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915298"
+  },
   {
    "date": "2026-11-21",
    "opponent": "Celta Vigo",
@@ -52,16 +62,6 @@
    "pens": false,
    "competition": "Spanish LALIGA",
    "game_id": "401882832"
-  },
-  {
-   "date": "2026-10-21",
-   "opponent": "RB Leipzig",
-   "venue": "H",
-   "score": "4-1",
-   "result": "W",
-   "pens": false,
-   "competition": "UEFA Champions League",
-   "game_id": "401915313"
   }
  ],
  "run_newest_first": "WWWWWW",
