@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Half-time: PSV eight shots, Madrid four. Madrid won five-one.",
+   "say": "Won five-one. Out-shot eight to four at half-time.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -30,11 +30,10 @@
    ],
    "card": {
     "type": "stat",
-    "kicker": "THE HALF-TIME TRIPLE CHANGE",
+    "kicker": "ON AT 46': BELLINGHAM · HUIJSEN · KONATÉ",
     "value": "0 → 9",
     "unit": "MADRID SHOTS ON TARGET",
     "label": "1st half *0* · 2nd half *9*",
-    "sub": "on at 46': Bellingham, Huijsen, Konaté",
     "source": "ESPN shot map · BBC Sport line-ups"
    }
   },
