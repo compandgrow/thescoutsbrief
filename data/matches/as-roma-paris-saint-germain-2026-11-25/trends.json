@@ -1,0 +1,67 @@
+{
+ "match": "PSG 2-2 ROM (UEFA Champions League, league phase, 2026-11-25)",
+ "generated_at": "2026-11-25T23:58:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "PSG", "type": "storyline",
+   "claim": "Roma ended PSG's 100% start in this season's Champions League: PSG's first dropped points after four wins from four; they are 2nd on 13 points, two behind Real Madrid (15 from 15)",
+   "numbers": {"played": 5, "wins": 4, "draws": 1, "losses": 0, "points": 13, "position": 2, "leader_points": 15},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN UCL table on the match page: Paris Saint-Germain 5 4 1 0 +15 13 (2nd); Real Madrid 5 5 0 0 +10 15 (1st)", "url": "https://www.espn.co.uk/football/match/_/gameId/401915374/as-roma-paris-saint-germain", "cache": "data/research/scrape_bf60ae511c4b.json"},
+    {"what": "ESPN report (PA): 'Paris Saint-Germain dropped points for the first time in this season's Champions League' and 'failed to join Real Madrid in making it five Champions League wins from five'", "url": "https://www.espn.co.uk/football/report/_/gameId/401915374", "cache": "data/research/scrape_cb93a1b54c9e.json"},
+    {"what": "BBC Sport highlights video description: 'Roma ends Paris St-Germain's 100% start to the competition'", "url": "https://www.bbc.co.uk/sport/football/videos/cwvg2832elr4o", "cache": "data/research/search_38d1c30d18f3.json"},
+    {"what": "BBC Sport match page: 'League position, Paris Saint-Germain 2nd, Roma 25th', 'Total points, Paris Saint-Germain 13, Roma 5'", "url": "https://www.bbc.com/sport/football/live/crd6151l6y7zt", "cache": "data/research/scrape_547e4f07d4e1.json"}
+   ],
+   "hook_angle": "66% of the ball. Roma still ended PSG's perfect Champions League start.",
+   "use_for": "hook",
+   "fresh_until": "2026-12-09"},
+  {"id": "t2", "team": "PSG", "type": "form",
+   "claim": "PSG had won their previous five games in all competitions; tonight's draw ended the run",
+   "numbers": {"wins_in_a_row_before": 5, "run_now": "DWWWWW (newest first)"},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/160.json (D v Roma, then W Nice 3-2, W Troyes 1-0, W Villarreal 6-0, W Le Havre 5-1, W Lyon 2-0; gap 2026-11-07 to 2026-11-21)", "url": "https://www.espn.co.uk/football/team/results/_/id/160"},
+    {"what": "BBC Sport match page form guide (all competitions, pre-match): W v Nice, W v Troyes, W v Villarreal, W v Le Havre, W v Olympique Lyonnais: the same five games as ESPN, so no game is missing in the ESPN gap (international break)", "url": "https://www.bbc.com/sport/football/live/crd6151l6y7zt", "cache": "data/research/scrape_547e4f07d4e1.json"}
+   ],
+   "hook_angle": "Five straight wins, then 698 passes and a draw.",
+   "use_for": "context",
+   "fresh_until": "2026-11-29"},
+  {"id": "t3", "team": "PSG", "type": "storyline",
+   "claim": "Luis Enrique started Dembélé on the bench; he came on at 59' and scored the penalty at 62'",
+   "numbers": {"on_minute": 59, "goal_minute": 62},
+   "strength": "strong",
+   "sources": [
+    {"what": "BBC line-ups: 'Ferran TorresO. Dembélé 59', substituted for O. Dembélé at 59 minutes'", "url": "https://www.bbc.com/sport/football/live/crd6151l6y7zt", "cache": "data/research/scrape_547e4f07d4e1.json"},
+    {"what": "ESPN match page: substitutions 59', 'Ousmane Dembélé - 62' Pen'; ESPN report (PA): 'Luis Enrique left Ousmane Dembélé on the bench' and 'Dembele's second touch after coming on was to take the spot-kick'", "url": "https://www.espn.co.uk/football/report/_/gameId/401915374", "cache": "data/research/scrape_cb93a1b54c9e.json"}
+   ],
+   "hook_angle": "Dembélé on at 59. Goal at 62. Still only a point.",
+   "use_for": "context",
+   "fresh_until": "2026-11-29"}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [],
+  "club_subs": [],
+  "status": "unavailable: `python3 engine/reddit.py match \"Paris Saint-Germain\" \"AS Roma\"` -> 'Reddit RSS error 404 on /r/soccer/search'; `python3 engine/reddit.py club PSG` -> 'Reddit RSS error 404 on /r/psg/hot/' (keyless RSS mode, no Reddit API keys). Both commands were run; no fan themes collected."
+ },
+ "rejected": [
+  {"claim": "Roma ended PSG's 12-game winning run in all competitions", "reason": "only one outlet (ESPN/PA: match-page headline and report are the same PA story); the ESPN form file covers only 6 games, so 12 cannot be computed. Say 'winning run' or 'five straight wins' (t2), never 12."},
+  {"claim": "Malen scored for the fourth Champions League game running", "reason": "only one outlet (BBC highlights description); not in the ESPN report"},
+  {"claim": "Malen's 17th goal in 17 games in all competitions this season", "reason": "only one source (ESPN commentary text)"},
+  {"claim": "Dembélé's fourth goal of the competition", "reason": "only one outlet (ESPN/PA report)"},
+  {"claim": "PSG chasing a third successive Champions League crown; ACL injuries to Kvaratskhelia and Doué", "reason": "single outlet (ESPN/PA report) and injury-related; not a match-data story. Never mock injuries."},
+  {"claim": "Roma have surrendered winning positions late against Real Madrid and Manchester United in this competition", "reason": "single outlet (ESPN/PA report), and tonight Roma did not lose a lead late; not relevant"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "How did a PSG side with two thirds of the ball drop their first Champions League points?",
+  "data_answer": "Possession isn't chances: PSG had 66% of the ball and 698 passes to 348, but Roma had 2.69 xG to 1.78, 1.65 open-play xG to 0.74 and 4 big chances to 2. PSG's goals came from a corner and a penalty.",
+  "evidence": ["insights.json team_story (possession, passes, xG, xG from open play, big chances)", "insights.json surprise_stat", "trends.json t1 (ESPN table, ESPN report, BBC)"],
+  "fan_heat": "unknown: Reddit unreachable (RSS 404); angle chosen from trusted outlets (ESPN report + BBC highlights both frame it as the end of PSG's perfect start)",
+  "hook_angle": "66% of the ball. Roma still ended PSG's perfect Champions League start.",
+  "why": "No fan theme available; t1 is confirmed by ESPN, BBC and the table, and the match data explains it (possession vs chance quality)."
+ },
+ "credits_used": 4,
+ "notes": "Credits for trend-scout: form 160 and 104 were free local fetches; 2 searches at 2 credits each ('Paris Saint-Germain Roma' --days 2 returned only the BBC match page; 'PSG Roma draw winning run' --days 3); ESPN report scrape was a free local fetch. Roma form (data/form/104.json): DWWLWW newest first, same gap 2026-11-07 to 2026-11-21. Roma is not a watched club and PSG did not win or lose, so no banter. psg.fr 'key numbers' and preview pages appeared in search results but were not read (call budget). Reddit: both commands returned HTTP 404 in keyless RSS mode; no fan_buzz."
+}

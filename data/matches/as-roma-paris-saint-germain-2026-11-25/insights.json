@@ -1,0 +1,205 @@
+{
+ "match": {
+  "home": "Paris Saint-Germain",
+  "away": "AS Roma",
+  "home_short": "PSG",
+  "away_short": "ROM",
+  "score": "2-2",
+  "competition": "UEFA Champions League",
+  "date": "2026-11-25"
+ },
+ "data_mode": "web (ESPN + BBC cached); no official player ratings, best/worst are Scout's pick",
+ "headline": "PSG had 66% of the ball and 698 passes to Roma's 348, but Roma created more: 2.69 xG to 1.78, 1.65 open-play xG to 0.74 and 4 big chances to 2, and left Paris with a 2-2 draw.",
+ "team_story": [
+  {
+   "label": "Possession",
+   "home": "66%",
+   "away": "34%",
+   "why_it_matters": "PSG had two thirds of the ball",
+   "source": "data/research/scrape_547e4f07d4e1.json (BBC Match Stats, Overall possession 'Paris Saint-Germain 66%Roma 34%'); data/research/scrape_bf60ae511c4b.json (ESPN match page Team Stats: Possession 66% / 34%)"
+  },
+  {
+   "label": "Passes",
+   "home": 698,
+   "away": 348,
+   "why_it_matters": "PSG made almost exactly twice as many passes, at 89.3% accuracy to 77.6%",
+   "source": "data/research/scrape_547e4f07d4e1.json (BBC In-depth match stats, Total passes 'Paris Saint-Germain 698Roma 348', Pass accuracy % 89.3 / 77.6); data/research/scrape_d943eaed8076.json (ESPN team stats, Passes 698 / 348)"
+  },
+  {
+   "label": "xG",
+   "home": 1.78,
+   "away": 2.69,
+   "why_it_matters": "The side with a third of the ball made the better chances",
+   "source": "data/research/scrape_547e4f07d4e1.json (BBC Match Stats, xG 'Paris Saint-Germain 1.7755Roma 2.6943', shown 1.78 / 2.69); data/research/scrape_bf60ae511c4b.json (ESPN Team Stats, Expected Goals 1.78 / 2.69). Shot-map sum 1.79 / 2.70 (rounding; analysis.py PSG_all / ROMA_all)"
+  },
+  {
+   "label": "xG from open play",
+   "home": 0.74,
+   "away": 1.65,
+   "why_it_matters": "From open play Roma made more than twice PSG's chance quality; PSG's two goals came from a corner and a penalty",
+   "source": "data/research/scrape_547e4f07d4e1.json (BBC In-depth match stats, xG from open play 'Paris Saint-Germain 0.737Roma 1.647', shown 0.74 / 1.65); goal situations from shots_espn.json (Zabarnyi 31' From Corner, Dembélé 62' Penalty)"
+  },
+  {
+   "label": "Big chances created",
+   "home": 2,
+   "away": 4,
+   "why_it_matters": "Roma made twice as many clear chances as PSG",
+   "source": "data/research/scrape_bf60ae511c4b.json (ESPN Team Stats, Big Chances Created 2 / 4); data/research/scrape_d943eaed8076.json (ESPN team stats, Attack: Big Chances Created 2 / 4, Big Chances Missed 2 / 4)"
+  }
+ ],
+ "tactical_change": {
+  "team": "Paris Saint-Germain",
+  "minute": 59,
+  "before": "4-3-3",
+  "after": "4-3-3 (no formation change in source)",
+  "trigger": "double substitution at 1-1: Ousmane Dembélé for Ferran Torres, Warren Zaïre-Emery for Nuno Mendes",
+  "effect": "Dembélé scored the 62' penalty three minutes after coming on (after Wesley's foul on Hakimi) and had 3 shots, 2 on target, 0.88 xG, PSG's highest of anyone. But PSG's open-play threat did not rise: 7 shots, 0.52 xG before 59'; 7 non-penalty shots, 0.48 xG after. Roma answered with their own bench: Malen (on 67') scored the 78' penalty.",
+  "evidence": [
+   {
+    "label": "Subs at 59'",
+    "before": null,
+    "after": "Dembélé for Ferran Torres, Zaïre-Emery for Nuno Mendes",
+    "source": "data/research/scrape_547e4f07d4e1.json (BBC line-ups: 'Ferran TorresO. Dembélé 59'', 'Nuno MendesW. Zaïre-Emery 59''); ESPN match page Substitutions 59'"
+   },
+   {
+    "label": "PSG shots (non-penalty)",
+    "before": 7,
+    "after": 7,
+    "source": "shots_espn.json via analysis.py (derived.json PSG_pre59 / PSG_post59_nonpen)"
+   },
+   {
+    "label": "PSG xG (non-penalty)",
+    "before": 0.52,
+    "after": 0.48,
+    "source": "shots_espn.json via analysis.py (derived.json PSG_pre59 / PSG_post59_nonpen)"
+   },
+   {
+    "label": "Dembélé shots / on target / xG",
+    "before": null,
+    "after": "3 / 2 / 0.88",
+    "source": "shots_espn.json (n=17 62' pen 0.79 Goal; n=27 90'+2' 0.06 Saved; n=28 90'+5' 0.03 Off Target); analysis.py players_by_xg"
+   },
+   {
+    "label": "Penalty won",
+    "before": null,
+    "after": "Wesley hauled Hakimi down from behind; Dembélé's second touch after coming on",
+    "source": "data/research/scrape_bf60ae511c4b.json (ESPN commentary summary: 'Wesley hauled Hakimi down from behind for a penalty. Dembele's second touch after coming on sent the keeper the wrong way to make it 2-1.'); BBC line-ups Wesley yellow card 60'"
+   }
+  ],
+  "confidence": "medium (subs, minutes and shot split are hard data; no formation change, and the effect is the penalty, not a lasting rise in chances)"
+ },
+ "best_player": {
+  "name": "Mario Hermoso",
+  "team": "AS Roma",
+  "rating": null,
+  "stats": [
+   [
+    "goals",
+    "1 (5')"
+   ],
+   [
+    "shots",
+    "5"
+   ],
+   [
+    "shots on target",
+    "2"
+   ],
+   [
+    "xG",
+    "1.20"
+   ],
+   [
+    "defensive interventions",
+    "12"
+   ],
+   [
+    "duels won",
+    "6"
+   ]
+  ],
+  "why": "Scout's pick. A centre-back who scored the 5' opener, was the match's top shooter (5 shots, 1.20 xG, the most on either side) and also had 12 defensive interventions, 3 tackles and 6 duels won (joint-most interventions with Pacho). No player on either side matched his output at both ends.",
+  "source": "data/research/scrape_bf60ae511c4b.json (ESPN Match Leaders: Total Shots 'M. Hermoso D 2 SOG, 1.20 xG 5'; Defensive Interventions 'M. Hermoso D 3 TKL, 6 DUELW 12'); shots_espn.json (n=1, 4, 9, 12, 22; analysis.py players_by_xg 5 shots, 1.20 xG)"
+ },
+ "best_psg_player": {
+  "name": "Vitinha",
+  "team": "Paris Saint-Germain",
+  "stats": [
+   [
+    "accurate passes",
+    "90 of 100"
+   ]
+  ],
+  "why": "Ran PSG's possession game (most accurate passes in the match), but gave away the 78' penalty with a handball. Mixed night; see costly_moment.",
+  "source": "data/research/scrape_bf60ae511c4b.json (ESPN Match Leaders: Accurate Passes 'Vitinha M 100 PASS, 0 BCC 90')"
+ },
+ "worst_player": {
+  "name": "Wesley",
+  "team": "AS Roma",
+  "rating": null,
+  "stats": [
+   [
+    "penalty conceded",
+    "1 (foul on Hakimi)"
+   ],
+   [
+    "yellow card",
+    "60'"
+   ]
+  ],
+  "why": "Scout's pick, from very thin data. Hauled Hakimi down from behind just after the hour for the penalty that made it 2-1, and was booked at 60'. No per-player passing or duel stats are available for him, so this is about the one decisive error, not a full-game rating.",
+  "anger_worthy": false,
+  "source": "data/research/scrape_bf60ae511c4b.json (ESPN commentary summary: 'Wesley hauled Hakimi down from behind for a penalty'); data/research/scrape_547e4f07d4e1.json (BBC line-ups: 'Wesley 60', Yellow Card at 60 minutes')"
+ },
+ "costly_moment": {
+  "fact": "Vitinha's handball (VAR decision) gave Roma the 78' penalty that Malen scored for 2-2",
+  "source": "data/research/scrape_547e4f07d4e1.json (BBC live text: 'Penalty conceded by Vitinha (Paris Saint Germain) with a handball in the penalty area.', 'VAR Decision: Penalty Roma.', 'Goal! Paris Saint Germain 2, Roma 2. Donyell Malen (Roma) converts the penalty'); ESPN commentary summary 'Vitinha blocked a Soule shot with his hand'"
+ },
+ "surprise_stat": {
+  "value": "1.65 vs 0.74",
+  "label": "open-play xG, Roma vs PSG",
+  "context": "Roma had 34% of the ball and half PSG's passes (348 v 698) but more than double the open-play xG. PSG's 2 goals came from a corner and a penalty.",
+  "source": "data/research/scrape_547e4f07d4e1.json (BBC In-depth match stats: xG from open play 0.737 / 1.647; Total passes 698 / 348; Overall possession 66% / 34%)"
+ },
+ "extra_facts": [
+  {
+   "fact": "Roma committed 18 fouls to PSG's 5 and made 24 tackles to PSG's 10",
+   "source": "data/research/scrape_547e4f07d4e1.json (BBC: Fouls committed 5 / 18; Total tackles 10 / 24); ESPN Team Stats Fouls Committed 5 / 18"
+  },
+  {
+   "fact": "Zabarnyi's 31' equaliser was a header from a corner (0.25 xG); ESPN commentary calls Roma's marking 'near-farcical'",
+   "source": "shots_espn.json n=7 (From Corner, 0.25 xG); data/research/scrape_d943eaed8076.json shot 7 of 28 'Header'; ESPN commentary summary in data/research/scrape_bf60ae511c4b.json"
+  },
+  {
+   "fact": "Hermoso's 82' chance (0.25 xG, off target) was the best open-play chance after the hour",
+   "source": "shots_espn.json n=22; analysis.py biggest_misses"
+  },
+  {
+   "fact": "Late PSG pressure: Hakimi wide 90'+1', Dembélé saved by Svilar 90'+2', Dembélé off target 90'+5'",
+   "source": "shots_espn.json n=26-28; ESPN commentary 'DEMBELE DENIED BY SVILAR!'; BBC live text 'Attempt saved. Ousmane Dembélé ... saved in the centre of the goal by Mile Svilar'"
+  }
+ ],
+ "table_context": {
+  "fact": "After the draw: PSG 5 games, 4 W 1 D 0 L, 13 points, 2nd (Real Madrid 15 points, 1st); Roma 5 points, 25th",
+  "source": "data/research/scrape_bf60ae511c4b.json (ESPN UCL table: 'Paris Saint-Germain | 5 | 4 | 1 | 0 | +15 | 13', 'AS Roma | 5 | 1 | 2 | 2 | +2 | 5', 25th row; 'Real Madrid | 5 | 5 | 0 | 0 | +10 | 15'); data/research/scrape_547e4f07d4e1.json (BBC: 'League position, Paris Saint-Germain 2nd, Roma 25th', 'Total points, Paris Saint-Germain 13, Roma 5')"
+ },
+ "result_context": {
+  "winner": null,
+  "loser": null,
+  "banter": false,
+  "banter_by_favourite": false,
+  "favourite_lost": false
+ },
+ "banter_material": [],
+ "caveats": [
+  "No official player ratings and no per-player ESPN table ('Data is currently unavailable'); best/worst are Scout's pick from Match Leaders, the shot map and commentary. BBC fan-rating widget had not closed.",
+  "Best player is a Roma player (Hermoso): the analyst picks on numbers, not allegiance. best_psg_player is given separately for the scriptwriter.",
+  "Worst player (Wesley) rests on one decisive error (penalty conceded, single source: ESPN commentary) plus a BBC-confirmed yellow card; anger_worthy false.",
+  "xG, possession, shots (15/13), shots on target (4/4) and passes (698/348) agree between ESPN and BBC/Opta. Shot-map xG sum 1.79 / 2.70 vs 1.78 / 2.69 official (rounding): use 1.78 / 2.69.",
+  "Duels won: ESPN 39 / 41; BBC gives aerial duels only (5 / 9). Not used on the team story.",
+  "ESPN commentary claims (Malen '17th goal in 17 all-competition clashes', Dembélé 'second touch after coming on') are single-source; trend-scout should confirm before they go on screen.",
+  "'12-game winning run' is from the PA story headline on the ESPN match page; it is a trend-scout item, not used here.",
+  "Firecrawl for this step: ESPN player-stats page fell back to Firecrawl (1 credit) and added nothing new except confirming the team stats block; no searches.",
+  "ESPN lists Big Chances Missed 2 / 4, equal to Big Chances Created, even though Hermoso's 0.79 xG shot was a goal: ESPN's definitions are unclear, so 'big chances missed' is not used."
+ ]
+}

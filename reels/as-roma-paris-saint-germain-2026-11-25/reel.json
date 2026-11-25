@@ -1,0 +1,122 @@
+{
+ "id": "as-roma-paris-saint-germain-2026-11-25",
+ "format_version": 4,
+ "trend_used": "t1",
+ "experiment": "format v4 (second v4 reel): beat 1 = the reason behind the hook's paradox (Roma's centre-back Hermoso out-shot every PSG player), not possession or another chance count; two-name question at beat 3 (~11 s) with a stat line per name, repeated as outro and caption first line",
+ "angle_source": "talking_point",
+ "fan_question": "Dembélé or Vitinha: who decided this one?",
+ "match": {
+  "pill": "PSG 2–2 ROM · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Roma four big chances, PSG two. PSG's perfect start: over.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "PSG 2–2 ROMA · 100% START OVER",
+    "text": "BIG CHANCES\nROMA *4*\nPSG *2*",
+    "size": 120,
+    "source": "ESPN team stats · ESPN/BBC table"
+   }
+  },
+  {
+   "say": "The reason? Roma's centre-back. Mario Hermoso: five shots, one point two expected goals. More than any PSG player.",
+   "emotion": "neutral",
+   "emote": [
+    [
+     5.2,
+     "disappointed"
+    ]
+   ],
+   "slam": [
+    5.2
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "ROMA CENTRE-BACK · MARIO HERMOSO",
+    "value": "1.20",
+    "unit": "xG FROM 5 SHOTS",
+    "label": "PSG's best: Dembélé *0.88*",
+    "sub": "most shots in the match · goal at 5'",
+    "source": "ESPN match leaders · shot map"
+   }
+  },
+  {
+   "say": "Dembélé: on at fifty-nine, scored at sixty-two. Vitinha: ninety accurate passes, then the handball. Who decided it?",
+   "emotion": "neutral",
+   "emote": [
+    [
+     4.6,
+     "disappointed"
+    ],
+    [
+     6.6,
+     "smug"
+    ]
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "DEMBÉLÉ OR VITINHA?",
+    "value": "59' → 62'",
+    "unit": "DEMBÉLÉ: ON, THEN PENALTY GOAL",
+    "label": "Vitinha: *90* of 100 passes accurate · handball → 2–2",
+    "sub": "Malen scored the penalty at 78' after a VAR check",
+    "source": "BBC Sport line-ups & live text · ESPN"
+   }
+  },
+  {
+   "say": "Scout's pick, and it hurts: Hermoso. Twelve defensive interventions, six duels won, and the opener.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Mario Hermoso",
+    "team": "AS Roma",
+    "stats": [
+     [
+      "goal",
+      "5'"
+     ],
+     [
+      "shots",
+      "5"
+     ],
+     [
+      "xG",
+      "1.20"
+     ],
+     [
+      "def. interventions",
+      "12"
+     ]
+    ],
+    "source": "ESPN match leaders · shot map"
+   }
+  },
+  {
+   "say": "Dembélé or Vitinha: who decided this one?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "DEMBÉLÉ\nOR *VITINHA*?",
+    "size": 120,
+    "source": "ESPN · BBC Sport"
+   }
+  }
+ ],
+ "sources": {
+  "big_chances": "data/research/scrape_bf60ae511c4b.json (ESPN match page Team Stats: Big Chances Created 2 / 4); data/research/scrape_d943eaed8076.json (ESPN team stats, Attack 2 / 4) -> insights.json team_story[4]",
+  "perfect_start_over": "trends.json t1: ESPN UCL table (PSG 5 4 1 0, 13 pts) data/research/scrape_bf60ae511c4b.json; ESPN report data/research/scrape_cb93a1b54c9e.json 'dropped points for the first time in this season's Champions League'; BBC highlights description 'ends Paris St-Germain's 100% start' data/research/search_38d1c30d18f3.json",
+  "hermoso": "data/research/scrape_bf60ae511c4b.json (ESPN Match Leaders: 5 shots, 2 SOG, 1.20 xG; 12 defensive interventions, 3 TKL, 6 DUELW); data/matches/as-roma-paris-saint-germain-2026-11-25/shots_espn.json n=1 (5' Goal) -> insights.json best_player",
+  "dembele_xg_0.88": "data/matches/as-roma-paris-saint-germain-2026-11-25/shots_espn.json n=17, 27, 28 via analysis.py players_by_xg (PSG's highest)",
+  "dembele_59_62": "data/research/scrape_547e4f07d4e1.json (BBC line-ups 'O. Dembélé 59''); ESPN match page 'Ousmane Dembélé - 62' Pen' -> insights.json tactical_change, trends.json t3",
+  "vitinha": "data/research/scrape_bf60ae511c4b.json (ESPN Match Leaders: Accurate Passes 90, 100 PASS); data/research/scrape_547e4f07d4e1.json (BBC live text: 'Penalty conceded by Vitinha ... handball', 'VAR Decision: Penalty Roma', Malen goal 2-2) -> insights.json best_psg_player, costly_moment",
+  "malen_78": "shots_espn.json n=21 (78' Penalty Goal); ESPN match page 'Donyell Malen - 78' Pen'"
+ }
+}
