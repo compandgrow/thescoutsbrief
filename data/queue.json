@@ -1,23 +1,6 @@
 {
- "generated": "2026-11-25T17:49:00Z",
- "ready": [],
- "later_today": [
-  {
-   "espn_id": "401915292",
-   "slug": "liverpool-club-brugge",
-   "date": "2026-11-25",
-   "team": "LIV",
-   "teams_text": [
-    "Club Brugge",
-    "Liverpool"
-   ],
-   "competition": "UEFA Champions League",
-   "score": null,
-   "watched": [
-    "LIV"
-   ],
-   "favourite_involved": false
-  },
+ "generated": "2026-11-25T23:49:18Z",
+ "ready": [
   {
    "espn_id": "401915373",
    "slug": "manchester-united-sporting-cp",
@@ -28,27 +11,18 @@
     "Manchester United"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "2-2",
    "watched": [
     "MUN"
    ],
-   "favourite_involved": true
-  },
-  {
-   "espn_id": "401915378",
-   "slug": "barcelona-sabah-fk",
-   "date": "2026-11-25",
-   "team": "BAR",
-   "teams_text": [
-    "Sabah FK",
-    "Barcelona"
-   ],
-   "competition": "UEFA Champions League",
-   "score": null,
-   "watched": [
-    "BAR"
-   ],
-   "favourite_involved": false
+   "favourite_involved": true,
+   "winner_key": null,
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   },
   {
    "espn_id": "401915377",
@@ -60,27 +34,18 @@
     "Bayern Munich"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "2-1",
    "watched": [
     "BAY"
    ],
-   "favourite_involved": true
-  },
-  {
-   "espn_id": "401915291",
-   "slug": "viking-fk-atletico-madrid",
-   "date": "2026-11-25",
-   "team": "ATM",
-   "teams_text": [
-    "Atl\u00e9tico de Madrid",
-    "Viking FK"
-   ],
-   "competition": "UEFA Champions League",
-   "score": null,
-   "watched": [
-    "ATM"
-   ],
-   "favourite_involved": false
+   "favourite_involved": true,
+   "winner_key": null,
+   "loser_key": "BAY",
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": true,
+   "make_reel": true,
+   "why": "a favourite played"
   },
   {
    "espn_id": "401915374",
@@ -92,12 +57,90 @@
     "AS Roma"
    ],
    "competition": "UEFA Champions League",
-   "score": null,
+   "score": "2-2",
    "watched": [
     "PSG"
    ],
-   "favourite_involved": true
+   "favourite_involved": true,
+   "winner_key": null,
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": true,
+   "why": "a favourite played"
   }
  ],
- "not_making": []
+ "later_today": [],
+ "not_making": [
+  {
+   "espn_id": "401915292",
+   "slug": "liverpool-club-brugge",
+   "date": "2026-11-25",
+   "team": "LIV",
+   "teams_text": [
+    "Club Brugge",
+    "Liverpool"
+   ],
+   "competition": "UEFA Champions League",
+   "score": "0-3",
+   "watched": [
+    "LIV"
+   ],
+   "favourite_involved": false,
+   "winner_key": "LIV",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  },
+  {
+   "espn_id": "401915378",
+   "slug": "barcelona-sabah-fk",
+   "date": "2026-11-25",
+   "team": "BAR",
+   "teams_text": [
+    "Sabah FK",
+    "Barcelona"
+   ],
+   "competition": "UEFA Champions League",
+   "score": "1-4",
+   "watched": [
+    "BAR"
+   ],
+   "favourite_involved": false,
+   "winner_key": "BAR",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  },
+  {
+   "espn_id": "401915291",
+   "slug": "viking-fk-atletico-madrid",
+   "date": "2026-11-25",
+   "team": "ATM",
+   "teams_text": [
+    "Atl\u00e9tico de Madrid",
+    "Viking FK"
+   ],
+   "competition": "UEFA Champions League",
+   "score": "2-0",
+   "watched": [
+    "ATM"
+   ],
+   "favourite_involved": false,
+   "winner_key": "ATM",
+   "loser_key": null,
+   "banter": false,
+   "banter_by_favourite": false,
+   "favourite_lost": false,
+   "make_reel": false,
+   "why": "rival didn't lose to an unwatched club"
+  }
+ ]
 }
