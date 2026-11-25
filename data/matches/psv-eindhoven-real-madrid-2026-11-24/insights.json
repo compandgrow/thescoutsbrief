@@ -1,0 +1,57 @@
+{
+ "match": {"home": "Real Madrid", "away": "PSV Eindhoven", "home_short": "RMA", "away_short": "PSV", "score": "5-1", "competition": "UEFA Champions League", "date": "2026-11-24"},
+ "data_mode": "web (ESPN + BBC cached); no official player ratings, best/worst are Scout's pick",
+ "headline": "Real Madrid trailed 0-1 at half-time with 4 shots, 0 on target and 0.25 xG to PSV's 8 shots and 1.49 xG; after a triple half-time change they had 20 shots, 9 on target, 4.55 xG and five goals, PSV 2 shots and 0.18 xG.",
+ "team_story": [
+  {"label": "Shots by half (1st / 2nd)", "home": "4 / 20", "away": "8 / 2", "home_1st": 4, "away_1st": 8, "home_2nd": 20, "away_2nd": 2, "why_it_matters": "PSV out-shot Madrid two to one before the break; after it Madrid out-shot them ten to one", "source": "data/matches/psv-eindhoven-real-madrid-2026-11-24/shots_espn.json (count by minute <=45' incl. stoppage vs 46'+; analysis.py -> derived.json RMA_1st/RMA_2nd/PSV_1st/PSV_2nd; Scout calc from ESPN shot map https://www.espn.co.uk/football/match/_/gameId/401915298)"},
+  {"label": "Shots on target by half (1st / 2nd)", "home": "0 / 9", "away": "1 / 0", "home_1st": 0, "away_1st": 1, "home_2nd": 9, "away_2nd": 0, "why_it_matters": "Madrid did not test Kovár once in the first half; all 9 of their shots on target came after the changes", "source": "shots_espn.json (outcome Saved or Goal, by half; derived.json); full-match 9 v 1 agrees with ESPN Team Stats 'Shots on Goal 9 (38%) / 1 (10%)' (data/research/scrape_2c7722c8d458.json) and BBC Match Stats 'Shots on target 9 / 1' (data/research/scrape_223bbed96be9.json)"},
+  {"label": "xG by half (1st / 2nd)", "home": "0.25 / 4.55", "away": "1.49 / 0.18", "home_1st": 0.25, "away_1st": 1.49, "home_2nd": 4.55, "away_2nd": 0.18, "why_it_matters": "PSV had the better chances (incl. the 0.79 penalty) before half-time; Madrid's second half alone was worth 4.55 xG", "source": "shots_espn.json (sum of xg by half; derived.json). Shot-map total 4.80 / 1.67 vs ESPN team stat 4.79 / 1.69 (rounding)"},
+  {"label": "Big chances created", "home": 8, "away": 3, "why_it_matters": "Madrid made eight clear chances and missed five of them, yet still scored five", "source": "data/research/scrape_2c7722c8d458.json (ESPN match page, Team Stats: Big Chances Created 8 / 3); data/research/scrape_cbbf3e8318b9.json (ESPN team stats, Attack: Big Chances Missed 5 / 3)"}
+ ],
+ "tactical_change": {
+  "team": "Real Madrid", "minute": 46, "before": "4-3-3", "after": "4-3-3 (no formation change in source)",
+  "trigger": "triple substitution at half-time while 0-1 down: Bellingham for Tchouaméni (booked 30'), Huijsen for Militão, Konaté for Rüdiger (booked 44')",
+  "effect": "The second-half shift: Madrid went from 4 shots, 0 on target, 0.25 xG to 20 shots, 9 on target, 4.55 xG and 5 goals; PSV from 8 shots, 1.49 xG to 2 shots, 0.18 xG. BBC match momentum shows Madrid with the most threat in every minute from 47' to 73'.",
+  "evidence": [
+   {"label": "Madrid shots", "before": 4, "after": 20, "source": "shots_espn.json via analysis.py (derived.json RMA_1st / RMA_2nd)"},
+   {"label": "Madrid shots on target", "before": 0, "after": 9, "source": "shots_espn.json via analysis.py"},
+   {"label": "Madrid xG", "before": 0.25, "after": 4.55, "source": "shots_espn.json via analysis.py"},
+   {"label": "PSV xG", "before": 1.49, "after": 0.18, "source": "shots_espn.json via analysis.py"},
+   {"label": "Subs at half-time", "before": null, "after": "Bellingham, Huijsen, Konaté", "source": "data/research/scrape_223bbed96be9.json (BBC line-ups: 'J. Bellingham 46', substituted', 'Dean Huijsen 46'', 'I. Konaté 46''); ESPN match page Substitutions lists 45'"},
+   {"label": "Manager's explanation (quote)", "before": null, "after": "\"We made changes, and Jude is a different player. He gives us what we didn't have in the first [half].\" / \"In the first half we didn't find our rhythm, we didn't press, we didn't win duels.\"", "source": "https://www.espn.co.uk/football/story/_/id/50586644/bellingham-mourinho-real-madrid-stunner (data/research/scrape_c86e414f04d4.json; Mourinho to Movistar, via ESPN)"}
+  ],
+  "confidence": "medium (subs and half split are hard data; no formation change, so the effect is a half-to-half shift, not a shape change)"
+ },
+ "best_player": {
+  "name": "Jude Bellingham", "team": "Real Madrid", "rating": null,
+  "stats": [["on at", "46'"], ["goals", "1"], ["assists", "1"], ["shots on target", "2"], ["goal xG", "0.03"]],
+  "why": "Scout's pick. Came on at half-time with Madrid 0-1 down and 0 shots on target; scored the 60' goal that put Madrid 2-1 up from a 0.03 xG shot (a 3% chance) and assisted Vinícius for the fifth. Mbappé had the bigger raw output (2 goals, 1 assist, 9 shots, 2.58 xG), so this is a judgement on impact, not volume.",
+  "source": "data/research/scrape_e8fe8d8d8ee5.json (ESPN player stats, Bellingham row: TCH 53, G 1, A 1, xG 0.37, xA 0.17, SOG 2, SHOT 3); shots_espn.json shot n=19 (60', xg 0.03, Goal); BBC live text 'Vinícius Júnior ... Assisted by Jude Bellingham following a fast break' (data/research/scrape_223bbed96be9.json); BBC line-ups 46'"
+ },
+ "runner_up_player": {
+  "name": "Kylian Mbappé", "team": "Real Madrid",
+  "stats": [["goals", "2"], ["assists", "1"], ["shots", "9"], ["shots on target", "3"], ["xG", "2.58"]],
+  "source": "data/research/scrape_e8fe8d8d8ee5.json (ESPN player stats, Mbappé row: TCH 66, G 2, A 1, xG 2.58, xA 0.30, SOG 3, SHOT 9, BCC 2); ESPN match page Match Leaders '9 ... 3 SOG, 2.58 xG'"
+ },
+ "worst_player": {
+  "name": "Matej Kovár", "team": "PSV Eindhoven", "rating": null,
+  "stats": [["goals conceded", "5"], ["saves", "4"], ["xGOT faced", "4.08"], ["goals prevented", "-0.92"]],
+  "why": "Scout's pick. Five goals conceded from shots worth 4.08 xG on target: 0.92 more than an average keeper would have let in (ESPN 'goals prevented'). Transparent score from the only per-player defensive measure available; his back line gave him little help in the second half.",
+  "anger_worthy": false,
+  "source": "data/research/scrape_e8fe8d8d8ee5.json (ESPN player stats, PSV goalkeeper row: GA 5, SV 4, SOGA 9, xGC 4.79, xGOTC 4.08, GP -0.92)"
+ },
+ "surprise_stat": {"value": "0.03", "label": "xG of Bellingham's goal (a 3% chance)", "context": "The goal that put Madrid 2-1 up at 60' was the lowest-xG goal of the match, from distance (24 m on ESPN UK); Mbappé's two goals were 0.46 and 0.95.", "source": "shots_espn.json (shot n=19 Bellingham 60' xg 0.03 Goal; n=21 Mbappé 64' 0.46; n=31 Mbappé 84' 0.95); distance from data/research/scrape_2c7722c8d458.json shot 19 of 34"},
+ "table_context": {"fact": "Real Madrid 5 wins from 5 in the league phase, 15 points, 1st; PSV 4 points, 28th (outside the top 24)", "source": "data/research/scrape_2c7722c8d458.json (ESPN UCL table: Real Madrid 5 5 0 0 +10 15; PSV 5 1 1 3 -5 4, 28th row); data/research/scrape_223bbed96be9.json (BBC: 'Real Madrid, Position 1, Points 15 / PSV, Position 28, Points 4'); ESPN story 'top of the league phase table with 15 points after winning all five UCL matches'"},
+ "result_context": {"winner": "Real Madrid", "loser": "PSV Eindhoven", "banter": false, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [],
+ "caveats": [
+  "No official player ratings; best/worst are Scout's pick. BBC player-rating widget had not closed when cached (no fan averages).",
+  "Full-match xG disagrees: ESPN 4.79 / 1.69 (team stats, = shot-map sum) vs BBC/Opta 4.32 / 1.75 (ESPN commentary text also says 4.32 vs 1.69). No full-match xG used; half splits are from the ESPN shot map only.",
+  "Shots disagree: ESPN 24 / 10 vs BBC 22 / 10; possession ESPN 62 / 38 vs BBC 60.4 / 39.6. Shot counts by half are from the ESPN shot map (consistent with ESPN's 24 / 10); possession not used.",
+  "Half-time sub minute: ESPN 45', BBC 46'. Written as 'at half-time' / 46'.",
+  "Manager conflict: BBC line-ups list João Tralhão as Real Madrid manager; ESPN report and story say Mourinho made the changes and quote him (to Movistar). The quote is single-outlet; don't put a manager's name on screen without a second source.",
+  "Bellingham xG 0.37 on ESPN player stats vs 0.38 shot-map sum; Mbappé 2.58 vs 2.59. Player-stats figures used on player cards.",
+  "Bellingham played only the second half (45 min); best-player pick is about impact. Worst-player eligibility (45+ min) met by Kovár (90 min).",
+  "Firecrawl for analysis: 1 fallback search (2 credits) + 1 BBC match-page scrape (1 credit); ESPN player stats and ESPN story were free local fetches."
+ ]
+}

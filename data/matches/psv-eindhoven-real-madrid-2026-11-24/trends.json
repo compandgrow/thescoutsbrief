@@ -1,0 +1,69 @@
+{
+ "match": "RMA 5-1 PSV (UEFA Champions League, league phase, 2026-11-24)",
+ "generated_at": "2026-11-24T23:58:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "RMA", "type": "storyline",
+   "claim": "Real Madrid have won all five Champions League league-phase games and are top of the table with 15 points",
+   "numbers": {"wins": 5, "played": 5, "points": 15, "position": 1},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN UCL table on the match page: Real Madrid GP 5 W 5 D 0 L 0 GD +10 P 15 (1st)", "url": "https://www.espn.co.uk/football/match/_/gameId/401915298/psv-eindhoven-real-madrid", "cache": "data/research/scrape_2c7722c8d458.json"},
+    {"what": "BBC Sport match page: 'Real Madrid, Position 1, Points 15'; BBC general live page table: Real Madrid 5 5 0 0 18 8 10 15", "url": "https://www.bbc.com/sport/football/live/c6zxvne4nk7wt", "cache": "data/research/scrape_223bbed96be9.json"},
+    {"what": "ESPN story: 'Madrid are now top of the league phase table with 15 points after winning all five UCL matches so far'", "url": "https://www.espn.co.uk/football/story/_/id/50586644/bellingham-mourinho-real-madrid-stunner", "cache": "data/research/scrape_c86e414f04d4.json"}
+   ],
+   "hook_angle": "Zero shots on target at half-time. Five wins from five anyway.",
+   "use_for": "context",
+   "fresh_until": "2026-12-09"},
+  {"id": "t2", "team": "RMA", "type": "form",
+   "claim": "Real Madrid have won six in a row in all competitions",
+   "numbers": {"wins_in_a_row": 6},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/86.json (WWWWWW incl. tonight; gap 2026-11-07 to 2026-11-21)", "url": "https://www.espn.co.uk/football/team/results/_/id/86"},
+    {"what": "BBC Sport match page form guide (All competitions), pre-match: W v Celta Vigo, W v Valencia, W v AEK Athens, W v Racing de Santander, W v Barcelona: the same five games as ESPN, so no game is missing in the ESPN gap (international break)", "url": "https://www.bbc.com/sport/football/live/c6zxvne4nk7wt", "cache": "data/research/scrape_223bbed96be9.json"}
+   ],
+   "hook_angle": "Six straight wins, and this one was losing at half-time.",
+   "use_for": "context",
+   "fresh_until": "2026-11-28"},
+  {"id": "t3", "team": "PSV", "type": "storyline",
+   "claim": "PSV are 28th in the league phase on 4 points, outside the top 24",
+   "numbers": {"position": 28, "points": 4},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN UCL table (PSV 5 1 1 3 -5 4, 28th row) and ESPN commentary 'PSV slip out of the top 24 and into the elimination zone'", "url": "https://www.espn.co.uk/football/match/_/gameId/401915298/psv-eindhoven-real-madrid", "cache": "data/research/scrape_2c7722c8d458.json"},
+    {"what": "BBC Sport: 'PSV, Position 28, Points 4'", "url": "https://www.bbc.com/sport/football/live/c6zxvne4nk7wt", "cache": "data/research/scrape_223bbed96be9.json"}
+   ],
+   "hook_angle": "PSV led at half-time. Now they're twenty-eighth.",
+   "use_for": "context",
+   "fresh_until": "2026-12-09"}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [
+   {"theme": "Bellingham off the bench turned it (not from Reddit: Reddit unreachable; from ESPN headlines 'Bellingham sparks five-goal second-half blitz' and 'Bellingham credits Mourinho ... after Madrid stunner', BBC live page headline 'Bellingham stunner as Real Madrid thrash PSV')", "share": "every trusted headline on the match leads on Bellingham", "confirmed_by": "insights.json tactical_change + best_player (on at 46', 1 goal, 1 assist; Madrid 0 -> 9 shots on target)", "use_for": "proof + question beat"},
+   {"theme": "Mbappé's double (2 goals, 1 assist, 9 shots)", "share": "in ESPN report and story ledes, second to Bellingham", "confirmed_by": "insights.json runner_up_player (ESPN player stats)", "use_for": "question beat / outro (Bellingham or Mbappé?)"}
+  ],
+  "club_subs": [],
+  "note": "Reddit not reachable: `engine/reddit.py match \"Real Madrid\" \"PSV Eindhoven\"` -> 'Reddit RSS error 404 on /r/soccer/search'; `engine/reddit.py club RMA` -> 'Reddit RSS error 404 on /r/realmadrid/hot/'. Same RSS 404 as `reddit.py digest` earlier tonight. No Reddit keys (RSS mode). No fan-opinion claims may be made in the reel."
+ },
+ "rejected": [
+  {"claim": "Bellingham has four goals in his last five club games", "reason": "only one outlet (ESPN story)"},
+  {"claim": "Vinícius scored his first Champions League goal of the season / since March", "reason": "one outlet, two different phrasings (ESPN story vs ESPN commentary)"},
+  {"claim": "Real Madrid have scored nine goals in the last 15 minutes of games in this season's Champions League, more than any other team", "reason": "only one outlet (ESPN commentary)"},
+  {"claim": "Mourinho: 'Jude is a different player. He gives us what we didn't have in the first [half]'", "reason": "single outlet (ESPN, quoting Movistar) and BBC lists João Tralhão as Madrid's manager for this game; kept in insights as analyst context, not a talking point"},
+  {"claim": "Real Madrid three points behind LaLiga leaders Barcelona", "reason": "only one outlet in cache (ESPN story); not this competition"},
+  {"claim": "First meeting since the 1988-89 European Cup quarter-final", "reason": "only a BBC search snippet; not read in full"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "data",
+  "fan_question": "Who turned it: Bellingham or Mbappé?",
+  "data_answer": "At half-time PSV led the shots 8-4 and Madrid had 0 shots on target. Bellingham came on at 46' (with Huijsen and Konaté): Madrid then had 9 shots on target, 4.55 xG and five goals. Bellingham: 1 goal (a 0.03 xG shot) and 1 assist in one half. Mbappé: 2 goals, 1 assist, 9 shots, 2.58 xG.",
+  "evidence": ["insights.json team_story (shots and shots on target by half)", "insights.json tactical_change", "insights.json best_player", "insights.json runner_up_player", "insights.json surprise_stat"],
+  "fan_heat": "Reddit unreachable (RSS 404); every trusted headline (ESPN report, ESPN story, BBC live page) leads on Bellingham's goal and the second-half turnaround, with Mbappé's double second",
+  "hook_angle": "Half-time: PSV eight shots, Madrid four. Madrid won five-one.",
+  "why": "No Reddit theme available, so the angle is the data story the headlines already frame: Madrid out-shot at half-time, then a bench change and a five-goal second half. t1 (5 from 5, top) is the context beat."
+ },
+ "credits_used": 2,
+ "notes": "Usage before trend scout: 261/800 (33%), so search allowed. Form: data/form/86.json (RMA WWWWWW newest first incl. this match; gap 07-21 Nov covered by BBC all-competitions form guide) and data/form/148.json (PSV WWLWDW newest first; ESPN did not yet include tonight's 1-5 loss, so the file's newest result is the 4-1 at NEC on 21 Nov; gap 08-21 Nov) from free local ESPN fetches (0 credits). News search 'Real Madrid PSV Eindhoven' --limit 5 --days 2 (2 credits): ESPN Africa live page, BBC match page, realmadrid.com match/ticket pages, UEFA preview; nothing new beyond the cached pages. Page read: ESPN story 'Bellingham credits Mourinho' (local fetch, 0 credits). Reddit: RSS 404 on match and club calls. Disagreements to avoid on screen: full-match xG (ESPN 4.79 v BBC 4.32), shots (ESPN 24 v BBC 22), possession (62 v 60.4), sub minute (45' v 46'), Madrid manager name (ESPN Mourinho v BBC line-up Tralhão)."
+}

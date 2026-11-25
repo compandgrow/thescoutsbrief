@@ -1,0 +1,135 @@
+{
+ "id": "psv-eindhoven-real-madrid-2026-11-24",
+ "format_version": 4,
+ "trend_used": "t1",
+ "experiment": "format v4 (first v4 reel): beat 1 = the reason behind the hook's paradox (half-time triple change, shots on target 0 -> 9), not another shot count; two-name question at beat 2 (~11 s) with a stat line per name, repeated as outro and caption first line",
+ "angle_source": "data",
+ "fan_question": "Who turned it: Bellingham or Mbappé?",
+ "match": {
+  "pill": "RMA 5–1 PSV · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Half-time: PSV eight shots, Madrid four. Madrid won five-one.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "REAL MADRID 5–1 PSV",
+    "text": "HALF-TIME SHOTS\nPSV *8*\nMADRID *4*",
+    "size": 120,
+    "source": "ESPN shot map"
+   }
+  },
+  {
+   "say": "What changed? Three subs at half-time, Bellingham among them. Shots on target: zero before, nine after.",
+   "emotion": "excited",
+   "slam": [
+    4.6
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "THE HALF-TIME TRIPLE CHANGE",
+    "value": "0 → 9",
+    "unit": "MADRID SHOTS ON TARGET",
+    "label": "1st half *0* · 2nd half *9*",
+    "sub": "on at 46': Bellingham, Huijsen, Konaté",
+    "source": "ESPN shot map · BBC Sport line-ups"
+   }
+  },
+  {
+   "say": "Bellingham: a goal and an assist in one half. Mbappé: two goals, an assist, nine shots. Who won it?",
+   "emotion": "neutral",
+   "emote": [
+    [
+     5.6,
+     "smug"
+    ]
+   ],
+   "card": {
+    "type": "compare",
+    "kicker": "WHO WON IT?",
+    "teams": [
+     "BELLINGHAM",
+     "MBAPPÉ"
+    ],
+    "rows": [
+     {
+      "label": "GOALS",
+      "a": 1,
+      "b": 2,
+      "fa": "1",
+      "fb": "2"
+     },
+     {
+      "label": "ASSISTS",
+      "a": 1,
+      "b": 1,
+      "fa": "1",
+      "fb": "1"
+     },
+     {
+      "label": "SHOTS",
+      "a": 3,
+      "b": 9,
+      "fa": "3",
+      "fb": "9"
+     }
+    ],
+    "source": "ESPN player stats"
+   }
+  },
+  {
+   "say": "Scout's pick: Bellingham. His goal, for two-one, was a three percent chance.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "player",
+    "verdict": "best",
+    "kicker": "SCOUT'S PICK",
+    "name": "Jude Bellingham",
+    "team": "Real Madrid",
+    "stats": [
+     [
+      "goals",
+      "1"
+     ],
+     [
+      "assists",
+      "1"
+     ],
+     [
+      "goal xG",
+      "0.03"
+     ]
+    ],
+    "source": "ESPN player stats · shot map"
+   }
+  },
+  {
+   "say": "Five wins from five. Madrid top the Champions League table.",
+   "emotion": "happy",
+   "card": {
+    "type": "stat",
+    "kicker": "CHAMPIONS LEAGUE",
+    "value": "15",
+    "unit": "POINTS · 1ST",
+    "label": "*5* wins from 5",
+    "sub": "league phase",
+    "source": "ESPN · BBC Sport table"
+   }
+  },
+  {
+   "say": "Bellingham or Mbappé: who won this one?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "BELLINGHAM\nOR *MBAPPÉ*?",
+    "size": 120,
+    "source": "ESPN · BBC Sport"
+   }
+  }
+ ]
+}
