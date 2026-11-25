@@ -299,6 +299,15 @@
    "mode": "auto",
    "at": "2026-11-24",
    "scheduled_for": "2026-11-24T19:33:00Z"
+  },
+  {
+   "espn_id": "401915298",
+   "reel": "psv-eindhoven-real-madrid-2026-11-24",
+   "zernio_post": "6b06282e6a45e6fe701f5fb2",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-25",
+   "scheduled_for": "2026-11-25T01:13:00Z"
   }
  ],
  "skipped": [
@@ -361,6 +370,16 @@
    "espn_id": "401882803",
    "reason": "Getafe 0-3 Atlético: rival didn't lose to an unwatched club",
    "at": "2026-11-22"
+  },
+  {
+   "espn_id": "401915379",
+   "reason": "Man City 2-2 Napoli: rival didn't lose to an unwatched club",
+   "at": "2026-11-24"
+  },
+  {
+   "espn_id": "401915295",
+   "reason": "Arsenal 1-1 Dortmund: rival didn't lose to an unwatched club",
+   "at": "2026-11-24"
   }
  ]
 }
