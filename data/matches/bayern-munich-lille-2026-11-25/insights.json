@@ -1,0 +1,60 @@
+{
+ "match": {"home": "Lille", "away": "Bayern Munich", "home_short": "LIL", "away_short": "BAY", "score": "2-1", "competition": "UEFA Champions League", "date": "2026-11-25"},
+ "data_mode": "web (ESPN + BBC cached); no official player ratings, best/worst are Scout's pick",
+ "headline": "Bayern had 64.7% of the ball, 750 passes and 210 successful final-third passes to Lille's 49, yet only 0.25 xG from open play; Lille made 2.06 open-play xG on 35% possession and won 2-1 with two goals in four second-half minutes.",
+ "team_story": [
+  {"label": "xG from open play", "home": 2.06, "away": 0.25, "why_it_matters": "Strip out set pieces and Bayern created almost nothing: 0.93 of their 1.18 xG came from set plays (Upamecano's goal was a corner header)", "source": "data/research/scrape_6edca76f0775.json (BBC Match Stats, Expected: 'xG from open play Lille 2.0588 Bayern Munich 0.2463'; 'xG from set play Lille 0.0528 Bayern Munich 0.9312') https://www.bbc.com/sport/football/live/crp3eye835g3t; shot map agrees: Bayern regular-play xG 0.26 (analysis.py -> derived.json BAY_all.open_play_xg)"},
+  {"label": "Possession", "home": "35.3%", "away": "64.7%", "home_value": 35.3, "away_value": 64.7, "why_it_matters": "Bayern had nearly two thirds of the ball and lost", "source": "data/research/scrape_6edca76f0775.json (BBC Match Stats: 'Overall possession LIL 35.3% FCB 64.7%'); ESPN Team Stats 35% / 65% (data/research/scrape_73df1d6d0fdf.json)"},
+  {"label": "Successful final-third passes", "home": 49, "away": 210, "why_it_matters": "Bayern reached the final third four times as often but had fewer touches in the box (22 v 25)", "source": "data/research/scrape_6edca76f0775.json (BBC Match Stats, Distribution: 'Successful final third passes Lille 49 Bayern Munich 210'; Basic: 'Total touches inside the opposition box Lille 25 Bayern Munich 22')"},
+  {"label": "xG", "home": 2.11, "away": 1.18, "why_it_matters": "The 35% side created the better chances", "source": "data/research/scrape_73df1d6d0fdf.json (ESPN Team Stats: 'Expected Goals 2.11 / 1.18'); data/research/scrape_6edca76f0775.json (BBC: 'xG Lille 2.1116 Bayern Munich 1.1775'). Sources agree."},
+  {"label": "Big chances created", "home": 4, "away": 2, "why_it_matters": "Lille made twice as many clear chances", "source": "data/research/scrape_a9163a98013a.json (ESPN team stats, Attack: 'Big Chances Created 4 / 2', 'Big Chances Missed 3 / 1') https://www.espn.com/soccer/team-stats/_/gameId/401915377"}
+ ],
+ "tactical_change": {
+  "team": "Lille / Bayern Munich", "minute": 46, "before": "Lille 4-3-3 (BBC) / 4-1-4-1 (ESPN); Bayern 4-2-3-1", "after": "no formation change in either source",
+  "trigger": "the second-half shift: Lille came out after half-time 0-1 down; Ueda had a goal ruled out by VAR (foul on Kimmich after Upamecano's careless back-header) just after the restart. Kompany's triple change at 76' (Binder, Díaz, Musiala) came while 1-2 down.",
+  "effect": "Bayern's xG fell from 1.00 in the first half (6 shots, 5 on target) to 0.20 in the second (6 shots, 2 on target); Lille's rose from 0.57 to 1.55. BBC match momentum gave Lille the most threat in 23 of the 30 minutes from 46' to 75', including 16 straight minutes 58'-73' in which both Lille goals came. After Kompany's 76' triple change Bayern had the most threat in 17 of the last 20 minutes but managed 4 shots, 0 on target, 0.15 xG.",
+  "evidence": [
+   {"label": "Bayern xG", "before": 1.00, "after": 0.20, "source": "shots_espn.json via analysis.py (derived.json BAY_1st / BAY_2nd; own goal n=17 excluded)"},
+   {"label": "Lille xG", "before": 0.57, "after": 1.55, "source": "shots_espn.json via analysis.py (derived.json LIL_1st / LIL_2nd)"},
+   {"label": "Bayern shots on target", "before": 5, "after": 2, "source": "shots_espn.json via analysis.py"},
+   {"label": "Lille shots", "before": 5, "after": 10, "source": "shots_espn.json via analysis.py"},
+   {"label": "Minutes with most threat, Lille (BBC momentum)", "before": "7 of 46", "after": "26 of 50 (23 of 30 from 46'-75')", "source": "data/research/scrape_6edca76f0775.json (BBC 'Match momentum' table view, 'Team with most threat' per minute) via analysis.py derived.json momentum"},
+   {"label": "Bayern after the 76' triple change", "before": "46'-75': 2 shots, 0.05 xG", "after": "76'-FT: 4 shots, 0 on target, 0.15 xG", "source": "shots_espn.json via analysis.py (BAY_46_75 / BAY_76_on); subs from data/research/scrape_73df1d6d0fdf.json (ESPN Substitutions: Binder for Ito 76', Díaz for Stanisic 76', Musiala for Bischof 76')"}
+  ],
+  "confidence": "medium (half split and momentum are hard data; no shape change, so this is the second-half shift, not a formation change)"
+ },
+ "best_player": {
+  "name": "Ayase Ueda", "team": "Lille", "rating": null,
+  "stats": [["goals", "1"], ["shots", "4"], ["shots on target", "2"], ["xG", "0.78"], ["xG of his goal", "0.22"]],
+  "why": "Scout's pick. Scored the 62' equaliser, had a goal ruled out by VAR and was denied one-on-one at 23'; his 0.78 xG was the most of any player on the pitch. Özer (7 saves) is the runner-up, but his saves were mostly low-value shots (goals prevented +0.07).",
+  "source": "data/research/scrape_2bdb88d6d53b.json (ESPN player stats, Ueda row: TCH 23, G 1, A 0, xG 0.78, xA 0.04, SOG 2, SHOT 4); ESPN match page Match Leaders 'Total Shots 4 A. Ueda 2 SOG, 0.78 xG' (data/research/scrape_73df1d6d0fdf.json); shots_espn.json n=14 (62', xg 0.22, xgot 0.83, Goal), n=5 (23', xg 0.45, Saved); disallowed goal: ESPN commentary 'Ueda having a goal ruled out by the VAR within moments of the restart'"
+ },
+ "runner_up_player": {
+  "name": "Berke Özer", "team": "Lille",
+  "stats": [["saves", "7"], ["shots on target faced", "8"], ["goals conceded", "1"], ["goals prevented", "0.07"]],
+  "source": "data/research/scrape_2bdb88d6d53b.json (ESPN player stats, Özer row: GA 1, SV 7, SOGA 8, xGC 1.18, xGOTC 1.07, GP 0.07); ESPN report 'keeper Berke Özer sparked a counter-attack' for the 65' goal (data/research/scrape_7840828e8b86.json)"
+ },
+ "worst_player": {
+  "name": "Aleksandar Pavlović", "team": "Bayern Munich", "rating": null,
+  "stats": [["own goal", "65'"], ["shots", "2"], ["xG", "0.07"], ["touches", "87"]],
+  "why": "Scout's pick. Turned the rebound off Mbappé's post into his own net at 65', the goal that won the game (ESPN report: 'clumsily turning the ball into his own net', 'capitalized on Pavlovic's error'). Otherwise 2 shots worth 0.07 xG from a 90-minute attacking-midfield role. Transparent score: an error leading to a goal outweighs his 2 shots on target.",
+  "anger_worthy": true,
+  "source": "data/research/scrape_2bdb88d6d53b.json (ESPN player stats, Pavlovic row: TCH 87, G 0, A 0, xG 0.07, xA 0.08, SOG 2, SHOT 2); shots_espn.json n=17 (65', Own Goal); data/research/scrape_7840828e8b86.json (ESPN report); BBC line-ups: no sub for Pavlović (90 min)"
+ },
+ "surprise_stat": {"value": "0.25", "label": "Bayern's xG from open play", "context": "With 64.7% possession, 750 passes and 210 successful final-third passes. Lille: 2.06 open-play xG on 35.3% of the ball.", "source": "data/research/scrape_6edca76f0775.json (BBC Match Stats: 'xG from open play Lille 2.0588 Bayern Munich 0.2463'; 'Total passes Lille 406 Bayern Munich 750'; 'Successful final third passes Lille 49 Bayern Munich 210'; possession 35.3% / 64.7%)"},
+ "table_context": {"fact": "Bayern's first defeat of the league phase: 8 points, 15th, outside the top eight; Lille's first win of the competition, 4 points, 29th", "source": "data/research/scrape_73df1d6d0fdf.json (ESPN UCL table: Bayern Munich 5 2 2 1 +6 8; Lille 5 1 1 3 -5 4); data/research/scrape_6edca76f0775.json (BBC: 'Bayern Munich, Position 15, Points 8', 'Lille, Position 29, Points 4'; key: positions 1-8 = 8th Finals); data/research/scrape_7840828e8b86.json (ESPN report 'Injury-hit Bayern beaten by Lille to suffer 1st UCL loss', 'land their first win of this season's competition')"},
+ "absences": {"fact": "Bayern were without Harry Kane, Michael Olise and Manuel Neuer", "source": "data/research/scrape_7840828e8b86.json (ESPN report: 'Injury-hit Bayern were without the likes of Harry Kane, Michael Olise and Manuel Neuer')"},
+ "result_context": {"winner": "Lille", "loser": "Bayern Munich", "banter": false, "banter_by_favourite": false, "favourite_lost": true},
+ "banter_material": [],
+ "caveats": [
+  "No official player ratings; best/worst are Scout's pick. BBC player-rating widget had not closed when cached (no fan averages).",
+  "Shot-map xG sums (own goal excluded) are 2.12 / 1.20 vs team totals 2.11 / 1.18 (ESPN and BBC agree on 2.11 / 1.18). Full-match xG uses the team totals; half splits use the shot map.",
+  "The ESPN shot map lists Pavlović's own goal (n=17) as a Bayern shot; analysis.py counts it as a Lille goal and excludes it from Bayern's shots (12, matching ESPN team stats).",
+  "Bayern passes: BBC 750, ESPN 754. BBC used on screen with BBC possession and final-third passes (same source).",
+  "Lille formation: ESPN 4-1-4-1, BBC 4-3-3. Not put on screen.",
+  "Disallowed Ueda goal is not in the shot map; reason from ESPN report (foul on Kimmich). No minute on screen.",
+  "Bayern absences (Kane, Olise, Neuer) are single-source (ESPN/PA report). State factually, never mocked.",
+  "Momentum counts are minutes in which BBC's 'team with most threat' was each side, not possession or shots.",
+  "Firecrawl for analysis: none extra (data-collector fetch used 4 credits: ESPN team-stats scrape 1, BBC search 2, BBC match page 1). ESPN player stats and report were free local fetches."
+ ]
+}

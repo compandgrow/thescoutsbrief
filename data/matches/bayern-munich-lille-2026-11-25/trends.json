@@ -1,0 +1,69 @@
+{
+ "match": "LIL 2-1 BAY (UEFA Champions League, league phase matchday 5, 2026-11-25)",
+ "generated_at": "2026-11-25T23:56:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "BAY", "type": "milestone",
+   "claim": "Before tonight Bayern were unbeaten in 30 Champions League games when leading by one goal at half-time (28 wins, 2 draws); the last such defeat was in April 2017 against Real Madrid. Tonight they led 1-0 at half-time and lost 2-1.",
+   "numbers": {"unbeaten_games": 30, "wins": 28, "draws": 2, "last_loss_from_that_position": "April 2017 v Real Madrid (QF first leg, 2-1)", "half_time_score_tonight": "0-1", "final_score": "2-1"},
+   "strength": "strong",
+   "sources": [
+    {"what": "FC Bayern official live ticker, HT entry: 'Bayern are unbeaten in 30 Champions League games when they've led by one goal at the break (W28, D2). The last time they lost having been 1-0 up at half-time was in April 2017, when they lost 2-1 in the quarter-final first leg against Real Madrid.'", "url": "https://fcbayern.com/en/matches/profis/champions-league/2026-2027/osc-lille-fc-bayern-muenchen-25-11-2026/liveticker", "cache": "data/research/scrape_d4068e624f85.json"},
+    {"what": "Half-time 0-1 and final 2-1: FC Bayern ticker '(Interim result: 0 to 1 after First Half 0:1)'; ESPN commentary 'trailed by one ... at half-time'; BBC/ESPN score", "url": "https://www.espn.co.uk/football/match/_/gameId/401915377/bayern-munich-lille", "cache": "data/research/scrape_73df1d6d0fdf.json"}
+   ],
+   "hook_angle": "Thirty Champions League games unbeaten when leading by one at half-time. Not anymore.",
+   "use_for": "hook",
+   "fresh_until": "2026-12-02"},
+  {"id": "t2", "team": "BAY", "type": "storyline",
+   "claim": "Bayern's first defeat of the season in any competition (and first in this Champions League league phase)",
+   "numbers": {"defeats_this_season_before_tonight": 0},
+   "strength": "strong",
+   "sources": [
+    {"what": "FC Bayern official live ticker, FT: 'It's a first defeat of this season in any competition for Bayern.'", "url": "https://fcbayern.com/en/matches/profis/champions-league/2026-2027/osc-lille-fc-bayern-muenchen-25-11-2026/liveticker", "cache": "data/research/scrape_d4068e624f85.json"},
+    {"what": "ESPN/PA report headline 'Injury-hit Bayern beaten by Lille to suffer 1st UCL loss'; ESPN commentary 'felled for the first time in this season's league phase'", "url": "https://www.espn.co.uk/football/report/_/gameId/401915377", "cache": "data/research/scrape_7840828e8b86.json"},
+    {"what": "ESPN results via data/form/132.json: LDWWDW newest first (only 1 loss in last 6, tonight's); gap 2026-11-07 to 2026-11-20, so the season-long claim rests on the official source, not the form file", "url": "https://www.espn.co.uk/football/team/results/_/id/132"}
+   ],
+   "hook_angle": "First defeat of the season, from 64.7% possession and 0.25 open-play xG.",
+   "use_for": "context",
+   "fresh_until": "2026-11-29"},
+  {"id": "t3", "team": "BAY", "type": "storyline",
+   "claim": "Bayern are 15th in the league phase on 8 points, outside the top eight (automatic last-16 places); Lille move to 4 points, 29th",
+   "numbers": {"position": 15, "points": 8, "lille_position": 29, "lille_points": 4},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN UCL table on the match page: Bayern Munich 5 2 2 1 +6 8 (15th row); Lille 5 1 1 3 -5 4 (29th row); ESPN commentary 'leaving them outside the all-important top eight'", "url": "https://www.espn.co.uk/football/match/_/gameId/401915377/bayern-munich-lille", "cache": "data/research/scrape_73df1d6d0fdf.json"},
+    {"what": "BBC Sport: 'Bayern Munich, Position 15, Points 8', 'Lille, Position 29, Points 4'; key: positions 1-8 = 8th Finals", "url": "https://www.bbc.com/sport/football/live/crp3eye835g3t", "cache": "data/research/scrape_6edca76f0775.json"}
+   ],
+   "hook_angle": "One loss and Bayern drop to fifteenth, outside the top eight.",
+   "use_for": "outro",
+   "fresh_until": "2026-12-09"}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [
+   {"theme": "(not from Reddit: Reddit unreachable) Bayern's injury list: Kane, Olise and Neuer missing", "share": "lede of the ESPN/PA report ('Injury-hit Bayern') and the FC Bayern ticker (Kane and Olise 'injured'); Guardian 20 Nov: Kane 'out for the next few months' (ankle ligament tear)", "confirmed_by": "ESPN report (scrape_7840828e8b86.json), FC Bayern ticker (scrape_d4068e624f85.json), Guardian search snippet (search_dcccd8717e66.json)", "use_for": "context only: sympathetic, never mocked (red line)"},
+   {"theme": "(not from Reddit) Pavlović's own goal and Upamecano's back-header that led to Ueda's VAR-disallowed goal", "share": "in ESPN report, ESPN commentary and the FC Bayern ticker", "confirmed_by": "insights.json worst_player; FC Bayern ticker 49' and 65'", "use_for": "question beat / outro (individual errors or the system?)"}
+  ],
+  "club_subs": [],
+  "note": "Reddit not reachable: `engine/reddit.py match \"Lille\" \"Bayern Munich\"` -> 'Reddit RSS error 404 on /r/soccer/search'; `engine/reddit.py club BAY` -> 'Reddit RSS error 404 on /r/fcbayern/hot/'. No Reddit keys (RSS mode). No fan-opinion claims may be made in the reel."
+ },
+ "rejected": [
+  {"claim": "Bayern had scored in 25 consecutive Champions League games before tonight; only longer run 30 (Mar 2019 - Mar 2022)", "reason": "true per FC Bayern ticker (official) but tonight they scored, so the run continues and is off-angle; not needed"},
+  {"claim": "Lille had not won any of their last six games in Europe (D1, L5)", "reason": "official (FC Bayern ticker) but pre-match framing of the opponent; Lille's own form not central to a Bayern-fan reel. Usable only as 'Lille's first win of the competition' (ESPN report + ESPN table 1 W)"},
+  {"claim": "Kompany pre-match: 'We scored 180 goals last season and 130 of those are missing'", "reason": "single official source quote, pre-match and about injured players; risks reading as mocking the injury list. Not a talking point; scriptwriter may paraphrase 'without Kane, Olise and Neuer' only"},
+  {"claim": "Binder and Codjo-Evora, both 19, made their Champions League debuts", "reason": "official (FC Bayern ticker) but low relevance to the result"},
+  {"claim": "Upamecano's goal was his fourth of the season, his most prolific Bayern campaign", "reason": "official but off-angle; keep for the best/worst slot only if needed"},
+  {"claim": "Kompany post-match reaction", "reason": "search 'Kompany Lille defeat' (--days 2) returned no post-match quote on trusted sites"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "How did Bayern lose a game they controlled: 1-0 up, 64.7% of the ball?",
+  "data_answer": "They had the ball but not the chances: 0.25 xG from open play (Lille 2.06), 0.93 of their 1.18 xG from set pieces. After half-time Bayern's xG fell from 1.00 to 0.20 while Lille's rose from 0.57 to 1.55; BBC momentum gave Lille 16 straight minutes on top (58'-73'), when both goals came. Even after Kompany's 76' triple change: 4 shots, 0 on target, 0.15 xG.",
+  "evidence": ["trends.json t1 (official FC Bayern ticker)", "insights.json team_story xG from open play + possession", "insights.json tactical_change (half split, momentum, 76' change)", "insights.json worst_player (own goal)"],
+  "fan_heat": "Reddit unreachable (RSS 404); the official club ticker itself flagged the 30-game record at half-time, and every trusted report leads on the comeback and the injury list",
+  "hook_angle": "Thirty Champions League games unbeaten when leading by one at half-time. Not anymore.",
+  "why": "No Reddit theme available. t1 is an official, surprising record broken tonight that ties straight into the match data's second-half collapse; t2 (first defeat of the season) and t3 (15th, outside top eight) are context/outro."
+ },
+ "credits_used": 5,
+ "notes": "Usage before trend scout: 281/800 (35%), so search allowed (two other agents are spending credits in parallel, so the monthly counter moves on its own). Form: data/form/132.json (BAY LDWWDW newest first incl. tonight; gap 07-20 Nov) and data/form/166.json (LIL WLWDWD incl. tonight; gap 08-21 Nov), free local ESPN fetches (0 credits). Search 'Lille Bayern Munich' --limit 5 --days 2 (2 credits): one result, the FC Bayern official live ticker. Page read: that ticker (local fetch failed/too short, Firecrawl fallback, 1 credit). Search 'Kompany Lille defeat' --limit 4 --days 3 (2 credits): no post-match quote; Guardian 20 Nov Kane ankle-ligament piece (context only). Total trend-scout Firecrawl: 5 credits. Reddit: RSS 404 on match and club calls. Disagreements to avoid on screen: Bayern passes (BBC 750 v ESPN 754), Lille shape (BBC 4-3-3 v ESPN 4-1-4-1), Bayern's striker (BBC/ESPN Laimer v FC Bayern ticker line-up 'Karl' leading the line; ticker 11' says Laimer central), shot-map xG sums 2.12/1.20 v team totals 2.11/1.18. Pre-match table: FC Bayern ticker 'Bayern currently in 14th place'; Lille 'second from bottom with a solitary point'. HT live table had Bayern 8th (ticker) - don't use. Red lines: Bayern's absences (Kane, Olise, Neuer) are context only, never mocked; no family references for Ethan Mbappé or Davide Ancelotti."
+}

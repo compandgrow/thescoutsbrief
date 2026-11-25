@@ -1,0 +1,75 @@
+{
+ "team_id": "2250",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/2250",
+ "fetched_at": "2026-11-25T23:53:30Z",
+ "last": [
+  {
+   "date": "2026-11-25",
+   "opponent": "Manchester United",
+   "venue": "H",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915373"
+  },
+  {
+   "date": "2026-11-21",
+   "opponent": "Uniao da Serra",
+   "venue": "H",
+   "score": "4-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Taca de Portugal",
+   "game_id": "401931820"
+  },
+  {
+   "date": "2026-11-07",
+   "opponent": "Moreirense",
+   "venue": "H",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Portuguese Primeira Liga",
+   "game_id": "401885395"
+  },
+  {
+   "date": "2026-11-03",
+   "opponent": "Shakhtar Donetsk",
+   "venue": "A",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915310"
+  },
+  {
+   "date": "2026-10-30",
+   "opponent": "Casa Pia",
+   "venue": "A",
+   "score": "2-0",
+   "result": "W",
+   "pens": false,
+   "competition": "Portuguese Primeira Liga",
+   "game_id": "401885408"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "Acad\u00e9mico de Viseu",
+   "venue": "H",
+   "score": "1-2",
+   "result": "L",
+   "pens": false,
+   "competition": "Portuguese Primeira Liga",
+   "game_id": "401885413"
+  }
+ ],
+ "run_newest_first": "DWWWWL",
+ "wins": 4,
+ "draws": 1,
+ "losses": 1,
+ "gaps": [
+  "2026-11-07 to 2026-11-21"
+ ],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

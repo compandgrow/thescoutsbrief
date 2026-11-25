@@ -1,0 +1,65 @@
+{
+ "match": {"home": "Sporting CP", "away": "Manchester United", "home_short": "SCP", "away_short": "MUN", "score": "2-2", "competition": "UEFA Champions League", "date": "2026-11-25"},
+ "data_mode": "web (ESPN + BBC cached); no official player ratings. Ratings used: BBC Sport user ratings (average, out of 10) and BBC journalist marks for United players (Simon Stone, out of 10) — quote with credit",
+ "headline": "Sporting had 2.46 xG to United's 1.07, but 1.58 of it came from two penalties, and both Sporting goals followed United errors: Lammens conceded the 33' penalty and dropped the cross for the 80' equaliser (1.25 xG between the two shots).",
+ "team_story": [
+  {"label": "xG", "home": 2.46, "away": 1.07, "why_it_matters": "On paper Sporting deserved more; the split below shows where it came from", "source": "data/research/scrape_ca3883766b8d.json (ESPN match page, Team Stats: Expected Goals 2.46 / 1.07); data/research/scrape_fa0b680d039a.json (BBC Match Stats xG 2.4592 / 1.0728)"},
+  {"label": "xG from penalties", "home": 1.58, "away": 0.79, "why_it_matters": "Two Sporting penalties (0.79 each) are 1.58 of their 2.46 xG; Sporting's xG without penalties was 0.88, United's 0.29", "source": "data/matches/manchester-united-sporting-cp-2026-11-25/shots_espn.json (situation 'Penalty': shots n=4 30' 0.79 Saved, n=5 33' 0.79 Goal, n=9 48' 0.79 Goal) via analysis.py -> derived.json SCP_pens / MAN_pens / SCP_non_pen / MAN_non_pen"},
+  {"label": "Shots on target", "home": 4, "away": 2, "why_it_matters": "United scored with both of their shots on target", "source": "data/research/scrape_ca3883766b8d.json (ESPN Team Stats: Shots on Goal 4 (36%) / 2 (29%)); BBC Match Stats 'Shots on target 4 / 2' (data/research/scrape_fa0b680d039a.json)"},
+  {"label": "Duels won", "home": 36, "away": 48, "why_it_matters": "United won the physical battle; the damage came from individual errors, not being overrun", "source": "data/research/scrape_ca3883766b8d.json (ESPN Team Stats: Duels Won 36 / 48)"}
+ ],
+ "tactical_change": {
+  "team": "Manchester United", "minute": 46, "before": "4-2-3-1", "after": "4-2-3-1 (no formation change in source)",
+  "trigger": "score state: 0-1 down at half-time after two penalties and a disallowed Diallo goal; no half-time substitution (first subs 64')",
+  "effect": "The second-half shift: United went from 2 shots, 0 on target, 0.12 xG in the first half to 5 shots, 2 on target, 0.96 xG and 2 goals in the second; Sporting from 6 shots and 1.90 xG (1.58 from penalties) to 5 shots and 0.56 xG. BBC match momentum shows United with the most threat in every minute from 43' to 54'. Pochettino: \"Second half we recovered a lot of balls in the opposition half.\"",
+  "evidence": [
+   {"label": "United shots", "before": 2, "after": 5, "source": "shots_espn.json via analysis.py (derived.json MAN_1st / MAN_2nd)"},
+   {"label": "United shots on target", "before": 0, "after": 2, "source": "shots_espn.json via analysis.py"},
+   {"label": "United xG", "before": 0.12, "after": 0.96, "source": "shots_espn.json via analysis.py"},
+   {"label": "Sporting xG", "before": 1.9, "after": 0.56, "source": "shots_espn.json (+ shot 18 from ESPN page) via analysis.py"},
+   {"label": "Momentum", "before": null, "after": "Man Utd most threat 43'-54'", "source": "data/research/scrape_fa0b680d039a.json (BBC Match momentum table, rows 43' to 54' all 'Man Utd')"},
+   {"label": "Manager quote", "before": null, "after": "\"Second half we recovered a lot of balls in the opposition half. That's the way we want to play.\"", "source": "https://www.bbc.com/sport/football/live/crkgv8v0gdwkt (data/research/scrape_fa0b680d039a.json; Pochettino to TNT Sports, via BBC live text)"}
+  ],
+  "confidence": "medium (half split is hard data; no formation or half-time sub, so it is a half-to-half shift, not a shape change)"
+ },
+ "best_player": {
+  "name": "Luis Suárez", "team": "Sporting CP", "rating": 7.08,
+  "stats": [["goals", "2"], ["shots on target", "3"], ["xG", "2.04"], ["BBC user rating", "7.08"]],
+  "why": "Highest BBC user rating on the pitch (7.08, BBC player of the match). Both Sporting goals; had his first penalty saved, scored the second and the 80' overhead finish. 1.58 of his 2.04 xG came from the two penalties.",
+  "source": "data/research/scrape_fa0b680d039a.json (BBC 'Player of the match ... L. Suárez Average rating 7.08'); data/research/scrape_6f0cf5a4cb9b.json (ESPN player stats, Suárez row: TCH 21, G 2, xG 2.04, SOG 3, SHOT 3); ESPN Match Leaders '3 SOG, 2.04 xG'"
+ },
+ "runner_up_player": {
+  "name": "Bruno Fernandes", "team": "Manchester United", "rating": 5.88,
+  "stats": [["goals", "2"], ["shots on target", "2"], ["xG", "0.87"], ["BBC mark", "8"]],
+  "why": "United's best by both BBC measures (journalist mark 8, highest in the United XI; user rating 5.88, highest United player). Scored the 48' penalty and the 50' shot that hit a divot (0.02 xG).",
+  "source": "data/research/scrape_fa0b680d039a.json (BBC 'How they rated': 'Bruno Fernandes (off 92, Santos): ... 8'; user rating 'Bruno Fernandes Average Rating: 5.88'); data/research/scrape_6f0cf5a4cb9b.json (ESPN player stats, Fernandes row: TCH 56, G 2, xG 0.87, SOG 2, SHOT 3)"
+ },
+ "worst_player": {
+  "name": "Senne Lammens", "team": "Manchester United", "rating": 2.91,
+  "stats": [["BBC user rating", "2.91"], ["BBC mark", "3/10"], ["penalties saved", "1"], ["goals conceded", "2"]],
+  "why": "Lowest BBC user rating on the pitch (2.91) and BBC journalist mark 3. Saved Suárez's 30' penalty, then conceded the second penalty (booked 31') which Suárez scored at 33', and dropped the cross that led to the 80' equaliser. The two shots that followed his errors were worth 1.25 xG. ESPN's shot-stopping model still credits him with +0.69 goals prevented (2 saves, xGOT faced 2.69) because of the penalty save: the problem was the errors, not the saves.",
+  "anger_worthy": true,
+  "source": "data/research/scrape_fa0b680d039a.json (BBC user rating 'S. Lammens Average Rating: 2.91'; BBC 'How they rated': 'Senne Lammens: Shocking mistake near the end gifted Sporting a second ... 3'; line-ups 'S. Lammens31', Yellow Card'); data/research/scrape_6f0cf5a4cb9b.json (ESPN player stats, Lammens: GA 2, SV 2, SOGA 4, xGC 2.46, xGOTC 2.69, GP 0.69); shots_espn.json n=4 (30' pen Saved), n=5 (33' pen Goal, 0.79), n=16 (80' Goal, 0.46) via derived.json SCP_xg_from_lammens_errors; ESPN commentary 80' 'He fails to gather Fresneda's high cross, under pressure from Suarez' (data/research/scrape_7fbbb38fc679.json)"
+ },
+ "surprise_stat": {"value": "0.02", "label": "xG of Fernandes's 50' goal (a 2% chance)", "context": "From 27 m (ESPN UK), it hit a divot and bounced over Kaique; it put United 2-1 up.", "source": "shots_espn.json (shot n=10, B. Fernandes 50', xg 0.02, xgot 0.01, Goal); distance and divot: data/research/scrape_ca3883766b8d.json (shot 10 of 18, 27 m) and ESPN report 'Fernandes' hopeful effort hit a divot just outside the six-yard box and flew over Pereira' (data/research/scrape_840f5f5b714c.json)"},
+ "referee_context": {
+  "fact": "Two United goals were not given: Diallo's (~40') because referee Szymon Marciniak blew for a Tielemans foul before the ball went in, so VAR could not intervene; and Kaique's own goal (~82') ruled out after a VAR review for a Dorgu foul on the keeper. Tielemans' first yellow came from the 40' decision; he was sent off with a second yellow at 90'+3'.",
+  "source": "data/research/scrape_840f5f5b714c.json (ESPN report: 'Halting play early meant the VAR could not review'; 'Marciniak was sent to the monitor and adjudged Dorgu to have fouled the goalkeeper'); data/research/scrape_fa0b680d039a.json (BBC report: 'TV replays showed there had been little contact but VAR could not intervene as Marciniak had blown his whistle'; key events 40', 82', 90+3')"
+ },
+ "table_context": {"fact": "After matchday 5: Sporting 10 points, 9th; Manchester United 7 points, 19th (play-off places, positions 9-24)", "source": "data/research/scrape_ca3883766b8d.json (ESPN UCL table: Sporting CP 5 3 1 1 +4 10 (9th row); Manchester United 5 2 1 2 0 7 (19th row)); ESPN commentary 'who occupy ninth and 19th place'; BBC live text 'keeps Manchester United in the play-off places for now, with the team sitting 19th' (data/research/scrape_fa0b680d039a.json)"},
+ "result_context": {"winner": null, "loser": null, "banter": false, "banter_by_favourite": false, "favourite_lost": false},
+ "banter_material": [],
+ "caveats": [
+  "No official player ratings. Best/worst use BBC Sport user ratings (averages of BBC users; the page notes the score is final only after rating closes, so values may move slightly) and BBC journalist marks (United only). Credit 'BBC Sport' on screen.",
+  "Possession disagrees slightly (ESPN 51/49, BBC 50.8/49.2): not used.",
+  "Full-match United xG: ESPN team stat and BBC 1.07; shot-map sum 1.08 (rounding). Use 1.07 for the full match; half splits from the shot map (0.12 + 0.96).",
+  "Fernandes xG: ESPN player stats 0.87 vs shot-map sum 0.88. Player card uses 0.87.",
+  "Second penalty: ESPN shot map 33' (kick), BBC key events 31' (foul). BBC says 75 seconds / 1 minute 14 seconds between the save and the foul: conflicting, do not put a seconds figure on screen.",
+  "Own-goal minute: ESPN commentary 82' (goal) and 84' (disallowed after VAR), BBC 82'. Don't put a minute on screen for it.",
+  "Lammens' 80' error: ESPN says he failed to gather the cross 'under pressure from Suarez' and United wanted a free-kick; BBC calls it 'a routine cross'. Say 'dropped the cross', not 'unchallenged'.",
+  "The 1.25 xG 'after Lammens errors' is the xG of the 33' penalty plus the 80' shot (Scout calc from the ESPN shot map); it is not an official stat.",
+  "shots_espn.json missed shot 18 (Irankunda 90'+5', 0.02 xG, off target); analysis.py adds it from the cached ESPN page.",
+  "BBC Opta 'Total yellow cards 2/1' conflicts with the line-ups (Lammens 31', Tielemans two yellows): card counts not used.",
+  "Firecrawl for data/analysis: ESPN team-stats scrape (1), BBC search (2), BBC general live page (1), BBC match page (1) = 5 credits; ESPN match page, player stats, report and commentary were free local fetches. No further research needed for the analysis."
+ ]
+}

@@ -1,8 +1,18 @@
 {
  "team_id": "360",
  "source": "https://www.espn.co.uk/football/team/results/_/id/360",
- "fetched_at": "2026-11-22T18:35:16Z",
+ "fetched_at": "2026-11-25T23:53:22Z",
  "last": [
+  {
+   "date": "2026-11-25",
+   "opponent": "Sporting CP",
+   "venue": "A",
+   "score": "2-2",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915373"
+  },
   {
    "date": "2026-11-22",
    "opponent": "Liverpool",
@@ -52,22 +62,12 @@
    "pens": false,
    "competition": "English Premier League",
    "game_id": "401879252"
-  },
-  {
-   "date": "2026-10-21",
-   "opponent": "Como",
-   "venue": "A",
-   "score": "1-4",
-   "result": "L",
-   "pens": false,
-   "competition": "UEFA Champions League",
-   "game_id": "401915395"
   }
  ],
- "run_newest_first": "LDWLLL",
+ "run_newest_first": "DLDWLL",
  "wins": 1,
- "draws": 1,
- "losses": 4,
+ "draws": 2,
+ "losses": 3,
  "gaps": [
   "2026-11-08 to 2026-11-22"
  ],

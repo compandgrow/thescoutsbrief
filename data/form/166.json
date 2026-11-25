@@ -1,0 +1,75 @@
+{
+ "team_id": "166",
+ "source": "https://www.espn.co.uk/football/team/results/_/id/166",
+ "fetched_at": "2026-11-25T23:53:17Z",
+ "last": [
+  {
+   "date": "2026-11-25",
+   "opponent": "Bayern Munich",
+   "venue": "H",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915377"
+  },
+  {
+   "date": "2026-11-21",
+   "opponent": "Lyon",
+   "venue": "H",
+   "score": "0-1",
+   "result": "L",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876402"
+  },
+  {
+   "date": "2026-11-08",
+   "opponent": "Stade Rennais",
+   "venue": "A",
+   "score": "2-1",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876406"
+  },
+  {
+   "date": "2026-11-03",
+   "opponent": "Bodo/Glimt",
+   "venue": "A",
+   "score": "0-0",
+   "result": "D",
+   "pens": false,
+   "competition": "UEFA Champions League",
+   "game_id": "401915384"
+  },
+  {
+   "date": "2026-10-30",
+   "opponent": "Lens",
+   "venue": "H",
+   "score": "1-0",
+   "result": "W",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876420"
+  },
+  {
+   "date": "2026-10-25",
+   "opponent": "AS Monaco",
+   "venue": "A",
+   "score": "1-1",
+   "result": "D",
+   "pens": false,
+   "competition": "French Ligue 1",
+   "game_id": "401876425"
+  }
+ ],
+ "run_newest_first": "WLWDWD",
+ "wins": 3,
+ "draws": 2,
+ "losses": 1,
+ "gaps": [
+  "2026-11-08 to 2026-11-21"
+ ],
+ "note": "Shoot-out results count as W/L for the side that won/lost the shoot-out (pens: true); officially a draw. gaps = more than 12 days between results (international break or missing games): don't claim runs across them without a second source."
+}

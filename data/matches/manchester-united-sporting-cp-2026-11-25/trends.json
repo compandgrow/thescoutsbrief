@@ -1,0 +1,70 @@
+{
+ "match": "SCP 2-2 MUN (UCL league phase, matchday 5)",
+ "generated_at": "2026-11-25T23:58:00Z",
+ "talking_points": [
+  {"id": "t1", "team": "MUN", "type": "pressure",
+   "claim": "Mauricio Pochettino is still waiting for his first win as Manchester United manager: his first game was a 4-0 defeat at Liverpool, his second this 2-2 draw at Sporting, where United led 2-1 until the 80th minute.",
+   "numbers": {"games_in_charge": 2, "wins": 0, "liverpool_score": "4-0", "led_until_minute": 80},
+   "strength": "strong",
+   "sources": [
+    {"what": "Official: manutd.com 'Pochettino: Let's keep our heads up' — 'The Reds were beaten 4-0 by Liverpool at Anfield, playing the majority of Pochettino's first game in charge with 10 men'", "url": "https://www.manutd.com/en/news/pochettino-reaction-to-liverpool-defeat-first-game", "cache": "data/research/scrape_3620b2bb15e3.json"},
+    {"what": "ESPN report: 'Lammens' error denied Mauricio Pochettino a first win in charge'; 'Pochettino's reign began with a chastening 4-0 loss at rivals Liverpool'", "url": "https://www.espn.co.uk/football/report/_/gameId/401915373", "cache": "data/research/scrape_840f5f5b714c.json"},
+    {"what": "The Guardian match report: 'heading for a first victory under Pochettino'; 'Cruising, it seemed, at 2-1 and with 10 minutes left'", "url": "https://www.theguardian.com/football/2026/nov/25/sporting-lisbon-manchester-united-champions-league-match-report", "cache": "data/research/scrape_a11766a86fa1.json"},
+    {"what": "80' equaliser minute: ESPN shot map n=16 (Suárez 80', Goal)", "url": "https://www.espn.co.uk/football/match/_/gameId/401915373/manchester-united-sporting-cp", "cache": "data/matches/manchester-united-sporting-cp-2026-11-25/shots_espn.json"}
+   ],
+   "hook_angle": "Ten minutes from Pochettino's first win. Then his keeper dropped it.",
+   "use_for": "hook",
+   "fresh_until": "2026-11-29"},
+  {"id": "t2", "team": "MUN", "type": "storyline",
+   "claim": "Two United goals were ruled out by referee Szymon Marciniak: Diallo's first-half goal (whistle blown for a Tielemans foul before the ball went in, so VAR could not step in) and Kaique's late own goal (VAR review, foul by Dorgu on the keeper). Tielemans' first booking came from the first decision; he was sent off for a second yellow in stoppage time.",
+   "numbers": {"goals_ruled_out": 2},
+   "strength": "strong",
+   "sources": [
+    {"what": "BBC report (Simon Stone): 'TV replays showed there had been little contact but VAR could not intervene as Marciniak had blown his whistle'; 'Marcinak gave the goal but reversed his decision after spotting an infringement by Patrick Dorgu'", "url": "https://www.bbc.com/sport/football/live/crkgv8v0gdwkt", "cache": "data/research/scrape_fa0b680d039a.json"},
+    {"what": "ESPN report: 'a pair of controversially ruled out goals'; 'referee Szymon Marciniak had incorrectly blown his whistle early meaning the VAR could not intervene'", "url": "https://www.espn.co.uk/football/report/_/gameId/401915373", "cache": "data/research/scrape_840f5f5b714c.json"},
+    {"what": "The Guardian: 'what looked a non-existent foul that also resulted in Amad Diallo's perfectly legal strike being chalked off'; 'ruled the goal out for a foul on the goalkeeper by Patrick Dorgu'", "url": "https://www.theguardian.com/football/2026/nov/25/sporting-lisbon-manchester-united-champions-league-match-report", "cache": "data/research/scrape_a11766a86fa1.json"}
+   ],
+   "hook_angle": "Two goals gifted, two goals chalked off. United's night in Lisbon.",
+   "use_for": "context",
+   "fresh_until": "2026-11-28"},
+  {"id": "t3", "team": "MUN", "type": "form",
+   "claim": "Manchester United have one win in their last six games in all competitions (W1 D2 L3).",
+   "numbers": {"wins_last_6": 1, "draws_last_6": 2, "losses_last_6": 3},
+   "strength": "strong",
+   "sources": [
+    {"what": "ESPN results via data/form/360.json: D 2-2 Sporting, L 0-4 Liverpool, D 4-4 Aston Villa, W 3-2 Roma, L 0-2 Chelsea, L 0-3 Bournemouth (newest first). Form file flags a gap 2026-11-08 to 2026-11-22; the BBC form guide (all competitions) lists the same five previous results in the same order with nothing between them (L v Liverpool 4-0, D v Aston Villa 4-4, W v Roma 3-2, L v Chelsea 2-0, L v Bournemouth 0-3), so the run does not hide a missing game.", "url": "https://www.espn.co.uk/football/team/results/_/id/360", "cache": "data/form/360.json; BBC form guide in data/research/scrape_fa0b680d039a.json"}
+   ],
+   "hook_angle": "One win in six. And tonight a 2-1 lead lasted thirty minutes.",
+   "use_for": "context|outro",
+   "fresh_until": "2026-11-29"}
+ ],
+ "fan_buzz": {
+  "thread": null,
+  "themes": [
+   {"theme": "Lammens vs the referee: who cost United the win?", "share": "not measured (Reddit unreachable); the question is how BBC, ESPN, the Guardian and Sky framed the night", "confirmed_by": "BBC report + 'How they rated' (Lammens 3), ESPN report headline 'Lammens errors cost Man United win', Guardian 'Lammens howler costs Manchester United victory', Sky Sports video 'disallowed goal after Senne Lammens error'; referee side: t2", "use_for": "outro question"},
+   {"theme": "Fernandes' divot goal (0.02 xG)", "share": "not measured", "confirmed_by": "insights.json surprise_stat; ESPN report; BBC report; Guardian", "use_for": "story/surprise"}
+  ],
+  "club_subs": [],
+  "status": "Reddit unreachable: `python3 engine/reddit.py match \"Sporting CP\" \"Manchester United\"` -> 'Reddit RSS error 404 on /r/soccer/search'; `python3 engine/reddit.py club MUN` -> 'Reddit RSS error 404 on /r/reddevils/hot/' (keyless RSS mode, no API keys). No thread size, no fan themes measured."
+ },
+ "rejected": [
+  {"claim": "Lammens also made howlers for two goals in the 4-4 draw with Aston Villa and a mix-up against Fulham", "reason": "only one outlet (The Guardian); needs a second trusted outlet"},
+  {"claim": "Tielemans' red was United's fifth red card in six weeks", "reason": "only one outlet (The Guardian)"},
+  {"claim": "United unbeaten in their last 13 major European matches against Portuguese opposition (W9 D4)", "reason": "single outlet (ESPN commentary, written before full time); not tied to this match's story"},
+  {"claim": "Sporting manager Paulo Fonseca in only his third game in charge", "reason": "only one outlet (The Guardian); Sporting angle not needed"},
+  {"claim": "Fernandes created the divot himself moments earlier", "reason": "only one outlet (The Guardian, 'in replays it transpired')"},
+  {"claim": "Lammens 'lucky to escape a red card' for the second penalty", "reason": "opinion, one outlet (The Guardian)"}
+ ],
+ "best_angle": "t1",
+ "reel_angle": {
+  "source": "talking_point",
+  "fan_question": "Who cost United Pochettino's first win: Lammens or the referee?",
+  "data_answer": "Both Sporting goals came straight from Lammens errors: the second penalty he conceded (0.79 xG) and the 80th-minute dropped cross (0.46 xG), 1.25 of Sporting's 2.46 xG between them. The referee ruled out two United goals. Lammens' shot-stopping was fine (penalty save, +0.69 goals prevented on ESPN); the errors were the problem. BBC users rated him 2.91, lowest on the pitch.",
+  "evidence": ["insights.json worst_player", "insights.json team_story xG from penalties", "insights.json referee_context", "trends.json t1", "trends.json t2"],
+  "fan_heat": "not measured: Reddit returned 404 in keyless RSS mode. Trusted-outlet framing: ESPN, Guardian and Sky Sports all put Lammens' error in their headlines; BBC, ESPN and the Guardian all criticise the referee.",
+  "hook_angle": "Ten minutes from Pochettino's first win. Then his keeper dropped it.",
+  "why": "No Reddit signal, so best_angle t1 (strong: official + 2 outlets) ties straight to the data's biggest story (Lammens' errors behind both Sporting goals), with the referee row as the counter-argument for the outro debate."
+ },
+ "credits_used": 5,
+ "notes": "Credits: form 360 and 2250 free (local fetch); search 'Sporting CP Manchester United' (2), search 'Pochettino Lammens Manchester United' (2), manutd.com scrape (1, Firecrawl); Guardian report was a free local fetch. Monthly usage was ~281/800 at start (35%), under the 85% cutoff. Reddit: both commands ran and returned 404 (see fan_buzz.status); continued with trusted-site research. Minute differences vs insights.json: Guardian says Dorgu and Dalot came on 'On 65 minutes' (ESPN/BBC 64') and calls the second penalty 'two penalties in two first-half minutes' (ESPN shot map 30' and 33'; BBC key events 30'/31'); the scriptwriter should not quote a minute or seconds gap between the two penalties. Sporting form (data/form/2250.json): DWWWWL newest first, with a gap 2026-11-07 to 2026-11-21 — not used."
+}

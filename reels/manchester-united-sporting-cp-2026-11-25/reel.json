@@ -1,0 +1,115 @@
+{
+ "id": "manchester-united-sporting-cp-2026-11-25",
+ "format_version": 4,
+ "trend_used": "t1",
+ "experiment": "format v4 (beat 1 = the reason behind the hook's paradox: Lammens' penalty save, then the penalty and the dropped cross, not another goal count); hook names both clubs, number first; best_angle t1 (Pochettino's first win) at beat 2 with the two-name question ~11 s and a stat per name, repeated as outro and caption first line",
+ "angle_source": "talking_point",
+ "fan_question": "Who cost United Pochettino's first win: Lammens or the referee?",
+ "match": {
+  "pill": "SCP 2–2 MUN · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Two-two in Lisbon. Both Sporting goals started with United's keeper.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "SPORTING 2–2 MAN UTD",
+    "text": "BOTH SPORTING GOALS:\n*UNITED'S KEEPER*",
+    "size": 112,
+    "source": "ESPN report · BBC Sport"
+   }
+  },
+  {
+   "say": "Lammens saved the first penalty, then gave away the second. Two-one up at eighty minutes, he dropped a cross.",
+   "emotion": "disappointed",
+   "slam": [
+    5.2
+   ],
+   "card": {
+    "type": "stat",
+    "kicker": "LAMMENS: SAVE, THEN TWO ERRORS",
+    "value": "1.25",
+    "unit": "xG FROM HIS TWO ERRORS",
+    "label": "of Sporting's *2.46*",
+    "sub": "33' penalty 0.79 · 80' goal 0.46",
+    "source": "ESPN shot map · Scout calc"
+   }
+  },
+  {
+   "say": "Ten minutes from Pochettino's first win. So who cost it: Lammens, or the referee who ruled out two United goals?",
+   "emotion": "neutral",
+   "emote": [
+    [
+     4.6,
+     "smug"
+    ]
+   ],
+   "card": {
+    "type": "compare",
+    "kicker": "WHO COST POCHETTINO HIS FIRST WIN?",
+    "teams": [
+     "LAMMENS",
+     "REFEREE"
+    ],
+    "rows": [
+     {
+      "label": "GOALS IT COST UNITED",
+      "a": 2,
+      "b": 2,
+      "fa": "2 gifted",
+      "fb": "2 ruled out"
+     }
+    ],
+    "source": "ESPN report · BBC Sport · The Guardian · manutd.com"
+   }
+  },
+  {
+   "say": "BBC users' worst on the pitch: Lammens, two point nine one. His saves were fine. His errors weren't.",
+   "emotion": "disappointed",
+   "emote": [
+    [
+     4.4,
+     "angry"
+    ]
+   ],
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "BBC USERS' WORST ON THE PITCH",
+    "name": "Senne Lammens",
+    "team": "Manchester United",
+    "stats": [
+     [
+      "BBC Sport mark",
+      "3/10"
+     ],
+     [
+      "penalties saved",
+      "1"
+     ],
+     [
+      "goals prevented (ESPN)",
+      "+0.69"
+     ]
+    ],
+    "source": "BBC Sport ratings · ESPN player stats",
+    "rating": "2.91",
+    "ratingLabel": "BBC USERS"
+   }
+  },
+  {
+   "say": "Lammens or the referee: who cost United?",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "LAMMENS OR\nTHE *REFEREE*?",
+    "size": 120,
+    "source": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "bayern-munich-lille-2026-11-25",
+ "format_version": 4,
+ "trend_used": "t1",
+ "experiment": "format v4 (beat 1 = the reason behind the hook's paradox: open-play xG 0.25 v 2.06, not possession); trend with use_for hook (t1, official 30-game record) in the hook with the score on the card; two-name question at beat 3 (~10-13 s) with a half-by-half stat line, repeated as outro and caption first line",
+ "angle_source": "talking_point",
+ "fan_question": "Who lost this one: Pavlović, or Bayern's second half?",
+ "match": {
+  "pill": "LIL 2–1 BAY · UCL",
+  "league": "UCL"
+ },
+ "beats": [
+  {
+   "say": "Thirty games unbeaten when one up at half-time. Until Lille.",
+   "emotion": "shocked",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "BAYERN · UCL · ONE UP AT HALF-TIME",
+    "text": "*30* UNBEATEN\nTHEN LILLE *2–1*",
+    "size": 120,
+    "source": "FC Bayern official live ticker · ESPN"
+   }
+  },
+  {
+   "say": "The reason? Open-play expected goals: Bayern nought point two five. Lille two point oh six.",
+   "emotion": "disappointed",
+   "slam": [3.2],
+   "card": {
+    "type": "compare",
+    "kicker": "WHERE BAYERN'S CHANCES CAME FROM",
+    "teams": ["LILLE", "BAYERN"],
+    "rows": [
+     {"label": "xG FROM OPEN PLAY", "a": 2.06, "b": 0.25, "fa": "2.06", "fb": "0.25"},
+     {"label": "xG FROM SET PLAYS", "a": 0.05, "b": 0.93, "fa": "0.05", "fb": "0.93"}
+    ],
+    "source": "BBC Sport (Opta) match stats"
+   }
+  },
+  {
+   "say": "Bayern's expected goals: one before the break, nought point two after. Who lost this: Pavlović, or the second half?",
+   "emotion": "disappointed",
+   "emote": [[4.4, "neutral"]],
+   "card": {
+    "type": "compare",
+    "kicker": "PAVLOVIĆ, OR THE 2ND HALF?",
+    "teams": ["LILLE", "BAYERN"],
+    "rows": [
+     {"label": "1ST HALF xG", "a": 0.57, "b": 1.0, "fa": "0.57", "fb": "1.00"},
+     {"label": "2ND HALF xG", "a": 1.55, "b": 0.2, "fa": "1.55", "fb": "0.20"}
+    ],
+    "source": "ESPN shot map (own goal excluded)"
+   }
+  },
+  {
+   "say": "Pavlović: the own goal that decided it. Two shots, nought point oh seven expected goals.",
+   "emotion": "disappointed",
+   "emote": [[2.4, "angry"]],
+   "hit": true,
+   "card": {
+    "type": "player",
+    "verdict": "worst",
+    "kicker": "WORST ON THE PITCH · SCOUT'S PICK",
+    "name": "Aleksandar Pavlović",
+    "team": "Bayern Munich",
+    "stats": [["own goal", "65'"], ["shots", "2"], ["xG", "0.07"], ["touches", "87"]],
+    "source": "ESPN player stats · shot map"
+   }
+  },
+  {
+   "say": "Two hundred and ten final-third passes. Twenty-two touches in the box. Lille had twenty-five!",
+   "emotion": "angry",
+   "slam": [4.6],
+   "card": {
+    "type": "stat",
+    "kicker": "BAYERN, 64.7% OF THE BALL",
+    "value": "210",
+    "unit": "FINAL-THIRD PASSES",
+    "label": "Box touches: Lille *25* · Bayern *22*",
+    "sub": "successful final-third passes: Lille 49",
+    "source": "BBC Sport (Opta) match stats"
+   }
+  },
+  {
+   "say": "Pavlović, or the second half? Tell me below.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "@THESCOUTBRIEF",
+    "text": "PAVLOVIĆ\nOR THE *2ND HALF*?",
+    "size": 110,
+    "source": "ESPN · BBC Sport · FC Bayern"
+   }
+  }
+ ]
+}

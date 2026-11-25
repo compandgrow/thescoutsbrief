@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 281,
+  "credits": 295,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -3246,6 +3246,86 @@
     "at": "2026-11-25T23:51:23Z",
     "what": "scrape https://www.espn.co.uk/football/playerstats/_/gameId/401915374",
     "credits": 1
+   },
+   {
+    "at": "2026-11-25T23:53:17Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/132",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:53:17Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/166",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:53:22Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/360",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:53:30Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/2250",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:53:35Z",
+    "what": "search Lille Bayern Munich",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-25T23:53:43Z",
+    "what": "scrape https://fcbayern.com/en/matches/profis/champions-league/2026-2027/osc-lille-fc-bayern-muenchen-25-11-2026/liveticker",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-25T23:53:48Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/160",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:53:48Z",
+    "what": "search Sporting CP Manchester United",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-25T23:53:48Z",
+    "what": "local scrape https://www.espn.co.uk/football/team/results/_/id/104",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:53:58Z",
+    "what": "search Pochettino Lammens Manchester United",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-25T23:54:04Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/25/sporting-lisbon-manchester-united-champions-league-match-report",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:54:10Z",
+    "what": "scrape https://www.manutd.com/en/news/pochettino-reaction-to-liverpool-defeat-first-game",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-25T23:54:13Z",
+    "what": "search Kompany Lille defeat",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-25T23:54:37Z",
+    "what": "search Paris Saint-Germain Roma",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-25T23:54:47Z",
+    "what": "local scrape https://www.espn.co.uk/football/report/_/gameId/401915374",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:54:58Z",
+    "what": "search PSG Roma draw winning run",
+    "credits": 2
    }
   ]
  }
