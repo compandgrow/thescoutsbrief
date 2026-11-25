@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 280,
+  "credits": 281,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -3231,6 +3231,21 @@
     "at": "2026-11-25T23:51:08Z",
     "what": "local scrape https://www.espn.co.uk/football/commentary/_/gameId/401915373",
     "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:51:11Z",
+    "what": "local scrape https://www.espn.co.uk/football/player-stats/_/gameId/401915377",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:51:12Z",
+    "what": "local scrape https://www.espn.co.uk/football/report/_/gameId/401915377",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-25T23:51:23Z",
+    "what": "scrape https://www.espn.co.uk/football/playerstats/_/gameId/401915374",
+    "credits": 1
    }
   ]
  }
