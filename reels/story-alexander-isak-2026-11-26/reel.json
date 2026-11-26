@@ -12,14 +12,14 @@
  },
  "beats": [
   {
-   "say": "Not for sale, said Newcastle. Then a British record.",
-   "caption": "Not for sale, said Newcastle. Then a British record.",
+   "say": "Newcastle: not for sale. Then a British record.",
+   "caption": "Newcastle: not for sale. Then a British record.",
    "emotion": "smug",
    "hit": true,
    "card": {
     "type": "hook",
-    "kicker": "LIVERPOOL STRIKER · ALEXANDER ISAK",
-    "text": "\"NOT FOR SALE.\"\nTHEN A *BRITISH RECORD*.",
+    "kicker": "NEWCASTLE · ALEXANDER ISAK",
+    "text": "NOT FOR SALE.\nTHEN A *BRITISH RECORD*.",
     "size": 110,
     "source": "BBC Sport, Guardian"
    }
@@ -32,7 +32,7 @@
     "type": "chapter",
     "kicker": "CHAPTER 1",
     "year": "19 AUG 2025 · PFA AWARDS",
-    "text": "\"WHEN PROMISES ARE BROKEN\nAND TRUST IS LOST… THE\nRELATIONSHIP *CAN'T CONTINUE*.\"",
+    "text": "\"WHEN PROMISES ARE BROKEN\nAND TRUST IS LOST, THE\nRELATIONSHIP *CAN'T CONTINUE*.\"",
     "size": 80,
     "sub": "Alexander Isak, Instagram statement, 2025 · named in the PFA team of the season, didn't attend",
     "source": "BBC Sport, Guardian"
@@ -50,15 +50,15 @@
     "type": "chapter",
     "kicker": "CHAPTER 2",
     "year": "2025 · ST JAMES' PARK",
-    "text": "\"NO COMMITMENT HAS\n*EVER* BEEN MADE.\"",
+    "text": "\"NO COMMITMENT HAS\n*EVER* BEEN MADE…\"",
     "size": 110,
     "sub": "Newcastle United statement, 19 Aug 2025 · Liverpool's £110m bid rejected, 1 Aug",
     "source": "BBC Sport, Guardian"
    }
   },
   {
-   "say": "And that's not the wild part. Newcastle signed a striker. Liverpool came back.",
-   "caption": "And that's not the wild part. Newcastle signed a striker. Liverpool came back.",
+   "say": "Newcastle signed a striker. Liverpool came back.",
+   "caption": "Newcastle signed a striker. Liverpool came back.",
    "emotion": "excited",
    "card": {
     "type": "chapter",
