@@ -24,16 +24,16 @@
    }
   },
   {
-   "say": "The reason? Roma's centre-back. Mario Hermoso: five shots, one point two expected goals. More than any PSG player.",
+   "say": "The reason? Centre-back Hermoso: five shots, one point two expected goals. More than any PSG player.",
    "emotion": "neutral",
    "emote": [
     [
-     5.2,
+     4.6,
      "disappointed"
     ]
    ],
    "slam": [
-    5.2
+    4.6
    ],
    "card": {
     "type": "stat",
@@ -46,16 +46,12 @@
    }
   },
   {
-   "say": "Dembélé: on at fifty-nine, scored at sixty-two. Vitinha: ninety accurate passes, then the handball. Who decided it?",
+   "say": "Dembélé: on at fifty-nine, scored at sixty-two. Vitinha: ninety accurate passes, then the handball.",
    "emotion": "neutral",
    "emote": [
     [
-     4.6,
+     4.4,
      "disappointed"
-    ],
-    [
-     6.6,
-     "smug"
     ]
    ],
    "card": {
@@ -70,7 +66,7 @@
   },
   {
    "say": "Scout's pick, and it hurts: Hermoso. Twelve defensive interventions, six duels won, and the opener.",
-   "emotion": "excited",
+   "emotion": "smug",
    "hit": true,
    "card": {
     "type": "player",
