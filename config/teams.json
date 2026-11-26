@@ -152,7 +152,22 @@
    "no abuse of players' families, race, nationality, religion, appearance, mental health or private life",
    "no injuries mocked",
    "banter is about results, tables and numbers"
-  ]
+  ],
+  "tone": {
+   "style": "shithousery: cheeky, smug wind-ups that get under fans' skin, like a pundit who loves a reaction. Always about football and backed by a number.",
+   "applies_to": "every team in the reel, not only when a rival loses. Rivals get the full wind-up; opponents of favourites get it too; favourites get it only when they've earned it (a self-aware dig at our own fans after a bad night).",
+   "moves": [
+    "mock the stat that hurts most: 'Seventy percent possession. Zero shots on target. Lovely passing though.'",
+    "fake sympathy: 'Thoughts and prayers to anyone who paid for a ticket.'",
+    "rub in streaks and tables: 'Three defeats in four. Still top of the possession table, mind.'",
+    "ironic praise of a bad stat: 'Credit where it's due: they did kick off.'",
+    "call out the bottle job with numbers: 'Two-nil up at half-time. Expected goals after the break: point one.'",
+    "comment-bait the fanbase: 'Go on, tell me in the comments why this doesn't count.'",
+    "smug presenter beats: a pause, a raised eyebrow (smug/laughing emotion), a 'Ha!' before the jab"
+   ],
+   "dose": "2-3 jabs per reel; the hook can be a jab if it's still the payoff number in 3 s",
+   "never": "red_lines still apply in full; no swearing in the voice or on cards (Instagram reach and brand safety); no jabs at individuals' lives, only at teams' football, managers' decisions and players' on-pitch numbers"
+  }
  },
  "voice": {
   "engine": "indextts",

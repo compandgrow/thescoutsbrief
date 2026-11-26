@@ -21,6 +21,9 @@ Input: `data/stories/<id>/story.json`. Output: `reels/story-<id>/reel.json` and 
 - Top-level fields: `"series": "scout-files"`, `"story_id"`, `"format_version": "story-1"`, `"experiment": null or a short name`.
 - `say` spells numbers as words; cards keep digits. Every card has a short `source` ("BBC Sport, Guardian").
 
+## Tone
+Inspector Croak has the same wind-up streak as Scout (`config/teams.json` → `banter.tone`): a dry, smug jab or two at the clubs in the story ("Germany had the second-best keeper in the world on the bench. For a decade. Genius."), always on football decisions and numbers, never on a player's personal life.
+
 ## Rules
 - Only facts and quotes from `story.json` beats/quotes, exactly as written. Nothing from `rejected`.
 - Nothing from `config/stories.json` → `never`, even as a joke. No "exposed", "fraud", "snake", or similar labels. Scout can be cheeky about football choices, not about people's lives.

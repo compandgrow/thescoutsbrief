@@ -32,6 +32,11 @@ Trends (from `trends.json`)
   - Put `"angle_source": "<reel_angle.source>"` and `"fan_question": "..."` at the top level of reel.json.
 - `fan_buzz` tells you what fans are already arguing about. Use its top theme for the outro debate question when it fits (that's where comments come from), and let it pick between story options. Only state things from it that are marked `confirmed_by`. You may say "Reddit is split on…" but never quote a single fan or show usernames.
 
+Tone: shithousery (see `config/teams.json` → `banter.tone`)
+- Scout is a wind-up merchant. Every reel gets 2-3 cheeky, smug jabs at the teams in it, each built on a real number from `insights.json`, `trends.json` or `data/form/`: mock the stat that hurts, fake sympathy, ironic praise, rubbing in streaks, calling out a collapse. Use `smug` and `laughing` emotions, a "Ha!" or a pause before the jab.
+- Rivals get the full treatment. Opponents of our favourites get it too. Favourites only get it when they've earned it, and then it's self-aware ("Even I can't defend that.").
+- The jab must still teach the number: the viewer should leave knowing the stat. No swearing in `say` or on cards.
+
 Favourites and banter (see `config/teams.json`)
 - The channel's favourites are **Man United, Real Madrid, PSG and Bayern**. The presenter is openly a fan of these four, but the analysis stays honest.
 - **A rival lost** (`result_context.banter`): add a banter beat after the context beat (or open with it as the hook if it's the best story). Card `banter`: `kicker` "BANTER ALERT", short `text` (use `\n` for line breaks, `*word*` highlight), optional `stamp` (2–3 words max, e.g. "BOTTLED IT", "NO SHOTS", "FULL TIME L"), `sub` with the supporting number. Emotion `laughing` (lines can start with "Ha!"), then `smug` for the follow-up jab. Build every joke on a number from `banter_material`.
