@@ -56,3 +56,59 @@ Nothing from `rejected` is used: no 10-goal tally, no away-game streak, no broke
 ## Caption
 
 `caption.txt` exists. After fix 1, nothing in it lacks a source. The question is repeated and the hashtags are fine.
+
+---
+
+# Round 2
+
+**Verdict: PASS**
+
+All four required fixes and the cut asked for in round 1 are in reel.json, caption.txt, timing.json and the new out/reel.mp4. Every on-screen fact and quote was checked again against the cached pages. Nothing new was found that needs fixing.
+
+## Round 1 fixes verified
+
+1. **Quote marks on "NOT FOR SALE." are gone.**
+   - The hook card `text` is `NOT FOR SALE.\nTHEN A *BRITISH RECORD*.`, and the frame-0 render matches.
+   - `caption.txt` line 1 is `Newcastle: not for sale. Then a British record.` with no quote marks.
+   - The kicker reads `NEWCASTLE · ALEXANDER ISAK`. As a paraphrase of the club's position it is backed by BBC ba92fab37c16 ("maintained publicly that Isak isn't for sale") and Guardian 9f44a996916b ("Isak was not for sale").
+2. **The hook payoff now lands inside 3 s.**
+   - `say` is `Not for sale. Then a British record.`: 7 words, within the 10-word limit.
+   - timing.json beat 0 runs from 0.05 to 2.991 s.
+   - Silencedetect on voice.wav shows speech ends at 2.943 s, with silence until beat 1 starts at 3.32 s. "Record" therefore ends before 3.0 s.
+   - Frame 0 (the cover) shows the full hook card with BRITISH RECORD in red. The card then re-animates and is fully back by about 0.4 s.
+3. **The chapter 1 quote is now verbatim.** The card reads `"WHEN PROMISES ARE BROKEN / AND TRUST IS LOST, THE / RELATIONSHIP CAN'T CONTINUE."`, which matches BBC ba92fab37c16 exactly. Guardian 795ae5d05be6 has the same words, once with the comma and once without. The frame at 5.5 s is checked: no ellipsis and no clipping.
+4. **The chapter 2 cut is marked.** The card reads `"NO COMMITMENT HAS / EVER BEEN MADE…"`, a true prefix of the Newcastle statement in BBC ba92fab37c16 and Guardian 795ae5d05be6. The ellipsis is visible in the frame at 11 s.
+5. **The filler line is gone.** "And that's not the wild part." has been removed. Beat 3 opens `Newcastle signed a striker. Liverpool came back.`, and the reel is now 39.5 s against a 30-40 s target.
+
+## Facts re-checked (2 trusted outlets each)
+
+| Claim | Sources |
+|---|---|
+| £125m British record, deadline day 1 Sep 2025, six-year contract | BBC c470ab1dacf8; Guardian 9f44a996916b |
+| £110m bid rejected 1 Aug | Guardian 9f44a996916b ("rejected on 1 August"); BBC c470ab1dacf8; Guardian 795ae5d05be6; BBC ba92fab37c16 |
+| Skipped the PFA awards and named in the PFA team of the season; Instagram statement 19 Aug 2025 | BBC ba92fab37c16; Guardian 795ae5d05be6 |
+| Newcastle signed Woltemade from Stuttgart, then a higher Liverpool offer | BBC c470ab1dacf8; Guardian 9f44a996916b |
+| "I want to create history. I want to win trophies." | BBC c470ab1dacf8; Guardian 9f44a996916b (verbatim) |
+| 25 Nov 2026, Club Brugge 0-3 Liverpool, Isak 2 goals, one a chip | BBC 20c7a248699e ("Wednesday's 3-0 win", "scoring twice", "chipped"); Guardian bcb3b86bbda7 (Wed 25 Nov 2026, "a double", "impudent chip", "You see 3-0") |
+| Iraola: "…in a great moment right now." | BBC 20c7a248699e ("He is in a great moment right now"); Guardian bcb3b86bbda7 ("Alex is in a great moment right now"). The leading ellipsis correctly marks the cut. |
+
+- Nothing from `rejected` is used: no 10-goal tally, no away streak, no broken leg, no "greedy" chant, no wages or £130m, no injury claim and no 21:30 detail.
+- Nothing from `config/stories.json` → `never` is used. The jabs ("Not for sale, then. Just not for a hundred and ten.") target the club's transfer decision and are backed by £110m and £125m. There is no swearing.
+- Minor point: "chip" is not written into a story.json fact, but both cached sources confirm it. Not blocking.
+
+## Watch
+
+- Full-size frames were checked at 0, 5.5, 11, 17, 23.5, 29, 35.5 and 39.3 s, along with the first 16 frames, review_a.jpg and review_b.jpg (regenerated). The hook, chapter 1, chapter 2, twist, stat (125 £M), now (2 GOALS) and outro cards all render with no clipped or overlapping text, and the captions match each card.
+- The host is `presenter: frog3d` and is visible throughout.
+- The outro carries the open question ("Right call, or should Newcastle hold firm?").
+- Already accepted in round 1 and still cosmetic only:
+  - the empty caption bar in the last ~1 s
+  - the "125 £M" unit order
+  - the outro card says "hold firm" while the voice says "have held firm"
+
+## Specs
+
+- 1080x1920, H.264 + AAC 44.1 kHz stereo, 30 fps.
+- 39.50 s, within the 45 s story cap and the 30-40 s target.
+- 7 beats and 88 spoken words.
+- Integrated loudness is -14.8 LUFS.

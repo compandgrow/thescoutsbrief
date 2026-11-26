@@ -48,6 +48,13 @@
    "club_key": "BAY",
    "zernio_post": "6b05d85fe6543d826edfc2a9",
    "scheduled_for": "2026-11-24T19:33:00Z"
+  },
+  {
+   "id": "alexander-isak-2026-11-26",
+   "player": "Alexander Isak",
+   "club_key": "LIV",
+   "zernio_post": "6b087d059f2ecb7e8a86c678",
+   "scheduled_for": "2026-11-26T19:40:00Z"
   }
  ],
  "skipped": []
