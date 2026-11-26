@@ -12,6 +12,7 @@
  "beats": [
   {
    "say": "Roma four big chances, PSG two.",
+   "emo_alpha": 0.8,
    "emotion": "shocked",
    "hit": true,
    "card": {
