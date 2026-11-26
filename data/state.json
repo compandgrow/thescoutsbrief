@@ -317,6 +317,15 @@
    "mode": "auto",
    "at": "2026-11-26",
    "scheduled_for": "2026-11-26T01:20:00Z"
+  },
+  {
+   "espn_id": "401915377",
+   "reel": "bayern-munich-lille-2026-11-25",
+   "zernio_post": "6b077c64c5a003caa3d25413",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-26",
+   "scheduled_for": "2026-11-26T01:25:00Z"
   }
  ],
  "skipped": [
