@@ -326,6 +326,15 @@
    "mode": "auto",
    "at": "2026-11-26",
    "scheduled_for": "2026-11-26T01:25:00Z"
+  },
+  {
+   "espn_id": "401915374",
+   "reel": "as-roma-paris-saint-germain-2026-11-25",
+   "zernio_post": "6b078175d331e9c11e962fc0",
+   "status": "scheduled",
+   "mode": "auto",
+   "at": "2026-11-26",
+   "scheduled_for": "2026-11-26T01:46:00Z"
   }
  ],
  "skipped": [
@@ -398,6 +407,21 @@
    "espn_id": "401915295",
    "reason": "Arsenal 1-1 Dortmund: rival didn't lose to an unwatched club",
    "at": "2026-11-24"
+  },
+  {
+   "espn_id": "401915292",
+   "reason": "Club Brugge 0-3 Liverpool: rival didn't lose to an unwatched club",
+   "at": "2026-11-26"
+  },
+  {
+   "espn_id": "401915378",
+   "reason": "Sabah FK 1-4 Barcelona: rival didn't lose to an unwatched club",
+   "at": "2026-11-26"
+  },
+  {
+   "espn_id": "401915291",
+   "reason": "Atl\u00e9tico 2-0 Viking FK: rival didn't lose to an unwatched club",
+   "at": "2026-11-26"
   }
  ]
 }
