@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Two-two in Lisbon. Both Sporting goals started with United's keeper.",
+   "say": "Both Sporting goals started with United's keeper.",
    "emotion": "shocked",
    "hit": true,
    "card": {
