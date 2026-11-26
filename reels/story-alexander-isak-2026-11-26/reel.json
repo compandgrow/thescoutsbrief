@@ -1,0 +1,117 @@
+{
+ "id": "story-alexander-isak-2026-11-26",
+ "series": "scout-files",
+ "story_id": "alexander-isak-2026-11-26",
+ "format_version": "story-2",
+ "experiment": "setup-plain-sentence #2 of 3: beat 1 = one plain new fact of 10 words (skipped the awards night, 'promises broken'), quote only on the card; contradiction hook; 30-40 s",
+ "presenter": "frog3d",
+ "music": "noir",
+ "match": {
+  "pill": "SCOUT FILES #8 · ALEXANDER ISAK",
+  "league": "STORY"
+ },
+ "beats": [
+  {
+   "say": "Not for sale, said Newcastle. Then a British record.",
+   "caption": "Not for sale, said Newcastle. Then a British record.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "hook",
+    "kicker": "LIVERPOOL STRIKER · ALEXANDER ISAK",
+    "text": "\"NOT FOR SALE.\"\nTHEN A *BRITISH RECORD*.",
+    "size": 110,
+    "source": "BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "He skipped an awards night to say: promises were broken.",
+   "caption": "He skipped an awards night to say: promises were broken.",
+   "emotion": "disappointed",
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 1",
+    "year": "19 AUG 2025 · PFA AWARDS",
+    "text": "\"WHEN PROMISES ARE BROKEN\nAND TRUST IS LOST… THE\nRELATIONSHIP *CAN'T CONTINUE*.\"",
+    "size": 90,
+    "sub": "Alexander Isak, Instagram statement, 2025 · named in the PFA team of the season, didn't attend",
+    "source": "BBC Sport, Guardian"
+   },
+   "slam": [
+    0.3
+   ]
+  },
+  {
+   "say": "Newcastle hit back: no promise was ever made. They'd already turned down a hundred and ten million.",
+   "caption": "Newcastle hit back: no promise was ever made. They'd already turned down £110m.",
+   "emotion": "angry",
+   "hit": true,
+   "card": {
+    "type": "chapter",
+    "kicker": "CHAPTER 2",
+    "year": "2025 · ST JAMES' PARK",
+    "text": "\"NO COMMITMENT HAS\n*EVER* BEEN MADE.\"",
+    "size": 110,
+    "sub": "Newcastle United statement, 19 Aug 2025 · Liverpool's £110m bid rejected, 1 Aug",
+    "source": "BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "And that's not the wild part. Newcastle signed a striker. Liverpool came back.",
+   "caption": "And that's not the wild part. Newcastle signed a striker. Liverpool came back.",
+   "emotion": "excited",
+   "card": {
+    "type": "chapter",
+    "kicker": "THE TWIST",
+    "year": "AUG 2025 · DEADLINE WEEK",
+    "text": "NEWCASTLE SIGNED *WOLTEMADE*.\nLIVERPOOL\n*CAME BACK*.",
+    "size": 105,
+    "sub": "Nick Woltemade from Stuttgart · then a higher Liverpool offer",
+    "source": "BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "Deadline day: a hundred and twenty-five million. Not for sale, then. Just not for a hundred and ten.",
+   "caption": "Deadline day: £125m. Not for sale, then. Just not for £110m.",
+   "emotion": "smug",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "1 SEP 2025 · DEADLINE DAY",
+    "value": 125,
+    "unit": "£M",
+    "label": "*British transfer record* · six-year contract",
+    "sub": "Isak: \"I want to create history. I want to win trophies.\"",
+    "source": "BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "Wednesday in Bruges? Two goals, one a cheeky chip. Liverpool won three-nil.",
+   "caption": "Wednesday in Bruges? 2 goals, one a cheeky chip. Liverpool won 3-0.",
+   "emotion": "excited",
+   "hit": true,
+   "card": {
+    "type": "stat",
+    "kicker": "25 NOV 2026 · CHAMPIONS LEAGUE",
+    "value": 2,
+    "unit": " GOALS",
+    "label": "Club Brugge *0-3* Liverpool",
+    "sub": "Iraola: \"…in a great moment right now.\"",
+    "source": "BBC Sport, Guardian"
+   }
+  },
+  {
+   "say": "Isak forced it. Right call, or should Newcastle have held firm? Follow for the next Scout File.",
+   "caption": "Isak forced it. Right call, or should Newcastle have held firm? Follow for the next Scout File.",
+   "emotion": "happy",
+   "card": {
+    "type": "outro",
+    "kicker": "SCOUT FILES #8",
+    "text": "RIGHT CALL, OR SHOULD\nNEWCASTLE *HOLD FIRM*?",
+    "size": 105,
+    "sub": "£110m rejected · £125m British record · 2 goals at Brugge",
+    "source": "BBC Sport, Guardian"
+   }
+  }
+ ]
+}
