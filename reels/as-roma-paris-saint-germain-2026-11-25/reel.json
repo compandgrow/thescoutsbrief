@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Roma four big chances, PSG two. PSG's perfect start: over.",
+   "say": "Roma four big chances, PSG two.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -60,10 +60,10 @@
    "card": {
     "type": "stat",
     "kicker": "DEMBÉLÉ OR VITINHA?",
-    "value": "59' → 62'",
-    "unit": "DEMBÉLÉ: ON, THEN PENALTY GOAL",
-    "label": "Vitinha: *90* of 100 passes accurate · handball → 2–2",
-    "sub": "Malen scored the penalty at 78' after a VAR check",
+    "value": "59'→62'",
+    "unit": "",
+    "label": "Dembélé: on, then pen goal · Vitinha: *90*/100 passes accurate",
+    "sub": "then the handball → Malen pen 78' after VAR → 2–2",
     "source": "BBC Sport line-ups & live text · ESPN"
    }
   },
@@ -81,10 +81,6 @@
      [
       "goal",
       "5'"
-     ],
-     [
-      "shots",
-      "5"
      ],
      [
       "xG",
