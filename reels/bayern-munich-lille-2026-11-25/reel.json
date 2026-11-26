@@ -11,7 +11,7 @@
  },
  "beats": [
   {
-   "say": "Thirty games unbeaten when one up at half-time. Until Lille.",
+   "say": "Lille just ended Bayern's thirty-game half-time unbeaten run.",
    "emotion": "shocked",
    "hit": true,
    "card": {
@@ -25,14 +25,31 @@
   {
    "say": "The reason? Open-play expected goals: Bayern nought point two five. Lille two point oh six.",
    "emotion": "disappointed",
-   "slam": [3.2],
+   "slam": [
+    3.2
+   ],
    "card": {
     "type": "compare",
     "kicker": "WHERE BAYERN'S CHANCES CAME FROM",
-    "teams": ["LILLE", "BAYERN"],
+    "teams": [
+     "LILLE",
+     "BAYERN"
+    ],
     "rows": [
-     {"label": "xG FROM OPEN PLAY", "a": 2.06, "b": 0.25, "fa": "2.06", "fb": "0.25"},
-     {"label": "xG FROM SET PLAYS", "a": 0.05, "b": 0.93, "fa": "0.05", "fb": "0.93"}
+     {
+      "label": "xG FROM OPEN PLAY",
+      "a": 2.06,
+      "b": 0.25,
+      "fa": "2.06",
+      "fb": "0.25"
+     },
+     {
+      "label": "xG FROM SET PLAYS",
+      "a": 0.05,
+      "b": 0.93,
+      "fa": "0.05",
+      "fb": "0.93"
+     }
     ],
     "source": "BBC Sport (Opta) match stats"
    }
@@ -40,14 +57,34 @@
   {
    "say": "Bayern's expected goals: one before the break, nought point two after. Who lost this: Pavlović, or the second half?",
    "emotion": "disappointed",
-   "emote": [[4.4, "neutral"]],
+   "emote": [
+    [
+     4.4,
+     "neutral"
+    ]
+   ],
    "card": {
     "type": "compare",
     "kicker": "PAVLOVIĆ, OR THE 2ND HALF?",
-    "teams": ["LILLE", "BAYERN"],
+    "teams": [
+     "LILLE",
+     "BAYERN"
+    ],
     "rows": [
-     {"label": "1ST HALF xG", "a": 0.57, "b": 1.0, "fa": "0.57", "fb": "1.00"},
-     {"label": "2ND HALF xG", "a": 1.55, "b": 0.2, "fa": "1.55", "fb": "0.20"}
+     {
+      "label": "1ST HALF xG",
+      "a": 0.57,
+      "b": 1.0,
+      "fa": "0.57",
+      "fb": "1.00"
+     },
+     {
+      "label": "2ND HALF xG",
+      "a": 1.55,
+      "b": 0.2,
+      "fa": "1.55",
+      "fb": "0.20"
+     }
     ],
     "source": "ESPN shot map (own goal excluded)"
    }
@@ -55,7 +92,12 @@
   {
    "say": "Pavlović: the own goal that decided it. Two shots, nought point oh seven expected goals.",
    "emotion": "disappointed",
-   "emote": [[2.4, "angry"]],
+   "emote": [
+    [
+     2.4,
+     "angry"
+    ]
+   ],
    "hit": true,
    "card": {
     "type": "player",
@@ -63,14 +105,33 @@
     "kicker": "WORST ON THE PITCH · SCOUT'S PICK",
     "name": "Pavlović",
     "team": "Bayern Munich",
-    "stats": [["own goal", "65'"], ["shots", "2"], ["xG", "0.07"], ["touches", "87"]],
+    "stats": [
+     [
+      "own goal",
+      "65'"
+     ],
+     [
+      "shots",
+      "2"
+     ],
+     [
+      "xG",
+      "0.07"
+     ],
+     [
+      "touches",
+      "87"
+     ]
+    ],
     "source": "ESPN player stats · shot map"
    }
   },
   {
    "say": "Two hundred and ten final-third passes. Twenty-two touches in the box. Lille had twenty-five!",
    "emotion": "angry",
-   "slam": [4.6],
+   "slam": [
+    4.6
+   ],
    "card": {
     "type": "stat",
     "kicker": "BAYERN, 64.7% OF THE BALL",
