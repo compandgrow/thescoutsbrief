@@ -1,0 +1,88 @@
+{
+ "id": "alexander-isak-2026-11-26",
+ "player": "Alexander Isak",
+ "club_key": "LIV",
+ "angle": "The summer hold-out: Isak stopped training with Newcastle, went public with 'promises were broken', Newcastle said no promise was ever made, and he still left on deadline day for a British record £125m. Fifteen months later he has 10 goals this season for Liverpool.",
+ "why_now": "In the news this week: scored twice in Club Brugge 0-3 Liverpool in the Champions League on 25 Nov 2026, taking him to 10 goals this season (BBC Sport 'All coming together - Isak repaying Liverpool faith', Guardian match report). Reddit digest failed today (RSS 404 / JSON 403) and there is no trends file for today, so this was picked from the BBC Sport football index. Last Scout File was Bayern (Kane); Liverpool last used on 18 Nov (Wirtz).",
+ "open_loop": "He stopped training with Newcastle and said trust was lost. Newcastle said he wasn't for sale. Two weeks later he was the most expensive signing in British history. How did the stand-off end?",
+ "hook_suggestion": "He stopped training with Newcastle. Then cost a British record £125m.",
+ "beats": [
+  {
+   "slot": "cold_open",
+   "fact": "In summer 2025 Alexander Isak stood off with Newcastle, training away from the group and not playing for them this season, to force a move to Liverpool. On transfer deadline day, 1 September 2025, Liverpool signed him for a British record fee of £125m.",
+   "year": "2025",
+   "numbers": {"fee_gbp": "£125m", "record": "British transfer record", "date": "1 September 2025"},
+   "quote": null,
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cly4my21lz7o", "cached": "data/research/scrape_c470ab1dacf8.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2025/sep/01/liverpool-sign-alexander-isak-british-transfer-record-125m-newcastle", "cached": "data/research/scrape_9f44a996916b.json"},
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/ce934rgyg57o", "cached": "data/research/scrape_ba92fab37c16.json"}
+   ]
+  },
+  {
+   "slot": "setup",
+   "fact": "Voice (max 12 words): 'He skipped an awards night to say: promises were broken.' On 19 August 2025 Isak did not attend the PFA awards, where he was named in the Premier League team of the season, and posted a statement on Instagram saying promises had been broken and trust lost (long quote goes on the card).",
+   "year": "2025",
+   "numbers": {"date": "19 August 2025"},
+   "quote": "When promises are broken and trust is lost, the relationship can't continue.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/ce934rgyg57o", "cached": "data/research/scrape_ba92fab37c16.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2025/aug/19/alexander-isak-opens-up-newcastle-standoff-pfa-awards", "cached": "data/research/scrape_795ae5d05be6.json"}
+   ]
+  },
+  {
+   "slot": "conflict",
+   "fact": "Newcastle hit back the same night: Isak was under contract and 'no commitment has ever been made by a club official' that he could leave that summer. They had already rejected Liverpool's £110m bid on 1 August and said they did not foresee the conditions for a sale being met.",
+   "year": "2025",
+   "numbers": {"rejected_bid_gbp": "£110m", "rejected_on": "1 August 2025"},
+   "quote": "We are clear in response that Alex remains under contract and that no commitment has ever been made by a club official that Alex can leave Newcastle United this summer.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/ce934rgyg57o", "cached": "data/research/scrape_ba92fab37c16.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2025/aug/19/alexander-isak-opens-up-newcastle-standoff-pfa-awards", "cached": "data/research/scrape_795ae5d05be6.json"}
+   ]
+  },
+  {
+   "slot": "twist",
+   "fact": "Newcastle signed striker Nick Woltemade from Stuttgart and Yoane Wissa from Brentford, and Liverpool came back. On deadline day Isak had a medical, signed a six-year contract and became a Liverpool player for a British record £125m. Newcastle's announcement was a terse 37-word statement.",
+   "year": "2025",
+   "numbers": {"fee_gbp": "£125m", "contract_years": 6, "newcastle_statement_words": 37},
+   "quote": "I want to create history. I want to win trophies.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cly4my21lz7o", "cached": "data/research/scrape_c470ab1dacf8.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2025/sep/01/liverpool-sign-alexander-isak-british-transfer-record-125m-newcastle", "cached": "data/research/scrape_9f44a996916b.json"}
+   ],
+   "note": "37-word statement is BBC only: use on card only as 'Newcastle's statement: short' or drop if the writer needs strict 2-source; the fee, six-year contract and Woltemade/Wissa signings are in both."
+  },
+  {
+   "slot": "now",
+   "fact": "Isak scored twice as Liverpool won 3-0 at Club Brugge in the Champions League on 25 November 2026, taking his tally for the season to 10 goals.",
+   "year": "2026",
+   "numbers": {"goals_this_season": 10, "goals_v_brugge": 2, "score": "Club Brugge 0-3 Liverpool", "date": "25 November 2026"},
+   "quote": "He is in a great moment right now.",
+   "sources": [
+    {"outlet": "BBC Sport", "url": "https://www.bbc.co.uk/sport/football/articles/cqm2l0gelkzxo", "cached": "data/research/scrape_20c7a248699e.json"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/football/2026/nov/25/club-brugge-liverpool-champions-league-match-report", "cached": "data/research/scrape_bcb3b86bbda7.json"}
+   ]
+  }
+ ],
+ "quotes": [
+  {"text": "When promises are broken and trust is lost, the relationship can't continue.", "who": "Alexander Isak", "when": "19 August 2025", "where": "Instagram statement, reported by BBC Sport and The Guardian", "source_url": "https://www.bbc.co.uk/sport/football/articles/ce934rgyg57o"},
+  {"text": "I've kept quiet for a long time while others have spoken.", "who": "Alexander Isak", "when": "19 August 2025", "where": "Instagram statement, reported by BBC Sport and The Guardian", "source_url": "https://www.theguardian.com/football/2025/aug/19/alexander-isak-opens-up-newcastle-standoff-pfa-awards"},
+  {"text": "We are clear in response that Alex remains under contract and that no commitment has ever been made by a club official that Alex can leave Newcastle United this summer.", "who": "Newcastle United (club statement)", "when": "19 August 2025", "where": "club statement, reported by BBC Sport and The Guardian", "source_url": "https://www.bbc.co.uk/sport/football/articles/ce934rgyg57o"},
+  {"text": "I want to create history. I want to win trophies.", "who": "Alexander Isak", "when": "1 September 2025", "where": "Liverpool website on signing, reported by BBC Sport and The Guardian", "source_url": "https://www.bbc.co.uk/sport/football/articles/cly4my21lz7o"},
+  {"text": "He is in a great moment right now.", "who": "Andoni Iraola, Liverpool manager", "when": "25 November 2026", "where": "after Club Brugge 0-3 Liverpool, reported by BBC Sport", "source_url": "https://www.bbc.co.uk/sport/football/articles/cqm2l0gelkzxo"}
+ ],
+ "outro_question": "Was Isak right to force his way out, or should Newcastle have held firm? Follow for the next Scout File.",
+ "rejected": [
+  {"claim": "Scored in six consecutive away games, joining Salah, Barnes, Aldridge and others in an eight-player Liverpool club", "reason": "one source only (BBC Sport 25 Nov 2026); Guardian report doesn't mention it"},
+  {"claim": "10 goals is more than double his first-season total; four goals in his past four games", "reason": "one source only (BBC Sport)"},
+  {"claim": "Broken leg in December of his first Liverpool season", "reason": "one source only in what was fetched, and injury detail is not needed (health red line: keep out)"},
+  {"claim": "Newcastle away fans called him 'greedy'", "reason": "one source only, and cruel framing"},
+  {"claim": "Pay-rise grievance, £140,000/£300,000 a week wages, loyalty bonuses cancelled, deal worth £130m", "reason": "money detail / 'understood' and 'sources claim' wording, outlets differ (£130m with add-ons vs fixed £125m with no add-ons): use neither"},
+  {"claim": "Claimed thigh injury before the Asia tour, undetectable on scans; trained at Real Sociedad", "reason": "Guardian only, and implies he faked an injury: health/'cheat' red line"},
+  {"claim": "Isak believed he'd be allowed to leave if a big club offered the right price", "reason": "'BBC Sport understands' / reported belief, not on record; use only his own quoted statement"},
+  {"claim": "Club announced the deal at 21:30 BST, after the window closed", "reason": "one source only (BBC)"}
+ ],
+ "credits_used": 10,
+ "credits_note": "6 credits were spent by mistake on a non-existent Guardian tag page that fell back to Firecrawl; 4 on two searches/scrapes that gave usable sources. Month total now 305/800."
+}

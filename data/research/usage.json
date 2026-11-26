@@ -600,7 +600,7 @@
   ]
  },
  "2026-11": {
-  "credits": 295,
+  "credits": 305,
   "calls": [
    {
     "at": "2026-11-01T17:48:22Z",
@@ -3326,6 +3326,86 @@
     "at": "2026-11-25T23:54:58Z",
     "what": "search PSG Roma draw winning run",
     "credits": 2
+   },
+   {
+    "at": "2026-11-26T17:49:28Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:49:39Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cqm2l0gelkzxo",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:49:40Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cr3wgd5exl0do",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:49:54Z",
+    "what": "scrape https://www.theguardian.com/football/alexander-isak?page=1",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-26T17:49:56Z",
+    "what": "scrape https://www.theguardian.com/football/alexander-isak?page=2",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-26T17:49:58Z",
+    "what": "scrape https://www.theguardian.com/football/alexander-isak?page=3",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-26T17:50:00Z",
+    "what": "scrape https://www.theguardian.com/football/alexander-isak?page=4",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-26T17:50:02Z",
+    "what": "scrape https://www.theguardian.com/football/alexander-isak?page=5",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-26T17:50:04Z",
+    "what": "scrape https://www.theguardian.com/football/alexander-isak?page=6",
+    "credits": 1
+   },
+   {
+    "at": "2026-11-26T17:50:24Z",
+    "what": "local scrape https://www.theguardian.com/football/2025/aug/19/alexander-isak-opens-up-newcastle-standoff-pfa-awards",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:50:25Z",
+    "what": "local scrape https://www.theguardian.com/football/2025/sep/01/liverpool-sign-alexander-isak-british-transfer-record-125m-newcastle",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:50:31Z",
+    "what": "search Alexander Isak Newcastle statement promises broken trust lost",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-26T17:50:36Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/ce934rgyg57o",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:50:58Z",
+    "what": "local scrape https://www.theguardian.com/football/2026/nov/25/club-brugge-liverpool-champions-league-match-report",
+    "credits": 0
+   },
+   {
+    "at": "2026-11-26T17:51:04Z",
+    "what": "search Liverpool sign Alexander Isak British record \u00a3125m Newcastle",
+    "credits": 2
+   },
+   {
+    "at": "2026-11-26T17:51:08Z",
+    "what": "local scrape https://www.bbc.co.uk/sport/football/articles/cly4my21lz7o",
+    "credits": 0
    }
   ]
  }
