@@ -12,8 +12,8 @@
  },
  "beats": [
   {
-   "say": "Newcastle: not for sale. Then a British record.",
-   "caption": "Newcastle: not for sale. Then a British record.",
+   "say": "Not for sale. Then a British record.",
+   "caption": "Not for sale. Then a British record.",
    "emotion": "smug",
    "hit": true,
    "card": {
