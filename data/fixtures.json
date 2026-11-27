@@ -1,21 +1,6 @@
 {
- "generated": "2026-11-27T17:49:37Z",
+ "generated": "2026-11-27T23:48:44Z",
  "fixtures": [
-  {
-   "espn_id": "401879225",
-   "slug": "chelsea-nottingham-forest",
-   "date": "2026-11-27",
-   "team": "CHE",
-   "teams_text": [
-    "Nottingham Forest",
-    "Chelsea"
-   ],
-   "competition": "English Premier League",
-   "score": null,
-   "watched": [
-    "CHE"
-   ]
-  },
   {
    "espn_id": "401879226",
    "slug": "brentford-manchester-united",
@@ -2259,7 +2244,7 @@
    "date": "2027-02-13",
    "team": "BAY",
    "teams_text": [
-    "1\\. FC Union Berlin",
+    "1. FC Union Berlin",
     "Bayern Munich"
    ],
    "competition": "German Bundesliga",
