@@ -1,7 +1,7 @@
 {
- "version": 4,
- "updated": "2026-11-23",
- "why": "v4 changes only the beat-1 ('proof') slot note: from '2-3 numbers that back the hook' to 'the reason behind the hook's paradox, never another count or a control measure'. Viewers leave during beat 1 on almost every reel, and the only v3 reel whose beat 1 gave the reason (celta-vigo-real-madrid-2026-11-21: 5 big chances missed + Mbappé's missed penalty) held 8.38 s (ratio 0.246), against 6.32 s on fc-cologne-bayern-munich-2026-11-20 and 6.11 s on leeds-united-chelsea-2026-11-21, which opened beat 1 on possession; v2 reels with a backing-stat beat 1 (barcelona-atletico 6.01 s, villa-united 7.48 s, valencia, psg-villarreal, roma-man utd) lost viewers on it too.",
+ "version": 5,
+ "updated": "2026-11-27",
+ "why": "v5 changes only the beat-1 ('proof') slot length: one sentence, one card row, max 6 s. v4 was judged after 4 reels and kept, but on all 4 the average viewer left inside beat 1: psv-eindhoven-real-madrid-2026-11-24 10.85 s (beat 1 3.9-11.6 s), manchester-united-sporting-cp-2026-11-25 7.02 s (3.4-10.6 s), bayern-munich-lille-2026-11-25 8.51 s (4.8-11.4 s), as-roma-paris-saint-germain-2026-11-25 6.69 s (3.8-11.5 s). Beat 1 ran 6.6-7.7 s, so the two-name question started at 10.9-11.9 s, always after the average viewer left; the only comment came on the earliest one (psv, 11.9 s, 1.1 s after the average watch).",
  "owner_note": "The performance-analyst may change anything in 'tunable' (one change per version, see .claude/agents/performance-analyst.md). Nothing in 'locked' may change without the user.",
  "tunable": {
   "duration_s": {
@@ -36,7 +36,8 @@
    {
     "slot": "proof",
     "card": "compare or stat",
-    "note": "the REASON behind the hook's paradox (missed big chances, a missed penalty, a red card, an injury, a sub or tactical change, or the surprise_stat), 1-2 numbers, straight after it. Never another count of the hook's own measure and never a control measure (possession, passes, corners)."
+    "note": "the REASON behind the hook's paradox (missed big chances, a missed penalty, a red card, an injury, a sub or tactical change, or the surprise_stat), 1-2 numbers, straight after it. Never another count of the hook's own measure and never a control measure (possession, passes, corners). ONE sentence and one card row, at most 6 s (about 15 spoken words), its number spoken in the first half of the beat, so beat 2 (where the two-name question goes) starts by 10 s.",
+    "max_s": 6
    },
    {
     "slot": "story",
@@ -138,6 +139,20 @@
    },
    "evidence": "celta-vigo-real-madrid-2026-11-21 review (beat 1 = reason, avg watch 8.38 s, ratio 0.246) vs fc-cologne-bayern-munich-2026-11-20 (6.32 s) and leeds-united-chelsea-2026-11-21 (6.11 s) reviews; learnings.md beat-1 rule",
    "compare_on": "avg watch s, watch ratio, skip rate, shares+saves per 1k reach against the v3 reels",
+   "judge_after_reels": 3,
+   "until": "2026-11-27",
+   "judged": "2026-11-27, after 4 v4 reels (psv-real-madrid, united-sporting, bayern-lille, roma-psg): kept. Against the 5 v3 reels, median skip 48.4% vs 54.2% (better), avg watch 7.77 s vs 6.17 s (better, success bar 7.5 s met), watch ratio 0.228 vs 0.180 (better, bar 0.21 met), shares+saves 0.0/1k vs 0.0/1k (level), comments 1 vs 0. Caveat: all 4 v4 reels were midweek UCL nights posted at 01 UTC; reach 121-188."
+  },
+  {
+   "version": 5,
+   "from": "2026-11-27",
+   "summary": "structure[1] 'proof': no length limit (ran 6.6-7.7 s) -> one sentence and one card row, max_s 6, number in the first half of the beat (only change)",
+   "previous": {
+    "note": "the REASON behind the hook's paradox (missed big chances, a missed penalty, a red card, an injury, a sub or tactical change, or the surprise_stat), 1-2 numbers, straight after it. Never another count of the hook's own measure and never a control measure (possession, passes, corners).",
+    "max_s": null
+   },
+   "evidence": "v4 reviews 2026-11-24/25: average watch fell inside beat 1 on all 4 reels; two-name question at 10.9-11.9 s, after every average watch; learnings.md beat-1 and question rules",
+   "compare_on": "avg watch s, watch ratio, skip rate, comments and shares+saves per 1k reach against the 4 v4 reels",
    "judge_after_reels": 3
   }
  ]
