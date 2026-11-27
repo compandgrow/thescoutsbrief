@@ -1,6 +1,23 @@
 {
- "generated": "2026-11-26T23:49:12Z",
+ "generated": "2026-11-27T17:49:37Z",
  "ready": [],
- "later_today": [],
+ "later_today": [
+  {
+   "espn_id": "401879225",
+   "slug": "chelsea-nottingham-forest",
+   "date": "2026-11-27",
+   "team": "CHE",
+   "teams_text": [
+    "Nottingham Forest",
+    "Chelsea"
+   ],
+   "competition": "English Premier League",
+   "score": null,
+   "watched": [
+    "CHE"
+   ],
+   "favourite_involved": false
+  }
+ ],
  "not_making": []
 }
